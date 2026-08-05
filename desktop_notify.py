@@ -12,7 +12,7 @@ import json
 import os
 import sys
 import webbrowser
-from tkinter import Tk, Toplevel, Frame, Label, Canvas
+from tkinter import Tk, Toplevel, Frame, Label, Canvas, Scrollbar
 from tkinter import BOTH, RIGHT, LEFT, TOP, BOTTOM, X, Y, W, END, VERTICAL
 from tkinter.font import Font
 
@@ -193,17 +193,54 @@ def _show_empty(parent, f):
 
 
 # ═══════════════════════════════════════════════════════════════
-# 文献列表（纯 Frame，不需要 Canvas）
+# 文献列表（Canvas + Scrollbar，支持滚动）
 # ═══════════════════════════════════════════════════════════════
 def _show_articles(parent, articles, f):
-    """纯 Frame 布局文献列表（每天只推 1 篇，不需要滚动）。"""
-    content = Frame(parent, bg=C_CARD_BG, padx=16, pady=8)
-    content.pack(fill=BOTH, expand=True)
+    """Canvas + Scrollbar 布局，内容超出时可滚动查看。"""
+    # ── 滚动容器 ──
+    scroll_container = Frame(parent, bg=C_CARD_BG)
+    scroll_container.pack(fill=BOTH, expand=True)
 
+    canvas = Canvas(scroll_container, bg=C_CARD_BG, highlightthickness=0)
+    vbar = Scrollbar(scroll_container, orient=VERTICAL, command=canvas.yview)
+    canvas.configure(yscrollcommand=vbar.set)
+
+    vbar.pack(side=RIGHT, fill=Y)
+    canvas.pack(side=LEFT, fill=BOTH, expand=True)
+
+    # ── 内部内容 Frame ──
+    inner = Frame(canvas, bg=C_CARD_BG, padx=16, pady=8)
+    inner_id = canvas.create_window((0, 0), window=inner, anchor="nw")
+
+    # Canvas 宽度变化时同步内部 frame 宽度
+    def _on_canvas_configure(event):
+        canvas.itemconfig(inner_id, width=event.width)
+    canvas.bind("<Configure>", _on_canvas_configure)
+
+    # 内部 frame 大小变化时刷新滚动区域
+    def _on_inner_configure(event):
+        canvas.configure(scrollregion=canvas.bbox("all"))
+    inner.bind("<Configure>", _on_inner_configure)
+
+    # ── 鼠标滚轮 ──
+    def _on_mousewheel(event):
+        canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    # 鼠标进入 Canvas 区域时绑定滚轮，离开时解绑（避免影响其他窗口）
+    def _on_enter(event):
+        canvas.bind_all("<MouseWheel>", _on_mousewheel)
+
+    def _on_leave(event):
+        canvas.unbind_all("<MouseWheel>")
+
+    canvas.bind("<Enter>", _on_enter)
+    canvas.bind("<Leave>", _on_leave)
+
+    # ── 填充文献 ──
     for i, art in enumerate(articles, 1):
-        _build_card(content, i, art, f)
+        _build_card(inner, i, art, f)
 
-    Frame(content, bg=C_CARD_BG, height=4).pack(fill=X)
+    Frame(inner, bg=C_CARD_BG, height=4).pack(fill=X)
 
 
 # 可用内容宽度（用于 wraplength）
