@@ -402,51 +402,113 @@ def _run_tray(cfg) -> None:
     CS_VREDRAW = 0x0001
     COLOR_WINDOW = 5
     IDI_APPLICATION = 32512
+    NOTIFYICON_VERSION_4 = 4
+
+    # Explorer 重启后会广播此消息；注册后可在 WNDPROC 中重新挂载托盘图标
+    WM_TASKBAR_CREATED = ctypes.windll.user32.RegisterWindowMessageW("TaskbarCreated")
 
     # ---- 生成 ico（纯字节，零依赖，PyInstaller 安全）----
     ico_path = None
     hicon = None
 
-    def _make_ico_bytes(size=32):
-        """生成蓝色圆形 + 白色 S 的 .ico 文件字节（32位 BGRA，无外部依赖）。"""
+    def _make_ico_bytes(sizes=(16, 32)):
+        """生成蓝色圆形 + 白色 S 的多尺寸 .ico 文件字节（32位 BGRA，无外部依赖）。
+
+        Windows 系统托盘通常优先使用 16x16；高分屏下会使用 32x32。
+        提供多尺寸可最大限度保证图标可见。
+        """
         import struct
-        w = h = size
-        pixels = []
-        cx, cy, r = w // 2, h // 2, w // 2 - 2
-        for y in range(h):
-            for x in range(w):
-                dx, dy = x - cx, y - cy
-                if dx * dx + dy * dy <= r * r:
-                    # 蓝色圆形 #0071E3 → B=227, G=113, R=0
-                    pixels.append((227, 113, 0, 255))
-                else:
-                    pixels.append((0, 0, 0, 0))  # 透明
-        # XOR mask: 32-bit BGRA 逐行（bottom-up BMP）
-        xor_data = b""
-        for y in range(h - 1, -1, -1):
-            for x in range(w):
-                b, g, r, a = pixels[y * w + x]
-                xor_data += struct.pack("BBBB", b, g, r, a)
-        # AND mask: 每行 4 字节对齐
-        and_row_bytes = (w + 7) // 8
-        and_data = b"\x00" * (and_row_bytes * h)
-        # BITMAPINFOHEADER + XOR + AND
-        bmp_size = 40 + len(xor_data) + len(and_data)
-        bmp_header = struct.pack(
-            "<IiiHHIIiiII",
-            40, w, h * 2, 1, 32, 0, len(xor_data), 0, 0, 0, 0,
-        )
-        bmp_data = bmp_header + xor_data + and_data
-        # ICO header + directory + BMP
-        ico_header = struct.pack("<HHH", 0, 1, 1)
-        dir_entry = struct.pack(
-            "<BBBBHHII",
-            w, h, 0, 0, 1, 32, bmp_size, 6 + 16,
-        )
-        return ico_header + dir_entry + bmp_data
+
+        def _render(size):
+            w = h = size
+            pixels = []
+            cx, cy, r = w // 2, h // 2, max(1, w // 2 - 2)
+            # 白色 S 的位图：8x8 图案按尺寸缩放
+            s_pattern = [
+                "01111110",
+                "10000001",
+                "10000000",
+                "01111110",
+                "00000001",
+                "00000001",
+                "10000001",
+                "01111110",
+            ]
+            scale = max(1, size // 8)
+            offset = (size - 8 * scale) // 2
+            for y in range(h):
+                for x in range(w):
+                    dx, dy = x - cx, y - cy
+                    if dx * dx + dy * dy <= r * r:
+                        # 默认蓝色背景 #0071E3
+                        b, g, r_, a = 227, 113, 0, 255
+                        # 映射到 8x8 S 图案并缩放
+                        py = (y - offset) // scale
+                        px = (x - offset) // scale
+                        if 0 <= py < 8 and 0 <= px < 8:
+                            if s_pattern[py][px] == "1":
+                                # 白色 S
+                                b, g, r_, a = 255, 255, 255, 255
+                        pixels.append((b, g, r_, a))
+                    else:
+                        pixels.append((0, 0, 0, 0))  # 透明
+            # XOR mask: 32-bit BGRA 逐行（bottom-up BMP）
+            xor_data = b""
+            for y in range(h - 1, -1, -1):
+                for x in range(w):
+                    b, g, r_, a = pixels[y * w + x]
+                    xor_data += struct.pack("BBBB", b, g, r_, a)
+            # AND mask: 1bpp，每行 4 字节对齐；32bpp 图标实际以 alpha 通道
+            # 控制透明，AND mask 按 alpha 生成：不透明=1、透明=0。
+            raw_row = (w + 7) // 8
+            padded_row = (raw_row + 3) & ~3
+            and_rows = []
+            for y in range(h):
+                row_bits = []
+                for x in range(w):
+                    _, _, _, a = pixels[y * w + x]
+                    row_bits.append('1' if a >= 128 else '0')
+                # 补齐到 padded_row 字节
+                row_bits.extend(['0'] * (padded_row * 8 - w))
+                row_bytes = b''.join(
+                    bytes([int(''.join(row_bits[i:i+8][::-1]), 2)])
+                    for i in range(0, padded_row * 8, 8)
+                )
+                and_rows.append(row_bytes)
+            and_data = b''.join(and_rows)
+            bmp_size = 40 + len(xor_data) + len(and_data)
+            bmp_header = struct.pack(
+                "<IiiHHIIiiII",
+                40, w, h * 2, 1, 32, 0, len(xor_data), 0, 0, 0, 0,
+            )
+            return bmp_header + xor_data + and_data, bmp_size
+
+        images = []
+        total_size = 0
+        for size in sizes:
+            data, bmp_size = _render(size)
+            images.append((size, data, bmp_size))
+            total_size += bmp_size
+
+        count = len(images)
+        header = struct.pack("<HHH", 0, 1, count)
+        entries = b""
+        data_blob = b""
+        offset = 6 + 16 * count
+        for size, data, bmp_size in images:
+            # ICONDIRENTRY: 宽(1) 高(1) 调色板(1) 保留(1) 颜色平面(2) bpp(2) size(4) offset(4)
+            entries += struct.pack(
+                "<BBBBHHII",
+                size if size < 256 else 0,
+                size if size < 256 else 0,
+                0, 0, 1, 32, bmp_size, offset,
+            )
+            data_blob += data
+            offset += bmp_size
+        return header + entries + data_blob
 
     try:
-        ico_bytes = _make_ico_bytes(32)
+        ico_bytes = _make_ico_bytes((16, 32))
         ico_path = os.path.join(tempfile.gettempdir(), "scirobot_tray.ico")
         with open(ico_path, "wb") as f:
             f.write(ico_bytes)
@@ -458,7 +520,7 @@ def _run_tray(cfg) -> None:
             LR_LOADFROMFILE,
         )
         if hicon:
-            log.info("托盘图标已生成（纯字节 ico），hicon=%s", hicon)
+            log.info("托盘图标已生成（纯字节多尺寸 ico），hicon=%s path=%s", hicon, ico_path)
         else:
             log.warning("LoadImageW 返回 NULL，GetLastError=%d",
                         ctypes.windll.kernel32.GetLastError())
@@ -553,7 +615,29 @@ def _run_tray(cfg) -> None:
             elif lparam == WM_LBUTTONUP:
                 _tray_event_queue.put("popup")
                 return 0
+        elif msg == WM_TASKBAR_CREATED:
+            # Explorer 重启后重新挂载图标
+            log.info("检测到 Explorer 重启（TaskbarCreated），重新添加托盘图标")
+            _tray_add_icon(hwnd_)
+            return 0
         return ctypes.windll.user32.DefWindowProcW(hwnd_, msg, wparam, lparam)
+
+    def _tray_add_icon(hwnd_):
+        """添加或重新添加托盘图标，并设置版本。"""
+        nid.hWnd = hwnd_
+        result = ctypes.windll.shell32.Shell_NotifyIconW(NIM_ADD, ctypes.byref(nid))
+        if not result:
+            err = ctypes.windll.kernel32.GetLastError()
+            log.error("Shell_NotifyIcon(ADD) 失败，GetLastError=%d，uFlags=0x%x hIcon=%s",
+                      err, nid.uFlags, nid.hIcon)
+            return False
+        # 设置版本 4，让 Windows 使用更现代的托盘行为（如正确的消息坐标）
+        nid2 = NOTIFYICONDATAW()
+        ctypes.memmove(ctypes.byref(nid2), ctypes.byref(nid), ctypes.sizeof(NOTIFYICONDATAW))
+        nid2.uTimeoutOrVersion = NOTIFYICON_VERSION_4
+        ctypes.windll.shell32.Shell_NotifyIconW(NIM_SETVERSION, ctypes.byref(nid2))
+        log.info("Shell_NotifyIcon(ADD) 成功！托盘图标已创建")
+        return True
 
     def _tray_thread():
         """后台线程：注册窗口类 -> 创建消息窗口 -> 消息循环。"""
@@ -586,16 +670,10 @@ def _run_tray(cfg) -> None:
             return
 
         # 挂载托盘图标
-        nid.hWnd = msg_hwnd
         log.info("准备添加托盘图标: hWnd=%s uFlags=0x%x hIcon=%s cbSize=%d",
                  msg_hwnd, nid.uFlags, nid.hIcon, nid.cbSize)
-        result = ctypes.windll.shell32.Shell_NotifyIconW(NIM_ADD, ctypes.byref(nid))
-        if not result:
-            err = ctypes.windll.kernel32.GetLastError()
-            log.error("Shell_NotifyIcon(ADD) 失败，GetLastError=%d，uFlags=0x%x hIcon=%s",
-                      err, nid.uFlags, nid.hIcon)
+        if not _tray_add_icon(msg_hwnd):
             return
-        log.info("Shell_NotifyIcon(ADD) 成功！托盘图标已创建")
 
         # 消息循环
         msg_struct = ctypes.wintypes.MSG()

@@ -176,17 +176,9 @@ def _build_header(card, title, f, win, root):
     header.bind("<Button-1>", lambda e: _start_move(e, win))
     header.bind("<B1-Motion>", lambda e: _do_move(e, win))
 
-    # 红绿灯关闭按钮
-    close_btn = Label(header, text="●", bg=C_HEADER_BG, fg=C_CLOSE,
-                      font=Font(family="Times New Roman", size=14), cursor="hand2")
-    close_btn.pack(side=LEFT)
-    close_btn.bind("<Button-1>", lambda e: _close(root, win))
-    close_btn.bind("<Enter>", lambda e: close_btn.configure(fg=C_CLOSE_HOVER))
-    close_btn.bind("<Leave>", lambda e: close_btn.configure(fg=C_CLOSE))
-
     # 标题居中
     Label(header, text=title, bg=C_HEADER_BG, fg=C_TEXT_SEC,
-          font=f["small"]).pack(side=LEFT, padx=(16, 0))
+          font=f["small"]).pack(side=LEFT, padx=(4, 0))
 
 
 # ═══════════════════════════════════════════════════════════════
