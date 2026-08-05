@@ -36,7 +36,7 @@ C_CLOSE        = "#ff5f57"   # 红绿灯 — 关闭
 C_CLOSE_HOVER  = "#ff3b30"
 
 # 窗口尺寸
-WIN_W = 460
+WIN_W = 500
 WIN_H = 680
 
 
@@ -224,12 +224,14 @@ def _show_articles(parent, articles, f):
     canvas.pack(side=LEFT, fill=BOTH, expand=True)
 
     # ── 内部内容 Frame ──
-    inner = Frame(canvas, bg=C_CARD_BG, padx=16, pady=8)
+    inner = Frame(canvas, bg=C_CARD_BG)
+    inner.pack_propagate(False)          # 关键：防止内容决定 Frame 大小
     inner_id = canvas.create_window((0, 0), window=inner, anchor="nw")
 
     # Canvas 宽度变化时同步内部 frame 宽度
     def _on_canvas_configure(event):
         canvas.itemconfig(inner_id, width=event.width)
+        inner.config(width=event.width)  # 强制 inner request 宽度 = 显示宽度
     canvas.bind("<Configure>", _on_canvas_configure)
 
     # 内部 frame 大小变化时刷新滚动区域
@@ -250,8 +252,8 @@ def _show_articles(parent, articles, f):
 
 
 # 可用内容宽度（用于 wraplength）
-# 窗口 460 - outer padx 20 - content padx 32 - card padx 40 = 368
-_AVAILABLE_W = 368
+# 窗口 500 - outer padx 20 - scrollbar 14 - card padding 26 = 440
+_AVAILABLE_W = 440
 
 
 # ═══════════════════════════════════════════════════════════════
