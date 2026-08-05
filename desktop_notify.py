@@ -225,13 +225,12 @@ def _show_articles(parent, articles, f):
 
     # ── 内部内容 Frame ──
     inner = Frame(canvas, bg=C_CARD_BG)
-    inner.pack_propagate(False)          # 关键：防止内容决定 Frame 大小
     inner_id = canvas.create_window((0, 0), window=inner, anchor="nw")
 
     # Canvas 宽度变化时同步内部 frame 宽度
     def _on_canvas_configure(event):
+        inner.config(width=event.width)   # 让 pack 布局按 Canvas 实际宽度重算
         canvas.itemconfig(inner_id, width=event.width)
-        inner.config(width=event.width)  # 强制 inner request 宽度 = 显示宽度
     canvas.bind("<Configure>", _on_canvas_configure)
 
     # 内部 frame 大小变化时刷新滚动区域
