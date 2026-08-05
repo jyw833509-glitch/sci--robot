@@ -403,30 +403,76 @@ def _run_tray(cfg) -> None:
     COLOR_WINDOW = 5
     IDI_APPLICATION = 32512
 
-    # ---- 生成 ico ----
+    # ---- 生成 ico（纯字节，零依赖，PyInstaller 安全）----
     ico_path = None
     hicon = None
+
+    def _make_ico_bytes(size=32):
+        """生成蓝色圆形 + 白色 S 的 .ico 文件字节（32位 BGRA，无外部依赖）。"""
+        import struct
+        w = h = size
+        pixels = []
+        cx, cy, r = w // 2, h // 2, w // 2 - 2
+        for y in range(h):
+            for x in range(w):
+                dx, dy = x - cx, y - cy
+                if dx * dx + dy * dy <= r * r:
+                    # 蓝色圆形 #0071E3 → B=227, G=113, R=0
+                    pixels.append((227, 113, 0, 255))
+                else:
+                    pixels.append((0, 0, 0, 0))  # 透明
+        # XOR mask: 32-bit BGRA 逐行（bottom-up BMP）
+        xor_data = b""
+        for y in range(h - 1, -1, -1):
+            for x in range(w):
+                b, g, r, a = pixels[y * w + x]
+                xor_data += struct.pack("BBBB", b, g, r, a)
+        # AND mask: 每行 4 字节对齐
+        and_row_bytes = (w + 7) // 8
+        and_data = b"\x00" * (and_row_bytes * h)
+        # BITMAPINFOHEADER + XOR + AND
+        bmp_size = 40 + len(xor_data) + len(and_data)
+        bmp_header = struct.pack(
+            "<IiiHHIIiiII",
+            40, w, h * 2, 1, 32, 0, len(xor_data), 0, 0, 0, 0,
+        )
+        bmp_data = bmp_header + xor_data + and_data
+        # ICO header + directory + BMP
+        ico_header = struct.pack("<HHH", 0, 1, 1)
+        dir_entry = struct.pack(
+            "<BBBBHHII",
+            w, h, 0, 0, 1, 32, bmp_size, 6 + 16,
+        )
+        return ico_header + dir_entry + bmp_data
+
     try:
-        from PIL import Image, ImageDraw
-        img = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
-        draw = ImageDraw.Draw(img)
-        draw.ellipse([4, 4, 60, 60], fill=(0, 113, 227, 255))
-        draw.text((25, 14), "S", fill=(255, 255, 255, 255))
+        ico_bytes = _make_ico_bytes(32)
         ico_path = os.path.join(tempfile.gettempdir(), "scirobot_tray.ico")
-        img.save(ico_path, format="ICO", sizes=[(64, 64)])
+        with open(ico_path, "wb") as f:
+            f.write(ico_bytes)
         atexit.register(lambda p=ico_path: os.remove(p) if os.path.exists(p) else None)
-        # LR_LOADFROMFILE 时 hinst 必须为 NULL(0)，否则 LoadImageW 失败
         hicon = ctypes.windll.user32.LoadImageW(
             0, ico_path, IMAGE_ICON,
             ctypes.windll.user32.GetSystemMetrics(SM_CXSMICON),
             ctypes.windll.user32.GetSystemMetrics(SM_CYSMICON),
             LR_LOADFROMFILE,
         )
+        if hicon:
+            log.info("托盘图标已生成（纯字节 ico），hicon=%s", hicon)
+        else:
+            log.warning("LoadImageW 返回 NULL，GetLastError=%d",
+                        ctypes.windll.kernel32.GetLastError())
     except Exception as exc:
-        log.warning("生成托盘图标失败：%s，使用系统默认图标", exc)
+        log.warning("生成托盘图标失败：%s", exc)
         hicon = None
 
-    # 兜底：如果 hicon 无效，用系统默认图标
+    # 兜底：用系统默认图标
+    if not hicon:
+        hicon = ctypes.windll.user32.LoadIconW(None, IDI_APPLICATION)
+        if hicon:
+            log.info("使用系统默认图标，hicon=%s", hicon)
+        else:
+            log.warning("系统默认图标也加载失败")
     # ---- Shell_NotifyIcon 结构 ----
     class NOTIFYICONDATAW(ctypes.Structure):
         _fields_ = [
@@ -497,6 +543,7 @@ def _run_tray(cfg) -> None:
     @WNDPROC
     def _tray_wndproc(hwnd_, msg, wparam, lparam):
         if msg == WM_TRAYICON:
+            log.info("收到托盘消息: lParam=0x%x", lparam)
             if lparam == WM_RBUTTONUP:
                 _tray_show_menu(hwnd_)
                 return 0
@@ -540,19 +587,15 @@ def _run_tray(cfg) -> None:
 
         # 挂载托盘图标
         nid.hWnd = msg_hwnd
+        log.info("准备添加托盘图标: hWnd=%s uFlags=0x%x hIcon=%s cbSize=%d",
+                 msg_hwnd, nid.uFlags, nid.hIcon, nid.cbSize)
         result = ctypes.windll.shell32.Shell_NotifyIconW(NIM_ADD, ctypes.byref(nid))
         if not result:
-            log.error("Shell_NotifyIcon(ADD) 失败，错误码 %d",
-                      ctypes.windll.kernel32.GetLastError())
+            err = ctypes.windll.kernel32.GetLastError()
+            log.error("Shell_NotifyIcon(ADD) 失败，GetLastError=%d，uFlags=0x%x hIcon=%s",
+                      err, nid.uFlags, nid.hIcon)
             return
-        # 设置版本（Win2000+ 支持 NIF_INFO 等）
-        nid_ver = NOTIFYICONDATAW()
-        nid_ver.cbSize = ctypes.sizeof(NOTIFYICONDATAW)
-        nid_ver.hWnd = msg_hwnd
-        nid_ver.uID = 1
-        ctypes.windll.shell32.Shell_NotifyIconW(NIM_SETVERSION, ctypes.byref(nid_ver))
-
-        log.info("系统托盘图标已创建（独立消息窗口），右键退出 / 单击/双击查看今日文献")
+        log.info("Shell_NotifyIcon(ADD) 成功！托盘图标已创建")
 
         # 消息循环
         msg_struct = ctypes.wintypes.MSG()
