@@ -213,7 +213,7 @@ pipeline:
 content:
   mode: "feed"
   # feed 模式下，内容日历的地址（http(s) URL 或本地文件路径）
-  feed_url: "https://raw.githubusercontent.com/jyw833509/glitch/main/data/feed.json"
+  feed_url: "https://raw.githubusercontent.com/jyw833509-glitch/sci--robot/main/data/feed.json"
   # 拉取失败时的本地缓存位置
   feed_cache: "data/feed_cache.json"
   # 日历说明的时区（客户端用各自本地日期匹配，建议所有用户同一时区）
