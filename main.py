@@ -375,9 +375,9 @@ def main() -> int:
     parser = build_parser()
     args = parser.parse_args()
     if not getattr(args, "func", None):
-        print(BANNER)
-        parser.print_help()
-        return 0
+        # 双击 exe 无参数时默认进入常驻模式（开机自启 + 定时推送）
+        # 同事版 exe 不需要懂命令行，直接进 schedule 就好
+        args.func = cmd_schedule
     try:
         return int(args.func(args) or 0)
     except KeyboardInterrupt:
