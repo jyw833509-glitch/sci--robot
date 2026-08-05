@@ -12,7 +12,7 @@ import json
 import os
 import sys
 import webbrowser
-from tkinter import Tk, Toplevel, Frame, Label, Canvas, Scrollbar
+from tkinter import Tk, Toplevel, Frame, Label, Canvas
 from tkinter import BOTH, RIGHT, LEFT, TOP, BOTTOM, X, Y, W, END, VERTICAL
 from tkinter.font import Font
 
@@ -31,9 +31,13 @@ C_TEXT_TER     = "#aeaeb2"   # 三级文字
 C_DIVIDER      = "#e5e5ea"   # 分割线
 C_ABSTRACT_BG  = "#f5f5f7"   # 摘要块底
 C_TAG_BG       = "#007AFF"   # 标签背景
-C_TAG_TEXT      = "#ffffff"
+C_TAG_TEXT     = "#ffffff"
 C_CLOSE        = "#ff5f57"   # 红绿灯 — 关闭
 C_CLOSE_HOVER  = "#ff3b30"
+
+# 窗口尺寸
+WIN_W = 460
+WIN_H = 680
 
 
 def open_url(url: str) -> None:
@@ -93,10 +97,9 @@ def show_popup(data: dict) -> None:
     win.overrideredirect(True)
     win.attributes("-topmost", True)
 
-    W, H = 440, 620
     win.geometry(
-        f"{W}x{H}+{win.winfo_screenwidth() - W - 24}"
-        f"+{win.winfo_screenheight() - H - 64}"
+        f"{WIN_W}x{WIN_H}+{win.winfo_screenwidth() - WIN_W - 24}"
+        f"+{win.winfo_screenheight() - WIN_H - 64}"
     )
 
     f = _make_fonts()
@@ -115,7 +118,7 @@ def show_popup(data: dict) -> None:
     # ── 分割线 ──
     Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, padx=0, pady=0)
 
-    # ── 内容区 ──
+    # ── 内容区（纯 Frame，不需要 Canvas 滚动） ──
     if not articles:
         _show_empty(card, f)
     else:
@@ -135,6 +138,9 @@ def show_popup(data: dict) -> None:
     win.protocol("WM_DELETE_WINDOW", lambda: _close(root, win))
     win.lift()
     win.focus_force()
+
+    # 强制刷新布局，确保所有 pack 计算完成
+    win.update_idletasks()
     win.mainloop()
 
 
@@ -187,34 +193,12 @@ def _show_empty(parent, f):
 
 
 # ═══════════════════════════════════════════════════════════════
-# 文献列表
+# 文献列表（纯 Frame，不需要 Canvas）
 # ═══════════════════════════════════════════════════════════════
 def _show_articles(parent, articles, f):
-    """可滚动文献列表。"""
-    wrapper = Frame(parent, bg=C_CARD_BG)
-    wrapper.pack(fill=BOTH, expand=True)
-
-    canvas = Canvas(wrapper, bg=C_CARD_BG, highlightthickness=0, bd=0)
-    scrollbar = Scrollbar(wrapper, orient=VERTICAL, command=canvas.yview,
-                          bg=C_DIVIDER, troughcolor=C_CARD_BG, width=4)
-    canvas.configure(yscrollcommand=scrollbar.set)
-
-    scrollbar.pack(side=RIGHT, fill=Y, padx=(0, 4), pady=8)
-    canvas.pack(side=LEFT, fill=BOTH, expand=True, padx=(8, 4), pady=8)
-
-    content = Frame(canvas, bg=C_CARD_BG)
-    cw = canvas.create_window((0, 0), window=content, anchor="nw")
-
-    def _resize(e=None):
-        canvas.configure(scrollregion=canvas.bbox("all"))
-        canvas.itemconfig(cw, width=canvas.winfo_width() - 4)
-
-    content.bind("<Configure>", _resize)
-    canvas.bind("<Configure>", _resize)
-
-    def _on_mousewheel(event):
-        canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
-    canvas.bind_all("<MouseWheel>", _on_mousewheel)
+    """纯 Frame 布局文献列表（每天只推 1 篇，不需要滚动）。"""
+    content = Frame(parent, bg=C_CARD_BG, padx=16, pady=8)
+    content.pack(fill=BOTH, expand=True)
 
     for i, art in enumerate(articles, 1):
         _build_card(content, i, art, f)
@@ -222,13 +206,18 @@ def _show_articles(parent, articles, f):
     Frame(content, bg=C_CARD_BG, height=4).pack(fill=X)
 
 
+# 可用内容宽度（用于 wraplength）
+# 窗口 460 - outer padx 20 - content padx 32 - card padx 40 = 368
+_AVAILABLE_W = 368
+
+
 # ═══════════════════════════════════════════════════════════════
 # 单篇文献卡片
 # ═══════════════════════════════════════════════════════════════
 def _build_card(parent, index, art, f):
     """macOS 风格文献卡片。"""
-    card = Frame(parent, bg=C_CARD_BG, padx=18, pady=16)
-    card.pack(fill=X, padx=4, pady=(4, 2))
+    card = Frame(parent, bg=C_CARD_BG, padx=20, pady=16)
+    card.pack(fill=X, padx=0, pady=(0, 8))
 
     # ---- 期刊标签 + 日期 ----
     meta_row = Frame(card, bg=C_CARD_BG)
@@ -250,13 +239,13 @@ def _build_card(parent, index, art, f):
     # ---- 中文标题 ----
     title_zh = art.get("title_zh") or art.get("title") or f"PMID {art.get('pmid','')}"
     Label(card, text=title_zh, bg=C_CARD_BG, fg=C_TEXT,
-          font=f["title"], justify="left", wraplength=378).pack(anchor=W, pady=(10, 6))
+          font=f["title"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(10, 6))
 
     # ---- 英文标题 ----
     en_title = art.get("title", "")
     if art.get("title_zh") and en_title:
         Label(card, text=en_title, bg=C_CARD_BG, fg=C_TEXT_SEC,
-              font=f["small"], justify="left", wraplength=378).pack(anchor=W, pady=(0, 12))
+              font=f["small"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(0, 12))
 
     # ---- 作者 + PMID ----
     authors = art.get("authors", "")
@@ -273,21 +262,43 @@ def _build_card(parent, index, art, f):
     Label(info_row, text=f"PMID {pmid}", bg=C_CARD_BG, fg=C_TEXT_TER,
           font=f["tiny"]).pack(side=RIGHT)
 
-    # ---- 链接按钮 ----
+    # ---- PMID / DOI 链接（可点击号码，显示完整） ----
+    pmid_val = art.get("pmid", "")
+    doi_val = art.get("doi", "")
     pubmed_url = art.get("pubmed_url", "")
     doi_url = art.get("doi_url", "")
 
-    if pubmed_url or doi_url:
-        link_row = Frame(card, bg=C_CARD_BG)
-        link_row.pack(fill=X, pady=(12, 0))
+    if pmid_val or doi_val:
+        link_box = Frame(card, bg=C_CARD_BG)
+        link_box.pack(fill=X, pady=(10, 0))
 
-        if pubmed_url:
-            btn = _pill_button(link_row, "PubMed", C_ACCENT, pubmed_url)
-            btn.pack(side=LEFT)
+        if pmid_val and pubmed_url:
+            pmid_frame = Frame(link_box, bg=C_CARD_BG)
+            pmid_frame.pack(fill=X, pady=(0, 2))
+            Label(pmid_frame, text="PMID: ", bg=C_CARD_BG, fg=C_TEXT_TER,
+                  font=f["tiny"]).pack(side=LEFT)
+            pmid_lbl = Label(pmid_frame, text=pmid_val, bg=C_CARD_BG, fg=C_ACCENT,
+                             font=f["small"], cursor="hand2")
+            pmid_lbl.pack(side=LEFT)
+            pmid_lbl.bind("<Button-1>", lambda e, u=pubmed_url: open_url(u))
+            pmid_lbl.bind("<Enter>", lambda e: pmid_lbl.configure(fg=C_ACCENT_HOVER))
+            pmid_lbl.bind("<Leave>", lambda e: pmid_lbl.configure(fg=C_ACCENT))
 
-        if doi_url:
-            btn = _pill_button(link_row, "DOI", C_TEXT_SEC, doi_url)
-            btn.pack(side=LEFT, padx=(8, 0))
+        if doi_val and doi_url:
+            doi_frame = Frame(link_box, bg=C_CARD_BG)
+            doi_frame.pack(fill=X, pady=(0, 2))
+            Label(doi_frame, text="DOI: ", bg=C_CARD_BG, fg=C_TEXT_TER,
+                  font=f["tiny"]).pack(side=LEFT)
+            # DOI 可能很长，截断显示但保留完整链接
+            display_doi = doi_val
+            if len(display_doi) > 50:
+                display_doi = display_doi[:47] + "…"
+            doi_lbl = Label(doi_frame, text=display_doi, bg=C_CARD_BG, fg=C_ACCENT,
+                            font=f["small"], cursor="hand2")
+            doi_lbl.pack(side=LEFT)
+            doi_lbl.bind("<Button-1>", lambda e, u=doi_url: open_url(u))
+            doi_lbl.bind("<Enter>", lambda e: doi_lbl.configure(fg=C_ACCENT_HOVER))
+            doi_lbl.bind("<Leave>", lambda e: doi_lbl.configure(fg=C_ACCENT))
 
     # ---- 分割线 ----
     Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, pady=(14, 0))
@@ -303,7 +314,7 @@ def _build_card(parent, index, art, f):
         lbl.pack(anchor=W)
 
         Label(ab_frame, text=abstract_zh, bg=C_CARD_BG, fg=C_TEXT,
-              font=f["body"], justify="left", wraplength=378).pack(anchor=W, pady=(6, 0))
+              font=f["body"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(6, 0))
 
     # ---- 英文摘要 ----
     abstract_en = art.get("abstract", "")
@@ -315,21 +326,7 @@ def _build_card(parent, index, art, f):
               font=f["tiny"]).pack(anchor=W)
 
         Label(en_frame, text=abstract_en, bg=C_CARD_BG, fg=C_TEXT_SEC,
-              font=f["small"], justify="left", wraplength=378).pack(anchor=W, pady=(4, 0))
-
-
-def _pill_button(parent, text, color, url):
-    """胶囊按钮。"""
-    btn = Label(parent, text=text, bg=C_CARD_BG, fg=color,
-                font=Font(family="Segoe UI", size=9),
-                padx=12, pady=4, cursor="hand2",
-                highlightbackground=color, highlightthickness=1)
-    btn.bind("<Button-1>", lambda e, u=url: open_url(u))
-    btn.bind("<Enter>", lambda e: btn.configure(fg=C_ACCENT_HOVER,
-              highlightbackground=C_ACCENT_HOVER))
-    btn.bind("<Leave>", lambda e: btn.configure(fg=color,
-              highlightbackground=color))
-    return btn
+              font=f["small"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(4, 0))
 
 
 # ═══════════════════════════════════════════════════════════════
