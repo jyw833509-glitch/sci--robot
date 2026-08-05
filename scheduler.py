@@ -22,7 +22,7 @@ scheduler.py —— 业务流水线 + 定时任务
 from __future__ import annotations
 
 import time
-from datetime import datetime
+from datetime import datetime, timedelta, time as dt_time
 from typing import Any, Dict, List, Optional
 
 from database import get_database
@@ -260,15 +260,24 @@ def backfill(cfg, start: str, end: str, no_push: bool = True) -> Dict[str, Any]:
 
 
 def start_scheduler(cfg) -> None:
-    """常驻进程，按配置的时间点每天执行任务（含系统托盘图标）。"""
+    """常驻进程，按配置的时间点每天执行任务（含系统托盘图标）。
+    不使用外部 schedule 库，自行实现定时逻辑以避免 PyInstaller 打包问题。"""
     global _running
-    try:
-        import schedule  # type: ignore
-    except ImportError as exc:  # pragma: no cover
-        raise RuntimeError("缺少依赖 schedule，请执行： pip install -r requirements.txt") from exc
 
     run_at: List[str] = [str(t).strip() for t in (cfg.get("scheduler.run_at") or ["08:30"])]
     run_on_start = bool(cfg.get("scheduler.run_on_start", False))
+
+    # 解析定时任务时间列表
+    job_times: List[dt_time] = []
+    for t in run_at:
+        try:
+            h, m = map(int, t.split(":"))
+            job_times.append(dt_time(h, m))
+            log.info("已注册每日定时任务：%s", t)
+        except Exception as exc:
+            log.error("时间格式错误 %r（应为 HH:MM）：%s", t, exc)
+    if not job_times:
+        raise RuntimeError("没有成功注册任何定时任务，请检查 scheduler.run_at 配置")
 
     _running = True
 
@@ -282,29 +291,51 @@ def start_scheduler(cfg) -> None:
         except Exception as exc:  # pragma: no cover
             log.exception("定时任务执行异常：%s", exc)
 
-    schedule.clear()
-    for t in run_at:
-        try:
-            schedule.every().day.at(t).do(job)
-            log.info("已注册每日定时任务：%s", t)
-        except Exception as exc:
-            log.error("时间格式错误 %r（应为 HH:MM）：%s", t, exc)
+    # 计算下次运行时间
+    def _next_run_time() -> Optional[datetime]:
+        """返回最近一个未过期的定时时间点（datetime）。"""
+        now = datetime.now()
+        today = now.date()
+        candidates = [
+            datetime.combine(today, t) for t in sorted(job_times)
+        ]
+        # 如果所有时间点都已过，返回明天的第一个
+        future = [c for c in candidates if c > now]
+        if future:
+            return future[0]
+        return datetime.combine(today + timedelta(days=1), sorted(job_times)[0])
 
-    if not schedule.get_jobs():
-        raise RuntimeError("没有成功注册任何定时任务，请检查 scheduler.run_at 配置")
+    def _should_run_now(now: datetime, last_run_date: list) -> bool:
+        """检查是否需要在这个时间点执行。「last_run_date」用 list 包装以支持闭包内修改。"""
+        now_time = now.time()
+        for jt in sorted(job_times):
+            # 在当前分钟窗口内
+            if abs((now.hour * 60 + now.minute) - (jt.hour * 60 + jt.minute)) <= 1:
+                key = (now.date(), jt)
+                if key not in last_run_date:
+                    last_run_date.append(key)
+                    return True
+        return False
 
     # ---- 调度循环跑在后台线程 ----
     import threading
 
     def _scheduler_loop() -> None:
+        last_run: list = []  # 已执行的 (date, time) 记录
         if run_on_start:
             log.info("run_on_start=true，先立即执行一次")
             job()
-        next_run = schedule.next_run()
+        next_run = _next_run_time()
         log.info("调度器已启动，下一次运行：%s",
                  next_run.strftime("%Y-%m-%d %H:%M:%S") if next_run else "未知")
         while _running:
-            schedule.run_pending()
+            now = datetime.now()
+            if _should_run_now(now, last_run):
+                log.info("到达预定时间，开始执行每日任务")
+                job()
+                # 清理过期记录
+                today = now.date()
+                last_run[:] = [k for k in last_run if k[0] >= today]
             time.sleep(20)
         log.info("调度器线程已退出")
 
