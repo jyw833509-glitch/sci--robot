@@ -43,4 +43,6 @@ jobs:
           # 强制纳入翻译缓存库，使后续运行只翻译新增文献、显著加速（公开仓库会暴露 PMID 历史，无敏感信息）
           git add -f data/literature.db
           git commit -m "chore: 更新内容日历 $(date +%F)" || echo "无变更，跳过提交"
+          # 先拉取远程最新提交，避免 push 冲突
+          git pull --rebase origin main || echo "拉取失败，尝试直接推送"
           git push
