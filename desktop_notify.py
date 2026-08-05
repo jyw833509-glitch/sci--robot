@@ -54,29 +54,30 @@ def _on_link_leave(event, orig_color):
 
 
 # ═══════════════════════════════════════════════════════════════
-# 字体 — 优先 Segoe UI (Win11), 回退 Microsoft YaHei
+# 字体 — 中文宋体 / 英文 Times New Roman，衬线窄体省空间
 # ═══════════════════════════════════════════════════════════════
 def _make_fonts():
-    families = ["Segoe UI", "Microsoft YaHei"]
+    # Times New Roman 优先（英文衬线），SimSun 回退（中文宋体）
+    families = ["Times New Roman", "SimSun"]
     try:
         return {
-            "title":   Font(family=families[0], size=15, weight="bold"),
-            "heading": Font(family=families[0], size=12, weight="bold"),
-            "body":    Font(family=families[0], size=10),
-            "small":   Font(family=families[0], size=9),
-            "tiny":    Font(family=families[0], size=8),
-            "link":    Font(family=families[0], size=9, underline=False),
-            "badge":   Font(family=families[0], size=11, weight="bold"),
+            "title":   Font(family=families[0], size=13, weight="bold"),
+            "heading": Font(family=families[0], size=11, weight="bold"),
+            "body":    Font(family=families[0], size=9),
+            "small":   Font(family=families[0], size=8),
+            "tiny":    Font(family=families[0], size=7),
+            "link":    Font(family=families[0], size=8, underline=False),
+            "badge":   Font(family=families[0], size=10, weight="bold"),
         }
     except Exception:
         return {
-            "title":   Font(size=15, weight="bold"),
-            "heading": Font(size=12, weight="bold"),
-            "body":    Font(size=10),
-            "small":   Font(size=9),
-            "tiny":    Font(size=8),
-            "link":    Font(size=9, underline=False),
-            "badge":   Font(size=11, weight="bold"),
+            "title":   Font(size=13, weight="bold"),
+            "heading": Font(size=11, weight="bold"),
+            "body":    Font(size=9),
+            "small":   Font(size=8),
+            "tiny":    Font(size=7),
+            "link":    Font(size=8, underline=False),
+            "badge":   Font(size=10, weight="bold"),
         }
 
 
@@ -156,7 +157,7 @@ def _build_header(card, title, f, win, root):
 
     # 红绿灯关闭按钮
     close_btn = Label(header, text="●", bg=C_HEADER_BG, fg=C_CLOSE,
-                      font=Font(family="Segoe UI", size=14), cursor="hand2")
+                      font=Font(family="Times New Roman", size=14), cursor="hand2")
     close_btn.pack(side=LEFT)
     close_btn.bind("<Button-1>", lambda e: _close(root, win))
     close_btn.bind("<Enter>", lambda e: close_btn.configure(fg=C_CLOSE_HOVER))
