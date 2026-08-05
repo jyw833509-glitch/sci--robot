@@ -221,11 +221,10 @@ def cmd_schedule(args) -> int:
 
     # 如果配置了 run_on_start，启动时立刻跑一次
     if cfg.get("scheduler.run_on_start", False):
-        from notifier import Notifier
-        from scheduler import _trigger_run
+        from scheduler import run_once
         try:
             print("[启动] 立即推送今日文献...")
-            _trigger_run(cfg)
+            run_once(cfg)
         except Exception as exc:
             print(f"[启动] 推送失败: {exc}")
 
