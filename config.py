@@ -31,7 +31,7 @@ EXAMPLE_CONFIG_FILE = BASE_DIR / "config.example.yaml"
 # --------------------------------------------------------------------------
 DEFAULTS: Dict[str, Any] = {
     "app": {
-        "name": "抗体纯化文献推送机器人",
+        "name": "SciRobot",
         "log_level": "INFO",
         "log_dir": "logs",
         "report_dir": "reports",
@@ -39,7 +39,7 @@ DEFAULTS: Dict[str, Any] = {
     "pubmed": {
         "api_key": "",
         "email": "",
-        "tool": "antibody-purification-bot",
+        "tool": "scirobot",
         "query": "",
         "keyword_groups": [
             ["monoclonal antibody", "therapeutic antibody", "mAb"],
@@ -131,7 +131,7 @@ DEFAULTS: Dict[str, Any] = {
         "feed_upload_cmd": "",
     },
     "report": {
-        "title": "抗体纯化文献日报",
+        "title": "SciRobot 文献日报",
         "max_items": 30,
         "show_english_abstract": True,
         "fold_english_abstract": True,
@@ -157,7 +157,7 @@ DEFAULTS: Dict[str, Any] = {
             "username": "",
             "password": "",
             "from_addr": "",
-            "sender_name": "抗体纯化文献机器人",
+            "sender_name": "SciRobot",
             "to": [],
             "cc": [],
             "attach_markdown": False,

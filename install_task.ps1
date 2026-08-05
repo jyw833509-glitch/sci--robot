@@ -9,7 +9,7 @@
 
 param(
     [string]$Time = "08:30",
-    [string]$TaskName = "AntibodyPurificationLiteratureBot",
+    [string]$TaskName = "SciRobot",
     [switch]$Uninstall
 )
 
@@ -54,7 +54,7 @@ Register-ScheduledTask `
     -Action      $action `
     -Trigger     $trigger `
     -Settings    $settings `
-    -Description "抗体纯化文献自动订阅推送机器人 - 每日 $Time 执行" | Out-Null
+    -Description "SciRobot 文献推送机器人 - 每日 $Time 执行" | Out-Null
 
 Write-Host ""
 Write-Host "[完成] 计划任务已注册" -ForegroundColor Green

@@ -341,7 +341,7 @@ class PubMedClient:
         self.cfg = cfg
         self.api_key = (cfg.get("pubmed.api_key") or "").strip()
         self.email = (cfg.get("pubmed.email") or "").strip()
-        self.tool = cfg.get("pubmed.tool") or "antibody-purification-bot"
+        self.tool = cfg.get("pubmed.tool") or "scirobot"
         self.timeout = int(cfg.get("pubmed.timeout", 30))
         self.max_retries = int(cfg.get("pubmed.max_retries", 3))
         self.backoff = float(cfg.get("pubmed.retry_backoff", 2.0))

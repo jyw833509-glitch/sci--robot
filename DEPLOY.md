@@ -17,7 +17,7 @@
 
 ```bash
 # 1. 取到代码
-cd 文献推送机器人
+cd scirobot
 
 # 2. 建虚拟环境
 python -m venv .venv
@@ -60,13 +60,13 @@ powershell -ExecutionPolicy Bypass -File .\install_task.ps1
 powershell -ExecutionPolicy Bypass -File .\install_task.ps1 -Time "07:30"
 ```
 
-脚本会注册一个名为 `AntibodyPurificationLiteratureBot` 的每日任务，调用 `run_daily.bat`。
+脚本会注册一个名为 `SciRobot` 的每日任务，调用 `run_daily.bat`。
 
 ### A2. 验证与管理
 
 ```powershell
-Start-ScheduledTask   -TaskName AntibodyPurificationLiteratureBot   # 立即执行一次
-Get-ScheduledTaskInfo -TaskName AntibodyPurificationLiteratureBot   # 查看上次运行结果
+Start-ScheduledTask   -TaskName SciRobot   # 立即执行一次
+Get-ScheduledTaskInfo -TaskName SciRobot   # 查看上次运行结果
 powershell -ExecutionPolicy Bypass -File .\install_task.ps1 -Uninstall  # 卸载
 ```
 
@@ -76,7 +76,7 @@ powershell -ExecutionPolicy Bypass -File .\install_task.ps1 -Uninstall  # 卸载
 
 1. `Win + R` → `taskschd.msc` 打开任务计划程序
 2. 右侧「创建基本任务」→ 名称随便填 → 触发器选「每天」→ 时间 08:30
-3. 操作选「启动程序」，程序填 `D:\company\文献推送机器人\run_daily.bat`，**起始于**填 `D:\company\文献推送机器人`（这一项必须填，否则相对路径会出错）
+3. 操作选「启动程序」，程序填 `D:\company\scirobot\run_daily.bat`，**起始于**填 `D:\company\scirobot`（这一项必须填，否则相对路径会出错）
 4. 完成后在任务属性里勾选「**如果错过计划开始时间，请尽快启动任务**」——这样早上开机晚了也能补跑
 
 ### A4. 注意
@@ -99,8 +99,8 @@ powershell -ExecutionPolicy Bypass -File .\install_task.ps1 -Uninstall  # 卸载
 ### C1. 部署代码
 
 ```bash
-sudo mkdir -p /opt/antibody-bot && sudo chown $USER:$USER /opt/antibody-bot
-cd /opt/antibody-bot
+sudo mkdir -p /opt/scirobot && sudo chown $USER:$USER /opt/scirobot
+cd /opt/scirobot
 # 上传或 git clone 代码到这里
 
 python3 -m venv .venv
@@ -127,13 +127,13 @@ crontab -e
 加一行（每天 08:30 执行）：
 
 ```cron
-30 8 * * * cd /opt/antibody-bot && ./.venv/bin/python main.py run >> logs/cron.log 2>&1
+30 8 * * * cd /opt/scirobot && ./.venv/bin/python main.py run >> logs/cron.log 2>&1
 ```
 
 多个时间点：
 
 ```cron
-30 8,18 * * * cd /opt/antibody-bot && ./.venv/bin/python main.py run >> logs/cron.log 2>&1
+30 8,18 * * * cd /opt/scirobot && ./.venv/bin/python main.py run >> logs/cron.log 2>&1
 ```
 
 检查是否生效：`crontab -l`，日志看 `logs/bot.log`。
@@ -141,18 +141,18 @@ crontab -e
 ### C3. 方式二：systemd（进程常驻，自动拉起）
 
 ```bash
-sudo cp deploy/antibody-bot.service /etc/systemd/system/
-sudo vim /etc/systemd/system/antibody-bot.service   # 改 User / WorkingDirectory / ExecStart 路径
+sudo cp deploy/scirobot.service /etc/systemd/system/
+sudo vim /etc/systemd/system/scirobot.service   # 改 User / WorkingDirectory / ExecStart 路径
 sudo systemctl daemon-reload
-sudo systemctl enable --now antibody-bot
+sudo systemctl enable --now scirobot
 ```
 
 常用命令：
 
 ```bash
-systemctl status  antibody-bot     # 查看状态
-journalctl -u antibody-bot -f      # 实时日志
-sudo systemctl restart antibody-bot
+systemctl status  scirobot     # 查看状态
+journalctl -u scirobot -f      # 实时日志
+sudo systemctl restart scirobot
 ```
 
 > cron 和 systemd 二选一即可，别同时开，否则一天会推两次。
@@ -192,8 +192,8 @@ environment:
 ### D4. 手动跑一次（不等定时）
 
 ```bash
-docker compose exec literature-bot python main.py run
-docker compose exec literature-bot python main.py stats
+docker compose exec scirobot python main.py run
+docker compose exec scirobot python main.py stats
 ```
 
 ### D5. 数据持久化
@@ -232,7 +232,7 @@ git pull                                   # 或覆盖代码文件
 pip install -r requirements.txt            # 依赖有变动时
 python main.py check                       # 确认配置仍然有效
 # Docker: docker compose up -d --build
-# systemd: sudo systemctl restart antibody-bot
+# systemd: sudo systemctl restart scirobot
 ```
 
 `config.yaml` 和 `data/` 都在 `.gitignore` 里，升级不会被覆盖。

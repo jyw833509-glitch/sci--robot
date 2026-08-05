@@ -34,7 +34,7 @@ from logger import get_logger, setup_logging  # noqa: E402
 
 BANNER = r"""
 +------------------------------------------------------------+
-|          抗体纯化文献 · 自动订阅推送机器人                  |
+|          SciRobot  ·  文献自动推送机器人                      |
 |       PubMed -> 去重 -> 中文翻译 -> 日报 -> 弹窗/邮件       |
 +------------------------------------------------------------+
 """
@@ -258,7 +258,7 @@ def cmd_publish(args) -> int:
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="main.py",
-        description="抗体纯化文献自动订阅推送机器人",
+        description="SciRobot 文献自动推送机器人",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )

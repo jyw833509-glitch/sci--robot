@@ -6,7 +6,7 @@
 # =============================================================
 
 # =============================================================
-#  抗体纯化文献自动订阅推送机器人  ——  配置文件模板
+#  SciRobot  ——  配置文件模板
 #  使用方法：复制本文件为 config.yaml 后按需修改
 #      Windows:  copy config.example.yaml config.yaml
 #      Linux  :  cp   config.example.yaml config.yaml
@@ -15,7 +15,7 @@
 # =============================================================
 
 app:
-  name: "抗体纯化文献推送机器人"
+  name: "SciRobot"
   # 日志级别：DEBUG / INFO / WARNING / ERROR
   log_level: "INFO"
   log_dir: "logs"
@@ -29,7 +29,7 @@ pubmed:
   api_key: ""
   # NCBI 要求调用方标识自己，建议填写真实邮箱（不会被公开）
   email: ""
-  tool: "antibody-purification-bot"
+  tool: "scirobot"
 
   # 【方式一】直接写死完整 PubMed 检索式；留空则用下面的 keyword_groups 自动拼装
   query: ""
@@ -227,7 +227,7 @@ content:
 
 # ------------------------- 4. 日报 -------------------------
 report:
-  title: "抗体纯化文献日报"
+  title: "SciRobot 文献日报"
   # 单期日报最多展示条数（超出部分仅入库不展示）
   max_items: 30
   # 是否在日报中同时展示英文原文摘要
@@ -273,7 +273,7 @@ notifier:
     username: "your_account@qq.com"
     password: ""           # QQ/163 请填授权码，不是登录密码！
     from_addr: ""          # 留空则使用 username
-    sender_name: "抗体纯化文献机器人"
+    sender_name: "SciRobot"
     to:
       - "receiver1@example.com"
     cc: []

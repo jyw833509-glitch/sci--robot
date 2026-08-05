@@ -1,8 +1,8 @@
 services:
-  literature-bot:
+  scirobot:
     build: .
-    image: antibody-literature-bot:latest
-    container_name: antibody-literature-bot
+    image: scirobot:latest
+    container_name: scirobot
     restart: unless-stopped
     environment:
       TZ: Asia/Shanghai

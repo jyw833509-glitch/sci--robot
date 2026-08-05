@@ -1,4 +1,4 @@
-# 抗体纯化文献自动订阅推送机器人
+# SciRobot — 抗体纯化文献自动推送机器人
 
 每天定时检索 PubMed 上新发表的**单抗纯化 / 层析 / 下游工艺**相关论文，自动翻译成中文摘要，生成日报并以**桌面弹窗**（或邮件 / 群机器人）推送到你面前。历史文献写入 SQLite，**同一篇永远不会推送第二次**。
 
@@ -28,7 +28,7 @@ PubMed 检索  →  相关度打分降噪  →  SQLite 去重  →  中文翻译
 ## 2. 项目结构
 
 ```
-文献推送机器人/
+scirobot/
 ├── main.py                 命令行入口（init / check / run / schedule / test-mail / stats / backfill）
 ├── config.py               配置加载：YAML + 默认值 + 环境变量覆盖
 ├── logger.py               统一日志（控制台 + logs/bot.log 按天切分）
@@ -48,7 +48,7 @@ PubMed 检索  →  相关度打分降噪  →  SQLite 去重  →  中文翻译
 ├── Dockerfile              容器化部署
 ├── docker-compose.yml      容器编排
 ├── deploy/
-│   └── antibody-bot.service  Linux systemd 服务单元
+│   └── scirobot.service  Linux systemd 服务单元
 │
 ├── data/literature.db      SQLite 数据库（自动生成）
 ├── reports/YYYY-MM-DD.html 每日日报（自动生成）
@@ -62,7 +62,7 @@ PubMed 检索  →  相关度打分降噪  →  SQLite 去重  →  中文翻译
 ### 3.1 安装
 
 ```bash
-cd 文献推送机器人
+cd scirobot
 
 # 建虚拟环境（推荐）
 python -m venv .venv

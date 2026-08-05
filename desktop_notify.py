@@ -6,7 +6,7 @@ desktop_notify.py —— 桌面弹窗（tkinter）
 
 payload.json 结构：
     {
-      "title": "抗体纯化文献日报",
+      "title": "SciRobot 文献日报",
       "articles": [
         {
           "pmid": "...", "title": "...", "title_zh": "...",
@@ -141,7 +141,7 @@ def build_card(parent: tk.Widget, art: dict, index: int) -> None:
 
 def run_window(data: dict) -> None:
     articles = data.get("articles", [])
-    title = data.get("title", "抗体纯化文献日报")
+    title = data.get("title", "SciRobot 文献日报")
 
     root = tk.Tk()
     root.title(title)

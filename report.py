@@ -175,7 +175,7 @@ def _render_article_html(index: int, a: Article, cfg) -> str:
 
 
 def _render_html(articles: Sequence[Article], cfg, report_date: str, total_found: int) -> str:
-    title = cfg.get("report.title", "抗体纯化文献日报")
+    title = cfg.get("report.title", "SciRobot 文献日报")
     cards = "".join(_render_article_html(i, a, cfg) for i, a in enumerate(articles, 1))
 
     if not articles:
@@ -201,7 +201,7 @@ def _render_html(articles: Sequence[Article], cfg, report_date: str, total_found
 
     <div style="background:linear-gradient(135deg,{C_PRIMARY_DARK} 0%,{C_ACCENT} 100%);
                 border-radius:12px;padding:26px 24px;color:#fff;">
-      <div style="font-size:12px;letter-spacing:2px;opacity:.85;">ANTIBODY PURIFICATION LITERATURE</div>
+      <div style="font-size:12px;letter-spacing:2px;opacity:.85;">SCIROBOT</div>
       <div style="font-size:24px;font-weight:700;margin-top:6px;">{_esc(title)}</div>
       <div style="font-size:13px;margin-top:10px;opacity:.9;">
         {_esc(report_date)}　·　本期 {len(articles)} 篇　·　检索命中 {total_found} 篇
@@ -213,7 +213,7 @@ def _render_html(articles: Sequence[Article], cfg, report_date: str, total_found
 
     <div style="text-align:center;color:{C_LIGHT};font-size:11px;line-height:1.9;padding:18px 10px 4px;">
       数据来源：PubMed (NCBI E-utilities){provider_note}<br>
-      由「抗体纯化文献自动订阅推送机器人」生成于 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}<br>
+      由「SciRobot」生成于 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}<br>
       如需调整关键词、推送时间或收件人，请修改 config.yaml
     </div>
 
@@ -227,7 +227,7 @@ def _render_html(articles: Sequence[Article], cfg, report_date: str, total_found
 # Markdown
 # --------------------------------------------------------------------------
 def _render_markdown(articles: Sequence[Article], cfg, report_date: str, total_found: int) -> str:
-    title = cfg.get("report.title", "抗体纯化文献日报")
+    title = cfg.get("report.title", "SciRobot 文献日报")
     show_en = bool(cfg.get("report.show_english_abstract", True))
 
     lines: List[str] = [
@@ -278,7 +278,7 @@ def _render_markdown(articles: Sequence[Article], cfg, report_date: str, total_f
         lines += ["---", ""]
 
     lines += [
-        f"*本报告由「抗体纯化文献自动订阅推送机器人」生成于 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*",
+        f"*本报告由「SciRobot」生成于 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}*",
         "",
     ]
     return "\n".join(lines)
@@ -288,7 +288,7 @@ def _render_markdown(articles: Sequence[Article], cfg, report_date: str, total_f
 # 纯文本
 # --------------------------------------------------------------------------
 def _render_text(articles: Sequence[Article], cfg, report_date: str, total_found: int) -> str:
-    title = cfg.get("report.title", "抗体纯化文献日报")
+    title = cfg.get("report.title", "SciRobot 文献日报")
     lines = [f"{title}  {report_date}", f"本期 {len(articles)} 篇 / 检索命中 {total_found} 篇", "=" * 46, ""]
     if not articles:
         lines.append("今日没有检索到符合条件的新文献。")
@@ -323,7 +323,7 @@ def build_report(
     shown = ordered[:max_items] if max_items > 0 else ordered
     total = total_found if total_found is not None else len(articles)
 
-    title = cfg.get("report.title", "抗体纯化文献日报")
+    title = cfg.get("report.title", "SciRobot 文献日报")
     subject = (
         f"[{title}] {report_date}　{len(shown)} 篇新文献"
         if shown else f"[{title}] {report_date}　今日无新文献"

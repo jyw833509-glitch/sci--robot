@@ -159,7 +159,7 @@ class EmailNotifier:
         <div style="font-family:'PingFang SC','Microsoft YaHei',sans-serif;max-width:600px;margin:0 auto;">
           <div style="background:linear-gradient(135deg,#155e75,#0891b2);color:#fff;padding:22px;border-radius:12px;">
             <div style="font-size:20px;font-weight:700;">SMTP 配置测试成功</div>
-            <div style="font-size:13px;margin-top:8px;opacity:.9;">抗体纯化文献自动订阅推送机器人</div>
+            <div style="font-size:13px;margin-top:8px;opacity:.9;">SciRobot</div>
           </div>
           <div style="padding:18px 4px;color:#334155;font-size:14px;line-height:1.9;">
             如果你收到这封邮件，说明邮件推送链路已经打通。<br>
@@ -199,7 +199,7 @@ class WebhookNotifier:
 
     # ---------- 正文 ----------
     def _build_markdown(self, report: Report) -> str:
-        title = self.cfg.get("report.title", "抗体纯化文献日报")
+        title = self.cfg.get("report.title", "SciRobot 文献日报")
         if report.is_empty:
             return f"**{title} · {report.report_date}**\n\n今日没有检索到符合条件的新文献。"
 
@@ -337,7 +337,7 @@ class DesktopNotifier:
         self.enabled = bool(d.get("enabled", True))
         self.mode = str(d.get("mode", "window")).lower()
         self.timeout = int(d.get("timeout", 0) or 0)
-        self.title = cfg.get("report.title", "抗体纯化文献日报")
+        self.title = cfg.get("report.title", "SciRobot 文献日报")
 
     def ready(self) -> bool:
         return True
