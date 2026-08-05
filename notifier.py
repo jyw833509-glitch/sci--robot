@@ -357,6 +357,7 @@ class DesktopNotifier:
         return {
             "title": self.title,
             "articles": [_article_to_dict(a) for a in (articles or [])],
+            "auto_close_seconds": self.timeout,
         }
 
     def send(self, report: "Report") -> bool:

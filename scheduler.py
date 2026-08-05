@@ -356,6 +356,14 @@ def _run_tray(cfg) -> None:
     import atexit
     import tkinter as tk
 
+    # ---- 隐藏控制台窗口（如果存在）----
+    try:
+        console_hwnd = ctypes.windll.kernel32.GetConsoleWindow()
+        if console_hwnd:
+            ctypes.windll.user32.ShowWindow(console_hwnd, 0)  # SW_HIDE = 0
+    except Exception:
+        pass
+
     # ---- Windows 托盘常量 ----
     WM_TRAYICON = 0x0400 + 1
     NIM_ADD = 0x00000000
@@ -449,6 +457,7 @@ def _run_tray(cfg) -> None:
         elif cmd == 1002:
             global _running
             _running = False
+            _cleanup()
 
     # ---- PeekMessage 轮询 ----
     def _poll_messages():
