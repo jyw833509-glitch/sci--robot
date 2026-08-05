@@ -29,3 +29,6 @@ Thumbs.db
 
 # WorkBuddy 内部工作记忆（含构建笔记，不应进入公开仓库）
 .workbuddy/
+
+# 发给同事的打包产物（本地分发用，不进仓库）
+dist/
