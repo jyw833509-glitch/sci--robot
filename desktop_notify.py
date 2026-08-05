@@ -36,7 +36,7 @@ C_CLOSE        = "#ff5f57"   # 红绿灯 — 关闭
 C_CLOSE_HOVER  = "#ff3b30"
 
 # 窗口尺寸
-WIN_W = 500
+WIN_W = 540
 WIN_H = 680
 
 
@@ -152,6 +152,13 @@ def show_popup(data: dict) -> None:
     win.update_idletasks()
     if canvas:
         canvas.update_idletasks()
+        # 保险：强制把 inner 宽度同步为 Canvas 实际显示宽度
+        if hasattr(canvas, '_inner') and hasattr(canvas, '_inner_id'):
+            cw = canvas.winfo_width()
+            if cw > 1:
+                canvas._inner.config(width=cw)
+                canvas.itemconfig(canvas._inner_id, width=cw)
+        # 刷新滚动区域
         bbox = canvas.bbox("all")
         if bbox:
             canvas.configure(scrollregion=bbox)
@@ -224,13 +231,18 @@ def _show_articles(parent, articles, f):
     canvas.pack(side=LEFT, fill=BOTH, expand=True)
 
     # ── 内部内容 Frame ──
-    inner = Frame(canvas, bg=C_CARD_BG)
+    inner = Frame(canvas, bg=C_CARD_BG, padx=8)   # 8px 缓冲防止左侧截断
     inner_id = canvas.create_window((0, 0), window=inner, anchor="nw")
+    # 把引用存到 canvas 上，供外部做最终保险同步
+    canvas._inner = inner
+    canvas._inner_id = inner_id
 
     # Canvas 宽度变化时同步内部 frame 宽度
     def _on_canvas_configure(event):
-        inner.config(width=event.width)   # 让 pack 布局按 Canvas 实际宽度重算
-        canvas.itemconfig(inner_id, width=event.width)
+        w = event.width
+        if w > 1:
+            inner.config(width=w)
+            canvas.itemconfig(inner_id, width=w)
     canvas.bind("<Configure>", _on_canvas_configure)
 
     # 内部 frame 大小变化时刷新滚动区域
@@ -251,8 +263,8 @@ def _show_articles(parent, articles, f):
 
 
 # 可用内容宽度（用于 wraplength）
-# 窗口 500 - outer padx 20 - scrollbar 14 - card padding 26 = 440
-_AVAILABLE_W = 440
+# 窗口 540 - outer padx 20 - scrollbar 16 - inner padx 16 - card padx 32 = 456
+_AVAILABLE_W = 450
 
 
 # ═══════════════════════════════════════════════════════════════
