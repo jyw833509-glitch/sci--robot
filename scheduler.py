@@ -559,19 +559,47 @@ def _run_tray(cfg) -> None:
             pt.x, pt.y, 0, hwnd_, None,
         )
         ctypes.windll.user32.DestroyMenu(menu)
+        log.info("托盘菜单选择: cmd=%s", cmd)
         if cmd == 1001:
             _tray_event_flags.append("popup")
+            log.info("托盘事件: 加入 popup 标志")
         elif cmd == 1002:
             _tray_event_flags.append("quit")
+            log.info("托盘事件: 加入 quit 标志")
+
+    # ---- 设置 CallWindowProcW 的正确签名（64-bit 下 LR ESULT 是 8 字节）----
+    _CallWindowProcW = ctypes.windll.user32.CallWindowProcW
+    _CallWindowProcW.argtypes = [
+        WNDPROC, ctypes.wintypes.HWND, ctypes.wintypes.UINT,
+        ctypes.wintypes.WPARAM, ctypes.wintypes.LPARAM,
+    ]
+    _CallWindowProcW.restype = ctypes.c_longlong
 
     # ---- 新的窗口过程（subclass tkinter 窗口）----
+    _tray_msg_count = [0]  # 使用列表以便在闭包中修改
+
     @WNDPROC
     def _new_wndproc(hwnd_, msg, wparam, lparam):
+        _tray_msg_count[0] += 1
+        is_tray = (msg == WM_TRAYICON)
+
+        # 首条消息确认 subclass 生效；托盘消息始终记录
+        if _tray_msg_count[0] == 1:
+            log.info("WNDPROC subclass 已生效！首条消息 msg=0x%x", msg)
+        if is_tray:
+            log.info("收到托盘消息: lParam=0x%x wParam=0x%x（总消息#%d）",
+                     lparam, wparam, _tray_msg_count[0])
+        if _tray_msg_count[0] % 5000 == 0:
+            log.info("WNDPROC 已处理 %d 条消息", _tray_msg_count[0])
+
         if msg == WM_TRAYICON:
+            log.info("收到托盘消息: lParam=0x%x wParam=0x%x", lparam, wparam)
             if lparam == WM_RBUTTONUP:
+                log.info("托盘右键 → 显示菜单")
                 _tray_show_menu(hwnd_)
                 return 0
             elif lparam in (WM_LBUTTONUP, WM_LBUTTONDBLCLK):
+                log.info("托盘左键/双击 → 弹出文献")
                 _tray_event_flags.append("popup")
                 return 0
         elif msg == WM_TASKBAR_CREATED:
@@ -579,7 +607,7 @@ def _run_tray(cfg) -> None:
             _tray_add_icon(hwnd_)
             return 0
         # 其余消息转发给原始窗口过程
-        return ctypes.windll.user32.CallWindowProcW(
+        return _CallWindowProcW(
             _tray_wndproc_prev, hwnd_, msg, wparam, lparam,
         )
 
