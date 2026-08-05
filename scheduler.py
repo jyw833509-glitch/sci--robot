@@ -415,17 +415,18 @@ def _run_tray(cfg) -> None:
         ico_path = os.path.join(tempfile.gettempdir(), "scirobot_tray.ico")
         img.save(ico_path, format="ICO", sizes=[(64, 64)])
         atexit.register(lambda p=ico_path: os.remove(p) if os.path.exists(p) else None)
-        hinst = ctypes.windll.kernel32.GetModuleHandleW(None)
+        # LR_LOADFROMFILE 时 hinst 必须为 NULL(0)，否则 LoadImageW 失败
         hicon = ctypes.windll.user32.LoadImageW(
-            hinst, ico_path, IMAGE_ICON,
+            0, ico_path, IMAGE_ICON,
             ctypes.windll.user32.GetSystemMetrics(SM_CXSMICON),
             ctypes.windll.user32.GetSystemMetrics(SM_CYSMICON),
             LR_LOADFROMFILE,
         )
     except Exception as exc:
         log.warning("生成托盘图标失败：%s，使用系统默认图标", exc)
-        hicon = ctypes.windll.user32.LoadIconW(None, IDI_APPLICATION)
+        hicon = None
 
+    # 兜底：如果 hicon 无效，用系统默认图标
     # ---- Shell_NotifyIcon 结构 ----
     class NOTIFYICONDATAW(ctypes.Structure):
         _fields_ = [
@@ -444,13 +445,22 @@ def _run_tray(cfg) -> None:
             ("dwInfoFlags", ctypes.wintypes.DWORD),
         ]
 
+    # 兜底：确保 hicon 有效（在 nid 创建之后处理标志位）
+    if not hicon:
+        hicon = ctypes.windll.user32.LoadIconW(None, IDI_APPLICATION)
+
     nid = NOTIFYICONDATAW()
     nid.cbSize = ctypes.sizeof(NOTIFYICONDATAW)
     nid.uID = 1
-    nid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP
     nid.uCallbackMessage = WM_TRAYICON
-    nid.hIcon = hicon
     nid.szTip = "SciRobot 文献推送"
+    nid.hIcon = hicon or 0
+    # 有图标才设 NIF_ICON 标志；无图标至少 NIF_MESSAGE+NIF_TIP 能让托盘文字提示工作
+    nid.uFlags = NIF_MESSAGE | NIF_TIP
+    if hicon:
+        nid.uFlags |= NIF_ICON
+    else:
+        log.warning("托盘图标加载失败，将以纯文字提示方式运行")
 
     # ============================================================
     # 后台线程：纯 Win32 消息窗口 + 消息循环
