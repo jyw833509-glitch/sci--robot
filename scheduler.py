@@ -346,46 +346,64 @@ def start_scheduler(cfg) -> None:
     _run_tray(cfg)
 
 
-def _run_tray(cfg) -> None:
-    """启动系统托盘图标（纯 Win32 API + tkinter，零外部依赖），阻塞直到用户退出。
+# 托盘事件队列（由托盘线程写入，tkinter 主线程消费）
+# 放在模块级别以避免闭包引用问题
+import queue as _tray_queue_module
+_tray_event_queue: "_tray_queue_module.Queue" = _tray_queue_module.Queue()
 
-    用 SetWindowLongPtrW 子类化窗口过程来拦截 WM_TRAYICON 消息。
-    不再使用 PeekMessageW 轮询（会与 tkinter 的 mainloop 竞争消息队列导致漏消息）。
+# 托盘线程引用
+_tray_thread_ref = None
+_tray_cleanup_ref = None  # 清理函数引用
+
+
+def _run_tray(cfg) -> None:
+    """启动系统托盘图标。
+
+    架构：独立线程创建纯 Win32 消息窗口（message-only window），
+    专门接收托盘回调消息；用线程安全队列通知 tkinter 主线程。
+    两个线程各自独立运行，彻底避免消息竞争。
     """
-    global _running
+    global _running, _tray_thread_ref, _tray_cleanup_ref
     import ctypes
     import ctypes.wintypes
     import os
     import tempfile
     import atexit
+    import threading
     import tkinter as tk
 
-    # ---- 隐藏控制台窗口（如果存在）----
+    # ---- 隐藏控制台 ----
     try:
-        console_hwnd = ctypes.windll.kernel32.GetConsoleWindow()
-        if console_hwnd:
-            ctypes.windll.user32.ShowWindow(console_hwnd, 0)  # SW_HIDE = 0
+        ctypes.windll.user32.ShowWindow(
+            ctypes.windll.kernel32.GetConsoleWindow(), 0)
     except Exception:
         pass
 
-    # ---- Windows 常量 ----
-    WM_TRAYICON = 0x0400 + 1
+    # ---- Win32 常量 ----
+    WM_TRAYICON = 0x8001  # WM_APP + 1
     NIM_ADD = 0x00000000
     NIM_DELETE = 0x00000002
+    NIM_SETVERSION = 0x00000004
     NIF_MESSAGE = 0x00000001
     NIF_ICON = 0x00000002
     NIF_TIP = 0x00000004
     WM_LBUTTONDBLCLK = 0x0203
     WM_RBUTTONUP = 0x0205
+    WM_LBUTTONUP = 0x0202
     IMAGE_ICON = 1
     LR_LOADFROMFILE = 0x00000010
     SM_CXSMICON = 49
     SM_CYSMICON = 50
     TPM_LEFTALIGN = 0x0000
     TPM_RIGHTBUTTON = 0x0002
-    GWLP_WNDPROC = -4
+    HWND_MESSAGE = -3
+    WS_POPUP = 0x80000000
+    CS_HREDRAW = 0x0002
+    CS_VREDRAW = 0x0001
+    COLOR_WINDOW = 5
+    IDI_APPLICATION = 32512
 
-    # ---- 用 PIL 生成 ico 图标文件 ----
+    # ---- 生成 ico ----
     ico_path = None
     hicon = None
     try:
@@ -406,14 +424,9 @@ def _run_tray(cfg) -> None:
         )
     except Exception as exc:
         log.warning("生成托盘图标失败：%s，使用系统默认图标", exc)
-        hicon = ctypes.windll.user32.LoadIconW(None, 32512)  # IDI_APPLICATION
+        hicon = ctypes.windll.user32.LoadIconW(None, IDI_APPLICATION)
 
-    # ---- 创建 tk 窗口（不 withdraw，用 1×1 最小化窗口确保消息可靠到达）----
-    root = tk.Tk()
-    root.withdraw()
-    hwnd = int(root.frame(), 16)
-
-    # ---- Shell_NotifyIcon 结构体 ----
+    # ---- Shell_NotifyIcon 结构 ----
     class NOTIFYICONDATAW(ctypes.Structure):
         _fields_ = [
             ("cbSize", ctypes.wintypes.DWORD),
@@ -433,108 +446,170 @@ def _run_tray(cfg) -> None:
 
     nid = NOTIFYICONDATAW()
     nid.cbSize = ctypes.sizeof(NOTIFYICONDATAW)
-    nid.hWnd = hwnd
     nid.uID = 1
     nid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP
     nid.uCallbackMessage = WM_TRAYICON
     nid.hIcon = hicon
     nid.szTip = "SciRobot 文献推送"
 
-    # ---- 窗口过程子类化：在 Win32 层拦截 WM_TRAYICON ----
-    # 关键：tkinter 的 mainloop 会用自己的消息泵消费 WM_TRAYICON 并交给
-    # DefWindowProc 丢弃。子类化窗口过程后，我们的回调先于 tkinter 处理消息。
-    #
-    # 必须把 SetWindowLongPtrW 的返回类型设为 c_longlong（64 位 LONG_PTR），
-    # 否则获取的旧 wndproc 地址会被截断为 32 位，CallWindowProcW 传错地址。
+    # ============================================================
+    # 后台线程：纯 Win32 消息窗口 + 消息循环
+    # ============================================================
+    _tray_stop = threading.Event()
 
-    _SWLP = ctypes.windll.user32.SetWindowLongPtrW
-    _SWLP.restype = ctypes.c_longlong
-    _SWLP.argtypes = [ctypes.wintypes.HWND, ctypes.c_int, ctypes.c_longlong]
-
-    _CWPP = ctypes.windll.user32.CallWindowProcW
-    _CWPP.restype = ctypes.c_longlong
-    _CWPP.argtypes = [ctypes.c_longlong, ctypes.wintypes.HWND,
-                      ctypes.wintypes.UINT, ctypes.wintypes.WPARAM,
-                      ctypes.wintypes.LPARAM]
-
+    # 窗口过程签名
     WNDPROC = ctypes.WINFUNCTYPE(
         ctypes.c_longlong,
         ctypes.wintypes.HWND, ctypes.wintypes.UINT,
         ctypes.wintypes.WPARAM, ctypes.wintypes.LPARAM,
     )
 
-    # 保存旧窗口过程地址（从 SetWindowLongPtrW 返回值获取）
-    old_wndproc_addr = _SWLP(hwnd, GWLP_WNDPROC, 0)  # 先读旧值
-
-    # 右键菜单 / 双击回调（使用 root.after_idle 调度到主线程执行）
-    def _show_menu():
+    # ---- 在消息窗口中显示右键菜单 ----
+    def _tray_show_menu(msg_hwnd):
         menu = ctypes.windll.user32.CreatePopupMenu()
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1001, "查看今日文献")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000800, 0, "")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1002, "退出 SciRobot")
         pt = ctypes.wintypes.POINT()
         ctypes.windll.user32.GetCursorPos(ctypes.byref(pt))
-        ctypes.windll.user32.SetForegroundWindow(hwnd)
+        ctypes.windll.user32.SetForegroundWindow(msg_hwnd)
         cmd = ctypes.windll.user32.TrackPopupMenu(
             menu, TPM_LEFTALIGN | TPM_RIGHTBUTTON,
-            pt.x, pt.y, 0, hwnd, None,
+            pt.x, pt.y, 0, msg_hwnd, None,
         )
         ctypes.windll.user32.DestroyMenu(menu)
         if cmd == 1001:
-            _trigger_popup_only(cfg)
+            _tray_event_queue.put("popup")
         elif cmd == 1002:
-            global _running
-            _running = False
-            _cleanup()
+            _tray_event_queue.put("quit")
 
-    # 新的窗口过程：拦截 WM_TRAYICON，其他消息原样转发
+    # ---- 消息窗口过程 ----
     @WNDPROC
-    def _new_wndproc(hwnd_, msg, wparam, lparam):
+    def _tray_wndproc(hwnd_, msg, wparam, lparam):
         if msg == WM_TRAYICON:
             if lparam == WM_RBUTTONUP:
-                root.after_idle(_show_menu)
+                _tray_show_menu(hwnd_)
                 return 0
             elif lparam == WM_LBUTTONDBLCLK:
-                root.after_idle(lambda: _trigger_popup_only(cfg))
+                _tray_event_queue.put("popup")
                 return 0
-        # 转发到旧窗口过程（tkinter）
-        return _CWPP(old_wndproc_addr, hwnd_, msg, wparam, lparam)
+            elif lparam == WM_LBUTTONUP:
+                _tray_event_queue.put("popup")
+                return 0
+        return ctypes.windll.user32.DefWindowProcW(hwnd_, msg, wparam, lparam)
 
-    # 安装新窗口过程；old_wndproc_addr 已在上方读取
-    _SWLP(hwnd, GWLP_WNDPROC, ctypes.cast(_new_wndproc, ctypes.c_void_p).value)
+    def _tray_thread():
+        """后台线程：注册窗口类 -> 创建消息窗口 -> 消息循环。"""
+        hinst = ctypes.windll.kernel32.GetModuleHandleW(None)
 
-    # ---- 添加托盘图标 ----
-    ctypes.windll.shell32.Shell_NotifyIconW(NIM_ADD, ctypes.byref(nid))
-    log.info("系统托盘图标已创建，右键退出 / 双击查看今日文献")
+        # 注册窗口类
+        class_name = "SciRobotTrayMsgWindow"
+        wndclass = ctypes.wintypes.WNDCLASSEXW()
+        wndclass.cbSize = ctypes.sizeof(ctypes.wintypes.WNDCLASSEXW)
+        wndclass.lpfnWndProc = _tray_wndproc
+        wndclass.hInstance = hinst
+        wndclass.lpszClassName = class_name
+        wndclass.style = CS_HREDRAW | CS_VREDRAW
+        wndclass.hbrBackground = COLOR_WINDOW + 1
 
-    # ---- 清理 ----
-    def _cleanup():
+        atom = ctypes.windll.user32.RegisterClassExW(ctypes.byref(wndclass))
+        if not atom:
+            log.error("托盘消息窗口类注册失败，错误码 %d",
+                      ctypes.windll.kernel32.GetLastError())
+            return
+
+        # 创建 message-only 窗口
+        msg_hwnd = ctypes.windll.user32.CreateWindowExW(
+            0, class_name, "", WS_POPUP,
+            0, 0, 0, 0, HWND_MESSAGE, None, hinst, None,
+        )
+        if not msg_hwnd:
+            log.error("托盘消息窗口创建失败，错误码 %d",
+                      ctypes.windll.kernel32.GetLastError())
+            return
+
+        # 挂载托盘图标
+        nid.hWnd = msg_hwnd
+        result = ctypes.windll.shell32.Shell_NotifyIconW(NIM_ADD, ctypes.byref(nid))
+        if not result:
+            log.error("Shell_NotifyIcon(ADD) 失败，错误码 %d",
+                      ctypes.windll.kernel32.GetLastError())
+            return
+        # 设置版本（Win2000+ 支持 NIF_INFO 等）
+        nid_ver = NOTIFYICONDATAW()
+        nid_ver.cbSize = ctypes.sizeof(NOTIFYICONDATAW)
+        nid_ver.hWnd = msg_hwnd
+        nid_ver.uID = 1
+        ctypes.windll.shell32.Shell_NotifyIconW(NIM_SETVERSION, ctypes.byref(nid_ver))
+
+        log.info("系统托盘图标已创建（独立消息窗口），右键退出 / 单击/双击查看今日文献")
+
+        # 消息循环
+        msg_struct = ctypes.wintypes.MSG()
+        while not _tray_stop.is_set():
+            # PeekMessage 非阻塞，60ms 轮询一次以响应停止信号
+            if ctypes.windll.user32.PeekMessageW(
+                ctypes.byref(msg_struct), None, 0, 0, 1,  # PM_REMOVE = 1
+            ):
+                ctypes.windll.user32.TranslateMessage(ctypes.byref(msg_struct))
+                ctypes.windll.user32.DispatchMessageW(ctypes.byref(msg_struct))
+            else:
+                # 用 WaitMessage + 短超时替代纯 sleep，更快响应
+                ctypes.windll.user32.WaitMessage()
+
+        # 清理托盘图标
         ctypes.windll.shell32.Shell_NotifyIconW(NIM_DELETE, ctypes.byref(nid))
+        log.info("托盘图标已删除")
+
+    # 清理函数
+    def _tray_cleanup():
+        _tray_stop.set()
+        # 给托盘消息线程发一条假消息以唤醒 WaitMessage
         if hicon:
             ctypes.windll.user32.DestroyIcon(hicon)
-        try:
-            # 恢复旧窗口过程（避免退出时崩溃）
-            _SWLP(hwnd, GWLP_WNDPROC, old_wndproc_addr)
-        except Exception:
-            pass
-        try:
-            root.destroy()
-        except Exception:
-            pass
 
-    def _on_close():
-        global _running
-        _running = False
-        _cleanup()
+    _tray_cleanup_ref = _tray_cleanup
 
-    root.protocol("WM_DELETE_WINDOW", _on_close)
+    _tray_thread_ref = threading.Thread(
+        target=_tray_thread, daemon=True, name="scirobot-tray")
+    _tray_thread_ref.start()
+
+    # ============================================================
+    # 主线程：tkinter 事件循环 + 消费托盘事件队列
+    # ============================================================
+    root = tk.Tk()
+    root.withdraw()
+
+    def _process_tray_events():
+        """定期检查托盘消息队列，在 tkinter 主线程执行回调。"""
+        try:
+            while True:
+                evt = _tray_event_queue.get_nowait()
+                if evt == "popup":
+                    _trigger_popup_only(cfg)
+                elif evt == "quit":
+                    global _running
+                    _running = False
+                    _tray_cleanup()
+                    root.destroy()
+                    return
+        except _tray_queue_module.Empty:
+            pass
+        root.after(150, _process_tray_events)
+
+    root.after(200, _process_tray_events)
+
     try:
         root.mainloop()
     except KeyboardInterrupt:
         pass
     finally:
-        _cleanup()
-    log.info("托盘图标已关闭")
+        _tray_cleanup()
+        try:
+            root.destroy()
+        except Exception:
+            pass
+    log.info("托盘进程已退出")
 
 
 # 全局变量供托盘菜单使用
