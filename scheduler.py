@@ -260,7 +260,8 @@ def backfill(cfg, start: str, end: str, no_push: bool = True) -> Dict[str, Any]:
 
 
 def start_scheduler(cfg) -> None:
-    """常驻进程，按配置的时间点每天执行任务。"""
+    """常驻进程，按配置的时间点每天执行任务（含系统托盘图标）。"""
+    global _running
     try:
         import schedule  # type: ignore
     except ImportError as exc:  # pragma: no cover
@@ -268,6 +269,8 @@ def start_scheduler(cfg) -> None:
 
     run_at: List[str] = [str(t).strip() for t in (cfg.get("scheduler.run_at") or ["08:30"])]
     run_on_start = bool(cfg.get("scheduler.run_on_start", False))
+
+    _running = True
 
     def job() -> None:
         today = datetime.now()
@@ -290,17 +293,100 @@ def start_scheduler(cfg) -> None:
     if not schedule.get_jobs():
         raise RuntimeError("没有成功注册任何定时任务，请检查 scheduler.run_at 配置")
 
-    if run_on_start:
-        log.info("run_on_start=true，先立即执行一次")
-        job()
+    # ---- 调度循环跑在后台线程 ----
+    import threading
 
-    next_run = schedule.next_run()
-    log.info("调度器已启动，下一次运行：%s（Ctrl+C 退出）",
-             next_run.strftime("%Y-%m-%d %H:%M:%S") if next_run else "未知")
-
-    try:
-        while True:
+    def _scheduler_loop() -> None:
+        if run_on_start:
+            log.info("run_on_start=true，先立即执行一次")
+            job()
+        next_run = schedule.next_run()
+        log.info("调度器已启动，下一次运行：%s",
+                 next_run.strftime("%Y-%m-%d %H:%M:%S") if next_run else "未知")
+        while _running:
             schedule.run_pending()
             time.sleep(20)
-    except KeyboardInterrupt:
-        log.info("收到退出信号，调度器已停止")
+        log.info("调度器线程已退出")
+
+    t = threading.Thread(target=_scheduler_loop, daemon=True, name="scirobot-scheduler")
+    t.start()
+
+    # ---- 系统托盘图标（主线程） ----
+    _run_tray(cfg)
+
+
+def _run_tray(cfg) -> None:
+    """启动系统托盘图标，阻塞直到用户退出。"""
+    global _running
+    try:
+        import pystray
+        from PIL import Image, ImageDraw
+    except ImportError as exc:
+        log.warning("无法创建托盘图标（缺少 pystray/Pillow），退回到纯后台模式。按 Ctrl+C 退出。")
+        log.warning("错误详情：%s", exc)
+        try:
+            while True:
+                time.sleep(60)
+        except KeyboardInterrupt:
+            log.info("收到退出信号")
+        return
+
+    # 生成 64×64 图标：蓝色圆底 + 白色 S
+    def _make_icon():
+        img = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
+        draw = ImageDraw.Draw(img)
+        draw.ellipse([4, 4, 60, 60], fill=(0, 113, 227, 255))  # #0071e3
+        draw.text((25, 14), "S", fill=(255, 255, 255, 255))
+        return img
+
+    def _on_exit(icon, item):
+        global _running
+        _running = False
+        icon.stop()
+        log.info("用户通过托盘菜单退出")
+
+    def _on_show_now(icon, item):
+        log.info("用户手动触发立即查看")
+        _trigger_popup_only(cfg)
+
+    menu = pystray.Menu(
+        pystray.MenuItem("查看今日文献", _on_show_now, default=True),
+        pystray.Menu.SEPARATOR,
+        pystray.MenuItem("退出", _on_exit),
+    )
+
+    icon = pystray.Icon("scirobot", _make_icon(), "SciRobot 文献推送", menu)
+    log.info("系统托盘图标已创建，右键可退出")
+    icon.run()
+
+
+# 全局变量供托盘菜单使用
+_running = True
+
+
+def _trigger_popup_only(cfg) -> None:
+    """单独触发弹窗（不标记已推送，不影响正常排期）。"""
+    from feed import articles_for_date, load_feed
+
+    feed_mode = (cfg.get("content.mode") or "local") == "feed"
+    if not feed_mode:
+        log.warning("非 feed 模式，不支持托盘菜单查看今日文献")
+        return
+
+    try:
+        feed = load_feed(
+            cfg.get("content.feed_url") or "",
+            cfg,
+            cache_path=cfg.path("content.feed_cache", "data/feed_cache.json"),
+        )
+        today = datetime.now().strftime("%Y-%m-%d")
+        pending = articles_for_date(feed, today)
+        if not pending:
+            log.info("今天没有排期文献")
+            return
+        daily_limit = int(cfg.get("pipeline.daily_limit", 0) or 0)
+        if daily_limit:
+            pending = pending[:daily_limit]
+        Notifier(cfg).send_popup_only(pending)
+    except Exception as exc:
+        log.exception("托盘菜单触发展示失败：%s", exc)

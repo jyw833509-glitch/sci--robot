@@ -448,6 +448,14 @@ class Notifier:
                 results[channel] = False
         return results
 
+    def send_popup_only(self, articles: list) -> bool:
+        """纯弹窗推送：直接显示桌面窗口，不标记已推送、不发邮件。"""
+        payload = {
+            "title": self.cfg.get("report.title", "SciRobot 文献日报"),
+            "articles": [_article_to_dict(a) for a in (articles or [])],
+        }
+        return _launch_desktop_window(payload)
+
 
 if __name__ == "__main__":  # 手动自检： python notifier.py
     from config import load_config
