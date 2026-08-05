@@ -119,11 +119,12 @@ def show_popup(data: dict) -> None:
     # ── 分割线 ──
     Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, padx=0, pady=0)
 
-    # ── 内容区（纯 Frame，不需要 Canvas 滚动） ──
+    # ── 内容区（Canvas + Scrollbar 滚动）──
+    canvas = None
     if not articles:
         _show_empty(card, f)
     else:
-        _show_articles(card, articles, f)
+        canvas = _show_articles(card, articles, f)
 
     # ── 底部分割线 + 提示 ──
     Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, side=BOTTOM)
@@ -133,15 +134,28 @@ def show_popup(data: dict) -> None:
           bg=C_CARD_BG, fg=C_TEXT_TER, font=f["tiny"]).pack(side=LEFT)
 
     if auto_close > 0:
-        win.after(auto_close * 1000, lambda: _close(root, win))
+        win.after(auto_close * 1000, lambda: _close(root, win, canvas))
 
-    win.bind("<Escape>", lambda e: _close(root, win))
-    win.protocol("WM_DELETE_WINDOW", lambda: _close(root, win))
+    win.bind("<Escape>", lambda e: _close(root, win, canvas))
+    win.protocol("WM_DELETE_WINDOW", lambda: _close(root, win, canvas))
     win.lift()
     win.focus_force()
 
+    # ── 全局滚轮绑定（inner Frame 覆盖了 Canvas，Canvas 的 Enter/Leave 永远收不到）──
+    def _on_mousewheel(event):
+        if canvas:
+            canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
+
+    win.bind_all("<MouseWheel>", _on_mousewheel)
+
     # 强制刷新布局，确保所有 pack 计算完成
     win.update_idletasks()
+    if canvas:
+        canvas.update_idletasks()
+        bbox = canvas.bbox("all")
+        if bbox:
+            canvas.configure(scrollregion=bbox)
+
     win.mainloop()
 
 
@@ -220,28 +234,19 @@ def _show_articles(parent, articles, f):
 
     # 内部 frame 大小变化时刷新滚动区域
     def _on_inner_configure(event):
-        canvas.configure(scrollregion=canvas.bbox("all"))
+        canvas.update_idletasks()
+        bbox = canvas.bbox("all")
+        if bbox:
+            canvas.configure(scrollregion=bbox)
     inner.bind("<Configure>", _on_inner_configure)
-
-    # ── 鼠标滚轮 ──
-    def _on_mousewheel(event):
-        canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
-
-    # 鼠标进入 Canvas 区域时绑定滚轮，离开时解绑（避免影响其他窗口）
-    def _on_enter(event):
-        canvas.bind_all("<MouseWheel>", _on_mousewheel)
-
-    def _on_leave(event):
-        canvas.unbind_all("<MouseWheel>")
-
-    canvas.bind("<Enter>", _on_enter)
-    canvas.bind("<Leave>", _on_leave)
 
     # ── 填充文献 ──
     for i, art in enumerate(articles, 1):
         _build_card(inner, i, art, f)
 
     Frame(inner, bg=C_CARD_BG, height=4).pack(fill=X)
+
+    return canvas
 
 
 # 可用内容宽度（用于 wraplength）
@@ -370,7 +375,11 @@ def _build_card(parent, index, art, f):
 # ═══════════════════════════════════════════════════════════════
 # 关闭
 # ═══════════════════════════════════════════════════════════════
-def _close(root, win):
+def _close(root, win, canvas=None):
+    try:
+        win.unbind_all("<MouseWheel>")
+    except Exception:
+        pass
     try:
         win.destroy()
     except Exception:
