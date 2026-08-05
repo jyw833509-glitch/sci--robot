@@ -1,0 +1,30 @@
+; ============================================================
+;  systemd 服务单元（Linux 常驻定时模式）
+;  安装：
+;    sudo cp deploy/antibody-bot.service /etc/systemd/system/
+;    sudo systemctl daemon-reload
+;    sudo systemctl enable --now antibody-bot
+;  查看日志：
+;    journalctl -u antibody-bot -f
+;  注意：请把 User / WorkingDirectory / ExecStart 改成实际路径
+; ============================================================
+
+[Unit]
+Description=Antibody Purification Literature Push Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/antibody-bot
+Environment="TZ=Asia/Shanghai"
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/opt/antibody-bot/.venv/bin/python /opt/antibody-bot/main.py schedule
+Restart=always
+RestartSec=30
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,46 @@
+name: 每日生成文献内容日历
+
+# 作用：由 GitHub 服务器每天自动检索 PubMed + 翻译 + 生成 data/feed.json 并推回本仓库。
+# 用户电脑完全不参与日常运行；同事的 app 只需把 content.feed_url 指向本仓库的 raw 链接即可。
+on:
+  schedule:
+    # UTC 22:00 = 北京时间 06:00，早于默认推送时间 08:30，确保同事当天拉到最新日历
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}   # 允许在 Actions 页面手动点一下立即运行
+
+permissions:
+  contents: write        # 需要写回 feed.json / 翻译缓存
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 安装依赖
+        run: pip install -r requirements.txt
+
+      - name: 检索 + 翻译 + 生成 feed.json
+        env:
+          # 可选：在仓库 Settings → Secrets 里配置 LLM_API_KEY（DeepSeek 等 OpenAI 兼容密钥）。
+          # 不配置则自动降级到免费翻译后端（google / mymemory），质量一般且可能限流。
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: |
+          python main.py publish --days 180 --max-articles 80 --start 2026-08-04
+
+      - name: 提交 feed.json 与翻译缓存
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/feed.json
+          # 强制纳入翻译缓存库，使后续运行只翻译新增文献、显著加速（公开仓库会暴露 PMID 历史，无敏感信息）
+          git add -f data/literature.db
+          git commit -m "chore: 更新内容日历 $(date +%F)" || echo "无变更，跳过提交"
+          git push

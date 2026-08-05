@@ -1,0 +1,336 @@
+# =============================================================
+#  同事版配置（feed 全局同步模式）
+#  用法：把本文件重命名为 config.yaml，放到项目根目录即可。
+#  只需确认下面 content.feed_url 指向发布者托管的 feed.json 地址。
+#  不需要 PubMed Key，也不需要翻译 Key（中文译文已随 feed 下发）。
+# =============================================================
+
+# =============================================================
+#  抗体纯化文献自动订阅推送机器人  ——  配置文件模板
+#  使用方法：复制本文件为 config.yaml 后按需修改
+#      Windows:  copy config.example.yaml config.yaml
+#      Linux  :  cp   config.example.yaml config.yaml
+#  注意：所有敏感项（API Key / 邮箱授权码）都支持用环境变量覆盖，
+#        详见文件末尾「环境变量覆盖对照表」。
+# =============================================================
+
+app:
+  name: "抗体纯化文献推送机器人"
+  # 日志级别：DEBUG / INFO / WARNING / ERROR
+  log_level: "INFO"
+  log_dir: "logs"
+  report_dir: "reports"
+
+
+# ------------------------- 1. 文献检索 -------------------------
+pubmed:
+  # NCBI API Key（可选）。不填限速 3 请求/秒，填写后 10 请求/秒。
+  # 申请地址： https://www.ncbi.nlm.nih.gov/account/settings/
+  api_key: ""
+  # NCBI 要求调用方标识自己，建议填写真实邮箱（不会被公开）
+  email: ""
+  tool: "antibody-purification-bot"
+
+  # 【方式一】直接写死完整 PubMed 检索式；留空则用下面的 keyword_groups 自动拼装
+  query: ""
+
+  # 【方式二】关键词组：组内 OR，组间 AND
+  #   (monoclonal antibody OR therapeutic antibody OR mAb)
+  #   AND (purification OR chromatography OR downstream processing)
+  # 想扩大召回可在第一组加 "antibody" / "bispecific antibody" / "ADC"，
+  # 第二组加 "Protein A" / "affinity chromatography" / "polishing"（会引入更多噪音，
+  # 建议同时调高下方 relevance.min_score）
+  keyword_groups:
+    - ["monoclonal antibody", "therapeutic antibody", "mAb"]
+    - ["purification", "chromatography", "downstream processing"]
+
+  # 关键词限定字段：Title/Abstract（推荐，精准）/ Title / 留空表示全字段（召回多但噪音大）
+  field_tag: "Title/Abstract"
+
+  # 追加的自定义过滤条件（原样拼接到检索式尾部，用 AND 连接）
+  extra_filters: []
+  #   - 'english[Language]'
+  #   - 'hasabstract'
+
+  # 回溯天数：每次运行检索最近 N 天内的文献。
+  # 因为数据库按 PMID 去重，窗口开大不会重复推送，反而能补上「延迟上架」的文献。
+  # 该检索式属于窄领域（约 15~20 篇/月），建议 7；想只看当天改成 1。
+  lookback_days: 7
+  # 日期类型： edat = 进入 PubMed 的日期（推荐，时效性最好）
+  #            pdat = 正式出版日期
+  #            mdat = 最后修改日期
+  date_type: "edat"
+
+  # 单次最多抓取条数（上限保护）
+  max_results: 100
+  # 只保留有英文摘要的文献
+  require_abstract: true
+  # 排除的文献类型（按 PublicationType 精确匹配）
+  exclude_publication_types:
+    - "Retracted Publication"
+    - "Retraction of Publication"
+
+  # 网络参数
+  timeout: 30
+  max_retries: 3
+  retry_backoff: 2.0
+
+
+# --------------------- 1.5 相关度过滤（降噪）---------------------
+# PubMed 的检索式只能做布尔匹配，命中「抗体」+「层析」的临床论文其实与纯化工艺无关。
+# 这里对标题/摘要做一次本地打分，低于 min_score 的直接丢弃。
+relevance:
+  enabled: true
+  # 分数门槛：0 表示不过滤；建议 3~6，越高越精准、召回越少
+  min_score: 4
+  # 命中标题权重 / 命中摘要权重
+  title_weight: 3
+  abstract_weight: 1
+  # 下游工艺强相关词，每命中一个不同的词 +1（最多累加 bonus_cap 分）
+  bonus_terms:
+    - "protein a"
+    - "downstream process"
+    - "chromatography"
+    - "purification"
+    - "affinity"
+    - "cation exchange"
+    - "anion exchange"
+    - "hydrophobic interaction"
+    - "mixed-mode"
+    - "multimodal"
+    - "host cell protein"
+    - "hcp"
+    - "aggregate"
+    - "elution"
+    - "resin"
+    - "membrane chromatography"
+    - "ultrafiltration"
+    - "diafiltration"
+    - "viral clearance"
+    - "continuous manufacturing"
+    - "perfusion"
+    - "yield"
+    - "impurit"
+    - "polishing"
+    - "capture step"
+    - "drug substance"
+  bonus_cap: 5
+  # 命中即扣分的词（临床/诊断类噪音），每命中一个 -2
+  penalty_terms:
+    - "patients"
+    - "clinical trial"
+    - "seroprevalence"
+    - "immunohistochemistry"
+    - "diagnosis"
+    - "questionnaire"
+  penalty_cap: 4
+
+
+# ------------------------- 2. 摘要翻译 -------------------------
+translate:
+  enabled: true
+  # 翻译后端按顺序降级尝试，前一个失败自动切下一个
+  # 可选： llm(推荐) / baidu / youdao / google / mymemory / none
+  providers: ["llm", "google", "mymemory"]
+  # 单条文本最大翻译长度（超出会截断，避免费用失控）
+  max_chars: 4000
+  # 是否翻译标题
+  translate_title: true
+  # 是否把译文缓存进数据库（同一段英文只翻译一次）
+  cache: true
+  # 每条翻译之间的间隔秒数（防止被限流）
+  interval: 0.5
+
+  # ---- 后端 A：大模型（质量最好，强烈推荐；任何 OpenAI 兼容接口都行）----
+  llm:
+    # DeepSeek: https://api.deepseek.com/v1        model: deepseek-chat
+    # 智谱GLM : https://open.bigmodel.cn/api/paas/v4  model: glm-4-flash（有免费额度）
+    # 通义千问: https://dashscope.aliyuncs.com/compatible-mode/v1  model: qwen-plus
+    # Kimi    : https://api.moonshot.cn/v1         model: moonshot-v1-8k
+    # OpenAI  : https://api.openai.com/v1          model: gpt-4o-mini
+    base_url: "https://api.deepseek.com/v1"
+    api_key: ""
+    model: "deepseek-chat"
+    temperature: 0.2
+    timeout: 120
+    # 系统提示词，可自定义翻译风格
+    system_prompt: |
+      你是生物制药下游工艺（抗体纯化、层析、连续流工艺）领域的资深科研翻译。
+      请将用户提供的英文学术摘要翻译成简体中文，要求：
+      1. 忠实原意，不增删信息，不做任何评论；
+      2. 专业术语使用国内生物制药领域通用译法（如 Protein A affinity chromatography → Protein A 亲和层析，
+         HCP → 宿主细胞蛋白，CEX → 阳离子交换层析，AEX → 阴离子交换层析，UF/DF → 超滤/透析过滤，
+         HIC → 疏水相互作用层析，MMC → 多模式层析，DSP → 下游工艺，CQA → 关键质量属性）；
+      3. 首次出现的英文缩写保留原文并加中文，如「宿主细胞蛋白（HCP）」；
+      4. 语言书面、通顺，保持学术风格；
+      5. 只输出译文正文，不要输出「译文：」等任何前后缀。
+
+  # ---- 后端 B：百度翻译开放平台 https://fanyi-api.baidu.com ----
+  baidu:
+    app_id: ""
+    app_key: ""
+
+  # ---- 后端 C：有道智云 https://ai.youdao.com ----
+  youdao:
+    app_key: ""
+    app_secret: ""
+
+  # ---- 后端 D：Google 免费接口（国内需代理）----
+  google:
+    endpoint: "https://translate.googleapis.com/translate_a/single"
+    timeout: 20
+
+  # ---- 后端 E：MyMemory 免费接口（无需 Key，有频率限制，兜底用）----
+  mymemory:
+    endpoint: "https://api.mymemory.translated.net/get"
+    timeout: 20
+
+  # 全局 HTTP 代理（国内访问 Google / OpenAI 时填写），留空表示不使用
+  proxy: ""
+
+
+# ------------------------- 3. 数据库 -------------------------
+database:
+  path: "data/literature.db"
+  # 历史文献保留天数，0 表示永久保留
+  keep_days: 0
+
+
+# ------------------------- 3.5 推送节奏 -------------------------
+pipeline:
+  # 每天推送文献数量上限：1 = 每天一篇；0 = 不限制（全部待推送文献都推）
+  # 回溯窗口（pubmed.lookback_days）里的未推送文献会按「最新优先」逐日消化。
+  daily_limit: 1
+
+
+# ------------------------- 3.6 内容同步（让所有人推送一致） -------------------------
+# 默认 local：每个客户端各自检索 PubMed，安装时间不同 → 内容不同。
+# 想要「不论谁装，大家看到的文献都一模一样」时，改为 feed 模式：
+#   1) 你（发布者）运行  python main.py publish  生成 data/feed.json（含完整中文译文）；
+#   2) 把 feed.json 托管到一个所有人能访问的 URL（GitHub .raw / 腾讯云 COS / 内网静态文件…）；
+#   3) 在 config.yaml 里设  content.mode: feed  且  content.feed_url: "<那个URL>"，
+#      分发给同事即可。他们只读取同一份日历，内容必然一致，且随你更新而同步。
+content:
+  mode: "feed"
+  # feed 模式下，内容日历的地址（http(s) URL 或本地文件路径）
+  feed_url: "https://raw.githubusercontent.com/<你的GitHub用户名>/<仓库名>/main/data/feed.json"
+  # 拉取失败时的本地缓存位置
+  feed_cache: "data/feed_cache.json"
+  # 日历说明的时区（客户端用各自本地日期匹配，建议所有用户同一时区）
+  timezone: "Asia/Shanghai"
+  # publish 生成 feed.json 的本地输出位置
+  feed_output: "data/feed.json"
+  # publish 完成后可选执行的同步命令（把 feed.json 传到托管地址），留空则只生成在本地
+  # 例如： coscli cp data/feed.json cos://my-bucket/feed.json
+  feed_upload_cmd: ""
+
+
+# ------------------------- 4. 日报 -------------------------
+report:
+  title: "抗体纯化文献日报"
+  # 单期日报最多展示条数（超出部分仅入库不展示）
+  max_items: 30
+  # 是否在日报中同时展示英文原文摘要
+  show_english_abstract: true
+  # 英文摘要折叠显示（HTML 中用 <details>）
+  fold_english_abstract: true
+  # 是否把日报存到本地 reports/ 目录
+  save_to_disk: true
+  # 落盘格式： html / markdown
+  formats: ["html", "markdown"]
+
+
+# ------------------------- 5. 推送 -------------------------
+notifier:
+  # 启用的推送渠道： desktop（弹窗）/ email / webhook
+  # 可同时启用多个，例如 ["desktop", "email"]
+  channels: ["desktop"]
+
+  # ---- 桌面弹窗（默认启用）----
+  # 文献会以独立窗口弹到屏幕上，展示标题/作者/期刊/中文摘要/英文原文/DOI 链接。
+  # 注意：弹窗需要机器人运行在你「已登录的桌面会话」中（详见 README 桌面弹窗章节）。
+  desktop:
+    enabled: true
+    # 弹窗形式：
+    #   window = 独立窗口（推荐，可看完整摘要，需手动关闭）
+    #   toast  = Windows 系统通知（需先 pip install win10toast，几秒后自动消失，信息量较小）
+    mode: "window"
+    # window 模式窗口停留秒数，0 = 需手动关闭
+    timeout: 0
+
+  email:
+    enabled: true
+    # 常用 SMTP：
+    #   QQ邮箱   smtp.qq.com        465(SSL)   密码填「授权码」
+    #   163邮箱  smtp.163.com       465(SSL)   密码填「授权码」
+    #   Gmail    smtp.gmail.com     465(SSL)   密码填「应用专用密码」
+    #   Outlook  smtp.office365.com 587(STARTTLS)
+    #   企业微信 smtp.exmail.qq.com 465(SSL)
+    smtp_host: "smtp.qq.com"
+    smtp_port: 465
+    use_ssl: true          # 465 端口用 SSL
+    use_starttls: false    # 587 端口改成 use_ssl:false + use_starttls:true
+    username: "your_account@qq.com"
+    password: ""           # QQ/163 请填授权码，不是登录密码！
+    from_addr: ""          # 留空则使用 username
+    sender_name: "抗体纯化文献机器人"
+    to:
+      - "receiver1@example.com"
+    cc: []
+    # 是否把 Markdown 日报作为附件一起发送
+    attach_markdown: false
+    # 当天没有新文献时是否仍然发一封「今日无更新」邮件
+    send_when_empty: false
+    timeout: 30
+
+  webhook:
+    enabled: false
+    # 类型： wecom(企业微信群机器人) / dingtalk(钉钉) / feishu(飞书)
+    type: "wecom"
+    url: ""
+    # 钉钉加签密钥（仅 dingtalk 且开启加签时需要）
+    secret: ""
+    # Webhook 只推送标题列表摘要，最多几条
+    max_items: 10
+
+
+# ------------------------- 6. 定时任务 -------------------------
+scheduler:
+  # 每天执行时间，24 小时制，可配置多个
+  run_at:
+    - "08:30"
+  # 启动 scheduler 时是否立即先跑一次
+  run_on_start: false
+  # 工作日判断：控制「休息日不推送」
+  workday:
+    # 是否跳过周末（周六、周日）。true = 周末不推送
+    skip_weekends: true
+    # 额外跳过的日期（法定节假日等），格式 "YYYY-MM-DD"
+    holidays: []
+    # 周末补班日（这些日期即使是周末也照常推送），格式 "YYYY-MM-DD"
+    makeup_workdays: []
+    # 是否使用 python 包 chinese_calendar 自动识别中国法定节假日（含调休）。
+    # 启用前需先安装： pip install chinese_calendar，再把此项设为 true
+    use_chinese_calendar: false
+
+
+# =============================================================
+# 环境变量覆盖对照表（环境变量优先级高于本文件，适合 Docker / CI）
+#   PUBMED_API_KEY        -> pubmed.api_key
+#   PUBMED_EMAIL          -> pubmed.email
+#   LLM_BASE_URL          -> translate.llm.base_url
+#   LLM_API_KEY           -> translate.llm.api_key
+#   LLM_MODEL             -> translate.llm.model
+#   BAIDU_APP_ID          -> translate.baidu.app_id
+#   BAIDU_APP_KEY         -> translate.baidu.app_key
+#   YOUDAO_APP_KEY        -> translate.youdao.app_key
+#   YOUDAO_APP_SECRET     -> translate.youdao.app_secret
+#   HTTP_PROXY_URL        -> translate.proxy
+#   SMTP_HOST             -> notifier.email.smtp_host
+#   SMTP_PORT             -> notifier.email.smtp_port
+#   SMTP_USERNAME         -> notifier.email.username
+#   SMTP_PASSWORD         -> notifier.email.password
+#   MAIL_TO               -> notifier.email.to      （多个收件人用英文逗号分隔）
+#   WEBHOOK_URL           -> notifier.webhook.url
+#   DB_PATH               -> database.path
+# =============================================================

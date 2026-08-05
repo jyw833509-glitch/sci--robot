@@ -1,0 +1,1596 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-04 13:34:02",
+  "timezone": "Asia/Shanghai",
+  "query": "(见 keyword_groups)",
+  "total_articles": 43,
+  "calendar": {
+    "2026-08-04": [
+      "42546983"
+    ],
+    "2026-08-05": [
+      "42496057"
+    ],
+    "2026-08-06": [
+      "42487284"
+    ],
+    "2026-08-07": [
+      "42489360"
+    ],
+    "2026-08-10": [
+      "42470740"
+    ],
+    "2026-08-11": [
+      "42458707"
+    ],
+    "2026-08-12": [
+      "42449784"
+    ],
+    "2026-08-13": [
+      "42450443"
+    ],
+    "2026-08-14": [
+      "42429162"
+    ],
+    "2026-08-17": [
+      "42415423"
+    ],
+    "2026-08-18": [
+      "42414861"
+    ],
+    "2026-08-19": [
+      "42415185"
+    ],
+    "2026-08-20": [
+      "42402251"
+    ],
+    "2026-08-21": [
+      "42376876"
+    ],
+    "2026-08-24": [
+      "42368154"
+    ],
+    "2026-08-25": [
+      "42345899"
+    ],
+    "2026-08-26": [
+      "42346963"
+    ],
+    "2026-08-27": [
+      "42332429"
+    ],
+    "2026-08-28": [
+      "42323147"
+    ],
+    "2026-08-31": [
+      "42307050"
+    ],
+    "2026-09-01": [
+      "42292894"
+    ],
+    "2026-09-02": [
+      "42285912"
+    ],
+    "2026-09-03": [
+      "42272446"
+    ],
+    "2026-09-04": [
+      "42276533"
+    ],
+    "2026-09-07": [
+      "42273649"
+    ],
+    "2026-09-08": [
+      "42276211"
+    ],
+    "2026-09-09": [
+      "42231136"
+    ],
+    "2026-09-10": [
+      "42235435"
+    ],
+    "2026-09-11": [
+      "42217505"
+    ],
+    "2026-09-14": [
+      "42216916"
+    ],
+    "2026-09-15": [
+      "42214142"
+    ],
+    "2026-09-16": [
+      "42204975"
+    ],
+    "2026-09-17": [
+      "42202083"
+    ],
+    "2026-09-18": [
+      "42192004"
+    ],
+    "2026-09-21": [
+      "42188602"
+    ],
+    "2026-09-22": [
+      "42166563"
+    ],
+    "2026-09-23": [
+      "42155371"
+    ],
+    "2026-09-24": [
+      "42145184"
+    ],
+    "2026-09-25": [
+      "42129093"
+    ],
+    "2026-09-28": [
+      "42125798"
+    ],
+    "2026-09-29": [
+      "42119499"
+    ],
+    "2026-09-30": [
+      "42112447"
+    ],
+    "2026-10-01": [
+      "42093402"
+    ]
+  },
+  "articles": {
+    "42546983": {
+      "pmid": "42546983",
+      "title": "Engineering High-Performance Inhalable Monoclonal Antibody Powders via Spray Freeze Drying.",
+      "abstract": "Spray freeze-drying (SFD) is a cutting-edge technique for producing dry powders, ideal for pulmonary drug delivery, owing to its ability to generate porous microparticles with low density and excellent aerodynamic properties. The SFD process, involving atomisation, freezing, and drying, is particularly suited for formulating biologics, e.g., monoclonal antibodies (mAbs), due to its low-temperature conditions. However, the method poses challenges, including the potential denaturation of mAbs due to shear, freezing, and dehydration stresses during processing. Here, we investigated how formulation modulates mAb stability and delivery performance during and after SFD processing. A model mAb was spray freeze-dried in the presence of selected stabilizing excipients, including sugars/polyols, amino acids, cyclodextrins, and surfactants. MAb chemical stability was assessed by size exclusion chromatography after the SFD process to study the strength of the formulations in each stage. The resulting inhalable mAb powders demonstrated favourable aerodynamic properties, rapid dissolution rates, and stability under various storage conditions. Notably, trehalose combined with either leucine or HPβCD effectively preserved mAb stability throughout the SFD process, ensuring high fine particle fractions (50-60%), and good physical stability of the powders. The optimised dry powder was successfully administered to rats via inhalation, as evidenced by lung deposition and systemic exposure, supporting the suitability of inhaled mAb-based therapeutics. This work elucidates key formulation-process interactions governing the pulmonary delivery of inhalable mAbs and demonstrates how rational excipient design enables the production of stable, inhalable biologic dry powders via SFD.",
+      "authors": [
+        "Lorena Pasero",
+        "Adamo Sulpizi",
+        "Elettra Pinetti",
+        "Salvatore Sauli",
+        "Viola Geminati",
+        "Giulia Marenghi",
+        "Giulia Carretta",
+        "Lara Benoldi",
+        "Tomaso Guidi",
+        "Roberto Pisano"
+      ],
+      "journal": "European journal of pharmaceutics and biopharmaceutics : official journal of Arbeitsgemeinschaft fur Pharmazeutische Verfahrenstechnik e.V",
+      "journal_abbr": "Eur J Pharm Biopharm",
+      "pub_date": "2026-08-03",
+      "entrez_date": "2026-08-03",
+      "doi": "10.1016/j.ejpb.2026.115202",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "Department of Applied Science and Technology, Politecnico di Torino, 24 Corso Duca Degli Abruzzi, 10129 Torino, Italy.",
+      "language": "eng",
+      "title_zh": "通过喷雾冷冻干燥设计高性能可吸入单克隆抗体粉末。",
+      "abstract_zh": "喷雾冷冻干燥（SFD）是一种生产干粉的尖端技术，由于其能够产生低密度和优异的空气动力学特性的多孔微粒，因此非常适合肺部药物输送。 SFD 工艺涉及雾化、冷冻和干燥，由于其低温条件，特别适合配制生物制剂，例如单克隆抗体 (mAb)。然而，该方法带来了挑战，包括加工过程中由于剪切、冷冻和脱水应力而导致单克隆抗体潜在的变性。在这里，我们研究了配方如何在 SFD 处理期间和之后调节 mAb 稳定性和递送性能。在选定的稳定赋形剂（包括糖/多元醇、氨基酸、环糊精和表面活性剂）存在下，对模型单克隆抗体进行喷雾冷冻干燥。 SFD 过程后通过尺寸排阻色谱法评估 MAb 化学稳定性，以研究每个阶段制剂的强度。所得可吸入单克隆抗体粉末表现出良好的空气动力学特性、快速溶解速率以及在各种储存条件下的稳定性。\n值得注意的是，海藻糖与亮氨酸或 HPβCD 组合可在整个 SFD 过程中有效保持 mAb 稳定性，确保高细颗粒分数 (50-60%) 和粉末良好的物理稳定性。经肺部沉积和全身暴露证明，优化的干粉已成功通过吸入给药于大鼠，这支持了吸入性单克隆抗体疗法的适用性。这项工作阐明了控制可吸入单克隆抗体肺部输送的关键配方-工艺相互作用，并展示了合理的赋形剂设计如何能够通过 SFD 生产稳定的可吸入生物干粉剂。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42496057": {
+      "pmid": "42496057",
+      "title": "Optimization strategies for monoclonal antibody production: advances in simulation and artificial intelligence in bioprocessing.",
+      "abstract": "The rapid growth of monoclonal antibody (mAb) therapies has increased the need for efficient, scalable, and affordable manufacturing processes. However, mAb production remains complex because of nonlinear upstream cell culture behavior, expensive downstream purification, especially Protein-A chromatography, and plant-level bottlenecks that can increase cost, cycle time, and manuacturing uncertainty. This review examines recent developments in mAb manufacturing with focus on process simulation, mathematical optimization, and artificial intelligence/machine learning (AI/ML) across upstream processing (USP), downstream processing (DSP), and integrated plant-level operation. In USP, media optimization, dynamic feeding, high-density cultures, and continuous perfusion bioreactors are discussed in relation to productivity and critical quality attributes (CQAs). In DSP, alternative and intensified purification strategies are reviewed with a focus on recovery, impurity clearance, scalability, cost, and technology maturity. AI/ML applications are also discussed from early-stage development and cell-line screening to upstream control, CQA prediction, chromatography optimization, and downstream decision support. Despite these advancements, challenges such as data heterogeneity, limited standardized datasets, model transferability, and regulatory constraints remain important barriers to implementation. Overall, this review uniquely connects simulation and AI/ML approaches to practical optimization across the full mAb manufacturing workflow, including design, scheduling, debottlenecking, purification, monitoring, and quality prediction. The combination of process simulation, continuous bioprocessing, and AI/ML-based decision support may enable more flexible, reliable, and cost-effective mAb manufacturing. However, these benefits depend on validation through robust models, process-specific case studies, and technoeconomic analysis.",
+      "authors": [
+        "Kadeejathul Kubra",
+        "Munawar A Shaik"
+      ],
+      "journal": "mAbs",
+      "journal_abbr": "MAbs",
+      "pub_date": "2026-07-24",
+      "entrez_date": "2026-07-24",
+      "doi": "10.1080/19420862.2026.2706886",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "keywords": [
+        "Artificial intelligence",
+        "Protein-A alternatives",
+        "downstream processing",
+        "machine learning",
+        "monoclonal antibodies",
+        "process simulation",
+        "upstream processing"
+      ],
+      "affiliation": "Department of Chemical and Petroleum Engineering, College of Engineering, UAE University, Al Ain, UAE.",
+      "language": "eng",
+      "title_zh": "单克隆抗体生产的优化策略：生物加工中模拟和人工智能的进展。",
+      "abstract_zh": "单克隆抗体 (mAb) 疗法的快速增长增加了对高效、可扩展且经济实惠的制造工艺的需求。然而，由于非线性上游细胞培养行为、昂贵的下游纯化（尤其是 Protein-A 层析）以及可能增加成本、周期时间和制造不确定性的工厂级瓶颈，mAb 生产仍然很复杂。本综述探讨了 mAb 制造的最新发展，重点关注上游加工 (USP)、下游加工 (DSP) 和集成工厂级操作的工艺模拟、数学优化和人工智能/机器学习 (AI/ML)。在 USP 中，讨论了与生产力和关键质量属性 (CQA) 相关的培养基优化、动态补料、高密度培养和连续灌注生物反应器。在 DSP 中，对替代和强化纯化策略进行了审查，重点是回收率、杂质清除、可扩展性、成本和技术成熟度。\n还讨论了从早期开发和细胞系筛选到上游控制、CQA 预测、色谱优化和下游决策支持的 AI/ML 应用。尽管取得了这些进步，数据异构性、有限的标准化数据集、模型可转移性和监管限制等挑战仍然是实施的重要障碍。总体而言，本次综述独特地将模拟和 AI/ML 方法与整个 mAb 制造工作流程的实际优化联系起来，包括设计、调度、消除瓶颈、纯化、监控和质量预测。工艺模拟、连续生物工艺和基于人工智能/机器学习的决策支持的结合可以实现更灵活、可靠和更具成本效益的单克隆抗体制造。然而，这些好处取决于通过稳健的模型、特定流程的案例研究和技术经济分析进行验证。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42487284": {
+      "pmid": "42487284",
+      "title": "Development of a 177Lu-Labeled Glypican-3-Targeted Antibody Radiopharmaceutical for Adjuvant Radionuclide Therapy Following Hepatocellular Carcinoma Resection.",
+      "abstract": "Background: Hepatocellular carcinoma (HCC) remains the major cause of cancer-related mortality worldwide due to high postoperative recurrence rates and limited treatment options for minimal residual disease (MRD).Methods: In this study, glypican-3 (GPC3)-targeted radiopharmaceutical, 177Lu-DOTA-GPC3, was developed and evaluated as a potential adjuvant targeted radionuclide therapy for HCC. The anti-GPC3 monoclonal antibody was conjugated with DOTA and radiolabeled with 177Lu under systematically optimized conditions. Optimization of the chelator-to-antibody ratio, pH, temperature, and incubation time was performed to maximize the radiochemical yield while preserving antibody immunoreactivity and structural integrity. The radioconjugate was purified and characterized using instant thin-layer chromatography and size-exclusion high-performance liquid chromatography. In vitro stability was assessed in phosphate-buffered saline and human serum, while cellular binding and internalization studies were conducted using GPC3-expressing HepG2 cells. In vivo biodistribution, pharmacokinetics, and therapeutic efficacy were evaluated in the tumor-bearing mice.Results: The developed radioconjugate demonstrated high radiolabeling efficiency (96.8% ± 1.2%) and radiochemical purity (>98%) with excellent stability (>95% up to 72 h). Batch-to-batch reproducibility showed minimal variability across independent preparations. Strong receptor-specific cellular binding (∼82%) and significant internalization were observed, confirming preservation of the biological activity following radiolabeling. Biodistribution studies demonstrated high tumor uptake (18.6% ± 2.1%ID/g at 48 h) with favorable tumor-to-background ratios. Therapeutic evaluation revealed up to 66.4% tumor growth inhibition and significantly prolonged survival without observable systemic toxicity.Conclusions: Findings support the potential of the 177Lu-DOTA-GPC3 as a promising theranostic radionuclide platform for targeting GPC3-positive HCC and addressing postoperative MRD-associated recurrence.",
+      "authors": [
+        "Ke Fang"
+      ],
+      "journal": "Cancer biotherapy & radiopharmaceuticals",
+      "journal_abbr": "Cancer Biother Radiopharm",
+      "pub_date": "2026-07-22",
+      "entrez_date": "2026-07-23",
+      "doi": "10.1177/10849785261458520",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "DOTA conjugation",
+        "hepatocellular carcinoma",
+        "radioimmunotherapy",
+        "targeted radionuclide therapy",
+        "tumor targeting"
+      ],
+      "affiliation": "Department of General Surgery III, Hubei Wuxue Traditional Chinese Medicine Hospital, Huanggang, China.",
+      "language": "eng",
+      "title_zh": "开发 177Lu 标记的磷脂酰肌醇蛋白聚糖 3 靶向抗体放射性药物，用于肝细胞癌切除术后的辅助放射性核素治疗。",
+      "abstract_zh": "背景：由于术后复发率高和微小残留病（MRD）治疗选择有限，肝细胞癌（HCC）仍然是全球癌症相关死亡的主要原因。方法：在这项研究中，开发并评估了磷脂酰肌醇蛋白聚糖-3（GPC3）靶向放射性药物 177Lu-DOTA-GPC3，并评估其作为 HCC 潜在辅助靶向放射性核素治疗的作用。抗GPC3单克隆抗体与DOTA缀合，并在系统优化的条件下用177Lu进行放射性标记。对螯合剂与抗体的比例、pH、温度和孵育时间进行优化，以最大限度地提高放射化学产量，同时保留抗体的免疫反应性和结构完整性。使用即时薄层色谱和尺寸排阻高效液相色谱对放射性结合物进行纯化和表征。在磷酸盐缓冲盐水和人血清中评估体外稳定性，同时使用表达 GPC3 的 HepG2 细胞进行细胞结合和内化研究。\n在荷瘤小鼠中评估了体内生物分布、药代动力学和治疗效果。结果：所开发的放射性结合物表现出高放射性标记效率（96.8％±1.2％）和放射化学纯度（> 98％）以及出色的稳定性（> 95％长达72小时）。批次间的重现性显示独立制剂之间的差异最小。观察到强的受体特异性细胞结合（~82%）和显着的内化，证实放射性标记后生物活性的保留。生物分布研究表明肿瘤摄取较高（48 小时时为 18.6% ± 2.1%ID/g），且具有良好的肿瘤背景比。治疗评估显示，肿瘤生长抑制高达 66.4%，显着延长生存期，且未观察到全身毒性。结论：研究结果支持 177Lu-DOTA-GPC3 作为一种有前途的治疗诊断放射性核素平台的潜力，用于靶向 GPC3 阳性 HCC 并解决术后 MRD 相关复发。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42489360": {
+      "pmid": "42489360",
+      "title": "On-Column Preparation of High-Performance Affinity Chromatography Columns.",
+      "abstract": "We describe a custom preparation of high-performance affinity columns based on 3.5 μm nonporous polymeric particles covalently modified with streptavidin. The sorbent was packed into a 2.1 × 20 mm column hardware compatible with pressures up to 10,000 psi (68 MPa). Biotinylated affinity ligands were then immobilized on-column using a repetitive injection method until the streptavidin sorbent was saturated. The saturation was observed as a ligand breakthrough signal by ultraviolet detection. Column binding capacity of immobilized affinity ligands was estimated for d-biotin, biotinylated 25nt oligodeoxythymidine, and biotinylated anti-insulin mAb ligands. The prepared columns were used to quantify mRNA and insulin. Affinity column performance was evaluated in terms of binding capacity, calibration linearity range, and target analyte limit of quantitation. The high-performance streptavidin column is a platform for custom-made affinity chromatography device preparation, enabling routine quantitation of analytes of interest.",
+      "authors": [
+        "Martin Gilar",
+        "Beatrice Muriithi",
+        "Yeliz T Sarisozen",
+        "Philip Wuthrich",
+        "Michael Donegan",
+        "Kevin D Wyndham"
+      ],
+      "journal": "Analytical chemistry",
+      "journal_abbr": "Anal Chem",
+      "pub_date": "2026-07-23",
+      "entrez_date": "2026-07-23",
+      "doi": "10.1021/acs.analchem.6c01884",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "Waters Corporation, Milford, Massachusetts 01757-3696, United States.",
+      "language": "eng",
+      "title_zh": "高性能亲和色谱柱的柱上制备。",
+      "abstract_zh": "我们描述了基于链霉亲和素共价修饰的 3.5 μm 无孔聚合物颗粒的高性能亲和柱的定制制备。将吸附剂装入 2.1 × 20 mm 的色谱柱硬件中，可承受高达 10,000 psi (68 MPa) 的压力。然后使用重复注射方法将生物素化的亲和配体固定在柱上，直到链霉亲和素吸附剂饱和。通过紫外检测观察饱和度作为配体突破信号。评估了 d-生物素、生物素化 25nt 寡脱氧胸苷和生物素化抗胰岛素 mAb 配体的固定亲和配体的柱结合能力。准备好的柱用于定量 mRNA 和胰岛素。亲和柱性能根据结合能力、校准线性范围和目标分析物定量限进行评估。高性能链霉亲和素柱是用于定制亲和色谱装置制备的平台，可对感兴趣的分析物进行常规定量。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42470740": {
+      "pmid": "42470740",
+      "title": "MS-compatible hydrophobic interaction chromatography of intact proteins using long-ligand stationary phases.",
+      "abstract": "Hydrophobic interaction chromatography (HIC) is essential for the separation of proteins under native, nondenaturing conditions; however, traditional methods rely on high concentrations of nonvolatile kosmotropic salts that are incompatible with direct mass spectrometry (MS) coupling. This study evaluates a series of amide-based HIC stationary phases with extended ligands from propyl (C3) to decyl (C10) to overcome this bottleneck. Utilizing UHPLC hardware with titanium frits to mitigate detrimental metal-analyte interactions, we examined retention behavior for the NIST IgG1 monoclonal antibody and a diverse set of structurally heterogeneous top-down proteomic (TDP) targets ranging from 9.1 to 68 kDa. Drawing on the salt-exclusion principle, we demonstrate that increasing ligand length enables stationary phases to reach critical hydrophobicity at significantly lower salt concentrations, effectively offsetting the weaker retention forces of volatile, MS-friendly salts. While industry-standard propyl (C3) ligands failed completely to retain proteins at 0.5 M ammonium acetate, the decyl (C10) phase provided baseline resolution of the complex six-protein mixture. Furthermore, reaching critical hydrophobicity at lower salt levels relaxes the suppression of weak secondary interactions, such as hydrogen bonding via the ligand's amide-based carbonyl groups, which contributes to enhanced selectivity. Distinct retention dynamics were observed: while mAb retention plateaus at the octyl (C8) length, complex intact proteins like Protein G exhibit a near-linear retention increase across the entire series. Native HIC-LC-MS analysis of Protein G revealed consistent charge state distributions across short (C3) and long (C10) ligand conditions, indicating preservation of native-like structure even under increasing organic modifier during elution. These results demonstrate that long-ligand HIC phases maintain native protein structure while providing the necessary retention for direct HIC-MS coupling and the integration of HIC into multidimensional workflows for the identification of low-abundance proteoforms.",
+      "authors": [
+        "Christopher J Wike",
+        "Ali S Alshami",
+        "Matthew S Fischer",
+        "Akhila S Pullela",
+        "Ying Ge"
+      ],
+      "journal": "Journal of chromatography. A",
+      "journal_abbr": "J Chromatogr A",
+      "pub_date": "2026-07-14",
+      "entrez_date": "2026-07-18",
+      "doi": "10.1016/j.chroma.2026.467272",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Hydrophobic interaction chromatography",
+        "Intact proteins",
+        "LCMS",
+        "Ligand length",
+        "Top-down proteomics"
+      ],
+      "affiliation": "Department of Biomedical Engineering, University of North Dakota, 501 N Columbia Rd., Grand Forks, ND 58202-8380, USA; PolyLC Inc., 9151 Rumsey Rd., Suite 180, Columbia, Maryland, 21045, USA. Electronic address: cwike@polylc.com.",
+      "language": "eng",
+      "title_zh": "使用长配体固定相对完整蛋白质进行 MS 兼容的疏水相互作用色谱。",
+      "abstract_zh": "疏水相互作用色谱 (HIC) 对于在天然、非变性条件下分离蛋白质至关重要；然而，传统方法依赖于高浓度的非挥发性亲液盐，这与直接质谱 (MS) 耦合不相容。本研究评估了一系列基于酰胺的 HIC 固定相，其配体从丙基 (C3) 延伸到癸基 (C10)，以克服这一瓶颈。利用带有钛熔块的 UHPLC 硬件来减轻有害的金属-分析物相互作用，我们检查了 NIST IgG1 单克隆抗体和多种结构异质自上而下蛋白质组 (TDP) 靶标的保留行为，范围从 9.1 到 68 kDa。利用盐排斥原理，我们证明增加配体长度可以使固定相在盐浓度显着降低的情况下达到临界疏水性，从而有效抵消挥发性、MS 友好盐的较弱保留力。虽然行业标准的丙基 (C3) 配体在 0.5 M 醋酸铵中完全无法保留蛋白质，但癸基 (C10) 相提供了复杂的六蛋白质混合物的基线分辨率。\n此外，在较低盐水平下达到临界疏水性可以缓解对弱次级相互作用的抑制，例如通过配体的酰胺基羰基形成氢键，这有助于提高选择性。观察到了独特的保留动态：虽然 mAb 保留在辛基 (C8) 长度处达到平台，但复杂的完整蛋白质（如 Protein G）在整个系列中表现出近线性的保留增加。蛋白 G 的天然 HIC-LC-MS 分析揭示了短 (C3) 和长 (C10) 配体条件下一致的电荷态分布，表明即使在洗脱过程中有机改性剂增加的情况下，仍保留了类似天然的结构。这些结果表明，长配体 HIC 相保持了天然蛋白质结构，同时为直接 HIC-MS 耦合和将 HIC 集成到多维工作流程中提供了必要的保留，以鉴定低丰度的蛋白质形式。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42458707": {
+      "pmid": "42458707",
+      "title": "Screening of bispecific antibodies during single cell cloning of recombinant Chinese hamster ovary cell lines to improve titer and product quality.",
+      "abstract": "Development of therapeutic bispecific antibodies (BsAbs) poses significant manufacturability challenges associated with correct chain pairing and an increased diversity of impurities. Here we address this with a product quality assessment during cell line development (CLD), forgoing the need for genetic characterization during cell line screening. Using Chinese Hamster Ovary (CHO) cell lines expressing a panel of monoclonal antibodies (mAb) and BsAbs, we demonstrate the highly specific binding of SpotLight™ Huλ, Huĸ and HuFc reagents to their target chain isotypes (lambda or kappa light chain and Fc regions) during single cell cloning workflows on a Bruker Beacon® Optofluidic System. We then demonstrate combinatorial use of SpotLight™ Huλ and Huĸ reagents as an early product quality indicator on a CHO cell line expressing a BsAb with dual kappa-lambda light chain configuration. Cell lines presenting equal binding profiles for each SpotLight assay exhibited platform-typical heterodimer levels with an average of 87.26% following fed-batch bioreactor production assessment. Conversely, cell lines biased towards either SpotLight™ assay resulted in lower than desired heterodimer (0%-84.23%) and increased associated impurities. This study demonstrates the application of dual SpotLight™ assays as an identifier of CHO cell lines expressing a kappa-lambda light chain BsAb with a high heterodimer percentage. This allows cell lines with optimal product quality to be identified earlier in CLD, resulting in fewer cell lines being progressed to resource-intensive fed-batch studies and subsequent product quality assessment. Furthermore, this assay provides an opportunity to characterize impurity expression biases prior to developing downstream purification processes.",
+      "authors": [
+        "Molly Robinson",
+        "Jessica Willmott",
+        "Holly Corrigall",
+        "Daniela Lega",
+        "Joseph Stirling",
+        "Vithiya Vimalraj",
+        "Mitul Patel",
+        "Robyn Emmins"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-07-15",
+      "entrez_date": "2026-07-16",
+      "doi": "10.1002/btpr.88539",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Beacon® optofluidic system",
+        "BsAb",
+        "SpotLight™ assay",
+        "bispecific antibody",
+        "cell line development",
+        "product quality",
+        "single cell cloning"
+      ],
+      "affiliation": "BioPharm Process Research, Drug Substance Development, GSK, Stevenage, UK.",
+      "language": "eng",
+      "title_zh": "在重组中国仓鼠卵巢细胞系的单细胞克隆过程中筛选双特异性抗体，以提高效价和产品质量。",
+      "abstract_zh": "治疗性双特异性抗体 (BsAb) 的开发带来了与正确的链配对和增加的杂质多样性相关的重大可制造性挑战。在这里，我们通过细胞系开发 (CLD) 过程中的产品质量评估来解决这个问题，而无需在细胞系筛选过程中进行遗传表征。使用表达一组单克隆抗体 (mAb) 和 BsAb 的中国仓鼠卵巢 (CHO) 细胞系，我们在 Bruker Beacon® 光流控系统上的单细胞克隆工作流程中证明了 SpotLight™ Huλ、Huĸ 和 HuFc 试剂与其靶链同种型（lambda 或 kappa 轻链和 Fc 区）的高度特异性结合。然后，我们展示了 SpotLight™ Huλ 和 Huĸ 试剂的组合使用，作为表达具有双 kappa-lambda 轻链配置的 BsAb 的 CHO 细胞系的早期产品质量指标。在每次 SpotLight 测定中呈现相同结合谱的细胞系表现出平台典型的异二聚体水平，在补料分批生物反应器生产评估后平均为 87.26%。\n相反，偏向于 SpotLight™ 检测的细胞系会导致异二聚体低于预期 (0%-84.23%) 并增加相关杂质。本研究展示了双 SpotLight™ 测定法作为表达具有高异二聚体百分比的 kappa-lambda 轻链 BsAb 的 CHO 细胞系的标识符的应用。这使得在 CLD 中能够更早地鉴定出具有最佳产品质量的细胞系，从而减少进入资源密集型补料分批研究和随后的产品质量评估的细胞系。此外，该测定提供了在开发下游纯化工艺之前表征杂质表达偏差的机会。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42449784": {
+      "pmid": "42449784",
+      "title": "Development of a Double-Antibody Sandwich ELISA for the Detection of HPV16 E6 Protein.",
+      "abstract": "Background: The HPV16 E6 oncoprotein facilitates the ubiquitin-mediated degradation of the tumor suppressor p53, constituting a pivotal mechanism underlying viral immune evasion, cellular immortalization, and ultimately, malignant transformation. This study aimed to develop a reliable detection tool for the HPV16 E6 protein. Methods: Recombinant GST-E6 and E6-His proteins were expressed and purified using a prokaryotic expression system. Female BALB/c mice were immunized with GST-E6, and two hybridoma cell lines (G11A11 and A4) stably secreting anti-HPV16 E6 monoclonal antibodies were generated via hybridoma technology. Antibody pairing experiments identified A4 and G11A11 as suitable for sandwich ELISA. The optimal detection system was established using A4 antibody at 2 μg/mL for coating, HPV16 E6-His at 5 μg/mL as the detection antigen, and G11A11-HRP at a 1:200 dilution as the detection antibody. To validate the reliability, Hacat-HPV16E6 cell lysates were tested in parallel with a commercial ELISA kit. Results: After purification, the titers of both antibodies reached 1:204,800. The lower limit of quantification (LOQ) was 4.79 ng/mL and the limit of detection (LOD) was 3.39 ng/mL. The comparison with the commercial kit showed good consistency, with percentage differences ranging from 20% to 40%, confirming that the established ELISA is reliable for quantitative detection. Conclusions: This study successfully yielded high-titer and highly specific anti-HPV16 E6 monoclonal antibodies and developed a specific double-antibody sandwich ELISA, thereby furnishing a technical foundation for both fundamental research and laboratory-based applications related to HPV16-associated tumors.",
+      "authors": [
+        "Peiyang Ding",
+        "Mingyang Yan",
+        "Xue Wang",
+        "Haili Wang",
+        "Wenying Yan",
+        "Yanwei Wang",
+        "Jingming Zhou",
+        "Aiping Wang"
+      ],
+      "journal": "Diagnostics (Basel, Switzerland)",
+      "journal_abbr": "Diagnostics (Basel)",
+      "pub_date": "2026-06-26",
+      "entrez_date": "2026-07-15",
+      "doi": "10.3390/diagnostics16132002",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "E6 protein",
+        "double-antibody sandwich ELISA",
+        "human papillomavirus type 16",
+        "hybridoma technology",
+        "monoclonal antibody"
+      ],
+      "affiliation": "Longhu Laboratory of Advanced Immunology, Zhengzhou 450046, China.",
+      "language": "eng",
+      "title_zh": "开发用于检测 HPV16 E6 蛋白的双抗体夹心 ELISA。",
+      "abstract_zh": "背景：HPV16 E6癌蛋白促进泛素介导的抑癌基因p53降解，构成病毒免疫逃避、细胞永生化和最终恶性转化的关键机制。本研究旨在开发一种可靠的 HPV16 E6 蛋白检测工具。方法：利用原核表达系统表达并纯化重组GST-E6和E6-His蛋白。用GST-E6免疫雌性BALB/c小鼠，通过杂交瘤技术产生稳定分泌抗HPV16 E6单克隆抗体的两种杂交瘤细胞系（G11A11和A4）。抗体配对实验确定 A4 和 G11A11 适合夹心 ELISA。以2 μg/mL A4抗体包被、5 μg/mL HPV16 E6-His为检测抗原、1:200稀释的G11A11-HRP为检测抗体建立了最佳检测体系。为了验证可靠性，Hacat-HPV16E6 细胞裂解物与商业 ELISA 试剂盒同时进行了测试。结果：纯化后，两种抗体效价均达到1:204,800。\n定量下限 (LOQ) 为 4.79 ng/mL，检测限 (LOD) 为 3.39 ng/mL。与市售试剂盒的比较显示出良好的一致性，百分比差异在20%至40%之间，证实所建立的ELISA用于定量检测是可靠的。结论：本研究成功获得了高滴度、高特异性的抗HPV16 E6单克隆抗体，并开发了特异性双抗体夹心ELISA，为HPV16相关肿瘤的基础研究和实验室应用奠定了技术基础。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42450443": {
+      "pmid": "42450443",
+      "title": "The Hapten Design, Monoclonal Antibody Preparation, and Immunoassay Development for Rapid Detection of Isofenphos-Methyl.",
+      "abstract": "Isofenphos-methyl (IFP), a highly toxic and persistent organophosphate pesticide (OP), is widely used for soil pest control in crops but poses severe risks to ecological safety and human health because of its environmental accumulation and bioaccumulation. Herein, a sensitive and specific indirect competitive enzyme-linked immunosorbent assay (ic-ELISA) was developed for rapid IFP detection in vegetables. A novel IFP hapten was rationally designed and synthesized via computer-aided molecular simulation, and its structure was validated by liquid chromatography-tandem mass spectrometry (LC-MS/MS) and nuclear magnetic resonance (NMR). High-specificity anti-IFP monoclonal antibodies (mAbs) with strong anti-matrix interference were prepared for the first time using a matrix effect-enhanced screening strategy. The optimized ic-ELISA showed high sensitivity, with an IC50 of 6.087 ng/mL and a detection range of 1.165-30.490 ng/mL, and no cross-reactivity with other common OPs. Spiked recovery experiments in celery and chili pepper matrices yielded recoveries of 81.87-97.95% (RSD < 5.44%), with highly consistent LC-MS/MS results. The method exhibited a weak positive matrix effect in vegetable matrices, eliminating complex pretreatment and enabling rapid onsite detection.",
+      "authors": [
+        "Yajie Lei",
+        "Yunyun Chang",
+        "Wenchong Shan",
+        "Miao Wang",
+        "Yongxin She",
+        "A M Abd El-Aty",
+        "Jing Wang"
+      ],
+      "journal": "Foods (Basel, Switzerland)",
+      "journal_abbr": "Foods",
+      "pub_date": "2026-07-01",
+      "entrez_date": "2026-07-15",
+      "doi": "10.3390/foods15132325",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "hapten prediction",
+        "indirect competitive enzyme-linked immunosorbent assay",
+        "isofenphos-methyl",
+        "monoclonal antibody"
+      ],
+      "affiliation": "National Nanfan Research Institute (Sanya), Chinese Academy of Agricultural Sciences, Sanya 572024, China.",
+      "language": "eng",
+      "title_zh": "用于快速检测甲基异苯磷的半抗原设计、单克隆抗体制备和免疫测定法开发。",
+      "abstract_zh": "甲基异苯磷（IFP）是一种高毒、持久性有机磷农药（OP），广泛用于农作物土壤害虫防治，但因其环境富集和生物富集而对生态安全和人类健康构成严重风险。本文开发了一种灵敏且特异的间接竞争酶联免疫吸附测定 (ic-ELISA)，用于快速检测蔬菜中的 IFP。通过计算机辅助分子模拟合理设计并合成了一种新型IFP半抗原，并通过液相色谱-串联质谱（LC-MS/MS）和核磁共振（NMR）对其结构进行了验证。采用基质效应增强筛选策略，首次制备了具有强抗基质干扰的高特异性抗IFP单克隆抗体（mAb）。优化后的ic-ELISA具有较高的灵敏度，IC50为6.087 ng/mL，检测范围为1.165-30.490 ng/mL，且与其他常见OP无交叉反应。芹菜和辣椒基质中的加标回收率实验的回收率为 81.87-97.95% (RSD < 5.44%)，且 LC-MS/MS 结果高度一致。\n该方法在蔬菜基质中表现出微弱的正基质效应，无需复杂的预处理，可实现快速现场检测。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42429162": {
+      "pmid": "42429162",
+      "title": "Application of FT-IR spectroscopy as a non-invasive multi-attribute monitoring platform for critical quality attributes in monoclonal antibodies.",
+      "abstract": "Monoclonal antibodies (mAbs) are a major class of biopharmaceuticals widely used to treat cancers and inflammatory, infectious, and autoimmune diseases. The manufacturing of these therapeutics involves multiple complex and time-consuming steps that may introduce product- and process-related impurities and cause alterations in critical quality attributes (CQAs). Such changes can affect the structural integrity, stability, pharmacokinetics, and pharmacodynamics of monoclonal antibodies. Conventional analytical techniques used to monitor impurities and CQAs in protein therapeutics are effective but often labour-intensive, time-consuming, and costly, highlighting the need for rapid and integrated analytical approaches. This study investigates the feasibility of Fourier transform infrared (FT-IR) spectroscopy as a rapid, non-invasive, and cost-effective multi-attribute monitoring strategy for assessing CQAs, including aggregation, oxidation, deamidation, and glycation. Characteristic FT-IR spectral regions in stressed and non-stressed monoclonal antibody samples were analysed using multivariate statistical tools. Liquid chromatography-mass spectrometry (LC-MS), including top-down and bottom-up approaches, confirmed the post-translational modifications (PTMs) detected by FT-IR spectroscopy. Circular dichroism (CD) spectroscopy revealed a decrease in α-helical content and an increase in β-sheet structures in stressed samples, indicating stress-induced structural changes. Complementary analyses using size-exclusion chromatography-high-performance liquid chromatography (SEC-HPLC), dynamic light scattering (DLS), and sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) further confirmed the presence of aggregates and fragments. Overall, these findings highlight the potential of FT-IR spectroscopy for rapid monitoring of biotherapeutic structural integrity and quality attributes.",
+      "authors": [
+        "Ameya N Parkar",
+        "Prajakta Dandekar",
+        "Ratnesh Jain"
+      ],
+      "journal": "Analytical methods : advancing methods and applications",
+      "journal_abbr": "Anal Methods",
+      "pub_date": "2026-07-10",
+      "entrez_date": "2026-07-10",
+      "doi": "10.1039/d6ay00620e",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "Department of Biological Sciences and Biotechnology, Institute of Chemical Technology, Mumbai, India. rd.jain@ictmumbai.edu.in.",
+      "language": "eng",
+      "title_zh": "应用 FT-IR 光谱作为单克隆抗体关键质量属性的非侵入性多属性监测平台。",
+      "abstract_zh": "单克隆抗体 (mAb) 是一类主要的生物制药，广泛用于治疗癌症以及炎症、感染性和自身免疫性疾病。这些治疗药物的制造涉及多个复杂且耗时的步骤，可能会引入与产品和工艺相关的杂质，并导致关键质量属性 (CQA) 的改变。此类变化会影响单克隆抗体的结构完整性、稳定性、药代动力学和药效学。用于监测蛋白质治疗中的杂质和 CQA 的传统分析技术是有效的，但通常是劳动密集型、耗时且昂贵的，这凸显了对快速和集成分析方法的需求。本研究探讨了傅里叶变换红外 (FT-IR) 光谱作为一种快速、非侵入性且经济高效的多属性监测策略来评估 CQA（包括聚集、氧化、脱酰胺和糖化）的可行性。使用多元统计工具分析受压和非受压单克隆抗体样品中的特征 FT-IR 光谱区域。\n液相色谱-质谱 (LC-MS)，包括自上而下和自下而上的方法，证实了 FT-IR 光谱检测到的翻译后修饰 (PTM)。圆二色性 (CD) 光谱显示，受应力样品中 α 螺旋含量减少，β 折叠结构增加，表明应力引起的结构变化。使用尺寸排阻色谱-高效液相色谱 (SEC-HPLC)、动态光散射 (DLS) 和十二烷基硫酸钠-聚丙烯酰胺凝胶电泳 (SDS-PAGE) 的补充分析进一步证实了聚集体和片段的存在。总体而言，这些发现凸显了 FT-IR 光谱在快速监测生物治疗结构完整性和质量属性方面的潜力。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42415423": {
+      "pmid": "42415423",
+      "title": "Deep dive into drug substance HCP patterns for comprehensive safety assessment in recombinant mAb formats.",
+      "abstract": "The presence of host cell proteins (HCPs) as process-related impurities in monoclonal antibody (mAb) therapeutics presents risks, including immunogenicity, product instability, and reduced therapeutic efficacy. Therefore, HCP levels are seen as a critical quality attribute which requires monitoring. Characterization of residual HCPs is essential during process development and after process changes in late project phases including post-submission changes. Mass spectrometry-based analysis of HCPs is increasingly employed to overcome the limitations of ELISAs, particularly in identifying individual low-abundance HCPs. In this study, we systematically compared three enrichment strategies: hexapeptide enrichment, immunoaffinity chromatography (IAC), and native digest (ND), to enhance LC-MS/MS-based detection of low-abundance HCPs across five recombinant products expressed in CHO cells. Our results show that both ND and IAC substantially expand HCP detection beyond hexapeptide enrichment and in-solution digest in total number of HCP identification. While IAC supported the detection of several potentially critical HCPs, ND uniquely identified additional low-abundance HCPs not captured by antibody-based methods. Furthermore, pull-down assays revealed product-specific HCPs likely interacting with the active pharmaceutical ingredient, suggesting that standard purification steps may be insufficient for their removal. Together, our findings emphasize the complementary nature of ND and IAC for in-depth HCP profiling. We propose the combined application of both methods to ensure comprehensive detection of potentially critical HCPs in biopharmaceutical products, particularly when facing issues with low product or polysorbate stability caused by HCPs with enzymatic activities. This integrative approach supports enhanced product safety and control of consistent HCP depletion in the process.",
+      "authors": [
+        "Daniel M Waldera-Lupa",
+        "Anne Gehrke-Oltmanns",
+        "Alireza Dehghani",
+        "Melissa Morgenroth",
+        "Antje-Alke Betz",
+        "Heiner Falkenberg",
+        "Thomas Flad",
+        "Ulli Backofen",
+        "Thomas Waerner"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-07-07",
+      "entrez_date": "2026-07-08",
+      "doi": "10.1002/btpr.88540",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "drug substance",
+        "host cell proteins",
+        "immunoaffinity chromatography",
+        "monoclonal antibodies",
+        "native digest"
+      ],
+      "affiliation": "Analytical Development, ProtaGene GmbH, Dortmund, Germany.",
+      "language": "eng",
+      "title_zh": "深入研究原料药 HCP 模式，以对重组 mAb 形式进行全面的安全性评估。",
+      "abstract_zh": "单克隆抗体 (mAb) 疗法中宿主细胞蛋白 (HCP) 作为工艺相关杂质的存在存在风险，包括免疫原性、产品不稳定和治疗效果降低。因此，HCP 水平被视为需要监测的关键质量属性。残留 HCP 的表征在工艺开发期间以及项目后期阶段的工艺变更后（包括提交后变更）至关重要。基于质谱的 HCP 分析越来越多地用于克服 ELISA 的局限性，特别是在识别个体低丰度 HCP 方面。在本研究中，我们系统地比较了三种富集策略：六肽富集、免疫亲和层析 (IAC) 和天然消化 (ND)，以增强基于 LC-MS/MS 对 CHO 细胞中表达的五种重组产物的低丰度 HCP 的检测。我们的结果表明，ND 和 IAC 都大大扩展了 HCP 检测范围，超出了六肽富集和溶液内消化的 HCP 识别总数。\n虽然 IAC 支持检测几种潜在的关键 HCP，但 ND 独特地识别了基于抗体的方法未捕获的其他低丰度 HCP。此外，下拉分析显示产品特异性 HCP 可能与活性药物成分相互作用，这表明标准纯化步骤可能不足以去除它们。总之，我们的研究结果强调了 ND 和 IAC 在深入 HCP 分析方面的互补性。我们建议结合应用这两种方法，以确保全面检测生物制药产品中潜在的关键 HCP，特别是在面临由具有酶活性的 HCP 引起的产品或聚山梨酯稳定性低的问题时。这种综合方法支持增强产品安全性并控制流程中一致的 HCP 消耗。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42414861": {
+      "pmid": "42414861",
+      "title": "Demonstration of nanofiltration-based virus safety for AAV manufacturing using model viruses.",
+      "abstract": "Virus safety for biopharmaceutical products has been a well-established concern for several decades. While various virus reduction steps have been identified and implemented for traditional plasma-derived and monoclonal antibody products, there are various challenges to achieving the same virus safety in emerging gene therapy products. Virus removal filtration, or nanofiltration, has proven difficult to implement for larger gene therapy modalities, though there is a regulatory expectation to incorporate this step for smaller modalities such as adeno-associated virus (AAV) vector products. Here, we demonstrate the applicability of a virus removal filter with a 35 nm mean pore size distribution for AAV processes based on filtrations with porcine parvovirus (PPV) as a model for AAV vector and simian virus 40 (SV40) as a model contaminant virus. Filtration runs were performed at low pressure and included a defined process pause, two manufacturing conditions known to potentially impact viral clearance. All filtrations demonstrated SV40 reduction to below the limit of detection and no detectable reduction in PPV, indicating robust removal of large contaminating viruses without impacting product yields for AAV products. Thus, virus removal filtration is appropriate for the removal of adventitious viruses in gene therapy product manufacturing. Virus removal filters have an established history of improving patient safety and should be included in the manufacture of advanced gene therapy products whenever possible.",
+      "authors": [
+        "Brian Buesing",
+        "Tomoki Igi",
+        "Daniel Strauss"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-07-07",
+      "entrez_date": "2026-07-07",
+      "doi": "10.1002/btpr.88541",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "adeno‐associated virus (AAV)",
+        "downstream processing",
+        "process disruptions",
+        "viral clearance",
+        "virus filtration"
+      ],
+      "affiliation": "Asahi Kasei Bioprocess America, Inc., Glenview, Illinois, USA.",
+      "language": "eng",
+      "title_zh": "使用模型病毒演示基于纳滤的 AAV 制造的病毒安全性。",
+      "abstract_zh": "几十年来，生物制药产品的病毒安全性一直是人们普遍关注的问题。虽然针对传统血浆源抗体和单克隆抗体产品已经确定并实施了各种病毒减少步骤，但在新兴基因治疗产品中实现相同的病毒安全性仍面临各种挑战。事实证明，病毒去除过滤或纳滤很难用于较大的基因治疗方式，尽管监管机构期望将这一步骤纳入腺相关病毒（AAV）载体产品等较小的方式中。在这里，我们展示了平均孔径分布为 35 nm 的病毒去除过滤器对于 AAV 过程的适用性，该过滤器基于以猪细小病毒 (PPV) 作为 AAV 载体模型和猿猴病毒 40 (SV40) 作为模型污染物病毒的过滤。过滤运行在低压下进行，并包括规定的工艺暂停，这两种已知可能影响病毒清除的生产条件。\n所有过滤均表明 SV40 降低至检测限以下，且 PPV 未检测到降低，这表明可以有效去除大型污染病毒，且不会影响 AAV 产品的产量。因此，病毒去除过滤适用于去除基因治疗产品制造中的外来病毒。病毒去除过滤器在改善患者安全方面有着悠久的历史，应尽可能将其纳入先进基因治疗产品的制造中。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42415185": {
+      "pmid": "42415185",
+      "title": "Application of commercial ultrafiltration membranes for protein purification by high performance countercurrent membrane purification (HPCMP).",
+      "abstract": "High performance countercurrent membrane purification (HPCMP) has emerged as a promising diffusive separation strategy for the purification of recombinant proteins and monoclonal antibodies (mAbs). However, prior studies employed dialysis membranes, which are designed for diffusive separations but have not been validated for biopharmaceutical manufacturing. This study evaluates the ability of commercial ultrafiltration (UF) membranes, engineered for pressure-driven filtration, to support highly selective diffusive separations. Scanning electron microscopy (SEM) analysis of the membrane cross-sections revealed marked morphological differences between UF and dialysis membranes. Yet, transport studies using polydisperse dextrans and model proteins demonstrated that UF membranes can deliver exceptional diffusive separation selectivity. In particular, a 100 kDa polysulfone membrane (Cytiva) provided >150-fold diffusive selectivity between bovine serum albumin (BSA) and immunoglobulin G (IgG). When utilized for mAb separation from a clarified CHO cell culture fluid, this membrane achieved >98% product yield, near-complete removal of low molecular weight species, and significant reduction in both DNA and host cell protein (HCP) levels. These results demonstrate that commercial UF membranes that are validated for bioprocessing applications can be repurposed for HPCMP, enabling scalable, continuous downstream processing of biotherapeutics.",
+      "authors": [
+        "Aylin Mohammadzadehmarandi",
+        "Nate Heller",
+        "Mohammadreza Ahmadimashhadi",
+        "Jon Petrone",
+        "Nicholas Marchand",
+        "Siavash Darvishmanesh",
+        "Ka Zhang",
+        "Stefano Menegatti",
+        "Andrew L Zydney"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-07-07",
+      "entrez_date": "2026-07-07",
+      "doi": "10.1002/btpr.88537",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "bioprocessing",
+        "bioseparations",
+        "diffusive transport",
+        "membranes",
+        "monoclonal antibody"
+      ],
+      "affiliation": "Department of Chemical Engineering, The Pennsylvania State University, University Park, Pennsylvania, USA.",
+      "language": "eng",
+      "title_zh": "应用商业超滤膜通过高性能逆流膜纯化 (HPCMP) 进行蛋白质纯化。",
+      "abstract_zh": "高性能逆流膜纯化 (HPCMP) 已成为一种有前景的扩散分离策略，用于纯化重组蛋白和单克隆抗体 (mAb)。然而，先前的研究采用了透析膜，该膜是为扩散分离而设计​​的，但尚未在生物制药制造中得到验证。本研究评估了专为压力驱动过滤而设计的商用超滤 (UF) 膜支持高选择性扩散分离的能力。膜横截面的扫描电子显微镜 (SEM) 分析显示超滤膜和透析膜之间存在显着的形态差异。然而，使用多分散葡聚糖和模型蛋白的传输研究表明，超滤膜可以提供卓越的扩散分离选择性。特别是，100 kDa 聚砜膜 (Cytiva) 在牛血清白蛋白 (BSA) 和免疫球蛋白 G (IgG) 之间提供 >150 倍的扩散选择性。\n当用于从澄清的 CHO 细胞培养液中分离 mAb 时，该膜实现了 >98% 的产物收率，几乎完全去除了低分子量物质，并显着降低了 DNA 和宿主细胞蛋白 (HCP) 水平。这些结果表明，经过生物加工应用验证的商用超滤膜可以重新用于 HPCMP，从而实现生物治疗药物的可扩展、连续的下游加工。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42402251": {
+      "pmid": "42402251",
+      "title": "Administration Study of Bedinvetmab, an Antinerve Growth Factor Monoclonal Antibody, in Horses for Doping Control Purposes.",
+      "abstract": "Monoclonal antibodies (mAbs) targeting nerve growth factor (NGF) represent a novel therapeutic approach for managing acute and chronic pain in humans and animals. However, their potential misuse as pain-masking agents in competitive equine sports raises significant welfare and integrity concerns. To enhance understanding of the elimination profile of anti-NGF mAb if misused in horses, this study describes the first administration of bedinvetmab (a canine anti-NGF mAb) in three geldings, establishing its plasma elimination profile following subcutaneous administration. Bedinvetmab plasma concentrations were determined using a recently developed generic method involving affinity purification with Protein A magnetic beads, followed by tryptic digestion and identification of a proteotypic peptide via capillary flow high performance liquid chromatography coupled with high resolution tandem mass spectrometry (HPLC-HRMS). Significant interindividual variability was observed. Maximum plasma concentrations ranged from approximately 0.97 to 6.0 μg/mL and occurred 1-2 days post-administration. Bedinvetmab was detectable up to the last sampled time point (34 days) in two horses (estimated concentrations: 1.9 and 1.7 μg/mL), while in the third horse, it was detectable only up to 5 days post-administration (0.13 μg/mL). Although the mechanisms underlying this variability were unclear, these results demonstrate that mAbs developed for other species can exert prolonged effects in horses, underscoring the importance of implementing effective doping controls for the misuse of therapeutic mAbs.",
+      "authors": [
+        "Hiu Wing Cheung",
+        "Kin-Sing Wong",
+        "Yung-Ching Choi",
+        "Wai Him Kwok",
+        "Yat-Ming So",
+        "Adrian F Farrington",
+        "Emmie N M Ho"
+      ],
+      "journal": "Drug testing and analysis",
+      "journal_abbr": "Drug Test Anal",
+      "pub_date": "2026-07-05",
+      "entrez_date": "2026-07-05",
+      "doi": "10.1002/dta.70119",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Protein A",
+        "bedinvetmab",
+        "doping in sports",
+        "equine doping control",
+        "nerve growth factor"
+      ],
+      "affiliation": "Racing Laboratory, The Hong Kong Jockey Club, Sha Tin Racecourse, Sha Tin, N. T, Hong Kong, China.",
+      "language": "eng",
+      "title_zh": "Bedinvetmab（一种抗神经生长因子单克隆抗体）在马中用于兴奋剂控制目的的给药研究。",
+      "abstract_zh": "靶向神经生长因子 (NGF) 的单克隆抗体 (mAb) 代表了一种治疗人类和动物急性和慢性疼痛的新型治疗方法。然而，它们在竞技马术运动中作为止痛剂的潜在滥用引起了重大的福利和诚信问题。为了加深对抗 NGF 单克隆抗体在马中误用的消除情况的了解，本研究描述了在三匹骟马中首次施用 bedinvetmab（一种犬类抗 NGF 单克隆抗体），建立了皮下注射后其血浆消除情况。使用最近开发的通用方法测定 Bedinvetmab 血浆浓度，该方法涉及使用 Protein A 磁珠进行亲和纯化，然后通过毛细管流高效液相色谱与高分辨率串联质谱 (HPLC-HRMS) 相结合进行胰蛋白酶消化和蛋白肽鉴定。观察到显着的个体差异。最大血浆浓度范围约为 0.97 至 6.0 μg/mL，发生在给药后 1-2 天。\n直到最后采样时间点（34 天），在两匹马中均可检测到 Bedinvetmab（估计浓度：1.9 和 1.7 μg/mL），而在第三匹马中，仅在给药后 5 天才可检测到（0.13 μg/mL）。尽管这种变异性背后的机制尚不清楚，但这些结果表明，为其他物种开发的单克隆抗体可以对马产生长期影响，这强调了对治疗性单克隆抗体的滥用实施有效的兴奋剂控制的重要性。",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42376876": {
+      "pmid": "42376876",
+      "title": "Computer-Aided Rational Hapten Design for Broad-Spectrum Monoclonal Antibody Development against Anthraquinones and Its Application in Lateral Flow Immunoassay.",
+      "abstract": "Plant-derived foods are a vital component of the human diet, but they pose health risks due to the potential presence of anthraquinones (AQs) and their derivatives, and long-term intake of these substances can lead to health issues. Therefore, there is an urgent need for a method to rapidly and simultaneously detect seven AQs, including AQ, emodin, rhein, chrysophanol, aloe emodin, alizarin, and purpurin. In this study, four haptens were designed based on the common parent nucleus structure of the seven AQs combined with computer-aided simulation analysis. MD was used to analyze the recognition mechanism between AQ mAb-4D7 and the seven AQs, revealing that key amino acid residues (TRP90, ASP99, and TYR31) in the complementarity-determining region of the antibody maintain broad-spectrum recognition of AQs through the combined effects of Pi-Pi stacking, hydrogen bonding, and hydrophobic interactions. Based on AQ mAb-4D7, gold nanoparticles based on lateral flow immunoassay (GNP-LFIA) was developed for detecting the seven AQs in tea, aloe vera, and herbal drinks, with calculated limits of detection of 7.282-34.112 μg/kg, 5.536-27.338 μg/kg, and 5.025-26.319 μg/kg, respectively. In real sample detection, the method exhibited high consistency with the results of liquid chromatography-tandem mass spectrometry confirming the accuracy and stability of GNP-LFIA and providing a reliable technical tool for the on-site rapid screening of multiple AQs in plant-derived foods.",
+      "authors": [
+        "Jiaxun Li",
+        "Lingling Guo",
+        "Xiaoling Wu",
+        "Maozhong Sun",
+        "Liguang Xu",
+        "Chuanlai Xu",
+        "Hua Kuang",
+        "Xinxin Xu"
+      ],
+      "journal": "Analytical chemistry",
+      "journal_abbr": "Anal Chem",
+      "pub_date": "2026-06-30",
+      "entrez_date": "2026-06-30",
+      "doi": "10.1021/acs.analchem.6c00568",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "keywords": [],
+      "affiliation": "International Joint Research Laboratory for Biointerface and Biodetection, and School of Food Science and Technology, Jiangnan University, Wuxi, Jiangsu 214122, P. R. China.",
+      "language": "eng",
+      "title_zh": "计算机辅助合理半抗原设计用于抗蒽醌类广谱单克隆抗体的开发及其在侧流免疫分析中的应用。",
+      "abstract_zh": "植物源性食品是人类饮食的重要组成部分，但由于潜在存在蒽醌（AQ）及其衍生物，它们会带来健康风险，长期摄入这些物质可能会导致健康问题。因此，迫切需要一种快速、同时检测AQ、大黄素、大黄酸、大黄酚、芦荟大黄素、茜素和红紫素7种AQ的方法。本研究根据7个AQ的共同母核结构并结合计算机辅助模拟分析，设计了4个半抗原。利用MD分析了AQ mAb-4D7与7个AQ之间的识别机制，揭示了抗体互补决定区的关键氨基酸残基（TRP90、ASP99和TYR31）通过Pi-Pi堆积、氢键和疏水相互作用的综合作用维持了对AQ的广谱识别。以AQ mAb-4D7为基础，开发了基于侧流免疫分析（GNP-LFIA）的金纳米粒子，用于检测茶叶、芦荟和草药饮料中的7种AQ，计算出的检测限分别为7.282-34.112 μg/kg、5.536-27.338 μg/kg和5.025-26.319 μg/kg。\n在实际样品检测中，该方法与液相色谱-串联质谱检测结果具有较高的一致性，证实了GNP-LFIA的准确性和稳定性，为植物源性食品中多种AQ的现场快速筛查提供了可靠的技术工具。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42368154": {
+      "pmid": "42368154",
+      "title": "Characterization of the Anti-Alzheimer Drug Lecanemab by Mass Spectrometry.",
+      "abstract": "Lecanemab is a humanized mouse monoclonal antibody that is clinically approved for treating Alzheimer's disease by binding to amyloid oligomers, protofibrils, and insoluble fibrils to clear Aβ aggregates in the brain. Although therapeutically effective, lecanemab is also associated with side effects, and its quality might vary among different batches due to impurities and modifications. Herein, we provide proteomics, intact protein, and N-glycoproteomics analyses of lecanemab by liquid chromatography coupled with mass spectrometry. We found that the lecanemab drug is highly pure but displays two major peaks in the chromatography and contains many species with close molecular weights around 150 kDa under mass spectrometric scanning. There were 40 N-glycans found at the N304 site of lecanemab of the heavy chain. Further analysis by MSFragger identified other modifications and additional glycosites. These results provide data as resource for the identification of critical quality attributes of lecanemab in studying its therapeutic effectiveness, side effects, and possible batch-to-batch qualities.",
+      "authors": [
+        "Jiaojiao Sha",
+        "Zijin Geng",
+        "Shanyu Qi",
+        "Liangjia Du",
+        "Qianqian Hu",
+        "Minqi Cai",
+        "Dezhu Chen",
+        "Yiqiang Chen",
+        "Siyuan Liu",
+        "Hongyan Song",
+        "Tianze Ling",
+        "Cheng Chang",
+        "Bing Bai"
+      ],
+      "journal": "ACS omega",
+      "journal_abbr": "ACS Omega",
+      "pub_date": "2026-06-08",
+      "entrez_date": "2026-06-29",
+      "doi": "10.1021/acsomega.6c02666",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "Department of Laboratory Medicine, Nanjing Drum Tower Hospital Clinical College of Nanjing University of Chinese Medicine, Nanjing, Jiangsu 210008, China.",
+      "language": "eng",
+      "title_zh": "通过质谱法表征抗阿尔茨海默病药物 Lecanemab。",
+      "abstract_zh": "Lecanemab 是一种人源化小鼠单克隆抗体，经临床批准可通过与淀粉样蛋白寡聚物、原纤维和不溶性原纤维结合来清除大脑中的 Aβ 聚集物来治疗阿尔茨海默病。虽然乐卡奈单抗具有治疗效果，但也存在副作用，而且由于杂质和修饰，不同批次的质量可能会有所不同。在此，我们通过液相色谱结合质谱法对 Lecanemab 进行蛋白质组学、完整蛋白质和 N-糖蛋白质组学分析。我们发现lecanemab药物纯度很高，但在色谱中显示出两个主峰，并且在质谱扫描下含有许多分子量接近的物质，约为150 kDa。在lecanemab重链的N304位点发现了40个N-聚糖。 MSFragger 的进一步分析确定了其他修饰和额外的糖位点。这些结果为识别 Lecanemab 的关键质量属性提供了数据资源，以研究其治疗效果、副作用和可能的批次质量。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42345899": {
+      "pmid": "42345899",
+      "title": "Fluorescence Polarization Immunoassay with Modulated Selectivity for Effective Detection of the Agrochemical 4-Chlorophenoxyacetic Acid.",
+      "abstract": "4-Chlorophenoxyacetic acid (4-CPA), a synthetic auxin analog, is employed in agriculture both as a plant growth regulator and as a constituent of herbicide formulations. Consequently, the establishment of simple and rapid detection methods is essential for effective environmental monitoring. This study reports the first development of a homogeneous fluorescence polarization immunoassay (FPIA) for the determination of 4-CPA. The monoclonal antibody (M1), raised against 4-CPA, was evaluated as a recognition element. Furthermore, two fluorescently labeled 4-CPA tracers-with ethylenediamine fluorescein thiocarbamate and aminohexylaminocarbonylfluorescein-were synthesized and purified, and their structures were unequivocally confirmed by high-performance liquid chromatography coupled with high-resolution mass spectrometric detection (HPLC-HRMS). Optimal concentrations of monoclonal antibodies and tracers were established, yielding a limit of detection of 1.2 ng/mL. The assay demonstrated a broad dynamic range of 2.3-300 ng/mL and a rapid analysis time of 15 min. Validation via the standard addition method in authentic open water samples resulted in recovery rates of 98-112%. To address the cross-reactivity with the prevalent herbicide 2,4-dichlorophenoxyacetic acid (2,4-D), two novel strategies were devised and successfully implemented. The first approach involves the concurrent execution of two separate FPIAs-one for 2,4-D and one for 4-CPA-followed by the mathematical resolution of two analyte concentrations from the two measured binding values. The second strategy entails the preliminary selective removal of 2,4-D from sample matrices using affinity chromatography columns with immobilized anti-2,4-D antibodies prior to FPIA for 4-CPA. These proposed methodologies appear highly promising for overcoming the inherent limitations of traditional immunoassays when faced with significant cross-reactivity among structurally analogous compounds.",
+      "authors": [
+        "Marya K Kolokolova",
+        "Liliya I Mukhametova",
+        "Boris S Tupertsev",
+        "Anatoly V Zherdev",
+        "Xinxin Xu",
+        "Chuanlai Xu",
+        "Sergei A Eremin"
+      ],
+      "journal": "Biosensors",
+      "journal_abbr": "Biosensors (Basel)",
+      "pub_date": "2026-06-18",
+      "entrez_date": "2026-06-25",
+      "doi": "10.3390/bios16060343",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "agrochemicals",
+        "chlorophenoxyacetic acids",
+        "fluorescence polarization",
+        "fluorophores",
+        "immunosensering",
+        "on-site detection",
+        "toxic contaminants",
+        "water safety control"
+      ],
+      "affiliation": "Faculty of Chemistry, M. V. Lomonosov Moscow State University, Leninsky Gory 1/3, 119991 Moscow, Russia.",
+      "language": "eng",
+      "title_zh": "具有调制选择性的荧光偏振免疫测定法可有效检测农用化学品 4-氯苯氧基乙酸。",
+      "abstract_zh": "4-氯苯氧基乙酸 (4-CPA) 是一种合成的生长素类似物，在农业中用作植物生长调节剂和除草剂配方的成分。因此，建立简单、快速的检测方法对于有效的环境监测至关重要。本研究报告了首次开发用于测定 4-CPA 的均相荧光偏振免疫分析 (FPIA)。针对 4-CPA 产生的单克隆抗体 (M1) 作为识别元件进行评估。此外，合成并纯化了两种荧光标记的4-CPA示踪剂——乙二胺荧光素硫代氨基甲酸酯和氨基己基氨基羰基荧光素——，并通过高效液相色谱与高分辨率质谱检测（HPLC-HRMS）明确证实了它们的结构。确定了单克隆抗体和示踪剂的最佳浓度，检测限为 1.2 ng/mL。该测定显示出 2.3-300 ng/mL 的宽动态范围和 15 分钟的快速分析时间。通过标准添加法在真实的开放水样品中进行验证，回收率为 98-112%。\n为了解决与常见除草剂 2,4-二氯苯氧基乙酸 (2,4-D) 的交叉反应问题，设计并成功实施了两种新策略。第一种方法涉及同时执行两个单独的 FPIA（一个用于 2,4-D，一个用于 4-CPA），然后根据两个测量的结合值对两个分析物浓度进行数学解析。第二种策略需要在 4-CPA 的 FPIA 之前使用带有固定化抗 2,4-D 抗体的亲和色谱柱从样品基质中初步选择性去除 2,4-D。当面临结构类似化合物之间的显着交叉反应性时，这些提出的方法似乎非常有希望克服传统免疫测定的固有局限性。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42346963": {
+      "pmid": "42346963",
+      "title": "Separation of Monoclonal Antibody Aggregates Using an Analytical Ultrafiltration Technique.",
+      "abstract": "Size exclusion chromatography is the industry-standard method for measuring aggregate content in monoclonal antibody samples. In this paper, we present an orthogonal analytical technique based on ultrafiltration for detecting and quantifying monoclonal antibody aggregates. The sample to be analyzed was injected into the system in the ultrafiltration mode, and the monomeric monoclonal antibody molecules were detected in the form of a permeate peak. The system was then switched to backflow mode, and the aggregates were recovered and detected in the form of a retained species peak. The aggregate content in a given sample was quantified based on the relative peak areas, akin to that in liquid chromatography. Two monoclonal antibodies were tested in this study using the proposed analytical ultrafiltration technique. Size exclusion chromatography served as the control technique. The data obtained using the two techniques were found to be in good agreement. The advantages and limitations of the proposed analytical ultrafiltration technique are discussed.",
+      "authors": [
+        "Raja Ghosh",
+        "Mrunal Ingawale",
+        "Yves Durocher"
+      ],
+      "journal": "Membranes",
+      "journal_abbr": "Membranes (Basel)",
+      "pub_date": "2026-06-10",
+      "entrez_date": "2026-06-25",
+      "doi": "10.3390/membranes16060207",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "aggregates",
+        "analysis",
+        "analytical ultrafiltration",
+        "membrane",
+        "monoclonal antibody"
+      ],
+      "affiliation": "Department of Chemical Engineering, McMaster University, 1280 Main Street West, Hamilton, ON L8S 4L7, Canada.",
+      "language": "eng",
+      "title_zh": "使用分析超滤技术分离单克隆抗体聚集体。",
+      "abstract_zh": "尺寸排阻色谱法是测量单克隆抗体样品中聚集体含量的行业标准方法。在本文中，我们提出了一种基于超滤的正交分析技术，用于检测和定量单克隆抗体聚集体。将待分析样品以超滤模式注入系统，以渗透峰的形式检测到单体单克隆抗体分子。然后将系统切换到回流模式，并以保留物质峰的形式回收和检测聚集体。给定样品中的聚集体含量根据相对峰面积进行定量，类似于液相色谱法。本研究使用所提出的分析超滤技术测试了两种单克隆抗体。尺寸排阻色谱法用作对照技术。使用这两种技术获得的数据被发现非常一致。讨论了所提出的分析超滤技术的优点和局限性。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42332429": {
+      "pmid": "42332429",
+      "title": "Viral Inactivation Process Monitoring by APIES (Absorbance, Polarized Intrinsic Emission, and Light Scattering): Simultaneous Protein Aggregation, Concentration, and Stability Analysis.",
+      "abstract": "The manufacture of monoclonal antibody (mAb) therapeutics relies on stringent downstream processing, where low-pH viral inactivation (VIN) safeguards against enveloped viruses. Here we introduce simultaneous absorbance, polarized intrinsic emission, and scattering (APIES) measurements as a rapid (<1 min), robust analytical platform for real-time assessment of protein aggregation, concentration, and tertiary structural integrity during VIN. Dual excitation wavelengths (280 and 350 nm), multichannel detection, and parallel polarizers provide high sensitivity for aggregation monitoring. APIES provides three orthogonal readouts: protein concentration via A280, aggregation by an aggregation index (AggIndex = (A350/(A280 - A350)) × 100), Rayleigh-to-fluorescence ratios (IR/IF), and large tertiary structure changes (e.g., unfolding) via an intrinsic emission ratio (I350/I330). We evaluated APIES using a bovine IgG model (∼1 mg mL-1) undergoing simulated VIN at pH 3.4, 3.6, and 3.8 for 8 h. Measurements were acquired hourly using APIES, dynamic light scattering (DLS), and absorbance spectroscopy, with offline size exclusion chromatography (SEC) after sample neutralization. Under all pH conditions, DLS and APIES confirmed extensive increases of in-vessel aggregation, with AggIndex and IR/IF strongly correlating with DLS determined aggregate content (R2 > 0.9). However, SEC only showed an increase in irreversible aggregates (of ∼5% after 8 h) at pH 3.4, with no increase for pH 3.6 or 3.8. This highlights a limitation of SEC for in-process monitoring and shows that APIES better monitors in-vessel aggregation. Furthermore, APIES, via AggIndex and IR/IF ratio scatter plots, potentially distinguishes between reversible from irreversible aggregation pathways. Repeating these experiments using a flowcell over 3 h, with 1 min APIES measurement sampling intervals, confirmed that APIES was suitable for online aggregation monitoring. Overall, APIES is a simple, fast, and sensitive process analytical technology for real-time protein aggregation monitoring during industrial processes like VIN.",
+      "authors": [
+        "Jared Darrell Zang",
+        "Alan George Ryder"
+      ],
+      "journal": "Analytical chemistry",
+      "journal_abbr": "Anal Chem",
+      "pub_date": "2026-06-22",
+      "entrez_date": "2026-06-23",
+      "doi": "10.1021/acs.analchem.6c00640",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ],
+      "keywords": [],
+      "affiliation": "Nanoscale BioPhotonics Laboratory, School of Natural Sciences (Physics), University of Galway, Galway H91 TK33, Ireland.",
+      "language": "eng",
+      "title_zh": "通过 APIES（吸光度、偏振本征发射和光散射）监测病毒灭活过程：同时进行蛋白质聚集、浓度和稳定性分析。",
+      "abstract_zh": "单克隆抗体 (mAb) 疗法的生产依赖于严格的下游加工，其中低 pH 病毒灭活 (VIN) 可防止包膜病毒。在这里，我们介绍同步吸光度、偏振本征发射和散射 (APIES) 测量，作为快速（<1 分钟）、强大的分析平台，用于实时评估 VIN 期间的蛋白质聚集、浓度和三级结构完整性。双激发波长（280 和 350 nm）、多通道检测和平行偏振器为聚集监测提供高灵敏度。 APIES 提供三种正交读数：通过 A280 的蛋白质浓度、通过聚合指数聚合 (AggIndex = (A350/(A280 - A350)) × 100)、瑞利荧光比 (IR/IF) 以及通过内在发射比 (I350/I330) 的大三级结构变化（例如，去折叠）。我们使用牛 IgG 模型 (∼1 mg mL-1) 评估 APIES，在 pH 3.4、3.6 和 3.8 下进行模拟 VIN 8 小时。每小时使用 APIES、动态光散射 (DLS) 和吸光度光谱进行测量，并在样品中和后使用离线尺寸排阻色谱 (SEC)。\n在所有 pH 条件下，DLS 和 APIES 证实了容器内聚集的广泛增加，AggIndex 和 IR/IF 与 DLS 测定的聚集体含量密切相关（R2 > 0.9）。然而，SEC 仅显示在 pH 3.4 时不可逆聚集体增加（8 小时后约 5%），而在 pH 3.6 或 3.8 时则没有增加。这凸显了 SEC 在过程监控方面的局限性，并表明 APIES 可以更好地监控容器内聚集。此外，APIES 通过 AggIndex 和 IR/IF 比率散点图，可以区分可逆和不可逆聚集途径。使用流通池重复这些实验超过 3 小时，APIES 测量采样间隔为 1 分钟，证实 APIES 适合在线聚合监测。总体而言，APIES 是一种简单、快速且灵敏的过程分析技术，适用于 VIN 等工业过程中的实时蛋白质聚集监测。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42323147": {
+      "pmid": "42323147",
+      "title": "From candidate ranking to lead identification - Hydrophobic interaction chromatography, PAIA, and structure-based calculations for hydrophobicity determination during developability assessment of mAbs and a mAb-derived fusion protein.",
+      "abstract": "Antibody therapeutics have gained critical relevance in the treatment of numerous health conditions, yet their development is resource-intensive and bears a non-negligible failure risk. Consequently, developability assessment to predict a protein's likeliness to evolve into an approved drug has become a pivotal measure. Surface hydrophobicity is a crucial developability feature because of its relation to self-interaction and aggregation. In our study, we determined the hydrophobicity of 21 antibodies and one antibody-derived fusion protein by hydrophobic interaction chromatography (HIC), the emerging PAIA assay, and structure-based calculations. We derived data analysis concepts for PAIA and calculated surface descriptors by taking well-established HIC as reference. Based on these concepts and considering each technique's capabilities and limitations, we deduce how HIC, PAIA, and surface descriptors for hydrophobicity can efficiently be combined throughout the different developability assessment stages to meet material availability and required throughput and characterization depth. For discovery and early development, we illustrate the definition of in silico thresholds to identify low-risk candidates and reduce the initial candidate pool. We then show how data from 384-well plate-based PAIA screening can be used for the classification into low-, medium-, and high-hydrophobicity molecules, followed by the high-resolution hydrophobicity ranking of final lead candidate(s) by HIC.",
+      "authors": [
+        "Constanze Helbig",
+        "Andrea Arsiccio",
+        "Georg Schuster",
+        "Andrea Hawe",
+        "Tim Menzen"
+      ],
+      "journal": "European journal of pharmaceutics and biopharmaceutics : official journal of Arbeitsgemeinschaft fur Pharmazeutische Verfahrenstechnik e.V",
+      "journal_abbr": "Eur J Pharm Biopharm",
+      "pub_date": "2026-06-20",
+      "entrez_date": "2026-06-20",
+      "doi": "10.1016/j.ejpb.2026.115160",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Antibody therapeutics",
+        "Developability assessment",
+        "Drug development",
+        "Hydrophobic interaction chromatography",
+        "In silico modeling",
+        "PAIA assay",
+        "Surface hydrophobicity"
+      ],
+      "affiliation": "Coriolis Pharma Research GmbH, Fraunhoferstr. 18 b, 82152 Martinsried, Germany. Electronic address: constanze.helbig@coriolis-pharma.com.",
+      "language": "eng",
+      "title_zh": "从候选排序到先导化合物鉴定 - 在 mAb 和 mAb 衍生融合蛋白的可开发性评估过程中，疏水相互作用色谱、PAIA 和基于结构的疏水性计算。",
+      "abstract_zh": "抗体疗法在许多健康状况的治疗中已经获得了至关重要的相关性，但其开发是资源密集型的，并且具有不可忽视的失败风险。因此，预测蛋白质演变成批准药物的可能性的可开发性评估已成为一项关键措施。表面疏水性是一个重要的可开发性特征，因为它与自相互作用和聚集有关。在我们的研究中，我们通过疏水相互作用层析 (HIC)、新兴的 PAIA 测定和基于结构的计算确定了 21 种抗体和一种抗体衍生融合蛋白的疏水性。我们以成熟的 HIC 为参考，导出了 PAIA 的数据分析概念并计算了表面描述符。基于这些概念并考虑每种技术的能力和局限性，我们推断出如何在不同的可开发性评估阶段有效地组合 HIC、PAIA 和疏水性表面描述符，以满足材料可用性和所需的通量和表征深度。\n对于发现和早期开发，我们说明了计算机阈值的定义，以识别低风险候选者并减少初始候选者库。然后，我们展示了如何使用基于 384 孔板的 PAIA 筛选数据将分子分类为低、中和高疏水性分子，然后通过 HIC 对最终主要候选物进行高分辨率疏水性排名。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42307050": {
+      "pmid": "42307050",
+      "title": "Attenuation of Triple Selection Markers to Enhance mAb Expression in Tyrosine-Based Selection Systems via an Inducible CRISPRi Platform.",
+      "abstract": "Chinese hamster ovary (CHO) cells are the predominant host for monoclonal antibody (mAb) production, where the choice of selection system is critical. While metabolic selection systems are favored over antibiotic-based ones to avoid purification and safety issues, traditional single-marker systems poorly regulate the light-to-heavy chain (LC/HC) ratio, which is key for yield. Although novel multi-marker systems can address this, they often lack strategies to enhance expression. To overcome these limitations, our study employed a triple-marker system based on the tyrosine biosynthetic pathway to regulate the LC/HC ratio and eliminate the need for alkaline concentrated tyrosine feeding. Furthermore, we introduced an inducible CRISPR interference (iCRISPRi) platform, which integrates SV40 promoter-targeting CRISPRi with a Tet-on system, to enhance its efficiency. This strategy upregulated three fluorescent reporter genes, resulting in a selected mini-pool with 84.84% higher cell-specific productivity and 87.50% higher final titer in tyrosine-free perfusion culture. Mechanistically, doxycycline (Dox)-induced dCas9 expression inhibited the transcription of SV40-driven markers, enriching cells with high marker integration under tyrosine deprivation and consequently increasing HC and LC gene copy numbers to boost mAb yields. This iCRISPRi strategy serves as a potential enhancer for SV40 promoter-driven systems, offering novel insights for optimizing metabolic selection.",
+      "authors": [
+        "Lei Cao",
+        "Liang Zhao",
+        "Yan Zhou",
+        "Qian Ye",
+        "Wen-Song Tan"
+      ],
+      "journal": "Biotechnology journal",
+      "journal_abbr": "Biotechnol J",
+      "pub_date": "2026-06",
+      "entrez_date": "2026-06-17",
+      "doi": "10.1002/biot.70265",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "CHO cell line development",
+        "CRISPR interference",
+        "metabolic selection system",
+        "monoclonal antibody",
+        "selection marker",
+        "tyrosine biosynthesis"
+      ],
+      "affiliation": "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai, China.",
+      "language": "eng",
+      "title_zh": "通过诱导型 CRISPRi 平台减弱三重选择标记以增强基于酪氨酸的选择系统中的 mAb 表达。",
+      "abstract_zh": "中国仓鼠卵巢 (CHO) 细胞是单克隆抗体 (mAb) 生产的主要宿主，其中选择系统的选择至关重要。虽然代谢选择系统比基于抗生素的系统更受青睐，以避免纯化和安全问题，但传统的单标记系统很难调节轻链与重链 (LC/HC) 的比率，而轻链与重链 (LC/HC) 的比率是产量的关键。尽管新型多标记系统可以解决这个问题，但它们通常缺乏增强表达的策略。为了克服这些限制，我们的研究采用了基于酪氨酸生物合成途径的三标记系统来调节 LC/HC 比率并消除对碱性浓缩酪氨酸喂养的需要。此外，我们引入了诱导型 CRISPR 干扰 (iCRISPRi) 平台，该平台将 SV40 启动子靶向 CRISPRi 与 Tet-on 系统集成，以提高其效率。该策略上调了三个荧光报告基因，导致选定的迷你库在无酪氨酸灌注培养中细胞比生产率提高 84.84%，最终效价提高 87.50%。\n从机制上讲，多西环素 (Dox) 诱导的 dCas9 表达抑制 SV40 驱动的标记物的转录，在酪氨酸剥夺下富集具有高标记物整合的细胞，从而增加 HC 和 LC 基因拷贝数，从而提高 mAb 产量。这种 iCRISPRi 策略可作为 SV40 启动子驱动系统的潜在增强剂，为优化代谢选择提供新的见解。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42292894": {
+      "pmid": "42292894",
+      "title": "Identification of Fasciola hepatica gut-associated glycoproteins as potential vaccine candidates by lectin-affinity chromatography, flukicidal monoclonal antibodies, and affinity-enrichment mass spectrometry.",
+      "abstract": "A significant economic impact to the agriculture and declining drug efficacy due to anthelmintic resistance lead to the search for novel intervention approaches against the zoonotic liver fluke Fasciola hepatica. A cost-effective strategy is to induce protective immunity by vaccination. However, adaptation of the parasite to evade the host immune response hampers classical vaccine development. Therefore, an ideal protective epitope would not be subjected to this evolutionary selection. Antigens, which are not exposed to the host's immune system during a natural parasite infection, but which could be attacked by vaccine antibodies, have been shown to be valid candidates, especially those expressed in the gut of blood-feeding and tissue-dwelling helminths. Overall, helminth gut-associated glycoproteins-including hidden antigens-serve as a rich source for novel anthelminthic vaccine candidates. Here, we purified F. hepatica gut-associated glycoproteins assisted by lectin-affinity chromatography and specific monoclonal antibodies (mAbs). The protective capacity was demonstrated in vitro by feeding the mAbs to cultured F. hepatica, which impaired fluke survival assessed by reduced motility, fecundity, and reduced active secretion. Furthermore, we could demonstrate a binding of different mAbs to F. hepatica gut structures, indicating that liver flukes dine from their environment. Characterisation of the complex gut-associated glycoproteins by a quantitative affinity-enrichment proteomics approach revealed a list of 36 proteins with potential for further vaccine development. Given a conservation of many of these candidates in different F. hepatica life stages indicated by available transcriptomic data, such parasite gut-associated glycoproteins serve as a rich source for novel vaccines, directed also against early developmental stages responsible for pathological liver damage.",
+      "authors": [
+        "Sonja G Rechsteiner",
+        "Sina Hasler",
+        "Peter Gehrig",
+        "Peter Deplazes",
+        "Ramon M Eichenberger"
+      ],
+      "journal": "Frontiers in parasitology",
+      "journal_abbr": "Front Parasitol",
+      "pub_date": "2026-05-29",
+      "entrez_date": "2026-06-15",
+      "doi": "10.3389/fpara.2026.1746419",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Fasciola hepatica",
+        "LFQ-proteomics",
+        "gut protein",
+        "liver fluke",
+        "mass spectrometry",
+        "monoclonal antibody",
+        "pull-down",
+        "vaccine"
+      ],
+      "affiliation": "Institute of Parasitology, Vetsuisse Faculty, University of Zurich, Zurich, Switzerland.",
+      "language": "eng",
+      "title_zh": "通过凝集素亲和层析、杀吸虫单克隆抗体和亲和富集质谱法鉴定肝片形吸虫肠道相关糖蛋白作为潜在候选疫苗。",
+      "abstract_zh": "对农业的重大经济影响和由于抗蠕虫药耐药性而导致的药效下降导致人们寻找针对人畜共患肝吸虫肝片形吸虫的新干预方法。一种具有成本效益的策略是通过疫苗接种诱导保护性免疫力。然而，寄生虫逃避宿主免疫反应的适应阻碍了经典疫苗的开发。因此，理想的保护性表位不会受到这种进化选择。抗原在自然寄生虫感染期间不会暴露于宿主的免疫系统，但可能会受到疫苗抗体的攻击，已被证明是有效的候选者，特别是那些在吸血和组织居住的蠕虫肠道中表达的抗原。总体而言，蠕虫肠道相关糖蛋白（包括隐藏抗原）是新型驱虫疫苗候选物的丰富来源。在这里，我们在凝集素亲和层析和特异性单克隆抗体 (mAb) 的辅助下纯化了肝镰刀菌肠道相关糖蛋白。通过将单克隆抗体喂入培养的F. 体外，证明了其保护能力。\n肝吸虫，通过减少运动性、繁殖力和减少主动分泌来评估吸虫存活率。此外，我们可以证明不同的单克隆抗体与肝吸虫肠道结构的结合，表明肝吸虫从其环境中进食。通过定量亲和富集蛋白质组学方法对复杂的肠道相关糖蛋白进行表征，揭示了 36 种具有进一步疫苗开发潜力的蛋白质列表。鉴于现有转录组数据表明，许多这些候选物在不同的肝镰刀菌生命阶段具有保守性，因此这些寄生虫肠道相关糖蛋白可以作为新型疫苗的丰富来源，也可针对导致病理性肝损伤的早期发育阶段。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42285912": {
+      "pmid": "42285912",
+      "title": "Comparison of knockdown approaches for the generation of stable cell populations expressing afucosylated antibodies.",
+      "abstract": "Targeted silencing of cellular genes in cell lines stably expressing a secreted recombinant protein offers a flexible and convenient strategy for modulating product quality attributes. However, unlike genetic knockout of a cellular gene or the use of potent inhibitors to eliminate cellular enzyme activity, gene knockdown approaches using microRNAs (miRNA) or short hairpin RNAs (shRNA) may result in only partial reduction of enzyme activity and only partial change of the desired product quality attribute. Moreover, through saturation of the Dicer pathway, shRNA may introduce cytotoxic effects that affect product yield. In this study, we demonstrate that miRNAs are a more suitable tool than shRNAs for α1,6-fucosyltransferase (FUT8) knockdown in Chinese hamster ovary (CHO) cells, when expressed under the control of an RNA-Polymerase II promoter. In the presence of miRNAs targeted to the FUT8 mRNA, the fucosylation levels of the N-glycan linked to Asn297 (EU numbering) of a recombinant monoclonal antibody (mAb) were considerably reduced (>90% afucosylation by hydrophilic interaction liquid chromatography - high‑performance liquid chromatography; no detectable fucosylated product by intact mass spectrometry), without a relevant impact on mAb expression. By comparison, overexpression of shRNAs targeted to the FUT8 mRNA resulted in higher levels of residual fucosylation of the mAb and a larger reduction in mAb titers. miRNAs overcame a limitation of the knockdown approach with shRNAs, making this approach a valuable tool for biopharmaceutical manufacturing.",
+      "authors": [
+        "Maria Tsachaki",
+        "Andrew Samy",
+        "Mégane Peltret",
+        "Timothee Brunstein Laplace",
+        "Emilie Vaxelaire-Hily",
+        "Farid Mosbaoui",
+        "Anna Galea",
+        "Francesca Contarin",
+        "Lionel Duarte",
+        "Roberto Giovannini",
+        "Martin Bertschinger"
+      ],
+      "journal": "mAbs",
+      "journal_abbr": "MAbs",
+      "pub_date": "2026-06-12",
+      "entrez_date": "2026-06-12",
+      "doi": "10.1080/19420862.2026.2684393",
+      "publication_types": [
+        "Journal Article",
+        "Comparative Study"
+      ],
+      "keywords": [
+        "CHO cells",
+        "Knockdown",
+        "afucosylation",
+        "antibody expression"
+      ],
+      "affiliation": "Drug Substance Development, IGI Therapeutics SA, La Chaux-de-Fonds, Switzerland.",
+      "language": "eng",
+      "title_zh": "比较用于产生表达无岩藻糖基化抗体的稳定细胞群的敲低方法。",
+      "abstract_zh": "稳定表达分泌重组蛋白的细胞系中细胞基因的靶向沉默为调节产品质量属性提供了灵活且方便的策略。然而，与细胞基因的基因敲除或使用强效抑制剂消除细胞酶活性不同，使用 microRNA (miRNA) 或短发夹 RNA (shRNA) 的基因敲除方法可能会导致酶活性仅部分降低，并且所需产品质量属性仅部分改变。此外，通过 Dicer 途径的饱和，shRNA 可能会引入影响产物产量的细胞毒性作用。在这项研究中，我们证明，当在 RNA 聚合酶 II 启动子的控制下表达时，miRNA 是比 shRNA 更适合敲低中国仓鼠卵巢 (CHO) 细胞中 α1,6-岩藻糖基转移酶 (FUT8) 的工具。在存在针对 FUT8 mRNA 的 miRNA 的情况下，与重组单克隆抗体 (mAb) 的 Asn297（EU 编号）相连的 N-聚糖的岩藻糖基化水平显着降低（通过亲水相互作用液相色谱 - 高效液相色谱检测，无岩藻糖基化>90%；\n通过完整质谱法未检测到岩藻糖基化产物），对 mAb 表达没有相关影响。相比之下，针对 FUT8 mRNA 的 shRNA 的过度表达导致 mAb 的残余岩藻糖基化水平更高，并且 mAb 滴度大幅降低。 miRNA 克服了 shRNA 击倒方法的局限性，使该方法成为生物制药制造的宝贵工具。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42272446": {
+      "pmid": "42272446",
+      "title": "Advances in the use of DNA aptamers for bioanalysis of antibody-based therapeutics.",
+      "abstract": "Nucleic acid aptamers are single-stranded oligonucleotides that fold into defined three-dimensional structures and bind molecular targets with high affinity and specificity. Because aptamers are sequence-defined, chemically synthesized reagents, they offer high purity, minimal lot-to-lot variability, and flexible functionalization, positioning them as practical alternatives or complements to antibody-based critical reagents in regulated bioanalysis. This review summarizes the current landscape of DNA aptamer-enabled bioanalysis for therapeutic monoclonal antibodies (mAbs) and antibody-drug conjugates (ADCs), with emphasis on three application areas: (i) ELISA-compatible ligand-binding assays, (ii) immunocapture workflows coupled to liquid chromatography-tandem mass spectrometry or LC-based measurements, and (iii) aptamer-based biosensors for bioanalysis and process analytics. This review highlights key considerations in aptamer acquisition (SELEX design, partitioning, and counter-selection to improve anti-idiotype selectivity) and illustrates representative assay configurations, including drug-to-antibody ratio-responsive formats for ADCs and ratiometric/electrochemical and fluorescence resonance energy transfer-based aptasensors for on-site monitoring. Finally, this review discusses future directions, notably coupling aptamer binding to nucleic acid amplification for ultra-sensitive quantification, and practical challenges, such as nuclease susceptibility, nonspecific interactions with serum proteins, and structure-dependent robustness that must be addressed under fit-for-purpose validation frameworks.",
+      "authors": [
+        "Kenichiro Todoroki"
+      ],
+      "journal": "Bioanalysis",
+      "journal_abbr": "Bioanalysis",
+      "pub_date": "2026-06-11",
+      "entrez_date": "2026-06-11",
+      "doi": "10.1080/17576180.2026.2687593",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "keywords": [
+        "LC–MS/MS",
+        "Nucleic acid aptamers",
+        "antibody–drug conjugate",
+        "aptasensor",
+        "bioanalysis",
+        "ligand-binding assay",
+        "therapeutic monoclonal antibody"
+      ],
+      "affiliation": "Laboratory of Analytical and Bio-Analytical Chemistry, School of Pharmaceutical Sciences, University of Shizuoka, Shizuoka, Japan.",
+      "language": "eng",
+      "title_zh": "使用 DNA 适体进行抗体疗法生物分析的进展。",
+      "abstract_zh": "核酸适体是单链寡核苷酸，可折叠成确定的三维结构并以高亲和力和特异性结合分子靶标。由于适体是序列定义的化学合成试剂，因此它们具有高纯度、最小批次变异性和灵活的功能化，使其成为受监管生物分析中基于抗体的关键试剂的实用替代品或补充。本综述总结了目前用于治疗性单克隆抗体 (mAb) 和抗体药物偶联物 (ADC) 的 DNA 适体生物分析的前景，重点关注三个应用领域：(i) ELISA 兼容的配体结合测定，(ii) 与液相色谱-串联质谱或基于 LC 的测量相结合的免疫捕获工作流程，以及 (iii) 用于生物分析和过程分析的基于适体的生物传感器。\n本综述重点介绍了适体采集中的关键考虑因素（SELEX 设计、分区和反选择以提高抗独特型选择性），并说明了代表性的测定配置，包括 ADC 的药物与抗体比率响应格式以及用于现场监测的基于比率/电化学和荧光共振能量转移的适体传感器。最后，这篇综述讨论了未来的方向，特别是将适配体结合到核酸扩增上以实现超灵敏定量，以及实际挑战，例如核酸酶敏感性、与血清蛋白的非特异性相互作用以及必须在适合目的的验证框架下解决的结构依赖性稳健性。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42276533": {
+      "pmid": "42276533",
+      "title": "Comparative analysis of charge heterogeneity in anti-sclerostin monoclonal antibodies produced via continuous perfusion and fed-batch processes.",
+      "abstract": "As critical quality attributes, post-translational modifications (PTMs) of therapeutic monoclonal antibodies in production impact their structural stability, charge heterogeneity, and clinical efficacy. This study elucidated PTM-driven charge isomer disparities in anti-sclerostin monoclonal antibodies from continuous perfusion versus fed-batch bioreactor processes. By developing an integrated analytical platform combining strong cation-exchange chromatography, size-exclusion chromatography, and non-reducing capillary electrophoresis with high-resolution mass spectrometry, we precisely characterized molecular weight variations and signature PTM profiles across distinct charge isomers. The study revealed that basic isomer 1 predominantly originated from C-terminal glycine loss and methionine oxidation, while basic isomer 2 arose from incomplete N-terminal glutamine cyclization and N-terminal truncation. The fed-batch process uniquely induced degradation at the heavy chain Met250-Ile251 site and significantly elevated low-molecular-weight species content. Crucially, antibodies from both processes exhibited minimal differences in purity and PTM profiles, robustly validating the feasibility of process transition. Biological activity assessment results showed that the relative binding activities of charge isomers from both processes ranged between 90 and 121%. The equilibrium dissociation constant values for binding to the neonatal fragment crystallizable receptor were all within (5∼9) × 10-1 μM, indicating that FcRn function was unaffected by charge heterogeneity or the process. In summary, this study systematically compares the impact of two production processes-fed-batch and continuous perfusion-on the charge heterogeneity and biological activity of an anti-sclerostin monoclonal antibody. This work not only identifies key quality benchmarks for antibody process optimization but also establishes a PTM fingerprint-based standard for evaluating process comparability, providing critical guidance for advancing continuous biomanufacturing technologies.",
+      "authors": [
+        "Yu Yi",
+        "Dawei Xie",
+        "Xichen Zhang",
+        "Jianfeng Mei",
+        "Yanlu Zhang",
+        "Jianshu Chen",
+        "Guoqing Ying"
+      ],
+      "journal": "Protein expression and purification",
+      "journal_abbr": "Protein Expr Purif",
+      "pub_date": "2026-06-11",
+      "entrez_date": "2026-06-11",
+      "doi": "10.1016/j.pep.2026.106958",
+      "publication_types": [
+        "Journal Article",
+        "Comparative Study"
+      ],
+      "keywords": [
+        "Anti-sclerostin monoclonal antibody",
+        "Charge isomers",
+        "Continuous perfusion",
+        "Fed-batch",
+        "Process changes"
+      ],
+      "affiliation": "College of Pharmaceutical Science, Zhejiang University of Technology, Hangzhou, 310014, China. Electronic address: yiyu1106@zjut.edu.cn.",
+      "language": "eng",
+      "title_zh": "通过连续灌注和补料分批工艺产生的抗硬化素单克隆抗体中电荷异质性的比较分析。",
+      "abstract_zh": "作为关键的质量属性，治疗性单克隆抗体在生产过程中的翻译后修饰 (PTM) 会影响其结构稳定性、电荷异质性和临床疗效。这项研究阐明了连续灌注与分批补料生物反应器过程中抗硬化素单克隆抗体中 PTM 驱动的电荷异构体差异。通过开发一个将强阳离子交换色谱、尺寸排阻色谱、非还原毛细管电泳与高分辨率质谱相结合的集成分析平台，我们精确地表征了不同电荷异构体的分子量变化和特征性 PTM 谱。研究表明，碱性异构体1主要源于C端甘氨酸丢失和蛋氨酸氧化，而碱性异构体2则源于N端谷氨酰胺环化不完全和N端截断。补料分批工艺独特地诱导了重链 Met250-Ile251 位点的降解，并显着提高了低分子量物质的含量。\n至关重要的是，两种工艺的抗体在纯度和 PTM 图谱上表现出最小的差异，有力地验证了工艺转换的可行性。生物活性评估结果表明，两个过程中电荷异构体的相对结合活性在 90% 至 121% 之间。与新生儿片段可结晶受体结合的平衡解离常数值均在(5∼9)×10-1μM范围内，表明FcRn功能不受电荷异质性或过程的影响。总之，本研究系统地比较了两种生产工艺（分批补料和连续灌注）对抗硬化素单克隆抗体的电荷异质性和生物活性的影响。这项工作不仅确定了抗体工艺优化的关键质量基准，还建立了基于 PTM 指纹的标准来评估工艺可比性，为推进连续生物制造技术提供了关键指导。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42273649": {
+      "pmid": "42273649",
+      "title": "Aggregation Issues in Radioactive Copper-Labeled Antibodies.",
+      "abstract": "Radioimmunoconjugates, formed by attaching radionuclides to monoclonal antibodies (mAbs) either directly or through bifunctional chelators, have advanced precision oncology by enabling targeted molecular imaging and therapy. Copper radioisotopes have gained increasing attention due to their diverse decay properties and potential for both diagnostic and therapeutic applications. Among these, Cu-64 is an attractive radionuclide for immuno-positron emission tomography (immunoPET) and theranostic applications owing to its favorable production route. It is particularly suitable for labeling mAb and antibody-derived fragments for immunoPET imaging. However, radiolabeling antibodies presents unique challenges in product quality control (QC), with aggregation being a critical yet under-addressed parameter. This review introduces the importance of Cu-radioisotopes and discusses purification strategies of immunoconjugates for clinically acceptable products. The focus then shifts to aggregation: its physicochemical drivers, reported cases in the literature, and its impact on pharmacokinetics and immunogenicity. We evaluate aggregation detection methods, highlighting dynamic light scattering (DLS) as a sensitive, orthogonal QC tool complementing conventional size-exclusion high-performance liquid chromatography. The effectiveness of DLS is demonstrated by recent data showing its superior sensitivity in identifying hidden aggregates that inversely correlate with tumor uptake. Finally, we present approaches to minimize aggregation and discuss the importance of regulatory concern of aggregate limits.",
+      "authors": [
+        "Muhammad Zeeshan",
+        "Huu Bao Nguyen",
+        "Jeongsoo Yoo"
+      ],
+      "journal": "Nuclear medicine and molecular imaging",
+      "journal_abbr": "Nucl Med Mol Imaging",
+      "pub_date": "2025-12-18",
+      "entrez_date": "2026-06-11",
+      "doi": "10.1007/s13139-025-00974-6",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "keywords": [
+        "Aggregation",
+        "Copper-64",
+        "Dynamic light scattering",
+        "Monoclonal antibodies",
+        "Quality control",
+        "Radioimmunoconjugates"
+      ],
+      "affiliation": "Department of Molecular Medicine, BK21 FOUR KNU Convergence Educational Program, School of Medicine, Kyungpook National University, Daegu, 41944 Republic of Korea.",
+      "language": "eng",
+      "title_zh": "放射性铜标记抗体的聚集问题。",
+      "abstract_zh": "放射免疫结合物是通过直接或通过双功能螯合剂将放射性核素附着到单克隆抗体 (mAb) 上而形成的，通过实现靶向分子成像和治疗，具有先进的精准肿瘤学。铜放射性同位素由于其不同的衰变特性以及诊断和治疗应用的潜力而受到越来越多的关注。其中，Cu-64 因其有利的生产路线而成为免疫正电子发射断层扫描 (immunoPET) 和治疗诊断应用中极具吸引力的放射性核素。它特别适合标记 mAb 和抗体衍生片段以进行免疫 PET 成像。然而，放射性标记抗体在产品质量控制 (QC) 方面提出了独特的挑战，其中聚集是一个关键但尚未得到充分解决的参数。本综述介绍了铜放射性同位素的重要性，并讨论了临床可接受产品的免疫偶联物的纯化策略。然后焦点转向聚集：其理化驱动因素、文献中报道的病例及其对药代动力学和免疫原性的影响。\n我们评估聚集检测方法，强调动态光散射 (DLS) 作为一种灵敏的正交 QC 工具，可补充传统尺寸排阻高性能液相色谱。最近的数据证明了 DLS 的有效性，显示其在识别与肿瘤摄取呈负相关的隐藏聚集体方面具有卓越的灵敏度。最后，我们提出了最小化聚合的方法，并讨论了监管关注聚合限制的重要性。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42276211": {
+      "pmid": "42276211",
+      "title": "Stabilization of spray-dried monoclonal antibody formulations with polymeric excipients.",
+      "abstract": "Spray drying is an emerging continuous manufacturing approach with significant potential for producing stable solid formulations of biologic drug products such as peptides, proteins and oligonucleotides. However, these sensitive molecules on exposure to thermal, shear, and interfacial stresses during spray drying may experience structural perturbations that compromise long-term stability. This study evaluated several polymeric excipients as stabilizers in spray-dried monoclonal antibody formulations and compared their performance with conventional sugar excipients, trehalose and mannitol. Formulations were prepared at a 1:1 (w/w) protein-to-excipient ratio and spray dried, and the resulting powders were subjected to accelerated storage at 40 °C. Particle size distribution, morphology, and residual moisture content were characterized. Protein physical stability and secondary structure were evaluated using size exclusion chromatography and solid-state Fourier transform infrared spectroscopy, respectively. Solid-state nuclear magnetic resonance spectroscopy and X-ray photoelectron spectroscopy were used to study protein-excipient phase miscibility and particle surface composition, respectively, in the spray-dried solids. Hydrolyzed gelatin provided the most robust stabilization of the mAb, resulting in a fivefold reduction in monomer loss compared to trehalose after 90 days storage at 40 °C. (2-Hydroxypropyl)-β-cyclodextrin showed stabilization comparable to trehalose while reducing the mAb surface exposure. High molecular weight polyvinylpyrrolidone (PVP K90) showed better mAb stabilization compared to its low molecular weight grade (PVP K30). Whereas dextran, sodium carboxymethyl cellulose, and hydroxypropyl methylcellulose were less effective in their ability to stabilize the mAb. These findings highlight the critical role of excipient selection in improving the stability of spray-dried monoclonal antibody formulations.",
+      "authors": [
+        "Chanakya D Patil",
+        "Kinnari Santosh Arte",
+        "Rachana Sapkota",
+        "Yijing Huang",
+        "Navin Kafle",
+        "Jiaying Liu",
+        "Eric J Munson",
+        "Harshil K Renawala",
+        "Qi Tony Zhou",
+        "Li Lily Qu"
+      ],
+      "journal": "Journal of pharmaceutical sciences",
+      "journal_abbr": "J Pharm Sci",
+      "pub_date": "2026-06-11",
+      "entrez_date": "2026-06-11",
+      "doi": "10.1016/j.xphs.2026.104360",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Cyclodextrin(s)",
+        "Monoclonal antibody",
+        "Polymer(s)",
+        "Protein aggregation",
+        "Protein formulation",
+        "Spray drying"
+      ],
+      "affiliation": "Department of Industrial and Molecular Pharmaceutics, College of Pharmacy, Purdue University, West Lafayette, IN 47907, USA.",
+      "language": "eng",
+      "title_zh": "使用聚合物赋形剂稳定喷雾干燥的单克隆抗体制剂。",
+      "abstract_zh": "喷雾干燥是一种新兴的连续生产方法，在生产肽、蛋白质和寡核苷酸等生物药品的稳定固体制剂方面具有巨大潜力。然而，这些敏感分子在喷雾干燥过程中暴露于热、剪切和界面应力时可能会经历结构扰动，从而损害长期稳定性。本研究评估了几种聚合物赋形剂作为喷雾干燥单克隆抗体制剂中的稳定剂，并将其与传统糖赋形剂、海藻糖和甘露醇的性能进行了比较。以 1:1 (w/w) 的蛋白质与赋形剂比例制备制剂并喷雾干燥，所得粉末在 40 °C 下加速储存。对粒度分布、形态和残余水分含量进行了表征。分别使用尺寸排阻色谱法和固态傅里叶变换红外光谱法评估蛋白质物理稳定性和二级结构。\n固态核磁共振波谱和 X 射线光电子能谱分别用于研究喷雾干燥固体中的蛋白质-赋形剂相混溶性和颗粒表面组成。水解明胶为 mAb 提供了最强大的稳定性，与海藻糖相比，在 40 °C 储存 90 天后，单体损失减少了五倍。 (2-羟丙基)-β-环糊精表现出与海藻糖相当的稳定性，同时减少了 mAb 表面暴露。与其低分子量等级 (PVP K30) 相比，高分子量聚乙烯吡咯烷酮 (PVP K90) 显示出更好的 mAb 稳定性。而葡聚糖、羧甲基纤维素钠和羟丙基甲基纤维素稳定 mAb 的能力较差。这些发现强调了赋形剂选择在提高喷雾干燥单克隆抗体制剂稳定性方面的关键作用。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42231136": {
+      "pmid": "42231136",
+      "title": "Continuous concentration and diafiltration tangential flow filtration with scalable dual membrane technology.",
+      "abstract": "Intensified, integrated, and continuous bioprocessing are key trends in current biologics biomanufacturing. They model more efficient and economical production in upstream and downstream processes. Continuous or single-pass (SP) tangential flow filtration (TFF) and particularly diafiltration (buffer exchange) are key applications needed in downstream processing. This work presents a novel flat sheet membrane cassette for TFF diafiltration with optional simultaneous ultrafiltration (concentration). It enables effective buffer exchange of feed streams in a single-pass, without dilution and with reduced shear stress to the valuable product. Contaminants such as salts, media components, or any small molecules smaller than the respective membrane cut-off are continuously removed while the needed buffer volume is comparable to conventional diafiltration processes with recirculation. The flat-sheet membrane cassette design resembles classic TFF cassettes and can therefore be scaled up and down and handled analogously. In addition, the design allows for a closed configuration, suitable for aseptic or bioburden-controlled conditions. To introduce the buffer, only one additional external connection port is required. This allows continuous diafiltration without significant increase in operator or process control complexity. This work presents ultrafiltration and diafiltration application data using bovine serum albumin (BSA) as a model protein and real antibodies processed with an automated lab-scale process system for reproducible data collection. The process performance was evaluated based on buffer exchange efficiency, transmembrane pressure (TMP) and permeate flux rates under varying process parameters, namely feed protein concentration, feed flow rate and diafiltration volumes. Buffer consumptions similar to conventional recirculation diafiltration have been observed with even reduced buffer consumptions at diafiltration volumes below 3. Buffer exchange values ranged over a broad range depending on the process parameters while relevant settings achieved a ~97 to >99% buffer exchange at, for example, 3, 5 or 7 diafiltration volumes at relatively low TMP between 50 and 350 mbar using both BSA and mAb. Typical permeability values and feed flow rates ranged from 10 to 60 L/(m2h) and 1 to 7 L/(m2h), respectively, using BSA and mAb protein concentrations from ~3 to 80 g/L and were significantly depending on the set process parameters. The data demonstrates how this new SPTFF concept can contribute to intensified and continuous biomanufacturing.",
+      "authors": [
+        "Alexander Helling",
+        "Ehsan Espah Borujeni",
+        "Martin Leuthold",
+        "Stuart Tindal",
+        "Lara Fernandez-Cerezo",
+        "Mark Brower"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-06-02",
+      "entrez_date": "2026-06-03",
+      "doi": "10.1002/btpr.88501",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "ILC (in‐line concentration)",
+        "ILCDF (in‐line concentration diafiltration)",
+        "SPDF (single‐pass diafiltration)",
+        "SPTFF (single‐pass tangential flow filtration)",
+        "continuous downstream processing",
+        "diafiltration",
+        "process intensification"
+      ],
+      "affiliation": "Sartorius Stedim Biotech GmbH, Goettingen, Germany.",
+      "language": "eng",
+      "title_zh": "采用可扩展的双膜技术进行连续浓缩和渗滤切向流过滤。",
+      "abstract_zh": "强化、集成和连续的生物加工是当前生物制品生物制造的主要趋势。他们对上游和下游流程中更高效、更经济的生产进行建模。连续或单程 (SP) 切向流过滤 (TFF)，特别是渗滤（缓冲液交换）是下游加工所需的关键应用。这项工作提出了一种新型平板膜盒，用于 TFF 渗滤，并可选同时进行超滤（浓缩）。它能够在单程中有效地缓冲进料流交换，无需稀释，并且减少了对有价值产品的剪切应力。诸如盐、介质成分或任何小于相应膜截留值的小分子等污染物被连续去除，而所需的缓冲液体积与传统的再循环渗滤工艺相当。平板膜盒设计类似于经典的 TFF 盒，因此可以按比例放大和缩小并进行类似处理。此外，该设计允许采用封闭配置，适用于无菌或生物负载控制的条件。\n为了引入缓冲器，只需要一个额外的外部连接端口。这允许连续渗滤，而不会显着增加操作员或过程控制的复杂性。这项工作提供了超滤和渗滤应用数据，使用牛血清白蛋白（BSA）作为模型蛋白质和使用自动化实验室规模处理系统处理的真实抗体，以进行可重复的数据收集。根据不同工艺参数（即进料蛋白浓度、进料流速和渗滤体积）下的缓冲液交换效率、跨膜压力（TMP）和渗透通量速率来评估工艺性能。观察到与传统再循环渗滤相似的缓冲液消耗，在渗滤体积低于 3 时甚至减少了缓冲液消耗。缓冲液交换值的范围很宽，具体取决于工艺参数，而相关设置在使用 BSA 和 mAb 时，在 50 至 350 mbar 之间相对较低的 TMP 下，在例如 3、5 或 7 个渗滤体积下实现了约 97 至 >99% 的缓冲液交换。\n使用大约 3 至 80 g/L 的 BSA 和 mAb 蛋白浓度时，典型的渗透率值和进料流速分别为 10 至 60 L/(m2h) 和 1 至 7 L/(m2h)，并且很大程度上取决于设定的工艺参数。数据展示了这一新的 SPTFF 概念如何有助于集约化和连续的生物制造。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42235435": {
+      "pmid": "42235435",
+      "title": "Advanced modeling techniques in hydrophobic interaction chromatography (HIC).",
+      "abstract": "Hydrophobic Interaction Chromatography (HIC) is widely used in biopharmaceutical downstream processing for protein separation under mild and aqueous conditions. Accurate modeling of HIC for optimizing monoclonal antibody (mAb) monomer and aggregate separation remains challenging, primarily due to complex resin-protein interactions across diverse operating ranges. This study compares five advanced modeling approaches, mechanistic models, residual-based and differential parallel hybrid models, a serial hybrid model, and a physics informed neural network (PINN), to predict HIC behavior under varied conditions. Model performance was evaluated using qualitative trend analysis and quantitative metrics (R², RMSE, MBE). Among the tested approaches, the differential parallel hybrid model consistently demonstrated superior performance, accurately capturing the complex dynamics of HIC, including breakthrough, plateau, wash, and tailing phases for both monomer and aggregate species. It achieved remarkable accuracy for aggregate predictions (R² = 0.99, RMSE = 0.02, MBE = 0.01) and similarly strong performance for monomer (R² = 0.99). These findings underscore that sophisticated hybrid modeling strategies, especially the differential parallel approach, offer robust and highly accurate predictive capabilities essential for optimizing complex downstream bioprocesses like HIC.",
+      "authors": [
+        "Samira Beryamysoltan",
+        "Juan Guzman-Tinoco",
+        "Krishna Gudena",
+        "Chris Gerbrich",
+        "Alejandro Cano",
+        "Thomas O'Connor",
+        "Sayantan Chattoraj"
+      ],
+      "journal": "Journal of chromatography. A",
+      "journal_abbr": "J Chromatogr A",
+      "pub_date": "2026-05-22",
+      "entrez_date": "2026-06-03",
+      "doi": "10.1016/j.chroma.2026.467108",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Hybrid model",
+        "Hydrophobic interaction chromatography",
+        "Machine learning models",
+        "Mechanistic model",
+        "Physics-informed neural network"
+      ],
+      "affiliation": "Process Engineering and Analytics, GSK R&D, Upper Providence, PA, USA. Electronic address: samira.x.beyramysoltan@gsk.com.",
+      "language": "eng",
+      "title_zh": "疏水相互作用色谱 (HIC) 的先进建模技术。",
+      "abstract_zh": "疏水相互作用色谱 (HIC) 广泛应用于生物制药下游加工，用于在温和的水性条件下分离蛋白质。用于优化单克隆抗体 (mAb) 单体和聚集体分离的 HIC 精确建模仍然具有挑战性，这主要是由于不同操作范围内复杂的树脂-蛋白质相互作用。本研究比较了五种先进的建模方法、机械模型、基于残差和差分的并行混合模型、串行混合模型和物理信息神经网络 (PINN)，以预测不同条件下的 HIC 行为。使用定性趋势分析和定量指标（R²、RMSE、MBE）评估模型性能。在测试的方法中，微分并行混合模型始终表现出卓越的性能，准确捕捉 HIC 的复杂动态，包括单体和聚集体的突破、稳定、洗涤和拖尾阶段。它在总体预测方面取得了显着的准确性（R² = 0.99，RMSE = 0.02，MBE = 0.01），并且在单体预测方面也取得了同样出色的性能（R² = 0.99）。\n这些发现强调，复杂的混合建模策略，尤其是微分并行方法，提供了强大且高度准确的预测能力，对于优化 HIC 等复杂的下游生物过程至关重要。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42217505": {
+      "pmid": "42217505",
+      "title": "Development of trypsin peptide mapping for hydroxylysine modification quantification in an IgG4 bispecific antibody and investigation of influencing factors.",
+      "abstract": "We report the first identification of a rare hydroxylysine modification in the heavy chain 2 (HC2) region of an IgG4 bispecific antibody using peptide mapping coupled with liquid chromatography-mass spectrometry (LC-MS). The modified peptide matches the XKG consensus sequence recognized by lysyl hydroxylases. This modification severely impaired trypsin digestion efficiency: approximately 81% of missed cleavage peptides at this site contained hydroxylysine, indicating a strong association between the modification and missed cleavage. To reduce missed cleavage and enable accurate quantification of hydroxylysine, we systematically optimized the digestion conditions (buffer composition, pH, incubation temperature, digestion time, enzyme to antibody ratio) to enhance trypsin efficiency. This optimized method was subsequently applied to investigate the factors contributing to hydroxylation variability during antibody manufacturing. Our results showed that the downstream purification processes and storage stability conditions did not influence the hydroxylation levels. In contrast, key upstream cell culture parameters distinctly modulated hydroxylation: both a lower post-shift temperature and an earlier shift time resulted in a greater reduction in the modification level, whereas prolonged culture duration caused only a mild decrease. This work presents an optimized trypsin peptide mapping method that overcomes hydroxylysine-induced missed cleavage, enabling reliable quantification of this rare modification. Furthermore, it provides critical insights into the process dependence of hydroxylysine formation, facilitating the development of improved quality control strategies for therapeutic antibody production.",
+      "authors": [
+        "Ying Duan",
+        "Zhilin Zhang",
+        "Yue Chen",
+        "Guohong Qin",
+        "Pan Wang",
+        "Dan Xu"
+      ],
+      "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
+      "journal_abbr": "J Chromatogr B Analyt Technol Biomed Life Sci",
+      "pub_date": "2026-05-27",
+      "entrez_date": "2026-05-30",
+      "doi": "10.1016/j.jchromb.2026.125150",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Antibody manufacturing",
+        "Hydroxylysine",
+        "IgG4 bispecific antibody",
+        "Missed cleavage",
+        "Post-translational modifications (PTMs)",
+        "Quantification",
+        "Trypsin peptide mapping"
+      ],
+      "affiliation": "Nanjing Chia-Tai Tianqing Pharmaceutical Co. Ltd, Fanghua Pharmaceutical Research Institute, Department of Biology, Nanjing 210046, China.",
+      "language": "eng",
+      "title_zh": "开发用于 IgG4 双特异性抗体中羟赖氨酸修饰定量的胰蛋白酶肽图谱并研究影响因素。",
+      "abstract_zh": "我们报告了使用肽图谱结合液相色谱-质谱法 (LC-MS) 首次鉴定了 IgG4 双特异性抗体重链 2 (HC2) 区域中的罕见羟赖氨酸修饰。修饰后的肽与赖氨酰羟化酶识别的 XKG 共有序列相匹配。这种修饰严重损害了胰蛋白酶的消化效率：该位点大约 81% 的漏切肽含有羟赖氨酸，表明该修饰与漏切之间存在很强的关联。为了减少漏切并实现羟赖氨酸的准确定量，我们系统地优化了消化条件（缓冲液组成、pH、孵育温度、消化时间、酶与抗体的比例）以提高胰蛋白酶效率。随后应用这种优化方法来研究抗体制造过程中羟基化变异性的影响因素。我们的结果表明，下游纯化过程和储存稳定性条件不影响羟基化水平。\n相比之下，关键的上游细胞培养参数明显调节羟基化：较低的转移后温度和较早的转移时间都会导致修饰水平的更大降低，而延长培养时间仅导致轻微的降低。这项工作提出了一种优化的胰蛋白酶肽图分析方法，该方法克服了羟赖氨酸诱导的漏切，从而能够对这种罕见的修饰进行可靠的定量。此外，它还提供了对羟赖氨酸形成过程依赖性的重要见解，有助于开发改进的治疗性抗体生产质量控制策略。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42216916": {
+      "pmid": "42216916",
+      "title": "A Multitechnique Spectroscopy Platform for Monitoring Heterogeneities in the Higher-Order Structure of mAb Therapeutics.",
+      "abstract": "Comprehensive characterization of higher-order structure (HOS) is a regulatory prerequisite for monoclonal antibody (mAb) therapeutics, particularly in establishing biosimilarity. A significant analytical challenge lies in detecting the early onset of structural heterogeneity within bulk drug substances, where signal dilution often masks precursor states of degradation. This study proposes a novel, multitechnique spectroscopy platform consisting of UV-vis, Far-UV circular dichroism, intrinsic and extrinsic fluorescence, and Fourier transform infrared (FTIR) spectroscopy coupled with chemometrics for monitoring heterogeneities in HOS during the thermal degradation of trastuzumab, an IgG1mAb therapeutic. While size exclusion chromatography (SEC) confirmed a progressive, monotonic accumulation of soluble aggregates, the proposed multitechnique spectroscopic platform yielded richer information. Intrinsic and extrinsic fluorescence identified an early conformational drift characterized by tertiary core destabilization and hydrophobic exposure immediately upon thermal stress (<1 h), well before the onset of global backbone unfolding detected by circular dichroism. Data fusion via principal component analysis (PCA), biplot, and dendrogram allowed for a more nuanced understanding of the HOS evolution through the thermal stress timeline. The data-fusion approach explained in this study offers a robust, high-resolution framework for monitoring structural consistency through direct HOS mapping, offering a powerful solution for monitoring the quality of biotherapeutic products during stability studies as well as for biosimilarity assessments.",
+      "authors": [
+        "Divya Agrawal",
+        "Srishti Joshi",
+        "Saxena Nikita",
+        "Sonam Sriwastaw",
+        "Anurag S Rathore"
+      ],
+      "journal": "Molecular pharmaceutics",
+      "journal_abbr": "Mol Pharm",
+      "pub_date": "2026-05-30",
+      "entrez_date": "2026-05-30",
+      "doi": "10.1021/acs.molpharmaceut.5c01948",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "dendrogram",
+        "higher order structure (HOS)",
+        "monoclonal antibody",
+        "principal component analysis (PCA)",
+        "spectroscopy",
+        "thermal stress"
+      ],
+      "affiliation": "Department of Chemical Engineering, Indian Institute of Technology Delhi, New Delhi 110016, India.",
+      "language": "eng",
+      "title_zh": "用于监测 mAb 疗法高阶结构异质性的多技术光谱平台。",
+      "abstract_zh": "高阶结构 (HOS) 的综合表征是单克隆抗体 (mAb) 治疗的监管先决条件，特别是在建立生物相似性方面。一个重大的分析挑战在于检测原料药内结构异质性的早期发生，其中信号稀释通常掩盖了降解的前体状态。本研究提出了一种新颖的多技术光谱平台，包括紫外-可见光、远紫外圆二色性、内在和外在荧光、傅里叶变换红外 (FTIR) 光谱以及化学计量学，用于监测 IgG1mAb 治疗剂曲妥珠单抗热降解过程中 HOS 的异质性。虽然尺寸排阻色谱 (SEC) 证实了可溶性聚集体的渐进、单调积累，但所提出的多技术光谱平台产生了更丰富的信息。内在和外在荧光识别出早期构象漂移，其特征是热应力后（<1小时）立即发生三级核心不稳定和疏水暴露，远早于圆二色性检测到的整体主链展开开始。\n通过主成分分析 (PCA)、双图和树状图进行数据融合，可以更细致地了解 HOS 通过热应力时间线的演变。本研究中解释的数据融合方法提供了一个强大的高分辨率框架，用于通过直接 HOS 映射来监测结构一致性，为在稳定性研究期间监测生物治疗产品的质量以及生物相似性评估提供了强大的解决方案。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42214142": {
+      "pmid": "42214142",
+      "title": "Exploiting ligand-driven salt selectivity for aggregate retention: enhancing monomer resolution on a high elution pH Protein A membrane.",
+      "abstract": "Protein A chromatography often requires product-compromising low-pH conditions to remove monoclonal antibody aggregates. While recent high-pH ligands and membrane architectures have shown to improve aggregate clearance, the underlying mechanism of how the ligand and the matrix each contribute to this separation remains unclear. Here, we evaluated a recombinant high-pH Protein A prototype ligand immobilized on a Natrix membrane and a bead-based resin. We found that the addition of NaCl across a wide concentration range substantially enhanced monomer-aggregate resolution in a dose-dependent manner. Elevated ionic strength caused a slight shift in monomer elution toward milder conditions while simultaneously driving the tight retention of the aggregate subpopulation. At concentrations ≥ 0.5 M NaCl, aggregates were retained so strongly that they required complete salt removal under low-pH conditions to elute. Comparative evaluation proved this divergent selectivity is intrinsically driven by the recombinant ligand's specific binding response to salt, rather than being a mass-transport artifact of the membrane format. Leveraging this mechanism, we developed a stepwise elution strategy achieving > 70 % aggregate reduction and > 90 % monomer yield at pH 5.0, independent of initial aggregate burden. Additionally, a HIC-like flow-through mode confirmed the preferential retention of higher-order multimers. Ultimately, this work demonstrates that modulating ionic strength on engineered ligands establishes a highly tunable, mild-pH strategy for the robust purification of aggregation-prone therapeutics.",
+      "authors": [
+        "Oussama Menouar-Menari",
+        "Jonas Guth",
+        "Peter Menstell",
+        "Supriyadi Hafiz",
+        "Christian Frech"
+      ],
+      "journal": "Journal of chromatography. A",
+      "journal_abbr": "J Chromatogr A",
+      "pub_date": "2026-05-24",
+      "entrez_date": "2026-05-29",
+      "doi": "10.1016/j.chroma.2026.467126",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Aggregates separation",
+        "Elution pH",
+        "Protein A membrane chromatography",
+        "Sodium chloride",
+        "mAb monomers, Resolution"
+      ],
+      "affiliation": "Institute for Biochemistry, Technical University of Applied Sciences Mannheim, 68163 Mannheim, Germany.",
+      "language": "eng",
+      "title_zh": "利用配体驱动的盐选择性实现聚集体保留：提高高洗脱 pH Protein A 膜上的单体分辨率。",
+      "abstract_zh": "Protein A 层析通常需要损害产物的低 pH 条件来去除单克隆抗体聚集体。虽然最近的高 pH 配体和膜结构已证明可以提高聚集体清除率，但配体和基质如何促进这种分离的潜在机制仍不清楚。在这里，我们评估了固定在 Natrix 膜和珠基树脂上的重组高 pH 蛋白 A 原型配体。我们发现，在较宽的浓度范围内添加 NaCl，以剂量依赖性方式显着增强了单体-聚集体分辨率。离子强度的升高导致单体洗脱向更温和的条件轻微转变，同时推动聚集体亚群的紧密保留。当浓度 ≥ 0.5 M NaCl 时，聚集体被强烈保留，以至于需要在低 pH 条件下完全去除盐才能洗脱。比较评估证明，这种不同的选择性本质上是由重组配体对盐的特异性结合反应驱动的，而不是膜格式的质量传输伪影。\n利用这一机制，我们开发了一种逐步洗脱策略，在 pH 5.0 时实现了 > 70 % 聚集体减少和 > 90 % 单体产率，与初始聚集体负荷无关。此外，类似 HIC 的流通模式证实了高阶多聚体的优先保留。最终，这项工作证明，调节工程配体的离子强度可以建立一种高度可调的温和 pH 策略，用于稳定纯化易聚集的治疗药物。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42204975": {
+      "pmid": "42204975",
+      "title": "Engineering Secretory (S)IgA to Facilitate Affinity Purification for Large Scale Downstream Processing.",
+      "abstract": "Secretory (S)IgA class antibodies play a vital role in first line immunological defence at mucosal surfaces. Passive immunisation with monoclonal SIgA antibodies could offer a completely novel application for a biologics market currently dominated by systemic IgG class monoclonal antibodies. Recent advances have made large scale manufacture of SIgA mAbs feasible, but downstream affinity purification remains a hurdle because IgA antibodies usually have poor affinity for Protein A, the most widely used affinity ligand for antibodies. This research addresses this problem by engineering chimaeric secretory component (SC), containing IgG Fc domains (CH2─CH3) which confer Protein A binding. SC is a component of SIgA and consists of five immunoglobulin-like domains. We demonstrate that expressing recombinant monoclonal SIgA with SC domains D2-D3 or D3-D4 replaced by IgG Fc domains (CH2─CH3) enables Protein A affinity purification of SIgA, without affecting antibody assembly or antigen binding functionality. Inserting the Protein A binding site into SC, results in purification of SIgA and free SC, which could then be separated according to size, but importantly not SIgA assembly intermediates such as dimeric IgA, that has a similar molecular size to SIgA. The use of SC-Fc fusions could streamline SIgA mAb purification and unlock their clinical potential.",
+      "authors": [
+        "Tim H Szeto",
+        "Julian K-C Ma"
+      ],
+      "journal": "Biotechnology journal",
+      "journal_abbr": "Biotechnol J",
+      "pub_date": "2026-05",
+      "entrez_date": "2026-05-28",
+      "doi": "10.1002/biot.70245",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Protein A",
+        "antibody engineering",
+        "secretory component"
+      ],
+      "affiliation": "Hotung Molecular Immunology Laboratory, Institute for Infection and Immunity, School of Health and Medical Sciences, City St. George's University of London, London, UK.",
+      "language": "eng",
+      "title_zh": "工程化分泌 (S)IgA 以促进大规模下游处理的亲和纯化。",
+      "abstract_zh": "分泌型 (S)IgA 类抗体在粘膜表面的一线免疫防御中发挥着至关重要的作用。单克隆 SIgA 抗体的被动免疫可以为目前由全身 IgG 类单克隆抗体主导的生物制剂市场提供全新的应用。最近的进展使得大规模生产 SIgA mAb 成为可能，但下游亲和纯化仍然是一个障碍，因为 IgA 抗体通常对蛋白 A（抗体最广泛使用的亲和配体）的亲和力较差。本研究通过设计嵌合分泌成分 (SC) 来解决这个问题，其中含有 IgG Fc 结构域 (CH2─CH3)，可赋予 Protein A 结合能力。 SC 是 SIgA 的组成部分，由五个免疫球蛋白样结构域组成。我们证明，用 IgG Fc 结构域 (CH2─CH3) 替换 SC 结构域 D2-D3 或 D3-D4 表达重组单克隆 SIgA 可以实现 SIgA 的 Protein A 亲和纯化，而不影响抗体组装或抗原结合功能。\n将 Protein A 结合位点插入 SC，可纯化 SIgA 和游离 SC，然后可以根据大小进行分离，但重要的是不能分离 SIgA 组装中间体，例如二聚体 IgA，其分子大小与 SIgA 相似。 SC-Fc 融合的使用可以简化 SIgA mAb 的纯化并释放其临床潜力。",
+      "translate_provider": "google",
+      "score": 0
+    },
+    "42202083": {
+      "pmid": "42202083",
+      "title": "Freeze-dried kit formulation and physicochemical assessment of a daratumumab-based radiopharmaceutical.",
+      "abstract": "Daratumumab is a fully human anti-CD38 monoclonal antibody with strong potential as a targeting vector for therapeutic radionuclides. This study aimed to develop a freeze-dried daratumumab immunoconjugate kit by selecting a suitable chelator (DOTA-NHS, p-SCN-Bn-DOTA, or p-SCN-Bn-1B4M-DTPA) for the 177Lu-labelling, optimising the freeze-drying formulation, and evaluating the physicochemical properties and purity profiles. Conjugation performed in carbonate buffer at elevated temperature enhanced chelator incorporation and supported the selection of daratumumab-p-SCN-Bn-DOTA as the most suitable candidate, achieving radiolabelling yield up to 99.8 % without additional purification. Among the evaluated freeze-dried formulations, a saline-based, buffer-free sucrose-mannitol formulation containing polysorbate 20 (S.F5) provided the most favourable characteristics, including minimal residual moisture and the highest monomer purity with non-detectable HMWS species under the applied SE-HPLC conditions. ATR-FTIR and Raman spectroscopy confirmed preservation of the antibody structural integrity after conjugation and freeze-drying. In an in vitro study using human serum, [177Lu]Lu-daratumumab-p-SCNBn-DOTA maintained higher radiochemical purity for 168 h than [177Lu]Lu-daratumumab-p-SCN-Bn-1B4MDTPA, indicating greater stability. These results support the feasibility of a ready-to-use freeze-dried daratumumab-p-SCN-Bn-DOTA kit for the 177Lu-labelling.",
+      "authors": [
+        "Paulina Apostolova",
+        "Marija Atanasova Lazareva",
+        "Katarina Davalieva",
+        "Marija Arev",
+        "Dino Karpicarov",
+        "Petre Makreski",
+        "Irena Slaveska Spirevska",
+        "Ivana Mitrevska",
+        "Aleksandar Dimovski",
+        "Sanja Vranješ-Đurić",
+        "Emilija Janevik-Ivanovska"
+      ],
+      "journal": "Acta pharmaceutica (Zagreb, Croatia)",
+      "journal_abbr": "Acta Pharm",
+      "pub_date": "2026-06-30",
+      "entrez_date": "2026-05-27",
+      "doi": "10.2478/acph-2026-0013",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "177Lu-radio-pharmaceutical",
+        "daratumumab",
+        "freeze--drying",
+        "immunoconjugate",
+        "physicochemical characterization",
+        "ready-to-use kit formulation"
+      ],
+      "affiliation": "1Faculty of Medical Sciences, Goce Delcev University, 2000Stip, North Macedonia.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42192004": {
+      "pmid": "42192004",
+      "title": "Development and preliminary physicochemical characterization of a Ramucirumab biosimilar candidate in CHO cells using shake-flask fed-batch culture.",
+      "abstract": "The development of biosimilar monoclonal antibodies requires strict control of critical quality attributes and a detailed understanding of cell culture performance. This study describes the development and preliminary physicochemical characterization of a candidate biosimilar monoclonal antibody targeting VEGFR-2 produced in CHO cells. Seventy-five clones generated through gene transfection were screened based on productivity and cell viability. Culture parameters including pH, glucose concentration, cell growth, and cell specific productivity (Qp) were monitored to evaluate their influence on production performance. Eight high producing clones were selected for shake-flask scale fed-batch production. The lead clone achieved a final titer of 2.79 g/L. The biosimilar candidates were characterized using intact mass spectrometry, size exclusion chromatography, cation exchange chromatography, hydrophobic interaction chromatography, glycan analysis, and peptide mapping. Binding affinities were evaluated using SPR, demonstrating comparable interaction with VEGFR-2. The analytical results demonstrated structural similarity to the reference product with no critical differences in purity, charge variants, glycosylation patterns, or binding affinity. These findings demonstrate the importance of systematic clone screening and upstream process monitoring for achieving consistent product quality in biosimilar antibody production and provide practical insights for mammalian cell-based bioprocess development.",
+      "authors": [
+        "Elcin Cagatay",
+        "Yonca Gungor",
+        "Sadettin S Ozturk",
+        "Hulya Ayar Kayali"
+      ],
+      "journal": "Bioprocess and biosystems engineering",
+      "journal_abbr": "Bioprocess Biosyst Eng",
+      "pub_date": "2026-05-27",
+      "entrez_date": "2026-05-26",
+      "doi": "10.1007/s00449-026-03358-y",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Biosimilar",
+        "CHO cells",
+        "Monoclonal antibody (mAb) production",
+        "Physicochemical characterization",
+        "Ramucirumab",
+        "VEGFR2"
+      ],
+      "affiliation": "Izmir International Biomedicine and Genome Institute, Dokuz Eylul University, Izmir, Turkey.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42188602": {
+      "pmid": "42188602",
+      "title": "Co-Expression and Co-Purification Enable Manufacturing of a Six-Monoclonal Antibody Botulinum Antitoxin Cocktail.",
+      "abstract": "A highly potent antitoxin for botulinum neurotoxin (BoNT) serotypes A and B has been developed that comprises three monoclonal antibodies (mAbs) targeting BoNT/A and three targeting BoNT/B. These oligoclonal antibody combinations neutralize toxin by simultaneously binding non-overlapping epitopes, thereby promoting rapid toxin clearance. All six mAbs use the same human Fc and framework and have been individually manufactured using the same expression platform and purification process. To minimize the time and labor required to produce the divalent antitoxin, we tested a co-expression and co-purification strategy for the three mAbs per serotype. The mAbs were expressed in CHO-K1 cells, and the media were optimized for co-expression in 10 L bioreactors. Chromatographic co-purification consisted of Protein A capture, followed by strong anion exchange chromatography in flow-through mode and cation-exchange chromatography in bind-elute mode. Co-expression experiments demonstrated that expression of the three anti-BoNT/A antibodies remained within approximately ±30% of the optimal equimolar ratio, whereas the anti-BoNT/B antibodies showed greater variability. Downstream purification steps achieved recoveries greater than 95% per chromatographic step, resulting in overall process yields of approximately 63-75%. This strategy provided sufficient purity of all six mAbs while largely preserving their relative ratios. These results demonstrate the feasibility of producing oligoclonal antitoxin antibodies using co-expression and shared purification strategies. Such approaches may simplify the manufacturing of antibody cocktails while maintaining product quality and biological activity.",
+      "authors": [
+        "Andrew Davis",
+        "Kamaljit Bajwa",
+        "Zachary Martinez",
+        "Ryan R Davis",
+        "April Green",
+        "Fletcher Suber",
+        "Shauna Farr-Jones",
+        "Milan T Tomic"
+      ],
+      "journal": "Toxins",
+      "journal_abbr": "Toxins (Basel)",
+      "pub_date": "2026-04-23",
+      "entrez_date": "2026-05-26",
+      "doi": "10.3390/toxins18050199",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "botulinum antitoxin",
+        "co-expression",
+        "co-purification",
+        "oligoclonal antibodies",
+        "recombinant antibody manufacturing"
+      ],
+      "affiliation": "Resilience Government Services, 2061 Challenger Drive, Alameda, CA 94501, USA.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42166563": {
+      "pmid": "42166563",
+      "title": "Properties of Drug Linkers Affecting Hydrophobic Interaction Chromatography for Determining the Drug-to-Antibody Ratio of Antibody-Drug Conjugates.",
+      "abstract": "Antibody-drug conjugates (ADCs) are a fascinating modality in cancer therapy that combine the specificity of monoclonal antibodies (mAbs) with the cytotoxicity of potent drugs. To ensure the product quality of ADCs, the drug-to-antibody ratio (DAR), a critical quality attribute (CQA), must be evaluated at quality control (QC) testing. Hydrophobic interaction chromatography (HIC) is considered the gold standard for DAR determination due to advantages such as the ability to evaluate drug load distribution under native conditions. For some ADCs, however, DAR cannot be determined by HIC analysis due to poor peak separation of DAR variants, but the cause of this poor peak separation is unclear. In this study, we investigated which ADC properties impact the peak separation of DAR variants in HIC. HIC analyses of ADCs with different mAb and drug linker (DL) combinations indicated that peak separation was impacted by DL properties rather than mAb properties. A systematic comparison using model ADCs prepared with trastuzumab and various drug linkers revealed that the linker length is a critical structural determinant of peak separation. We hypothesized that a linker that was too short restricted the steric accessibility of drug moieties on ADCs, resulting in weak retention on the stationary phase of the HIC column. Accordingly, we investigated the correlation between linker length and steric accessibility using an enzyme-linked immunosorbent assay (ELISA) to evaluate the binding affinity of biotin, which is conjugated to ADCs as a model drug, for streptavidin. The results supported the notion that short linkers are less preferable for the steric accessibility of the drug moieties. Our findings will aid in understanding the mechanism of HIC peak separation and contribute to the selection of appropriate analytical methods based on ADC structures, even within the accelerated development timelines required to supply new drugs to patients in need.",
+      "authors": [
+        "Taishi Kusama",
+        "Masahiro Mimura",
+        "Ryuto Nakae",
+        "Sin Ying Ng",
+        "Ryosuke Shigemoto",
+        "Yutaka Hirakura",
+        "Nana Kawasaki"
+      ],
+      "journal": "Molecular pharmaceutics",
+      "journal_abbr": "Mol Pharm",
+      "pub_date": "2026-05-21",
+      "entrez_date": "2026-05-21",
+      "doi": "10.1021/acs.molpharmaceut.6c00433",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "antibody-drug conjugates",
+        "drug-to-antibody ratio",
+        "hydrophobic interaction chromatography",
+        "linker length",
+        "steric accessibility"
+      ],
+      "affiliation": "Analytical Research Labs., Astellas Pharma Inc., Ibaraki, Tsukuba 300-2698, Japan.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42155371": {
+      "pmid": "42155371",
+      "title": "Monitoring disulfide scrambling of monoclonal antibody biologics using liquid chromatography-mass spectrometry coupled to online electrochemical reduction.",
+      "abstract": "Electrochemical flow-cell (EC) devices have been used to perform online reduction of disulfide bonds found in both peptides and full-length proteins. This study demonstrates the use of a liquid chromatography-EC-mass spectrometry (LC-EC-MS) platform to monitor disulfide scrambling in the therapeutic monoclonal antibody (mAb), casirivimab. As a first step, disulfide scrambling was artificially induced during enzymatic digestion at pH 8.5. EC-assisted online partial reduction was performed via a post-column reduction scheme. Retention time (RT) alignment was used to validate the composition of the parental disulfide linkage. Fingerprints of all potential disulfide-linked pairs were generated based on the results of partial reduction with no need for additional information on any of the specific parental species. The performance of partial reduction was evaluated by varying critical parameters, including EC-cell voltage and the sample loading amount. The improved performance allows us to capture low-level disulfide scrambling such as linkages involving the hinge region. Additionally, the LC-EC-MS platform is used to monitor site-specific disulfide scrambling progress under high pH stress condition. Samples with varying levels of disulfide scrambling were prepared by alkylating free cysteines at different time points during digestion to perform a time-course study. As a result, we successfully monitored scrambling level of 13 sites through MS1-level relative quantification as well as their free thiol species. Low level of disulfide scrambling across the casirivimab was captured at 0.5 hr time point. Overall, we demonstrated that the online LC-EC-MS platform provided us with significant insights into patterns of disulfide scrambling.",
+      "authors": [
+        "Lushuang Huang",
+        "Yunlong Zhao",
+        "Yuan Mao",
+        "Ning Li"
+      ],
+      "journal": "Journal of pharmaceutical and biomedical analysis",
+      "journal_abbr": "J Pharm Biomed Anal",
+      "pub_date": "2026-05-14",
+      "entrez_date": "2026-05-19",
+      "doi": "10.1016/j.jpba.2026.117558",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Antibody therapeutics",
+        "Disulfide scrambling",
+        "Electrochemistry flow-cell (EC)",
+        "Liquid chromatography-Mass Spectrometry (LC-MS)",
+        "Post-column reduction"
+      ],
+      "affiliation": "Analytical Chemistry Group, Regeneron Pharmaceuticals, Inc., 777 Old Saw Mill River Road, Tarrytown, NY 10591, United States.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42145184": {
+      "pmid": "42145184",
+      "title": "Computer-Aided Rational Hapten Design of Mepiquat Chloride: High-Affinity Antibody and Sensitive Immunoassay for Food and Environmental Samples.",
+      "abstract": "Mepiquat chloride (MQ) residues threaten human health and ecological safety, requiring rapid and sensitive monitoring. In this study, five haptens were designed for poorly immunogenic MQ, and MQ-H4/MQ-H5 was identified as the optimal pair via computer-aided analysis and serum validation, generating MQ mAb-5H2 with high affinity and specificity. Based on this mAb, a gold nanoparticle-based lateral-flow immunochromatographic assay was developed for MQ on-site screening, with the calculated limits of detection of 0.034, 0.049, and 0.016 mg/kg in potato, wheat, and soil, respectively. The reliability and accuracy of the method were verified through spiked recovery experiments, showing recoveries from 95.2 to 105.7% and a coefficient of variation of 1.6-7.1%, consistent with the results of high-performance liquid chromatography-mass spectrometry, providing a practical and reliable tool for MQ monitoring and a hapten-driven strategy for high-performance antibody generation and sensitive immunoassays targeting other quaternary ammonium pesticides.",
+      "authors": [
+        "Jiaxun Li",
+        "Xinxin Xu",
+        "Xiaoling Wu",
+        "Liguang Xu",
+        "Hua Kuang",
+        "Chuanlai Xu",
+        "Lingling Guo"
+      ],
+      "journal": "Journal of agricultural and food chemistry",
+      "journal_abbr": "J Agric Food Chem",
+      "pub_date": "2026-05-18",
+      "entrez_date": "2026-05-18",
+      "doi": "10.1021/acs.jafc.6c04402",
+      "publication_types": [
+        "Journal Article",
+        "Evaluation Study"
+      ],
+      "keywords": [
+        "gold nanoparticles−based lateral-flow immunochromatographic",
+        "mepiquat chloride",
+        "on-site detection",
+        "rational hapten design"
+      ],
+      "affiliation": "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi, Jiangsu 214122, China.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42129093": {
+      "pmid": "42129093",
+      "title": "Updates to Guidance on Using Biacore for Protein-Protein Interactions Analysis.",
+      "abstract": "The use of optical biosensors for studying macromolecular interactions is now considered essential technology for understanding the biophysical properties of potential therapeutic and diagnostic reagents. Indeed, according to Cytiva (2025, Key-SPR-applications. https://www.cytivalifesciences.com/en/us/solutions/protein-research/Interaction-analysis-with-Biacore-surface-plasmon-resonance-SPR/Key-SPR-applications ), over 50 000 Biacore papers have been published to date, the sheer volume and variety of which present a daunting task for the burgeoning Biacore user to accumulate and decipher. This chapter is designed to provide the reader with the tools necessary to prepare, design, and efficiently execute a kinetic experiment on Biacore. This document is written to guide the Biacore user through basic theory, system maintenance, and assay setup, while also offering some practical tips that we find useful for Biacore-based studies. Many kinetic-based screening assays require rigorous sample preparation and purification prior to analysis. To highlight these procedures, this protocol describes the kinetic characterization of single-chain Fv (scFv) antibody fragments from crude bacterial lysates using an antibody affinity capture approach. Although we specifically describe the capture of HA-tagged scFv antibody fragments to an anti-HA tag monoclonal antibody-immobilized surface prior to kinetic analysis, these methodologies are universally applicable and can be used for practically any affinity pair and most Biacore systems.",
+      "authors": [
+        "Hui Ma",
+        "Stephen Hearty",
+        "Paul Leonard",
+        "Richard O'Kennedy"
+      ],
+      "journal": "Methods in molecular biology (Clifton, N.J.)",
+      "journal_abbr": "Methods Mol Biol",
+      "pub_date": "2026",
+      "entrez_date": "2026-05-13",
+      "doi": "10.1007/978-1-0716-5041-7_11",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Analysis",
+        "Antibody",
+        "Biacore",
+        "Biosensor",
+        "Interactions",
+        "Kinetics",
+        "Plasmon",
+        "Protein–protein",
+        "Resonance",
+        "Surface"
+      ],
+      "affiliation": "School of Biochemistry & Immunology, Trinity Biomedical Sciences Institute, Trinity College Dublin, Dublin, Ireland.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42125798": {
+      "pmid": "42125798",
+      "title": "Impact of process impurities on developability assessments of complex antibody formats: the striking role of leachable copper.",
+      "abstract": "The assessment of developability and physical stability of antibody therapeutics is a cornerstone of modern biopharmaceutical discovery, increasingly relying on high-throughput automation to screen candidates to identify the most suitable lead candidate. In this study, we report a severe, anomalous fragmentation event observed in therapeutic antibodies during routine automated buffer exchange into phosphate-buffered saline (PBS) at physiological pH. Through a systematic investigation, we demonstrate that this instability is not intrinsic to the proteins, but is driven by the specific physicochemical environment of the purification process. We identify that at pH 7.4, the dominant phosphate species may act as a ligand capable of mobilizing trace catalytic copper from disposable chromatography columns. Our data suggests the leached copper coordinates to the antibody hinge region, driving a highly localized, Fenton-like oxidative cleavage. Comparative analysis reveals that this vulnerability is influenced by molecular architecture. Complex formats, such as 2 + 1 CrossMabs, exhibited significantly higher susceptibility than standard IgGs, suggesting that steric crowding may enhance the accessibility of the metal-binding site. Finally, we present a robust mitigation strategy using an ethylenediaminetetraacetic acid-based column conditioning protocol that effectively eliminates the leachable catalyst. These findings highlight a critical, often-overlooked source of chemical instability in automated workflows and underscore the necessity of controlling process-related impurities, particularly when developing complex antibody modalities.",
+      "authors": [
+        "Vincent Wieser",
+        "Christian Spick",
+        "Matthias Forster",
+        "Urs Hanke",
+        "Katja Montan",
+        "Michael Grote",
+        "Benjamin Weiche"
+      ],
+      "journal": "mAbs",
+      "journal_abbr": "MAbs",
+      "pub_date": "2026-05-13",
+      "entrez_date": "2026-05-13",
+      "doi": "10.1080/19420862.2026.2670845",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Chemical stability",
+        "copper-catalyzed oxidation",
+        "developability",
+        "fragmentation",
+        "high-throughput screening",
+        "monoclonal antibody"
+      ],
+      "affiliation": "Large Molecule Research, Pharma Research and Early Development (pRED), Roche Diagnostics GmbH, Penzberg, Germany.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42119499": {
+      "pmid": "42119499",
+      "title": "Investigation of excipient-related artifacts observed in the leachables study of tiragolumab by LC-HRMS and GC-MS.",
+      "abstract": "Leachables studies of protein formulations are faced with many analytical challenges arising from relatively high levels of complex formulation components. In the stressed sample of the monoclonal antibody drug tiragolumab with the main excipients methionine, histidine, sucrose, and polysorbate, two unknown compounds were detected in the screening for non-volatile leachables by reversed phase (RP) liquid chromatography high-resolution mass spectrometry (LC-HRMS). Unknown 1 was proven to be a gas-phase mass spectral adduct between methionine and the sucrose-derived hexose. Separation of methionine and hexose by hydrophilic interaction chromatography (HILIC) resulted in the disappearance of the unknown peak. It was also observed that non-covalent amino acid-sugar adducts in the gas phase were prevalent in both electrospray ionization (ESI) and atmospheric pressure chemical ionization (APCI) modes. Unknown 2 was identified as a Maillard reaction product 1-(3H-imidazo[4,5-c]pyridin-4-yl)ethan-1-one by LC-HRMS and gas chromatography mass spectrometry (GC-MS). The formation mechanism was confirmed by the reaction between histidine and the sucrose-derived methylglyoxal (MGO) under hydrothermal conditions. This study exemplifies false positive leachable results and delves into the chemical reactions and interactions that generated such artifacts.",
+      "authors": [
+        "Jie Du",
+        "Richard Pearson",
+        "Yuyin Zhou",
+        "Kenneth Skidmore"
+      ],
+      "journal": "Journal of pharmaceutical and biomedical analysis",
+      "journal_abbr": "J Pharm Biomed Anal",
+      "pub_date": "2026-05-04",
+      "entrez_date": "2026-05-12",
+      "doi": "10.1016/j.jpba.2026.117545",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Excipient reaction products",
+        "GC-MS",
+        "LC-HRMS",
+        "Leachables",
+        "Mass spectral artifacts",
+        "Unknown identification"
+      ],
+      "affiliation": "Analytical Development, Genentech, A Member of the Roche Group, 1 DNA Way, South San Francisco, CA, United States. Electronic address: jie.du@cardinalhealth.com.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42112447": {
+      "pmid": "42112447",
+      "title": "Generation, characterization and epitope mapping of monoclonal antibody 4H3 specific to the HN protein of pigeon paramyxovirus type 1 (PPMV-1).",
+      "abstract": "Pigeon Newcastle disease (PND), caused by pigeon paramyxovirus type 1 (PPMV-1), is an acute, highly contagious disease that induces neurological symptoms and gastrointestinal disorders in pigeons, posing substantial economic risks to the global pigeon industry. The hemagglutinin-neuraminidase (HN) protein of PPMV-1 is a key surface glycoprotein mediating viral adsorption, invasion, and egress, and serves as a critical target for vaccine development and diagnostic reagent design. In this study, we aimed to generate a specific monoclonal antibody (mAb) against the HN protein of PPMV-1 and identify its recognized epitope. We codon-optimized the conserved 198-390 amino acid (aa) region of the HN protein from PPMV-1 strain, followed by prokaryotic expression and purification to serve as the immunogen. Through cell fusion monoclonal antibody screening, we successfully established a hybridoma cell line that secretes mAb 4H3. Western blot and immunofluorescence assay (IFA) confirmed that mAb 4H3 specifically reacts with PPMV-1 strains but exhibits no cross-reactivity with the commonly used NDV vaccine strain Lasota. Epitope mapping with a panel of truncated HN protein fragments identified the minimal B-cell epitope recognized by mAb 4H3 as 310DRVWF314. Sequence homology analysis showed this epitope is highly conserved across PPMV-1 strains. Collectively, our results offer a valuable tool for developing PPMV-1-specific diagnostic assays, as well as for investigations into HN protein function and the development of epitope-based vaccines against PND.",
+      "authors": [
+        "Xu Wang",
+        "Hongfeng Ren",
+        "Pei Li",
+        "Zhonglin Huang",
+        "Xing Li",
+        "Yang Wang",
+        "Yang Li",
+        "Libin Liang",
+        "Junping Li"
+      ],
+      "journal": "Frontiers in microbiology",
+      "journal_abbr": "Front Microbiol",
+      "pub_date": "2026-04-24",
+      "entrez_date": "2026-05-11",
+      "doi": "10.3389/fmicb.2026.1808407",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "HN protein",
+        "antigenic epitope",
+        "application",
+        "monoclonal antibody",
+        "pigeon paramyxovirus type 1 (PPMV-1)"
+      ],
+      "affiliation": "Shanxi Key Laboratory of Animal Disease Research, Prevention and Control, College of Veterinary Medicine, Shanxi Agricultural University, Jinzhong, China.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    },
+    "42093402": {
+      "pmid": "42093402",
+      "title": "Unveiling the geographical signature of black tea through UHPLC-quadrupole-Orbitrap Exploris HRMS analysis.",
+      "abstract": "Understanding the geographical differentiation of black tea is essential for exploring the influence of territory on its chemical composition. In this study, black tea (powder) samples from key tea-producing regions, including Siliguri, Assam, and Idukki (Kerala) in India, Sylhet in Bangladesh, and Kandy in Sri Lanka, were analyzed using ultra-high-performance liquid chromatography coupled with high-resolution mass spectrometry. The tea extracts were analysed in full MS/ddMS2 mode with heated electrospray ionization, using a non-targeted metabolomics approach. A broad range of compounds (209) including polyphenols, amino acids, organic acids and their derivatives were identified based on accurate mass measurements with mass error (±5 ppm) and retention time matching (±0.2 min). Various metabolite profiles were observed across different regional samples, with certain marker compounds identified as potential indicators of geographical origin. Principal component analysis (PCA) further confirmed clear clustering and differentiation of tea samples based on the origin, highlighting the role of regional environmental factors such as climate, soil composition, and altitude. Molecular docking and dynamics were carried out to examine the interaction of theanine and the neonatal Fc receptor (FcRn), a key regulator of IgG recycling and immune homeostasis, encoded by the FCGRT gene. Results showed that theanine forms a stable complex with the neonatal Fc receptor (FcRn) and maintained consistent hydrogen bonding, particularly with key residue Ile685, and preserved FcRn's secondary structure. Binding energy analysis (MM-PBSA) showed favourable interactions dominated by van der Waals forces, with theanine exhibiting a slightly higher binding affinity (-18.72 kcal mol-1) than RVT-1401 (-17.82 kcal mol-1), a therapeutic monoclonal antibody known to inhibit FcRn function. The findings have significant implications for the tea industry in quality control, authentication, traceability, and health benefits, which offer new insights into how territory shapes the chemical and potentially sensory attributes of black tea.",
+      "authors": [
+        "Subodh Kumar Budakoti",
+        "Khalid Anwar",
+        "Nagendla Narendra Kumar",
+        "M L Anirudh Bhat",
+        "Dasharath Oulkar",
+        "Pratibha Sharma"
+      ],
+      "journal": "Analytical methods : advancing methods and applications",
+      "journal_abbr": "Anal Methods",
+      "pub_date": "2026-05-21",
+      "entrez_date": "2026-05-07",
+      "doi": "10.1039/d6ay00096g",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "India Engineering Center, Thermo Fisher Scientific India Private Limited, My Home Twitza, Hitech City, Hyderabad-500081, Telangana, India. subodh_budakoti@rediffmail.com.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 0
+    }
+  }
+}

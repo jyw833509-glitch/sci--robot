@@ -1,0 +1,31 @@
+# 配置（含密钥，切勿提交）
+config.yaml
+config.json
+.env
+
+# 运行产物（feed.json 需提交供同事拉取，故单独放行；其余忽略）
+data/*
+!data/feed.json
+logs/
+reports/
+*.db
+*.db-wal
+*.db-shm
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# WorkBuddy 内部工作记忆（含构建笔记，不应进入公开仓库）
+.workbuddy/

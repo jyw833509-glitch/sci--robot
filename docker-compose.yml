@@ -1,0 +1,18 @@
+services:
+  literature-bot:
+    build: .
+    image: antibody-literature-bot:latest
+    container_name: antibody-literature-bot
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
+      # 敏感信息建议用环境变量注入，不写进 config.yaml
+      # PUBMED_API_KEY: ""
+      # LLM_API_KEY: ""
+      # SMTP_PASSWORD: ""
+      # MAIL_TO: "a@example.com,b@example.com"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./reports:/app/reports
