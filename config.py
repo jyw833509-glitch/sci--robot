@@ -346,10 +346,32 @@ def _apply_env(data: Dict[str, Any]) -> Dict[str, Any]:
     return cfg.as_dict()
 
 
+def _find_bundled_config() -> Path | None:
+    """PyInstaller 打包后，在 _MEIPASS 中查找内置配置文件。"""
+    if not getattr(sys, "frozen", False):
+        return None
+    meipass = Path(getattr(sys, "_MEIPASS", ""))
+    if not meipass.exists():
+        return None
+    # 优先 matching config.colleague.yaml -> config.yaml
+    for name in ("config.colleague.yaml", "config.yaml", "config.example.yaml"):
+        candidate = meipass / name
+        if candidate.exists():
+            return candidate
+    return None
+
+
+def _copy_bundled_config(src: Path, dst: Path) -> None:
+    """把内置配置拷贝到 exe 所在目录。"""
+    import shutil
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(src, dst)
+
+
 def load_config(path: str | Path | None = None) -> Config:
     """
     加载配置。
-    优先级：环境变量 > config.yaml > 内置默认值
+    优先级：环境变量 > config.yaml > config.example.yaml > PyInstaller 内置 colleague 配置 > 内置默认值
     """
     if path:
         cfg_path = Path(path)
@@ -367,13 +389,25 @@ def load_config(path: str | Path | None = None) -> Config:
         else:
             user_data = _read_yaml(cfg_path)
         used = cfg_path
-    elif EXAMPLE_CONFIG_FILE.exists():
-        user_data = _read_yaml(EXAMPLE_CONFIG_FILE)
-        used = EXAMPLE_CONFIG_FILE
-        print(
-            f"[配置] 未找到 {cfg_path.name}，已临时使用 {EXAMPLE_CONFIG_FILE.name}。"
-            f"\n[配置] 请复制一份为 config.yaml 并填写邮箱 / API Key 后再正式使用。"
-        )
+    else:
+        # PyInstaller 打包后，尝试从内置资源中恢复配置
+        bundled = _find_bundled_config()
+        if bundled:
+            # 把同事版配置拷贝到 exe 旁边，后续运行直接用
+            try:
+                _copy_bundled_config(bundled, cfg_path)
+                user_data = _read_yaml(cfg_path)
+                used = cfg_path
+            except Exception:
+                user_data = _read_yaml(bundled)
+                used = bundled
+        elif EXAMPLE_CONFIG_FILE.exists():
+            user_data = _read_yaml(EXAMPLE_CONFIG_FILE)
+            used = EXAMPLE_CONFIG_FILE
+            print(
+                f"[配置] 未找到 {cfg_path.name}，已临时使用 {EXAMPLE_CONFIG_FILE.name}。"
+                f"\n[配置] 请复制一份为 config.yaml 并填写邮箱 / API Key 后再正式使用。"
+            )
 
     merged = _deep_merge(DEFAULTS, user_data)
     merged = _apply_env(merged)
