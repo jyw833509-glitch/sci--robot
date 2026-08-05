@@ -316,48 +316,147 @@ def start_scheduler(cfg) -> None:
 
 
 def _run_tray(cfg) -> None:
-    """启动系统托盘图标，阻塞直到用户退出。"""
+    """启动系统托盘图标（纯 Win32 API + tkinter，零外部依赖），阻塞直到用户退出。"""
     global _running
-    try:
-        import pystray
-        from PIL import Image, ImageDraw
-    except ImportError as exc:
-        log.warning("无法创建托盘图标（缺少 pystray/Pillow），退回到纯后台模式。按 Ctrl+C 退出。")
-        log.warning("错误详情：%s", exc)
-        try:
-            while True:
-                time.sleep(60)
-        except KeyboardInterrupt:
-            log.info("收到退出信号")
-        return
+    import ctypes
+    import ctypes.wintypes
+    import os
+    import tempfile
+    import atexit
+    import tkinter as tk
 
-    # 生成 64×64 图标：蓝色圆底 + 白色 S
-    def _make_icon():
+    # ---- Windows 托盘常量 ----
+    WM_TRAYICON = 0x0400 + 1
+    NIM_ADD = 0x00000000
+    NIM_DELETE = 0x00000002
+    NIF_MESSAGE = 0x00000001
+    NIF_ICON = 0x00000002
+    NIF_TIP = 0x00000004
+    WM_LBUTTONDBLCLK = 0x0203
+    WM_RBUTTONUP = 0x0205
+    IMAGE_ICON = 1
+    LR_LOADFROMFILE = 0x00000010
+    SM_CXSMICON = 49
+    SM_CYSMICON = 50
+    TPM_LEFTALIGN = 0x0000
+    TPM_RIGHTBUTTON = 0x0002
+
+    # ---- 用 PIL 生成 ico 图标文件 ----
+    ico_path = None
+    hicon = None
+    try:
+        from PIL import Image, ImageDraw
         img = Image.new("RGBA", (64, 64), (0, 0, 0, 0))
         draw = ImageDraw.Draw(img)
-        draw.ellipse([4, 4, 60, 60], fill=(0, 113, 227, 255))  # #0071e3
+        draw.ellipse([4, 4, 60, 60], fill=(0, 113, 227, 255))
         draw.text((25, 14), "S", fill=(255, 255, 255, 255))
-        return img
+        ico_path = os.path.join(tempfile.gettempdir(), "scirobot_tray.ico")
+        img.save(ico_path, format="ICO", sizes=[(64, 64)])
+        atexit.register(lambda p=ico_path: os.remove(p) if os.path.exists(p) else None)
+        hinst = ctypes.windll.kernel32.GetModuleHandleW(None)
+        hicon = ctypes.windll.user32.LoadImageW(
+            hinst, ico_path, IMAGE_ICON,
+            ctypes.windll.user32.GetSystemMetrics(SM_CXSMICON),
+            ctypes.windll.user32.GetSystemMetrics(SM_CYSMICON),
+            LR_LOADFROMFILE,
+        )
+    except Exception as exc:
+        log.warning("生成托盘图标失败：%s，使用系统默认图标", exc)
+        hicon = ctypes.windll.user32.LoadIconW(None, 32512)  # IDI_APPLICATION
 
-    def _on_exit(icon, item):
+    # ---- 创建隐藏 tk 窗口用于消息循环 ----
+    root = tk.Tk()
+    root.withdraw()
+    hwnd = int(root.frame(), 16)
+
+    # ---- Shell_NotifyIcon 结构体 ----
+    class NOTIFYICONDATAW(ctypes.Structure):
+        _fields_ = [
+            ("cbSize", ctypes.wintypes.DWORD),
+            ("hWnd", ctypes.wintypes.HWND),
+            ("uID", ctypes.wintypes.UINT),
+            ("uFlags", ctypes.wintypes.UINT),
+            ("uCallbackMessage", ctypes.wintypes.UINT),
+            ("hIcon", ctypes.wintypes.HICON),
+            ("szTip", ctypes.c_wchar * 128),
+            ("dwState", ctypes.wintypes.DWORD),
+            ("dwStateMask", ctypes.wintypes.DWORD),
+            ("szInfo", ctypes.c_wchar * 256),
+            ("uTimeoutOrVersion", ctypes.wintypes.UINT),
+            ("szInfoTitle", ctypes.c_wchar * 64),
+            ("dwInfoFlags", ctypes.wintypes.DWORD),
+        ]
+
+    nid = NOTIFYICONDATAW()
+    nid.cbSize = ctypes.sizeof(NOTIFYICONDATAW)
+    nid.hWnd = hwnd
+    nid.uID = 1
+    nid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP
+    nid.uCallbackMessage = WM_TRAYICON
+    nid.hIcon = hicon
+    nid.szTip = "SciRobot 文献推送"
+
+    ctypes.windll.shell32.Shell_NotifyIconW(NIM_ADD, ctypes.byref(nid))
+    log.info("系统托盘图标已创建，右键退出 / 双击查看今日文献")
+
+    # ---- 右键菜单 ----
+    def _show_menu():
+        menu = ctypes.windll.user32.CreatePopupMenu()
+        ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1001, "查看今日文献")
+        ctypes.windll.user32.AppendMenuW(menu, 0x00000800, 0, "")
+        ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1002, "退出 SciRobot")
+        pt = ctypes.wintypes.POINT()
+        ctypes.windll.user32.GetCursorPos(ctypes.byref(pt))
+        ctypes.windll.user32.SetForegroundWindow(hwnd)
+        cmd = ctypes.windll.user32.TrackPopupMenu(
+            menu, TPM_LEFTALIGN | TPM_RIGHTBUTTON,
+            pt.x, pt.y, 0, hwnd, None,
+        )
+        ctypes.windll.user32.DestroyMenu(menu)
+        if cmd == 1001:
+            _trigger_popup_only(cfg)
+        elif cmd == 1002:
+            global _running
+            _running = False
+
+    # ---- PeekMessage 轮询 ----
+    def _poll_messages():
+        msg = ctypes.wintypes.MSG()
+        while ctypes.windll.user32.PeekMessageW(ctypes.byref(msg), hwnd, 0, 0, 1):
+            if msg.message == WM_TRAYICON:
+                if msg.lParam == WM_RBUTTONUP:
+                    _show_menu()
+                elif msg.lParam == WM_LBUTTONDBLCLK:
+                    _trigger_popup_only(cfg)
+            ctypes.windll.user32.TranslateMessage(ctypes.byref(msg))
+            ctypes.windll.user32.DispatchMessageW(ctypes.byref(msg))
+        root.after(200, _poll_messages)
+
+    root.after(300, _poll_messages)
+
+    # ---- 清理 ----
+    def _cleanup():
+        ctypes.windll.shell32.Shell_NotifyIconW(NIM_DELETE, ctypes.byref(nid))
+        if hicon:
+            ctypes.windll.user32.DestroyIcon(hicon)
+        try:
+            root.destroy()
+        except Exception:
+            pass
+
+    def _on_close():
         global _running
         _running = False
-        icon.stop()
-        log.info("用户通过托盘菜单退出")
+        _cleanup()
 
-    def _on_show_now(icon, item):
-        log.info("用户手动触发立即查看")
-        _trigger_popup_only(cfg)
-
-    menu = pystray.Menu(
-        pystray.MenuItem("查看今日文献", _on_show_now, default=True),
-        pystray.Menu.SEPARATOR,
-        pystray.MenuItem("退出", _on_exit),
-    )
-
-    icon = pystray.Icon("scirobot", _make_icon(), "SciRobot 文献推送", menu)
-    log.info("系统托盘图标已创建，右键可退出")
-    icon.run()
+    root.protocol("WM_DELETE_WINDOW", _on_close)
+    try:
+        root.mainloop()
+    except KeyboardInterrupt:
+        pass
+    finally:
+        _cleanup()
+    log.info("托盘图标已关闭")
 
 
 # 全局变量供托盘菜单使用
