@@ -86,7 +86,11 @@ class Article:
         return ", ".join(self.authors)
 
     def to_dict(self) -> Dict[str, Any]:
-        return asdict(self)
+        d = asdict(self)
+        # @property 不会被 asdict 导出，但 feed/客户端需要这些链接
+        d["pubmed_url"] = self.pubmed_url
+        d["doi_url"] = self.doi_url
+        return d
 
 
 # --------------------------------------------------------------------------

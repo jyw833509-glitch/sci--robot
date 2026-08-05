@@ -1,23 +1,10 @@
 """
-desktop_notify.py —— 桌面弹窗（tkinter）
+desktop_notify.py —— 桌面弹窗（右下角原生通知窗口）
 
 被 notifier 以「独立子进程」方式调用，避免阻塞主调度循环：
     python desktop_notify.py <payload.json>
 
-payload.json 结构：
-    {
-      "title": "SciRobot 文献日报",
-      "articles": [
-        {
-          "pmid": "...", "title": "...", "title_zh": "...",
-          "authors": "...", "journal": "...", "pub_date": "...",
-          "doi": "...", "pubmed_url": "...", "doi_url": "...",
-          "abstract": "...", "abstract_zh": "...", "keywords": [...]
-        }
-      ]
-    }
-
-也可手动测试： python desktop_notify.py sample.json
+深色毛玻璃风格，无系统标题栏，带滚动，可点击 PubMed / DOI 链接。
 """
 from __future__ import annotations
 
@@ -25,25 +12,23 @@ import json
 import os
 import sys
 import webbrowser
-import tkinter as tk
-from tkinter import ttk, scrolledtext
+from tkinter import Tk, Toplevel, Frame, Label, Canvas, Scrollbar
+from tkinter import BOTH, RIGHT, LEFT, TOP, BOTTOM, X, Y, W, END, VERTICAL
+from tkinter.font import Font
 
 
-FONT = ("Microsoft YaHei", 10)
-FONT_TITLE = ("Microsoft YaHei", 13, "bold")
-FONT_HEAD = ("Microsoft YaHei", 18, "bold")
-FONT_SUB = ("Microsoft YaHei", 10)
-FONT_META = ("Microsoft YaHei", 10)
-
-C_PRIMARY = "#0e7490"
-C_PRIMARY_DARK = "#155e75"
-C_ACCENT = "#0891b2"
-C_BG = "#f4f6f8"
-C_CARD = "#ffffff"
-C_BORDER = "#e2e8f0"
-C_TEXT = "#1f2937"
-C_MUTED = "#64748b"
-C_LIGHT = "#94a3b8"
+# ── 配色：深色现代风格 ─────────────────────────────────
+C_BG = "#12121a"
+C_CARD = "#1a1a2e"
+C_HEADER = "#16213e"
+C_ACCENT = "#00d4ff"
+C_ACCENT_DIM = "#0891b2"
+C_TEXT = "#e8e8f0"
+C_TEXT_MUTED = "#8892a0"
+C_TEXT_DIM = "#5a6270"
+C_DIVIDER = "#2a2a40"
+C_ABSTRACT_BG = "#0f172a"
+C_TAG_BG = "#0e7490"
 
 
 def open_url(url: str) -> None:
@@ -51,163 +36,266 @@ def open_url(url: str) -> None:
         webbrowser.open(url)
 
 
-def build_card(parent: tk.Widget, art: dict, index: int) -> None:
-    """在 parent 中构建一张文献卡片。"""
-    card = tk.Frame(
-        parent, bg=C_CARD, bd=1, relief="solid",
-        highlightbackground=C_BORDER, highlightthickness=1,
-    )
-    card.pack(fill="x", padx=14, pady=9)
-
-    # 序号 + 标题
-    header = tk.Frame(card, bg=C_CARD)
-    header.pack(fill="x", padx=16, pady=(14, 4))
-    num = tk.Label(header, text=str(index), bg=C_PRIMARY, fg="white",
-                   font=("Microsoft YaHei", 10, "bold"), width=3, height=1)
-    num.pack(side="left")
-    title_text = art.get("title_zh") or art.get("title") or f"PMID {art.get('pmid', '')}"
-    title = tk.Label(header, text=title_text, bg=C_CARD, fg=C_TEXT,
-                     font=FONT_TITLE, wraplength=620, justify="left", anchor="w")
-    title.pack(side="left", fill="x", expand=True, padx=(10, 0))
-
-    # 英文原标题（仅当存在中文译名时补充展示）
-    if art.get("title_zh") and art.get("title"):
-        en = tk.Label(card, text=art.get("title", ""), bg=C_CARD, fg=C_MUTED,
-                      font=FONT, wraplength=620, justify="left", anchor="w")
-        en.pack(fill="x", padx=16, pady=(0, 6))
-
-    # 元信息
-    meta = tk.Frame(card, bg=C_CARD)
-    meta.pack(fill="x", padx=16, pady=(0, 6))
-    info = "期刊：{}   ·   发表：{}   ·   PMID：{}\n作者：{}".format(
-        art.get("journal", "—"), art.get("pub_date", "—"),
-        art.get("pmid", "—"), art.get("authors", "—"),
-    )
-    tk.Label(meta, text=info, bg=C_CARD, fg=C_MUTED, font=FONT_META,
-             justify="left", anchor="w").pack(anchor="w")
-
-    # 链接（PubMed / DOI 点击打开浏览器）
-    links = tk.Frame(card, bg=C_CARD)
-    links.pack(fill="x", padx=16, pady=(0, 6))
-    pub_url = art.get("pubmed_url")
-    if pub_url:
-        l1 = tk.Label(links, text="PubMed 链接", fg=C_ACCENT,
-                      font=("Microsoft YaHei", 10, "underline"), cursor="hand2", bg=C_CARD)
-        l1.pack(side="left", padx=(0, 14))
-        l1.bind("<Button-1>", lambda e, u=pub_url: open_url(u))
-    doi_url = art.get("doi_url")
-    if doi_url:
-        l2 = tk.Label(links, text="DOI: {}".format(art.get("doi", "")), fg=C_ACCENT,
-                      font=("Microsoft YaHei", 10, "underline"), cursor="hand2", bg=C_CARD)
-        l2.pack(side="left", padx=(0, 14))
-        l2.bind("<Button-1>", lambda e, u=doi_url: open_url(u))
-
-    # 中文摘要
-    if art.get("abstract_zh"):
-        tk.Label(card, text="中文摘要", bg=C_CARD, fg=C_PRIMARY,
-                 font=("Microsoft YaHei", 11, "bold"), anchor="w").pack(fill="x", padx=16, pady=(4, 2))
-        zh = scrolledtext.ScrolledText(card, wrap="word", height=8, bg="#f0fdfa",
-                                       fg=C_TEXT, font=FONT, relief="flat", bd=0)
-        zh.insert("1.0", art.get("abstract_zh", ""))
-        zh.config(state="disabled")
-        zh.pack(fill="x", padx=16, pady=(0, 6))
-
-    # 英文摘要（可折叠）
-    if art.get("abstract"):
-        en_frame = tk.Frame(card, bg=C_CARD)
-        en_frame.pack(fill="x", padx=16, pady=(0, 8))
-        toggle = tk.Button(en_frame, text="展开英文原文摘要", bg=C_CARD, fg=C_LIGHT,
-                           font=FONT, relief="flat", cursor="hand2", anchor="w")
-        toggle.pack(anchor="w")
-
-        en_box = scrolledtext.ScrolledText(en_frame, wrap="word", height=8, bg="#f8fafc",
-                                           fg=C_MUTED, font=FONT, relief="flat", bd=0)
-        en_box.insert("1.0", art.get("abstract", ""))
-        en_box.config(state="disabled")
-        en_box.pack_forget()
-
-        def _make_toggle(box, btn):
-            def _toggle():
-                if box.winfo_viewable():
-                    box.pack_forget()
-                    btn.config(text="展开英文原文摘要")
-                else:
-                    box.pack(fill="x", pady=(4, 0))
-                    btn.config(text="收起英文原文摘要")
-            return _toggle
-
-        toggle.config(command=_make_toggle(en_box, toggle))
+def _on_link_enter(event):
+    event.widget.configure(fg=C_ACCENT)
 
 
-def run_window(data: dict) -> None:
+def _on_link_leave(event, orig_color):
+    event.widget.configure(fg=orig_color)
+
+
+def show_popup(data: dict) -> None:
     articles = data.get("articles", [])
     title = data.get("title", "SciRobot 文献日报")
+    auto_close = int(data.get("auto_close_seconds", 0) or 0)
 
-    root = tk.Tk()
-    root.title(title)
-    root.geometry("820x640")
+    root = Tk()
+    root.withdraw()
 
-    # 顶部标题栏
-    header = tk.Frame(root, bg=C_PRIMARY_DARK, height=70)
-    header.pack(fill="x")
-    tk.Label(header, text=title, bg=C_PRIMARY_DARK, fg="white", font=FONT_HEAD).pack(side="left", padx=20, pady=18)
-    tk.Label(header, text="本期 {} 篇  ·  数据来源 PubMed".format(len(articles)),
-             bg=C_PRIMARY_DARK, fg="#cffafe", font=FONT_SUB).pack(side="right", padx=20)
+    win = Toplevel(root)
+    win.title(title)
+    win.configure(bg=C_BG)
+    win.overrideredirect(True)
 
-    # 滚动区
-    canvas = tk.Canvas(root, bg=C_BG, highlightthickness=0)
-    scrollbar = ttk.Scrollbar(root, orient="vertical", command=canvas.yview)
-    canvas.configure(yscrollcommand=scrollbar.set)
-    scrollbar.pack(side="right", fill="y")
-    canvas.pack(side="left", fill="both", expand=True)
-    inner = tk.Frame(canvas, bg=C_BG)
-    canvas.create_window((0, 0), window=inner, anchor="nw")
+    win_width = 460
+    win_height = 540
 
-    def _on_configure(event=None):
-        canvas.configure(scrollregion=canvas.bbox("all"))
+    screen_w = win.winfo_screenwidth()
+    screen_h = win.winfo_screenheight()
+    x = screen_w - win_width - 24
+    y = screen_h - win_height - 60
+    win.geometry(f"{win_width}x{win_height}+{x}+{y}")
 
-    inner.bind("<Configure>", _on_configure)
+    win.attributes("-topmost", True)
+    win.attributes("-alpha", 0.97)
 
+    try:
+        f_h1 = Font(family="Microsoft YaHei", size=14, weight="bold")
+        f_h2 = Font(family="Microsoft YaHei", size=11, weight="bold")
+        f_body = Font(family="Microsoft YaHei", size=10)
+        f_small = Font(family="Microsoft YaHei", size=9)
+        f_tiny = Font(family="Microsoft YaHei", size=8)
+        f_link = Font(family="Microsoft YaHei", size=9, underline=False)
+    except Exception:
+        f_h1 = Font(size=14, weight="bold")
+        f_h2 = Font(size=11, weight="bold")
+        f_body = Font(size=10)
+        f_small = Font(size=9)
+        f_tiny = Font(size=8)
+        f_link = Font(size=9, underline=False)
+
+    # ── 顶栏（可拖拽） ──
+    header = Frame(win, bg=C_HEADER, padx=18, pady=14)
+    header.pack(fill=X)
+    header.bind("<Button-1>", lambda e: _start_move(e, win))
+    header.bind("<B1-Motion>", lambda e: _do_move(e, win))
+
+    header_left = Frame(header, bg=C_HEADER)
+    header_left.pack(side=LEFT)
+    Label(header_left, text="◉", bg=C_HEADER, fg=C_ACCENT,
+          font=Font(family="Microsoft YaHei", size=10)).pack(side=LEFT, padx=(0, 8))
+    Label(header_left, text=title, bg=C_HEADER, fg=C_TEXT,
+          font=f_h2).pack(side=LEFT)
+
+    header_right = Frame(header, bg=C_HEADER)
+    header_right.pack(side=RIGHT)
+    Label(header_right, text=f"{len(articles)} 篇", bg=C_HEADER,
+          fg=C_TEXT_DIM, font=f_tiny).pack(side=LEFT, padx=(0, 12))
+    close_btn = Label(header_right, text="✕", bg=C_HEADER, fg=C_TEXT_DIM,
+                      font=f_small, cursor="hand2")
+    close_btn.pack(side=LEFT)
+    close_btn.bind("<Button-1>", lambda e: _close(root, win))
+    close_btn.bind("<Enter>", lambda e: close_btn.configure(fg="#ff6b6b"))
+    close_btn.bind("<Leave>", lambda e: close_btn.configure(fg=C_TEXT_DIM))
+
+    # ── 可滚动内容 ──
     if not articles:
-        tk.Label(inner, text="今日没有检索到符合条件的新文献", bg=C_BG, fg=C_MUTED, font=FONT).pack(pady=40)
+        _show_empty(win, f_body)
     else:
-        for i, art in enumerate(articles, 1):
-            build_card(inner, art, i)
+        _show_articles(win, articles, f_h1, f_h2, f_body, f_small, f_tiny, f_link)
 
-    # 底部关闭栏
-    footer = tk.Frame(root, bg=C_BG)
-    footer.pack(fill="x", side="bottom")
-    btn = tk.Button(footer, text="关闭", bg=C_PRIMARY, fg="white", font=("Microsoft YaHei", 11),
-                    relief="flat", padx=22, pady=6, command=root.destroy)
-    btn.pack(side="right", padx=16, pady=8)
+    if auto_close > 0:
+        win.after(auto_close * 1000, lambda: _close(root, win))
 
-    # 鼠标滚轮滚动
+    win.bind("<Escape>", lambda e: _close(root, win))
+    win.protocol("WM_DELETE_WINDOW", lambda: _close(root, win))
+    win.lift()
+    win.focus_force()
+    win.mainloop()
+
+
+def _start_move(event, win):
+    win._x = event.x
+    win._y = event.y
+
+
+def _do_move(event, win):
+    x = win.winfo_x() + event.x - win._x
+    y = win.winfo_y() + event.y - win._y
+    win.geometry(f"+{x}+{y}")
+
+
+def _show_empty(win, font_empty):
+    empty = Frame(win, bg=C_BG, padx=30, pady=80)
+    empty.pack(fill=BOTH, expand=True)
+    Label(empty, text="📭", bg=C_BG, fg=C_TEXT_DIM,
+          font=Font(size=32)).pack()
+    Label(empty, text="今日暂无新文献", bg=C_BG, fg=C_TEXT_MUTED,
+          font=font_empty).pack(pady=(16, 4))
+    Label(empty, text="SciRobot 已就位，明天继续为你检索 PubMed",
+          bg=C_BG, fg=C_TEXT_DIM, font=Font(size=9)).pack()
+
+
+def _show_articles(win, articles, f_h1, f_h2, f_body, f_small, f_tiny, f_link):
+    outer = Frame(win, bg=C_BG, padx=0, pady=0)
+    outer.pack(fill=BOTH, expand=True)
+
+    canvas = Canvas(outer, bg=C_BG, highlightthickness=0)
+    scrollbar = Scrollbar(outer, orient=VERTICAL, command=canvas.yview,
+                          bg=C_DIVIDER, troughcolor=C_BG, width=6)
+    canvas.configure(yscrollcommand=scrollbar.set)
+
+    scrollbar.pack(side=RIGHT, fill=Y, padx=(0, 4), pady=8)
+    canvas.pack(side=LEFT, fill=BOTH, expand=True, padx=4, pady=8)
+
+    content = Frame(canvas, bg=C_BG)
+    canvas_window = canvas.create_window((0, 0), window=content, anchor="nw", width=440)
+
+    def _on_configure(event):
+        canvas.configure(scrollregion=canvas.bbox("all"))
+        canvas.itemconfig(canvas_window, width=event.width - 12)
+
+    content.bind("<Configure>", _on_configure)
+    canvas.bind("<Configure>", lambda e: canvas.itemconfig(canvas_window, width=e.width - 12))
+
     def _on_mousewheel(event):
         canvas.yview_scroll(int(-1 * (event.delta / 120)), "units")
-
     canvas.bind_all("<MouseWheel>", _on_mousewheel)
-    root.mainloop()
+
+    for i, art in enumerate(articles, 1):
+        _build_card(content, i, art, f_h1, f_h2, f_body, f_small, f_tiny, f_link)
+
+    Frame(content, bg=C_BG, height=12).pack(fill=X)
 
 
-def main() -> None:
-    if len(sys.argv) < 2:
-        print("usage: python desktop_notify.py <payload.json>")
-        sys.exit(1)
-    path = sys.argv[1]
+def _build_card(parent, index, art, f_h1, f_h2, f_body, f_small, f_tiny, f_link):
+    card = Frame(parent, bg=C_CARD, padx=16, pady=14)
+    card.pack(fill=X, padx=8, pady=(0, 8))
+
+    # 序号 + 期刊
+    tag_row = Frame(card, bg=C_CARD)
+    tag_row.pack(fill=X)
+    Label(tag_row, text=f"  {index}  ", bg=C_TAG_BG, fg="white",
+          font=f_tiny, padx=6, pady=1).pack(side=LEFT)
+    journal = art.get("journal", "") or art.get("journal_abbr", "") or "—"
+    if len(journal) > 50:
+        journal = journal[:47] + "..."
+    Label(tag_row, text=journal, bg=C_CARD, fg=C_TEXT_DIM,
+          font=f_tiny).pack(side=LEFT, padx=(8, 0))
+
+    # 中文标题
+    title_zh = art.get("title_zh") or art.get("title") or f"PMID {art.get('pmid', '')}"
+    Label(card, text=title_zh, bg=C_CARD, fg=C_TEXT,
+          font=f_h1, justify="left", wraplength=400).pack(anchor=W, pady=(10, 4))
+
+    # 英文标题
+    en_title = art.get("title", "")
+    if art.get("title_zh") and en_title:
+        Label(card, text=en_title, bg=C_CARD, fg=C_TEXT_MUTED,
+              font=f_small, justify="left", wraplength=400).pack(anchor=W, pady=(0, 8))
+
+    # 分割线
+    Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, pady=(0, 8))
+
+    # 元信息：发表日期 + PMID + DOI
+    pub_date = art.get("pub_date", "—")
+    pmid = art.get("pmid", "—")
+    doi = art.get("doi", "")
+    doi_short = f"DOI: {doi}" if doi else ""
+    meta_parts = [f"发表 {pub_date}"]
+    if doi_short:
+        meta_parts.append(doi_short)
+    meta_parts.append(f"PMID {pmid}")
+    Label(card, text="  ·  ".join(meta_parts), bg=C_CARD, fg=C_TEXT_DIM,
+          font=f_tiny).pack(anchor=W)
+
+    # 作者
+    authors = art.get("authors", "—")
+    if isinstance(authors, list):
+        authors = ", ".join(authors)
+    if len(authors) > 60:
+        authors = authors[:57] + "..."
+    Label(card, text=authors, bg=C_CARD, fg=C_TEXT_DIM,
+          font=f_tiny).pack(anchor=W, pady=(2, 0))
+
+    # 链接行
+    link_frame = Frame(card, bg=C_CARD)
+    link_frame.pack(fill=X, pady=(10, 0))
+
+    pubmed_url = art.get("pubmed_url", "")
+    doi_url = art.get("doi_url", "")
+
+    if pubmed_url:
+        lbl = Label(link_frame, text="PubMed", bg=C_CARD, fg=C_ACCENT_DIM,
+                    font=f_link, cursor="hand2")
+        lbl.pack(side=LEFT)
+        lbl.bind("<Button-1>", lambda e, u=pubmed_url: open_url(u))
+        lbl.bind("<Enter>", _on_link_enter)
+        lbl.bind("<Leave>", lambda e, c=C_ACCENT_DIM: _on_link_leave(e, c))
+
+    if doi_url:
+        sep = "　·　" if pubmed_url else ""
+        lbl = Label(link_frame, text=f"{sep}DOI", bg=C_CARD, fg=C_ACCENT_DIM,
+                    font=f_link, cursor="hand2")
+        lbl.pack(side=LEFT)
+        lbl.bind("<Button-1>", lambda e, u=doi_url: open_url(u))
+        lbl.bind("<Enter>", _on_link_enter)
+        lbl.bind("<Leave>", lambda e, c=C_ACCENT_DIM: _on_link_leave(e, c))
+
+    # 中文摘要
+    abstract_zh = art.get("abstract_zh", "")
+    if abstract_zh:
+        ab_card = Frame(card, bg=C_ABSTRACT_BG, padx=12, pady=12)
+        ab_card.pack(fill=X, pady=(14, 0))
+
+        Label(ab_card, text="中文摘要", bg=C_ABSTRACT_BG, fg=C_ACCENT,
+              font=Font(family="Microsoft YaHei", size=9, weight="bold")).pack(anchor=W)
+
+        ab_text = Label(ab_card, text=abstract_zh, bg=C_ABSTRACT_BG, fg=C_TEXT,
+                        font=f_body, justify="left", wraplength=390)
+        ab_text.pack(anchor=W, pady=(8, 0))
+
+
+def _close(root, win):
     try:
-        with open(path, encoding="utf-8") as fp:
+        win.destroy()
+    except Exception:
+        pass
+    try:
+        root.destroy()
+    except Exception:
+        pass
+
+
+def show_from_file(payload_path: str) -> None:
+    """从 JSON 文件读取并弹出右下角窗口。"""
+    try:
+        with open(payload_path, encoding="utf-8") as fp:
             data = json.load(fp)
     except Exception as exc:
         print("读取弹窗数据失败：", exc)
         sys.exit(1)
     try:
-        run_window(data)
+        show_popup(data)
     finally:
         try:
-            os.remove(path)
+            os.remove(payload_path)
         except OSError:
             pass
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) < 2:
+        print("usage: python desktop_notify.py <payload.json>")
+        sys.exit(1)
+    show_from_file(sys.argv[1])

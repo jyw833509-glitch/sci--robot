@@ -18,10 +18,16 @@ from __future__ import annotations
 import copy
 import json
 import os
+import sys
 from pathlib import Path
 from typing import Any, Dict, List
 
-BASE_DIR = Path(__file__).resolve().parent
+# PyInstaller 打包后 __file__ 指向临时 _MEIPASS，需重定向
+if getattr(sys, "frozen", False):
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent
+
 DEFAULT_CONFIG_FILE = BASE_DIR / "config.yaml"
 EXAMPLE_CONFIG_FILE = BASE_DIR / "config.example.yaml"
 

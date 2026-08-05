@@ -233,7 +233,7 @@ _ARTICLE_FIELDS = {
     "pmid", "title", "abstract", "authors", "journal", "journal_abbr",
     "pub_date", "entrez_date", "doi", "publication_types", "keywords",
     "affiliation", "language", "title_zh", "abstract_zh", "translate_provider",
-    "score",
+    "score", "pubmed_url", "doi_url",
 }
 
 

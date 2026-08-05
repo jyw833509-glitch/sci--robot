@@ -288,6 +288,17 @@ def _article_to_dict(a) -> Dict[str, Any]:
 
 def _launch_desktop_window(payload: Dict[str, Any]) -> bool:
     """把 payload 写入临时 JSON，以子进程唤起 desktop_notify.py 弹窗（不阻塞主流程）。"""
+    # PyInstaller 打包后，在子线程中直接调用弹窗
+    if getattr(sys, "frozen", False):
+        import threading
+        def _show():
+            from desktop_notify import show_popup
+            show_popup(payload)
+        t = threading.Thread(target=_show, daemon=True)
+        t.start()
+        log.info("已唤起桌面弹窗（内联线程模式）")
+        return True
+
     script = SCRIPT_DIR / "desktop_notify.py"
     if not script.exists():
         log.error("找不到 desktop_notify.py，无法弹出窗口")

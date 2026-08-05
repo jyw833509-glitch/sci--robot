@@ -22,11 +22,16 @@ main.py —— 命令行入口
 from __future__ import annotations
 
 import argparse
+import os
 import shutil
 import sys
 from pathlib import Path
 
-BASE_DIR = Path(__file__).resolve().parent
+# PyInstaller 打包后 __file__ 指向临时目录，改指 exe 所在目录
+if getattr(sys, "frozen", False):
+    BASE_DIR = Path(sys.executable).resolve().parent
+else:
+    BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR))
 
 from config import DEFAULT_CONFIG_FILE, EXAMPLE_CONFIG_FILE, load_config  # noqa: E402
@@ -155,12 +160,75 @@ def cmd_show(args) -> int:
     return 0
 
 
+def _setup_autostart() -> None:
+    """创建开机自启快捷方式（Windows 启动文件夹）。"""
+    if os.name != "nt":
+        return
+    try:
+        import pythoncom
+        import win32com.client
+        startup = os.path.join(os.environ["APPDATA"],
+                               r"Microsoft\Windows\Start Menu\Programs\Startup")
+        shortcut_path = os.path.join(startup, "SciRobot.lnk")
+        if os.path.exists(shortcut_path):
+            return  # 已存在
+
+        shell = win32com.client.Dispatch("WScript.Shell")
+        shortcut = shell.CreateShortCut(shortcut_path)
+        shortcut.TargetPath = sys.executable
+        shortcut.Arguments = "schedule"
+        shortcut.WorkingDirectory = str(BASE_DIR)
+        shortcut.Description = "SciRobot 文献推送机器人"
+        shortcut.Save()
+        print(f"[自动] 已创建开机自启快捷方式: {shortcut_path}")
+    except ImportError:
+        # PyInstaller 打包的 exe 直接用 VBS 创建快捷方式
+        startup = os.path.join(os.environ["APPDATA"],
+                               r"Microsoft\Windows\Start Menu\Programs\Startup")
+        shortcut_path = os.path.join(startup, "SciRobot.lnk")
+        if os.path.exists(shortcut_path):
+            return
+
+        vbs = os.path.join(BASE_DIR, "_create_shortcut.vbs")
+        with open(vbs, "w") as f:
+            f.write(f'''Set ws = WScript.CreateObject("WScript.Shell")
+Set sc = ws.CreateShortcut("{shortcut_path}")
+sc.TargetPath = "{sys.executable}"
+sc.Arguments = "schedule"
+sc.WorkingDirectory = "{BASE_DIR}"
+sc.Description = "SciRobot 文献推送机器人"
+sc.Save()
+''')
+        os.system(f'cscript //nologo "{vbs}"')
+        try:
+            os.remove(vbs)
+        except Exception:
+            pass
+        if os.path.exists(shortcut_path):
+            print(f"[自动] 已创建开机自启快捷方式: {shortcut_path}")
+
+
 def cmd_schedule(args) -> int:
     cfg = load_config(args.config)
     _init_logging(cfg)
+
+    # 首次运行时自动设开机自启
+    _setup_autostart()
+
     from scheduler import start_scheduler
 
     print(BANNER)
+
+    # 如果配置了 run_on_start，启动时立刻跑一次
+    if cfg.get("scheduler.run_on_start", False):
+        from notifier import Notifier
+        from scheduler import _trigger_run
+        try:
+            print("[启动] 立即推送今日文献...")
+            _trigger_run(cfg)
+        except Exception as exc:
+            print(f"[启动] 推送失败: {exc}")
+
     start_scheduler(cfg)
     return 0
 

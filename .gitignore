@@ -32,3 +32,10 @@ Thumbs.db
 
 # 发给同事的打包产物（本地分发用，不进仓库）
 dist/
+
+# PyInstaller 构建临时文件
+build/
+_pyi_build/
+pyi_build/
+pyi_dist/
+*.spec

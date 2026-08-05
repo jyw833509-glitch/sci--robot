@@ -300,7 +300,7 @@ scheduler:
   run_at:
     - "08:30"
   # 启动 scheduler 时是否立即先跑一次
-  run_on_start: false
+  run_on_start: true
   # 工作日判断：控制「休息日不推送」
   workday:
     # 是否跳过周末（周六、周日）。true = 周末不推送
