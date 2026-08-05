@@ -61,23 +61,23 @@ def _make_fonts():
     families = ["Times New Roman", "SimSun"]
     try:
         return {
-            "title":   Font(family=families[0], size=13, weight="bold"),
-            "heading": Font(family=families[0], size=11, weight="bold"),
-            "body":    Font(family=families[0], size=9),
-            "small":   Font(family=families[0], size=8),
-            "tiny":    Font(family=families[0], size=7),
-            "link":    Font(family=families[0], size=8, underline=False),
-            "badge":   Font(family=families[0], size=10, weight="bold"),
+            "title":   Font(family=families[0], size=11, weight="bold"),
+            "heading": Font(family=families[0], size=10, weight="bold"),
+            "body":    Font(family=families[0], size=8),
+            "small":   Font(family=families[0], size=7),
+            "tiny":    Font(family=families[0], size=6),
+            "link":    Font(family=families[0], size=7, underline=False),
+            "badge":   Font(family=families[0], size=9, weight="bold"),
         }
     except Exception:
         return {
-            "title":   Font(size=13, weight="bold"),
-            "heading": Font(size=11, weight="bold"),
-            "body":    Font(size=9),
-            "small":   Font(size=8),
-            "tiny":    Font(size=7),
-            "link":    Font(size=8, underline=False),
-            "badge":   Font(size=10, weight="bold"),
+            "title":   Font(size=11, weight="bold"),
+            "heading": Font(size=10, weight="bold"),
+            "body":    Font(size=8),
+            "small":   Font(size=7),
+            "tiny":    Font(size=6),
+            "link":    Font(size=7, underline=False),
+            "badge":   Font(size=9, weight="bold"),
         }
 
 
