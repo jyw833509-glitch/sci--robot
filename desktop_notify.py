@@ -20,15 +20,15 @@ from tkinter.font import Font
 # ═══════════════════════════════════════════════════════════════
 # 配色 — Apple Human Interface Guidelines 浅色模式
 # ═══════════════════════════════════════════════════════════════
-C_WIN_BG       = "#e5e5ea"   # 窗外背景（macOS 浅灰）
+C_WIN_BG       = "#eef2f7"   # 窗外背景
 C_CARD_BG      = "#ffffff"   # 卡片白
-C_HEADER_BG    = "#f9f9f9"   # 标题栏淡灰底
+C_HEADER_BG    = "#f8fafc"   # 标题栏淡灰底
 C_ACCENT       = "#007AFF"   # Apple Blue
 C_ACCENT_HOVER = "#0056cc"   # 深蓝 hover
 C_TEXT         = "#1d1d1f"   # 主文字（近黑）
-C_TEXT_SEC     = "#86868b"   # 次要文字
-C_TEXT_TER     = "#aeaeb2"   # 三级文字
-C_DIVIDER      = "#e5e5ea"   # 分割线
+C_TEXT_SEC     = "#475569"   # 次要文字
+C_TEXT_TER     = "#94a3b8"   # 三级文字
+C_DIVIDER      = "#e2e8f0"   # 分割线
 C_ABSTRACT_BG  = "#f5f5f7"   # 摘要块底
 C_TAG_BG       = "#007AFF"   # 标签背景
 C_TAG_TEXT     = "#ffffff"
@@ -36,8 +36,8 @@ C_CLOSE        = "#ff5f57"   # 红绿灯 — 关闭
 C_CLOSE_HOVER  = "#ff3b30"
 
 # 窗口尺寸
-WIN_W = 540
-WIN_H = 680
+WIN_W = 620
+WIN_H = 720
 
 
 def open_url(url: str) -> None:
@@ -107,7 +107,7 @@ def show_popup(data: dict) -> None:
     f = _make_fonts()
 
     # ── 外层容器（模拟卡片圆角 + 阴影效果） ──
-    outer = Frame(win, bg=C_WIN_BG, padx=10, pady=10)
+    outer = Frame(win, bg=C_WIN_BG, padx=12, pady=12)
     outer.pack(fill=BOTH, expand=True)
 
     # 白色卡片主体
@@ -133,9 +133,9 @@ def show_popup(data: dict) -> None:
 
     # ── 底部分割线 + 提示 ──
     Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, side=BOTTOM)
-    footer = Frame(card, bg=C_CARD_BG, padx=20, pady=10)
+    footer = Frame(card, bg=C_CARD_BG, padx=22, pady=11)
     footer.pack(fill=X, side=BOTTOM)
-    Label(footer, text="SciRobot  ·  每个工作日 08:30 自动推送",
+    Label(footer, text="SciRobot  ·  双击主托盘图标可再次打开今日文献",
           bg=C_CARD_BG, fg=C_TEXT_TER, font=f["tiny"]).pack(side=LEFT)
 
     if auto_close > 0:
@@ -175,15 +175,19 @@ def show_popup(data: dict) -> None:
 # 标题栏
 # ═══════════════════════════════════════════════════════════════
 def _build_header(card, title, f, win, on_minimize, on_close):
-    """自定义标题栏：收起通知、关闭和窗口拖拽。"""
-    header = Frame(card, bg=C_HEADER_BG, padx=14, pady=12)
+    """带品牌识别与阅读层级的自定义标题栏。"""
+    header = Frame(card, bg=C_HEADER_BG, padx=16, pady=11)
     header.pack(fill=X)
     header.bind("<Button-1>", lambda e: _start_move(e, win))
     header.bind("<B1-Motion>", lambda e: _do_move(e, win))
 
-    # 标题
-    Label(header, text=title, bg=C_HEADER_BG, fg=C_TEXT_SEC,
-          font=f["small"]).pack(side=LEFT, padx=(4, 0))
+    Frame(header, bg=C_ACCENT, width=4, height=34).pack(side=LEFT, padx=(0, 10))
+    heading = Frame(header, bg=C_HEADER_BG)
+    heading.pack(side=LEFT, fill=X, expand=True)
+    Label(heading, text="SCIROBOT  ·  DAILY RESEARCH DIGEST", bg=C_HEADER_BG,
+          fg=C_ACCENT, font=f["tiny"]).pack(anchor=W)
+    Label(heading, text=title, bg=C_HEADER_BG, fg=C_TEXT,
+          font=f["heading"]).pack(anchor=W, pady=(1, 0))
 
     # SciRobot 只使用主程序的一个托盘图标。收起当前通知后，可双击主
     # 托盘图标再次打开今日文献，避免每个通知都注册一个重复托盘图标。
@@ -280,8 +284,8 @@ def _show_articles(parent, articles, f):
 
 
 # 可用内容宽度（用于 wraplength）
-# 窗口 540 - outer padx 20 - scrollbar 16 - inner padx 16 - card padx 32 = 456
-_AVAILABLE_W = 450
+# 窗口 620 - 外层/滚动条/卡片边距，留出足够的中文换行空间
+_AVAILABLE_W = 520
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -289,8 +293,11 @@ _AVAILABLE_W = 450
 # ═══════════════════════════════════════════════════════════════
 def _build_card(parent, index, art, f):
     """macOS 风格文献卡片。"""
-    card = Frame(parent, bg=C_CARD_BG, padx=20, pady=16)
-    card.pack(fill=X, padx=0, pady=(0, 8))
+    card = Frame(
+        parent, bg=C_CARD_BG, padx=20, pady=17,
+        highlightthickness=1, highlightbackground=C_DIVIDER,
+    )
+    card.pack(fill=X, padx=4, pady=(0, 10))
 
     # ---- 期刊标签 + 日期 ----
     meta_row = Frame(card, bg=C_CARD_BG)
@@ -299,8 +306,8 @@ def _build_card(parent, index, art, f):
     journal = art.get("journal") or art.get("journal_abbr") or ""
     if len(journal) > 45:
         journal = journal[:42] + "…"
-    Label(meta_row, text=journal, bg=C_CARD_BG, fg=C_ACCENT,
-          font=f["small"]).pack(side=LEFT)
+    Label(meta_row, text=journal, bg="#eaf2ff", fg="#0056cc",
+          font=f["tiny"], padx=7, pady=2).pack(side=LEFT)
 
     pub_date = art.get("pub_date", "") or ""
     pub_type = art.get("publication_types", [])
@@ -312,7 +319,7 @@ def _build_card(parent, index, art, f):
     # ---- 中文标题 ----
     title_zh = art.get("title_zh") or art.get("title") or f"PMID {art.get('pmid','')}"
     Label(card, text=title_zh, bg=C_CARD_BG, fg=C_TEXT,
-          font=f["title"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(10, 6))
+          font=f["title"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(12, 7))
 
     # ---- 英文标题 ----
     en_title = art.get("title", "")
@@ -374,7 +381,7 @@ def _build_card(parent, index, art, f):
             doi_lbl.bind("<Leave>", lambda e: doi_lbl.configure(fg=C_ACCENT))
 
     # ---- 分割线 ----
-    Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, pady=(14, 0))
+    Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, pady=(15, 0))
 
     # ---- 中文摘要 ----
     abstract_zh = art.get("abstract_zh", "")
@@ -382,8 +389,8 @@ def _build_card(parent, index, art, f):
         ab_frame = Frame(card, bg=C_CARD_BG, padx=0, pady=0)
         ab_frame.pack(fill=X, pady=(12, 0))
 
-        lbl = Label(ab_frame, text="摘要", bg=C_CARD_BG, fg=C_TEXT_SEC,
-                    font=f["small"])
+        lbl = Label(ab_frame, text="中文摘要", bg=C_CARD_BG, fg=C_ACCENT,
+                    font=f["heading"])
         lbl.pack(anchor=W)
 
         Label(ab_frame, text=abstract_zh, bg=C_CARD_BG, fg=C_TEXT,
@@ -395,7 +402,7 @@ def _build_card(parent, index, art, f):
         en_frame = Frame(card, bg=C_CARD_BG, padx=0, pady=0)
         en_frame.pack(fill=X, pady=(12, 4))
 
-        Label(en_frame, text="English Abstract", bg=C_CARD_BG, fg=C_TEXT_TER,
+        Label(en_frame, text="ENGLISH ABSTRACT", bg=C_CARD_BG, fg=C_TEXT_TER,
               font=f["tiny"]).pack(anchor=W)
 
         Label(en_frame, text=abstract_en, bg=C_CARD_BG, fg=C_TEXT_SEC,
