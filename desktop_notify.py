@@ -12,7 +12,7 @@ import json
 import os
 import sys
 import webbrowser
-from tkinter import Tk, Toplevel, Frame, Label, Canvas, Scrollbar
+from tkinter import Tk, Toplevel, Frame, Label, Canvas, Scrollbar, Text
 from tkinter import BOTH, RIGHT, LEFT, TOP, BOTTOM, X, Y, W, END, VERTICAL
 from tkinter.font import Font
 
@@ -113,6 +113,8 @@ def show_popup(data: dict) -> None:
     # 白色卡片主体
     card = Frame(outer, bg=C_CARD_BG)
     card.pack(fill=BOTH, expand=True)
+    card.grid_columnconfigure(0, weight=1)
+    card.grid_rowconfigure(2, weight=1)
 
     # ── 标题栏 ──
     _build_header(
@@ -121,15 +123,13 @@ def show_popup(data: dict) -> None:
         on_close=lambda: _close(root, win, canvas),
     )
 
-    # ── 分割线 ──
-    Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, padx=0, pady=0)
-
-    # ── 底部栏先占位，再布局可滚动内容区；否则内容区会扩展到状态栏下方。──
+    # ── 底部栏固定在网格最后一行，正文滚动区只使用中间的可用空间。──
     footer = Frame(card, bg=C_CARD_BG, padx=22, pady=11)
-    footer.pack(fill=X, side=BOTTOM)
+    footer.grid(row=4, column=0, sticky="ew")
     Label(footer, text="SciRobot  ·  双击主托盘图标可再次打开今日文献",
           bg=C_CARD_BG, fg=C_TEXT_TER, font=f["tiny"]).pack(side=LEFT)
-    Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, side=BOTTOM)
+    Frame(card, bg=C_DIVIDER, height=1).grid(row=3, column=0, sticky="ew")
+    Frame(card, bg=C_DIVIDER, height=1).grid(row=1, column=0, sticky="ew")
 
     # ── 内容区（Canvas + Scrollbar 滚动）──
     canvas = None
@@ -177,7 +177,7 @@ def show_popup(data: dict) -> None:
 def _build_header(card, title, f, win, on_minimize, on_close):
     """带品牌识别与阅读层级的自定义标题栏。"""
     header = Frame(card, bg=C_HEADER_BG, padx=16, pady=11)
-    header.pack(fill=X)
+    header.grid(row=0, column=0, sticky="ew")
     header.bind("<Button-1>", lambda e: _start_move(e, win))
     header.bind("<B1-Motion>", lambda e: _do_move(e, win))
 
@@ -227,7 +227,7 @@ def _do_move(event, win):
 # ═══════════════════════════════════════════════════════════════
 def _show_empty(parent, f):
     box = Frame(parent, bg=C_CARD_BG, padx=40, pady=80)
-    box.pack(fill=BOTH, expand=True)
+    box.grid(row=2, column=0, sticky="nsew")
     Label(box, text="📭", bg=C_CARD_BG, font=Font(size=36)).pack()
     Label(box, text="今日暂无新文献", bg=C_CARD_BG, fg=C_TEXT_SEC,
           font=f["body"]).pack(pady=(18, 6))
@@ -242,7 +242,7 @@ def _show_articles(parent, articles, f):
     """Canvas + Scrollbar 布局，内容超出时可滚动查看。"""
     # ── 滚动容器 ──
     scroll_container = Frame(parent, bg=C_CARD_BG)
-    scroll_container.pack(fill=BOTH, expand=True)
+    scroll_container.grid(row=2, column=0, sticky="nsew")
 
     canvas = Canvas(scroll_container, bg=C_CARD_BG, highlightthickness=0)
     vbar = Scrollbar(scroll_container, orient=VERTICAL, command=canvas.yview)
@@ -286,6 +286,29 @@ def _show_articles(parent, articles, f):
 # 可用内容宽度（用于 wraplength）
 # 窗口 620 - 外层/滚动条/卡片边距，留出足够的中文换行空间
 _AVAILABLE_W = 520
+
+
+def _selectable_text(parent, text, font, fg, pady=(6, 0)):
+    """创建只读、可拖选和 Ctrl+C 复制的自动高度文本区域。"""
+    widget = Text(
+        parent, bg=C_CARD_BG, fg=fg, font=font, wrap="word",
+        relief="flat", borderwidth=0, highlightthickness=0,
+        padx=0, pady=0, cursor="xterm", height=1,
+    )
+    widget.insert("1.0", text)
+    widget.configure(state="disabled")
+    widget.pack(fill=X, anchor=W, pady=pady)
+
+    def _fit_height():
+        try:
+            # displaylines 会根据实际字体和换行宽度计算，避免截断最后一行。
+            lines = int(widget.count("1.0", "end-1c", "displaylines")[0])
+            widget.configure(height=max(1, lines))
+        except Exception:
+            pass
+
+    widget.after_idle(_fit_height)
+    return widget
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -393,8 +416,7 @@ def _build_card(parent, index, art, f):
                     font=f["heading"])
         lbl.pack(anchor=W)
 
-        Label(ab_frame, text=abstract_zh, bg=C_CARD_BG, fg=C_TEXT,
-              font=f["body"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(6, 0))
+        _selectable_text(ab_frame, abstract_zh, f["body"], C_TEXT)
 
     # ---- 英文摘要 ----
     abstract_en = art.get("abstract", "")
@@ -405,8 +427,7 @@ def _build_card(parent, index, art, f):
         Label(en_frame, text="ENGLISH ABSTRACT", bg=C_CARD_BG, fg=C_TEXT_TER,
               font=f["tiny"]).pack(anchor=W)
 
-        Label(en_frame, text=abstract_en, bg=C_CARD_BG, fg=C_TEXT_SEC,
-              font=f["small"], justify="left", wraplength=_AVAILABLE_W).pack(anchor=W, pady=(4, 0))
+        _selectable_text(en_frame, abstract_en, f["small"], C_TEXT_SEC, pady=(4, 0))
 
 
 # ═══════════════════════════════════════════════════════════════
