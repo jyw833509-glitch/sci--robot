@@ -54,30 +54,31 @@ def _on_link_leave(event, orig_color):
 
 
 # ═══════════════════════════════════════════════════════════════
-# 字体 — 中文宋体 / 英文 Times New Roman，衬线窄体省空间
+# 字体 — Windows 原生 UI 字体，优先保证中英文在高分屏上的清晰度
 # ═══════════════════════════════════════════════════════════════
 def _make_fonts():
-    # Times New Roman 优先（英文衬线），SimSun 回退（中文宋体）
-    families = ["Times New Roman", "SimSun"]
+    # 微软雅黑 UI 的字形和抗锯齿均更适合 Windows 通知窗口；宋体在小字号
+    # 下容易发虚，Times New Roman 也无法完整覆盖中文。
+    family = "Microsoft YaHei UI"
     try:
         return {
-            "title":   Font(family=families[0], size=11, weight="bold"),
-            "heading": Font(family=families[0], size=10, weight="bold"),
-            "body":    Font(family=families[0], size=8),
-            "small":   Font(family=families[0], size=7),
-            "tiny":    Font(family=families[0], size=6),
-            "link":    Font(family=families[0], size=7, underline=False),
-            "badge":   Font(family=families[0], size=9, weight="bold"),
+            "title":   Font(family=family, size=12, weight="bold"),
+            "heading": Font(family=family, size=10, weight="bold"),
+            "body":    Font(family=family, size=10),
+            "small":   Font(family=family, size=9),
+            "tiny":    Font(family=family, size=8),
+            "link":    Font(family=family, size=9, underline=False),
+            "badge":   Font(family=family, size=10, weight="bold"),
         }
     except Exception:
         return {
-            "title":   Font(size=11, weight="bold"),
+            "title":   Font(size=12, weight="bold"),
             "heading": Font(size=10, weight="bold"),
-            "body":    Font(size=8),
-            "small":   Font(size=7),
-            "tiny":    Font(size=6),
-            "link":    Font(size=7, underline=False),
-            "badge":   Font(size=9, weight="bold"),
+            "body":    Font(size=10),
+            "small":   Font(size=9),
+            "tiny":    Font(size=8),
+            "link":    Font(size=9, underline=False),
+            "badge":   Font(size=10, weight="bold"),
         }
 
 
@@ -114,7 +115,11 @@ def show_popup(data: dict) -> None:
     card.pack(fill=BOTH, expand=True)
 
     # ── 标题栏 ──
-    _build_header(card, title, f, win, root)
+    _build_header(
+        card, title, f, win,
+        on_minimize=lambda: _close(root, win, canvas),
+        on_close=lambda: _close(root, win, canvas),
+    )
 
     # ── 分割线 ──
     Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, padx=0, pady=0)
@@ -169,16 +174,36 @@ def show_popup(data: dict) -> None:
 # ═══════════════════════════════════════════════════════════════
 # 标题栏
 # ═══════════════════════════════════════════════════════════════
-def _build_header(card, title, f, win, root):
-    """macOS 风格标题栏：红绿灯 + 标题居中。"""
+def _build_header(card, title, f, win, on_minimize, on_close):
+    """自定义标题栏：收起通知、关闭和窗口拖拽。"""
     header = Frame(card, bg=C_HEADER_BG, padx=14, pady=12)
     header.pack(fill=X)
     header.bind("<Button-1>", lambda e: _start_move(e, win))
     header.bind("<B1-Motion>", lambda e: _do_move(e, win))
 
-    # 标题居中
+    # 标题
     Label(header, text=title, bg=C_HEADER_BG, fg=C_TEXT_SEC,
           font=f["small"]).pack(side=LEFT, padx=(4, 0))
+
+    # SciRobot 只使用主程序的一个托盘图标。收起当前通知后，可双击主
+    # 托盘图标再次打开今日文献，避免每个通知都注册一个重复托盘图标。
+    minimize = Label(
+        header, text="—", bg=C_HEADER_BG, fg=C_TEXT_SEC, font=f["heading"],
+        cursor="hand2", width=2,
+    )
+    minimize.pack(side=RIGHT, padx=(4, 0))
+    minimize.bind("<Button-1>", lambda e: on_minimize())
+    minimize.bind("<Enter>", lambda e: minimize.configure(fg=C_ACCENT))
+    minimize.bind("<Leave>", lambda e: minimize.configure(fg=C_TEXT_SEC))
+
+    close = Label(
+        header, text="×", bg=C_HEADER_BG, fg=C_CLOSE, font=f["heading"],
+        cursor="hand2", width=2,
+    )
+    close.pack(side=RIGHT)
+    close.bind("<Button-1>", lambda e: on_close())
+    close.bind("<Enter>", lambda e: close.configure(fg=C_CLOSE_HOVER))
+    close.bind("<Leave>", lambda e: close.configure(fg=C_CLOSE))
 
 
 # ═══════════════════════════════════════════════════════════════

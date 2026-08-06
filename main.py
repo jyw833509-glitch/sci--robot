@@ -219,15 +219,8 @@ def cmd_schedule(args) -> int:
 
     print(BANNER)
 
-    # 如果配置了 run_on_start，启动时立刻跑一次
-    if cfg.get("scheduler.run_on_start", False):
-        from scheduler import run_once
-        try:
-            print("[启动] 立即推送今日文献...")
-            run_once(cfg)
-        except Exception as exc:
-            print(f"[启动] 推送失败: {exc}")
-
+    # run_on_start 由 start_scheduler 内的调度线程统一执行。
+    # 此处再次执行会导致同一篇文献在启动时弹出两次。
     start_scheduler(cfg)
     return 0
 
@@ -371,6 +364,13 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    # PyInstaller 内部子进程入口：弹窗必须由自己的主线程创建 Tk，不能在
+    # 常驻调度器的后台线程里创建，否则双击托盘后会触发 Tcl/Tk 崩溃。
+    if len(sys.argv) == 3 and sys.argv[1] == "--popup":
+        from desktop_notify import show_from_file
+        show_from_file(sys.argv[2])
+        return 0
+
     parser = build_parser()
     args = parser.parse_args()
     if not getattr(args, "func", None):

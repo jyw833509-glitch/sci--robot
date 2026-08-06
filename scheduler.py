@@ -399,6 +399,7 @@ def _run_tray(cfg) -> None:
     SM_CYSMICON = 50
     TPM_LEFTALIGN = 0x0000
     TPM_RIGHTBUTTON = 0x0002
+    TPM_RETURNCMD = 0x0100
     IDI_APPLICATION = 32512
     NOTIFYICON_VERSION_4 = 4
     GWLP_WNDPROC = -4
@@ -555,7 +556,9 @@ def _run_tray(cfg) -> None:
         ctypes.windll.user32.GetCursorPos(ctypes.byref(pt))
         ctypes.windll.user32.SetForegroundWindow(hwnd_)
         cmd = ctypes.windll.user32.TrackPopupMenu(
-            menu, TPM_LEFTALIGN | TPM_RIGHTBUTTON,
+            # 没有 TPM_RETURNCMD 时，函数只返回是否成功显示菜单（通常是 1），
+            # 而不会返回菜单项的 1001 / 1002 命令 ID。
+            menu, TPM_LEFTALIGN | TPM_RIGHTBUTTON | TPM_RETURNCMD,
             pt.x, pt.y, 0, hwnd_, None,
         )
         ctypes.windll.user32.DestroyMenu(menu)
@@ -593,13 +596,18 @@ def _run_tray(cfg) -> None:
             log.info("WNDPROC 已处理 %d 条消息", _tray_msg_count[0])
 
         if msg == WM_TRAYICON:
-            log.info("收到托盘消息: lParam=0x%x wParam=0x%x", lparam, wparam)
-            if lparam == WM_RBUTTONUP:
+            # NOTIFYICON_VERSION_4 会把鼠标事件放在 lParam 的低 16 位，
+            # 高 16 位是图标 ID / 坐标信息；不能直接比较完整 lParam。
+            tray_event = lparam & 0xFFFF
+            log.info("收到托盘消息: lParam=0x%x event=0x%x wParam=0x%x", lparam, tray_event, wparam)
+            if tray_event == WM_RBUTTONUP:
                 log.info("托盘右键 → 显示菜单")
                 _tray_show_menu(hwnd_)
                 return 0
-            elif lparam in (WM_LBUTTONUP, WM_LBUTTONDBLCLK):
-                log.info("托盘左键/双击 → 弹出文献")
+            elif tray_event == WM_LBUTTONDBLCLK:
+                # 双击还会先产生两次 WM_LBUTTONUP；若同时处理它们会连续弹出
+                # 三个窗口。因此只把“双击完成”作为打开文献的唯一触发条件。
+                log.info("托盘左键双击 → 弹出文献")
                 _tray_event_flags.append("popup")
                 return 0
         elif msg == WM_TASKBAR_CREATED:

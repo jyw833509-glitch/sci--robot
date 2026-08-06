@@ -287,32 +287,29 @@ def _article_to_dict(a) -> Dict[str, Any]:
 
 
 def _launch_desktop_window(payload: Dict[str, Any]) -> bool:
-    """把 payload 写入临时 JSON，以子进程唤起 desktop_notify.py 弹窗（不阻塞主流程）。"""
-    # PyInstaller 打包后，在子线程中直接调用弹窗
-    if getattr(sys, "frozen", False):
-        import threading
-        def _show():
-            from desktop_notify import show_popup
-            show_popup(payload)
-        t = threading.Thread(target=_show, daemon=True)
-        t.start()
-        log.info("已唤起桌面弹窗（内联线程模式）")
-        return True
-
+    """以独立进程在主线程创建 Tk 弹窗，避免破坏主托盘的 Tk 事件循环。"""
     script = SCRIPT_DIR / "desktop_notify.py"
-    if not script.exists():
+    if not getattr(sys, "frozen", False) and not script.exists():
         log.error("找不到 desktop_notify.py，无法弹出窗口")
         return False
-    tmp = None
     try:
         fd, tmp = tempfile.mkstemp(suffix=".json", prefix="litbot_popup_")
         with os.fdopen(fd, "wb") as fp:
             fp.write(json.dumps(payload, ensure_ascii=False).encode("utf-8"))
+
+        # 打包版不能在调度器的后台线程中创建 Tk 窗口，否则 Tcl/Tk 会直接
+        # 崩溃。用当前 exe 的内部 --popup 模式启动子进程，确保 Tk 运行于该
+        # 子进程的主线程；源码运行时仍直接执行 desktop_notify.py。
+        command = (
+            [sys.executable, "--popup", tmp]
+            if getattr(sys, "frozen", False)
+            else [sys.executable, str(script), tmp]
+        )
         proc = subprocess.Popen(
-            [sys.executable, str(script), tmp],
+            command,
             stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
         )
-        log.info("已唤起桌面弹窗进程（pid=%s）", proc.pid)
+        log.info("已唤起独立桌面弹窗进程（pid=%s）", proc.pid)
         return True
     except Exception as exc:
         log.exception("唤起桌面弹窗失败：%s", exc)

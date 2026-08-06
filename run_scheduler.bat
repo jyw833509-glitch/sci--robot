@@ -7,8 +7,8 @@ REM  关闭本窗口即停止；建议改用「任务计划程序」+ run_daily.
 REM ============================================================
 cd /d "%~dp0"
 
-if exist ".venv\Scripts\python.exe" (
-    set "PY=.venv\Scripts\python.exe"
+if exist ".venv311\Scripts\python.exe" (
+    set "PY=.venv311\Scripts\python.exe"
 ) else (
     set "PY=python"
 )
