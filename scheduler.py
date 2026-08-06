@@ -412,13 +412,12 @@ def _run_tray(cfg) -> None:
     hicon = None
 
     def _make_ico_bytes(sizes=(16, 32)):
-        """生成蓝色圆形 + 白色 S 的多尺寸 .ico 文件字节（32位 BGRA）。"""
+        """生成透明底、黄绿双色 S 的多尺寸 .ico 文件字节（32 位 BGRA）。"""
         import struct
 
         def _render(size):
             w = h = size
             pixels = []
-            cx, cy, r = w // 2, h // 2, max(1, w // 2 - 2)
             s_pattern = [
                 "01111110", "10000001", "10000000", "01111110",
                 "00000001", "00000001", "10000001", "01111110",
@@ -427,15 +426,15 @@ def _run_tray(cfg) -> None:
             offset = (size - 8 * scale) // 2
             for y in range(h):
                 for x in range(w):
-                    dx, dy = x - cx, y - cy
-                    if dx * dx + dy * dy <= r * r:
-                        b, g, r_, a = 227, 113, 0, 255
-                        py = (y - offset) // scale
-                        px = (x - offset) // scale
-                        if 0 <= py < 8 and 0 <= px < 8:
-                            if s_pattern[py][px] == "1":
-                                b, g, r_, a = 255, 255, 255, 255
-                        pixels.append((b, g, r_, a))
+                    py = (y - offset) // scale
+                    px = (x - offset) // scale
+                    if 0 <= py < 8 and 0 <= px < 8 and s_pattern[py][px] == "1":
+                        # 黄色（上）到绿色（下）的双色渐变。BGRA 字节顺序。
+                        ratio = py / 7
+                        red = round(250 + (34 - 250) * ratio)
+                        green = round(204 + (197 - 204) * ratio)
+                        blue = round(21 + (94 - 21) * ratio)
+                        pixels.append((blue, green, red, 255))
                     else:
                         pixels.append((0, 0, 0, 0))
             xor_data = b""
