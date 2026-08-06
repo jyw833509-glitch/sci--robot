@@ -124,19 +124,19 @@ def show_popup(data: dict) -> None:
     # ── 分割线 ──
     Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, padx=0, pady=0)
 
+    # ── 底部栏先占位，再布局可滚动内容区；否则内容区会扩展到状态栏下方。──
+    footer = Frame(card, bg=C_CARD_BG, padx=22, pady=11)
+    footer.pack(fill=X, side=BOTTOM)
+    Label(footer, text="SciRobot  ·  双击主托盘图标可再次打开今日文献",
+          bg=C_CARD_BG, fg=C_TEXT_TER, font=f["tiny"]).pack(side=LEFT)
+    Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, side=BOTTOM)
+
     # ── 内容区（Canvas + Scrollbar 滚动）──
     canvas = None
     if not articles:
         _show_empty(card, f)
     else:
         canvas = _show_articles(card, articles, f)
-
-    # ── 底部分割线 + 提示 ──
-    Frame(card, bg=C_DIVIDER, height=1).pack(fill=X, side=BOTTOM)
-    footer = Frame(card, bg=C_CARD_BG, padx=22, pady=11)
-    footer.pack(fill=X, side=BOTTOM)
-    Label(footer, text="SciRobot  ·  双击主托盘图标可再次打开今日文献",
-          bg=C_CARD_BG, fg=C_TEXT_TER, font=f["tiny"]).pack(side=LEFT)
 
     if auto_close > 0:
         win.after(auto_close * 1000, lambda: _close(root, win, canvas))
