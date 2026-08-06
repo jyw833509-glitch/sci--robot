@@ -585,12 +585,10 @@ def _run_tray(cfg) -> None:
         _tray_msg_count[0] += 1
         is_tray = (msg == WM_TRAYICON)
 
-        # 首条消息确认 subclass 生效；托盘消息始终记录
+        # 首条消息确认 subclass 生效。鼠标悬停会产生大量托盘消息，不能逐条
+        # 写日志，否则会拖慢 tkinter 的 UI 线程。
         if _tray_msg_count[0] == 1:
             log.info("WNDPROC subclass 已生效！首条消息 msg=0x%x", msg)
-        if is_tray:
-            log.info("收到托盘消息: lParam=0x%x wParam=0x%x（总消息#%d）",
-                     lparam, wparam, _tray_msg_count[0])
         if _tray_msg_count[0] % 5000 == 0:
             log.info("WNDPROC 已处理 %d 条消息", _tray_msg_count[0])
 
@@ -598,7 +596,6 @@ def _run_tray(cfg) -> None:
             # NOTIFYICON_VERSION_4 会把鼠标事件放在 lParam 的低 16 位，
             # 高 16 位是图标 ID / 坐标信息；不能直接比较完整 lParam。
             tray_event = lparam & 0xFFFF
-            log.info("收到托盘消息: lParam=0x%x event=0x%x wParam=0x%x", lparam, tray_event, wparam)
             if tray_event == WM_RBUTTONUP:
                 log.info("托盘右键 → 显示菜单")
                 _tray_show_menu(hwnd_)

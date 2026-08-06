@@ -266,12 +266,20 @@ def _show_articles(parent, articles, f):
             canvas.itemconfig(inner_id, width=w)
     canvas.bind("<Configure>", _on_canvas_configure)
 
-    # 内部 frame 大小变化时刷新滚动区域
-    def _on_inner_configure(event):
-        canvas.update_idletasks()
+    # Text 尺寸变化会触发 Configure。用一次 after_idle 合并刷新，避免在
+    # Configure 回调中递归调用 update_idletasks 导致窗口假死。
+    scroll_pending = [False]
+
+    def _refresh_scrollregion():
+        scroll_pending[0] = False
         bbox = canvas.bbox("all")
         if bbox:
             canvas.configure(scrollregion=bbox)
+
+    def _on_inner_configure(event):
+        if not scroll_pending[0]:
+            scroll_pending[0] = True
+            canvas.after_idle(_refresh_scrollregion)
     inner.bind("<Configure>", _on_inner_configure)
 
     # ── 填充文献 ──
@@ -289,25 +297,22 @@ _AVAILABLE_W = 520
 
 
 def _selectable_text(parent, text, font, fg, pady=(6, 0)):
-    """创建只读、可拖选和 Ctrl+C 复制的自动高度文本区域。"""
+    """创建只读、可拖选和 Ctrl+C 复制的低开销文本区域。"""
+    char_width = max(1, font.measure("汉"))
+    chars_per_line = max(20, _AVAILABLE_W // char_width)
+    line_count = sum(
+        max(1, (len(line) + chars_per_line - 1) // chars_per_line)
+        for line in text.splitlines() or [text]
+    )
     widget = Text(
         parent, bg=C_CARD_BG, fg=fg, font=font, wrap="word",
         relief="flat", borderwidth=0, highlightthickness=0,
-        padx=0, pady=0, cursor="xterm", height=1,
+        padx=0, pady=0, cursor="xterm", height=line_count,
     )
     widget.insert("1.0", text)
     widget.configure(state="disabled")
     widget.pack(fill=X, anchor=W, pady=pady)
 
-    def _fit_height():
-        try:
-            # displaylines 会根据实际字体和换行宽度计算，避免截断最后一行。
-            lines = int(widget.count("1.0", "end-1c", "displaylines")[0])
-            widget.configure(height=max(1, lines))
-        except Exception:
-            pass
-
-    widget.after_idle(_fit_height)
     return widget
 
 
