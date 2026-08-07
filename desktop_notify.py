@@ -120,7 +120,6 @@ def show_popup(data: dict) -> None:
     _build_header(
         card, title, f, win,
         on_minimize=lambda: _close(root, win, canvas),
-        on_close=lambda: _close(root, win, canvas),
     )
 
     # ── 底部栏固定在网格最后一行，正文滚动区只使用中间的可用空间。──
@@ -174,7 +173,7 @@ def show_popup(data: dict) -> None:
 # ═══════════════════════════════════════════════════════════════
 # 标题栏
 # ═══════════════════════════════════════════════════════════════
-def _build_header(card, title, f, win, on_minimize, on_close):
+def _build_header(card, title, f, win, on_minimize):
     """带品牌识别与阅读层级的自定义标题栏。"""
     header = Frame(card, bg=C_HEADER_BG, padx=16, pady=11)
     header.grid(row=0, column=0, sticky="ew")
@@ -195,20 +194,10 @@ def _build_header(card, title, f, win, on_minimize, on_close):
         header, text="—", bg=C_HEADER_BG, fg=C_TEXT_SEC, font=f["heading"],
         cursor="hand2", width=2,
     )
-    minimize.pack(side=RIGHT, padx=(4, 0))
+    minimize.pack(side=RIGHT)
     minimize.bind("<Button-1>", lambda e: on_minimize())
     minimize.bind("<Enter>", lambda e: minimize.configure(fg=C_ACCENT))
     minimize.bind("<Leave>", lambda e: minimize.configure(fg=C_TEXT_SEC))
-
-    close = Label(
-        header, text="×", bg=C_HEADER_BG, fg=C_CLOSE, font=f["heading"],
-        cursor="hand2", width=2,
-    )
-    close.pack(side=RIGHT)
-    close.bind("<Button-1>", lambda e: on_close())
-    close.bind("<Enter>", lambda e: close.configure(fg=C_CLOSE_HOVER))
-    close.bind("<Leave>", lambda e: close.configure(fg=C_CLOSE))
-
 
 # ═══════════════════════════════════════════════════════════════
 # 拖拽
