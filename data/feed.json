@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-06 07:49:51",
+  "generated_at": "2026-08-07 05:01:10",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 74,
@@ -2315,7 +2315,7 @@
       "language": "eng",
       "title_zh": "H3N2 流感病毒血凝素蛋白上 B 细胞表位的鉴定和计算分析。",
       "abstract_zh": "甲型流感病毒 (IAV) 是一种传染性极强的有包膜 RNA 病毒，主要引起呼吸道疾病。流感病毒血凝素（HA）的持续抗原变异是流感大流行的主要驱动因素。因此，精确鉴定 HA 内的 B 细胞表位对于开发有助于限制流感进一步传播的诊断工具和候选疫苗至关重要。在本研究中，采用了综合实验和生物信息学策略。合理设计三聚体HA蛋白，提高抗原性和免疫原性，在哺乳动物真核表达系统中表达，并通过Ni亲和层析纯化。动物免疫后，产生了九种HA特异性单克隆抗体（mAb），即5D5、6B8、9E7、13F8、14C3、15F6、16B5、17H7和20C5。这些 mAb 在蛋白质印迹和间接免疫荧光测定 (IFA) 中特异性识别 HA 蛋白。随后使用这些 mAb 通过间接酶联免疫吸附测定 (ELISA)、斑点印迹、蛋白质印迹和 IFA 绘制 HA 上的 B 细胞表位。\n鉴定了 6 个先前未报告的线性 B 细胞表位：21GNDNSTATL29、41IVKTITNDR49、116YDVPDYASL124、382DLKSTQAAI390、458SEMNKLFEK466 和 488KCDNACIGS496。生物信息学分析进一步揭示了HA上这些表位区域的空间分布和结构特征。这些发现拓展了目前对HA表位的认识，为开发IAV亚单位疫苗和高灵敏检测方法提供了理论基础。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 4,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42554770/",
       "doi_url": "https://doi.org/10.1007/s00203-026-05048-5"
@@ -2674,7 +2674,8 @@
       "entrez_date": "2026-05-07",
       "doi": "10.1039/d6ay00096g",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "keywords": [],
       "affiliation": "India Engineering Center, Thermo Fisher Scientific India Private Limited, My Home Twitza, Hitech City, Hyderabad-500081, Telangana, India. subodh_budakoti@rediffmail.com.",
