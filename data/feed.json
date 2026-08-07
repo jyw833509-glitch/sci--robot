@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-07 05:01:10",
+  "generated_at": "2026-08-07 23:49:49",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 74,
@@ -30,151 +30,151 @@
       "41864523"
     ],
     "2026-08-14": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-17": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-18": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-19": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-20": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-21": [
-      "42084290"
+      "42192004"
     ],
     "2026-08-24": [
-      "41858189"
+      "42084290"
     ],
     "2026-08-25": [
-      "42470740"
+      "41858189"
     ],
     "2026-08-26": [
-      "42368154"
+      "42470740"
     ],
     "2026-08-27": [
-      "42346963"
+      "42368154"
     ],
     "2026-08-28": [
-      "42307050"
+      "42346963"
     ],
     "2026-08-31": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-01": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-02": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-03": [
-      "42043509"
+      "42155371"
     ],
     "2026-09-04": [
-      "42041385"
+      "42043509"
     ],
     "2026-09-07": [
-      "42026710"
+      "42041385"
     ],
     "2026-09-08": [
-      "41930919"
+      "42026710"
     ],
     "2026-09-09": [
-      "41877579"
+      "41930919"
     ],
     "2026-09-10": [
-      "42489360"
+      "41877579"
     ],
     "2026-09-11": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-14": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-15": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-16": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-17": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-18": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-21": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-22": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-23": [
-      "42028833"
+      "42069986"
     ],
     "2026-09-24": [
-      "41996158"
+      "42028833"
     ],
     "2026-09-25": [
-      "41895447"
+      "41996158"
     ],
     "2026-09-28": [
-      "41887562"
+      "41895447"
     ],
     "2026-09-29": [
-      "42546983"
+      "41887562"
     ],
     "2026-09-30": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-01": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-02": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-05": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-06": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-07": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-08": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-09": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-12": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-13": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-14": [
-      "42005515"
+      "42011714"
     ],
     "2026-10-15": [
-      "41996200"
+      "42005515"
     ],
     "2026-10-16": [
-      "41975635"
+      "41996200"
     ],
     "2026-10-19": [
-      "41936564"
+      "41975635"
     ],
     "2026-10-20": [
-      "41905654"
+      "41936564"
     ],
     "2026-10-21": [
-      "41804384"
+      "41905654"
     ],
     "2026-10-22": [
       "42554770"
@@ -525,6 +525,51 @@
       "score": 9,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41864523/",
       "doi_url": "https://doi.org/10.1016/j.pep.2026.106920"
+    },
+    "42563142": {
+      "pmid": "42563142",
+      "title": "An empirical single-breakthrough curve workflow for rapid early-phase development of continuous capture chromatography for monoclonal antibodies and mAb-derived proteins.",
+      "abstract": "Continuous chromatography for Protein A capture of monoclonal antibodies (mAbs) and related biotherapeutics is gaining popularity for higher throughput and reduced costs but introduces challenges for development and modeling. We present a streamlined, single-breakthrough-curve approach that predicts maximum and operating binding capacities (MBC and OBC, respectively) for continuous Protein A chromatography of monoclonal antibodies and derivatives. Our empirically-calibrated model-intended for early-stage, material-limited process development-enables accurate OBC prediction (root mean squared error [RMSE]≤ 5% for four distinct proteins) using less than 1 g of protein. This approach reduces the experimental timeline by ~2 weeks and is best suited for rapid screening and initial process optimization, not full design-space determination. Results confirm the model's accuracy across molecules, with clear practical advantages for accelerating preclinical pipeline advancement.",
+      "authors": [
+        "Jay Gandhi",
+        "James Hilton",
+        "Kyo Izumida",
+        "Itaru Takeshita",
+        "Braden Chiulli",
+        "Thomas Higgins",
+        "Sami El Hamwi",
+        "Janine De Leon",
+        "Parinita Bhongale",
+        "Evan Graessle",
+        "Olga Paley",
+        "Mike Dolan",
+        "Sheldon Oppenheim",
+        "George Parks",
+        "Terrence Dobrowsky",
+        "Christina Alves"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-08-06",
+      "entrez_date": "2026-08-07",
+      "doi": "10.1002/btpr.88544",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "continuous bioprocessing",
+        "modeling",
+        "multi‐column chromatography",
+        "simulated moving bed (SMB)"
+      ],
+      "affiliation": "Biotherapeutics Process Development, Takeda Development Center Americas, Inc, Cambridge, Massachusetts, USA.",
+      "language": "eng",
+      "title_zh": "经验性单突破曲线工作流程，用于单克隆抗体和 mAb 衍生蛋白连续捕获色谱的快速早期开发。",
+      "abstract_zh": "用于捕获单克隆抗体 (mAb) 和相关生物治疗药物的 Protein A 连续色谱法因其更高的通量和更低的成本而越来越受欢迎，但也给开发和建模带来了挑战。我们提出了一种简化的单突破曲线方法，可预测单克隆抗体和衍生物的连续 Protein A 层析的最大和操作结合能力（分别为 MBC 和 OBC）。我们的经验校准模型适用于早期阶段、材料有限的工艺开发，可使用不到 1 g 的蛋白质进行准确的 OBC 预测（四种不同蛋白质的均方根误差 [RMSE]≤ 5%）。这种方法将实验时间缩短了约 2 周，最适合快速筛选和初始工艺优化，而不是完整的设计空间确定。结果证实了该模型在分子中的准确性，对于加速临床前管道的进展具有明显的实际优势。",
+      "translate_provider": "google",
+      "score": 8,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42563142/",
+      "doi_url": "https://doi.org/10.1002/btpr.88544"
     },
     "42402251": {
       "pmid": "42402251",
@@ -2250,36 +2295,6 @@
       "score": 5,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41905654/",
       "doi_url": "https://doi.org/10.1016/j.xphs.2026.104264"
-    },
-    "41804384": {
-      "pmid": "41804384",
-      "title": "A novel bispecific antibody targeting OX40L and TNFα for the targeted treatment of rheumatoid arthritis.",
-      "abstract": "BACKGROUND: Rheumatoid arthritis is driven by T cell dysregulation and TNFα-mediated inflammation. Dual targeting of OX40 ligand (OX40L) and tumor necrosis factor alpha (TNFα) may offer synergistic therapeutic effects.\nMETHODS: A murine monoclonal antibody against OX40L (KD-0025) was generated and humanized via complementarity-determining region grafting. A bispecific construct incorporating single-chain variable fragments for OX40L and TNFα was expressed in CHO-K1 cells. High-expressing clones were selected, and antibodies were purified using Protein A/G chromatography. Binding to 293 T-OX40L cells, A172 cells, and TNFα was assessed by flow cytometry and ELISA. Functional blockade of OX40L-OX40 and TNFα-TNFR pathways was evaluated using a luciferase reporter assay. Binding kinetics were measured using the ForteBio Octet system. In vivo efficacy was tested in a collagen antibody-induced arthritis (CAIA) mouse model.\nRESULTS: The parental KD-0025 antibody showed EC50 values of 0.4024 μg/ml (human OX40L) and 0.1126 μg/ml (monkey OX40L), with an IC50 of 0.07893 μg/ml. Humanized KA-3966 improved EC50 (0.1374 μg/ml) and had an IC50 of 0.5997 μg/ml. The bispecific antibody KA-5484 demonstrated superior affinity (KD = 1.90 × 10-10 M) and dual-target binding (EC50: 0.1062 and 0.06240 μg/ml for human and monkey OX40L, respectively). It blocked OX40L-OX40 (IC50 = 0.1318 μg/ml) and showed 15-20% greater TNFα pathway suppression than the control antibody KB-1580. KA-5484 significantly reduced inflammation in the CAIA mouse model.\nCONCLUSION: A humanized bispecific antibody targeting OX40L and TNFα was successfully developed, exhibiting potent dual-target engagement and blockade. The antibody demonstrated synergistic modulation of immune and inflammatory pathways, providing a promising foundation for future preclinical development.\nHIGHLIGHTS: The novel bispecific KA-5484 binds both OX40L and TNFα with high affinity.Dual targeting of OX40L and TNFα enables synergistic immune modulation.KA-5484 outperforms control antibodies in binding and inflammatory assays.KA-5484 shows superior efficacy in mitigating arthritis in the collagen antibody-induced arthritis mouse model.Enhanced cross-species reactivity supports the translational relevance of KA-5484.",
-      "authors": [
-        "Qun Zhang",
-        "Shuliang Song"
-      ],
-      "journal": "Antibody therapeutics",
-      "journal_abbr": "Antib Ther",
-      "pub_date": "2026-01-15",
-      "entrez_date": "2026-03-10",
-      "doi": "10.1093/abt/tbag003",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "OX40L",
-        "TNFαbispecific antibody",
-        "rheumatoid arthritis; targeted therapy"
-      ],
-      "affiliation": "Marine College, Shandong University, Weihai, Shandong, 264209, China.",
-      "language": "eng",
-      "title_zh": "一种针对 OX40L 和 TNFα 的新型双特异性抗体，用于靶向治疗类风湿关节炎。",
-      "abstract_zh": "背景：类风湿性关节炎是由 T 细胞失调和 TNFα 介导的炎症引起的。 OX40配体（OX40L）和肿瘤坏死因子α（TNFα）的双重靶向可能提供协同治疗作用。\n方法：产生抗 OX40L (KD-0025) 的鼠单克隆抗体，并通过互补决定区移植进行人源化。包含 OX40L 和 TNFα 的单链可变片段的双特异性构建体在 CHO-K1 细胞中表达。选择高表达克隆，并使用 Protein A/G 层析纯化抗体。通过流式细胞术和 ELISA 评估与 293 T-OX40L 细胞、A172 细胞和 TNFα 的结合。使用荧光素酶报告基因测定评估 OX40L-OX40 和 TNFα-TNFR 途径的功能性阻断。使用 ForteBio Octet 系统测量结合动力学。在胶原抗体诱导关节炎（CAIA）小鼠模型中测试了体内功效。\n结果：亲本 KD-0025 抗体的 EC50 值为 0.4024 μg/ml（人 OX40L）和 0.1126 μg/ml（猴 OX40L），IC50 为 0.07893 μg/ml。人源化 KA-3966 提高了 EC50 (0.1374 μg/ml)，IC50 为 0.5997 μg/ml。双特异性抗体 KA-5484 表现出优异的亲和力 (KD = 1.90 × 10-10 M) 和双靶点结合（对于人和猴 OX40L，EC50 分别为 0.1062 和 0.06240 μg/ml）。它阻断 OX40L-OX40 (IC50 = 0.1318 μg/ml)，并且与对照抗体 KB-1580 相比，TNFα 通路抑制效果高 15-20%。 KA-5484 显着减少 CAIA 小鼠模型中的炎症。\n结论：成功开发了针对 OX40L 和 TNFα 的人源化双特异性抗体，表现出有效的双靶点接合和阻断作用。该抗体表现出对免疫和炎症途径的协同调节，为未来的临床前开发提供了有希望的基础。\n亮点：新型双特异性 KA-5484 以高亲和力结合 OX40L 和 TNFα。OX40L 和 TNFα 的双重靶向可实现协同免疫调节。KA-5484 在结合和炎症测定中优于对照抗体。KA-5484 在减轻胶原蛋白抗体诱导的关节炎小鼠模型中的关节炎方面显示出卓越的功效。增强的跨物种反应性支持了翻译相关性KA-5484。",
-      "translate_provider": "",
-      "score": 5,
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41804384/",
-      "doi_url": "https://doi.org/10.1093/abt/tbag003"
     },
     "42554770": {
       "pmid": "42554770",
