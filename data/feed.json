@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-07 23:49:49",
+  "generated_at": "2026-08-08 23:03:43",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 74,
@@ -177,55 +177,55 @@
       "41905654"
     ],
     "2026-10-22": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-23": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-26": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-27": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-28": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-29": [
-      "42276533"
+      "42285912"
     ],
     "2026-10-30": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-02": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-03": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-04": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-05": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-06": [
-      "42037172"
+      "42093402"
     ],
     "2026-11-09": [
-      "41925250"
+      "42037172"
     ],
     "2026-11-10": [
-      "41900807"
+      "41925250"
     ],
     "2026-11-11": [
-      "41873887"
+      "41900807"
     ],
     "2026-11-12": [
-      "41834084"
+      "41873887"
     ],
     "2026-11-13": [
-      "41826968"
+      "41834084"
     ]
   },
   "articles": {
@@ -566,7 +566,7 @@
       "language": "eng",
       "title_zh": "经验性单突破曲线工作流程，用于单克隆抗体和 mAb 衍生蛋白连续捕获色谱的快速早期开发。",
       "abstract_zh": "用于捕获单克隆抗体 (mAb) 和相关生物治疗药物的 Protein A 连续色谱法因其更高的通量和更低的成本而越来越受欢迎，但也给开发和建模带来了挑战。我们提出了一种简化的单突破曲线方法，可预测单克隆抗体和衍生物的连续 Protein A 层析的最大和操作结合能力（分别为 MBC 和 OBC）。我们的经验校准模型适用于早期阶段、材料有限的工艺开发，可使用不到 1 g 的蛋白质进行准确的 OBC 预测（四种不同蛋白质的均方根误差 [RMSE]≤ 5%）。这种方法将实验时间缩短了约 2 周，最适合快速筛选和初始工艺优化，而不是完整的设计空间确定。结果证实了该模型在分子中的准确性，对于加速临床前管道的进展具有明显的实际优势。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 8,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42563142/",
       "doi_url": "https://doi.org/10.1002/btpr.88544"
@@ -2296,6 +2296,45 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41905654/",
       "doi_url": "https://doi.org/10.1016/j.xphs.2026.104264"
     },
+    "42568918": {
+      "pmid": "42568918",
+      "title": "Anti-inflammatory effect of novel polypeptide WMX-8 through specific blockade of the IL17RA signaling pathway.",
+      "abstract": "Interleukin-17 receptor A (IL17RA) acts as a core mediator of pro-inflammatory signaling and contributes crucially to the pathogenesis of autoimmune disorders including psoriasis and rheumatoid arthritis. Monoclonal antibodies against IL17RA have achieved clinical application, yet their clinical utility is restricted by multiple drawbacks: high production cost, complicated manufacturing procedures, mandatory injection delivery, and absent oral bioavailability. To overcome these bottlenecks, this study develops a novel inhibitory peptide WMX-8 intended to specifically disrupt the binding between IL17A and IL17RA. The polypeptide WMX-8 was rationally designed and chemically synthesized, followed by purification to obtain high-purity samples. A series of systematic in vitro biological assessments were conducted using IL17RA-expressing cell models (keratinocytes and monocyte-macrophages), alongside IL17RA-deficient cells as negative control groups. Biochemical and cellular assays verified that WMX-8 binds IL17RA with strong affinity and markedly suppresses the secretion of pro-inflammatory cytokines in IL17RA-positive keratinocytes and monocyte-macrophages. Its anti-inflammatory efficacy is equivalent to that of the reference anti-IL17RA monoclonal antibody. The inhibitory activity fully relies on IL17RA expression, since the anti-inflammatory effect disappears entirely in IL17RA-knockout cells. In addition, WMX-8 displays desirable pharmaceutical features, including low immunogenicity and convenient large-scale synthesis.This study validates the promising druggable properties of WMX-8 targeting the IL17A-IL17RA axis. Our findings lay a solid foundation for further preclinical investigation of peptide therapeutics against IL17A/IL17RA for the treatment of autoimmune diseases.",
+      "authors": [
+        "Xinmin Wang",
+        "Hang Bao",
+        "Yuya Wang",
+        "Yalu Wang",
+        "Cheng Guo",
+        "Yanning Wu",
+        "Guotao Yang",
+        "Yongbin Xu",
+        "Yali Li"
+      ],
+      "journal": "Frontiers in pharmacology",
+      "journal_abbr": "Front Pharmacol",
+      "pub_date": "2026-07-24",
+      "entrez_date": "2026-08-08",
+      "doi": "10.3389/fphar.2026.1842752",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "IL17RA",
+        "autoimmune disease",
+        "inflammatory signaling pathway",
+        "peptide drug",
+        "targeted therapy"
+      ],
+      "affiliation": "School of Life Science and Technology, Inner Mongolia University of Science and Technology, Baotou, China.",
+      "language": "eng",
+      "title_zh": "新型多肽 WMX-8 通过特异性阻断 IL17RA 信号通路发挥抗炎作用。",
+      "abstract_zh": "白细胞介素 17 受体 A (IL17RA) 作为促炎信号传导的核心介质，在银屑病和类风湿性关节炎等自身免疫性疾病的发病机制中发挥着至关重要的作用。 IL17RA单克隆抗体已实现临床应用，但其临床应用受到生产成本高、生产流程复杂、必须注射给药、缺乏口服生物利用度等诸多缺点的限制。为了克服这些瓶颈，本研究开发了一种新型抑制肽 WMX-8，旨在特异性破坏 IL17A 和 IL17RA 之间的结合。多肽WMX-8经过合理设计和化学合成，经过纯化得到高纯度样品。使用表达 IL17RA 的细胞模型（角质形成细胞和单核巨噬细胞）以及作为阴性对照组的 IL17RA 缺陷细胞进行了一系列系统的体外生物学评估。生化和细胞测定证实，WMX-8 以强亲和力结合 IL17RA，并显着抑制 IL17RA 阳性角质形成细胞和单核巨噬细胞中促炎细胞因子的分泌。\n其抗炎功效与参考抗IL17RA单克隆抗体相当。抑制活性完全依赖于 IL17RA 的表达，因为在 IL17RA 敲除细胞中抗炎作用完全消失。此外，WMX-8 显示出理想的药物特性，包括低免疫原性和方便的大规模合成。这项研究验证了 WMX-8 靶向 IL17A-IL17RA 轴的有前途的成药特性。我们的研究结果为进一步针对IL17A/IL17RA的肽疗法治疗自身免疫性疾病的临床前研究奠定了坚实的基础。",
+      "translate_provider": "google",
+      "score": 4,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42568918/",
+      "doi_url": "https://doi.org/10.3389/fphar.2026.1842752"
+    },
     "42554770": {
       "pmid": "42554770",
       "title": "Identification and computational analysis of B-cell epitopes on the hemagglutinin protein of the H3N2 influenza virus.",
@@ -2886,56 +2925,6 @@
       "score": 4,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41834084/",
       "doi_url": "https://doi.org/10.1093/glycob/cwag019"
-    },
-    "41826968": {
-      "pmid": "41826968",
-      "title": "Dynamic expression of complement receptor immunoglobulin (CRIg) on monocytes and its role in phagocytosis and killing of Staphylococcus aureus.",
-      "abstract": "BACKGROUND: The complement receptor immunoglobulin (CRIg), a key microbial pathogen phagocytosis-promoting receptor, responsible for intravascular clearance of bacteria, is purported to be expressed selectively on tissue-fixed macrophages such as Kupffer cells. However, recently it has been reported that neutrophils can also express functional CRIg following activation by inflammatory mediators. Monocytes have been reported not to express CRIg under non-activated conditions. Thus, investigations were undertaken to examine whether blood monocytes express CRIg under cell activation conditions and its role in anti-microbial immunity.\nMETHODS: Monocytes CRIg expression in whole human and mouse blood or peripheral blood mononuclear cells and purified monocytes using density gradient centrifugation or an affinity purification kit was examined using PE/FITC-labelled anti-CRIg monoclonal antibody and flow cytometry. Characterization of CRIg isoforms in monocytes was determined by the detection of CRIg mRNA transcripts and protein using RT-PCR and Western blot, respectively. Gene-edited CRIg- and CD18- monocytic THP-1 cell lines were generated to assess the role of CRIg and CD18 in cell adhesion, phagocytosis, and microbial killing. Functional assays were performed using Staphylococcus aureus as a model pathogen.\nRESULTS: CRIg was constitutively expressed, dynamically, on the surface of human and mouse blood monocytes. All three human monocyte subpopulations expressed CRIg, equally. The inability to demonstrate expression on monocytes cell surface by previous studies can be explained by its lability during blood storage and loss during monocyte isolation steps. Interestingly of the monocyte subpopulations only the classical and intermediate but not the non-classical showed a loss of CRIg expression. The data showed that loss from the surface was most likely due to relocation of the receptor intracellularly. Monocytes expressed 6 different CRIg mRNA transcripts and immunoreactive isoforms. Using CRIg- and CD18- THP-1 monocytic cells, we found that both CRIg and CD18 (CR3/CR4) were critical for cell adhesion, but for phagocytosis and killing of S. aureus, either receptor was independently effective.\nCONCLUSION: The data provide compelling evidence that monocytes express functional CRIg, relevant to the cells' anti-microbial role of the 'wandering' phagocyte and consolidate a view that CRIg is widely expressed in our phagocytic cell system, similar to the classical complement receptors CR3 and CR4.",
-      "authors": [
-        "Khalida Perveen",
-        "Gailin Yang",
-        "Cameron D Skurray",
-        "Andy Ngo",
-        "Nikki Black",
-        "Trishni Putty",
-        "Asmitabahen Patel",
-        "Annabelle G Small",
-        "Muhammad Y Gulam",
-        "Mihir D Wechalekar",
-        "Timothy Sadlon",
-        "Simon C Barry",
-        "Alex Quach",
-        "Charles S Hii",
-        "Antonio Ferrante"
-      ],
-      "journal": "Journal of biomedical science",
-      "journal_abbr": "J Biomed Sci",
-      "pub_date": "2026-03-13",
-      "entrez_date": "2026-03-14",
-      "doi": "10.1186/s12929-025-01212-z",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Staphylococcus aureus",
-        "Anti-microbial pathogen receptors",
-        "Bactericidal properties",
-        "Cell adherence",
-        "Complement receptor immunoglobulin (CRIg)",
-        "Complement receptors (CR3, CR4)",
-        "Monocytes/monocyte subsets",
-        "Phagocytosis",
-        "THP-1 monocytic cells",
-        "V-set and immunoglobulin domain 4 (VSIG4)"
-      ],
-      "affiliation": "Department of Immunopathology, SA Pathology and Women's and Children's Hospital, North Adelaide, SA, 5006, Australia.",
-      "language": "eng",
-      "title_zh": "单核细胞补体受体免疫球蛋白（CRIg）的动态表达及其对金黄色葡萄球菌的吞噬和杀伤作用。",
-      "abstract_zh": "背景：补体受体免疫球蛋白（CRIg）是一种关键的微生物病原体吞噬促进受体，负责血管内细菌的清除，据称在组织固定的巨噬细胞（例如库普弗细胞）上选择性表达。然而，最近有报道称，中性粒细胞在被炎症介质激活后也可以表达功能性CRIg。据报道，单核细胞在非激活条件下不表达 CRIg。因此，进行了研究以检查血液单核细胞在细胞活化条件下是否表达CRIg及其在抗微生物免疫中的作用。\n方法：使用 PE/FITC 标记的抗 CRIg 单克隆抗体和流式细胞术检查人类和小鼠全血或外周血单核细胞和使用密度梯度离心或亲和纯化试剂盒纯化的单核细胞中的单核细胞 CRIg 表达。单核细胞中 CRIg 亚型的表征是通过分别使用 RT-PCR 和蛋白质印迹检测 CRIg mRNA 转录本和蛋白质来确定的。生成基因编辑的 CRIg 和 CD18 单核 THP-1 细胞系，以评估 CRIg 和 CD18 在细胞粘附、吞噬作用和微生物杀伤中的作用。使用金黄色葡萄球菌作为模型病原体进行功能测定。\n结果：CRIg 在人和小鼠血液单核细胞表面组成型动态表达。所有三个人类单核细胞亚群均等地表达 CRIg。先前的研究无法证明单核细胞表面的表达可以用其在血液储存过程中的不稳定性和单核细胞分离步骤中的损失来解释。有趣的是，在单核细胞亚群中，只有经典和中间的单核细胞亚群显示出 CRIg 表达的丧失，而非经典的单核细胞亚群则没有。数据显示，表面的损失很可能是由于受体在细胞内的重新定位造成的。单核细胞表达 6 种不同的 CRIg mRNA 转录物和免疫反应亚型。使用 CRIg- 和 CD18- THP-1 单核细胞，我们发现 CRIg 和 CD18 (CR3/CR4) 对细胞粘附至关重要，但对于金黄色葡萄球菌的吞噬和杀伤作用，任一受体均独立有效。\n结论：这些数据提供了令人信服的证据，表明单核细胞表达功能性 CRIg，与“游走”吞噬细胞的抗微生物作用相关，并巩固了 CRIg 在我们的吞噬细胞系统中广泛表达的观点，类似于经典的补体受体 CR3 和 CR4。",
-      "translate_provider": "",
-      "score": 4,
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41826968/",
-      "doi_url": "https://doi.org/10.1186/s12929-025-01212-z"
     }
   }
 }
