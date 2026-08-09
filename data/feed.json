@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-08 23:03:43",
+  "generated_at": "2026-08-09 23:05:32",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 74,
@@ -54,178 +54,178 @@
       "41858189"
     ],
     "2026-08-26": [
-      "42470740"
+      "42570623"
     ],
     "2026-08-27": [
-      "42368154"
+      "42470740"
     ],
     "2026-08-28": [
-      "42346963"
+      "42368154"
     ],
     "2026-08-31": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-01": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-02": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-03": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-04": [
-      "42043509"
+      "42155371"
     ],
     "2026-09-07": [
-      "42041385"
+      "42043509"
     ],
     "2026-09-08": [
-      "42026710"
+      "42041385"
     ],
     "2026-09-09": [
-      "41930919"
+      "42026710"
     ],
     "2026-09-10": [
-      "41877579"
+      "41930919"
     ],
     "2026-09-11": [
-      "42489360"
+      "41877579"
     ],
     "2026-09-14": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-15": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-16": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-17": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-18": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-21": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-22": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-23": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-24": [
-      "42028833"
+      "42069986"
     ],
     "2026-09-25": [
-      "41996158"
+      "42028833"
     ],
     "2026-09-28": [
-      "41895447"
+      "41996158"
     ],
     "2026-09-29": [
-      "41887562"
+      "41895447"
     ],
     "2026-09-30": [
-      "42546983"
+      "41887562"
     ],
     "2026-10-01": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-02": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-05": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-06": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-07": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-08": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-09": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-12": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-13": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-14": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-15": [
-      "42005515"
+      "42011714"
     ],
     "2026-10-16": [
-      "41996200"
+      "42005515"
     ],
     "2026-10-19": [
-      "41975635"
+      "41996200"
     ],
     "2026-10-20": [
-      "41936564"
+      "41975635"
     ],
     "2026-10-21": [
-      "41905654"
+      "41936564"
     ],
     "2026-10-22": [
-      "42568918"
+      "41905654"
     ],
     "2026-10-23": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-26": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-27": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-28": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-29": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-30": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-02": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-03": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-04": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-05": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-06": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-09": [
-      "42037172"
+      "42093402"
     ],
     "2026-11-10": [
-      "41925250"
+      "42037172"
     ],
     "2026-11-11": [
-      "41900807"
+      "41925250"
     ],
     "2026-11-12": [
-      "41873887"
+      "41900807"
     ],
     "2026-11-13": [
-      "41834084"
+      "41873887"
     ]
   },
   "articles": {
@@ -817,6 +817,47 @@
       "score": 8,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41858189/",
       "doi_url": "https://doi.org/10.1002/jssc.70389"
+    },
+    "42570623": {
+      "pmid": "42570623",
+      "title": "A modeling framework for uncertainty quantification in filter-plate-based high-throughput screening of the chromatography partition coefficient.",
+      "abstract": "High‑throughput screening (HTS) of chromatography partition coefficients (Kp) is widely used in protein purification process development, spanning applications with markedly different precision requirements. Despite this widespread use, quantitative guidance on how experimental uncertainty propagates through filter-plate-based Kp assays and informs key design decisions has been lacking. We present an experimentally calibrated Monte Carlo (MC) framework for uncertainty propagation in filter-plate-based Kp HTS, which quantifies overall uncertainty and identifies the dominant experimental error sources across purification‑relevant equilibrium regimes. The model is parameterized by characterization of the major sources of experimental errors in a monoclonal antibody (mAb) monomer case study on POROS XS cation‑exchange media and accurately reproduces the magnitude, heteroscedasticity, and plate‑to‑plate variability observed. Variance decomposition identifies uncertainty in resin slurry distribution and supernatant concentration measurements as the dominant contributors, accounting for ≈ 97 % of total Kp variance over the investigated range of ideal partition coefficients (Kp,ideal). The framework further enables quantitative evaluation of design choices: analysis of the liquid‑to‑solid phase ratio (β) reveals a clear trade‑off between measurement precision and protein material demand, allowing derivation of application‑specific phase ratio recommendations. Overall, this work provides a quantitative basis for uncertainty‑aware HTS design and more reliable Kp data for purification process development decisions and modeling.",
+      "authors": [
+        "Jan Faessler",
+        "Emmy Schiess",
+        "Rudger Hess",
+        "Till Briskot",
+        "Sebastian Andris",
+        "Melanie Maier",
+        "Jan-Hendrik Huth",
+        "Joey Studts",
+        "Jürgen Hubbuch"
+      ],
+      "journal": "Journal of chromatography. A",
+      "journal_abbr": "J Chromatogr A",
+      "pub_date": "2026-08-04",
+      "entrez_date": "2026-08-08",
+      "doi": "10.1016/j.chroma.2026.467325",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Chromatography partition coefficient (Kp)",
+        "High-throughput screening",
+        "IEX",
+        "Monte Carlo",
+        "POROS XS",
+        "Uncertainty quantification",
+        "mAb"
+      ],
+      "affiliation": "Karlsruhe Institute of Technology (KIT), Institute of Engineering in Life Sciences, Section IV: Biomolecular Separation Engineering, Karlsruhe, Germany; Global Development CMC Biologicals, Boehringer Ingelheim Pharma GmbH & Co. KG, Biberach, Germany.",
+      "language": "eng",
+      "title_zh": "基于滤板的色谱分配系数高通量筛选中不确定性量化的建模框架。",
+      "abstract_zh": "色谱分配系数 (Kp) 的高通量筛选 (HTS) 广泛用于蛋白质纯化工艺开发，涵盖精度要求明显不同的应用。尽管使用广泛，但仍缺乏关于实验不确定性如何通过基于滤板的 Kp 测定传播并为关键设计决策提供信息的定量指导。我们提出了一个经过实验校准的蒙特卡罗 (MC) 框架，用于基于滤板的 Kp HTS 中的不确定性传播，该框架量化了总体不确定性并识别了纯化相关平衡状态中的主要实验误差源。该模型通过对 POROS XS 阳离子交换介质上的单克隆抗体 (mAb) 单体案例研究中实验误差主要来源的表征进行参数化，并准确再现观察到的大小、异方差性和板间变异性。方差分解将树脂浆料分布和上清液浓度测量的不确定性确定为主要因素，占理想分配系数 (Kp,ideal) 研究范围内总 Kp 方差的约 97%。\n该框架进一步实现了设计选择的定量评估：液固相比 (β) 的分析揭示了测量精度和蛋白质材料需求之间的明确权衡，从而可以得出针对特定应用的相比建议。总体而言，这项工作为不确定性 HTS 设计提供了定量基础，并为纯化工艺开发决策和建模提供了更可靠的 Kp 数据。",
+      "translate_provider": "google",
+      "score": 7,
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42570623/",
+      "doi_url": "https://doi.org/10.1016/j.chroma.2026.467325"
     },
     "42470740": {
       "pmid": "42470740",
@@ -2330,7 +2371,7 @@
       "language": "eng",
       "title_zh": "新型多肽 WMX-8 通过特异性阻断 IL17RA 信号通路发挥抗炎作用。",
       "abstract_zh": "白细胞介素 17 受体 A (IL17RA) 作为促炎信号传导的核心介质，在银屑病和类风湿性关节炎等自身免疫性疾病的发病机制中发挥着至关重要的作用。 IL17RA单克隆抗体已实现临床应用，但其临床应用受到生产成本高、生产流程复杂、必须注射给药、缺乏口服生物利用度等诸多缺点的限制。为了克服这些瓶颈，本研究开发了一种新型抑制肽 WMX-8，旨在特异性破坏 IL17A 和 IL17RA 之间的结合。多肽WMX-8经过合理设计和化学合成，经过纯化得到高纯度样品。使用表达 IL17RA 的细胞模型（角质形成细胞和单核巨噬细胞）以及作为阴性对照组的 IL17RA 缺陷细胞进行了一系列系统的体外生物学评估。生化和细胞测定证实，WMX-8 以强亲和力结合 IL17RA，并显着抑制 IL17RA 阳性角质形成细胞和单核巨噬细胞中促炎细胞因子的分泌。\n其抗炎功效与参考抗IL17RA单克隆抗体相当。抑制活性完全依赖于 IL17RA 的表达，因为在 IL17RA 敲除细胞中抗炎作用完全消失。此外，WMX-8 显示出理想的药物特性，包括低免疫原性和方便的大规模合成。这项研究验证了 WMX-8 靶向 IL17A-IL17RA 轴的有前途的成药特性。我们的研究结果为进一步针对IL17A/IL17RA的肽疗法治疗自身免疫性疾病的临床前研究奠定了坚实的基础。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 4,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42568918/",
       "doi_url": "https://doi.org/10.3389/fphar.2026.1842752"
@@ -2892,39 +2933,6 @@
       "score": 4,
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41873887/",
       "doi_url": "https://doi.org/10.1002/elps.70089"
-    },
-    "41834084": {
-      "pmid": "41834084",
-      "title": "On the use of glycoengineering methods for the generation of antibodies with enhanced effector functions.",
-      "abstract": "Glycosylation is a non-template driven cellular process wherein sugars are enzymatically attached to proteins or lipids. For IgG, the most abundant class of therapeutic antibodies, glycosylation at position N297 contributes extensively to the structure and dynamics of the antibody Fc region. Certain glycosylation motifs, including core-fucosylation, terminal galactosylation and terminal sialylation, impact the binding affinity with Fc-gamma receptors and therefore the capacity for antibodies to recruit immune cells in vivo. For therapeutic mAbs, the glycosylation motif is an important modulator of therapeutic antibody safety, stability and therapeutic efficacy. Glycoengineering enables the precise control or modification of antibody glycosylation for the targeted improvement of antibody effector functions. There are numerous approaches available depending on the target glycoform, including genetic manipulation of the cellular glycosylation genome, metabolic inhibition of glycosylation enzymes, in vitro enzymatic remodelling of glycans and complete replacement of whole chains via transglycosylation. The complexity of IgG glycosylation requires each strategy to be tailored depending upon the composition of the target glycan. In this work, we review the current glycoengineering landscape for directing antibody glycosylation during production, and for remodelling of antibody glycosylation in vitro following purification. Strategies for producing all clinically relevant glycoforms are reviewed in detail, providing a broad summary of the current and emerging options available.",
-      "authors": [
-        "Benjamin Serafin",
-        "Olivier Henry",
-        "Gregory de Crescenzo"
-      ],
-      "journal": "Glycobiology",
-      "journal_abbr": "Glycobiology",
-      "pub_date": "2026-03-16",
-      "entrez_date": "2026-03-16",
-      "doi": "10.1093/glycob/cwag019",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "antibodies",
-        "bioprocesses",
-        "biotherapeutic",
-        "enzymatic remodelling",
-        "glycosylation"
-      ],
-      "affiliation": "Department of Chemical Engineering, Polytechnique Montréal, Qc, Canada.",
-      "language": "eng",
-      "title_zh": "利用糖工程方法生成具有增强效应功能的抗体。",
-      "abstract_zh": "糖基化是一种非模板驱动的细胞过程，其中糖通过酶促连接到蛋白质或脂质上。对于 IgG（最丰富的一类治疗性抗体）来说，N297 位点的糖基化对抗体 Fc 区的结构和动力学有广泛贡献。某些糖基化基序，包括核心岩藻糖基化、末端半乳糖基化和末端唾液酸化，会影响与 Fc-γ 受体的结合亲和力，从而影响抗体在体内招募免疫细胞的能力。对于治疗性单克隆抗体，糖基化基序是治疗性抗体安全性、稳定性和治疗功效的重要调节剂。糖工程能够精确控制或修饰抗体糖基化，从而有针对性地改善抗体效应子功能。根据目标糖型，有多种方法可用，包括细胞糖基化基因组的遗传操作、糖基化酶的代谢抑制、聚糖的体外酶促重塑以及通过转糖基化完全替换整个链。\nIgG 糖基化的复杂性要求根据目标聚糖的组成来定制每种策略。在这项工作中，我们回顾了当前在生产过程中指导抗体糖基化以及纯化后体外糖基化重塑的糖工程前景。详细回顾了生产所有临床相关糖型的策略，对当前和新兴的可用选项进行了广泛的总结。",
-      "translate_provider": "",
-      "score": 4,
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41834084/",
-      "doi_url": "https://doi.org/10.1093/glycob/cwag019"
     }
   }
 }
