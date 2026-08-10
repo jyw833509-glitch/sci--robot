@@ -95,7 +95,6 @@ def show_preferences() -> None:
     include_var = StringVar(value=", ".join(data.get("include_terms") or []))
     exclude_var = StringVar(value=", ".join(data.get("exclude_terms") or []))
     limit_var = StringVar(value=str(data.get("daily_limit") or 1))
-    lookback_var = StringVar(value=str(data.get("lookback_days") or 7))
     for label, variable, hint in [
         ("额外关注词", include_var, "用逗号分隔，例如：mixed-mode, viral clearance"),
         ("不感兴趣词", exclude_var, "用逗号分隔，例如：clinical trial, diagnosis"),
@@ -108,8 +107,6 @@ def show_preferences() -> None:
     row.pack(fill=X, pady=(2, 18))
     Label(row, text="每日推送篇数", bg="#f8fafc", fg="#334155", font=("Microsoft YaHei UI", 9, "bold")).pack(side=LEFT)
     Spinbox(row, from_=1, to=10, width=5, textvariable=limit_var, font=("Microsoft YaHei UI", 10)).pack(side=LEFT, padx=10)
-    Label(row, text="检索回溯天数", bg="#f8fafc", fg="#334155", font=("Microsoft YaHei UI", 9, "bold")).pack(side=LEFT, padx=(24, 0))
-    Spinbox(row, from_=1, to=365, width=5, textvariable=lookback_var, font=("Microsoft YaHei UI", 10)).pack(side=LEFT, padx=10)
 
     def save() -> None:
         chosen = [label for label, var in topic_vars.items() if var.get()]
@@ -117,17 +114,14 @@ def show_preferences() -> None:
             daily_limit = max(1, min(10, int(limit_var.get())))
         except ValueError:
             daily_limit = 1
-        try:
-            lookback_days = max(1, min(365, int(lookback_var.get())))
-        except ValueError:
-            lookback_days = 7
         result = {
             "profile_name": name_var.get().strip(),
             "topics": chosen,
             "include_terms": _terms(include_var.get()),
             "exclude_terms": _terms(exclude_var.get()),
             "daily_limit": daily_limit,
-            "lookback_days": lookback_days,
+            # 保留已设定的回溯窗口；它不再在偏好界面中展示。
+            "lookback_days": int(data.get("lookback_days") or 7),
         }
         PREFERENCES_FILE.parent.mkdir(parents=True, exist_ok=True)
         temp = PREFERENCES_FILE.with_suffix(".tmp")
