@@ -192,6 +192,23 @@ def collect_articles(cfg, days: Optional[int] = None):
     return db, pending, report, stats
 
 
+def sync_library(cfg, days: Optional[int] = None) -> Dict[str, Any]:
+    """Refresh the local library without creating a report or sending a push."""
+    if (cfg.get("content.mode") or "local") == "feed" and not personal_mode_active():
+        _, _, _, stats = _collect_from_feed(cfg)
+        return stats
+
+    db = get_database(cfg)
+    preferences = load_preferences()
+    effective_days = days if days is not None else int(preferences.get("lookback_days") or cfg.get("pubmed.lookback_days", 7) or 7)
+    found = MultiSourceClient(cfg).search_recent(days=effective_days)
+    fresh = db.filter_new_articles(found)
+    inserted, _ = db.save_articles(fresh) if fresh else (0, 0)
+    stats = {"检索命中": len(found), "新增入库": inserted, "重复跳过": len(found) - len(fresh)}
+    log.info("启动静默同步完成 | 命中 %d 篇 | 新增 %d 篇 | 重复 %d 篇", stats["检索命中"], stats["新增入库"], stats["重复跳过"])
+    return stats
+
+
 def run_once(
     cfg,
     days: Optional[int] = None,
@@ -329,8 +346,13 @@ def start_scheduler(cfg) -> None:
     def _scheduler_loop() -> None:
         last_run: list = []  # 已执行的 (date, time) 记录
         if run_on_start:
-            log.info("run_on_start=true，先立即执行一次")
-            job()
+            # Opening the app should refresh the candidate pool, not consume a
+            # daily push slot.  Only the scheduled job sends notifications.
+            log.info("run_on_start=true，执行静默文献库同步（不推送）")
+            try:
+                sync_library(cfg)
+            except Exception as exc:  # pragma: no cover
+                log.exception("启动静默同步失败：%s", exc)
         next_run = _next_run_time()
         log.info("调度器已启动，下一次运行：%s",
                  next_run.strftime("%Y-%m-%d %H:%M:%S") if next_run else "未知")

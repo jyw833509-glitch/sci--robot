@@ -297,7 +297,7 @@ scheduler:
   # 每天执行时间，24 小时制，可配置多个
   run_at:
     - "08:30"
-  # 启动 scheduler 时是否立即先跑一次
+  # 启动 scheduler 时是否静默同步文献库（不会弹窗或消耗每日推送篇数）
   run_on_start: false
   # 工作日判断：控制「休息日不推送」
   workday:
