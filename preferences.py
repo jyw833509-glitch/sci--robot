@@ -19,6 +19,12 @@ TOPICS = [
     ("质量分析", ["host cell protein", "aggregate", "charge variant"]),
     ("ADC 与偶联药物", ["antibody drug conjugate", "ADC", "conjugation"]),
     ("制剂与稳定性", ["formulation", "stability", "aggregation"]),
+    ("抗体发现与工程", ["antibody engineering", "bispecific antibody", "nanobody", "Fc engineering", "affinity maturation"]),
+    ("细胞株与上游工艺", ["CHO cell", "cell culture", "fed-batch", "upstream process", "perfusion"]),
+    ("生物分析与 CMC", ["analytical method development", "comparability", "process characterization", "critical quality attribute", "CMC"]),
+    ("AI 与计算生物学", ["protein design", "machine learning", "structure prediction", "computational biology"]),
+    ("免疫治疗与临床转化", ["CAR-T", "immune checkpoint", "immunotherapy", "tumor immunology", "cell therapy"]),
+    ("生物制品法规与产业化", ["biologics regulation", "regulatory science", "technology transfer", "GMP", "biopharmaceutical manufacturing"]),
 ]
 
 
