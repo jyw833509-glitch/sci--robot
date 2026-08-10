@@ -98,7 +98,7 @@ def show_preferences() -> None:
     exclude_var = StringVar(value=", ".join(data.get("exclude_terms") or []))
     limit_var = StringVar(value=str(data.get("daily_limit") or 1))
     for label, variable, hint in [
-        ("额外关注词", include_var, "用逗号分隔，例如：mixed-mode, viral clearance"),
+        ("自定义研究主题 / 关键词", include_var, "多个词用逗号分隔，会直接扩展五个来源的检索范围；例如：mixed-mode, viral clearance"),
         ("不感兴趣词", exclude_var, "用逗号分隔，例如：clinical trial, diagnosis"),
     ]:
         Label(outer, text=label, bg="#f8fafc", fg="#334155", font=("Microsoft YaHei UI", 9, "bold")).pack(anchor="w")
