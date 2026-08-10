@@ -329,6 +329,15 @@ class Database:
             ).fetchall()
         return [self._row_to_article(row) for row in rows]
 
+    def get_pushed_on_date(self, date_str: str) -> List[Article]:
+        """Return the papers formally delivered on one local calendar date."""
+        with self._conn() as conn:
+            rows = conn.execute(
+                "SELECT * FROM articles WHERE pushed=1 AND pushed_at LIKE ? ORDER BY pushed_at DESC, id DESC",
+                (f"{date_str}%",),
+            ).fetchall()
+        return [self._row_to_article(row) for row in rows]
+
     def search_library(self, query: str = "", source: str = "", limit: int = 500) -> List[Article]:
         terms = [term.strip() for term in query.split() if term.strip()]
         clauses, values = [], []

@@ -751,14 +751,20 @@ _running = True
 
 def _trigger_popup_only(cfg) -> None:
     """单独触发弹窗（不标记已推送，不影响正常排期）。"""
-    from feed import articles_for_date, load_feed
-
     feed_mode = (cfg.get("content.mode") or "local") == "feed"
     if not feed_mode:
-        log.warning("非 feed 模式，不支持托盘菜单查看今日文献")
+        today = datetime.now().strftime("%Y-%m-%d")
+        articles = get_database(cfg).get_pushed_on_date(today)
+        if not articles:
+            log.info("今天尚无正式推送文献，托盘双击不打开弹窗")
+            return
+        daily_limit = int(load_preferences().get("daily_limit") or cfg.get("pipeline.daily_limit", 1) or 1)
+        articles = articles[:daily_limit]
+        Notifier(cfg).send_popup_only(articles)
         return
 
     try:
+        from feed import articles_for_date, load_feed
         feed = load_feed(
             cfg.get("content.feed_url") or "",
             cfg,
