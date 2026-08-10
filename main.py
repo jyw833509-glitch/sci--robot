@@ -28,6 +28,26 @@ import subprocess
 import sys
 from pathlib import Path
 
+
+_instance_mutex = None
+
+
+def _claim_primary_instance() -> bool:
+    """Allow exactly one long-running scheduler instance on this Windows session."""
+    global _instance_mutex
+    if os.name != "nt":
+        return True
+    import ctypes
+
+    handle = ctypes.windll.kernel32.CreateMutexW(None, False, "Local\\SciRobot.PrimaryInstance")
+    if not handle:
+        return True  # Do not block startup if the platform call itself fails.
+    if ctypes.windll.kernel32.GetLastError() == 183:  # ERROR_ALREADY_EXISTS
+        ctypes.windll.kernel32.CloseHandle(handle)
+        return False
+    _instance_mutex = handle  # Keep the mutex alive until the scheduler exits.
+    return True
+
 # PyInstaller 打包后 __file__ 指向临时目录，改指 exe 所在目录
 if getattr(sys, "frozen", False):
     BASE_DIR = Path(sys.executable).resolve().parent
@@ -403,6 +423,10 @@ def main() -> int:
 
     parser = build_parser()
     args = parser.parse_args()
+    is_scheduler = not getattr(args, "func", None) or getattr(args, "command", "") == "schedule"
+    if is_scheduler and not _claim_primary_instance():
+        get_logger("main").info("检测到 SciRobot 主程序已在运行，本次启动已忽略")
+        return 0
     if not getattr(args, "func", None):
         # 双击 exe 无参数时默认进入常驻模式（开机自启 + 定时推送）
         # 同事版 exe 不需要懂命令行，直接进 schedule 就好
