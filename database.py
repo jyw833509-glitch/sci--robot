@@ -56,6 +56,7 @@ CREATE TABLE IF NOT EXISTS articles (
     translate_provider TEXT    DEFAULT '',
     url                TEXT    DEFAULT '',
     source             TEXT    DEFAULT 'PubMed',
+    manual_saved       INTEGER NOT NULL DEFAULT 0,
     pushed             INTEGER NOT NULL DEFAULT 0,
     pushed_at          TEXT    DEFAULT '',
     created_at         TEXT    DEFAULT '',
@@ -123,6 +124,8 @@ class Database:
             columns = {row["name"] for row in conn.execute("PRAGMA table_info(articles)").fetchall()}
             if "source" not in columns:
                 conn.execute("ALTER TABLE articles ADD COLUMN source TEXT DEFAULT 'PubMed'")
+            if "manual_saved" not in columns:
+                conn.execute("ALTER TABLE articles ADD COLUMN manual_saved INTEGER NOT NULL DEFAULT 0")
 
     # ---------------- 去重 ----------------
     def exists(self, pmid: str) -> bool:
@@ -180,7 +183,7 @@ class Database:
         return accepted
 
     # ---------------- 写入 ----------------
-    def save_articles(self, articles: Iterable[Article]) -> Tuple[int, int]:
+    def save_articles(self, articles: Iterable[Article], *, manual_saved: bool = False) -> Tuple[int, int]:
         """
         批量入库。已存在的 PMID 不会重复插入（返回 skipped 计数）。
         返回 (新增数, 跳过数)
@@ -194,9 +197,9 @@ class Database:
                     INSERT OR IGNORE INTO articles (
                         pmid, doi, title, title_zh, abstract, abstract_zh, authors,
                         journal, journal_abbr, pub_date, entrez_date, publication_types,
-                        keywords, affiliation, language, translate_provider, url, source,
+                        keywords, affiliation, language, translate_provider, url, source, manual_saved,
                         pushed, pushed_at, created_at, updated_at
-                    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                     """,
                     (
                         art.pmid, art.doi, art.title, art.title_zh, art.abstract,
@@ -205,7 +208,7 @@ class Database:
                         json.dumps(art.publication_types, ensure_ascii=False),
                         json.dumps(art.keywords, ensure_ascii=False),
                         art.affiliation, art.language, art.translate_provider,
-                        art.pubmed_url, art.source, 0, "", now, now,
+                        art.pubmed_url, art.source, int(manual_saved), 0, "", now, now,
                     ),
                 )
                 if cur.rowcount:
@@ -312,7 +315,7 @@ class Database:
         """取尚未推送的文献，按入库时间倒序。"""
         with self._conn() as conn:
             rows = conn.execute(
-                "SELECT * FROM articles WHERE pushed=0 ORDER BY entrez_date DESC, id DESC LIMIT ?",
+                "SELECT * FROM articles WHERE pushed=0 AND manual_saved=0 ORDER BY entrez_date DESC, id DESC LIMIT ?",
                 (int(limit),),
             ).fetchall()
         return [self._row_to_article(r) for r in rows]
@@ -325,6 +328,26 @@ class Database:
                 (int(limit),),
             ).fetchall()
         return [self._row_to_article(row) for row in rows]
+
+    def search_library(self, query: str = "", source: str = "", limit: int = 500) -> List[Article]:
+        terms = [term.strip() for term in query.split() if term.strip()]
+        clauses, values = [], []
+        for term in terms:
+            pattern = f"%{term}%"
+            clauses.append("(title LIKE ? OR title_zh LIKE ? OR abstract LIKE ? OR abstract_zh LIKE ? OR authors LIKE ? OR journal LIKE ? OR doi LIKE ? OR pmid LIKE ?)")
+            values.extend([pattern] * 8)
+        if source and source != "全部来源":
+            clauses.append("source=?")
+            values.append(source)
+        where = (" WHERE " + " AND ".join(clauses)) if clauses else ""
+        with self._conn() as conn:
+            rows = conn.execute(f"SELECT * FROM articles{where} ORDER BY created_at DESC, id DESC LIMIT ?", [*values, int(limit)]).fetchall()
+        return [self._row_to_article(row) for row in rows]
+
+    def sources(self) -> List[str]:
+        with self._conn() as conn:
+            rows = conn.execute("SELECT DISTINCT source FROM articles WHERE source<>'' ORDER BY source").fetchall()
+        return [row["source"] for row in rows]
 
     def get_by_pmids(self, pmids: Sequence[str]) -> List[Article]:
         if not pmids:

@@ -559,6 +559,7 @@ def _run_tray(cfg) -> None:
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1001, "查看今日文献")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1003, "偏好设置")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1004, "推送历史")
+        ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1005, "文献库搜索")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000800, 0, "")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1002, "退出 SciRobot")
         pt = ctypes.wintypes.POINT()
@@ -584,6 +585,9 @@ def _run_tray(cfg) -> None:
         elif cmd == 1004:
             _tray_event_flags.append("history")
             log.info("托盘事件: 加入 history 标志")
+        elif cmd == 1005:
+            _tray_event_flags.append("library")
+            log.info("托盘事件: 加入 library 标志")
 
     # ---- 设置 CallWindowProcW 的正确签名（64-bit 下 LR ESULT 是 8 字节）----
     _CallWindowProcW = ctypes.windll.user32.CallWindowProcW
@@ -691,6 +695,9 @@ def _run_tray(cfg) -> None:
                 subprocess.Popen(command, cwd=os.getcwd())
             elif evt == "history":
                 command = [sys.executable, "history"] if getattr(sys, "frozen", False) else [sys.executable, "main.py", "history"]
+                subprocess.Popen(command, cwd=os.getcwd())
+            elif evt == "library":
+                command = [sys.executable, "library"] if getattr(sys, "frozen", False) else [sys.executable, "main.py", "library"]
                 subprocess.Popen(command, cwd=os.getcwd())
             elif evt == "quit":
                 _running = False

@@ -57,14 +57,23 @@ class MultiSourceClient:
 
     def search_recent(self, days: int | None = None) -> list[Article]:
         days = int(days or self.cfg.get("pubmed.lookback_days", 7) or 7)
+        return self._search(self._terms(), days, use_preferences=True)
+
+    def search_keywords(self, keywords: str, days: int = 30) -> list[Article]:
+        """Run an on-demand multi-source search without changing saved preferences."""
+        terms = [part.strip() for part in keywords.replace("；", ",").split(",") if part.strip()]
+        if not terms:
+            return []
+        return self._search(terms, max(1, min(365, int(days))), use_preferences=False)
+
+    def _search(self, terms: list[str], days: int, *, use_preferences: bool) -> list[Article]:
         since = (date.today() - timedelta(days=days)).isoformat()
-        terms = self._terms()
         results: list[Article] = []
 
         # Each provider is isolated: a temporary outage must not stop the day’s push.
         enabled = {str(name).strip().lower() for name in (self.cfg.get("search_sources.enabled") or [])}
         providers = [
-            ("PubMed", lambda: PubMedClient(self.cfg).search_recent(days=days)),
+            ("PubMed", lambda: PubMedClient(self.cfg).search_recent(days=days) if use_preferences else self._pubmed(terms, days)),
             ("Europe PMC", lambda: self._europe_pmc(terms, since)),
             ("Crossref", lambda: self._crossref(terms, since)),
             ("OpenAlex", lambda: self._openalex(terms, since)),
@@ -81,7 +90,7 @@ class MultiSourceClient:
             except Exception as exc:
                 log.warning("%s 检索失败，已跳过：%s", name, exc)
         deduplicated = self._deduplicate(results)
-        if not self.cfg.get("relevance.enabled", True):
+        if not use_preferences or not self.cfg.get("relevance.enabled", True):
             return deduplicated
         min_score = int(self.cfg.get("relevance.min_score", 0) or 0)
         kept: list[Article] = []
@@ -92,6 +101,15 @@ class MultiSourceClient:
         kept.sort(key=lambda article: (article.score, article.pub_date), reverse=True)
         log.info("多源合并去重后 %d 篇，相关性筛选保留 %d 篇", len(deduplicated), len(kept))
         return kept
+
+    def _pubmed(self, terms: list[str], days: int) -> list[Article]:
+        client = PubMedClient(self.cfg)
+        tag = (self.cfg.get("pubmed.field_tag") or "Title/Abstract").strip()
+        suffix = f"[{tag}]" if tag else ""
+        query = "(" + " OR ".join(f'"{term}"{suffix}' for term in terms) + ")"
+        today = date.today()
+        pmids = client.search(query, mindate=(today - timedelta(days=days)).strftime("%Y/%m/%d"), maxdate=today.strftime("%Y/%m/%d"), retmax=self.limit)
+        return client.fetch(pmids)
 
     def _europe_pmc(self, terms: list[str], since: str) -> list[Article]:
         query = " OR ".join(f'"{term}"' for term in terms)
