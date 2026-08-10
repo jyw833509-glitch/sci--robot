@@ -24,6 +24,7 @@ from __future__ import annotations
 import argparse
 import os
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -215,6 +216,12 @@ def cmd_schedule(args) -> int:
     # 首次运行时自动设开机自启
     _setup_autostart()
 
+    # 第一次启动先让用户建立本机偏好档案；设置窗口独立进程运行，不阻塞调度器。
+    from preferences import preferences_configured
+    if not preferences_configured():
+        command = [sys.executable, "preferences"] if getattr(sys, "frozen", False) else [sys.executable, str(BASE_DIR / "main.py"), "preferences"]
+        subprocess.Popen(command, cwd=str(BASE_DIR))
+
     from scheduler import start_scheduler
 
     print(BANNER)
@@ -222,6 +229,13 @@ def cmd_schedule(args) -> int:
     # run_on_start 由 start_scheduler 内的调度线程统一执行。
     # 此处再次执行会导致同一篇文献在启动时弹出两次。
     start_scheduler(cfg)
+    return 0
+
+
+def cmd_preferences(args) -> int:
+    """打开本地用户偏好设置。"""
+    from preferences import show_preferences
+    show_preferences()
     return 0
 
 
@@ -330,6 +344,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("stats", help="查看数据库统计").set_defaults(func=cmd_stats)
     sub.add_parser("test-mail", help="发送测试消息验证推送配置").set_defaults(func=cmd_test_mail)
     sub.add_parser("schedule", help="常驻运行定时任务").set_defaults(func=cmd_schedule)
+    sub.add_parser("preferences", help="设置本机文献偏好").set_defaults(func=cmd_preferences)
 
     p_search = sub.add_parser("search", help="只检索不入库不推送")
     p_search.add_argument("--days", type=int, default=None, help="回溯天数，默认取配置值")

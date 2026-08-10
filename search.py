@@ -23,6 +23,7 @@ from typing import Any, Dict, Iterable, List, Optional
 import requests
 
 from logger import get_logger
+from preferences import load_preferences, preference_terms
 
 log = get_logger("search")
 
@@ -167,6 +168,18 @@ def score_article(article: "Article", cfg) -> int:
     penalty_terms = [str(t).lower() for t in (cfg.get("relevance.penalty_terms") or [])]
     penalty_hits = sum(1 for t in penalty_terms if t in title or t in body)
     score -= min(penalty_hits * 2, int(cfg.get("relevance.penalty_cap", 4)))
+
+    # Local preferences complement the shared configuration.  They only affect
+    # local PubMed ranking; centrally supplied feed content stays identical for
+    # every subscriber.
+    preferences = load_preferences()
+    preferred_terms = [term.lower() for term in preference_terms(preferences)]
+    preferred_hits = sum(1 for term in preferred_terms if term in title or term in body)
+    score += min(preferred_hits * 2, 10)
+
+    excluded_terms = [str(term).strip().lower() for term in (preferences.get("exclude_terms") or [])]
+    excluded_hits = sum(1 for term in excluded_terms if term and (term in title or term in body))
+    score -= min(excluded_hits * 4, 12)
 
     return score
 

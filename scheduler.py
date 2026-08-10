@@ -29,6 +29,7 @@ from database import get_database
 from feed import articles_for_date, load_feed
 from logger import get_logger
 from notifier import Notifier
+from preferences import load_preferences
 from report import build_report, save_report
 from search import PubMedClient
 from translate import Translator
@@ -165,7 +166,8 @@ def collect_articles(cfg, days: Optional[int] = None):
     log.info("待推送文献 %d 篇", len(pending))
 
     # 每天只推 N 篇（默认 1 篇），其余留待后续工作日
-    daily_limit = int(cfg.get("pipeline.daily_limit", 0) or 0)
+    preferences = load_preferences()
+    daily_limit = int(preferences.get("daily_limit") or cfg.get("pipeline.daily_limit", 0) or 0)
     if daily_limit and len(pending) > daily_limit:
         log.info(
             "daily_limit=%d，本次仅取最新 %d 篇，其余 %d 篇留待后续工作日",
@@ -371,6 +373,8 @@ def _run_tray(cfg) -> None:
     import ctypes
     import ctypes.wintypes
     import os
+    import subprocess
+    import sys
     import tempfile
     import atexit
     import tkinter as tk
@@ -549,6 +553,7 @@ def _run_tray(cfg) -> None:
     def _tray_show_menu(hwnd_):
         menu = ctypes.windll.user32.CreatePopupMenu()
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1001, "查看今日文献")
+        ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1003, "偏好设置")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000800, 0, "")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1002, "退出 SciRobot")
         pt = ctypes.wintypes.POINT()
@@ -568,6 +573,9 @@ def _run_tray(cfg) -> None:
         elif cmd == 1002:
             _tray_event_flags.append("quit")
             log.info("托盘事件: 加入 quit 标志")
+        elif cmd == 1003:
+            _tray_event_flags.append("preferences")
+            log.info("托盘事件: 加入 preferences 标志")
 
     # ---- 设置 CallWindowProcW 的正确签名（64-bit 下 LR ESULT 是 8 字节）----
     _CallWindowProcW = ctypes.windll.user32.CallWindowProcW
@@ -670,6 +678,9 @@ def _run_tray(cfg) -> None:
                     _trigger_popup_only(cfg)
                 except Exception as exc:
                     log.exception("托盘弹窗失败：%s", exc)
+            elif evt == "preferences":
+                command = [sys.executable, "preferences"] if getattr(sys, "frozen", False) else [sys.executable, "main.py", "preferences"]
+                subprocess.Popen(command, cwd=os.getcwd())
             elif evt == "quit":
                 _running = False
                 # 删除托盘图标
