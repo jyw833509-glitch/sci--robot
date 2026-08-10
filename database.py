@@ -55,6 +55,7 @@ CREATE TABLE IF NOT EXISTS articles (
     language           TEXT    DEFAULT '',
     translate_provider TEXT    DEFAULT '',
     url                TEXT    DEFAULT '',
+    source             TEXT    DEFAULT 'PubMed',
     pushed             INTEGER NOT NULL DEFAULT 0,
     pushed_at          TEXT    DEFAULT '',
     created_at         TEXT    DEFAULT '',
@@ -119,6 +120,9 @@ class Database:
     def init_schema(self) -> None:
         with self._conn() as conn:
             conn.executescript(SCHEMA)
+            columns = {row["name"] for row in conn.execute("PRAGMA table_info(articles)").fetchall()}
+            if "source" not in columns:
+                conn.execute("ALTER TABLE articles ADD COLUMN source TEXT DEFAULT 'PubMed'")
 
     # ---------------- 去重 ----------------
     def exists(self, pmid: str) -> bool:
@@ -190,9 +194,9 @@ class Database:
                     INSERT OR IGNORE INTO articles (
                         pmid, doi, title, title_zh, abstract, abstract_zh, authors,
                         journal, journal_abbr, pub_date, entrez_date, publication_types,
-                        keywords, affiliation, language, translate_provider, url,
+                        keywords, affiliation, language, translate_provider, url, source,
                         pushed, pushed_at, created_at, updated_at
-                    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+                    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
                     """,
                     (
                         art.pmid, art.doi, art.title, art.title_zh, art.abstract,
@@ -201,7 +205,7 @@ class Database:
                         json.dumps(art.publication_types, ensure_ascii=False),
                         json.dumps(art.keywords, ensure_ascii=False),
                         art.affiliation, art.language, art.translate_provider,
-                        art.pubmed_url, 0, "", now, now,
+                        art.pubmed_url, art.source, 0, "", now, now,
                     ),
                 )
                 if cur.rowcount:
@@ -225,9 +229,9 @@ class Database:
                     INSERT INTO articles (
                         pmid, doi, title, title_zh, abstract, abstract_zh, authors,
                         journal, journal_abbr, pub_date, entrez_date, publication_types,
-                        keywords, affiliation, language, translate_provider, url,
+                        keywords, affiliation, language, translate_provider, url, source,
                         pushed, pushed_at, created_at, updated_at
-                    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,'',?,?)
+                    ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,0,'',?,?)
                     ON CONFLICT(pmid) DO UPDATE SET
                         doi=excluded.doi, title=excluded.title, title_zh=excluded.title_zh,
                         abstract=excluded.abstract, abstract_zh=excluded.abstract_zh,
@@ -237,7 +241,7 @@ class Database:
                         publication_types=excluded.publication_types,
                         keywords=excluded.keywords, affiliation=excluded.affiliation,
                         language=excluded.language, translate_provider=excluded.translate_provider,
-                        url=excluded.url, updated_at=excluded.updated_at
+                        url=excluded.url, source=excluded.source, updated_at=excluded.updated_at
                     """,
                     (
                         art.pmid, art.doi, art.title, art.title_zh, art.abstract,
@@ -246,7 +250,7 @@ class Database:
                         json.dumps(art.publication_types, ensure_ascii=False),
                         json.dumps(art.keywords, ensure_ascii=False),
                         art.affiliation, art.language, art.translate_provider,
-                        art.pubmed_url, now, now,
+                        art.pubmed_url, art.source, now, now,
                     ),
                 )
                 if cur.rowcount == 1:
@@ -299,6 +303,9 @@ class Database:
             title_zh=row["title_zh"] or "",
             abstract_zh=row["abstract_zh"] or "",
             translate_provider=row["translate_provider"] or "",
+            source=row["source"] or "PubMed",
+            source_url=row["url"] or "",
+            pushed_at=row["pushed_at"] or "",
         )
 
     def get_unpushed(self, limit: int = 100) -> List[Article]:
@@ -309,6 +316,15 @@ class Database:
                 (int(limit),),
             ).fetchall()
         return [self._row_to_article(r) for r in rows]
+
+    def get_pushed_history(self, limit: int = 300) -> List[Article]:
+        """Return successfully delivered papers, newest first."""
+        with self._conn() as conn:
+            rows = conn.execute(
+                "SELECT * FROM articles WHERE pushed=1 ORDER BY pushed_at DESC, id DESC LIMIT ?",
+                (int(limit),),
+            ).fetchall()
+        return [self._row_to_article(row) for row in rows]
 
     def get_by_pmids(self, pmids: Sequence[str]) -> List[Article]:
         if not pmids:

@@ -239,6 +239,13 @@ def cmd_preferences(args) -> int:
     return 0
 
 
+def cmd_history(args) -> int:
+    """打开本地推送历史。"""
+    from history import show_history
+    show_history()
+    return 0
+
+
 def cmd_test_mail(args) -> int:
     cfg = load_config(args.config)
     _init_logging(cfg)
@@ -345,6 +352,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("test-mail", help="发送测试消息验证推送配置").set_defaults(func=cmd_test_mail)
     sub.add_parser("schedule", help="常驻运行定时任务").set_defaults(func=cmd_schedule)
     sub.add_parser("preferences", help="设置本机文献偏好").set_defaults(func=cmd_preferences)
+    sub.add_parser("history", help="查看本机推送历史").set_defaults(func=cmd_history)
 
     p_search = sub.add_parser("search", help="只检索不入库不推送")
     p_search.add_argument("--days", type=int, default=None, help="回溯天数，默认取配置值")

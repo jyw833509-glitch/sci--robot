@@ -69,6 +69,7 @@ class Article:
     score: int = 0
     source: str = "PubMed"
     source_url: str = ""
+    pushed_at: str = ""
 
     # ---------- 派生属性 ----------
     @property

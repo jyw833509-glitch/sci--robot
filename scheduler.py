@@ -557,6 +557,7 @@ def _run_tray(cfg) -> None:
         menu = ctypes.windll.user32.CreatePopupMenu()
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1001, "查看今日文献")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1003, "偏好设置")
+        ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1004, "推送历史")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000800, 0, "")
         ctypes.windll.user32.AppendMenuW(menu, 0x00000000, 1002, "退出 SciRobot")
         pt = ctypes.wintypes.POINT()
@@ -579,6 +580,9 @@ def _run_tray(cfg) -> None:
         elif cmd == 1003:
             _tray_event_flags.append("preferences")
             log.info("托盘事件: 加入 preferences 标志")
+        elif cmd == 1004:
+            _tray_event_flags.append("history")
+            log.info("托盘事件: 加入 history 标志")
 
     # ---- 设置 CallWindowProcW 的正确签名（64-bit 下 LR ESULT 是 8 字节）----
     _CallWindowProcW = ctypes.windll.user32.CallWindowProcW
@@ -683,6 +687,9 @@ def _run_tray(cfg) -> None:
                     log.exception("托盘弹窗失败：%s", exc)
             elif evt == "preferences":
                 command = [sys.executable, "preferences"] if getattr(sys, "frozen", False) else [sys.executable, "main.py", "preferences"]
+                subprocess.Popen(command, cwd=os.getcwd())
+            elif evt == "history":
+                command = [sys.executable, "history"] if getattr(sys, "frozen", False) else [sys.executable, "main.py", "history"]
                 subprocess.Popen(command, cwd=os.getcwd())
             elif evt == "quit":
                 _running = False
