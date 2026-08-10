@@ -69,8 +69,8 @@ def show_preferences() -> None:
     data = load_preferences()
     root = Tk()
     root.title("SciRobot · 文献偏好设置")
-    root.geometry("560x530")
-    root.minsize(520, 480)
+    root.geometry("600x600")
+    root.minsize(540, 560)
     root.configure(bg="#f8fafc")
 
     outer = Frame(root, bg="#f8fafc", padx=28, pady=24)
@@ -128,10 +128,13 @@ def show_preferences() -> None:
         messagebox.showinfo("SciRobot", "偏好已保存。下次推送会使用新的设置。")
         root.destroy()
 
+    # Keep the actions immediately after the final field.  Using a bottom-side
+    # pack here can push them outside the window under high-DPI scaling.
     buttons = Frame(outer, bg="#f8fafc")
-    buttons.pack(fill=X, side="bottom")
+    buttons.pack(fill=X, pady=(0, 4))
     ttk.Button(buttons, text="取消", command=root.destroy).pack(side=RIGHT)
     ttk.Button(buttons, text="保存偏好", command=save).pack(side=RIGHT, padx=(0, 8))
+    root.bind("<Control-Return>", lambda _event: save())
     root.mainloop()
 
 
