@@ -136,6 +136,11 @@ DEFAULTS: Dict[str, Any] = {
         # 留空则只生成在本地，需你手动托管
         "feed_upload_cmd": "",
     },
+    "search_sources": {
+        # All sources are free and queried independently; unavailable sources
+        # are skipped without blocking the daily push.
+        "enabled": ["pubmed", "europe_pmc", "crossref", "openalex", "biorxiv"],
+    },
     "report": {
         "title": "SciRobot 文献日报",
         "max_items": 30,

@@ -233,7 +233,7 @@ _ARTICLE_FIELDS = {
     "pmid", "title", "abstract", "authors", "journal", "journal_abbr",
     "pub_date", "entrez_date", "doi", "publication_types", "keywords",
     "affiliation", "language", "title_zh", "abstract_zh", "translate_provider",
-    "score",
+    "score", "source", "source_url",
     # 注意：pubmed_url / doi_url 是 @property 派生字段，不能作为构造参数，
     # 从 feed 反序列化时不需要传入，构造后会自动生成
 }

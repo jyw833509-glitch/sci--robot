@@ -163,7 +163,7 @@ def _render_article_html(index: int, a: Article, cfg) -> str:
       <div style="margin-top:10px;font-size:12px;color:{C_MUTED};line-height:1.8;">
         <div><span style="color:{C_LIGHT};">期刊：</span>{_esc(_journal_of(a))}
              &nbsp;·&nbsp;<span style="color:{C_LIGHT};">发表：</span>{_esc(_date_of(a))}
-             &nbsp;·&nbsp;<span style="color:{C_LIGHT};">PMID：</span>{_esc(a.pmid)}</div>
+             &nbsp;·&nbsp;<span style="color:{C_LIGHT};">来源：</span>{_esc(a.source or 'PubMed')}</div>
         <div><span style="color:{C_LIGHT};">作者：</span>{_esc(a.authors_str)}</div>
         <div>{" &nbsp;|&nbsp; ".join(links)}</div>
       </div>
@@ -212,7 +212,7 @@ def _render_html(articles: Sequence[Article], cfg, report_date: str, total_found
     {cards}
 
     <div style="text-align:center;color:{C_LIGHT};font-size:11px;line-height:1.9;padding:18px 10px 4px;">
-      数据来源：PubMed (NCBI E-utilities){provider_note}<br>
+      数据来源：PubMed、Europe PMC、Crossref、OpenAlex、bioRxiv{provider_note}<br>
       由「SciRobot」生成于 {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}<br>
       如需调整关键词、推送时间或收件人，请修改 config.yaml
     </div>
@@ -233,7 +233,7 @@ def _render_markdown(articles: Sequence[Article], cfg, report_date: str, total_f
     lines: List[str] = [
         f"# {title}",
         "",
-        f"> 日期：{report_date}　|　本期 {len(articles)} 篇　|　检索命中 {total_found} 篇　|　来源：PubMed",
+        f"> 日期：{report_date}　|　本期 {len(articles)} 篇　|　检索命中 {total_found} 篇　|　来源：多源免费数据库",
         "",
     ]
 
@@ -262,7 +262,7 @@ def _render_markdown(articles: Sequence[Article], cfg, report_date: str, total_f
             f"| 发表时间 | {_md_escape(_date_of(a))} |",
             f"| 作者 | {_md_escape(a.authors_str)} |",
             f"| DOI | {f'[{a.doi}]({a.doi_url})' if a.doi else '—'} |",
-            f"| PMID | [{a.pmid}]({a.pubmed_url}) |",
+            f"| 来源 / ID | {_md_escape(a.source or 'PubMed')} / [{a.pmid}]({a.pubmed_url}) |",
             "",
         ]
         if a.abstract_zh:
@@ -296,7 +296,7 @@ def _render_text(articles: Sequence[Article], cfg, report_date: str, total_found
     for i, a in enumerate(articles, 1):
         lines += [
             f"{i}. {_title_zh_or_en(a)}",
-            f"   {_journal_of(a)} | {_date_of(a)} | PMID {a.pmid}",
+            f"   {_journal_of(a)} | {_date_of(a)} | {a.source or 'PubMed'} {a.pmid}",
             f"   {a.pubmed_url}",
         ]
         summary = (a.abstract_zh or a.abstract or "").replace("\n", " ")

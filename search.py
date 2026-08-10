@@ -67,10 +67,14 @@ class Article:
 
     # 相关度得分（本地打分，非 PubMed 提供）
     score: int = 0
+    source: str = "PubMed"
+    source_url: str = ""
 
     # ---------- 派生属性 ----------
     @property
     def pubmed_url(self) -> str:
+        if self.source_url:
+            return self.source_url
         return f"https://pubmed.ncbi.nlm.nih.gov/{self.pmid}/"
 
     @property

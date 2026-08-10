@@ -144,8 +144,36 @@ class Database:
         return [p for p in pmids if p not in existing]
 
     def filter_new_articles(self, articles: Sequence[Article]) -> List[Article]:
+        """Remove duplicates by stable ID, DOI, and normalized title.
+
+        External free sources use different identifiers for the same paper, so
+        PMID-only deduplication is not sufficient once they are combined.
+        """
+        if not articles:
+            return []
+
+        def title_key(value: str) -> str:
+            return "".join(ch for ch in value.lower() if ch.isalnum())[:180]
+
         new_ids = set(self.filter_new_pmids([a.pmid for a in articles]))
-        return [a for a in articles if a.pmid in new_ids]
+        with self._conn() as conn:
+            rows = conn.execute("SELECT doi, title FROM articles").fetchall()
+        existing_dois = {str(row["doi"] or "").strip().lower() for row in rows if row["doi"]}
+        existing_titles = {title_key(str(row["title"] or "")) for row in rows if row["title"]}
+        accepted: List[Article] = []
+        seen_dois: set[str] = set()
+        seen_titles: set[str] = set()
+        for article in articles:
+            doi = str(article.doi or "").strip().lower()
+            title = title_key(article.title)
+            if article.pmid not in new_ids or (doi and (doi in existing_dois or doi in seen_dois)) or (title and (title in existing_titles or title in seen_titles)):
+                continue
+            accepted.append(article)
+            if doi:
+                seen_dois.add(doi)
+            if title:
+                seen_titles.add(title)
+        return accepted
 
     # ---------------- 写入 ----------------
     def save_articles(self, articles: Iterable[Article]) -> Tuple[int, int]:

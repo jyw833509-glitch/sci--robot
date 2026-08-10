@@ -31,7 +31,7 @@ from logger import get_logger
 from notifier import Notifier
 from preferences import load_preferences, personal_mode_active
 from report import build_report, save_report
-from search import PubMedClient
+from sources import MultiSourceClient
 from translate import Translator
 
 log = get_logger("scheduler")
@@ -150,7 +150,7 @@ def collect_articles(cfg, days: Optional[int] = None):
         log.info("已启用个人偏好优先：跳过共享 feed，使用本机 PubMed 检索")
 
     db = get_database(cfg)
-    client = PubMedClient(cfg)
+    client = MultiSourceClient(cfg)
     found = client.search_recent(days=days)
 
     inserted = 0

@@ -217,6 +217,11 @@ content:
   # 例如： coscli cp data/feed.json cos://my-bucket/feed.json
   feed_upload_cmd: ""
 
+# ------------------------- 3.7 免费检索来源 -------------------------
+# 某个来源临时不可用时会自动跳过，不影响其他来源和当天推送。
+search_sources:
+  enabled: ["pubmed", "europe_pmc", "crossref", "openalex", "biorxiv"]
+
 
 # ------------------------- 4. 日报 -------------------------
 report:

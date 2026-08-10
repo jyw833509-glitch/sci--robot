@@ -356,7 +356,7 @@ def _build_card(parent, index, art, f):
     info_row.pack(fill=X)
     Label(info_row, text=authors or "—", bg=C_CARD_BG, fg=C_TEXT_TER,
           font=f["tiny"]).pack(side=LEFT)
-    Label(info_row, text=f"PMID {pmid}", bg=C_CARD_BG, fg=C_TEXT_TER,
+    Label(info_row, text=f"{art.get('source') or 'PubMed'} · {pmid}", bg=C_CARD_BG, fg=C_TEXT_TER,
           font=f["tiny"]).pack(side=RIGHT)
 
     # ---- PMID / DOI 链接（可点击号码，显示完整） ----
@@ -372,7 +372,7 @@ def _build_card(parent, index, art, f):
         if pmid_val and pubmed_url:
             pmid_frame = Frame(link_box, bg=C_CARD_BG)
             pmid_frame.pack(fill=X, pady=(0, 2))
-            Label(pmid_frame, text="PMID: ", bg=C_CARD_BG, fg=C_TEXT_TER,
+            Label(pmid_frame, text=f"{art.get('source') or 'PubMed'}: ", bg=C_CARD_BG, fg=C_TEXT_TER,
                   font=f["tiny"]).pack(side=LEFT)
             pmid_lbl = Label(pmid_frame, text=pmid_val, bg=C_CARD_BG, fg=C_ACCENT,
                              font=f["small"], cursor="hand2")
