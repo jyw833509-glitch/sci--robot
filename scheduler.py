@@ -151,7 +151,9 @@ def collect_articles(cfg, days: Optional[int] = None):
 
     db = get_database(cfg)
     client = MultiSourceClient(cfg)
-    found = client.search_recent(days=days)
+    preferences = load_preferences()
+    effective_days = days if days is not None else int(preferences.get("lookback_days") or cfg.get("pubmed.lookback_days", 7) or 7)
+    found = client.search_recent(days=effective_days)
 
     inserted = 0
     fresh_count = 0
@@ -169,7 +171,6 @@ def collect_articles(cfg, days: Optional[int] = None):
     log.info("待推送文献 %d 篇", len(pending))
 
     # 每天只推 N 篇（默认 1 篇），其余留待后续工作日
-    preferences = load_preferences()
     daily_limit = int(preferences.get("daily_limit") or cfg.get("pipeline.daily_limit", 0) or 0)
     if daily_limit and len(pending) > daily_limit:
         log.info(
