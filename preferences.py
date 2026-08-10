@@ -35,6 +35,11 @@ def preferences_configured() -> bool:
     return PREFERENCES_FILE.exists()
 
 
+def personal_mode_active() -> bool:
+    """Whether a saved profile should override the shared feed mode."""
+    return preferences_configured() and load_preferences().get("delivery_mode", "personal") == "personal"
+
+
 def preference_terms(data: dict | None = None) -> list[str]:
     """Return the topic and custom terms selected for local ranking."""
     data = data or load_preferences()

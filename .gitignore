@@ -40,3 +40,4 @@ _pyi_build/
 pyi_build/
 pyi_dist/
 *.spec
+!SciRobot.spec

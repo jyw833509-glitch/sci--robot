@@ -105,8 +105,16 @@ def build_query(cfg) -> str:
     manual = (cfg.get("pubmed.query") or "").strip()
     extra: List[str] = [str(x).strip() for x in (cfg.get("pubmed.extra_filters") or []) if str(x).strip()]
 
+    personal_terms = preference_terms()
     if manual:
         query = manual
+    elif personal_terms:
+        # A saved profile is the user's primary search scope.  The historical
+        # default keyword groups remain the fallback for an empty profile.
+        field_tag = (cfg.get("pubmed.field_tag") or "").strip()
+        tag = f"[{field_tag}]" if field_tag else ""
+        parts = [f'"{term}"{tag}' if " " in term else f"{term}{tag}" for term in personal_terms]
+        query = "(" + " OR ".join(parts) + ")"
     else:
         groups: List[List[str]] = cfg.get("pubmed.keyword_groups") or []
         field_tag = (cfg.get("pubmed.field_tag") or "").strip()
@@ -175,7 +183,7 @@ def score_article(article: "Article", cfg) -> int:
     preferences = load_preferences()
     preferred_terms = [term.lower() for term in preference_terms(preferences)]
     preferred_hits = sum(1 for term in preferred_terms if term in title or term in body)
-    score += min(preferred_hits * 2, 10)
+    score += min(preferred_hits * 4, 16)
 
     excluded_terms = [str(term).strip().lower() for term in (preferences.get("exclude_terms") or [])]
     excluded_hits = sum(1 for term in excluded_terms if term and (term in title or term in body))

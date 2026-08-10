@@ -29,7 +29,7 @@ from database import get_database
 from feed import articles_for_date, load_feed
 from logger import get_logger
 from notifier import Notifier
-from preferences import load_preferences
+from preferences import load_preferences, personal_mode_active
 from report import build_report, save_report
 from search import PubMedClient
 from translate import Translator
@@ -143,8 +143,11 @@ def collect_articles(cfg, days: Optional[int] = None):
     返回 (db, pending, report, stats)，供 run_once 与预览弹窗命令复用。
     stats 含：检索命中 / 新增入库 / 重复跳过。
     """
-    if (cfg.get("content.mode") or "local") == "feed":
+    configured_mode = cfg.get("content.mode") or "local"
+    if configured_mode == "feed" and not personal_mode_active():
         return _collect_from_feed(cfg)
+    if configured_mode == "feed":
+        log.info("已启用个人偏好优先：跳过共享 feed，使用本机 PubMed 检索")
 
     db = get_database(cfg)
     client = PubMedClient(cfg)
