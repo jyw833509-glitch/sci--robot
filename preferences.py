@@ -23,7 +23,7 @@ TOPICS = [
 
 
 def load_preferences() -> dict:
-    default = {"profile_name": "", "topics": [], "include_terms": [], "exclude_terms": [], "daily_limit": 1, "lookback_days": 7}
+    default = {"topics": [], "include_terms": [], "exclude_terms": [], "daily_limit": 1, "lookback_days": 7}
     try:
         data = json.loads(PREFERENCES_FILE.read_text(encoding="utf-8"))
         return {**default, **(data if isinstance(data, dict) else {})}
@@ -78,10 +78,6 @@ def show_preferences() -> None:
     Label(outer, text="你的文献偏好", bg="#f8fafc", fg="#0f172a", font=("Microsoft YaHei UI", 16, "bold")).pack(anchor="w")
     Label(outer, text="设置后会保存在这台电脑；后续将用于个性化筛选和排序。", bg="#f8fafc", fg="#64748b", font=("Microsoft YaHei UI", 9)).pack(anchor="w", pady=(4, 18))
 
-    name_var = StringVar(value=str(data.get("profile_name") or ""))
-    Label(outer, text="昵称（可选）", bg="#f8fafc", fg="#334155", font=("Microsoft YaHei UI", 9, "bold")).pack(anchor="w")
-    Entry(outer, textvariable=name_var, font=("Microsoft YaHei UI", 10)).pack(fill=X, pady=(5, 14))
-
     Label(outer, text="研究主题", bg="#f8fafc", fg="#334155", font=("Microsoft YaHei UI", 9, "bold")).pack(anchor="w")
     topics_box = Frame(outer, bg="#f8fafc")
     topics_box.pack(fill=X, pady=(5, 14))
@@ -115,7 +111,6 @@ def show_preferences() -> None:
         except ValueError:
             daily_limit = 1
         result = {
-            "profile_name": name_var.get().strip(),
             "topics": chosen,
             "include_terms": _terms(include_var.get()),
             "exclude_terms": _terms(exclude_var.get()),
