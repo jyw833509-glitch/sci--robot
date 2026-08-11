@@ -345,26 +345,27 @@ def start_scheduler(cfg) -> None:
 
     def _scheduler_loop() -> None:
         last_run: list = []  # 已执行的 (date, time) 记录
-        if run_on_start:
-            # Opening the app should refresh the candidate pool, not consume a
-            # daily push slot.  A missed scheduled time is handled below once.
-            log.info("run_on_start=true，执行静默文献库同步（不推送）")
+        now = datetime.now()
+        missed_today = any(now.time() > scheduled for scheduled in job_times)
+        already_sent = bool(get_database(cfg).get_pushed_on_date(now.strftime("%Y-%m-%d")))
+        needs_catchup = missed_today and not already_sent and _is_workday(now, cfg)
+        if run_on_start or needs_catchup:
+            # A normal launch can silently refresh the library.  If the daily
+            # time has already passed, refresh first so the catch-up push uses
+            # the newest candidates even when run_on_start is disabled.
+            log.info("启动时执行静默文献库同步（不推送）")
             try:
                 sync_library(cfg)
             except Exception as exc:  # pragma: no cover
                 log.exception("启动静默同步失败：%s", exc)
 
-            # If the computer was off at the scheduled time, deliver the daily
-            # selection once on the first later startup.  The pushed_at check
-            # prevents a second startup on the same day from sending again.
-            now = datetime.now()
-            missed_today = any(now.time() > scheduled for scheduled in job_times)
-            already_sent = bool(get_database(cfg).get_pushed_on_date(now.strftime("%Y-%m-%d")))
-            if missed_today and not already_sent and _is_workday(now, cfg):
-                log.info("已错过今日定时推送，首次启动执行一次补推")
-                job()
-            elif missed_today and already_sent:
-                log.info("今天已有正式推送，启动时不重复补推")
+        # The pushed_at check prevents a second startup on the same day from
+        # sending again.  This applies regardless of run_on_start's setting.
+        if needs_catchup:
+            log.info("已错过今日定时推送，首次启动执行一次补推")
+            job()
+        elif missed_today and already_sent:
+            log.info("今天已有正式推送，启动时不重复补推")
         next_run = _next_run_time()
         log.info("调度器已启动，下一次运行：%s",
                  next_run.strftime("%Y-%m-%d %H:%M:%S") if next_run else "未知")
