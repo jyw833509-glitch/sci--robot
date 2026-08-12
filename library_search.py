@@ -1,4 +1,4 @@
-"""Two-mode personal literature search: local database and live free sources."""
+"""Local, English live, and Chinese-assisted personal literature search."""
 from __future__ import annotations
 
 import threading
@@ -8,6 +8,7 @@ from tkinter import ttk
 
 from config import load_config
 from database import get_database
+from query_translate import translate_chinese_query
 from sources import MultiSourceClient
 
 
@@ -86,13 +87,14 @@ def show_library_search() -> None:
             online_status.set("请先输入英文关键词。"); return
         try: days = int(days_var.get())
         except ValueError: days = 30
+        strict = strict_var.get()
         online_status.set("正在从五个免费来源检索，请稍候…")
         def worker():
             try:
-                articles = MultiSourceClient(cfg).search_keywords(keywords, days, strict=strict_var.get())
+                articles = MultiSourceClient(cfg).search_keywords(keywords, days, strict=strict)
                 root.after(0, lambda: populate_online(articles))
             except Exception as exc:
-                root.after(0, lambda: online_status.set(f"检索失败：{exc}"))
+                root.after(0, lambda exc=exc: online_status.set(f"检索失败：{exc}"))
         threading.Thread(target=worker, daemon=True).start()
 
     def add_selected():
@@ -107,6 +109,90 @@ def show_library_search() -> None:
     ttk.Button(footer, text="加入本地库", command=add_selected).pack(side=RIGHT)
     online_entry.bind("<Return>", lambda _e: run_online())
     online_tree.bind("<Double-1>", lambda _e: webbrowser.open(online_items[online_tree.selection()[0]].pubmed_url) if online_tree.selection() else None)
+
+    # ----- Chinese-assisted live search -----
+    chinese = ttk.Frame(notebook, padding=14); notebook.add(chinese, text="中文智能检索")
+    chinese_query, english_query = StringVar(), StringVar()
+    chinese_days = StringVar(value="30")
+    chinese_strict = BooleanVar(value=True)
+    chinese_status = StringVar(value="输入中文主题后，会先转换为可编辑的英文检索式，再检索五个免费来源。")
+
+    chinese_bar = ttk.Frame(chinese); chinese_bar.pack(fill=X, pady=(0, 8))
+    ttk.Label(chinese_bar, text="中文主题：").pack(side=LEFT)
+    chinese_entry = ttk.Entry(chinese_bar, textvariable=chinese_query, width=48)
+    chinese_entry.pack(side=LEFT, padx=(0, 10))
+    ttk.Button(chinese_bar, text="转换为英文", command=lambda: convert_chinese()).pack(side=LEFT)
+
+    english_bar = ttk.Frame(chinese); english_bar.pack(fill=X, pady=(0, 10))
+    ttk.Label(english_bar, text="英文检索式：").pack(side=LEFT)
+    english_entry = ttk.Entry(english_bar, textvariable=english_query, width=48)
+    english_entry.pack(side=LEFT, padx=(0, 10))
+    ttk.Label(english_bar, text="回溯天数：").pack(side=LEFT)
+    ttk.Spinbox(english_bar, from_=1, to=365, width=5, textvariable=chinese_days).pack(side=LEFT, padx=(0, 10))
+    ttk.Checkbutton(english_bar, text="精准检索（全部命中）", variable=chinese_strict).pack(side=LEFT)
+
+    chinese_body = ttk.Frame(chinese); chinese_body.pack(fill=BOTH, expand=True)
+    chinese_tree = make_table(chinese_body); chinese_items = {}
+    chinese_footer = ttk.Frame(chinese); chinese_footer.pack(fill=X, pady=(8, 0))
+    ttk.Label(chinese_footer, textvariable=chinese_status, foreground="#64748b").pack(side=LEFT)
+
+    def populate_chinese(articles, mode: str):
+        chinese_tree.delete(*chinese_tree.get_children()); chinese_items.clear()
+        for article in articles:
+            item = chinese_tree.insert("", END, values=(article.pub_date, article.source, article.journal or "—", article.title))
+            chinese_items[item] = article
+        chinese_status.set(f"{mode}检索找到 {len(articles)} 篇（已按 DOI、PMID 和标题去重）。选择后可加入本地库。")
+
+    def convert_chinese(search_after: bool = False):
+        query = chinese_query.get().strip()
+        if not query:
+            chinese_status.set("请先输入中文主题或关键词。"); return
+        chinese_status.set("正在转换专业检索词，请稍候…")
+
+        def worker():
+            try:
+                translated, method = translate_chinese_query(query, cfg)
+                def completed():
+                    english_query.set(translated)
+                    chinese_status.set(f"已通过{method}转换；可修改英文检索式后再搜索。")
+                    if search_after:
+                        run_chinese_search()
+                root.after(0, completed)
+            except Exception as exc:
+                root.after(0, lambda exc=exc: chinese_status.set(f"转换失败：{exc}"))
+        threading.Thread(target=worker, daemon=True).start()
+
+    def run_chinese_search():
+        keywords = english_query.get().strip()
+        if not keywords:
+            convert_chinese(search_after=True); return
+        try: days = int(chinese_days.get())
+        except ValueError: days = 30
+        strict = chinese_strict.get()
+        mode = "精准" if strict else "宽泛"
+        chinese_status.set("正在从五个免费来源检索，请稍候…")
+
+        def worker():
+            try:
+                articles = MultiSourceClient(cfg).search_keywords(keywords, days, strict=strict)
+                root.after(0, lambda: populate_chinese(articles, mode))
+            except Exception as exc:
+                root.after(0, lambda exc=exc: chinese_status.set(f"检索失败：{exc}"))
+        threading.Thread(target=worker, daemon=True).start()
+
+    def add_chinese_selected():
+        selected = [chinese_items[item] for item in chinese_tree.selection()]
+        if not selected:
+            chinese_status.set("请先选择要加入的文献。"); return
+        inserted, skipped = db.save_articles(selected, manual_saved=True)
+        chinese_status.set(f"已加入本地库 {inserted} 篇，已存在跳过 {skipped} 篇；这些文献不会进入每日推送队列。")
+        load_local()
+
+    ttk.Button(english_bar, text="中文搜索", command=run_chinese_search).pack(side=LEFT)
+    ttk.Button(chinese_footer, text="加入本地库", command=add_chinese_selected).pack(side=RIGHT)
+    chinese_entry.bind("<Return>", lambda _e: run_chinese_search())
+    english_entry.bind("<Return>", lambda _e: run_chinese_search())
+    chinese_tree.bind("<Double-1>", lambda _e: webbrowser.open(chinese_items[chinese_tree.selection()[0]].pubmed_url) if chinese_tree.selection() else None)
     root.mainloop()
 
 
