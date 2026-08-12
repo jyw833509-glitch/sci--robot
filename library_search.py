@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import threading
 import webbrowser
+from concurrent.futures import ThreadPoolExecutor
 from tkinter import BOTH, END, LEFT, RIGHT, X, BooleanVar, StringVar, Tk
 from tkinter import ttk
 
@@ -10,6 +11,11 @@ from config import load_config
 from database import get_database
 from query_translate import translate_chinese_query
 from sources import MultiSourceClient
+from translate import Translator
+
+
+def _contains_chinese(text: str) -> bool:
+    return any("\u3400" <= char <= "\u9fff" for char in (text or ""))
 
 
 def show_library_search() -> None:
@@ -131,12 +137,32 @@ def show_library_search() -> None:
     chinese_footer = ttk.Frame(chinese); chinese_footer.pack(fill=X, pady=(8, 0))
     ttk.Label(chinese_footer, textvariable=chinese_status, foreground="#64748b").pack(side=LEFT)
 
-    def populate_chinese(articles, mode: str):
+    def populate_chinese(articles, mode: str, untranslated: int = 0):
         chinese_tree.delete(*chinese_tree.get_children()); chinese_items.clear()
         for article in articles:
             item = chinese_tree.insert("", END, values=(article.pub_date, article.source, article.journal or "—", article.title_zh or article.title))
             chinese_items[item] = article
-        chinese_status.set(f"{mode}检索找到 {len(articles)} 篇中文原文（已去重）。选择后可加入本地库。")
+        note = f"；另有 {untranslated} 篇因中文题名转换失败未显示" if untranslated else ""
+        chinese_status.set(f"{mode}检索显示 {len(articles)} 篇中文原文（已去重{note}）。选择后可加入本地库。")
+
+    def translate_chinese_titles(articles):
+        pending = [article for article in articles if not _contains_chinese(article.title_zh or article.title)]
+        if not pending:
+            return articles, 0
+
+        root.after(0, lambda: chinese_status.set(f"已找到 {len(articles)} 篇中文原文，正在生成中文题名…"))
+
+        def translate_one(article):
+            translated, provider = Translator(cfg, db).translate_text(article.title)
+            if _contains_chinese(translated):
+                article.title_zh = translated
+                article.translate_provider = provider
+            return article
+
+        with ThreadPoolExecutor(max_workers=min(6, len(pending))) as executor:
+            list(executor.map(translate_one, pending))
+        visible = [article for article in articles if _contains_chinese(article.title_zh or article.title)]
+        return visible, len(articles) - len(visible)
 
     def run_chinese_search():
         query = chinese_query.get().strip()
@@ -152,7 +178,8 @@ def show_library_search() -> None:
             try:
                 english, _method = translate_chinese_query(query, cfg)
                 articles = MultiSourceClient(cfg).search_chinese(query, english, days, strict=strict)
-                root.after(0, lambda: populate_chinese(articles, mode))
+                articles, untranslated = translate_chinese_titles(articles)
+                root.after(0, lambda: populate_chinese(articles, mode, untranslated))
             except Exception as exc:
                 root.after(0, lambda exc=exc: chinese_status.set(f"检索失败：{exc}"))
         threading.Thread(target=worker, daemon=True).start()

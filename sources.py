@@ -94,7 +94,7 @@ class MultiSourceClient:
         deduplicated = self._deduplicate(results)
         matched = [article for article in deduplicated if self._matches_bilingual(article, zh_terms, en_terms, strict)]
         matched.sort(key=lambda article: (article.pub_date, article.title_zh or article.title), reverse=True)
-        return matched
+        return matched[: self.limit]
 
     def _search(self, terms: list[str], days: int, *, use_preferences: bool, strict: bool = False) -> list[Article]:
         since = (date.today() - timedelta(days=days)).isoformat()
