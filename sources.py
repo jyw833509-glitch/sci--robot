@@ -14,7 +14,11 @@ from search import Article, PubMedClient, score_article
 
 log = get_logger("sources")
 MAX_LOOKBACK_DAYS = 365 * 5
-SOURCE_QUALITY = {"PubMed": 5, "Europe PMC": 4, "Crossref": 2, "OpenAlex": 2, "bioRxiv": 1}
+SOURCE_QUALITY = {
+    "PubMed": 5, "Europe PMC": 4, "Crossref": 2, "OpenAlex": 2,
+    "bioRxiv": 1, "ChinaXiv（预印本）": 0,
+}
+CHINAXIV_WARNING = "预印本、未经严格同行评议"
 
 
 def _clean(value: object) -> str:
@@ -105,6 +109,7 @@ class MultiSourceClient:
             ("Europe PMC", "europe_pmc", lambda: self._europe_pmc_chinese(en_terms, since, strict)),
             ("Crossref", "crossref", lambda: self._crossref(zh_terms, since)),
             ("OpenAlex", "openalex", lambda: self._openalex_chinese(zh_terms, since)),
+            ("ChinaXiv", "chinaxiv", lambda: self._chinaxiv(zh_terms, since)),
         ]
         for name, provider_key, fetch in providers:
             if provider_key not in enabled:
@@ -121,7 +126,16 @@ class MultiSourceClient:
         for article in matched:
             article.score = self._query_score(article, [*zh_terms, *en_terms])
         matched.sort(key=lambda article: (article.score, article.pub_date), reverse=True)
-        return matched[: self.limit]
+        selected = matched[: self.limit]
+        # Keep a small, clearly labelled ChinaXiv section visible even when
+        # large formal indexes fill the first 100 positions. Formal versions
+        # still win during de-duplication and occupy at least 90% of the list.
+        china_candidates = [article for article in matched if article.source.startswith("ChinaXiv")]
+        present = {article.pmid for article in selected}
+        additions = [article for article in china_candidates if article.pmid not in present][:10]
+        if additions:
+            selected = selected[: max(0, self.limit - len(additions))] + additions
+        return selected
 
     def _search(self, terms: list[str], days: int, *, use_preferences: bool, strict: bool = False) -> list[Article]:
         since = (date.today() - timedelta(days=days)).isoformat()
@@ -361,6 +375,69 @@ class MultiSourceClient:
                 authors=_clean(item.get("authors")).split("; "), journal="bioRxiv", pub_date=str(item.get("date") or ""),
                 source="bioRxiv", source_url=f"https://www.biorxiv.org/content/{doi}v1"))
         return out
+
+    def _chinaxiv(self, terms: list[str], since: str) -> list[Article]:
+        """Search ChinaXiv's public search page without requiring an account."""
+        query = " ".join(dict.fromkeys(term for term in terms if term.strip()))
+        if not query:
+            return []
+        base = "https://www.chinaxiv.org"
+        headers = {
+            "User-Agent": "SciRobot/1.0 (public literature search)",
+            "Accept-Language": "zh-CN,zh;q=0.9,en;q=0.8",
+        }
+        session = requests.Session()
+        # ChinaXiv's public form requires an anonymous session cookie. No login
+        # or personal data is used, and provider failures remain isolated.
+        session.get(f"{base}/home.htm?locale=zh_CN", headers=headers,
+                    timeout=min(self.timeout, 15)).raise_for_status()
+        response = session.post(
+            f"{base}/user/search.htm",
+            data={"keywordbanner": query},
+            headers={**headers, "Referer": f"{base}/home.htm?locale=zh_CN"},
+            timeout=min(self.timeout, 20),
+        )
+        response.raise_for_status()
+        # ChinaXiv supplies one ranked public page per form request. Keeping to
+        # that page avoids its protected paging endpoint and keeps latency low.
+        pages = [response.text]
+
+        out: list[Article] = []
+        seen_ids: set[str] = set()
+        for document in pages:
+            blocks = re.findall(
+                r'<li>\s*<div class="flex hd">.*?</li>', document,
+                flags=re.IGNORECASE | re.DOTALL,
+            )
+            for block in blocks:
+                record = re.search(r'href="/abs/([^"?#]+)"', block, re.IGNORECASE)
+                title_match = re.search(r'<h3>\s*<a[^>]*>(.*?)</a>\s*</h3>', block,
+                                        re.IGNORECASE | re.DOTALL)
+                date_match = re.search(r'提交时间：</font>\s*(\d{4}-\d{2}-\d{2})', block)
+                if not record or not title_match or not date_match:
+                    continue
+                record_id, published = record.group(1).strip(), date_match.group(1)
+                if record_id in seen_ids or published < since or published > date.today().isoformat():
+                    continue
+                title = _clean(title_match.group(1))
+                if not title:
+                    continue
+                abstract_match = re.search(r'<font class="label">摘要：</font>(.*?)(?:</p>|<!--)', block,
+                                           re.IGNORECASE | re.DOTALL)
+                author_block = re.search(r'<div class="name">(.*?)</div>', block,
+                                         re.IGNORECASE | re.DOTALL)
+                author_html = author_block.group(1) if author_block else ""
+                authors = [_clean(value) for value in re.findall(r'<a[^>]*>(.*?)</a>', author_html, re.DOTALL)]
+                seen_ids.add(record_id)
+                out.append(Article(
+                    pmid=f"chinaxiv:{record_id}", title=title, title_zh=title,
+                    abstract=_clean(abstract_match.group(1)) if abstract_match else "",
+                    authors=[author for author in authors if author], journal=CHINAXIV_WARNING,
+                    pub_date=published, publication_types=["Preprint", CHINAXIV_WARNING],
+                    language="zh", source="ChinaXiv（预印本）",
+                    source_url=f"{base}/abs/{record_id}",
+                ))
+        return out[: self.limit]
 
     @staticmethod
     def _deduplicate(articles: Iterable[Article]) -> list[Article]:

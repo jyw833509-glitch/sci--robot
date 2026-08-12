@@ -71,6 +71,10 @@ def _journal_of(a: Article) -> str:
     return a.journal_abbr or a.journal or "—"
 
 
+def _is_preprint(a: Article) -> bool:
+    return a.source.startswith("ChinaXiv") or "preprint" in " ".join(a.publication_types).lower()
+
+
 def _date_of(a: Article) -> str:
     return a.pub_date or a.entrez_date or "—"
 
@@ -159,6 +163,8 @@ def _render_article_html(index: int, a: Article, cfg) -> str:
           </td>
         </tr>
       </table>
+
+      {f'<div style="margin-top:10px;padding:8px 12px;border-radius:8px;background:#fff7ed;color:#b45309;font-weight:700;">⚠ 预印本、未经严格同行评议</div>' if _is_preprint(a) else ''}
 
       <div style="margin-top:10px;font-size:12px;color:{C_MUTED};line-height:1.8;">
         <div><span style="color:{C_LIGHT};">期刊：</span>{_esc(_journal_of(a))}
@@ -255,6 +261,8 @@ def _render_markdown(articles: Sequence[Article], cfg, report_date: str, total_f
         ]
         if a.title_zh and a.title:
             lines += [f"*{a.title}*", ""]
+        if _is_preprint(a):
+            lines += ["> ⚠ **预印本、未经严格同行评议**", ""]
         lines += [
             "| 项目 | 内容 |",
             "| --- | --- |",

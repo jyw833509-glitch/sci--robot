@@ -139,7 +139,7 @@ DEFAULTS: Dict[str, Any] = {
     "search_sources": {
         # All sources are free and queried independently; unavailable sources
         # are skipped without blocking the daily push.
-        "enabled": ["pubmed", "europe_pmc", "crossref", "openalex", "biorxiv"],
+        "enabled": ["pubmed", "europe_pmc", "crossref", "openalex", "biorxiv", "chinaxiv"],
     },
     "report": {
         "title": "SciRobot 文献日报",

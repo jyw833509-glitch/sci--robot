@@ -220,7 +220,8 @@ content:
 # ------------------------- 3.7 免费检索来源 -------------------------
 # 某个来源临时不可用时会自动跳过，不影响其他来源和当天推送。
 search_sources:
-  enabled: ["pubmed", "europe_pmc", "crossref", "openalex", "biorxiv"]
+  # ChinaXiv 结果会明确标注为“预印本、未经严格同行评议”。
+  enabled: ["pubmed", "europe_pmc", "crossref", "openalex", "biorxiv", "chinaxiv"]
 
 
 # ------------------------- 4. 日报 -------------------------

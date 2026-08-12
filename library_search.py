@@ -171,16 +171,23 @@ def show_library_search() -> None:
 
     chinese_body = ttk.Frame(chinese); chinese_body.pack(fill=BOTH, expand=True)
     chinese_tree = make_table(chinese_body); chinese_items = {}
+    chinese_tree.tag_configure("preprint", foreground="#b45309")
     chinese_footer = ttk.Frame(chinese); chinese_footer.pack(fill=X, pady=(8, 0))
     ttk.Label(chinese_footer, textvariable=chinese_status, foreground="#64748b").pack(side=LEFT)
 
     def populate_chinese(articles, mode: str, untranslated: int = 0):
         chinese_tree.delete(*chinese_tree.get_children()); chinese_items.clear()
         for article in articles:
-            item = chinese_tree.insert("", END, values=(article.pub_date, article.source, article.journal or "—", article.title_zh or article.title))
+            title = article.title_zh or article.title
+            if article.source.startswith("ChinaXiv"):
+                title = f"【预印本、未经严格同行评议】{title}"
+            tags = ("preprint",) if article.source.startswith("ChinaXiv") else ()
+            item = chinese_tree.insert("", END, values=(article.pub_date, article.source, article.journal or "—", title), tags=tags)
             chinese_items[item] = article
         note = f"；另有 {untranslated} 篇因中文题名转换失败未显示" if untranslated else ""
-        chinese_status.set(f"{mode}检索显示 {len(articles)} 篇中文原文（已去重{note}）。选择后可加入本地库。")
+        preprints = sum(article.source.startswith("ChinaXiv") for article in articles)
+        warning = f"；其中 {preprints} 篇为预印本、未经严格同行评议" if preprints else ""
+        chinese_status.set(f"{mode}检索显示 {len(articles)} 篇中文原文（已去重{note}）。选择后可加入本地库{warning}。")
 
     def translate_chinese_titles(articles):
         pending = [article for article in articles if not _contains_chinese(article.title_zh or article.title)]

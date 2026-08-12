@@ -210,6 +210,10 @@ pipeline:
 #   2) 把 feed.json 托管到一个所有人能访问的 URL（GitHub .raw / 腾讯云 COS / 内网静态文件…）；
 #   3) 在 config.yaml 里设  content.mode: feed  且  content.feed_url: "<那个URL>"，
 #      分发给同事即可。他们只读取同一份日历，内容必然一致，且随你更新而同步。
+search_sources:
+  # ChinaXiv 结果会明确标注为“预印本、未经严格同行评议”。
+  enabled: ["pubmed", "europe_pmc", "crossref", "openalex", "biorxiv", "chinaxiv"]
+
 content:
   mode: "feed"
   # feed 模式下，内容日历的地址（http(s) URL 或本地文件路径）
