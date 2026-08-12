@@ -13,6 +13,8 @@ from preferences import preference_terms
 from search import Article, PubMedClient, score_article
 
 log = get_logger("sources")
+MAX_LOOKBACK_DAYS = 365 * 5
+SOURCE_QUALITY = {"PubMed": 5, "Europe PMC": 4, "Crossref": 2, "OpenAlex": 2, "bioRxiv": 1}
 
 
 def _clean(value: object) -> str:
@@ -20,7 +22,29 @@ def _clean(value: object) -> str:
 
 
 def _title_key(title: str) -> str:
-    return re.sub(r"[^a-z0-9]", "", title.lower())[:180]
+    return re.sub(r"[^a-z0-9\u3400-\u9fff]", "", title.lower())[:180]
+
+
+def _normalise_search_text(value: str) -> str:
+    return " ".join(re.sub(r"[^a-z0-9\u3400-\u9fff]+", " ", (value or "").lower()).split())
+
+
+def _term_matches(text: str, term: str) -> bool:
+    """Phrase-aware matching with conservative plural/word-form tolerance."""
+    haystack, needle = _normalise_search_text(text), _normalise_search_text(term)
+    if not needle:
+        return False
+    if f" {needle} " in f" {haystack} ":
+        return True
+    wanted, available = needle.split(), haystack.split()
+    if not wanted or not available:
+        return False
+    for start in range(len(available) - len(wanted) + 1):
+        window = available[start:start + len(wanted)]
+        if all(actual == expected or (len(expected) >= 5 and actual.startswith(expected))
+               for actual, expected in zip(window, wanted)):
+            return True
+    return False
 
 
 def _doi(value: object) -> str:
@@ -64,7 +88,7 @@ class MultiSourceClient:
         terms = [part.strip() for part in keywords.replace("，", ",").replace("；", ",").split(",") if part.strip()]
         if not terms:
             return []
-        return self._search(terms, max(1, min(365, int(days))), use_preferences=False, strict=strict)
+        return self._search(terms, max(1, min(MAX_LOOKBACK_DAYS, int(days))), use_preferences=False, strict=strict)
 
     def search_chinese(self, chinese_keywords: str, english_keywords: str, days: int = 30, *, strict: bool = True) -> list[Article]:
         """Search only papers whose original publication language is Chinese."""
@@ -72,7 +96,7 @@ class MultiSourceClient:
         en_terms = [part.strip() for part in english_keywords.replace("，", ",").replace("；", ",").split(",") if part.strip()]
         if not zh_terms:
             return []
-        days = max(1, min(365, int(days)))
+        days = max(1, min(MAX_LOOKBACK_DAYS, int(days)))
         since = (date.today() - timedelta(days=days)).isoformat()
         results: list[Article] = []
         enabled = {str(name).strip().lower() for name in (self.cfg.get("search_sources.enabled") or [])}
@@ -92,8 +116,11 @@ class MultiSourceClient:
             except Exception as exc:
                 log.warning("%s 中文文献检索失败，已跳过：%s", name, exc)
         deduplicated = self._deduplicate(results)
-        matched = [article for article in deduplicated if self._matches_bilingual(article, zh_terms, en_terms, strict)]
-        matched.sort(key=lambda article: (article.pub_date, article.title_zh or article.title), reverse=True)
+        matched = [article for article in deduplicated
+                   if self._is_valid_article(article) and self._matches_bilingual(article, zh_terms, en_terms, strict)]
+        for article in matched:
+            article.score = self._query_score(article, [*zh_terms, *en_terms])
+        matched.sort(key=lambda article: (article.score, article.pub_date), reverse=True)
         return matched[: self.limit]
 
     def _search(self, terms: list[str], days: int, *, use_preferences: bool, strict: bool = False) -> list[Article]:
@@ -119,11 +146,13 @@ class MultiSourceClient:
                 log.info("%s 检索到 %d 篇", name, len(articles))
             except Exception as exc:
                 log.warning("%s 检索失败，已跳过：%s", name, exc)
-        deduplicated = self._deduplicate(results)
-        if strict and not use_preferences:
-            deduplicated = [article for article in deduplicated if self._matches_all(article, terms)]
+        deduplicated = [article for article in self._deduplicate(results) if self._is_valid_article(article)]
         if not use_preferences:
-            deduplicated.sort(key=lambda article: (article.pub_date, article.title), reverse=True)
+            deduplicated = [article for article in deduplicated if self._matches_terms(article, terms, strict)]
+        if not use_preferences:
+            for article in deduplicated:
+                article.score = self._query_score(article, terms)
+            deduplicated.sort(key=lambda article: (article.score, article.pub_date), reverse=True)
             return deduplicated
         if not self.cfg.get("relevance.enabled", True):
             return deduplicated
@@ -139,8 +168,38 @@ class MultiSourceClient:
 
     @staticmethod
     def _matches_all(article: Article, terms: list[str]) -> bool:
-        text = " ".join([article.title, article.abstract, " ".join(article.keywords)]).lower()
-        return all(term.lower() in text for term in terms)
+        text = " ".join([article.title, article.abstract, " ".join(article.keywords)])
+        return all(_term_matches(text, term) for term in terms)
+
+    @staticmethod
+    def _matches_terms(article: Article, terms: list[str], strict: bool) -> bool:
+        text = " ".join([article.title, article.abstract, " ".join(article.keywords)])
+        matches = [_term_matches(text, term) for term in terms]
+        if strict:
+            return all(matches)
+        # Broad mode still requires a topic hit in the title/keywords, or at
+        # least two independent terms in the searchable record.
+        title_keywords = " ".join([article.title, " ".join(article.keywords)])
+        return any(_term_matches(title_keywords, term) for term in terms) or sum(matches) >= min(2, len(terms))
+
+    @staticmethod
+    def _is_valid_article(article: Article) -> bool:
+        text = f"{article.title} {' '.join(article.publication_types)}".lower()
+        if any(marker in text for marker in ("retracted publication", "retraction of", "withdrawn")):
+            return False
+        if article.source == "Crossref" and article.publication_types:
+            return any(kind in {"journal-article", "proceedings-article"} for kind in article.publication_types)
+        return bool(article.title.strip())
+
+    @staticmethod
+    def _query_score(article: Article, terms: list[str]) -> int:
+        unique_terms = list(dict.fromkeys(term for term in terms if _normalise_search_text(term)))
+        title_hits = sum(_term_matches(article.title_zh or article.title, term) for term in unique_terms)
+        keyword_hits = sum(_term_matches(" ".join(article.keywords), term) for term in unique_terms)
+        abstract_hits = sum(_term_matches(article.abstract_zh or article.abstract, term) for term in unique_terms)
+        complete_title = bool(unique_terms) and title_hits == len(unique_terms)
+        return (title_hits * 8 + keyword_hits * 5 + abstract_hits * 2
+                + (8 if complete_title else 0) + SOURCE_QUALITY.get(article.source, 0))
 
     @staticmethod
     def _is_chinese_article(article: Article) -> bool:
@@ -151,9 +210,9 @@ class MultiSourceClient:
 
     @staticmethod
     def _matches_bilingual(article: Article, zh_terms: list[str], en_terms: list[str], strict: bool) -> bool:
-        text = " ".join([article.title, article.title_zh, article.abstract, article.abstract_zh, " ".join(article.keywords)]).lower()
+        text = " ".join([article.title, article.title_zh, article.abstract, article.abstract_zh, " ".join(article.keywords)])
         term_groups = list(zip(zh_terms, en_terms)) if len(zh_terms) == len(en_terms) else [(term, "") for term in zh_terms]
-        matches = [zh.lower() in text or bool(en and en.lower() in text) for zh, en in term_groups]
+        matches = [_term_matches(text, zh) or bool(en and _term_matches(text, en)) for zh, en in term_groups]
         return all(matches) if strict else any(matches)
 
     def _pubmed(self, terms: list[str], days: int, strict: bool) -> list[Article]:
@@ -219,7 +278,7 @@ class MultiSourceClient:
 
     def _crossref(self, terms: list[str], since: str) -> list[Article]:
         data = self._get("https://api.crossref.org/works", {
-            "query": " ".join(terms), "filter": f"from-pub-date:{since}",
+            "query.bibliographic": " ".join(terms), "filter": f"from-pub-date:{since},type:journal-article",
             "sort": "published", "order": "desc", "rows": self.limit,
         })
         out = []
@@ -242,7 +301,7 @@ class MultiSourceClient:
 
     def _openalex(self, terms: list[str], since: str) -> list[Article]:
         data = self._get("https://api.openalex.org/works", {
-            "search": " ".join(terms), "filter": f"from_publication_date:{since}",
+            "search": " ".join(terms), "filter": f"from_publication_date:{since},type:article",
             "per-page": self.limit, "sort": "publication_date:desc",
         })
         out = []

@@ -26,7 +26,10 @@ exe = EXE(
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
-    upx=True,
+    # A one-file executable must unpack Python's DLL on every launch.  Keep
+    # UPX disabled so antivirus/filesystem filters see a standard PE payload
+    # and extraction remains reliable across Windows machines.
+    upx=False,
     upx_exclude=[],
     runtime_tmpdir=None,
     console=False,

@@ -18,6 +18,34 @@ def _contains_chinese(text: str) -> bool:
     return any("\u3400" <= char <= "\u9fff" for char in (text or ""))
 
 
+def _lookback_days(value: str, unit: str) -> tuple[int, str]:
+    """Convert a day/month/year UI choice to a bounded search window."""
+    try:
+        amount = int(value)
+    except (TypeError, ValueError):
+        amount = 1
+    limits = {"日": 1825, "月": 60, "年": 5}
+    amount = max(1, min(limits.get(unit, 1825), amount))
+    days = amount if unit == "日" else amount * 30 if unit == "月" else amount * 365
+    return days, f"{amount}{unit}"
+
+
+def _bind_period_limit(spinbox, value_var: StringVar, unit_var: StringVar) -> None:
+    limits = {"日": 1825, "月": 60, "年": 5}
+
+    def update_limit(*_args):
+        maximum = limits.get(unit_var.get(), 1825)
+        spinbox.configure(to=maximum)
+        try:
+            if int(value_var.get()) > maximum:
+                value_var.set(str(maximum))
+        except ValueError:
+            value_var.set("1")
+
+    unit_var.trace_add("write", update_limit)
+    update_limit()
+
+
 def show_library_search() -> None:
     cfg, db = load_config(), get_database(load_config())
     root = Tk()
@@ -66,13 +94,19 @@ def show_library_search() -> None:
 
     # ----- Live, online search -----
     online = ttk.Frame(notebook, padding=14); notebook.add(online, text="联网即时检索")
-    online_query, days_var, online_status = StringVar(), StringVar(value="30"), StringVar(value="默认精准检索：逗号分隔的每个主题都必须命中。")
+    online_query = StringVar()
+    days_var, period_unit = StringVar(value="1"), StringVar(value="月")
+    online_status = StringVar(value="默认精准检索：逗号分隔的每个主题都必须命中。")
     strict_var = BooleanVar(value=True)
     online_bar = ttk.Frame(online); online_bar.pack(fill=X, pady=(0, 10))
     ttk.Label(online_bar, text="英文关键词：").pack(side=LEFT)
     online_entry = ttk.Entry(online_bar, textvariable=online_query, width=42); online_entry.pack(side=LEFT, padx=(0, 10))
-    ttk.Label(online_bar, text="回溯天数：").pack(side=LEFT)
-    ttk.Spinbox(online_bar, from_=1, to=365, width=5, textvariable=days_var).pack(side=LEFT, padx=(0, 10))
+    ttk.Label(online_bar, text="回溯：").pack(side=LEFT)
+    online_period_spin = ttk.Spinbox(online_bar, from_=1, to=1825, width=5, textvariable=days_var)
+    online_period_spin.pack(side=LEFT)
+    ttk.Combobox(online_bar, values=("日", "月", "年"), textvariable=period_unit,
+                 state="readonly", width=3).pack(side=LEFT, padx=(4, 10))
+    _bind_period_limit(online_period_spin, days_var, period_unit)
     ttk.Checkbutton(online_bar, text="精准检索（全部命中）", variable=strict_var).pack(side=LEFT)
     online_body = ttk.Frame(online); online_body.pack(fill=BOTH, expand=True)
     online_tree = make_table(online_body); online_items = {}
@@ -91,10 +125,9 @@ def show_library_search() -> None:
         keywords = online_query.get().strip()
         if not keywords:
             online_status.set("请先输入英文关键词。"); return
-        try: days = int(days_var.get())
-        except ValueError: days = 30
+        days, period_text = _lookback_days(days_var.get(), period_unit.get())
         strict = strict_var.get()
-        online_status.set("正在从五个免费来源检索，请稍候…")
+        online_status.set(f"正在检索近{period_text}文献并进行相关性核验，请稍候…")
         def worker():
             try:
                 articles = MultiSourceClient(cfg).search_keywords(keywords, days, strict=strict)
@@ -119,7 +152,7 @@ def show_library_search() -> None:
     # ----- Chinese-assisted live search -----
     chinese = ttk.Frame(notebook, padding=14); notebook.add(chinese, text="中文文献检索")
     chinese_query = StringVar()
-    chinese_days = StringVar(value="30")
+    chinese_days, chinese_unit = StringVar(value="1"), StringVar(value="月")
     chinese_strict = BooleanVar(value=True)
     chinese_status = StringVar(value="只返回原文语言为中文的文献；部分 PubMed 记录只提供英文索引题名。")
 
@@ -127,8 +160,12 @@ def show_library_search() -> None:
     ttk.Label(chinese_bar, text="中文主题：").pack(side=LEFT)
     chinese_entry = ttk.Entry(chinese_bar, textvariable=chinese_query, width=48)
     chinese_entry.pack(side=LEFT, padx=(0, 10))
-    ttk.Label(chinese_bar, text="回溯天数：").pack(side=LEFT)
-    ttk.Spinbox(chinese_bar, from_=1, to=365, width=5, textvariable=chinese_days).pack(side=LEFT, padx=(0, 10))
+    ttk.Label(chinese_bar, text="回溯：").pack(side=LEFT)
+    chinese_period_spin = ttk.Spinbox(chinese_bar, from_=1, to=1825, width=5, textvariable=chinese_days)
+    chinese_period_spin.pack(side=LEFT)
+    ttk.Combobox(chinese_bar, values=("日", "月", "年"), textvariable=chinese_unit,
+                 state="readonly", width=3).pack(side=LEFT, padx=(4, 10))
+    _bind_period_limit(chinese_period_spin, chinese_days, chinese_unit)
     ttk.Checkbutton(chinese_bar, text="精准检索（全部命中）", variable=chinese_strict).pack(side=LEFT)
     ttk.Button(chinese_bar, text="搜索中文文献", command=lambda: run_chinese_search()).pack(side=LEFT, padx=(10, 0))
 
@@ -168,11 +205,10 @@ def show_library_search() -> None:
         query = chinese_query.get().strip()
         if not query:
             chinese_status.set("请先输入中文主题或关键词。"); return
-        try: days = int(chinese_days.get())
-        except ValueError: days = 30
+        days, period_text = _lookback_days(chinese_days.get(), chinese_unit.get())
         strict = chinese_strict.get()
         mode = "精准" if strict else "宽泛"
-        chinese_status.set("正在转换检索词并筛选中文原文，请稍候…")
+        chinese_status.set(f"正在检索近{period_text}中文原文并进行相关性核验，请稍候…")
 
         def worker():
             try:
