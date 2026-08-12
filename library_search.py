@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import threading
 import webbrowser
-from tkinter import BOTH, END, LEFT, RIGHT, X, StringVar, Tk
+from tkinter import BOTH, END, LEFT, RIGHT, X, BooleanVar, StringVar, Tk
 from tkinter import ttk
 
 from config import load_config
@@ -60,7 +60,7 @@ def show_library_search() -> None:
     # ----- Live, online search -----
     online = ttk.Frame(notebook, padding=14); notebook.add(online, text="联网即时检索")
     online_query, days_var, online_status = StringVar(), StringVar(value="30"), StringVar(value="默认精准检索：逗号分隔的每个主题都必须命中。")
-    strict_var = ttk.BooleanVar(value=True)
+    strict_var = BooleanVar(value=True)
     online_bar = ttk.Frame(online); online_bar.pack(fill=X, pady=(0, 10))
     ttk.Label(online_bar, text="英文关键词：").pack(side=LEFT)
     online_entry = ttk.Entry(online_bar, textvariable=online_query, width=42); online_entry.pack(side=LEFT, padx=(0, 10))
