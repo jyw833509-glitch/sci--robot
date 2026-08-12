@@ -66,6 +66,36 @@ class MultiSourceClient:
             return []
         return self._search(terms, max(1, min(365, int(days))), use_preferences=False, strict=strict)
 
+    def search_chinese(self, chinese_keywords: str, english_keywords: str, days: int = 30, *, strict: bool = True) -> list[Article]:
+        """Search only papers whose original publication language is Chinese."""
+        zh_terms = [part.strip() for part in chinese_keywords.replace("，", ",").replace("；", ",").split(",") if part.strip()]
+        en_terms = [part.strip() for part in english_keywords.replace("，", ",").replace("；", ",").split(",") if part.strip()]
+        if not zh_terms:
+            return []
+        days = max(1, min(365, int(days)))
+        since = (date.today() - timedelta(days=days)).isoformat()
+        results: list[Article] = []
+        enabled = {str(name).strip().lower() for name in (self.cfg.get("search_sources.enabled") or [])}
+        providers = [
+            ("PubMed", "pubmed", lambda: self._pubmed_chinese(en_terms, days, strict)),
+            ("Europe PMC", "europe_pmc", lambda: self._europe_pmc_chinese(en_terms, since, strict)),
+            ("Crossref", "crossref", lambda: self._crossref(zh_terms, since)),
+            ("OpenAlex", "openalex", lambda: self._openalex_chinese(zh_terms, since)),
+        ]
+        for name, provider_key, fetch in providers:
+            if provider_key not in enabled:
+                continue
+            try:
+                articles = [article for article in fetch() if self._is_chinese_article(article)]
+                results.extend(articles)
+                log.info("%s 中文文献检索到 %d 篇", name, len(articles))
+            except Exception as exc:
+                log.warning("%s 中文文献检索失败，已跳过：%s", name, exc)
+        deduplicated = self._deduplicate(results)
+        matched = [article for article in deduplicated if self._matches_bilingual(article, zh_terms, en_terms, strict)]
+        matched.sort(key=lambda article: (article.pub_date, article.title_zh or article.title), reverse=True)
+        return matched
+
     def _search(self, terms: list[str], days: int, *, use_preferences: bool, strict: bool = False) -> list[Article]:
         since = (date.today() - timedelta(days=days)).isoformat()
         results: list[Article] = []
@@ -112,11 +142,37 @@ class MultiSourceClient:
         text = " ".join([article.title, article.abstract, " ".join(article.keywords)]).lower()
         return all(term.lower() in text for term in terms)
 
+    @staticmethod
+    def _is_chinese_article(article: Article) -> bool:
+        language = article.language.strip().lower().replace("_", "-")
+        if language in {"chi", "zho", "zh", "zh-cn", "chinese"} or language.startswith("zh-"):
+            return True
+        return bool(re.search(r"[\u3400-\u9fff]", article.title_zh or article.title))
+
+    @staticmethod
+    def _matches_bilingual(article: Article, zh_terms: list[str], en_terms: list[str], strict: bool) -> bool:
+        text = " ".join([article.title, article.title_zh, article.abstract, article.abstract_zh, " ".join(article.keywords)]).lower()
+        term_groups = list(zip(zh_terms, en_terms)) if len(zh_terms) == len(en_terms) else [(term, "") for term in zh_terms]
+        matches = [zh.lower() in text or bool(en and en.lower() in text) for zh, en in term_groups]
+        return all(matches) if strict else any(matches)
+
     def _pubmed(self, terms: list[str], days: int, strict: bool) -> list[Article]:
         client = PubMedClient(self.cfg)
         tag = (self.cfg.get("pubmed.field_tag") or "Title/Abstract").strip()
         suffix = f"[{tag}]" if tag else ""
         query = "(" + (" AND " if strict else " OR ").join(f'"{term}"{suffix}' for term in terms) + ")"
+        today = date.today()
+        pmids = client.search(query, mindate=(today - timedelta(days=days)).strftime("%Y/%m/%d"), maxdate=today.strftime("%Y/%m/%d"), retmax=self.limit)
+        return client.fetch(pmids)
+
+    def _pubmed_chinese(self, terms: list[str], days: int, strict: bool) -> list[Article]:
+        if not terms:
+            return []
+        client = PubMedClient(self.cfg)
+        tag = (self.cfg.get("pubmed.field_tag") or "Title/Abstract").strip()
+        suffix = f"[{tag}]" if tag else ""
+        topic = (" AND " if strict else " OR ").join(f'"{term}"{suffix}' for term in terms)
+        query = f"({topic}) AND chinese[lang]"
         today = date.today()
         pmids = client.search(query, mindate=(today - timedelta(days=days)).strftime("%Y/%m/%d"), maxdate=today.strftime("%Y/%m/%d"), retmax=self.limit)
         return client.fetch(pmids)
@@ -140,6 +196,27 @@ class MultiSourceClient:
                 source="Europe PMC", source_url=f"https://europepmc.org/article/{item.get('source', 'MED')}/{item.get('id', '')}"))
         return out
 
+    def _europe_pmc_chinese(self, terms: list[str], since: str, strict: bool = False) -> list[Article]:
+        if not terms:
+            return []
+        query = (" AND " if strict else " OR ").join(f'"{term}"' for term in terms)
+        data = self._get("https://www.ebi.ac.uk/europepmc/webservices/rest/search", {
+            "query": f"({query}) AND LANG:chi AND FIRST_PDATE:[{since} TO *]", "format": "json",
+            "resultType": "core", "pageSize": self.limit,
+        })
+        out = []
+        for item in data.get("resultList", {}).get("result", []):
+            doi = _doi(item.get("doi"))
+            pmid = str(item.get("pmid") or (f"doi:{doi}" if doi else f"eupmc:{item.get('id', '')}"))
+            if not pmid:
+                continue
+            out.append(Article(pmid=pmid, doi=doi, title=_clean(item.get("title")),
+                abstract=_clean(item.get("abstractText")), authors=_clean(item.get("authorString")).split(", "),
+                journal=_clean(item.get("journalTitle")), pub_date=str(item.get("firstPublicationDate") or ""),
+                keywords=[_clean(x) for x in item.get("keywordList", {}).get("keyword", [])], language=str(item.get("language") or "chi"),
+                source="Europe PMC", source_url=f"https://europepmc.org/article/{item.get('source', 'MED')}/{item.get('id', '')}"))
+        return out
+
     def _crossref(self, terms: list[str], since: str) -> list[Article]:
         data = self._get("https://api.crossref.org/works", {
             "query": " ".join(terms), "filter": f"from-pub-date:{since}",
@@ -159,7 +236,8 @@ class MultiSourceClient:
             authors = [" ".join(filter(None, [a.get("given", ""), a.get("family", "")])) for a in item.get("author", [])]
             out.append(Article(pmid=f"doi:{doi}", doi=doi, title=title, abstract=_clean(item.get("abstract")),
                 authors=authors, journal=_clean((item.get("container-title") or [""])[0]), pub_date=published,
-                publication_types=[str(item.get("type") or "")], source="Crossref", source_url=f"https://doi.org/{doi}"))
+                publication_types=[str(item.get("type") or "")], language=str(item.get("language") or ""),
+                source="Crossref", source_url=f"https://doi.org/{doi}"))
         return out
 
     def _openalex(self, terms: list[str], since: str) -> list[Article]:
@@ -181,7 +259,31 @@ class MultiSourceClient:
             venue = item.get("primary_location", {}).get("source", {}) or {}
             out.append(Article(pmid=f"doi:{doi}" if doi else f"openalex:{openalex_id}", doi=doi, title=title,
                 abstract=abstract, authors=authors, journal=_clean(venue.get("display_name")),
-                pub_date=str(item.get("publication_date") or ""), source="OpenAlex", source_url=str(item.get("id") or "")))
+                pub_date=str(item.get("publication_date") or ""), language=str(item.get("language") or ""),
+                source="OpenAlex", source_url=str(item.get("id") or "")))
+        return out
+
+    def _openalex_chinese(self, terms: list[str], since: str) -> list[Article]:
+        data = self._get("https://api.openalex.org/works", {
+            "search": " ".join(terms), "filter": f"from_publication_date:{since},language:zh",
+            "per-page": self.limit, "sort": "publication_date:desc",
+        })
+        out = []
+        for item in data.get("results", []):
+            doi = _doi(item.get("doi"))
+            openalex_id = str(item.get("id") or "").rsplit("/", 1)[-1]
+            title = _clean(item.get("title"))
+            if not title or not (doi or openalex_id):
+                continue
+            inverted = item.get("abstract_inverted_index") or {}
+            words = sorted(((pos, word) for word, positions in inverted.items() for pos in positions))
+            abstract = " ".join(word for _, word in words)
+            authors = [a.get("author", {}).get("display_name", "") for a in item.get("authorships", [])]
+            venue = item.get("primary_location", {}).get("source", {}) or {}
+            out.append(Article(pmid=f"doi:{doi}" if doi else f"openalex:{openalex_id}", doi=doi, title=title,
+                abstract=abstract, authors=authors, journal=_clean(venue.get("display_name")),
+                pub_date=str(item.get("publication_date") or ""), language=str(item.get("language") or "zh"),
+                source="OpenAlex", source_url=str(item.get("id") or "")))
         return out
 
     def _biorxiv(self, terms: list[str], since: str, strict: bool = False) -> list[Article]:

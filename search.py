@@ -340,6 +340,7 @@ def parse_pubmed_xml(xml_text: str) -> List[Article]:
         art = Article(
             pmid=pmid,
             title=_text(article_el.find("./ArticleTitle")),
+            title_zh=_text(article_el.find("./VernacularTitle")),
             abstract=_parse_abstract(article_el),
             authors=_parse_authors(article_el),
             journal=_text(article_el.find("./Journal/Title")),
