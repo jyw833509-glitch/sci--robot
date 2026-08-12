@@ -59,25 +59,25 @@ class MultiSourceClient:
         days = int(days or self.cfg.get("pubmed.lookback_days", 7) or 7)
         return self._search(self._terms(), days, use_preferences=True)
 
-    def search_keywords(self, keywords: str, days: int = 30) -> list[Article]:
+    def search_keywords(self, keywords: str, days: int = 30, *, strict: bool = True) -> list[Article]:
         """Run an on-demand multi-source search without changing saved preferences."""
-        terms = [part.strip() for part in keywords.replace("；", ",").split(",") if part.strip()]
+        terms = [part.strip() for part in keywords.replace("，", ",").replace("；", ",").split(",") if part.strip()]
         if not terms:
             return []
-        return self._search(terms, max(1, min(365, int(days))), use_preferences=False)
+        return self._search(terms, max(1, min(365, int(days))), use_preferences=False, strict=strict)
 
-    def _search(self, terms: list[str], days: int, *, use_preferences: bool) -> list[Article]:
+    def _search(self, terms: list[str], days: int, *, use_preferences: bool, strict: bool = False) -> list[Article]:
         since = (date.today() - timedelta(days=days)).isoformat()
         results: list[Article] = []
 
         # Each provider is isolated: a temporary outage must not stop the day’s push.
         enabled = {str(name).strip().lower() for name in (self.cfg.get("search_sources.enabled") or [])}
         providers = [
-            ("PubMed", lambda: PubMedClient(self.cfg).search_recent(days=days) if use_preferences else self._pubmed(terms, days)),
-            ("Europe PMC", lambda: self._europe_pmc(terms, since)),
+            ("PubMed", lambda: PubMedClient(self.cfg).search_recent(days=days) if use_preferences else self._pubmed(terms, days, strict)),
+            ("Europe PMC", lambda: self._europe_pmc(terms, since, strict)),
             ("Crossref", lambda: self._crossref(terms, since)),
             ("OpenAlex", lambda: self._openalex(terms, since)),
-            ("bioRxiv", lambda: self._biorxiv(terms, since)),
+            ("bioRxiv", lambda: self._biorxiv(terms, since, strict)),
         ]
         for name, fetch in providers:
             provider_key = name.lower().replace(" ", "_")
@@ -90,7 +90,12 @@ class MultiSourceClient:
             except Exception as exc:
                 log.warning("%s 检索失败，已跳过：%s", name, exc)
         deduplicated = self._deduplicate(results)
-        if not use_preferences or not self.cfg.get("relevance.enabled", True):
+        if strict and not use_preferences:
+            deduplicated = [article for article in deduplicated if self._matches_all(article, terms)]
+        if not use_preferences:
+            deduplicated.sort(key=lambda article: (article.pub_date, article.title), reverse=True)
+            return deduplicated
+        if not self.cfg.get("relevance.enabled", True):
             return deduplicated
         min_score = int(self.cfg.get("relevance.min_score", 0) or 0)
         kept: list[Article] = []
@@ -102,17 +107,22 @@ class MultiSourceClient:
         log.info("多源合并去重后 %d 篇，相关性筛选保留 %d 篇", len(deduplicated), len(kept))
         return kept
 
-    def _pubmed(self, terms: list[str], days: int) -> list[Article]:
+    @staticmethod
+    def _matches_all(article: Article, terms: list[str]) -> bool:
+        text = " ".join([article.title, article.abstract, " ".join(article.keywords)]).lower()
+        return all(term.lower() in text for term in terms)
+
+    def _pubmed(self, terms: list[str], days: int, strict: bool) -> list[Article]:
         client = PubMedClient(self.cfg)
         tag = (self.cfg.get("pubmed.field_tag") or "Title/Abstract").strip()
         suffix = f"[{tag}]" if tag else ""
-        query = "(" + " OR ".join(f'"{term}"{suffix}' for term in terms) + ")"
+        query = "(" + (" AND " if strict else " OR ").join(f'"{term}"{suffix}' for term in terms) + ")"
         today = date.today()
         pmids = client.search(query, mindate=(today - timedelta(days=days)).strftime("%Y/%m/%d"), maxdate=today.strftime("%Y/%m/%d"), retmax=self.limit)
         return client.fetch(pmids)
 
-    def _europe_pmc(self, terms: list[str], since: str) -> list[Article]:
-        query = " OR ".join(f'"{term}"' for term in terms)
+    def _europe_pmc(self, terms: list[str], since: str, strict: bool = False) -> list[Article]:
+        query = (" AND " if strict else " OR ").join(f'"{term}"' for term in terms)
         data = self._get("https://www.ebi.ac.uk/europepmc/webservices/rest/search", {
             "query": f"({query}) AND FIRST_PDATE:[{since} TO *]", "format": "json",
             "resultType": "core", "pageSize": self.limit,
@@ -174,13 +184,14 @@ class MultiSourceClient:
                 pub_date=str(item.get("publication_date") or ""), source="OpenAlex", source_url=str(item.get("id") or "")))
         return out
 
-    def _biorxiv(self, terms: list[str], since: str) -> list[Article]:
+    def _biorxiv(self, terms: list[str], since: str, strict: bool = False) -> list[Article]:
         data = self._get(f"https://api.biorxiv.org/details/biorxiv/{since}/{date.today().isoformat()}/0", {})
         out = []
         lower_terms = [term.lower() for term in terms]
         for item in data.get("collection", [])[: self.limit * 3]:
             title, abstract = _clean(item.get("title")), _clean(item.get("abstract"))
-            if lower_terms and not any(term in f"{title} {abstract}".lower() for term in lower_terms):
+            matched = all(term in f"{title} {abstract}".lower() for term in lower_terms) if strict else any(term in f"{title} {abstract}".lower() for term in lower_terms)
+            if lower_terms and not matched:
                 continue
             doi = _doi(item.get("doi"))
             if not doi:

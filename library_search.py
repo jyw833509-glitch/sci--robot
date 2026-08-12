@@ -59,12 +59,14 @@ def show_library_search() -> None:
 
     # ----- Live, online search -----
     online = ttk.Frame(notebook, padding=14); notebook.add(online, text="联网即时检索")
-    online_query, days_var, online_status = StringVar(), StringVar(value="30"), StringVar(value="输入英文关键词后开始搜索；多个关键词可用逗号分隔。")
+    online_query, days_var, online_status = StringVar(), StringVar(value="30"), StringVar(value="默认精准检索：逗号分隔的每个主题都必须命中。")
+    strict_var = ttk.BooleanVar(value=True)
     online_bar = ttk.Frame(online); online_bar.pack(fill=X, pady=(0, 10))
     ttk.Label(online_bar, text="英文关键词：").pack(side=LEFT)
     online_entry = ttk.Entry(online_bar, textvariable=online_query, width=42); online_entry.pack(side=LEFT, padx=(0, 10))
     ttk.Label(online_bar, text="回溯天数：").pack(side=LEFT)
     ttk.Spinbox(online_bar, from_=1, to=365, width=5, textvariable=days_var).pack(side=LEFT, padx=(0, 10))
+    ttk.Checkbutton(online_bar, text="精准检索（全部命中）", variable=strict_var).pack(side=LEFT)
     online_body = ttk.Frame(online); online_body.pack(fill=BOTH, expand=True)
     online_tree = make_table(online_body); online_items = {}
     footer = ttk.Frame(online); footer.pack(fill=X, pady=(8, 0))
@@ -75,7 +77,8 @@ def show_library_search() -> None:
         for article in articles:
             item = online_tree.insert("", END, values=(article.pub_date, article.source, article.journal or "—", article.title))
             online_items[item] = article
-        online_status.set(f"联网找到 {len(articles)} 篇（已按 DOI、PMID 和标题去重）。选择后可加入本地库。")
+        mode = "精准" if strict_var.get() else "宽泛"
+        online_status.set(f"{mode}检索找到 {len(articles)} 篇（已按 DOI、PMID 和标题去重）。选择后可加入本地库。")
 
     def run_online():
         keywords = online_query.get().strip()
@@ -86,7 +89,7 @@ def show_library_search() -> None:
         online_status.set("正在从五个免费来源检索，请稍候…")
         def worker():
             try:
-                articles = MultiSourceClient(cfg).search_keywords(keywords, days)
+                articles = MultiSourceClient(cfg).search_keywords(keywords, days, strict=strict_var.get())
                 root.after(0, lambda: populate_online(articles))
             except Exception as exc:
                 root.after(0, lambda: online_status.set(f"检索失败：{exc}"))

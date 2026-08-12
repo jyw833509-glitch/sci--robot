@@ -339,7 +339,10 @@ class Database:
         return [self._row_to_article(row) for row in rows]
 
     def search_library(self, query: str = "", source: str = "", limit: int = 500) -> List[Article]:
-        terms = [term.strip() for term in query.split() if term.strip()]
+        # Spaces and commas both separate required terms, matching the live
+        # search window's precise-search behavior.
+        normalized = query.replace("，", " ").replace("；", " ").replace(",", " ")
+        terms = [term.strip() for term in normalized.split() if term.strip()]
         clauses, values = [], []
         for term in terms:
             pattern = f"%{term}%"
