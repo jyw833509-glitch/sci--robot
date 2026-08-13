@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 from tkinter import BooleanVar, StringVar, Tk, Frame, Label, Entry, Spinbox
 from tkinter import BOTH, LEFT, RIGHT, X
@@ -65,6 +66,70 @@ def preference_terms(data: dict | None = None) -> list[str]:
             seen.add(cleaned.lower())
             result.append(cleaned)
     return result
+
+
+# These words are meaningful in life-science searches only when the paper also
+# contains molecular/cellular context.  Used alone they occur frequently in
+# microscopy, electronics, imaging and statistics papers.
+AMBIGUOUS_TERMS = {"signal", "signaling", "signalling"}
+BIOLOGICAL_SIGNAL_TERMS = (
+    "signal transduction", "signal pathway", "signaling pathway", "signalling pathway",
+    "cell signaling", "cell signalling", "molecular signaling", "molecular signalling",
+)
+BIOMEDICAL_CONTEXT_TERMS = (
+    "cell", "cellular", "protein", "gene", "genetic", "pathway", "receptor",
+    "kinase", "phosphorylation", "enzyme", "antibody", "cytokine", "ligand",
+    "metabolism", "metabolic", "microbiome", "microbial", "bacteria",
+    "chinese hamster ovary", "cho cell", "细胞", "蛋白", "基因", "通路",
+    "受体", "激酶", "代谢", "微生物", "抗体",
+)
+
+
+def _term_in_text(text: str, term: str) -> bool:
+    """Match phrases and whole English words instead of arbitrary substrings."""
+    cleaned = str(term or "").strip().lower()
+    if not cleaned:
+        return False
+    if re.search(r"[\u3400-\u9fff]", cleaned):
+        return cleaned in text
+    return bool(re.search(rf"(?<![a-z0-9]){re.escape(cleaned)}(?![a-z0-9])", text))
+
+
+def article_matches_preferences(article, data: dict | None = None) -> bool:
+    """Return True only when an article genuinely matches the saved profile.
+
+    At least one selected/custom term must match. Ambiguous terms such as
+    ``signal`` additionally require molecular or cellular context. Exclusion
+    terms always win.
+    """
+    data = data or load_preferences()
+    text = " ".join([
+        str(getattr(article, "title", "") or ""),
+        str(getattr(article, "title_zh", "") or ""),
+        str(getattr(article, "abstract", "") or ""),
+        str(getattr(article, "abstract_zh", "") or ""),
+        " ".join(getattr(article, "keywords", []) or []),
+        str(getattr(article, "journal", "") or ""),
+    ]).lower()
+
+    excluded = [str(term).strip() for term in (data.get("exclude_terms") or [])]
+    if any(_term_in_text(text, term) for term in excluded):
+        return False
+
+    terms = preference_terms(data)
+    if not terms:
+        return True
+    has_biomedical_context = any(_term_in_text(text, marker) for marker in BIOMEDICAL_CONTEXT_TERMS)
+    has_biological_signaling = any(_term_in_text(text, marker) for marker in BIOLOGICAL_SIGNAL_TERMS)
+    for term in terms:
+        if term.strip().lower() in AMBIGUOUS_TERMS:
+            if has_biomedical_context and has_biological_signaling:
+                return True
+            continue
+        if not _term_in_text(text, term):
+            continue
+        return True
+    return False
 
 
 def _terms(value: str) -> list[str]:

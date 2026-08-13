@@ -29,8 +29,9 @@ from database import get_database
 from feed import articles_for_date, load_feed
 from logger import get_logger
 from notifier import Notifier
-from preferences import load_preferences, personal_mode_active
+from preferences import article_matches_preferences, load_preferences, personal_mode_active, preference_terms
 from report import build_report, save_report
+from search import score_article
 from sources import MultiSourceClient
 from translate import Translator
 
@@ -167,7 +168,19 @@ def collect_articles(cfg, days: Optional[int] = None):
 
     # ---- 4. 取待推送 ----
     max_items = int(cfg.get("report.max_items", 30))
-    pending = db.get_unpushed(limit=max_items if max_items > 0 else 100)
+    # Re-check the current profile at delivery time. This prevents papers that
+    # entered the database under an older/broader preference from leaking into
+    # future pushes after the user changes their settings.
+    candidate_limit = max(500, (max_items if max_items > 0 else 100) * 10)
+    candidates = db.get_unpushed(limit=candidate_limit)
+    if preference_terms(preferences):
+        pending = [article for article in candidates
+                   if article_matches_preferences(article, preferences)]
+        pending.sort(key=lambda article: (score_article(article, cfg), article.entrez_date), reverse=True)
+    else:
+        pending = candidates
+    if max_items > 0:
+        pending = pending[:max_items]
     log.info("待推送文献 %d 篇", len(pending))
 
     # 每天只推 N 篇（默认 1 篇），其余留待后续工作日

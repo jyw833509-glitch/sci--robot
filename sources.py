@@ -9,7 +9,7 @@ from typing import Iterable
 import requests
 
 from logger import get_logger
-from preferences import preference_terms
+from preferences import article_matches_preferences, load_preferences, preference_terms
 from search import Article, PubMedClient, score_article
 
 log = get_logger("sources")
@@ -171,8 +171,11 @@ class MultiSourceClient:
         if not self.cfg.get("relevance.enabled", True):
             return deduplicated
         min_score = int(self.cfg.get("relevance.min_score", 0) or 0)
+        preferences = load_preferences()
         kept: list[Article] = []
         for article in deduplicated:
+            if preference_terms(preferences) and not article_matches_preferences(article, preferences):
+                continue
             article.score = score_article(article, self.cfg)
             if article.score >= min_score:
                 kept.append(article)
