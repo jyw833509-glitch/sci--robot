@@ -363,9 +363,15 @@ def start_scheduler(cfg) -> None:
         # sending again.  This applies regardless of run_on_start's setting.
         if needs_catchup:
             log.info("已错过今日定时推送，首次启动执行一次补推")
+            # Record every elapsed slot before running.  Even when retrieval or
+            # delivery fails, the scheduler must not retry every 20 seconds.
+            last_run.extend((now.date(), scheduled) for scheduled in job_times
+                            if scheduled < now.time())
             job()
         elif missed_today and already_sent:
             log.info("今天已有正式推送，启动时不重复补推")
+            last_run.extend((now.date(), scheduled) for scheduled in job_times
+                            if scheduled < now.time())
         next_run = _next_run_time()
         log.info("调度器已启动，下一次运行：%s",
                  next_run.strftime("%Y-%m-%d %H:%M:%S") if next_run else "未知")
@@ -377,6 +383,27 @@ def start_scheduler(cfg) -> None:
                 # 清理过期记录
                 today = now.date()
                 last_run[:] = [k for k in last_run if k[0] >= today]
+            else:
+                # A sleeping/suspended Windows process cannot execute inside
+                # the normal one-minute schedule window.  On the first loop
+                # after resume, catch up the latest elapsed slot when today has
+                # no successful push.  Add the slot before running to prevent
+                # rapid duplicate retries when a provider or notifier fails.
+                elapsed = [scheduled for scheduled in sorted(job_times)
+                           if scheduled < now.time()
+                           and (now.date(), scheduled) not in last_run]
+                if elapsed:
+                    latest = elapsed[-1]
+                    elapsed_keys = [(now.date(), scheduled) for scheduled in elapsed]
+                    last_run.extend(elapsed_keys)
+                    already_sent = bool(get_database(cfg).get_pushed_on_date(
+                        now.strftime("%Y-%m-%d")))
+                    if not already_sent and _is_workday(now, cfg):
+                        log.info(
+                            "检测到休眠/暂停后错过定时点 %s，立即执行一次补推",
+                            latest.strftime("%H:%M"),
+                        )
+                        job()
             time.sleep(20)
         log.info("调度器线程已退出")
 
