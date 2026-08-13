@@ -191,13 +191,22 @@ class MultiSourceClient:
     @staticmethod
     def _matches_terms(article: Article, terms: list[str], strict: bool) -> bool:
         text = " ".join([article.title, article.abstract, " ".join(article.keywords)])
-        matches = [_term_matches(text, term) for term in terms]
+        title_keywords = " ".join([article.title, " ".join(article.keywords)])
+        matches = [
+            _term_matches(text, term)
+            and article_matches_preferences(article, {
+                "topics": [], "include_terms": [term], "exclude_terms": [],
+            })
+            for term in terms
+        ]
+        prominent_matches = [_term_matches(title_keywords, term) for term in terms]
         if strict:
-            return all(matches)
+            # Precise search requires every concept somewhere in the record and
+            # at least one concept in title/keywords, not only deep in abstract.
+            return all(matches) and any(prominent_matches)
         # Broad mode still requires a topic hit in the title/keywords, or at
         # least two independent terms in the searchable record.
-        title_keywords = " ".join([article.title, " ".join(article.keywords)])
-        return any(_term_matches(title_keywords, term) for term in terms) or sum(matches) >= min(2, len(terms))
+        return any(hit and match for hit, match in zip(prominent_matches, matches)) or sum(matches) >= min(2, len(terms))
 
     @staticmethod
     def _is_valid_article(article: Article) -> bool:
@@ -228,9 +237,23 @@ class MultiSourceClient:
     @staticmethod
     def _matches_bilingual(article: Article, zh_terms: list[str], en_terms: list[str], strict: bool) -> bool:
         text = " ".join([article.title, article.title_zh, article.abstract, article.abstract_zh, " ".join(article.keywords)])
+        title_keywords = " ".join([article.title, article.title_zh, " ".join(article.keywords)])
         term_groups = list(zip(zh_terms, en_terms)) if len(zh_terms) == len(en_terms) else [(term, "") for term in zh_terms]
-        matches = [_term_matches(text, zh) or bool(en and _term_matches(text, en)) for zh, en in term_groups]
-        return all(matches) if strict else any(matches)
+        matches = []
+        prominent = []
+        for zh, en in term_groups:
+            alternatives = [term for term in (zh, en) if term]
+            matches.append(any(
+                _term_matches(text, term)
+                and article_matches_preferences(article, {
+                    "topics": [], "include_terms": [term], "exclude_terms": [],
+                })
+                for term in alternatives
+            ))
+            prominent.append(any(_term_matches(title_keywords, term) for term in alternatives))
+        return (all(matches) and any(prominent)) if strict else any(
+            match and title_hit for match, title_hit in zip(matches, prominent)
+        ) or sum(matches) >= min(2, len(matches))
 
     def _pubmed(self, terms: list[str], days: int, strict: bool) -> list[Article]:
         client = PubMedClient(self.cfg)

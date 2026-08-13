@@ -71,10 +71,11 @@ def preference_terms(data: dict | None = None) -> list[str]:
 # These words are meaningful in life-science searches only when the paper also
 # contains molecular/cellular context.  Used alone they occur frequently in
 # microscopy, electronics, imaging and statistics papers.
-AMBIGUOUS_TERMS = {"signal", "signaling", "signalling"}
+AMBIGUOUS_TERMS = {"signal", "signaling", "signalling", "信号"}
 BIOLOGICAL_SIGNAL_TERMS = (
     "signal transduction", "signal pathway", "signaling pathway", "signalling pathway",
     "cell signaling", "cell signalling", "molecular signaling", "molecular signalling",
+    "信号转导", "信号通路", "细胞信号", "分子信号",
 )
 BIOMEDICAL_CONTEXT_TERMS = (
     "cell", "cellular", "protein", "gene", "genetic", "pathway", "receptor",
