@@ -1,230 +1,233 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-13 00:08:01",
+  "generated_at": "2026-08-14 00:08:49",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 74,
+  "total_articles": 75,
   "calendar": {
     "2026-08-04": [
       "42188602"
     ],
     "2026-08-05": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-06": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-07": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-10": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-11": [
-      "42013000"
+      "42235435"
     ],
     "2026-08-12": [
-      "41903239"
+      "42013000"
     ],
     "2026-08-13": [
-      "41864523"
+      "41903239"
     ],
     "2026-08-14": [
-      "42563142"
+      "41864523"
     ],
     "2026-08-17": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-18": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-19": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-20": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-21": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-24": [
-      "42084290"
+      "42192004"
     ],
     "2026-08-25": [
-      "41858189"
+      "42084290"
     ],
     "2026-08-26": [
-      "42570623"
+      "41858189"
     ],
     "2026-08-27": [
-      "42470740"
+      "42570623"
     ],
     "2026-08-28": [
-      "42368154"
+      "42470740"
     ],
     "2026-08-31": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-01": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-02": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-03": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-04": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-07": [
-      "42043509"
+      "42155371"
     ],
     "2026-09-08": [
-      "42041385"
+      "42043509"
     ],
     "2026-09-09": [
-      "42026710"
+      "42041385"
     ],
     "2026-09-10": [
-      "41930919"
+      "42026710"
     ],
     "2026-09-11": [
-      "41877579"
+      "41930919"
     ],
     "2026-09-14": [
-      "42489360"
+      "41877579"
     ],
     "2026-09-15": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-16": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-17": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-18": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-21": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-22": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-23": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-24": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-25": [
-      "42028833"
+      "42069986"
     ],
     "2026-09-28": [
-      "41996158"
+      "42028833"
     ],
     "2026-09-29": [
-      "41895447"
+      "41996158"
     ],
     "2026-09-30": [
-      "41887562"
+      "41895447"
     ],
     "2026-10-01": [
-      "42546983"
+      "41887562"
     ],
     "2026-10-02": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-05": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-06": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-07": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-08": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-09": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-12": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-13": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-14": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-15": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-16": [
-      "42005515"
+      "42011714"
     ],
     "2026-10-19": [
-      "41996200"
+      "42005515"
     ],
     "2026-10-20": [
-      "41975635"
+      "41996200"
     ],
     "2026-10-21": [
-      "41936564"
+      "41975635"
     ],
     "2026-10-22": [
-      "41905654"
+      "41936564"
     ],
     "2026-10-23": [
-      "42568918"
+      "41905654"
     ],
     "2026-10-26": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-27": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-28": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-29": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-30": [
-      "42285912"
+      "42449784"
     ],
     "2026-11-02": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-03": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-04": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-05": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-06": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-09": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-10": [
-      "42037172"
+      "42093402"
     ],
     "2026-11-11": [
-      "41925250"
+      "42037172"
     ],
     "2026-11-12": [
-      "41900807"
+      "41925250"
     ],
     "2026-11-13": [
+      "41900807"
+    ],
+    "2026-11-16": [
       "41873887"
     ]
   },
@@ -269,6 +272,41 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42188602/",
       "doi_url": "https://doi.org/10.3390/toxins18050199"
+    },
+    "42586433": {
+      "pmid": "42586433",
+      "title": "Biophysical investigations into the impact of crystallization conditions on monoclonal antibody properties and purification.",
+      "abstract": "Crystallization of monoclonal antibodies (mAbs) is a challenging problem given their large size and inherent structural complexity. Thousands of conditions need to be screened to arrive at a promising crystallization hit. Historically, crystallization has been successfully applied for preparative-scale purification and manufacturing of small molecules but rarely to produce mAbs, large globular proteins and peptides other than insulins. There is tremendous interest in the biopharmaceutical industry in exploring and implementing alternative strategies for the purification of biologics. One such non-platform, unit operation is crystallization. However, translatability across scales, robustness and amenability for large-scale processing are key challenges that need to be overcome to realize the success of crystallization as a unit operation in biomanufacturing. In this work, we take a biophysical characterization- driven approach to 1) elucidate differences between two unique crystallization conditions, previously identified via high-throughput screening, for a IgG4 mAb, and 2) demonstrate that the fundamental understanding generated from this biophysical characterization can enable a rational selection of crystallization conditions for bioprocessing applications. Results show that the crystallization conditions, both of which crystallize the mAb in two unique crystal structures, can impact the mAb structure and solution-state biophysical properties quite differently leading to significantly different outcomes in thermal and colloidal stability of the protein as well as in the purification of the mAb via crystallization as a unit operation. Second, this work highlights that co-crystallization of a large macromolecule like a mAb with a small molecule like caffeine can dramatically influence solution stability as well as impurity rejection. Third, and related to above we demonstrate that not all crystallization conditions that lead to structure elucidation are amenable for bioprocessing, as certain solution conditions can negatively impact protein solution stability and conformation, impurity co-precipitation thereby leading to lower impurity clearance from complex bioprocess feeds. For bioprocessing applications it is therefore critical to understand the impact of a condition on not just the pure mAb but also on the mAb in complex solutions alongside impurities.",
+      "authors": [
+        "Divya Chandra",
+        "Sanjeev Agarwal",
+        "Siddhi Patel",
+        "Sunitha Kandula"
+      ],
+      "journal": "Journal of pharmaceutical sciences",
+      "journal_abbr": "J Pharm Sci",
+      "pub_date": "2026-08-12",
+      "entrez_date": "2026-08-12",
+      "doi": "10.1016/j.xphs.2026.104459",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "colloidal stability",
+        "monoclonal antibody crystallization",
+        "non-chromatographic purification"
+      ],
+      "affiliation": "Process Research and Development, Merck &Co., Inc., 126 East Lincoln Avenue, Rahway, NJ 07065. Electronic address: divya.chandra@merck.com.",
+      "language": "eng",
+      "title_zh": "关于结晶条件对单克隆抗体特性和纯化影响的生物物理学研究。",
+      "abstract_zh": "鉴于单克隆抗体 (mAb) 的体积大和固有的结构复杂性，其结晶是一个具有挑战性的问题。需要筛选数千种条件才能获得有希望的结晶结果。历史上，结晶已成功应用于小分子的制备级纯化和制造，但很少用于生产单克隆抗体、大球状蛋白和胰岛素以外的肽。生物制药行业对探索和实施生物制品纯化的替代策略有着极大的兴趣。结晶就是这样一种非平台、单元操作。然而，跨尺度的可翻译性、大规模加工的稳健性和适应性是实现结晶作为生物制造中的单元操作的成功需要克服的关键挑战。\n在这项工作中，我们采用生物物理表征驱动的方法来 1) 阐明先前通过高通量筛选鉴定的 IgG4 mAb 的两种独特结晶条件之间的差异，2) 证明从这种生物物理表征中产生的基本理解可以为生物加工应用合理选择结晶条件。结果表明，结晶条件（这两种条件均使 mAb 结晶为两种独特的晶体结构）会对 mAb 结构和溶液态生物物理性质产生截然不同的影响，从而导致蛋白质的热稳定性和胶体稳定性以及通过结晶作为单元操作纯化 mAb 的结果显着不同。其次，这项工作强调了单克隆抗体等大分子与咖啡因等小分子的共结晶可以极大地影响溶液稳定性和杂质剔除率。\n第三，与上述相关，我们证明并非所有导致结构阐明的结晶条件都适合生物加工，因为某些溶液条件会对蛋白质溶液稳定性和构象、杂质共沉淀产生负面影响，从而导致复杂生物加工原料中杂质清除率降低。因此，对于生物加工应用，了解条件不仅对纯 mAb 的影响，而且对复杂溶液中的 mAb 和杂质的影响也至关重要。",
+      "translate_provider": "google",
+      "score": 9,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42586433/",
+      "doi_url": "https://doi.org/10.1016/j.xphs.2026.104459"
     },
     "42496057": {
       "pmid": "42496057",
@@ -1941,7 +1979,7 @@
       ],
       "journal": "Analytical methods : advancing methods and applications",
       "journal_abbr": "Anal Methods",
-      "pub_date": "2026-07-10",
+      "pub_date": "2026-08-13",
       "entrez_date": "2026-07-10",
       "doi": "10.1039/d6ay00620e",
       "publication_types": [
