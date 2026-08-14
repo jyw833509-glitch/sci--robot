@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-14 00:08:49",
+  "generated_at": "2026-08-14 22:54:05",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 75,
+  "total_articles": 74,
   "calendar": {
     "2026-08-04": [
       "42188602"
@@ -54,180 +54,177 @@
       "42084290"
     ],
     "2026-08-26": [
-      "41858189"
-    ],
-    "2026-08-27": [
       "42570623"
     ],
-    "2026-08-28": [
+    "2026-08-27": [
       "42470740"
     ],
-    "2026-08-31": [
+    "2026-08-28": [
       "42368154"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42346963"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42307050"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42276211"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42214142"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42155371"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "42043509"
     ],
-    "2026-09-09": [
+    "2026-09-08": [
       "42041385"
     ],
-    "2026-09-10": [
+    "2026-09-09": [
       "42026710"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "41930919"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "41877579"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42489360"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42450443"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42376876"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42332429"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42292894"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42231136"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42202083"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42112447"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42069986"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42028833"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "41996158"
     ],
-    "2026-09-30": [
+    "2026-09-29": [
       "41895447"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "41887562"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42546983"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42429162"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42414861"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42345899"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42273649"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42166563"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42125798"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42119499"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42068121"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42049075"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42011714"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "42005515"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "41996200"
     ],
-    "2026-10-21": [
+    "2026-10-20": [
       "41975635"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "41936564"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "41905654"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42568918"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42554770"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42487284"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42458707"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42449784"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42285912"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42276533"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42272446"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42217505"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42145184"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42129093"
     ],
-    "2026-11-10": [
+    "2026-11-09": [
       "42093402"
     ],
-    "2026-11-11": [
+    "2026-11-10": [
       "42037172"
     ],
-    "2026-11-12": [
+    "2026-11-11": [
       "41925250"
     ],
-    "2026-11-13": [
+    "2026-11-12": [
       "41900807"
     ],
-    "2026-11-16": [
+    "2026-11-13": [
       "41873887"
     ]
   },
@@ -300,7 +297,7 @@
       "language": "eng",
       "title_zh": "关于结晶条件对单克隆抗体特性和纯化影响的生物物理学研究。",
       "abstract_zh": "鉴于单克隆抗体 (mAb) 的体积大和固有的结构复杂性，其结晶是一个具有挑战性的问题。需要筛选数千种条件才能获得有希望的结晶结果。历史上，结晶已成功应用于小分子的制备级纯化和制造，但很少用于生产单克隆抗体、大球状蛋白和胰岛素以外的肽。生物制药行业对探索和实施生物制品纯化的替代策略有着极大的兴趣。结晶就是这样一种非平台、单元操作。然而，跨尺度的可翻译性、大规模加工的稳健性和适应性是实现结晶作为生物制造中的单元操作的成功需要克服的关键挑战。\n在这项工作中，我们采用生物物理表征驱动的方法来 1) 阐明先前通过高通量筛选鉴定的 IgG4 mAb 的两种独特结晶条件之间的差异，2) 证明从这种生物物理表征中产生的基本理解可以为生物加工应用合理选择结晶条件。结果表明，结晶条件（这两种条件均使 mAb 结晶为两种独特的晶体结构）会对 mAb 结构和溶液态生物物理性质产生截然不同的影响，从而导致蛋白质的热稳定性和胶体稳定性以及通过结晶作为单元操作纯化 mAb 的结果显着不同。其次，这项工作强调了单克隆抗体等大分子与咖啡因等小分子的共结晶可以极大地影响溶液稳定性和杂质剔除率。\n第三，与上述相关，我们证明并非所有导致结构阐明的结晶条件都适合生物加工，因为某些溶液条件会对蛋白质溶液稳定性和构象、杂质共沉淀产生负面影响，从而导致复杂生物加工原料中杂质清除率降低。因此，对于生物加工应用，了解条件不仅对纯 mAb 的影响，而且对复杂溶液中的 mAb 和杂质的影响也至关重要。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 9,
       "source": "PubMed",
       "source_url": "",
@@ -864,45 +861,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42084290/",
       "doi_url": "https://doi.org/10.1002/btpr.88516"
-    },
-    "41858189": {
-      "pmid": "41858189",
-      "title": "Multiple Heart-Cut Ion-Exchange Chromatography-Reversed-Phase Liquid Chromatography Platform for Online Desalting and Fractionation of Monoclonal Antibody Charge Variants.",
-      "abstract": "Minor deviations in biopharmaceutical manufacturing processes, such as those used for monoclonal antibodies (mAbs), can introduce structural modifications that alter protein efficacy and safety. Monitoring these changes is critical to ensure product consistency and efficacy. Ion-exchange chromatography (IEC) is widely employed to assess product quality by separating charge variants. However, the use of non-volatile salts in IEC makes direct identification and characterization of these variants difficult. In this study, we developed a multi-heart-cut IEC-reversed-phase liquid chromatography (RPLC) platform that enables the separation, online concentration, desalting, and fractionation of mAb charge variants. The system integrates a 10-port valve and a six-column selector valve, allowing automated collection of up to five charge variants within a single analytical workflow. Moreover, the platform can be directly coupled to mass spectrometry for the characterization of charge heterogeneity and glycosylation. Systematic optimization of the capture and buffer-exchange conditions, including evaluation of stationary phase types and mobile phase compositions, was performed to maximize overall recovery. This platform can also be used for other chromatographic modes, such as hydrophobic interaction chromatography or size-exclusion chromatography. This integrated multiple heart-cut IEC-RPLC platform provides a high-resolution and efficient platform for detailed characterization of mAb charge variants, facilitating the characterization of critical product quality attributes.",
-      "authors": [
-        "Annika A M van der Zon",
-        "Chuck van der Veen",
-        "Mandon Cheung",
-        "Melissa Baerenfaenger",
-        "Govert W Somsen",
-        "Andrea F G Gargano"
-      ],
-      "journal": "Journal of separation science",
-      "journal_abbr": "J Sep Sci",
-      "pub_date": "2026-03",
-      "entrez_date": "2026-03-20",
-      "doi": "10.1002/jssc.70389",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "HRMS",
-        "charge heterogeneity",
-        "fractionation",
-        "ion‐exchange",
-        "mAbs"
-      ],
-      "affiliation": "Analytical Chemistry Group, University of Amsterdam, Van't Hoff Institute for Molecular Sciences, Amsterdam, The Netherlands.",
-      "language": "eng",
-      "title_zh": "用于单克隆抗体电荷变体在线脱盐和分级的多重中心切割离子交换色谱反相液相色谱平台。",
-      "abstract_zh": "生物制药生产工艺中的微小偏差，例如用于单克隆抗体 (mAb) 的工艺，可能会引入结构修饰，从而改变蛋白质的功效和安全性。监控这些变化对于确保产品的一致性和功效至关重要。离子交换色谱 (IEC) 广泛用于通过分离电荷变体来评估产品质量。然而，IEC 中使用非挥发性盐使得直接识别和表征这些变体变得困难。在这项研究中，我们开发了一个多心切割 IEC 反相液相色谱 (RPLC) 平台，可实现 mAb 电荷变体的分离、在线浓缩、脱盐和分馏。该系统集成了一个 10 通阀和一个六柱选择阀，允许在单个分析工作流程中自动收集多达五种电荷变体。此外，该平台可以直接与质谱联用，用于表征电荷异质性和糖基化。\n对捕获和缓冲液交换条件进行系统优化，包括评估固定相类型和流动相组成，以最大限度地提高总体回收率。该平台还可用于其他色谱模式，例如疏水相互作用色谱或尺寸排阻色谱。这种集成的多中心切割 IEC-RPLC 平台为 mAb 电荷变体的详细表征提供了高分辨率和高效的平台，有助于关键产品质量属性的表征。",
-      "translate_provider": "",
-      "score": 8,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41858189/",
-      "doi_url": "https://doi.org/10.1002/jssc.70389"
     },
     "42570623": {
       "pmid": "42570623",
