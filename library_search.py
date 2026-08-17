@@ -17,7 +17,7 @@ def _contains_chinese(text: str) -> bool:
     return any("\u3400" <= char <= "\u9fff" for char in (text or ""))
 
 
-def _prepare_chinese_titles(articles, translator, db, remote_limit: int = 12, progress=None):
+def _prepare_chinese_titles(articles, translator, db, remote_limit: int = 0, progress=None):
     """Prefer native/cached Chinese titles and remotely translate a small queue.
 
     ``articles`` is already relevance-ranked.  Cached translations never consume
@@ -41,23 +41,29 @@ def _prepare_chinese_titles(articles, translator, db, remote_limit: int = 12, pr
             pending.append(article)
 
     budget = max(0, int(remote_limit or 0))
-    queue = pending[:budget]
+    queue = pending if budget == 0 else pending[:budget]
     translated = []
+    attempted = 0
     for index, article in enumerate(queue, 1):
         if progress:
             progress(index, len(queue), len(native), len(cached))
+        attempted += 1
         title_zh, provider = translator.translate_text(article.title)
         if _contains_chinese(title_zh):
             article.title_zh = title_zh
             article.translate_provider = provider
             translated.append(article)
+        elif not translator.has_active_provider():
+            # All configured providers have failed or exhausted their quota.
+            # Stop this queue immediately instead of repeating doomed calls.
+            break
 
     visible = [*native, *cached, *translated]
     stats = {
         "native": len(native),
         "cached": len(cached),
         "translated": len(translated),
-        "remote_attempted": len(queue),
+        "remote_attempted": attempted,
         "not_shown": len(articles) - len(visible),
     }
     return visible, stats
@@ -234,7 +240,7 @@ def show_library_search() -> None:
         cached = int(title_stats.get("cached", 0))
         translated = int(title_stats.get("translated", 0))
         not_shown = int(title_stats.get("not_shown", 0))
-        note = f"；另有 {not_shown} 篇未消耗额度、暂不显示" if not_shown else ""
+        note = f"；另有 {not_shown} 篇因接口不可用或转换失败暂不显示" if not_shown else ""
         preprints = sum(article.source.startswith("ChinaXiv") for article in articles)
         warning = f"；其中 {preprints} 篇为预印本、未经严格同行评议" if preprints else ""
         chinese_status.set(
@@ -244,9 +250,9 @@ def show_library_search() -> None:
 
     def translate_chinese_titles(articles):
         try:
-            limit = max(0, int(cfg.get("translate.search_title_limit", 12) or 0))
+            limit = max(0, int(cfg.get("translate.search_title_limit", 0) or 0))
         except (TypeError, ValueError):
-            limit = 12
+            limit = 0
         translator = Translator(cfg, db)  # 复用实例：失败后不再反复请求同一后端
 
         def progress(index, total, native, cached):

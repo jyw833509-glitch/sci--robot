@@ -369,6 +369,10 @@ class Translator:
     def available_providers(self) -> List[str]:
         return [p.name for p in self.providers]
 
+    def has_active_provider(self) -> bool:
+        """Whether this translator can still make a useful provider attempt."""
+        return any(provider.name not in self._disabled for provider in self.providers)
+
     def translate_text(self, text: str) -> Tuple[str, str]:
         """
         翻译一段文本。

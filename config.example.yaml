@@ -124,13 +124,13 @@ translate:
   enabled: true
   # 翻译后端按顺序降级尝试，前一个失败自动切下一个
   # 可选： llm(推荐) / baidu / youdao / google / mymemory / none
-  providers: ["llm", "google", "mymemory"]
+  providers: ["llm", "baidu", "google", "mymemory"]
   # 单条文本最大翻译长度（超出会截断，避免费用失控）
   max_chars: 4000
   # 是否翻译标题
   translate_title: true
-  # 中文文献搜索每次最多新翻译的英文题名数；缓存命中不占额度
-  search_title_limit: 12
+  # 中文文献搜索新翻译题名数；0 表示不限制，接口耗尽时自动停止
+  search_title_limit: 0
   # 是否把译文缓存进数据库（同一段英文只翻译一次）
   cache: true
   # 每条翻译之间的间隔秒数（防止被限流）

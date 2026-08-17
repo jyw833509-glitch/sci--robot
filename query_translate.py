@@ -1,6 +1,8 @@
 """Chinese-to-English query conversion for on-demand literature search."""
 from __future__ import annotations
 
+import hashlib
+import random
 import re
 
 import requests
@@ -60,6 +62,31 @@ def _google(cfg, phrase: str) -> str:
     return "".join(segment[0] for segment in data[0] if segment and segment[0]).strip()
 
 
+def _baidu(cfg, phrase: str) -> str:
+    app_id = (cfg.get("translate.baidu.app_id") or "").strip()
+    app_key = (cfg.get("translate.baidu.app_key") or "").strip()
+    if not app_id or not app_key:
+        raise RuntimeError("未配置百度翻译 APPID 和密钥")
+    endpoint = cfg.get("translate.baidu.endpoint") or "https://fanyi-api.baidu.com/api/trans/vip/translate"
+    timeout = int(cfg.get("translate.baidu.timeout", 30) or 30)
+    salt = str(random.randint(10000, 99999999))
+    sign = hashlib.md5((app_id + phrase + salt + app_key).encode("utf-8")).hexdigest()
+    response = requests.post(
+        endpoint,
+        data={"q": phrase, "from": "zh", "to": "en", "appid": app_id, "salt": salt, "sign": sign},
+        timeout=timeout,
+        headers={"User-Agent": "SciRobot/1.0"},
+    )
+    response.raise_for_status()
+    data = response.json()
+    if "error_code" in data:
+        raise RuntimeError(f"百度翻译错误 {data.get('error_code')}: {data.get('error_msg')}")
+    result = " ".join(str(item.get("dst") or "").strip() for item in data.get("trans_result", [])).strip()
+    if not result:
+        raise RuntimeError("百度翻译未返回译文")
+    return result
+
+
 def _mymemory(cfg, phrase: str) -> str:
     endpoint = cfg.get("translate.mymemory.endpoint") or "https://api.mymemory.translated.net/get"
     timeout = int(cfg.get("translate.mymemory.timeout", 20) or 20)
@@ -93,7 +120,7 @@ def translate_chinese_query(text: str, cfg) -> tuple[str, str]:
             continue
 
         value = ""
-        for name, provider in (("Google", _google), ("MyMemory", _mymemory)):
+        for name, provider in (("百度", _baidu), ("Google", _google), ("MyMemory", _mymemory)):
             try:
                 value = provider(cfg, phrase)
                 if value:
