@@ -136,6 +136,8 @@ translate:
   max_chars: 4000
   # 是否翻译标题
   translate_title: true
+  # 中文文献搜索每次最多新翻译的英文题名数；缓存命中不占额度
+  search_title_limit: 12
   # 是否把译文缓存进数据库（同一段英文只翻译一次）
   cache: true
   # 每条翻译之间的间隔秒数（防止被限流）

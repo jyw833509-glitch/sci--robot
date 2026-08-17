@@ -87,6 +87,8 @@ DEFAULTS: Dict[str, Any] = {
         "providers": ["llm", "google", "mymemory"],
         "max_chars": 4000,
         "translate_title": True,
+        # 中文文献搜索每次最多新翻译的英文题名数；缓存命中不占额度
+        "search_title_limit": 12,
         "cache": True,
         "interval": 0.5,
         "proxy": "",

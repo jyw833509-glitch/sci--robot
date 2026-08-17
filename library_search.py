@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import threading
 import webbrowser
-from concurrent.futures import ThreadPoolExecutor
 from tkinter import BOTH, END, LEFT, RIGHT, X, BooleanVar, StringVar, Tk
 from tkinter import ttk
 
@@ -16,6 +15,52 @@ from translate import Translator
 
 def _contains_chinese(text: str) -> bool:
     return any("\u3400" <= char <= "\u9fff" for char in (text or ""))
+
+
+def _prepare_chinese_titles(articles, translator, db, remote_limit: int = 12, progress=None):
+    """Prefer native/cached Chinese titles and remotely translate a small queue.
+
+    ``articles`` is already relevance-ranked.  Cached translations never consume
+    the per-search remote budget; uncached English titles are translated one at a
+    time so free fallback providers cannot be flooded by concurrent requests.
+    """
+    native, cached, pending = [], [], []
+    for article in articles:
+        if _contains_chinese(article.title):
+            native.append(article)
+            continue
+        if _contains_chinese(article.title_zh):
+            cached.append(article)
+            continue
+        cached_title = db.get_translation(article.title) if article.title else None
+        if _contains_chinese(cached_title or ""):
+            article.title_zh = cached_title
+            article.translate_provider = "cache"
+            cached.append(article)
+        else:
+            pending.append(article)
+
+    budget = max(0, int(remote_limit or 0))
+    queue = pending[:budget]
+    translated = []
+    for index, article in enumerate(queue, 1):
+        if progress:
+            progress(index, len(queue), len(native), len(cached))
+        title_zh, provider = translator.translate_text(article.title)
+        if _contains_chinese(title_zh):
+            article.title_zh = title_zh
+            article.translate_provider = provider
+            translated.append(article)
+
+    visible = [*native, *cached, *translated]
+    stats = {
+        "native": len(native),
+        "cached": len(cached),
+        "translated": len(translated),
+        "remote_attempted": len(queue),
+        "not_shown": len(articles) - len(visible),
+    }
+    return visible, stats
 
 
 def _lookback_days(value: str, unit: str) -> tuple[int, str]:
@@ -175,7 +220,7 @@ def show_library_search() -> None:
     chinese_footer = ttk.Frame(chinese); chinese_footer.pack(fill=X, pady=(8, 0))
     ttk.Label(chinese_footer, textvariable=chinese_status, foreground="#64748b").pack(side=LEFT)
 
-    def populate_chinese(articles, mode: str, untranslated: int = 0):
+    def populate_chinese(articles, mode: str, title_stats=None):
         chinese_tree.delete(*chinese_tree.get_children()); chinese_items.clear()
         for article in articles:
             title = article.title_zh or article.title
@@ -184,29 +229,36 @@ def show_library_search() -> None:
             tags = ("preprint",) if article.source.startswith("ChinaXiv") else ()
             item = chinese_tree.insert("", END, values=(article.pub_date, article.source, article.journal or "—", title), tags=tags)
             chinese_items[item] = article
-        note = f"；另有 {untranslated} 篇因中文题名转换失败未显示" if untranslated else ""
+        title_stats = title_stats or {}
+        native = int(title_stats.get("native", len(articles)))
+        cached = int(title_stats.get("cached", 0))
+        translated = int(title_stats.get("translated", 0))
+        not_shown = int(title_stats.get("not_shown", 0))
+        note = f"；另有 {not_shown} 篇未消耗额度、暂不显示" if not_shown else ""
         preprints = sum(article.source.startswith("ChinaXiv") for article in articles)
         warning = f"；其中 {preprints} 篇为预印本、未经严格同行评议" if preprints else ""
-        chinese_status.set(f"{mode}检索显示 {len(articles)} 篇中文原文（已去重{note}）。选择后可加入本地库{warning}。")
+        chinese_status.set(
+            f"{mode}检索显示 {len(articles)} 篇中文原文：原生题名 {native}、"
+            f"缓存 {cached}、本次翻译 {translated}{note}。选择后可加入本地库{warning}。"
+        )
 
     def translate_chinese_titles(articles):
-        pending = [article for article in articles if not _contains_chinese(article.title_zh or article.title)]
-        if not pending:
-            return articles, 0
+        try:
+            limit = max(0, int(cfg.get("translate.search_title_limit", 12) or 0))
+        except (TypeError, ValueError):
+            limit = 12
+        translator = Translator(cfg, db)  # 复用实例：失败后不再反复请求同一后端
 
-        root.after(0, lambda: chinese_status.set(f"已找到 {len(articles)} 篇中文原文，正在生成中文题名…"))
+        def progress(index, total, native, cached):
+            root.after(
+                0,
+                lambda: chinese_status.set(
+                    f"已找到 {len(articles)} 篇中文原文；原生题名 {native}、缓存 {cached}，"
+                    f"正在顺序翻译高相关标题 {index}/{total}…"
+                ),
+            )
 
-        def translate_one(article):
-            translated, provider = Translator(cfg, db).translate_text(article.title)
-            if _contains_chinese(translated):
-                article.title_zh = translated
-                article.translate_provider = provider
-            return article
-
-        with ThreadPoolExecutor(max_workers=min(6, len(pending))) as executor:
-            list(executor.map(translate_one, pending))
-        visible = [article for article in articles if _contains_chinese(article.title_zh or article.title)]
-        return visible, len(articles) - len(visible)
+        return _prepare_chinese_titles(articles, translator, db, limit, progress)
 
     def run_chinese_search():
         query = chinese_query.get().strip()
@@ -221,8 +273,8 @@ def show_library_search() -> None:
             try:
                 english, _method = translate_chinese_query(query, cfg)
                 articles = MultiSourceClient(cfg).search_chinese(query, english, days, strict=strict)
-                articles, untranslated = translate_chinese_titles(articles)
-                root.after(0, lambda: populate_chinese(articles, mode, untranslated))
+                articles, title_stats = translate_chinese_titles(articles)
+                root.after(0, lambda: populate_chinese(articles, mode, title_stats))
             except Exception as exc:
                 root.after(0, lambda exc=exc: chinese_status.set(f"检索失败：{exc}"))
         threading.Thread(target=worker, daemon=True).start()
