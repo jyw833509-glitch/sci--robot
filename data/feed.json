@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-17 22:54:32",
+  "generated_at": "2026-08-18 22:55:27",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 74,
@@ -841,7 +841,8 @@
       "entrez_date": "2026-05-05",
       "doi": "10.1002/btpr.88516",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "keywords": [
         "downstream processing",
