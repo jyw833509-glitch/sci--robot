@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-18 22:55:27",
+  "generated_at": "2026-08-19 22:55:43",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 74,
+  "total_articles": 72,
   "calendar": {
     "2026-08-04": [
       "42188602"
@@ -30,202 +30,196 @@
       "41903239"
     ],
     "2026-08-14": [
-      "41864523"
-    ],
-    "2026-08-17": [
       "42563142"
     ],
-    "2026-08-18": [
+    "2026-08-17": [
       "42402251"
     ],
-    "2026-08-19": [
+    "2026-08-18": [
       "42323147"
     ],
-    "2026-08-20": [
+    "2026-08-19": [
       "42216916"
     ],
-    "2026-08-21": [
+    "2026-08-20": [
       "42204975"
     ],
-    "2026-08-24": [
+    "2026-08-21": [
       "42192004"
     ],
-    "2026-08-25": [
+    "2026-08-24": [
       "42084290"
     ],
-    "2026-08-26": [
+    "2026-08-25": [
       "42570623"
     ],
-    "2026-08-27": [
+    "2026-08-26": [
       "42470740"
     ],
-    "2026-08-28": [
+    "2026-08-27": [
       "42368154"
     ],
-    "2026-08-31": [
+    "2026-08-28": [
       "42346963"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42307050"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42276211"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42214142"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42155371"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42043509"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "42041385"
     ],
-    "2026-09-09": [
+    "2026-09-08": [
       "42026710"
     ],
-    "2026-09-10": [
+    "2026-09-09": [
       "41930919"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "41877579"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42489360"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42450443"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42376876"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42332429"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42292894"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42231136"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42202083"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42112447"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42069986"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42028833"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "41996158"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "41895447"
     ],
-    "2026-09-30": [
+    "2026-09-29": [
       "41887562"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42546983"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42429162"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42414861"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42345899"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42273649"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42166563"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42125798"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42119499"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42068121"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42049075"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42011714"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42005515"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "41996200"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "41975635"
     ],
-    "2026-10-21": [
+    "2026-10-20": [
       "41936564"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "41905654"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42568918"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42554770"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42487284"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42458707"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42449784"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42285912"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42276533"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42272446"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42217505"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42145184"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42129093"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42093402"
     ],
-    "2026-11-10": [
+    "2026-11-09": [
       "42037172"
     ],
-    "2026-11-11": [
+    "2026-11-10": [
       "41925250"
     ],
-    "2026-11-12": [
+    "2026-11-11": [
       "41900807"
-    ],
-    "2026-11-13": [
-      "41873887"
     ]
   },
   "articles": {
@@ -545,45 +539,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41903239/",
       "doi_url": "https://doi.org/10.1016/j.chroma.2026.466900"
-    },
-    "41864523": {
-      "pmid": "41864523",
-      "title": "Persistence and Fab-specific interaction of acyl-protein thioesterase-1 with monoclonal antibodies during downstream processing.",
-      "abstract": "Difficult-to-remove host cell proteins (HCPs) can compromise monoclonal antibody (mAb) product quality and stability. This study investigated the persistence of acyl-protein thioesterase-1, a polysorbate-degrading HCP, during downstream processing and its interaction with a set of mAbs. Acyl-protein thioesterase-1 remained in the eluates after reprocessing a specific mAb with protein A affinity liquid chromatography, even when various wash buffer additives were used, indicating a strong product:HCP interaction that resists conventional purification strategies. Upon cleaving the mAb and purifying its Fab and Fc fragments, we used biolayer interferometry to show that acyl-protein thioesterase-1 selectively and tightly binds to the Fab region. Domain-specific sensor-immobilization approach suggested that the binding site was located on the antibody's CH1 domain, and the interaction was influenced by preincubation with the mAb's cognate antigen. These findings highlight the importance of characterizing HCP:mAb interactions as a basis for improving HCP reduction strategies.",
-      "authors": [
-        "Ernest Šprager",
-        "Aleksander Krajnc",
-        "Mojca Lunder",
-        "Jožica Vašl",
-        "Tomaž Bratkovič"
-      ],
-      "journal": "Protein expression and purification",
-      "journal_abbr": "Protein Expr Purif",
-      "pub_date": "2026-03-19",
-      "entrez_date": "2026-03-21",
-      "doi": "10.1016/j.pep.2026.106920",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Acyl-protein thioesterase-1",
-        "Biolayer interferometry",
-        "Chromatography",
-        "Host cell proteins",
-        "Monoclonal antibodies",
-        "Protein-protein interactions"
-      ],
-      "affiliation": "University of Ljubljana, Faculty of Pharmacy, Aškerčeva cesta 7, 1000, Ljubljana, Slovenia; Novartis Technical Research & Development, Novartis Pharmaceutical Manufacturing LLC, Kolodvorska 27, 1234, Mengeš, Slovenia. Electronic address: ernest.sprager@novartis.com.",
-      "language": "eng",
-      "title_zh": "下游加工过程中酰基蛋白硫酯酶 1 与单克隆抗体的持久性和 Fab 特异性相互作用。",
-      "abstract_zh": "难以去除的宿主细胞蛋白 (HCP) 会影响单克隆抗体 (mAb) 产品的质量和稳定性。本研究调查了酰基蛋白硫酯酶-1（一种聚山梨酯降解 HCP）在下游加工过程中的持久性及其与一组 mAb 的相互作用。使用蛋白 A 亲和液相色谱重新处理特定 mAb 后，即使使用各种洗涤缓冲液添加剂，酰基蛋白硫酯酶 1 仍保留在洗脱液中，这表明产物与 HCP 之间存在强烈的相互作用，无法抵抗传统的纯化策略。在裂解 mAb 并纯化其 Fab 和 Fc 片段后，我们使用生物层干涉测量法显示酰基蛋白硫酯酶-1 选择性且紧密地结合到 Fab 区域。域特异性传感器固定方法表明，结合位点位于抗体的 CH1 域上，并且相互作用受到与 mAb 的同源抗原预孵育的影响。这些发现强调了表征 HCP:mAb 相互作用的重要性，作为改进 HCP 减少策略的基础。",
-      "translate_provider": "",
-      "score": 9,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41864523/",
-      "doi_url": "https://doi.org/10.1016/j.pep.2026.106920"
     },
     "42563142": {
       "pmid": "42563142",
@@ -3113,45 +3068,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41900807/",
       "doi_url": "https://doi.org/10.3390/pharmaceutics18030321"
-    },
-    "41873887": {
-      "pmid": "41873887",
-      "title": "A Separation Buffers Platform Set to Facilitate CZE Charge Heterogeneity Method Development for Monoclonal Antibodies.",
-      "abstract": "Monoclonal antibodies (mAbs) are complex therapeutic proteins exhibiting heterogeneity due to post-translational modifications, making charge variant analysis essential for defining critical quality attributes. Although ion-exchange chromatography and capillary isoelectric focusing are established techniques, they require extensive optimisation, whereas the widely adopted ε-aminocaproic acid-based capillary zone electrophoresis (CZE) (eACA-CZE) method provides a simpler, robust platform. However, its performance can be limited for mAbs whose charge profiles or isoelectric point (pI) values fall outside the method's optimal range. To expand CZE capabilities while maintaining a platform approach, we developed a series of background electrolytes (BGEs) spanning a range of pH values, polyamine concentrations and buffering capacities. These BGEs were formulated for chemical compatibility, long-term stability and fixed-component composition to ensure consistent pH and reproducible currents. Using a pH 5.7 BGE as the starting point, key components were optimised across the full buffer set. A multivariate approach showed that combining these buffers enhanced resolution, resolving additional impurity peaks in 9 of 10 mAbs. This work establishes a flexible toolkit for screening and optimising charge-variant resolution across diverse mAbs.",
-      "authors": [
-        "Joanne Baxter",
-        "Kevin Waltham",
-        "Lori Fitton",
-        "Cari E Sänger-van de Griend"
-      ],
-      "journal": "Electrophoresis",
-      "journal_abbr": "Electrophoresis",
-      "pub_date": "2026-03-24",
-      "entrez_date": "2026-03-24",
-      "doi": "10.1002/elps.70089",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "ICH Q14",
-        "analytical procedure control strategy",
-        "capillary zone electrophoresis",
-        "charge heterogeneity",
-        "critical materials",
-        "monoclonal antibody (mAb)",
-        "ε‐aminocaproic acid (eACA)‐capillary zone electrophoresis (CZE)"
-      ],
-      "affiliation": "HB Innovations, Gateshead, UK.",
-      "language": "eng",
-      "title_zh": "用于促进单克隆抗体 CZE 电荷异质性方法开发的分离缓冲液平台。",
-      "abstract_zh": "单克隆抗体 (mAb) 是复杂的治疗性蛋白质，由于翻译后修饰而表现出异质性，因此电荷变异分析对于定义关键质量属性至关重要。尽管离子交换色谱和毛细管等电聚焦是成熟的技术，但它们需要大量优化，而广泛采用的基于 ε-氨基己酸的毛细管区带电泳 (CZE) (eACA-CZE) 方法提供了一个更简单、强大的平台。然而，对于电荷分布或等电点 (pI) 值超出该方法最佳范围的 mAb，其性能可能会受到限制。为了在保持平台方法的同时扩展 CZE 能力，我们开发了一系列涵盖一系列 pH 值、多胺浓度和缓冲能力的背景电解质 (BGE)。这些 BGE 的配方具有化学兼容性、长期稳定性和固定成分成分，以确保一致的 pH 值和可重现的电流。使用 pH 5.7 BGE 作为起点，在整个缓冲液组中对关键成分进行了优化。\n多变量方法表明，组合这些缓冲液可提高分辨率，解析 10 个 mAb 中的 9 个中的额外杂质峰。这项工作建立了一个灵活的工具包，用于筛选和优化不同单克隆抗体的电荷变体分辨率。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41873887/",
-      "doi_url": "https://doi.org/10.1002/elps.70089"
     }
   }
 }
