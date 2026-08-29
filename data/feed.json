@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-28 22:05:09",
+  "generated_at": "2026-08-29 22:05:43",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 71,
+  "total_articles": 72,
   "calendar": {
     "2026-08-04": [
       "42188602"
@@ -177,45 +177,48 @@
       "41905654"
     ],
     "2026-10-22": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-23": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-26": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-27": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-28": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-29": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-30": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-02": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-03": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-04": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-05": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-06": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-09": [
-      "42037172"
+      "42093402"
     ],
     "2026-11-10": [
+      "42037172"
+    ],
+    "2026-11-11": [
       "41925250"
     ]
   },
@@ -2446,6 +2449,46 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41905654/",
       "doi_url": "https://doi.org/10.1016/j.xphs.2026.104264"
+    },
+    "42667144": {
+      "pmid": "42667144",
+      "title": "Light Source-Dependent Photooxidation of Therapeutic Monoclonal Antibodies: A Comparative Study of Light-Emitting Diode (LED) and Fluorescent Exposure.",
+      "abstract": "This study focuses on the comparative characterisation of two specific light sources and their influence on the photooxidation of monoclonal antibodies (mAbs) within the context of biopharmaceutical development. Three different mAbs were exposed to visible light (400-800 nm) using fluorescent and LED (light-emitting diode) lamps, with particular attention paid to their different light spectra. To eliminate potential influence of the presence of specific excipients on photooxidation processes, all samples were formulated in pure water.Photodegradation was assessed by means of the following techniques: Size exclusion chromatography (SEC) was used to quantify the degradation profile of the protein, where the monomer content, high (HMW) and low (LMW) molecular weight species were examined. The impact of Fc-oxidation was achieved through Protein A chromatography, while ion exchange chromatography (IEC) was employed to monitor the formation of charge variants. Mass spectrometry was utilised to identify site-specific oxidation of methionine and tryptophan residues.Spectral analysis revealed that the LED spectrum is characterised by a significant emission at 451 nm, followed by a broad peak between 480 nm and 800 nm. In contrast, the fluorescent lamp exhibited distinct main sharp peaks located at 436 nm, 545 nm and 612 nm.The results of the degradation analysis demonstrate that photooxidation occurs in a light dosage-dependent manner, with the extent of this process being contingent upon the antibody itself. For example, depending on the mAb tested, in the monomer content is reduced between -1% to -4%. For the Fc-oxidised variants, changes were observed from +5% to +20%. For the IEC main peak decrease, changes from -2% to -8% were detected. The study revealed that the degree of degradation was comparable, albeit to a slightly less extent, under the influence of tested LED lighting in comparison to the specified fluorescent exposure. The main degradation effects were observed in Fc oxidation levels, HMW changes and acidic and basic peak group content.The reduced effects of protein degradation observed under the influence of the used LED lighting are likely due to the reduced presence of shorter wavelength contributions, which are more effective in promoting electron excitation and subsequent oxidative reactions. These findings emphasise the importance of conducting comparative analyses of photodegradation studies. To enable a comprehensive evaluation of the impact of lighting systems on photodegradation in a pharmaceutical setting, it is imperative that they are meticulously characterised.",
+      "authors": [
+        "Eva-Maria Baur",
+        "Lukas Bollenbach",
+        "Torsten Schultz-Fademrecht",
+        "Dariush Hinderberger",
+        "Michaela Blech",
+        "Patrick Garidel"
+      ],
+      "journal": "Pharmaceutical development and technology",
+      "journal_abbr": "Pharm Dev Technol",
+      "pub_date": "2026-08-29",
+      "entrez_date": "2026-08-29",
+      "doi": "10.1080/10837450.2026.2725579",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Emission spectrum",
+        "light dosage",
+        "light spectrum",
+        "mAb",
+        "photosensitiser",
+        "visible light"
+      ],
+      "affiliation": "Martin Luther University Halle-Wittenberg, Institute of Chemistry, von-Danckelmann-Platz 4, 06120 Halle (Saale), Germany.",
+      "language": "eng",
+      "title_zh": "治疗性单克隆抗体的光源依赖性光氧化：发光二极管（ LED ）和荧光曝光的比较研究。",
+      "abstract_zh": "本研究侧重于两种特定光源的比较表征及其对生物制药开发背景下单克隆抗体（ mAb ）光氧化的影响。使用荧光灯和LED （发光二极管）灯将三种不同的mAb暴露于可见光（ 400-800 nm ）下，特别注意它们的不同光谱。\n为了消除特定赋形剂的存在对光氧化过程的潜在影响，所有样品均在纯水中配制。通过以下技术评估光降解：使用尺寸排阻色谱（ SEC ）来定量蛋白质的降解谱，其中检查单体含量、高（ HMW ）和低（ LMW ）分子量种类。\nFc-氧化的影响是通过蛋白A色谱实现的，而使用离子交换色谱(IEC)来监测电荷变体的形成。利用质谱法鉴定甲硫氨酸和色氨酸残基的位点特异性氧化。光谱分析显示， LED光谱的特征是在451 nm处具有显著的发射，随后在480 nm和800 nm之间具有宽峰。\n相比之下，荧光灯在436 nm、545 nm和612 nm处表现出明显的主尖峰。降解分析的结果表明，光氧化以光剂量依赖的方式发生，该过程的程度取决于抗体本身。例如，根据测试的mAb ，单体含量在-1%至-4%之间降低。\n对于Fc氧化变异体，观察到+5%至+20%的变化。对于IEC主峰下降，检测到从-2%到-8%的变化。研究表明，与规定的荧光照射相比，在经过测试的LED照明的影响下，降解程度相当，尽管降解程度略低。\n在Fc氧化水平、HMW变化以及酸性和碱性峰基含量方面观察到主要的降解效应，在使用的LED照明的影响下观察到的蛋白质降解效应的降低可能是由于较短波长贡献的减少，这在促进电子激发和随后的氧化反应方面更有效。\n这些发现强调了对光降解研究进行比较分析的重要性。为了能够全面评估照明系统对制药环境中光降解的影响，必须对照明系统进行细致的表征。",
+      "translate_provider": "mymemory",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42667144/",
+      "doi_url": "https://doi.org/10.1080/10837450.2026.2725579"
     },
     "42568918": {
       "pmid": "42568918",
