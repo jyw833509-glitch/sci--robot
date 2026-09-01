@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-31 22:05:07",
+  "generated_at": "2026-09-01 22:08:42",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 72,
@@ -1375,14 +1375,14 @@
       ],
       "journal": "Analytical chemistry",
       "journal_abbr": "Anal Chem",
-      "pub_date": "2026-07-23",
+      "pub_date": "2026-08-25",
       "entrez_date": "2026-07-23",
       "doi": "10.1021/acs.analchem.6c01884",
       "publication_types": [
         "Journal Article"
       ],
       "keywords": [],
-      "affiliation": "Waters Corporation, Milford, Massachusetts 01757-3696, United States.",
+      "affiliation": "Waters Corporation , Milford, Massachusetts01757-3696, United States.",
       "language": "eng",
       "title_zh": "高性能亲和色谱柱的柱上制备。",
       "abstract_zh": "我们描述了基于链霉亲和素共价修饰的 3.5 μm 无孔聚合物颗粒的高性能亲和柱的定制制备。将吸附剂装入 2.1 × 20 mm 的色谱柱硬件中，可承受高达 10,000 psi (68 MPa) 的压力。然后使用重复注射方法将生物素化的亲和配体固定在柱上，直到链霉亲和素吸附剂饱和。通过紫外检测观察到饱和度作为配体突破信号。评估了 d-生物素、生物素化 25nt 寡脱氧胸苷和生物素化抗胰岛素 mAb 配体的固定亲和配体的柱结合能力。准备好的柱用于定量 mRNA 和胰岛素。亲和柱性能根据结合能力、校准线性范围和目标分析物定量限进行评估。高性能链霉亲和素柱是用于定制亲和色谱装置制备的平台，可对感兴趣的分析物进行常规定量。",
