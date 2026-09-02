@@ -1,33 +1,33 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-01 22:08:42",
+  "generated_at": "2026-09-02 23:51:37",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 72,
+  "total_articles": 71,
   "calendar": {
     "2026-08-04": [
-      "42188602"
+      "42679766"
     ],
     "2026-08-05": [
-      "42586433"
+      "42188602"
     ],
     "2026-08-06": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-07": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-10": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-11": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-12": [
-      "42013000"
+      "42235435"
     ],
     "2026-08-13": [
-      "41903239"
+      "42013000"
     ],
     "2026-08-14": [
       "42563142"
@@ -174,55 +174,89 @@
       "41936564"
     ],
     "2026-10-21": [
-      "41905654"
-    ],
-    "2026-10-22": [
       "42667144"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42568918"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42554770"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42487284"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42458707"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42449784"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42285912"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42276533"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42272446"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42217505"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42145184"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42129093"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42093402"
     ],
-    "2026-11-10": [
+    "2026-11-09": [
       "42037172"
     ],
-    "2026-11-11": [
+    "2026-11-10": [
       "41925250"
     ]
   },
   "articles": {
+    "42679766": {
+      "pmid": "42679766",
+      "title": "Development and optimization of a mobile affinity selection chromatography method for analysis of therapeutic monoclonal antibody aggregates in the presence of human serum albumin.",
+      "abstract": "Demonstration of biological drug product quality prior to first-in-human dosing is a regulatory requirement to ensure patient safety and product performance. Protein aggregates, including dimers and higher-order species, are classified as product-related impurities and must be adequately controlled. However, conventional Size-Exclusion High-Performance Liquid Chromatography (SE-HPLC) may not provide selective aggregate quantitation in samples prepared in diluent containing human serum albumin (HSA). To overcome this limitation, we adapted and optimized a mobile affinity selection chromatography (MASC) method that incorporates a fluorescent selector in the mobile phase with specific affinity for the Fc region of antibody molecules. Following SE-HPLC separation, fluorescence detection enables elective monitoring of Fc-containing species. This strategy effectively eliminates interference from HSA, which lacks an Fc region and therefore is not fluorescently labeled. The method demonstrated good accuracy and linearity for quantification of aggregates in complex HSA-containing matrices. It is suitable for routine application in pharmacy manual qualification and in-use stability studies, providing a robust and selective solution for aggregate analysis.",
+      "authors": [
+        "Ye Bao Stoa",
+        "Pinger Wang"
+      ],
+      "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
+      "journal_abbr": "J Chromatogr B Analyt Technol Biomed Life Sci",
+      "pub_date": "2026-08-29",
+      "entrez_date": "2026-09-01",
+      "doi": "10.1016/j.jchromb.2026.125273",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Aggregate (high molecular weight species)",
+        "Fragment crystallizable (Fc)",
+        "Human serum albumin (HSA)",
+        "In-use stability and compatibility",
+        "Mobile affinity selection chromatography (MASC)",
+        "Monoclonal antibody (mAb)",
+        "Size exclusion high-performance liquid chromatography (SE-HPLC)"
+      ],
+      "affiliation": "Therapeutics Development and Supply, Analytical Development - Johnson & Johnson Research & Development, Malvern, PA, USA. Electronic address: ystoa@its.jnj.com.",
+      "language": "eng",
+      "title_zh": "开发和优化用于在人血清白蛋白存在下分析治疗性单克隆抗体聚集体的移动亲和力选择色谱法。",
+      "abstract_zh": "在首次人体给药前证明生物制剂产品质量是确保患者安全和产品性能的监管要求。蛋白质聚集体，包括二聚体和高阶物种，被归类为与产品相关的杂质，必须得到充分控制。\n然而，传统的尺寸排除高效液相色谱（ SE-HPLC ）可能无法在含有人血清白蛋白（ HSA ）的稀释剂中制备的样品中提供选择性聚集体定量。为了克服这一局限性，我们调整并优化了一种移动亲和力选择色谱（ MASC ）方法，该方法在流动相中加入了一种对抗体分子的Fc区具有特异性亲和力的荧光选择器。\nSE-HPLC分离后，荧光检测可以选择性监测含Fc的物质。这种策略有效地消除了HSA的干扰， HSA缺乏Fc区，因此没有荧光标记。该方法对于含有HSA的复杂基质中的聚集体的定量具有良好的准确性和线性。\n它适用于药学手册资格认证和使用中稳定性研究的常规应用，为聚合分析提供了稳健和选择性的解决方案。",
+      "translate_provider": "mymemory",
+      "score": 11,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42679766/",
+      "doi_url": "https://doi.org/10.1016/j.jchromb.2026.125273"
+    },
     "42188602": {
       "pmid": "42188602",
       "title": "Co-Expression and Co-Purification Enable Manufacturing of a Six-Monoclonal Antibody Botulinum Antitoxin Cocktail.",
@@ -500,45 +534,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42013000/",
       "doi_url": "https://doi.org/10.1080/10826068.2026.2652405"
-    },
-    "41903239": {
-      "pmid": "41903239",
-      "title": "Accelerating chromatography process development: A hybrid approach to model hydrophobic interaction column based on high-throughput automated isotherm characterization.",
-      "abstract": "In an industrial setting, the development of hydrophobic interaction chromatography (HIC) processes for protein purification is often time-consuming and resource-intensive, requiring extensive experimentation to optimize conditions for specific protein-resin systems. This study presents a hybrid modeling framework for hydrophobic interaction chromatography, which can be used in commercial chromatography process development to address these challenges. The hybrid model integrates mechanistic principles, including fluid dynamics and mass transfer from the lumped rate model, with data-driven binding isotherms derived using high-throughput experimental platforms. Fully automated systems such as slurry plates and micropipette tips are used to characterize binding isotherms across a two-dimensional parameter space of pH and salt concentration for a monoclonal antibody. The model's predictive accuracy is validated by comparing simulated chromatograms with experimental data for target monoclonal antibodies (mAbs) and high molecular weight aggregates (HMWs). Mean squared errors of 0.45, 3.66, and 0.03 mg/mL for all proteins, target monomer, and HMW species are obtained with the proposed modelling methodology.",
-      "authors": [
-        "Mohammadreza Aghaaminiha",
-        "Marta Suazo",
-        "Steven Benner",
-        "Gabriele Bano",
-        "Kevin Brower",
-        "Christian Airiau",
-        "Amos Lu"
-      ],
-      "journal": "Journal of chromatography. A",
-      "journal_abbr": "J Chromatogr A",
-      "pub_date": "2026-03-20",
-      "entrez_date": "2026-03-28",
-      "doi": "10.1016/j.chroma.2026.466900",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "High-throughput",
-        "Hybrid model",
-        "Hydrophobic interaction chromatography",
-        "Isotherm"
-      ],
-      "affiliation": "Process Modeling and Data Sciences, Sanofi, Framingham MA, USA.",
-      "language": "eng",
-      "title_zh": "加速色谱工艺开发：基于高通量自动化等温线表征的疏水相互作用柱建模混合方法。",
-      "abstract_zh": "在工业环境中，用于蛋白质纯化的疏水相互作用层析 (HIC) 工艺的开发通常非常耗时且资源密集，需要进行大量实验来优化特定蛋白质-树脂系统的条件。本研究提出了疏水相互作用色谱的混合建模框架，可用于商业色谱工艺开发以应对这些挑战。该混合模型集成了机械原理，包括来自集总速率模型的流体动力学和质量传递，以及使用高通量实验平台导出的数据驱动的结合等温线。全自动系统（例如浆板和微量移液器吸头）用于表征单克隆抗体在 pH 和盐浓度二维参数空间中的结合等温线。通过将模拟色谱图与目标单克隆抗体 (mAb) 和高分子量聚集体 (HMW) 的实验数据进行比较，验证了模型的预测准确性。\n使用所提出的建模方法获得所有蛋白质、目标单体和 HMW 物种的均方误差为 0.45、3.66 和 0.03 mg/mL。",
-      "translate_provider": "",
-      "score": 9,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41903239/",
-      "doi_url": "https://doi.org/10.1016/j.chroma.2026.466900"
     },
     "42563142": {
       "pmid": "42563142",
@@ -2402,53 +2397,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41936564/",
       "doi_url": "https://doi.org/10.1134/S0006297926600225"
-    },
-    "41905654": {
-      "pmid": "41905654",
-      "title": "Aggregation of monoclonal and bispecific antibodies during pneumatic tube transport of IV bags in a hospital: Mitigation by polysorbate 80, poloxamer 188, and headspace removal.",
-      "abstract": "Pneumatic tube systems (PTS) are being increasingly used in hospitals to rapidly transport critical packages, but their mechanical stresses raise concerns for the safe transport of protein therapeutics. This study examined the impact of the PTS at the University of Iowa Hospital on protein admixtures of a monoclonal antibody (mAb) and a bispecific antibody (BsAb) prepared in IV-bags and benchmarked it against manual transport and shaking. The PTS ride imposed sharp shocks nearly tenfold higher than either shaking or manual transport. Flow imaging microscopy revealed increased microparticle formation for both proteins, though with distinct profiles. The mAb generated more small aggregates, whereas the BsAb produced fewer yet larger particles. Surfactants reduced particle formation, with Polysorbate 80 (PS80) more effective than poloxamer 188. For BsAb, PS80 lowered microparticles by ∼70% but failed to prevent large particle formation, in contrast to its near-complete protection for mAb. Headspace removal further reduced particle formation, fully preventing the formation of large aggregates when combined with PS80. Size exclusion chromatography revealed no detectable increase in soluble aggregates or monomer loss. These findings show that PTS presents a unique stress profile not replicated by shaking and highlight the need for case-by-case evaluation of PTS compatibility based on protein, container, and excipients.",
-      "authors": [
-        "Parham Parnian",
-        "Annette M Medina",
-        "Nidia Gonzalez Lopez",
-        "Katiria Flores",
-        "Lakyn Lucio",
-        "Lauren Reist",
-        "Mark A Arnold",
-        "Stanley C Kwok",
-        "Reza Nejadnik"
-      ],
-      "journal": "Journal of pharmaceutical sciences",
-      "journal_abbr": "J Pharm Sci",
-      "pub_date": "2026-03-27",
-      "entrez_date": "2026-03-29",
-      "doi": "10.1016/j.xphs.2026.104264",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Bispecific antibody",
-        "Headspace",
-        "IV bags",
-        "Microparticles",
-        "Monoclonal antibody",
-        "Nanoparticles",
-        "Pneumatic tube system transportation",
-        "Poloxamer 188",
-        "Polysorbate 80",
-        "Protein aggregation"
-      ],
-      "affiliation": "Department of Pharmaceutical Sciences and Experimental Therapeutics, College of Pharmacy, University of Iowa, Iowa City, USA; Center for Biocatalysis and Bioprocessing, University of Iowa, Coralville, USA.",
-      "language": "eng",
-      "title_zh": "医院内静脉输液袋气动管运输过程中单克隆和双特异性抗体的聚集：通过聚山梨醇酯 80、泊洛沙姆 188 和顶空去除来缓解。",
-      "abstract_zh": "气动管道系统 (PTS) 越来越多地在医院中用于快速运输关键包裹，但其机械应力引发了人们对蛋白质治疗药物安全运输的担忧。本研究考察了爱荷华大学医院的 PTS 对静脉注射袋中制备的单克隆抗体 (mAb) 和双特异性抗体 (BsAb) 的蛋白质混合物的影响，并针对手动运输和摇动对其进行了基准测试。 PTS 行驶产生的剧烈震动比摇晃或手动运输高出近十倍。流式成像显微镜显示两种蛋白质的微粒形成增加，尽管具有不同的特征。 mAb 产生更多的小聚集体，而 BsAb 产生更少但更大的颗粒。表面活性剂减少了颗粒形成，其中聚山梨醇酯 80 (PS80) 比泊洛沙姆 188 更有效。对于 BsAb，PS80 使微粒减少约 70%，但未能阻止大颗粒形成，这与它对 mAb 近乎完全的保护形成鲜明对比。顶空去除进一步减少了颗粒形成，与 PS80 结合时完全防止了大聚集体的形成。\n尺寸排阻色谱显示没有可检测到的可溶性聚集体增加或单体损失。这些发现表明，PTS 呈现出一种独特的应力分布，无法通过摇动来复制，并强调需要根据蛋白质、容器和赋形剂对 PTS 兼容性进行逐案评估。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41905654/",
-      "doi_url": "https://doi.org/10.1016/j.xphs.2026.104264"
     },
     "42667144": {
       "pmid": "42667144",
