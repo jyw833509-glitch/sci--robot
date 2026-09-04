@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-03 23:46:56",
+  "generated_at": "2026-09-04 23:43:18",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 71,
@@ -570,7 +570,7 @@
       "language": "eng",
       "title_zh": "收获中的DNA浓度影响蛋白A色谱的逆转录病毒清除能力。",
       "abstract_zh": "蛋白质A色谱是生物制药纯化的关键单元操作，广泛用于从收获细胞培养液（ HCCF ）中捕获单克隆抗体（ mAb ）。除了其主要功能外，还经常测试蛋白A色谱法去除病毒的能力。\n尽管蛋白A特异性结合mAb并且不应与病毒相互作用，但一些研究表明，逆转录病毒的对数还原值（ LRV ）可以在1至4 log10之间变化。该差异已被证明取决于单克隆抗体和原料组成。然而，到目前为止还没有评估哪些原料成分会影响病毒的去除。\n为了解决这一知识差距，分析了病毒加标研究的数据集，揭示了HCCF中的DNA含量与A蛋白色谱的LRV之间的潜在相关性。为了评估这一假设，进行了三种不同mAb的鼠白血病病毒(MuLV)和逆转录病毒样颗粒(RVLP)加标起始材料的实验。一般来说，发现较高的HCCF DNA水平可增强两种病毒颗粒的LRV。\n用RVLP证实的趋势是纯单克隆抗体加标。此外，在RVLP加标实验中显示含有洗涤剂或还原剂的蛋白质A色谱洗涤缓冲液可改善LRV。本研究证明了DNA浓度对蛋白A层析的病毒去除能力的影响。\n当DNA在下游过程的早期阶段被去除时（例如通过使用功能化深度过滤器或沉淀）特别有用的发现。",
-      "translate_provider": "mymemory",
+      "translate_provider": "",
       "score": 8,
       "source": "PubMed",
       "source_url": "",
@@ -2443,8 +2443,8 @@
     },
     "42667144": {
       "pmid": "42667144",
-      "title": "Light Source-Dependent Photooxidation of Therapeutic Monoclonal Antibodies: A Comparative Study of Light-Emitting Diode (LED) and Fluorescent Exposure.",
-      "abstract": "This study focuses on the comparative characterisation of two specific light sources and their influence on the photooxidation of monoclonal antibodies (mAbs) within the context of biopharmaceutical development. Three different mAbs were exposed to visible light (400-800 nm) using fluorescent and LED (light-emitting diode) lamps, with particular attention paid to their different light spectra. To eliminate potential influence of the presence of specific excipients on photooxidation processes, all samples were formulated in pure water.Photodegradation was assessed by means of the following techniques: Size exclusion chromatography (SEC) was used to quantify the degradation profile of the protein, where the monomer content, high (HMW) and low (LMW) molecular weight species were examined. The impact of Fc-oxidation was achieved through Protein A chromatography, while ion exchange chromatography (IEC) was employed to monitor the formation of charge variants. Mass spectrometry was utilised to identify site-specific oxidation of methionine and tryptophan residues.Spectral analysis revealed that the LED spectrum is characterised by a significant emission at 451 nm, followed by a broad peak between 480 nm and 800 nm. In contrast, the fluorescent lamp exhibited distinct main sharp peaks located at 436 nm, 545 nm and 612 nm.The results of the degradation analysis demonstrate that photooxidation occurs in a light dosage-dependent manner, with the extent of this process being contingent upon the antibody itself. For example, depending on the mAb tested, in the monomer content is reduced between -1% to -4%. For the Fc-oxidised variants, changes were observed from +5% to +20%. For the IEC main peak decrease, changes from -2% to -8% were detected. The study revealed that the degree of degradation was comparable, albeit to a slightly less extent, under the influence of tested LED lighting in comparison to the specified fluorescent exposure. The main degradation effects were observed in Fc oxidation levels, HMW changes and acidic and basic peak group content.The reduced effects of protein degradation observed under the influence of the used LED lighting are likely due to the reduced presence of shorter wavelength contributions, which are more effective in promoting electron excitation and subsequent oxidative reactions. These findings emphasise the importance of conducting comparative analyses of photodegradation studies. To enable a comprehensive evaluation of the impact of lighting systems on photodegradation in a pharmaceutical setting, it is imperative that they are meticulously characterised.",
+      "title": "Light source-dependent photooxidation of therapeutic monoclonal antibodies: a comparative study of light-emitting diode (LED) and fluorescent exposure.",
+      "abstract": "Although therapeutic proteins are susceptible to visible light-induced photooxidation, the underlying mechanisms remain unclear because amino acid residues do not directly absorb light above 400 nm. To evaluate the role of light source characteristics, three monoclonal antibodies formulated in water were exposed to spectrally distinct fluorescent and light-emitting diode (LED) sources, eliminating excipient-related effects. Following exposure to visible light (400-800 nm), degradation was assessed by size-exclusion, Protein A, and ion-exchange chromatography, together with mass spectrometry. The LED spectrum displayed a pronounced emission at 451 nm and a broad band between 480 and 800 nm, whereas the fluorescent lamp exhibited prominent emissions at 436, 545, and 612 nm, with additional blue-light contributions overlapping antibody absorption. Both light sources induced dose- and antibody-dependent photodegradation, characterized by increased high molecular weight species, Fc-oxidation, acidic and basic charge variants, and methionine and tryptophan oxidation, without detectable fragmentation. Monomer content decreased by 1-4 %, Fc-oxidized variants increased by 5-20 %, and the ion-exchange main peak decreased by 2-8 %. LED-induced degradation was less pronounced than that induced by fluorescent light, reflecting reduced short-wavelength emission. These findings support photosensitizer-mediated oxidation at 400-450 nm and highlight the importance of controlling light exposure during bioprocessing.",
       "authors": [
         "Eva-Maria Baur",
         "Lukas Bollenbach",
@@ -2455,7 +2455,7 @@
       ],
       "journal": "Pharmaceutical development and technology",
       "journal_abbr": "Pharm Dev Technol",
-      "pub_date": "2026-08-29",
+      "pub_date": "2026-09-04",
       "entrez_date": "2026-08-29",
       "doi": "10.1080/10837450.2026.2725579",
       "publication_types": [
@@ -2469,11 +2469,11 @@
         "photosensitiser",
         "visible light"
       ],
-      "affiliation": "Martin Luther University Halle-Wittenberg, Institute of Chemistry, von-Danckelmann-Platz 4, 06120 Halle (Saale), Germany.",
+      "affiliation": "Institute of Chemistry, Martin Luther University Halle-Wittenberg, Halle (Saale), Germany.",
       "language": "eng",
-      "title_zh": "治疗性单克隆抗体的光源依赖性光氧化：发光二极管（ LED ）和荧光曝光的比较研究。",
-      "abstract_zh": "本研究侧重于两种特定光源的比较表征及其对生物制药开发背景下单克隆抗体（ mAb ）光氧化的影响。使用荧光灯和LED （发光二极管）灯将三种不同的mAb暴露于可见光（ 400-800 nm ）下，特别注意它们的不同光谱。\n为了消除特定赋形剂的存在对光氧化过程的潜在影响，所有样品均在纯水中配制。通过以下技术评估光降解：使用尺寸排阻色谱（ SEC ）来定量蛋白质的降解谱，其中检查单体含量、高（ HMW ）和低（ LMW ）分子量种类。\nFc-氧化的影响是通过蛋白A色谱实现的，而使用离子交换色谱(IEC)来监测电荷变体的形成。利用质谱法鉴定甲硫氨酸和色氨酸残基的位点特异性氧化。光谱分析显示， LED光谱的特征是在451 nm处具有显著的发射，随后在480 nm和800 nm之间具有宽峰。\n相比之下，荧光灯在436 nm、545 nm和612 nm处表现出明显的主尖峰。降解分析的结果表明，光氧化以光剂量依赖的方式发生，该过程的程度取决于抗体本身。例如，根据测试的mAb ，单体含量在-1%至-4%之间降低。\n对于Fc氧化变异体，观察到+5%至+20%的变化。对于IEC主峰下降，检测到从-2%到-8%的变化。研究表明，与规定的荧光照射相比，在经过测试的LED照明的影响下，降解程度相当，尽管降解程度略低。\n在Fc氧化水平、HMW变化以及酸性和碱性峰基含量方面观察到主要的降解效应，在使用的LED照明的影响下观察到的蛋白质降解效应的降低可能是由于较短波长贡献的减少，这在促进电子激发和随后的氧化反应方面更有效。\n这些发现强调了对光降解研究进行比较分析的重要性。为了能够全面评估照明系统对制药环境中光降解的影响，必须对照明系统进行细致的表征。",
-      "translate_provider": "",
+      "title_zh": "治疗性单克隆抗体的光源依赖性光氧化：发光二极管（ LED ）和荧光暴露的比较研究。",
+      "abstract_zh": "尽管治疗性蛋白质易受可见光诱导的光氧化，但潜在的机制仍不清楚，因为氨基酸残基不直接吸收400 nm以上的光。为了评估光源特性的作用，将三种在水中配制的单克隆抗体暴露于光谱上不同的荧光和发光二极管（ LED ）源，消除了赋形剂相关的影响。\n暴露于可见光（ 400-800 nm ）后，通过尺寸排除、蛋白质A和离子交换色谱以及质谱评估降解。LED光谱在451 nm处显示出明显的发射，在480和800 nm之间显示出宽带，而荧光灯在436、545和612 nm处显示出突出的发射，额外的蓝光贡献与抗体吸收重叠。\n光源均诱导剂量和抗体依赖性光降解，其特征在于增加的高分子量种类、Fc氧化、酸性和碱性电荷变体以及甲硫氨酸和色氨酸氧化，而没有检测到碎片。单体含量下降了1-4% ， Fc-氧化变异体增加了5-20% ，离子交换主峰下降了2-8%。\nLED诱导的降解不如荧光诱导的降解明显，反映出短波发射减少。这些研究结果支持光敏剂介导的400-450 nm氧化，并强调了在生物加工过程中控制光暴露的重要性。",
+      "translate_provider": "mymemory",
       "score": 4,
       "source": "PubMed",
       "source_url": "",
