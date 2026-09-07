@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-06 23:28:45",
+  "generated_at": "2026-09-07 23:59:32",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 71,
@@ -719,7 +719,7 @@
       ],
       "journal": "Molecular pharmaceutics",
       "journal_abbr": "Mol Pharm",
-      "pub_date": "2026-05-30",
+      "pub_date": "2026-08-03",
       "entrez_date": "2026-05-30",
       "doi": "10.1021/acs.molpharmaceut.5c01948",
       "publication_types": [
@@ -733,7 +733,7 @@
         "spectroscopy",
         "thermal stress"
       ],
-      "affiliation": "Department of Chemical Engineering, Indian Institute of Technology Delhi, New Delhi 110016, India.",
+      "affiliation": "Department of Chemical Engineering, Indian Institute of Technology Delhi, New Delhi110016, India.",
       "language": "eng",
       "title_zh": "用于监测 mAb 疗法高阶结构异质性的多技术光谱平台。",
       "abstract_zh": "高阶结构 (HOS) 的综合表征是单克隆抗体 (mAb) 治疗的监管先决条件，特别是在建立生物相似性方面。一个重大的分析挑战在于检测原料药内结构异质性的早期发生，其中信号稀释通常掩盖了降解的前体状态。本研究提出了一种新颖的多技术光谱平台，包括紫外-可见光、远紫外圆二色性、内在和外在荧光、傅里叶变换红外 (FTIR) 光谱以及化学计量学，用于监测 IgG1mAb 治疗剂曲妥珠单抗热降解过程中 HOS 的异质性。虽然尺寸排阻色谱 (SEC) 证实了可溶性聚集体的渐进、单调积累，但所提出的多技术光谱平台产生了更丰富的信息。内在和外在荧光识别出早期构象漂移，其特征是热应力后（<1小时）立即发生三级核心不稳定和疏水暴露，远早于圆二色性检测到的整体主链展开开始。\n通过主成分分析 (PCA)、双图和树状图进行数据融合，可以更细致地了解 HOS 通过热应力时间线的演变。本研究中解释的数据融合方法提供了一个强大的高分辨率框架，用于通过直接 HOS 映射来监测结构一致性，为在稳定性研究期间监测生物治疗产品的质量以及生物相似性评估提供了强大的解决方案。",
