@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-08 23:49:57",
+  "generated_at": "2026-09-09 23:49:32",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 71,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -87,135 +87,132 @@
       "42026710"
     ],
     "2026-09-10": [
-      "41930919"
-    ],
-    "2026-09-11": [
       "42655115"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42645420"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42489360"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42450443"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42376876"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42332429"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42292894"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42231136"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42202083"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42112447"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42069986"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42028833"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "41996158"
     ],
-    "2026-09-30": [
+    "2026-09-29": [
       "42652006"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42546983"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42429162"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42414861"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42345899"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42273649"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42166563"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42125798"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42119499"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42068121"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42049075"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42011714"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42005515"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "41996200"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "41975635"
     ],
-    "2026-10-21": [
+    "2026-10-20": [
       "41936564"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "42667144"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42568918"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42554770"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42487284"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42458707"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42449784"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42285912"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42276533"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42272446"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42217505"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42145184"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42129093"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42093402"
     ],
-    "2026-11-10": [
+    "2026-11-09": [
       "42037172"
     ]
   },
@@ -1287,46 +1284,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42026710/",
       "doi_url": "https://doi.org/10.1002/btpr.88514"
-    },
-    "41930919": {
-      "pmid": "41930919",
-      "title": "Optimization, Expression, Purification, and Activity Identification of Anti-PD-1 scFv.",
-      "abstract": "INTRODUCTION: Anti-PD-1 monoclonal antibodies have revolutionized cancer therapy but face challenges, including immune-related adverse events, poor tumor penetration due to their large size, and high production costs. Single-chain variable fragments offer a promising alternative, with enhanced tissue penetration and the potential for cost-effective prokaryotic expression.\nMETHODS: Based on the Opdivo sequence, an anti-PD-1 scFv (L2H5) was designed using a framework region-frequency-guided optimization approach. Two sites in the light chain and five in the heavy chain FR were mutated to high-frequency residues. The gene was codon-optimized for E. coli and cloned into the pET-28a vector. The protein was expressed in E. coli BL21(DE3), purified via Ni-NTA chromatography from inclusion bodies, and refolded by dialysis. Its bioactivity was assessed by immunoblotting, cytotoxicity assay, immunofluorescence, and a luciferase-based tumor cell killing assay.\nRESULTS: The codon-optimized L2H5 scFv was successfully expressed, yielding 4 mg/L after purification. Immunoblotting confirmed its specific binding to PD-1. The CCK-8 assay demonstrated no significant cytotoxicity towards normal 293T cells. Immunofluorescence revealed specific binding to PD-1 on A549 cell surfaces. In a co-culture system with tumor cells and lymphocytes, the L2H5 scFv significantly enhanced T cell-mediated tumor cell killing in a dose- and time-dependent manner.\nDISCUSSION: This study connected the VH and VL region sequences of the PD-1 monoclonal antibody drug Opdivo through a linker to form a PD-1 single-chain antibody and tried to mutate and optimize the protein sequence of the antibody framework region. The activity and binding of L2H5 PD-1 scFv to PD-1 protein were verified by in vitro experiments, and the binding ability of L2H5 PD-1 scFv to PD-1 protein was verified by immunoblotting and immunofluorescence. In terms of binding ability, the results of immunoblotting showed that the corresponding bands were detected at the size position of PD-1 protein, and the results of immunofluorescence intuitively showed the binding of L2H5 PD-1 scFv protein on cells. In terms of biological activity, the results of CCK-8 experiments showed that L2H5 PD-1 scFv had no obvious toxicity to normal cells and did not affect the growth and proliferation of normal cells.\nCONCLUSION: The L2H5 anti-PD-1 scFv protein was successfully expressed by a prokaryotic vector. The expressed protein had no obvious toxicity to normal cells and retained PD-1-binding activity.",
-      "authors": [
-        "Wan Jiandong",
-        "Yu Peining",
-        "Liu Yulin",
-        "Qin Zhiyang",
-        "Wu Haobin",
-        "Wang Feng"
-      ],
-      "journal": "Current protein & peptide science",
-      "journal_abbr": "Curr Protein Pept Sci",
-      "pub_date": "2026-03-25",
-      "entrez_date": "2026-04-03",
-      "doi": "10.2174/0113892037434553260114054631",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "PD-1",
-        "activity identification.",
-        "framework region",
-        "induced expression",
-        "protein purification",
-        "single-chain antibody"
-      ],
-      "affiliation": "State Key Laboratory of Bioactive Molecules and Druggability Assessment, Institute of Genomic Medicine, International Cooperative Laboratory of Traditional Chinese Medicine Modernization and Innovative Drug Development of Chinese Ministry of Education (MOE), College of Pharmacy, Jinan University, Guangzhou 510632, China.",
-      "language": "eng",
-      "title_zh": "抗 PD-1 scFv 的优化、表达、纯化和活性鉴定。",
-      "abstract_zh": "简介：抗PD-1单克隆抗体彻底改变了癌症治疗，但面临着挑战，包括免疫相关的不良事件、由于体积大而导致的肿瘤渗透性差以及生产成本高。单链可变片段提供了一种有前途的替代方案，具有增强的组织渗透性和具有成本效益的原核表达的潜力。\n方法：基于Opdivo序列，采用框架区域频率引导优化方法设计抗PD-1 scFv（L2H5）。轻链中的两个位点和重链FR中的五个位点突变为高频残基。该基因针对大肠杆菌进行了密码子优化，并克隆到 pET-28a 载体中。该蛋白在大肠杆菌 BL21(DE3) 中表达，通过 Ni-NTA 层析从包涵体中纯化，并通过透析重折叠。通过免疫印迹、细胞毒性测定、免疫荧光和基于荧光素酶的肿瘤细胞杀伤测定来评估其生物活性。\n结果：密码子优化的L2H5 scFv成功表达，纯化后产量为4 mg/L。免疫印迹证实其与 PD-1 特异性结合。 CCK-8 测定表明对正常 293T 细胞没有显着的细胞毒性。免疫荧光显示 A549 细胞表面与 PD-1 特异性结合。在肿瘤细胞和淋巴细胞的共培养系统中，L2H5 scFv 以剂量和时间依赖性方式显着增强 T 细胞介导的肿瘤细胞杀伤作用。\n讨论：本研究通过连接子将PD-1单克隆抗体药物Opdivo的VH和VL区序列连接起来，形成PD-1单链抗体，并尝试对抗体框架区的蛋白序列进行突变和优化。通过体外实验验证L2H5 PD-1 scFv与PD-1蛋白的结合能力，并通过免疫印迹和免疫荧光验证L2H5 PD-1 scFv与PD-1蛋白的结合能力。结合能力方面，免疫印迹结果显示在PD-1蛋白大小位置检测到相应条带，免疫荧光结果直观显示L2H5 PD-1 scFv蛋白与细胞的结合情况。生物活性方面，CCK-8实验结果表明，L2H5 PD-1 scFv对正常细胞无明显毒性，不影响正常细胞的生长和增殖。\n结论：原核载体成功表达L2H5抗PD-1 scFv蛋白。表达的蛋白对正常细胞无明显毒性，并保留了PD-1结合活性。",
-      "translate_provider": "",
-      "score": 7,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41930919/",
-      "doi_url": "https://doi.org/10.2174/0113892037434553260114054631"
     },
     "42655115": {
       "pmid": "42655115",
