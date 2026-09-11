@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-10 23:43:02",
+  "generated_at": "2026-09-11 23:52:51",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 69,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -126,93 +126,90 @@
       "41996158"
     ],
     "2026-09-29": [
-      "42652006"
+      "42725489"
     ],
     "2026-09-30": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-01": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-02": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-05": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-06": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-07": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-08": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-09": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-12": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-13": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-14": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-15": [
-      "42005515"
+      "42011714"
     ],
     "2026-10-16": [
-      "41996200"
+      "42005515"
     ],
     "2026-10-19": [
-      "41975635"
+      "41996200"
     ],
     "2026-10-20": [
-      "41936564"
-    ],
-    "2026-10-21": [
       "42667144"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "42568918"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42554770"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42487284"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42458707"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42449784"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42285912"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42276533"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42272446"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42217505"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42145184"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42129093"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42093402"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42037172"
     ]
   },
@@ -1374,7 +1371,8 @@
       "entrez_date": "2026-07-23",
       "doi": "10.1021/acs.analchem.6c01884",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
       ],
       "keywords": [],
       "affiliation": "Waters Corporation , Milford, Massachusetts01757-3696, United States.",
@@ -1786,6 +1784,37 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41996158/",
       "doi_url": "https://doi.org/10.1021/jasms.5c00272"
+    },
+    "42725489": {
+      "pmid": "42725489",
+      "title": "Microsampling of proteins from biological matrices: sampling methods and devices, typical workflows, clinical examples, novel applications and innovations.",
+      "abstract": "In bioanalysis microsampling has evolved as a promising alternative to conventional blood sampling. This is also true for mass spectrometry-based protein analysis. Developments in sampling technology and liquid chromatography mass spectrometry the last 10-15 years have expanded the field from dried blood spots sampled on paper for newborn screening to a variety of sampling devices, and applications spanning from monitoring of low abundance biomarkers through therapeutic drug monitoring of biopharmaceuticals to anti-doping analysis and multi-omics. This review gives an overview of the resent progress (2021-2026) in liquid chromatography mass spectrometry-based protein analysis from dried microsamples. We start with comparing dried microsampling to conventional blood sampling. Then we describe the different dried microsampling devices and developments, and highlights applications from different biological matrices. The typical analytical protein workflow is covered with examples from recent literature. All steps from sample extraction, through bottom-up and top-down workflows to targeted and non-targeted analysis are described together with standardization methods and automation. A few recent clinical examples and novel applications are discussed in more detail. These cover therapeutic monoclonal antibody monitoring, multiplex biomarker determination, proteome profiling and multi-omics. We also present two recent innovations: dried blood immunoassay developed for field sampling, and smart sampling where the sample preparation steps proteolysis and immunoaffinity are integrated in the sampling. In the end we discuss the technology readiness and remaining barriers to clinical translation.",
+      "authors": [
+        "Trine Grønhaug Halvorsen",
+        "Christina Johannsen",
+        "Léon Reubsaet"
+      ],
+      "journal": "Analytical methods : advancing methods and applications",
+      "journal_abbr": "Anal Methods",
+      "pub_date": "2026-09-11",
+      "entrez_date": "2026-09-11",
+      "doi": "10.1039/d6ay00944a",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "keywords": [],
+      "affiliation": "Section for Pharmaceutical Chemistry, Department of Pharmacy, University of Oslo, P.O. Box 1068 Blindern, 0316 Oslo, Norway. trinegha@farmasi.uio.no.",
+      "language": "eng",
+      "title_zh": "生物基质中蛋白质的微采样：采样方法和设备、典型工作流程、临床实例、新应用和创新。",
+      "abstract_zh": "在生物分析中，微量采样已经发展成为传统血液采样的一种有前途的替代方法。基于质谱的蛋白质分析也是如此。\n在过去10-15年中，采样技术和液相色谱质谱的发展已经将该领域从纸上采样进行新生儿筛查的干血斑扩展到各种采样设备，以及从监测低丰度生物标志物到生物制药治疗药物监测到反兴奋剂分析和多组学的应用。\n本综述概述了来自干燥微样品的基于液相色谱质谱的蛋白质分析的最新进展（ 2021-2026 ）。我们首先将干燥微样本采集与常规血液采集进行比较。然后，我们描述了不同的干燥微采样设备和发展，并重点介绍了不同生物基质的应用。\n典型的分析蛋白工作流程包括最近文献中的示例。从样本提取、自下而上和自上而下的工作流程到靶向和非靶向分析的所有步骤都与标准化方法和自动化一起描述。将更详细地讨论一些最近的临床实例和新的应用。\n这些包括治疗性单克隆抗体监测、多重生物标志物测定、蛋白质组谱和多组学。我们还介绍了两项最近的创新：为现场采样开发的干血免疫测定，以及将样品制备步骤蛋白水解和免疫亲和力集成到采样中的智能采样。最后，我们讨论了技术成熟度和临床翻译的剩余障碍。",
+      "translate_provider": "mymemory",
+      "score": 5,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42725489/",
+      "doi_url": "https://doi.org/10.1039/d6ay00944a"
     },
     "42652006": {
       "pmid": "42652006",
@@ -2320,83 +2349,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41996200/",
       "doi_url": "https://doi.org/10.1021/jasms.5c00438"
-    },
-    "41975635": {
-      "pmid": "41975635",
-      "title": "Rational Hapten Engineering Enables a Monoclonal Antibody for the Masked-Mycotoxin Zearalenone-14-Glucoside and Field-Deployable Digital Immunoassays.",
-      "abstract": "Masked mycotoxins pose a persistent analytical challenge because their conjugated moieties are often weakly immunogenic and poorly captured by antibodies raised against parent toxins, leading to inadequate selectivity in rapid assays. Here, we introduce a computation-guided hapten engineering strategy for selectivity-by-design toward a masked toxin epitope, integrating conformational alignment, electrostatic potential mapping, and electronic structure descriptors to prioritize epitope presentation during immunization. Using zearalenone-14-glucoside (ZEN-14G) as a model analyte, this workflow enabled the generation of mAb-1C1, a monoclonal antibody elicited directly against a masked mycotoxin. The antibody exhibits sub-ng mL-1 competitive performance (IC50 = 0.093 ng mL-1) and a cross-reactivity profile consistent with masked-epitope preference. Docking and alanine-scanning mutagenesis establish a dual-interaction architecture in which hydrophobic contacts stabilize the conserved toxin core, while polar hotspot residues interact with the glucoside moiety, providing a mechanistic basis for selectivity. We further translate the recognition element into an indirect competitive enzyme-linked immunosorbent assay (ELISA), a rapid competitive lateral flow assay, and a smartphone-based quantitative readout that normalizes strip variability by using a C/T metric. Accuracy in multiple cereal matrices is validated against liquid chromatography-mass spectrometry/MS (LC-MS/MS). Collectively, this work demonstrates a generalizable selectivity engineering framework that links in silico hapten design, mechanistic paratope mapping, and deployable measurement formats for analytically elusive conjugated small molecules.",
-      "authors": [
-        "Shixiang Wu",
-        "Linwei Zhang",
-        "Mingyue Ding",
-        "Jiacan Wang",
-        "Hao Wen",
-        "Hongfei Yang",
-        "Yiting Wang",
-        "Xuan Yi",
-        "Xu Wang",
-        "Rui Fang",
-        "Dapeng Peng"
-      ],
-      "journal": "Analytical chemistry",
-      "journal_abbr": "Anal Chem",
-      "pub_date": "2026-04-13",
-      "entrez_date": "2026-04-14",
-      "doi": "10.1021/acs.analchem.6c00208",
-      "publication_types": [
-        "Journal Article",
-        "Research Support, Non-U.S. Gov't"
-      ],
-      "keywords": [],
-      "affiliation": "National Key Laboratory of Agricultural Microbiology, National Reference Laboratory of Veterinary Drug Residues (HZAU) and MOA Key Laboratory for the Detection of Veterinary Drug Residues, College of Veterinary Medicine, Huazhong Agricultural University, Wuhan 430070, Hubei, People's Republic of China.",
-      "language": "eng",
-      "title_zh": "Rational 半抗原工程为掩蔽霉菌毒素玉米赤霉烯酮 14-葡萄糖苷和可现场部署的数字免疫测定提供单克隆抗体。",
-      "abstract_zh": "隐蔽的霉菌毒素对分析提出了持续的挑战，因为它们的缀合部分通常具有弱免疫原性，并且很难被针对亲本毒素产生的抗体捕获，导致快速测定中选择性不足。在这里，我们引入了一种计算引导的半抗原工程策略，用于针对掩蔽的毒素表位进行设计选择性，集成构象对齐、静电势映射和电子结构描述符，以在免疫过程中优先考虑表位呈现。该工作流程使用玉米赤霉烯酮-14-葡萄糖苷 (ZEN-14G) 作为模型分析物，生成了 mAb-1C1，这是一种直接针对隐蔽霉菌毒素的单克隆抗体。该抗体表现出亚 ng mL-1 竞争性能 (IC50 = 0.093 ng mL-1) 和与掩蔽表位偏好一致的交叉反应特性。对接和丙氨酸扫描诱变建立了双重相互作用结构，其中疏水接触稳定了保守的毒素核心，而极性热点残基与糖苷部分相互作用，为选择性提供了机制基础。\n我们进一步将识别元件转化为间接竞争性酶联免疫吸附测定 (ELISA)、快速竞争性侧流测定以及基于智能手机的定量读数，通过使用 C/T 指标来标准化条带变异性。通过液相色谱-质谱/MS (LC-MS/MS) 验证了多种谷物基质的准确性。总的来说，这项工作展示了一个可推广的选择性工程框架，该框架将计算机半抗原设计、机械互补位图谱和可部署的测量格式联系起来，用于分析难以捉摸的共轭小分子。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41975635/",
-      "doi_url": "https://doi.org/10.1021/acs.analchem.6c00208"
-    },
-    "41936564": {
-      "pmid": "41936564",
-      "title": "Two-Stage Purification of Recombinant Antibodies Using Non-Ionic Detergent Prevents Endotoxin-Induced Macrophage Activation: The Case of Bispecific Mini-Antibody MYSTI-2.",
-      "abstract": "Escherichia coli is one of the most common producers of recombinant proteins, including therapeutic antibody fragments. However, the outer membrane of E. coli contains high levels of lipopolysaccharide (LPS, also known as endotoxin), which can activate innate immune receptors, trigger immune responses, and induce systemic inflammation that may progress to septic shock. Ensuring extremely low endotoxin levels in preparations intended for in vivo applications is critically important. In this study, we investigated the endotoxin content in preparations of the bispecific mini-antibody MYSTI-2 produced in two E. coli strains: the Rosetta strain, which synthesizes conventional LPS, and the ClearColi strain, which synthesizes potentially non-toxic form of LPS. Our results demonstrate that near-complete removal of LPS can be achieved only through the use of a non-ionic detergent during purification, regardless of the bacterial strain used for protein production.",
-      "authors": [
-        "Yuliya A Khodak",
-        "Anna M Litvinova",
-        "Fedor A Sysonov",
-        "Marina S Drutskaya",
-        "Irina V Safenkova",
-        "Sergei A Nedospasov",
-        "Ivan I Vorobiev"
-      ],
-      "journal": "Biochemistry. Biokhimiia",
-      "journal_abbr": "Biochemistry (Mosc)",
-      "pub_date": "2026-03",
-      "entrez_date": "2026-04-05",
-      "doi": "10.1134/S0006297926600225",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "bispecific antibodies",
-        "endotoxin",
-        "recombinant proteins"
-      ],
-      "affiliation": "Laboratory of Molecular Mechanisms of Immunity, Engelhardt Institute of Molecular Biology, Russian Academy of Sciences, Moscow, 119991, Russia.",
-      "language": "eng",
-      "title_zh": "使用非离子洗涤剂对重组抗体进行两阶段纯化可防止内毒素诱导的巨噬细胞激活：双特异性微型抗体 MYSTI-2 的案例。",
-      "abstract_zh": "大肠杆菌是重组蛋白（包括治疗性抗体片段）最常见的生产者之一。然而，大肠杆菌的外膜含有高水平的脂多糖（LPS，也称为内毒素），它可以激活先天免疫受体，触发免疫反应，并诱发可能进展为感染性休克的全身炎症。确保用于体内应用的制剂中内毒素水平极低至关重要。在本研究中，我们研究了两种大肠杆菌菌株产生的双特异性微型抗体 MYSTI-2 制剂中的内毒素含量：Rosetta 菌株（合成常规 LPS）和 ClearColi 菌株（合成潜在无毒形式的 LPS）。我们的结果表明，无论用于蛋白质生产的细菌菌株如何，只有在纯化过程中使用非离子去污剂才能几乎完全去除脂多糖。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41936564/",
-      "doi_url": "https://doi.org/10.1134/S0006297926600225"
     },
     "42667144": {
       "pmid": "42667144",
