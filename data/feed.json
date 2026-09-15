@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15 00:17:22",
+  "generated_at": "2026-09-15 23:57:55",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 69,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -12,204 +12,207 @@
       "42188602"
     ],
     "2026-08-06": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-07": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-10": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-11": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-12": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-13": [
-      "42013000"
+      "42235435"
     ],
     "2026-08-14": [
-      "42687332"
+      "42013000"
     ],
     "2026-08-17": [
-      "42563142"
+      "42687332"
     ],
     "2026-08-18": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-19": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-20": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-21": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-24": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-25": [
-      "42084290"
+      "42192004"
     ],
     "2026-08-26": [
-      "42570623"
+      "42084290"
     ],
     "2026-08-27": [
-      "42470740"
+      "42570623"
     ],
     "2026-08-28": [
-      "42368154"
+      "42470740"
     ],
     "2026-08-31": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-01": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-02": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-03": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-04": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-07": [
-      "42043509"
+      "42155371"
     ],
     "2026-09-08": [
-      "42041385"
+      "42043509"
     ],
     "2026-09-09": [
-      "42026710"
+      "42041385"
     ],
     "2026-09-10": [
-      "42655115"
+      "42026710"
     ],
     "2026-09-11": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-14": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-15": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-16": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-17": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-18": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-21": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-22": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-23": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-24": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-25": [
-      "42028833"
+      "42069986"
     ],
     "2026-09-28": [
-      "41996158"
+      "42028833"
     ],
     "2026-09-29": [
-      "42725489"
+      "41996158"
     ],
     "2026-09-30": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-01": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-02": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-05": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-06": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-07": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-08": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-09": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-12": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-13": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-14": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-15": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-16": [
-      "42005515"
+      "42011714"
     ],
     "2026-10-19": [
-      "41996200"
+      "42005515"
     ],
     "2026-10-20": [
-      "42667144"
+      "41996200"
     ],
     "2026-10-21": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-22": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-23": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-26": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-27": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-28": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-29": [
-      "42276533"
+      "42285912"
     ],
     "2026-10-30": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-02": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-03": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-04": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-05": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-06": [
+      "42093402"
+    ],
+    "2026-11-09": [
       "42037172"
     ]
   },
@@ -291,6 +294,50 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42188602/",
       "doi_url": "https://doi.org/10.3390/toxins18050199"
+    },
+    "42737515": {
+      "pmid": "42737515",
+      "title": "Overcoming the Limitations of Protein A: Evolution of Bacterial Protein-Based and Synthetic Affinity Ligands for High-Performance IgG Purification.",
+      "abstract": "Monoclonal antibodies (mAbs) are widely used as therapeutic molecules for the treatment of serious diseases, primarily cancer. The market for mAbs is one of the fastest-growing segments of the biopharmaceuticals industry. Purification is a crucial stage in the production of mAbs. While staphylococcal protein A (SpA) affinity chromatography remains the gold standard in industrial mAb purification, its limitations-low alkaline stability and insufficient binding capacity of SpA, as well as the need for harsh acidic elution conditions-have driven extensive efforts for novel progressive affinity ligands. This review focuses on the development and performance of bacterial protein-based affinity resins for the purification of class G immunoglobulins (IgGs), including conventional proteins A and G, the promising protein L, and the more recently discovered protein M (from M. genitalium), each offering unique specificities for different antibody fragments and species. Hybrid ligands combining domains from multiple bacterial proteins are also discussed, along with next-generation synthetic alternatives such as affibodies, affimers, nanobodies, etc., as well as peptide-based or mixed-mode ligands. The key finding is that the reliable and time-tested resins like those based on protein A continue to dominate the market, although future trends also point toward smaller, more stable, and cost-effective synthetic ligands for specific applications.",
+      "authors": [
+        "Larisa N Ikryannikova",
+        "Mikhail N Tereshin",
+        "Milena V Baskova",
+        "Kristina P Telepenina",
+        "Neonila V Gorokhovets",
+        "Daniel R Bayzigitov",
+        "Eugenia A Gurylina",
+        "Vasiliy N Stepanenko",
+        "Tatiana D Melikhova"
+      ],
+      "journal": "International journal of molecular sciences",
+      "journal_abbr": "Int J Mol Sci",
+      "pub_date": "2026-08-25",
+      "entrez_date": "2026-09-15",
+      "doi": "10.3390/ijms27177618",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "keywords": [
+        "IgGs",
+        "affinity chromatography",
+        "hybrid proteins",
+        "immunoglobulin-binding proteins (IBPs)",
+        "mAbs purification",
+        "protein A"
+      ],
+      "affiliation": "I.M. Sechenov First Moscow State Medical University, Institute of Translational Medicine and Biotechnology, 8/2 Trubetskaya Str., 119991 Moscow, Russia.",
+      "language": "eng",
+      "title_zh": "克服蛋白质A的局限性：基于细菌蛋白质和合成亲和配体的进化，用于高性能IgG纯化。",
+      "abstract_zh": "单克隆抗体（ mAb ）广泛用作治疗严重疾病（主要是癌症）的治疗分子。单克隆抗体市场是生物制药行业增长最快的细分市场之一。纯化是产生单克隆抗体的关键阶段。\n虽然葡萄球菌蛋白A （ SpA ）亲和层析仍然是工业mAb纯化的黄金标准，但其局限性--低碱性稳定性和SpA结合能力不足，以及对苛刻酸性洗脱条件的需求--推动了新型渐进亲和配体的广泛努力。\n本综述侧重于用于纯化G类免疫球蛋白（ IgG ）的基于细菌蛋白的亲和树脂的开发和性能，包括常规蛋白A和G、有希望的蛋白L以及最近发现的蛋白M （来自生殖支原体） ，每种蛋白都对不同的抗体片段和物种提供了独特的特异性。\n还讨论了来自多种细菌蛋白质的组合结构域的杂交配体，以及下一代合成替代品，如亲和体、仿射体、纳米体等，以及基于肽或混合模式的配体。\n关键的发现是，可靠且经过时间考验的树脂，如基于蛋白质A的树脂，继续主导市场，尽管未来的趋势也指向针对特定应用的更小、更稳定、更具成本效益的合成配体。",
+      "translate_provider": "mymemory",
+      "score": 9,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42737515/",
+      "doi_url": "https://doi.org/10.3390/ijms27177618"
     },
     "42586433": {
       "pmid": "42586433",
