@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-15 23:57:55",
+  "generated_at": "2026-09-17 00:05:09",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -90,43 +90,43 @@
       "42026710"
     ],
     "2026-09-11": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-14": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-15": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-16": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-17": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-18": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-21": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-22": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-23": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-24": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-25": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-28": [
-      "42028833"
+      "42069986"
     ],
     "2026-09-29": [
-      "41996158"
+      "42028833"
     ],
     "2026-09-30": [
       "42725489"
@@ -331,7 +331,7 @@
       "language": "eng",
       "title_zh": "克服蛋白质A的局限性：基于细菌蛋白质和合成亲和配体的进化，用于高性能IgG纯化。",
       "abstract_zh": "单克隆抗体（ mAb ）广泛用作治疗严重疾病（主要是癌症）的治疗分子。单克隆抗体市场是生物制药行业增长最快的细分市场之一。纯化是产生单克隆抗体的关键阶段。\n虽然葡萄球菌蛋白A （ SpA ）亲和层析仍然是工业mAb纯化的黄金标准，但其局限性--低碱性稳定性和SpA结合能力不足，以及对苛刻酸性洗脱条件的需求--推动了新型渐进亲和配体的广泛努力。\n本综述侧重于用于纯化G类免疫球蛋白（ IgG ）的基于细菌蛋白的亲和树脂的开发和性能，包括常规蛋白A和G、有希望的蛋白L以及最近发现的蛋白M （来自生殖支原体） ，每种蛋白都对不同的抗体片段和物种提供了独特的特异性。\n还讨论了来自多种细菌蛋白质的组合结构域的杂交配体，以及下一代合成替代品，如亲和体、仿射体、纳米体等，以及基于肽或混合模式的配体。\n关键的发现是，可靠且经过时间考验的树脂，如基于蛋白质A的树脂，继续主导市场，尽管未来的趋势也指向针对特定应用的更小、更稳定、更具成本效益的合成配体。",
-      "translate_provider": "mymemory",
+      "translate_provider": "",
       "score": 9,
       "source": "PubMed",
       "source_url": "",
@@ -1329,6 +1329,49 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42026710/",
       "doi_url": "https://doi.org/10.1002/btpr.88514"
     },
+    "42745724": {
+      "pmid": "42745724",
+      "title": "Development of a monoclonal antibody-based ELISA and lateral flow immunoassay for the sensitive detection of fluroxypyr in corn.",
+      "abstract": "Fluroxypyr (FLU) is a widely used synthetic auxin-type herbicide. FLU residues in agricultural products pose potential risks to the environment and human health. Therefore, the development of rapid and sensitive fluroxypyr detection methods is highly important. In this study, a monoclonal antibody, 11D8 (mAb-11D8), capable of specifically recognizing FLU, was obtained via hybridoma technology. This antibody has a heavy chain subtype of IgG3 and a light chain subtype of κ, with a half-maximal inhibitory concentration (IC50) of 1.95 ng mL-1 and a linear detection range of 0.67-8.09 ng mL-1. Molecular docking revealed that SER L:44, TRP H:104, and LEU H:4 are predicted to be the key residues of mAb-11D8 involved in the recognition of FLU via hydrogen bonding. Two immunoassays, an indirect competitive enzyme-linked immunosorbent assay (ic-ELISA) and a colloidal gold lateral flow immunochromatography assay (LFIA), were established for FLU detection. The LOD in the corn samples was 56.0 ng mL-1 for ic-ELISA and 180.8 ng mL-1 for LFIA. In spiked recovery experiments using corn samples, the recovery rates for ic-ELISA ranged from 87% to 92%, whereas the LFIA method yielded recoveries of 81-102%. These results were highly consistent with those obtained via liquid chromatography-tandem mass spectrometry validation. The results demonstrate that both developed immunoassays are suitable for the rapid, sensitive, and quantitative detection of FLU residues in corn.",
+      "authors": [
+        "Si Chen",
+        "Peipei Li",
+        "Chenxi Guo",
+        "A M Abd El-Aty",
+        "Yun Zhao",
+        "Lingyuan Xu",
+        "Xingmei Lei",
+        "Xun Yang",
+        "Jiayong Bao",
+        "Sensen Feng",
+        "Yi Liu",
+        "Zhen Cao",
+        "Fen Jin",
+        "Jing Wang",
+        "Lufei Zheng",
+        "Maojun Jin"
+      ],
+      "journal": "Analytical methods : advancing methods and applications",
+      "journal_abbr": "Anal Methods",
+      "pub_date": "2026-09-16",
+      "entrez_date": "2026-09-16",
+      "doi": "10.1039/d6ay01374k",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "State Key Laboratory for Quality and Safety of Agro-Products, Institute of Quality Standards and Testing Technology for Agro-Products, Chinese Academy of Agricultural Sciences, Beijing 100081, China. 18331090835@163.com.",
+      "language": "eng",
+      "title_zh": "开发一种基于单克隆抗体的ELISA和侧流免疫测定法，用于玉米中氟氧吡咯的灵敏检测。",
+      "abstract_zh": "氟氧吡啶（ FLU ）是一种广泛使用的合成生长素型除草剂。农产品中的流感残留物对环境和人类健康构成潜在风险。因此，开发快速灵敏的氟氧吡咯检测方法非常重要。在本研究中，通过杂交瘤技术获得了能够特异性识别流感的单克隆抗体11D8 （ mAb-11D8 ）。\n该抗体具有IgG3的重链亚型和κ的轻链亚型，半数最大抑制浓度（ IC50 ）为1.95 ng mL-1 ，线性检测范围为0.67-8.09 ng mL-1。分子对接显示， SER L: 44、TRP H: 104和LEU H: 4被预测为参与通过氢键识别流感的mAb-11D8的关键残基。\n建立了两种免疫测定法，即间接竞争酶联免疫吸附测定法（ ic-ELISA ）和胶体金横向流动免疫层析测定法（ LFIA ）用于流感检测。玉米样品中ic-ELISA的LOD为56.0 ng mL-1 ， LFIA的LOD为180.8 ng mL-1。在使用玉米样品的加标回收实验中， ic-ELISA的回收率在87%至92%之间，而LFIA方法的回收率为81-102%。\n这些结果与通过液相色谱-串联质谱验证获得的结果高度一致。结果表明，两种开发的免疫测定方法都适用于玉米中流感残留物的快速、灵敏和定量检测。",
+      "translate_provider": "mymemory",
+      "score": 6,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42745724/",
+      "doi_url": "https://doi.org/10.1039/d6ay01374k"
+    },
     "42655115": {
       "pmid": "42655115",
       "title": "Expression of Orf Virus B2L Protein and Monoclonal Antibody Preparation.",
@@ -1787,50 +1830,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42028833/",
       "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.6c00092"
-    },
-    "41996158": {
-      "pmid": "41996158",
-      "title": "Quantitative Host Cell Protein Analysis of Antibody-Based Protein Therapeutics Using the Orbitrap Astral Mass Spectrometer.",
-      "abstract": "Host cell proteins (HCPs) are endogenous proteins generated in cellular production systems alongside the biotherapeutic of interest. Removal of HCPs is crucial as they can be detrimental to product efficacy and patient safety. Due to its ability to determine individual HCP concentrations, liquid chromatography tandem mass spectrometry is increasingly utilized as an orthogonal method to ELISA for HCP monitoring. For protein biotherapeutics like monoclonal antibodies, their dynamic range makes detection of low-level HCPs difficult. The Orbitrap Astral MS has the potential to overcome such challenges, offering improvements in protein identifications in complex sample matrices while simultaneously reducing analysis times. Here, we utilize the Orbitrap Astral MS to perform HCP analysis on 36 protein biotherapeutics. Our workflow used a short 60 samples-per-day separation method and was initially benchmarked against four previously published studies, demonstrating comparable levels of HCP identifications. 236 HCPs were detected across the cohort and 55% of those found to be quantifiable in at least one product using label free quantitation. Functional analysis revealed that most detected HCPs had functions related to catalysis or binding, predominately catalytic activity (46%, 97 gene IDs) or protein binding (44%, 91 gene IDs). Nearly 80% of quantifiable HCPs were detected at concentrations below 10 ng/mg, with 8% detected below concentrations of 1 ng/mg. These included HCPs considered as \"high-risk\" by the Biophorum Development Group. This study shows how new generation mass spectrometry instruments can enable detection of low-level HCPs while allowing for a rapid and more informed understanding of a product's HCP content.",
-      "authors": [
-        "Josh Smith",
-        "Aaron Richardson",
-        "Corentin Beaumal",
-        "Marina Ainciburu",
-        "Sara Carillo",
-        "Anna Pashkova",
-        "Tabiwang N Arrey",
-        "Nicolaie E Damoc",
-        "Colin Clarke",
-        "Jonathan Bones"
-      ],
-      "journal": "Journal of the American Society for Mass Spectrometry",
-      "journal_abbr": "J Am Soc Mass Spectrom",
-      "pub_date": "2026-04-17",
-      "entrez_date": "2026-04-17",
-      "doi": "10.1021/jasms.5c00272",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Biophorum",
-        "LC-MS/MS",
-        "Orbitrap Astral MS",
-        "high risk HCPs",
-        "host cell proteins",
-        "mAb based therapeutics"
-      ],
-      "affiliation": "National Institute for Bioprocessing Research and Training, Foster Avenue, Mount Merrion, Blackrock, Co., Dublin A94 X099, Ireland.",
-      "language": "eng",
-      "title_zh": "使用 Orbitrap Astral 质谱仪对基于抗体的蛋白质治疗进行宿主细胞蛋白质定量分析。",
-      "abstract_zh": "宿主细胞蛋白（HCP）是细胞生产系统中与感兴趣的生物治疗药物一起产生的内源蛋白。去除 HCP 至关重要，因为它们可能不利于产品功效和患者安全。由于能够确定个体 HCP 浓度，液相色谱串联质谱法越来越多地用作 ELISA 的正交方法来监测 HCP。对于单克隆抗体等蛋白质生物治疗药物，其动态范围使得低水平 HCP 的检测变得困难。 Orbitrap Astral MS 有潜力克服这些挑战，改进复杂样品基质中的蛋白质鉴定，同时减少分析时间。在这里，我们利用 Orbitrap Astral MS 对 36 种蛋白质生物治疗药物进行 HCP 分析。我们的工作流程采用了每天 60 个样本的简短分离方法，最初以四项先前发表的研究为基准，证明了 HCP 识别的可比水平。在整个队列中检测到 236 种 HCP，其中 55% 被发现可以使用无标签定量法在至少一种产品中进行定量。\n功能分析显示，大多数检测到的 HCP 具有与催化或结合相关的功能，主要是催化活性（46%，97 个基因 ID）或蛋白质结合（44%，91 个基因 ID）。近 80% 的可定量 HCP 的检测浓度低于 10 ng/mg，其中 8% 的检测浓度低于 1 ng/mg。其中包括被 Biophorum 开发集团视为“高风险”的 HCP。这项研究展示了新一代质谱仪器如何能够检测低含量的 HCP，同时能够快速、更明智地了解产品的 HCP 含量。",
-      "translate_provider": "",
-      "score": 6,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41996158/",
-      "doi_url": "https://doi.org/10.1021/jasms.5c00272"
     },
     "42725489": {
       "pmid": "42725489",
