@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17 00:05:09",
+  "generated_at": "2026-09-17 23:54:19",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 69,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -171,48 +171,45 @@
       "42005515"
     ],
     "2026-10-20": [
-      "41996200"
-    ],
-    "2026-10-21": [
       "42667144"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "42568918"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42554770"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42487284"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42458707"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42449784"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42285912"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42276533"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42272446"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42217505"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42145184"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42129093"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42093402"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42037172"
     ]
   },
@@ -1364,7 +1361,7 @@
       "language": "eng",
       "title_zh": "开发一种基于单克隆抗体的ELISA和侧流免疫测定法，用于玉米中氟氧吡咯的灵敏检测。",
       "abstract_zh": "氟氧吡啶（ FLU ）是一种广泛使用的合成生长素型除草剂。农产品中的流感残留物对环境和人类健康构成潜在风险。因此，开发快速灵敏的氟氧吡咯检测方法非常重要。在本研究中，通过杂交瘤技术获得了能够特异性识别流感的单克隆抗体11D8 （ mAb-11D8 ）。\n该抗体具有IgG3的重链亚型和κ的轻链亚型，半数最大抑制浓度（ IC50 ）为1.95 ng mL-1 ，线性检测范围为0.67-8.09 ng mL-1。分子对接显示， SER L: 44、TRP H: 104和LEU H: 4被预测为参与通过氢键识别流感的mAb-11D8的关键残基。\n建立了两种免疫测定法，即间接竞争酶联免疫吸附测定法（ ic-ELISA ）和胶体金横向流动免疫层析测定法（ LFIA ）用于流感检测。玉米样品中ic-ELISA的LOD为56.0 ng mL-1 ， LFIA的LOD为180.8 ng mL-1。在使用玉米样品的加标回收实验中， ic-ELISA的回收率在87%至92%之间，而LFIA方法的回收率为81-102%。\n这些结果与通过液相色谱-串联质谱验证获得的结果高度一致。结果表明，两种开发的免疫测定方法都适用于玉米中流感残留物的快速、灵敏和定量检测。",
-      "translate_provider": "mymemory",
+      "translate_provider": "",
       "score": 6,
       "source": "PubMed",
       "source_url": "",
@@ -2359,42 +2356,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42005515/",
       "doi_url": "https://doi.org/10.1021/acsengineeringau.5c00083"
-    },
-    "41996200": {
-      "pmid": "41996200",
-      "title": "Native Top-Down Mass Spectrometry Combined with High-Resolution Charge Variant Analysis of Trastuzumab Originator and Biosimilars.",
-      "abstract": "Comprehensive characterization of monoclonal antibody (mAb) charge heterogeneity is essential to ensure product quality, maintain batch consistency and support biosimilar development. Charge variant analysis (CVA) is widely used to separate acidic and basic proteoforms from the main species. However, cation-exchange chromatography coupled to mass spectrometry provides limited information and cannot localize the post-translational modifications (PTMs) responsible for mAb heterogeneity. Here, the coupling of pH-gradient CVA with native top-down mass spectrometry (TD-MS) for proteoform-specific analysis of trastuzumab is presented. Individual charge variants were chromatographically separated under native conditions and directly fragmented on the chromatographic time scale using higher-energy collision dissociation (HCD), electron-transfer dissociation (ETD) and ultraviolet photodissociation (UVPD). The addition of proton-transfer charge reduction (PTCR) helped reduce spectral congestion and enhanced the detection of high-mass fragment ions, resulting in improved sequence coverage. This workflow enabled the complete sequencing of the complementarity-determining region (CDR) 3 and the direct identification and insights into the location of key PTMs at the intact-protein level, including deamidation, succinimide and N-terminal pyroGlu for individual proteoforms. Comparison of five trastuzumab samples (originator and biosimilars) demonstrated high reproducibility in fragmentation patterns, sequence coverage and variant assignment, highlighting the robustness of the method. Although limitations remain due to the challenges of fragmenting intact mAbs under native conditions, this work establishes a proof of concept for CVA native TD-MS characterization of mAbs to complement bottom-up and middle-down analyses, and has potential for broad applicability for antibody-based biopharmaceuticals.",
-      "authors": [
-        "Corentin Beaumal",
-        "Kristina Srzentić",
-        "Sara Carillo",
-        "Jonathan Bones"
-      ],
-      "journal": "Journal of the American Society for Mass Spectrometry",
-      "journal_abbr": "J Am Soc Mass Spectrom",
-      "pub_date": "2026-04-17",
-      "entrez_date": "2026-04-17",
-      "doi": "10.1021/jasms.5c00438",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "charge variant analysis (CVA)",
-        "intact monoclonal antibodies (mAbs)",
-        "native top-down MS",
-        "proton-transfer charge reduction (PTCR)"
-      ],
-      "affiliation": "Characterization and Comparability Laboratory, NIBRT - National Institute for Bioprocessing Research and Training, Foster Avenue, Mount Merrion, Blackrock, Dublin A94 X099, Ireland.",
-      "language": "eng",
-      "title_zh": "天然自上而下质谱法与曲妥珠单抗原研药和生物仿制药的高分辨率电荷变体分析相结合。",
-      "abstract_zh": "单克隆抗体 (mAb) 电荷异质性的全面表征对于确保产品质量、保持批次一致性和支持生物仿制药开发至关重要。电荷变体分析 (CVA) 广泛用于从主要物种中分离酸性和碱性蛋白质形式。然而，阳离子交换色谱法与质谱联用提供的信息有限，并且无法定位导致 mAb 异质性的翻译后修饰 (PTM)。在此，介绍了 pH 梯度 CVA 与天然自上而下质谱 (TD-MS) 的耦合，用于曲妥珠单抗的蛋白质形式特异性分析。在自然条件下对各个电荷变体进行色谱分离，并使用高能碰撞解离 (HCD)、电子转移解离 (ETD) 和紫外光解离 (UVPD) 在色谱时间尺度上直接裂解。质子转移电荷减少 (PTCR) 的添加有助于减少光谱拥塞并增强对高质量碎片离子的检测，从而提高序列覆盖率。\n该工作流程能够对互补决定区 (CDR) 3 进行完整测序，并在完整蛋白质水平上直接识别和了解关键 PTM 的位置，包括单个蛋白质形式的脱酰胺、琥珀酰亚胺和 N 末端 PyroGlu。五个曲妥珠单抗样品（原研药和生物仿制药）的比较证明了片段模式、序列覆盖和变异分配的高重现性，凸显了该方法的稳健性。尽管由于在天然条件下破碎完整 mAb 的挑战仍然存在局限性，但这项工作为 mAb 的 CVA 天然 TD-MS 表征建立了概念验证，以补充自下而上和自中而下的分析，并且具有广泛适用于基于抗体的生物制药的潜力。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41996200/",
-      "doi_url": "https://doi.org/10.1021/jasms.5c00438"
     },
     "42667144": {
       "pmid": "42667144",
