@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-17 23:54:19",
+  "generated_at": "2026-09-18 23:53:05",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 69,
@@ -129,46 +129,46 @@
       "42028833"
     ],
     "2026-09-30": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-01": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-02": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-05": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-06": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-07": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-08": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-09": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-12": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-13": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-14": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-15": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-16": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-19": [
-      "42005515"
+      "42011714"
     ],
     "2026-10-20": [
       "42667144"
@@ -1828,6 +1828,50 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42028833/",
       "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.6c00092"
     },
+    "42754776": {
+      "pmid": "42754776",
+      "title": "Effects of Siliconization Techniques, Headspace, Mechanical and Thermal Stress on Particle Generation in an Antibody Formulation.",
+      "abstract": "OBJECTIVE: Pre-filled syringes (PFSs) have become a preferred delivery system for biotherapeutics due to their convenience, accuracy, and cost-effectiveness. Silicone oil (SO) is commonly used as a lubricant in PFSs; however, its leaching can trigger immunogenicity and raise clinical and regulatory concerns. This study evaluates the impact of syringe design and handling parameters on particle formation and aggregation of a model therapeutic antibody in SO-lubricated PFSs.\nMETHODS: The study systematically evaluated multiple factors influencing protein stability in prefilled syringes, including siliconization technique (standard sprayed-on [Stdr] vs. cross-linked [Alba®]), headspace volume (low vs. high), and applied stress conditions (slow freeze-thaw cycles and end-over-end agitation). The antibody formulation stability was assessed to determine the combined effects of these parameters on subvisible particle generation and aggregation. Comprehensive analytical characterization was performed using light obscuration (LO), micro flow imaging, size-exclusion chromatography (SEC), and analytical ultracentrifugation (AUC).\nRESULT: Syringes with standard sprayed-on siliconization and larger headspace volumes exhibited substantially higher subvisible particle concentrations and aggregate formation, especially under slow freeze-thaw and high-temperature end-over-end stress conditions. In contrast, syringes with cross-linked siliconization (Alba®) showed markedly reduced silicone oil particle shedding and improved protein stability across all tested stress environments. Collectively, these findings highlight that the siliconization method, headspace volume, and stress conditions act synergistically to influence aggregate formation and silicone oil particle release following fill-finish operations.\nCONCLUSION: Optimizing syringe design and handling parameters can significantly reduce silicone oil induced particle formation and protein aggregation, thereby improving formulation stability.",
+      "authors": [
+        "Alexandra Lucas",
+        "Deepak Kumar Tripathi",
+        "Angelina Bespalova",
+        "Chiara Callegari",
+        "Vaibhav Upadhyay",
+        "Myles Chetcuti",
+        "Odra Pinato",
+        "Andrew A Monte",
+        "David L Bain",
+        "Anthony Vico",
+        "Krishna M G Mallela"
+      ],
+      "journal": "Pharmaceutical research",
+      "journal_abbr": "Pharm Res",
+      "pub_date": "2026-09-17",
+      "entrez_date": "2026-09-17",
+      "doi": "10.1007/s11095-026-04168-3",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "aggregation",
+        "antibody",
+        "biotherapeutics",
+        "prefilled syringes",
+        "silicone oil"
+      ],
+      "affiliation": "Department of Pharmaceutical Sciences, Skaggs School of Pharmacy and Pharmaceutical Sciences, University of Colorado Anschutz Medical Campus, 12850 East Montview Blvd, Aurora, CO, 80045, USA.",
+      "language": "eng",
+      "title_zh": "硅化技术、顶空、机械和热应力对抗体配方中颗粒生成的影响。",
+      "abstract_zh": "目的：预填充注射器（ PFS ）由于其便利性、准确性和成本效益，已成为生物治疗药物的首选输送系统。硅油（ SO ）通常用作PFS中的润滑剂；然而，其浸出可引发免疫原性并引起临床和监管方面的担忧。\n本研究评估了注射器设计和处理参数对SO润滑PFS中模型治疗性抗体颗粒形成和聚集的影响。\n方法：该研究系统地评估了影响预填充注射器中蛋白质稳定性的多种因素，包括硅化技术（标准喷雾[STDR]与交联[ALBA ®] ）、顶空体积（低与高）和施加的应力条件（慢速冻融循环和端到端搅拌）。\n评估抗体制剂稳定性以确定这些参数对隐形颗粒生成和聚集的综合影响。使用光遮蔽（ LO ）、微流成像、尺寸排除色谱（ SEC ）和分析超速离心（ AUC ）进行全面的分析表征。\n结果：具有标准喷涂硅化和较大顶空容积的注射器表现出明显更高的可见颗粒浓度和聚集体形成，特别是在缓慢冻融和高温端到端应力条件下。\n相比之下，具有交联硅化作用的注射器（ ALBA ® ）在所有测试的应力环境中显示出显著减少的硅油颗粒脱落和改善的蛋白质稳定性。总的来说，这些发现强调了硅化方法、顶空体积和应力条件协同作用，以影响填充完成操作后的聚集体形成和硅油颗粒释放。\n结论：优化注射器设计和处理参数可以显著减少硅油诱导的颗粒形成和蛋白质聚集，从而提高配方稳定性。",
+      "translate_provider": "mymemory",
+      "score": 5,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42754776/",
+      "doi_url": "https://doi.org/10.1007/s11095-026-04168-3"
+    },
     "42725489": {
       "pmid": "42725489",
       "title": "Microsampling of proteins from biological matrices: sampling methods and devices, typical workflows, clinical examples, novel applications and innovations.",
@@ -2317,45 +2361,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42011714/",
       "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.5c01917"
-    },
-    "42005515": {
-      "pmid": "42005515",
-      "title": "Optical Coherence Tomography Velocimetry for In-Line Processing of Biologics: Concentrated and Gelling Monoclonal Antibody Solutions.",
-      "abstract": "Optical coherence tomography velocimetry (OCTV) was demonstrated with in-line processing of biologics for the first time. OCTV allowed the velocity of concentrated monoclonal antibodies (mAbs at 39.5-84.7 mg mL-1) to be probed in 3.4 pL volumes over distances 0-5 mm from the pipe walls. The large penetration depth is facilitated by the relatively low turbidity of mAbs at near-infrared wavelengths (1300 nm). The mAb solutions could be concentrated in situ and the changes to the viscoelasticity measured. Higher concentration mAb solutions became shear thinning (following the power law fluid model) and the amplitude of their velocity fluctuations decreased. Furthermore, dropping the pH of the mAb solutions induced a gelation phase transition and complex changes to the mAb rheology could be observed with OCTV e.g. thixotropy and the formation of a stationary boundary layer. Thus, in situ formulation of mAbs could be explored with OCTV under industrially relevant conditions.",
-      "authors": [
-        "Conor M Lewis",
-        "Owen Watts Moore",
-        "Charles T Heise",
-        "Jennifer Tovey",
-        "Thomas A Waigh"
-      ],
-      "journal": "ACS engineering Au",
-      "journal_abbr": "ACS Eng Au",
-      "pub_date": "2026-02-24",
-      "entrez_date": "2026-04-20",
-      "doi": "10.1021/acsengineeringau.5c00083",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "bovine serum albumin",
-        "downstream purification",
-        "monoclonal antibody",
-        "optical coherence tomography",
-        "thixotropic",
-        "velocimeter"
-      ],
-      "affiliation": "Biological Physics Group, Department of Physics and Astronomy, University of Manchester, Oxford Road, Manchester M13 1LP, U.K.",
-      "language": "eng",
-      "title_zh": "用于生物制剂在线处理的光学相干断层扫描测速：浓缩和胶凝单克隆抗体溶液。",
-      "abstract_zh": "光学相干断层扫描测速 (OCTV) 首次在生物制剂的在线处理中得到验证。 OCTV 允许在距管壁 0-5 mm 的距离内探测 3.4 pL 体积的浓缩单克隆抗体（39.5-84.7 mg mL-1 的 mAb）的速度。 mAb 在近红外波长 (1300 nm) 下相对较低的浊度有助于实现大的穿透深度。 mAb 溶液可以原位浓缩并测量粘弹性的变化。浓度较高的 mAb 溶液变得剪切稀化（遵循幂律流体模型），并且其速度波动的幅度减小。此外，降低 mAb 溶液的 pH 值会引发凝胶相变，并且可以使用 OCTV 观察到 mAb 流变学的复杂变化。触变性和固定边界层的形成。因此，可以在工业相关条件下使用 OCTV 探索 mAb 的原位配制。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42005515/",
-      "doi_url": "https://doi.org/10.1021/acsengineeringau.5c00083"
     },
     "42667144": {
       "pmid": "42667144",
