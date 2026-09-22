@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-22 00:35:38",
+  "generated_at": "2026-09-22 23:59:30",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 69,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -90,126 +90,129 @@
       "42026710"
     ],
     "2026-09-11": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-14": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-15": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-16": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-17": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-18": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-21": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-22": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-23": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-24": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-25": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-28": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-29": [
-      "42028833"
+      "42069986"
     ],
     "2026-09-30": [
-      "42754776"
+      "42028833"
     ],
     "2026-10-01": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-02": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-05": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-06": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-07": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-08": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-09": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-12": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-13": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-14": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-15": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-16": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-19": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-20": [
-      "42667144"
+      "42011714"
     ],
     "2026-10-21": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-22": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-23": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-26": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-27": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-28": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-29": [
-      "42276533"
+      "42285912"
     ],
     "2026-10-30": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-02": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-03": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-04": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-05": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-06": [
+      "42093402"
+    ],
+    "2026-11-09": [
       "42037172"
     ]
   },
@@ -1325,6 +1328,47 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42026710/",
       "doi_url": "https://doi.org/10.1002/btpr.88514"
+    },
+    "42768232": {
+      "pmid": "42768232",
+      "title": "Benchmarking Automated Mass Photometry against SEC-MALS and AUC for Quantifying Cross-Linked Monoclonal Antibody Aggregates.",
+      "abstract": "Monoclonal antibodies (mAbs) play pivotal roles in modern biotherapeutics, offering targeted treatments for diseases such as cancers and autoimmune disorders. However, antibody self-association and propensity for aggregation can potentially compromise intended efficacy and pose safety concerns, necessitating robust analytical methods for aggregate detection and quantification. Traditional techniques like Size Exclusion Chromatography with Multi-angle Light Scattering (SEC-MALS) and analytical ultracentrifugation-sedimentation velocity (AUC-SV) are widely used but are limited by long analysis times, large sample requirements, and potential artifacts. Mass photometry (MP), a novel single-molecule technique, measures the interferometric scattering signal arising from molecules binding and unbinding to a glass slide. This study compares automated MP with SEC-MALS and AUC-SV for mAb aggregation analysis, demonstrating that MP equipped with automated sample handling delivers accurate and consistent analysis for the main and subpopulation species comparable to these established methods. Specifically, MP can not only determine the molecular mass distribution but also provide quantitative analysis of the monomer and High Molecular Mass Species (HMMS) generated with chemical cross-linking. When quantifying cross-linked HMMS of an IgG mAb, MP quantitation shows linear correlation with the SEC method, while MP provided superior resolution and dynamic range compared to SEC-MALS. Furthermore, MP and AUC-SV show comparable resolution in differentiating higher order aggregates and exhibit linear correlation for dimer quantitation, the primary form of mAb HMMS. With the capability to differentiate mAb monomers from various oligomeric forms, MP may represent a new approach that offers significant advantages in efficiency and throughput in quantification and characterization of mAb HMMS.",
+      "authors": [
+        "Mingyue Li",
+        "Sharon Polleck",
+        "Cliff Entrican",
+        "Cassandra Larkin",
+        "Brenda Watt",
+        "Elizabeth McCoy"
+      ],
+      "journal": "The AAPS journal",
+      "journal_abbr": "AAPS J",
+      "pub_date": "2026-09-21",
+      "entrez_date": "2026-09-22",
+      "doi": "10.1208/s12248-026-01307-x",
+      "publication_types": [
+        "Journal Article",
+        "Comparative Study"
+      ],
+      "keywords": [
+        "analytical ultracentrifugation",
+        "antibody aggregation",
+        "high molecular mass species",
+        "mass photometry",
+        "monoclonal antibody",
+        "size exclusion chromatography"
+      ],
+      "affiliation": "Analytical Research & Development, BioTherapeutics Pharmaceutical Sciences, Pfizer Inc. 1 Burtt Rd., Andover, Massachusetts, 01810, USA. mingyue.li2@pfizer.com.",
+      "language": "eng",
+      "title_zh": "",
+      "abstract_zh": "",
+      "translate_provider": "",
+      "score": 6,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42768232/",
+      "doi_url": "https://doi.org/10.1208/s12248-026-01307-x"
     },
     "42745724": {
       "pmid": "42745724",
