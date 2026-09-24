@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-22 23:59:30",
+  "generated_at": "2026-09-24 00:14:21",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -90,88 +90,88 @@
       "42026710"
     ],
     "2026-09-11": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-14": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-15": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-16": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-17": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-18": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-21": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-22": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-23": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-24": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-25": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-28": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-29": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-30": [
-      "42028833"
+      "42069986"
     ],
     "2026-10-01": [
-      "42754776"
+      "42028833"
     ],
     "2026-10-02": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-05": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-06": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-07": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-08": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-09": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-12": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-13": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-14": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-15": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-16": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-19": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-20": [
-      "42011714"
+      "42049075"
     ],
     "2026-10-21": [
       "42667144"
@@ -1329,6 +1329,44 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42026710/",
       "doi_url": "https://doi.org/10.1002/btpr.88514"
     },
+    "42773271": {
+      "pmid": "42773271",
+      "title": "Challenges in the Quantification of Free TFPI in Human Plasma Following Marstacimab Treatment.",
+      "abstract": "Tissue factor pathway inhibitor (TFPI) is an endogenous inhibitor of the extrinsic coagulation pathway. Marstacimab (PF-06741086), a human immunoglobulin G1 monoclonal antibody, binds the TFPI Kunitz-2 domain to improve hemostatic control in individuals with hemophilia. Quantifying the free form of TFPI, i.e., not bound to marstacimab or endogenous binding proteins, is the most direct assessment of target coverage and modulation following treatment. This investigation describes efforts to develop a quantitative assay to measure free TFPI in human plasma to support the marstacimab drug development program. Three protein enrichment methods (competitive antibody capture, binding partner capture, and drug depletion) were assessed in combination with liquid chromatography-tandem mass spectrometry to develop a bioanalytical free target assay. Surface plasmon resonance (SPR) was used to determine the binding affinities of marstacimab and competitive antibody clones to TFPI. SPR analysis demonstrated marstacimab binds TFPI with a nanomolar affinity (equilibrium dissociation constant [KD], 3.7 nM), whereas antibody clones had picomolar binding affinities. All assay formats over-recovered TFPI, indicating disruption of the marstacimab:TFPI complex during sample handling and release of bound TFPI, under the experimental conditions reported here. As a result, accurate measurement of free TFPI was not feasible. These findings demonstrate that the sample manipulation required for analysis altered the binding equilibrium of the marstacimab:TFPI complex with release of bound TFPI that compromised assay specificity. In conclusion, the accurate measurement of free TFPI from marstacimab-treated human plasma was not achievable with the approaches tested, in part because marstacimab binds TFPI with a low-nanomolar affinity.",
+      "authors": [
+        "Katherine Wright",
+        "Kerry Kelleher",
+        "Parya Nouri",
+        "Lindsay King",
+        "Hendrik Neubert"
+      ],
+      "journal": "The AAPS journal",
+      "journal_abbr": "AAPS J",
+      "pub_date": "2026-09-22",
+      "entrez_date": "2026-09-22",
+      "doi": "10.1208/s12248-026-01292-1",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "TFPI",
+        "assay development",
+        "free/total target biomarker",
+        "marstacimab",
+        "mass spectrometry"
+      ],
+      "affiliation": "Biomarkers & Biomeasures, Pharmacokinetics Dynamics & Metabolism, Pfizer Inc, 1 Burtt Road, Andover, Massachusetts, 01810, USA.",
+      "language": "eng",
+      "title_zh": "Marstacimab治疗后人血浆中游离TFPI的定量所面临的挑战。",
+      "abstract_zh": "组织因子通路抑制剂（ TFPI ）是外源性凝血通路的内源性抑制剂。人免疫球蛋白G1单克隆抗体Marstacimab (PF-06741086)结合TFPI Kunitz-2结构域，以改善血友病患者的止血控制。\n定量TFPI的游离形式，即不与marstacimab或内源性结合蛋白结合，是治疗后对靶点覆盖率和调节的最直接评估。本研究描述了开发一种定量测定法来测量人血浆中游离TFPI以支持marstacimab药物开发计划的努力。\n结合液相色谱-串联质谱法评估三种蛋白质富集方法（竞争性抗体捕获、结合配偶体捕获和药物消耗） ，以开发生物分析游离靶标测定。使用表面等离子体共振（ SPR ）来确定marstacimab和竞争性抗体克隆与TFPI的结合亲和力。\nSPR分析表明， marstacimab以纳摩尔亲和力（平衡解离常数[KD] ， 3.7 nM ）结合TFPI ，而抗体克隆具有皮摩尔结合亲和力。在此处报告的实验条件下，所有测定格式均过度回收了TFPI ，表明在样品处理和释放结合的TFPI期间， marstacimab: TFPI复合物中断。因此，准确测量游离TFPI是不可行的。\n这些发现表明，分析所需的样品操作改变了marstacimab: TFPI复合物的结合平衡，同时释放了损害测定特异性的结合TFPI。总之，使用测试的方法无法准确测量marstacimab治疗的人血浆中的游离TFPI ，部分原因是marstacimab以低纳摩尔亲和力结合TFPI。",
+      "translate_provider": "mymemory",
+      "score": 6,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42773271/",
+      "doi_url": "https://doi.org/10.1208/s12248-026-01292-1"
+    },
     "42768232": {
       "pmid": "42768232",
       "title": "Benchmarking Automated Mass Photometry against SEC-MALS and AUC for Quantifying Cross-Linked Monoclonal Antibody Aggregates.",
@@ -1360,9 +1398,9 @@
       ],
       "affiliation": "Analytical Research & Development, BioTherapeutics Pharmaceutical Sciences, Pfizer Inc. 1 Burtt Rd., Andover, Massachusetts, 01810, USA. mingyue.li2@pfizer.com.",
       "language": "eng",
-      "title_zh": "",
-      "abstract_zh": "",
-      "translate_provider": "",
+      "title_zh": "将用于定量交联单克隆抗体聚集体的自动质量光度法与SEC-MALS和AUC进行对比。",
+      "abstract_zh": "单克隆抗体（ mAb ）在现代生物治疗中起着关键作用，为癌症和自身免疫性疾病等疾病提供靶向治疗。然而，抗体自身结合和聚集倾向可能会损害预期功效并引起安全性问题，因此需要强大的聚集检测和定量分析方法。\n传统技术，如多角度光散射尺寸排除色谱（ SEC-MALS ）和分析超离心沉降速度（ AUC-SV ）被广泛使用，但受到分析时间长、样品需求量大和潜在伪影的限制。质量光度法（ MP ）是一种新颖的单分子技术，用于测量分子与载玻片结合和解结合产生的干涉散射信号。\n本研究将自动化MP与SEC-MALS和AUC-SV进行比较，以进行mAb聚集分析，证明配备自动化样本处理的MP可为主要和亚群物种提供与这些既定方法相当的准确和一致的分析。\n具体而言， MP不仅可以确定分子质量分布，还可以提供化学交联产生的单体和高分子质量种（ HMM ）的定量分析。当定量IgG mAb的交联HMM时， MP定量与SEC方法呈线性相关性，而MP提供的分辨率和动态范围优于SEC-MALS。\n此外， MP和AUC-SV在区分高阶聚集体方面表现出相当的分辨率，并且对于二聚体定量（ mAb HMM的主要形式）表现出线性相关性。由于能够区分mAb单体与各种低聚形式， MP可能代表一种新方法，该方法在mAb HMM的定量和表征的效率和通量方面具有显著优势。",
+      "translate_provider": "mymemory",
       "score": 6,
       "source": "PubMed",
       "source_url": "",
@@ -2368,43 +2406,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42049075/",
       "doi_url": "https://doi.org/10.1016/j.ijpharm.2026.126907"
-    },
-    "42011714": {
-      "pmid": "42011714",
-      "title": "Near-UV and Visible Light Promote Iron-Catalyzed Site-Specific Radical Transformation of Threonine to Alanine in a Monoclonal Antibody Fc Domain (IgG1-Fc).",
-      "abstract": "Near-UV and visible-light photodegradation is a concern for the development of stable and efficacious protein therapeutics, but mechanistic information on the underlying processes is scarce. We previously reported on the photoconversion and photofragmentation of IgG1-Fc, IgG1, and an IgG1-based fusion protein in the CH2 domain. Here, we report a novel site-specific photodegradation mechanism, converting Thr into Ala catalyzed by Fe(III). Site-directed mutagenesis and spin-trapping in conjunction with high pressure liquid chromatography-tandem mass spectrometry (HPLC-MS/MS) analysis reveal that this novel photoconversion proceeds via the generation of intermediary protein glycyl and methyl (•CH3) radicals analogous to metal-catalyzed cross-coupling reactions observed in synthetic organic processes.",
-      "authors": [
-        "Maribel Espinoza Ballesteros",
-        "Marcela Solis Rodriguez",
-        "Thomas J Tolbert",
-        "Christian Schöneich"
-      ],
-      "journal": "Molecular pharmaceutics",
-      "journal_abbr": "Mol Pharm",
-      "pub_date": "2026-04-21",
-      "entrez_date": "2026-04-21",
-      "doi": "10.1021/acs.molpharmaceut.5c01917",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "ligand-to-metal charge transfer",
-        "metal catalysis",
-        "monoclonal antibody",
-        "photodegradation",
-        "photofragmentation"
-      ],
-      "affiliation": "Department of Pharmaceutical Chemistry, University of Kansas, 2093 Constant Avenue, Lawrence, Kansas 66047, United States.",
-      "language": "eng",
-      "title_zh": "近紫外和可见光促进单克隆抗体 Fc 结构域 (IgG1-Fc) 中铁催化的苏氨酸向丙氨酸的位点特异性自由基转化。",
-      "abstract_zh": "近紫外和可见光光降解是开发稳定有效的蛋白质疗法的一个问题，但有关基本过程的机制信息却很少。我们之前报道了 IgG1-Fc、IgG1 和 CH2 结构域中基于 IgG1 的融合蛋白的光转换和光断裂。在这里，我们报告了一种新颖的位点特异性光降解机制，通过 Fe(III) 催化将 Thr 转化为 Ala。定点诱变和自旋捕获与高压液相色谱-串联质谱（HPLC-MS/MS）分析相结合表明，这种新颖的光转换是通过中间蛋白甘氨酰和甲基（·CH3）自由基的生成进行的，类似于合成有机过程中观察到的金属催化交叉偶联反应。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42011714/",
-      "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.5c01917"
     },
     "42667144": {
       "pmid": "42667144",
