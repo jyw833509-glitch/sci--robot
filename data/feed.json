@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-26 00:21:55",
+  "generated_at": "2026-09-27 00:14:16",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -30,148 +30,148 @@
       "42235435"
     ],
     "2026-08-14": [
-      "42013000"
-    ],
-    "2026-08-17": [
       "42687332"
     ],
-    "2026-08-18": [
+    "2026-08-17": [
       "42563142"
     ],
-    "2026-08-19": [
+    "2026-08-18": [
       "42402251"
     ],
-    "2026-08-20": [
+    "2026-08-19": [
       "42323147"
     ],
-    "2026-08-21": [
+    "2026-08-20": [
       "42216916"
     ],
-    "2026-08-24": [
+    "2026-08-21": [
       "42204975"
     ],
-    "2026-08-25": [
+    "2026-08-24": [
       "42192004"
     ],
-    "2026-08-26": [
+    "2026-08-25": [
       "42084290"
     ],
-    "2026-08-27": [
+    "2026-08-26": [
       "42570623"
     ],
-    "2026-08-28": [
+    "2026-08-27": [
       "42470740"
     ],
-    "2026-08-31": [
+    "2026-08-28": [
       "42368154"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42346963"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42307050"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42276211"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42214142"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42155371"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "42043509"
     ],
-    "2026-09-09": [
+    "2026-09-08": [
       "42041385"
     ],
-    "2026-09-10": [
+    "2026-09-09": [
       "42026710"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "42773271"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42768232"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42745724"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42655115"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42645420"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42489360"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42450443"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42376876"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42332429"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42292894"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42231136"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42202083"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "42112447"
     ],
-    "2026-09-30": [
+    "2026-09-29": [
       "42069986"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42028833"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42754776"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42725489"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42652006"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42546983"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42429162"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42414861"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42345899"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42273649"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42166563"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42125798"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42119499"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "42068121"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "42049075"
+    ],
+    "2026-10-20": [
+      "42794422"
     ],
     "2026-10-21": [
       "42667144"
@@ -535,46 +535,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42235435/",
       "doi_url": "https://doi.org/10.1016/j.chroma.2026.467108"
-    },
-    "42013000": {
-      "pmid": "42013000",
-      "title": "Reduction and denaturation before affinity chromatography for host cell protein removal in aggregate-rich monoclonal antibody.",
-      "abstract": "Host cell proteins (HCPs) are important process-related safety concern factors during drug development, clinical trials and manufacturing, and their removal becomes particularly challenging when associated with antibody aggregates. Residual HCPs in drug products could trigger adverse effects or compromise drug efficacy and stability. This study aims to enhance the HCP removal specifically in monoclonal antibodies (mAbs) with high aggregate content before protein A chromatography by introducing reduction and denaturation steps. A model mAb was purified by different processes, and the impact on HCP removal was evaluated by enzyme-linked immunosorbent assay (ELISA) and Liquid chromatography-mass spectrometry (LC-MS). The HCP profiles in high aggregate, low aggregate and monomeric mAbs were analyzed by LC-MS. The additional reduction and denaturation steps improved HCP removal rate by 1.08 log10 reduction value (LRV) compared to the control process. For the relatively abundant high-risk HCPs, 45% were completely removed. HCP removal in the model mAb was significantly enhanced, especially in high aggregate forms. This method can reduce HCP carry-over from mAbs aggregates in subsequent downstream processing and can provide an efficient HCP removal strategy for manufacturing to improve patient safety and drug stability.",
-      "authors": [
-        "Tianwei Huang",
-        "Changrui Zou",
-        "Guiping Qi",
-        "Zhipeng Zhao",
-        "Yichen Zhang",
-        "Sean Xiangyuan He",
-        "Kaisheng Huang"
-      ],
-      "journal": "Preparative biochemistry & biotechnology",
-      "journal_abbr": "Prep Biochem Biotechnol",
-      "pub_date": "2026-04-21",
-      "entrez_date": "2026-04-21",
-      "doi": "10.1080/10826068.2026.2652405",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "ELISA",
-        "Host cell protein",
-        "aggregated mAbs",
-        "liquid chromatography–mass spectrometry",
-        "purification"
-      ],
-      "affiliation": "RemeGen Co., Ltd, Yantai, Shandong, China.",
-      "language": "eng",
-      "title_zh": "在亲和层析之前进行还原和变性，以去除富含聚集体的单克隆抗体中的宿主细胞蛋白。",
-      "abstract_zh": "宿主细胞蛋白 (HCP) 是药物开发、临床试验和制造过程中重要的与过程相关的安全问题因素，当与抗体聚集体相关时，它们的去除变得特别具有挑战性。药品中残留的 HCP 可能会引发不良反应或损害药物疗效和稳定性。本研究旨在通过引入还原和变性步骤，在 Protein A 层析之前增强聚集体含量高的单克隆抗体 (mAb) 中 HCP 的去除。通过不同的工艺纯化模型单克隆抗体，并通过酶联免疫吸附测定（ELISA）和液相色谱-质谱（LC-MS）评估对HCP去除的影响。通过 LC-MS 分析高聚集、低聚集和单体 mAb 中的 HCP 谱。与对照过程相比，额外的还原和变性步骤将 HCP 去除率提高了 1.08 log10 还原值 (LRV)。对于相对丰富的高危医护人员，45%被完全清除。模型 mAb 中的 HCP 去除率显着增强，特别是在高聚集形式中。\n该方法可以减少后续下游加工中 mAb 聚集体中的 HCP 残留，并可以为生产提供有效的 HCP 去除策略，以提高患者安全性和药物稳定性。",
-      "translate_provider": "",
-      "score": 9,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42013000/",
-      "doi_url": "https://doi.org/10.1080/10826068.2026.2652405"
     },
     "42687332": {
       "pmid": "42687332",
@@ -2406,6 +2366,44 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42049075/",
       "doi_url": "https://doi.org/10.1016/j.ijpharm.2026.126907"
+    },
+    "42794422": {
+      "pmid": "42794422",
+      "title": "TLR4: A Potential Therapeutic Target in the Experimental Pathogenesis of Hemolytic-Uremic Syndrome.",
+      "abstract": "Childhood infections by Shiga toxin (Stx)-producing Escherichia coli (STEC) cause bloody diarrhea and the life-threatening hemolytic-uremic syndrome (HUS). Stx2, produced by STEC in the gut, is released into the bloodstream and interacts with circulating cells (monocytes, neutrophils, and platelets) through two different receptors: Gb3Cer (globotriaosylceramide) and Toll-like receptor 4 (TLR4). Consequently, blood cells form leukocyte/platelet aggregates and release pathogenic Stx2-containing extracellular vesicles (EVs) that, by damaging the kidney, induce the transition from bloody diarrhea to HUS. Human blood was incubated with Stx2 to induce the formation of neutrophil/platelet and platelet-only aggregates (observed in May-Grünwald Giemsa-stained blood smears) and pathogenic blood cell-derived EVs (isolated by size-exclusion chromatography or differential centrifugation) toxic to Vero cells (assessed by a viability assay). In the presence of a monoclonal antibody against TLR4 (anti-TLR4), the formation of neutrophil/platelet and platelet-only aggregates was greatly reduced compared to treatment with Stx2 alone. Moreover, anti-TLR4 significantly decreased the total mass of pathogenic blood cell-derived EVs produced by Stx2 (detected by nanoparticle tracking analysis), which proved less toxic to Vero cells than those produced by Stx2 alone. The impairment of the Stx2-TLR4 axis obtained during the experimental pathogenesis of HUS provides proof-of-concept evidence supporting TLR4 as a potential therapeutic target.",
+      "authors": [
+        "Elisa Varrone",
+        "Veronica Pepe",
+        "Gianluca Storci",
+        "Massimiliano Bonafè",
+        "Barbara Brunetti",
+        "Maurizio Brigotti"
+      ],
+      "journal": "International journal of molecular sciences",
+      "journal_abbr": "Int J Mol Sci",
+      "pub_date": "2026-09-08",
+      "entrez_date": "2026-09-26",
+      "doi": "10.3390/ijms27187992",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Shiga toxins",
+        "Toll-like receptor 4",
+        "extracellular vesicles",
+        "hemolytic-uremic syndrome"
+      ],
+      "affiliation": "Department of Medical and Surgical Sciences (DIMEC), University of Bologna, 40126 Bologna, Italy.",
+      "language": "eng",
+      "title_zh": "TLR4 ：溶血性尿毒症综合征实验发病机制中的一个潜在治疗靶点。",
+      "abstract_zh": "产生志贺毒素（ Stx ）的大肠杆菌（ STEC ）的儿童感染会导致血性腹泻和危及生命的溶血性尿毒综合征（ HUS ）。STX2由STEC在肠道中产生，释放到血液中，并通过两种不同的受体与循环细胞（单核细胞、中性粒细胞和血小板）相互作用： Gb3Cer （ globotriaosylceramide ）和Toll样受体4 （ TLR4 ）。\n因此，血细胞形成白细胞/血小板聚集物并释放含有致病性Stx2的细胞外囊泡（ EV ） ，通过损害肾脏，诱导从血性腹泻到HUS的过渡。\n将人血液与Stx2一起孵育，以诱导形成对Vero细胞有毒的中性粒细胞/血小板和仅血小板聚集物（在May-Grünwald Giemsa染色的血涂片中观察到）和致病性血细胞衍生EV （通过尺寸排除色谱或差速离心法分离） （通过活力测定评估）。\n在存在针对TLR4的单克隆抗体（抗TLR4 ）的情况下，与单独使用Stx2治疗相比，中性粒细胞/血小板和仅血小板聚集物的形成大大减少。此外，抗TLR4显着降低了Stx2 （通过纳米颗粒跟踪分析检测）产生的致病性血细胞衍生的EV的总质量，其对Vero细胞的毒性低于单纯Stx2产生的细胞。\n在HUS的实验发病过程中获得的Stx2-TLR4轴的损伤提供了支持TLR4作为潜在治疗靶点的概念证据。",
+      "translate_provider": "mymemory",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42794422/",
+      "doi_url": "https://doi.org/10.3390/ijms27187992"
     },
     "42667144": {
       "pmid": "42667144",
