@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-27 00:14:16",
+  "generated_at": "2026-09-28 00:17:50",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 71,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -171,48 +171,51 @@
       "42049075"
     ],
     "2026-10-20": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-21": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-22": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-23": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-26": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-27": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-28": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-29": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-30": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-02": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-03": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-04": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-05": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-06": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-09": [
+      "42093402"
+    ],
+    "2026-11-10": [
       "42037172"
     ]
   },
@@ -2367,6 +2370,47 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42049075/",
       "doi_url": "https://doi.org/10.1016/j.ijpharm.2026.126907"
     },
+    "42799870": {
+      "pmid": "42799870",
+      "title": "Identification of a novel linear B-cell epitope in the N-terminus of varicella-zoster virus glycoprotein B.",
+      "abstract": "Varicella-zoster virus (VZV), a highly contagious human alphaherpesvirus, imposes a substantial economic burden on global healthcare systems. Glycoprotein B (gB), a central fusogen mediating viral entry and cell-cell fusion, represents a promising target for developing VZV vaccines and diagnostic reagents. This study aimed to systematically characterize the antigenicity of VZV gB and map novel linear epitopes to facilitate the development of targeted diagnostics. Methodologically, recombinant glycoprotein B was successfully expressed in a eukaryotic expression system and subsequently purified using nickel-affinity chromatography, and its antigenicity was confirmed with VZV-positive convalescent human serum. Six monoclonal antibodies (mAbs 3B9, 4D2, 5E2, 6G7, 8C9 and 10F11) specifically targeting gB were generated via hybridoma technology. Subsequently, three rounds of progressive truncation using a peptide-overlapping approach and alanine scanning mutagenesis, were employed to precisely identify the antibody binding sites. The results demonstrated that several generated mAbs, particularly the primary detection candidate mAb 6G7, exhibited high titers (up to 1:1024,000) and strong binding affinity (Ka ≈ 7.89 × 10⁸). Crucially, we identified a novel linear B-cell epitope, 97LGDGDEIR104, located within the flexible N-terminal region of gB, which was critical for antibody binding. This epitope lies proximal to previously reported functional motifs involved in membrane fusion. In conclusion, our findings reveal a new antigenic site on VZV gB, providing a robust experimental foundation for the development of epitope-specific serological assays and vaccine strategies.",
+      "authors": [
+        "Yumei Chen",
+        "Mengru Yang",
+        "Hongliang Liu",
+        "Enping Liu",
+        "Jingming Zhou",
+        "Xifang Zhu",
+        "Sixuan Wu",
+        "Yanhua Qi",
+        "Aiping Wang"
+      ],
+      "journal": "Archives of microbiology",
+      "journal_abbr": "Arch Microbiol",
+      "pub_date": "2026-09-26",
+      "entrez_date": "2026-09-26",
+      "doi": "10.1007/s00203-026-05013-2",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "B-cell epitope",
+        "Monoclonal antibody",
+        "Glycoprotein B",
+        "Varicella-zoster virus"
+      ],
+      "affiliation": "Longhu Laboratory of Advanced Immunology, No. 218, Ping AN Avenue, Zhengdong New District, Zhengzhou, 450046, Henan, People's Republic of China.",
+      "language": "eng",
+      "title_zh": "水痘带状疱疹病毒糖蛋白 B N 末端的新型线性 B 细胞表位的鉴定。",
+      "abstract_zh": "水痘带状疱疹病毒 (VZV) 是一种高度传染性的人类甲型疱疹病毒，给全球医疗保健系统带来了巨大的经济负担。糖蛋白 B (gB) 是介导病毒进入和细胞间融合的中心融合剂，是开发 VZV 疫苗和诊断试剂的有希望的靶标。本研究旨在系统地表征 VZV gB 的抗原性并绘制新的线性表位，以促进靶向诊断的开发。方法学上，重组糖蛋白B在真核表达系统中成功表达，随后采用镍亲和层析进行纯化，并用VZV阳性恢复期人血清证实其抗原性。通过杂交瘤技术产生了六种特异性靶向 gB 的单克隆抗体（mAb 3B9、4D2、5E2、6G7、8C9 和 10F11）。随后，采用肽重叠方法和丙氨酸扫描诱变进行三轮渐进截断，以精确识别抗体结合位点。\n结果表明，几种生成的 mAb，特别是主要检测候选 mAb 6G7，表现出高滴度（高达 1:1024,000）和强结合亲和力（Ka ≈ 7.89 × 10⁸）。至关重要的是，我们鉴定了一种新的线性 B 细胞表位 97LGDGDEIR104，它位于 gB 的柔性 N 末端区域内，这对于抗体结合至关重要。该表位位于先前报道的参与膜融合的功能基序附近。总之，我们的研究结果揭示了 VZV gB 上的一个新抗原位点，为表位特异性血清学检测和疫苗策略的开发提供了坚实的实验基础。",
+      "translate_provider": "google",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42799870/",
+      "doi_url": "https://doi.org/10.1007/s00203-026-05013-2"
+    },
     "42794422": {
       "pmid": "42794422",
       "title": "TLR4: A Potential Therapeutic Target in the Experimental Pathogenesis of Hemolytic-Uremic Syndrome.",
@@ -2397,7 +2441,7 @@
       "language": "eng",
       "title_zh": "TLR4 ：溶血性尿毒症综合征实验发病机制中的一个潜在治疗靶点。",
       "abstract_zh": "产生志贺毒素（ Stx ）的大肠杆菌（ STEC ）的儿童感染会导致血性腹泻和危及生命的溶血性尿毒综合征（ HUS ）。STX2由STEC在肠道中产生，释放到血液中，并通过两种不同的受体与循环细胞（单核细胞、中性粒细胞和血小板）相互作用： Gb3Cer （ globotriaosylceramide ）和Toll样受体4 （ TLR4 ）。\n因此，血细胞形成白细胞/血小板聚集物并释放含有致病性Stx2的细胞外囊泡（ EV ） ，通过损害肾脏，诱导从血性腹泻到HUS的过渡。\n将人血液与Stx2一起孵育，以诱导形成对Vero细胞有毒的中性粒细胞/血小板和仅血小板聚集物（在May-Grünwald Giemsa染色的血涂片中观察到）和致病性血细胞衍生EV （通过尺寸排除色谱或差速离心法分离） （通过活力测定评估）。\n在存在针对TLR4的单克隆抗体（抗TLR4 ）的情况下，与单独使用Stx2治疗相比，中性粒细胞/血小板和仅血小板聚集物的形成大大减少。此外，抗TLR4显着降低了Stx2 （通过纳米颗粒跟踪分析检测）产生的致病性血细胞衍生的EV的总质量，其对Vero细胞的毒性低于单纯Stx2产生的细胞。\n在HUS的实验发病过程中获得的Stx2-TLR4轴的损伤提供了支持TLR4作为潜在治疗靶点的概念证据。",
-      "translate_provider": "mymemory",
+      "translate_provider": "",
       "score": 4,
       "source": "PubMed",
       "source_url": "",
