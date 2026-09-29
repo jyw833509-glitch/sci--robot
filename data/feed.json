@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-28 00:17:50",
+  "generated_at": "2026-09-29 01:28:40",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 71,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -84,138 +84,135 @@
       "42041385"
     ],
     "2026-09-09": [
-      "42026710"
-    ],
-    "2026-09-10": [
       "42773271"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "42768232"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42745724"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42655115"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42645420"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42489360"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42450443"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42376876"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42332429"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42292894"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42231136"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42202083"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42112447"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "42069986"
     ],
-    "2026-09-30": [
+    "2026-09-29": [
       "42028833"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42754776"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42725489"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42652006"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42546983"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42429162"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42414861"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42345899"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42273649"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42166563"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42125798"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42119499"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42068121"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "42049075"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "42799870"
     ],
-    "2026-10-21": [
+    "2026-10-20": [
       "42794422"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "42667144"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42568918"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42554770"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42487284"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42458707"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42449784"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42285912"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42276533"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42272446"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42217505"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42145184"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42129093"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42093402"
     ],
-    "2026-11-10": [
+    "2026-11-09": [
       "42037172"
     ]
   },
@@ -1251,46 +1248,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42041385/",
       "doi_url": "https://doi.org/10.3390/antib15020026"
-    },
-    "42026710": {
-      "pmid": "42026710",
-      "title": "Strategies for removing two \"problematic\" host cell proteins, using an \"end-to-end\" approach.",
-      "abstract": "Host cell proteins (HCPs) are critical process-related impurities of recombinant protein biopharmaceuticals that have the potential to impact product safety and efficacy. In this study, two residual HCPs, heat shock protein 90 beta and perilipin-4-like, produced from a CHO cell line, were identified during the development of a late-stage platform Immunoglobulin G subclass 1 (IgG1) monoclonal antibody process. A risk assessment was performed that included identification of HCPs, homology with their human protein counterparts, and prior non-clinical and clinical experience. The outcome deemed these two species as \"problematic\" and target levels were established to guide approaches for removal. Given the high productivity of the upstream and downstream platform processes, the goal was to explore conditions that minimize deviations from the platform. An end-to-end approach was performed that evaluated downstream levers, including Protein A washes, polishing chromatography operational parameters, and exploration of depth filter media. Upstream levers were also explored, evaluating effects of temperature shift and modulation of iron and citrate to help control levels of both HCP species. The results presented in this study demonstrated the upstream and downstream conditions achieved effective removal of the two HCP species to meet drug substance targets.",
-      "authors": [
-        "Greg Evangelist",
-        "Chris Kwiatkowski",
-        "Krishnakumar Malu",
-        "Suli Liu",
-        "Linda Yi",
-        "Sarwat Khattak",
-        "Brad Stanley"
-      ],
-      "journal": "Biotechnology progress",
-      "journal_abbr": "Biotechnol Prog",
-      "pub_date": "2026-04-23",
-      "entrez_date": "2026-04-24",
-      "doi": "10.1002/btpr.88514",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "cell culture",
-        "heat shock protein 90 (HSP 90)",
-        "host cell proteins (HCPs)",
-        "perilipin‐4‐like (PLIN)",
-        "transcriptomics (omics)"
-      ],
-      "affiliation": "Process Biochemistry, Biogen, Research Triangle Park, North Carolina, USA.",
-      "language": "eng",
-      "title_zh": "使用“端到端”方法去除两种“有问题”的宿主细胞蛋白的策略。",
-      "abstract_zh": "宿主细胞蛋白 (HCP) 是重组蛋白生物制药中与工艺相关的关键杂质，有可能影响产品的安全性和功效。在这项研究中，在开发后期平台免疫球蛋白 G 亚类 1 (IgG1) 单克隆抗体过程期间，鉴定了由 CHO 细胞系产生的两种残留 HCP，即热休克蛋白 90 beta 和 perilipin-4 样。进行的风险评估包括 HCP 的鉴定、与其人类蛋白质对应物的同源性以及先前的非临床和临床经验。结果认为这两个物种是“有问题的”，并制定了目标水平来指导清除方法。鉴于上游和下游平台流程的高生产率，目标是探索最大限度地减少平台偏差的条件。采用端到端方法评估下游杠杆，包括 Protein A 清洗、精制色谱操作参数以及深度过滤介质的探索。还探索了上游杠杆，评估温度变化以及铁和柠檬酸盐调节的影响，以帮助控制两种 HCP 物种的水平。\n本研究的结果表明，上游和下游条件可有效去除两种 HCP 物质，以满足原料药目标。",
-      "translate_provider": "",
-      "score": 7,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42026710/",
-      "doi_url": "https://doi.org/10.1002/btpr.88514"
     },
     "42773271": {
       "pmid": "42773271",
@@ -2403,7 +2360,7 @@
       "language": "eng",
       "title_zh": "水痘带状疱疹病毒糖蛋白 B N 末端的新型线性 B 细胞表位的鉴定。",
       "abstract_zh": "水痘带状疱疹病毒 (VZV) 是一种高度传染性的人类甲型疱疹病毒，给全球医疗保健系统带来了巨大的经济负担。糖蛋白 B (gB) 是介导病毒进入和细胞间融合的中心融合剂，是开发 VZV 疫苗和诊断试剂的有希望的靶标。本研究旨在系统地表征 VZV gB 的抗原性并绘制新的线性表位，以促进靶向诊断的开发。方法学上，重组糖蛋白B在真核表达系统中成功表达，随后采用镍亲和层析进行纯化，并用VZV阳性恢复期人血清证实其抗原性。通过杂交瘤技术产生了六种特异性靶向 gB 的单克隆抗体（mAb 3B9、4D2、5E2、6G7、8C9 和 10F11）。随后，采用肽重叠方法和丙氨酸扫描诱变进行三轮渐进截断，以精确识别抗体结合位点。\n结果表明，几种生成的 mAb，特别是主要检测候选 mAb 6G7，表现出高滴度（高达 1:1024,000）和强结合亲和力（Ka ≈ 7.89 × 10⁸）。至关重要的是，我们鉴定了一种新的线性 B 细胞表位 97LGDGDEIR104，它位于 gB 的柔性 N 末端区域内，这对于抗体结合至关重要。该表位位于先前报道的参与膜融合的功能基序附近。总之，我们的研究结果揭示了 VZV gB 上的一个新抗原位点，为表位特异性血清学检测和疫苗策略的开发提供了坚实的实验基础。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 4,
       "source": "PubMed",
       "source_url": "",
