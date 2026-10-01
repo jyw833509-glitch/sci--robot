@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-30 01:04:15",
+  "generated_at": "2026-10-01 01:03:59",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -2424,7 +2424,8 @@
       "entrez_date": "2026-08-29",
       "doi": "10.1080/10837450.2026.2725579",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Comparative Study"
       ],
       "keywords": [
         "Emission spectrum",
