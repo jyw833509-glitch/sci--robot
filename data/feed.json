@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-02 01:17:03",
+  "generated_at": "2026-10-03 00:56:13",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -12,121 +12,121 @@
       "42188602"
     ],
     "2026-08-06": [
-      "42737515"
+      "42822555"
     ],
     "2026-08-07": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-10": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-11": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-12": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-13": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-14": [
-      "42687332"
+      "42235435"
     ],
     "2026-08-17": [
-      "42563142"
+      "42687332"
     ],
     "2026-08-18": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-19": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-20": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-21": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-24": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-25": [
-      "42084290"
+      "42192004"
     ],
     "2026-08-26": [
-      "42570623"
+      "42084290"
     ],
     "2026-08-27": [
-      "42470740"
+      "42570623"
     ],
     "2026-08-28": [
-      "42368154"
+      "42470740"
     ],
     "2026-08-31": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-01": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-02": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-03": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-04": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-07": [
-      "42043509"
+      "42155371"
     ],
     "2026-09-08": [
-      "42041385"
+      "42043509"
     ],
     "2026-09-09": [
-      "42773271"
+      "42041385"
     ],
     "2026-09-10": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-11": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-14": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-15": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-16": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-17": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-18": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-21": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-22": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-23": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-24": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-25": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-28": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-29": [
-      "42028833"
+      "42069986"
     ],
     "2026-09-30": [
       "42754776"
@@ -168,52 +168,52 @@
       "42049075"
     ],
     "2026-10-19": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-20": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-21": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-22": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-23": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-26": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-27": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-28": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-29": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-30": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-02": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-03": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-04": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-05": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-06": [
-      "42093402"
+      "42129093"
     ],
     "2026-11-09": [
-      "42037172"
+      "42093402"
     ]
   },
   "articles": {
@@ -294,6 +294,53 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42188602/",
       "doi_url": "https://doi.org/10.3390/toxins18050199"
+    },
+    "42822555": {
+      "pmid": "42822555",
+      "title": "A Benchmark Fed-Batch Bioprocess for Production of cNISTmAb using NISTCHO.",
+      "abstract": "The end-to-end characterization of a fed-batch bioprocess for expressing a non-originator version of the NISTmAb IgG1 (cNISTmAb) using NISTCHO, a high-performance CHO production cell line available as a NIST reference material (RM 8675), is described. NISTCHO was developed to support bioprocess reproducibility, cross-laboratory standardization, technology benchmarking, and collaborative innovation in biomanufacturing process research. Propagation, scale-up, and cultivation of NISTCHO in fed-batch mode using 3 L single-use bioreactors is shown to yield reproducible titers exceeding 2 g/L. Upstream cell culture performance demonstrated predictable growth kinetics, sustained viability, and stable cell morphology across independent bioreactor runs. Metabolite analysis revealed characteristic CHO behavior, including lactate accumulation followed by consumption during later culture stages. Downstream purification consisting of Protein A (proA) capture followed by sequential anion exchange and cation exchange chromatography enabled efficient removal of host cell proteins and nucleic acids, producing high-purity antibody with overall recoveries of (62 to 70) %. Fc glycosylation analysis demonstrated a profile dominated by core fucosylated and galactosylated species, with low levels of high-mannose and α2,6-sialylated glycans, consistent with a typical CHO-derived IgG1 product. Together, these results establish a reproducible upstream and downstream bioprocess for high-yield, high-purity cNISTmAb using NISTCHO.",
+      "authors": [
+        "Vamsi Bolla",
+        "William B O'Dell",
+        "Sri Harsha",
+        "Hussain Dahodwala",
+        "Richard Cavicchi",
+        "Rachel B Lyon",
+        "Zvi Kelman",
+        "John P Marino",
+        "Ioannis Karageorgos"
+      ],
+      "journal": "Protein expression and purification",
+      "journal_abbr": "Protein Expr Purif",
+      "pub_date": "2026-10-01",
+      "entrez_date": "2026-10-01",
+      "doi": "10.1016/j.pep.2026.107020",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "CHO",
+        "Chinese Hamster Ovary cell line",
+        "NISTCHO",
+        "bioprocessing",
+        "cNISTmAb",
+        "downstream",
+        "monoclonal antibody",
+        "reference material",
+        "standardization",
+        "upstream"
+      ],
+      "affiliation": "Institute for Bioscience and Biotechnology Research, University of Maryland, College Park, 9600 Gudelsky Drive, Rockville, MD 20850 USA.",
+      "language": "eng",
+      "title_zh": "使用NISTCHO生产cNISTmAb的基准进料分批生物工艺。",
+      "abstract_zh": "描述了使用NISTCHO （一种可用作NIST参考材料的高性能CHO生产细胞系） （ RM 8675 ）表达NISTmAb IgG1 （ cNISTmAb ）的非起源版本的补料分批生物过程的端到端表征。NISTCHO的开发旨在支持生物工艺的可重复性、跨实验室标准化、技术基准和生物制造工艺研究方面的协作创新。\n使用3 L一次性生物反应器以补料分批模式繁殖、放大和培养NISTCHO显示出超过2 g/L的可重复滴度。上游细胞培养性能显示出可预测的生长动力学、持续的活力和稳定的细胞形态。\n代谢物分析揭示了CHO的特征行为，包括乳酸盐积累，然后在后期培养阶段消耗。下游纯化包括蛋白质A (proA)捕获，随后进行顺序阴离子交换和阳离子交换色谱，能够有效去除宿主细胞蛋白质和核酸，产生总回收率为(62至70) %的高纯度抗体。\nFc糖基化分析表明，核心岩藻糖基化和半乳糖基化物种占主导地位，具有低水平的高甘露糖和α2,6-唾液酸化聚糖，与典型的CHO衍生的IgG1产物一致。总之，这些结果使用NISTCHO为高产量、高纯度的cNISTmAb建立了可重复的上游和下游生物工艺。",
+      "translate_provider": "mymemory",
+      "score": 9,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42822555/",
+      "doi_url": "https://doi.org/10.1016/j.pep.2026.107020"
     },
     "42737515": {
       "pmid": "42737515",
@@ -1787,49 +1834,6 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42069986/",
       "doi_url": "https://doi.org/10.1007/s12033-026-01577-y"
     },
-    "42028833": {
-      "pmid": "42028833",
-      "title": "Predicting Agitation Stability of Monoclonal Antibodies during Developability Assessment.",
-      "abstract": "Developability assessment facilitates the selection of antibody drug candidates with desirable pharmaceutical properties. However, it remains uncertain whether agitation-induced aggregation can be predicted from standard developability parameters. Here, we investigated whether key biophysical parameters predict agitation-induced aggregation of monoclonal antibodies (mAbs). To this end, we generated a benchmark data set by characterizing the aggregation upon agitation in the presence of an air-liquid interface of ten approved mAbs reformulated in a common surfactant-free buffer. The extent of aggregation varied substantially among mAbs and was primarily dependent on antibody identity. Flow imaging microscopy combined with machine learning revealed micrometre-sized aggregates with distinct morphologies, consistent with aggregation at air-liquid interfaces. Examination of thin liquid films and foams confirmed the presence of aggregates directly at the air-liquid interface and, therefore, the critical role of this interface for antibody aggregation during agitation. We then applied fluorescence-based, light scattering, and chromatographic techniques to determine standard developability parameters for each mAb, including apparent melting temperature (Tm), nonreversibility onset temperature (Tnr), aggregation onset temperature (Tagg), diffusion self-interaction parameter (kD), hydrophobic interaction chromatography retention time, and relative monomer yield after isothermal refolding from chemical denaturants. Notably, none of these parameters correlated with agitation-induced aggregation. Finally, we assessed the surface properties of the mAbs via drop shape analysis and found that the combination of surface pressure and elastic modulus yields a good correlation with the concentration of micrometre-sized aggregates formed due to agitation. Overall, these findings highlight limitations in predicting mAb interfacial stability using standard developability assays and underscore the importance of studying antibody behavior at interfaces.",
-      "authors": [
-        "Michaela Cohrs",
-        "Nevena Pagureva",
-        "Utku Ozbulak",
-        "Wesley De Neve",
-        "Kevin Braeckmans",
-        "Stefaan De Smedt",
-        "Slavka Tcholakova",
-        "Zahari Vinarov",
-        "Hristo L Svilenov"
-      ],
-      "journal": "Molecular pharmaceutics",
-      "journal_abbr": "Mol Pharm",
-      "pub_date": "2026-04-24",
-      "entrez_date": "2026-04-24",
-      "doi": "10.1021/acs.molpharmaceut.6c00092",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "antibody drugs",
-        "biophysical characterization",
-        "developability",
-        "interfacial rheology",
-        "interfacial stability",
-        "surface tension"
-      ],
-      "affiliation": "Laboratory of General Biochemistry and Physical Pharmacy, Ghent University, Ottergemsesteenweg 460, 9000 Ghent, Belgium.",
-      "language": "eng",
-      "title_zh": "在可开发性评估过程中预测单克隆抗体的搅拌稳定性。",
-      "abstract_zh": "可开发性评估有助于选择具有所需药物特性的候选抗体药物。然而，仍不确定是否可以从标准可展性参数预测搅拌引起的聚集。在这里，我们研究了关键的生物物理参数是否可以预测搅拌引起的单克隆抗体 (mAb) 的聚集。为此，我们通过表征在常见的无表面活性剂缓冲液中重新配制的 10 种经批准的单克隆抗体在气液界面存在下搅拌时的聚集情况，生成了基准数据集。 mAb 之间的聚集程度差异很大，主要取决于抗体特性。流式成像显微镜与机器学习相结合，揭示了具有不同形态的微米级聚集体，与气液界面的聚集一致。对液体薄膜和泡沫的检查证实了聚集体直接存在于空气-液体界面处，因此，该界面对于搅拌过程中抗体聚集起着关键作用。\n然后，我们应用基于荧光、光散射和色谱技术来确定每种 mAb 的标准显色性参数，包括表观熔解温度 (Tm)、不可逆起始温度 (Tnr)、聚集起始温度 (Tagg)、扩散自相互作用参数 (kD)、疏水相互作用色谱保留时间以及化学变性剂等温重折叠后的相对单体产率。值得注意的是，这些参数均与搅拌引起的聚集无关。最后，我们通过液滴形状分析评估了 mAb 的表面特性，发现表面压力和弹性模量的组合与由于搅拌而形成的微米级聚集体的浓度具有良好的相关性。总体而言，这些发现凸显了使用标准可开发性测定来预测 mAb 界面稳定性的局限性，并强调了研究界面处抗体行为的重要性。",
-      "translate_provider": "",
-      "score": 6,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42028833/",
-      "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.6c00092"
-    },
     "42754776": {
       "pmid": "42754776",
       "title": "Effects of Siliconization Techniques, Headspace, Mechanical and Thermal Stress on Particle Generation in an Antibody Formulation.",
@@ -2326,6 +2330,38 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42049075/",
       "doi_url": "https://doi.org/10.1016/j.ijpharm.2026.126907"
+    },
+    "42825421": {
+      "pmid": "42825421",
+      "title": "Hapten design and strip sensor for rapid detection of linezolid in pork and animal feed.",
+      "abstract": "Linezolid (LNZ), an oxazolidinone antibiotic, is widely used in human clinical practice. However, due to insufficient regulatory oversight, some livestock farms illegally incorporate LNZ into animal feed, leading to residues in animal-derived foods and posing a food safety risk. In this study, through computer-assisted molecular simulation, a minimal epitope design strategy was proposed and an optimal novel hapten LNZ-1 was designed and identified. Subsequently, a high-affinity monoclonal antibody was successfully generated. The half-maximal inhibitory concentration of this antibody was 2.87 ng mL-1. Based on the antibody, a lateral flow immunochromatographic assay (LFIA) strip was developed to detect LNZ residues in pork and animal feed. The visual limit of detection was 20 ng mL-1 for both matrices, with recoveries from spiked samples ranging from 91.7% to 114.3%, and the LFIA strip showed satisfactory reliability for analyzing real samples. The results obtained using the LFIA strip were consistent with those from liquid chromatography-mass spectrometry analysis. This minimal epitope hapten design strategy provides a practical reference for preparing high-affinity monoclonal antibodies against complex chemical pollutants lacking active conjugation sites.",
+      "authors": [
+        "Fanxia Cao",
+        "Liqiang Liu",
+        "Hua Kuang",
+        "Chuanlai Xu",
+        "Aihua Qu"
+      ],
+      "journal": "Journal of materials chemistry. B",
+      "journal_abbr": "J Mater Chem B",
+      "pub_date": "2026-10-02",
+      "entrez_date": "2026-10-02",
+      "doi": "10.1039/d6tb01493c",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "International Joint Research Laboratory for Biointerface and Biodetection, Jiangnan University, Wuxi, Jiangsu, 214122, China. xcl@jiangnan.edu.cn.",
+      "language": "eng",
+      "title_zh": "Hapten设计和试纸传感器，用于快速检测猪肉和动物饲料中的利奈唑胺。",
+      "abstract_zh": "利奈唑胺（ LNZ ）是一种恶唑烷酮抗生素，广泛应用于人体临床实践。然而，由于监管不足，一些畜牧场非法将LNZ纳入动物饲料中，导致动物源性食品中残留，并构成食品安全风险。\n本研究通过计算机辅助分子模拟，提出了一种最小表位设计策略，并设计和鉴定了一种最优的新型半抗原LNZ-1。随后，成功产生高亲和力单克隆抗体。该抗体的半数最大抑制浓度为2.87 ng mL-1。\n基于该抗体，开发了一种用于检测猪肉和动物饲料中LNZ残留的侧流免疫层析试纸条（ LFIA ）。两种基质的视觉检测限均为20 ng mL-1 ，加标样品的回收率范围为91.7%至114.3% ， LFIA试纸对分析真实样品的可靠性令人满意。\n使用LFIA试纸获得的结果与液相色谱-质谱分析的结果一致。这种最小表位半抗原设计策略为制备针对缺乏活性结合位点的复杂化学污染物的高亲和力单克隆抗体提供了实用参考。",
+      "translate_provider": "mymemory",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42825421/",
+      "doi_url": "https://doi.org/10.1039/d6tb01493c"
     },
     "42799870": {
       "pmid": "42799870",
@@ -2927,42 +2963,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42093402/",
       "doi_url": "https://doi.org/10.1039/d6ay00096g"
-    },
-    "42037172": {
-      "pmid": "42037172",
-      "title": "From Congestion to Clarity: On the Complementarity of Resolving Power and Spectral Simplification for Intact Protein Characterization.",
-      "abstract": "Top-down mass spectrometry (TDMS) is a powerful platform for the structural and functional analysis of intact proteins, enabling the detailed characterization of proteoforms and precise localization of post-translational modifications. The incorporation of alternative fragmentation techniques, such as electron transfer dissociation, electron transfer higher-energy collisional dissociation, and ultraviolet photodissociation, in instruments such as Tribrid Orbitrap mass spectrometers enhances sequence coverage and improves the confidence in PTM assignment. However, tandem mass spectrometry of intact proteins >30 kDa presents substantial challenges. The resulting spectra are often highly complex with overlapping product ion signals that complicate spectral interpretation. Although increasing the mass resolution can help resolve closely spaced product ions, it is often insufficient to fully alleviate spectral congestion for large proteins. In such cases, proton transfer charge reduction (PTCR) can simplify mass spectra by dispersing product ions across a wider mass-over-charge (m/z) range. In this study, we evaluated the impact on TDMS of increasing resolving power and PTCR-enabled spectral simplification using four intact proteins: enolase (46.6 kDa), carbonic anhydrase (29 kDa), myoglobin (16.9 kDa), and ubiquitin (8.6 kDa). For carbonic anhydrase, combined MS2 fragmentation at low resolving power (60,000 at m/z 200) yielded 50.5% sequence coverage, which increased to 92.6% at high resolving power (480,000 at m/z 200) and further to 97.7% when PTCR was applied. This approach was applied to the characterization of biopharmaceuticals by analyzing the three digested and disulfide-reduced ∼25 kDa subunits of the NIST monoclonal antibody (mAb) on a liquid chromatography time scale.",
-      "authors": [
-        "Linda B Lieu",
-        "Jingjing Huang",
-        "Jake T Kline",
-        "David Bergen",
-        "Graeme C McAlister",
-        "Kenneth R Durbin",
-        "Christopher Mullen",
-        "Rafael D Melani",
-        "Luca Fornelli"
-      ],
-      "journal": "Journal of the American Society for Mass Spectrometry",
-      "journal_abbr": "J Am Soc Mass Spectrom",
-      "pub_date": "2026-04-27",
-      "entrez_date": "2026-04-27",
-      "doi": "10.1021/jasms.6c00016",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [],
-      "affiliation": "Department of Chemistry and Biochemistry, University of Oklahoma, Norman, Oklahoma 73019, United States.",
-      "language": "eng",
-      "title_zh": "从拥塞到清晰：关于完整蛋白质表征的分辨率和光谱简化的互补性。",
-      "abstract_zh": "自上而下的质谱 (TDMS) 是完整蛋白质结构和功能分析的强大平台，能够详细表征蛋白质形式并精确定位翻译后修饰。将电子转移解离、电子转移高能碰撞解离和紫外光解离等替代裂解技术结合到 Tribrid Orbitrap 质谱仪等仪器中，可增强序列覆盖率并提高 PTM 分配的置信度。然而，>30 kDa 的完整蛋白质的串联质谱分析面临着巨大的挑战。所得光谱通常非常复杂，产物离子信号重叠，使光谱解释变得复杂。尽管提高质量分辨率有助于解析紧密间隔的产物离子，但通常不足以完全缓解大蛋白质的光谱拥塞。在这种情况下，质子转移电荷还原 (PTCR) 可以通过将产物离子分散在更宽的质荷比 (m/z) 范围内来简化质谱。\n在本研究中，我们使用四种完整蛋白质评估了提高分辨率和支持 PTCR 的光谱简化对 TDMS 的影响：烯醇化酶 (46.6 kDa)、碳酸酐酶 (29 kDa)、肌红蛋白 (16.9 kDa) 和泛素 (8.6 kDa)。对于碳酸酐酶，低分辨率（m/z 200 时 60,000）下的组合 MS2 断裂产生 50.5% 的序列覆盖率，高分辨率（m/z 200 时 480,000）时序列覆盖率增加至 92.6%，应用 PTCR 时进一步增加至 97.7%。该方法通过在液相色谱时间尺度上分析 NIST 单克隆抗体 (mAb) 的三个消化和二硫键还原的 ~25 kDa 亚基，应用于生物制药的表征。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42037172/",
-      "doi_url": "https://doi.org/10.1021/jasms.6c00016"
     }
   }
 }
