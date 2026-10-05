@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-04 00:21:28",
+  "generated_at": "2026-10-05 00:26:13",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -334,7 +334,7 @@
       "language": "eng",
       "title_zh": "使用 NISTCHO 生产 cNISTmAb 的基准补料分批生物工艺。",
       "abstract_zh": "描述了使用NISTCHO （一种可用作NIST参考材料的高性能CHO生产细胞系） （ RM 8675 ）表达NISTmAb IgG1 （ cNISTmAb ）的非起源版本的补料分批生物过程的端到端表征。NISTCHO的开发旨在支持生物工艺的可重复性、跨实验室标准化、技术基准和生物制造工艺研究方面的协作创新。\n使用3 L一次性生物反应器以补料分批模式繁殖、放大和培养NISTCHO显示出超过2 g/L的可重复滴度。上游细胞培养性能显示出可预测的生长动力学、持续的活力和稳定的细胞形态。\n代谢物分析揭示了CHO的特征行为，包括乳酸盐积累，然后在后期培养阶段消耗。下游纯化包括蛋白质A (proA)捕获，随后进行顺序阴离子交换和阳离子交换色谱，能够有效去除宿主细胞蛋白质和核酸，产生总回收率为(62至70) %的高纯度抗体。\nFc糖基化分析表明，核心岩藻糖基化和半乳糖基化物种占主导地位，具有低水平的高甘露糖和α2,6-唾液酸化聚糖，与典型的CHO衍生的IgG1产物一致。总之，这些结果使用NISTCHO为高产量、高纯度的cNISTmAb建立了可重复的上游和下游生物工艺。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 9,
       "source": "PubMed",
       "source_url": "",
