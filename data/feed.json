@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-06 02:03:41",
+  "generated_at": "2026-10-07 01:12:46",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -57,34 +57,34 @@
       "42084290"
     ],
     "2026-08-27": [
-      "42570623"
+      "42834531"
     ],
     "2026-08-28": [
-      "42470740"
+      "42570623"
     ],
     "2026-08-31": [
-      "42368154"
+      "42470740"
     ],
     "2026-09-01": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-02": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-03": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-04": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-07": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-08": [
-      "42043509"
+      "42155371"
     ],
     "2026-09-09": [
-      "42041385"
+      "42043509"
     ],
     "2026-09-10": [
       "42773271"
@@ -904,6 +904,46 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42084290/",
       "doi_url": "https://doi.org/10.1002/btpr.88516"
     },
+    "42834531": {
+      "pmid": "42834531",
+      "title": "Development and application of a mechanistic model for protein A resolution of a bispecific antibody for process characterization and optimization.",
+      "abstract": "Regeneron's bispecific technology, based on a fully human IgG antibody construct, consists of two distinct heavy chains and a common light chain co-expressed in a single cell. The co-expression of the two distinct heavy chains, one of which contains a dipeptide substitution that ablates Protein A binding, leads to the formation of three species with varying degrees of avidity to Protein A: the heterodimer bispecific and two parental homodimer impurities. The avidity difference between the three species can be leveraged for both bulk capture of the bispecific and resolution of the bispecific from the homodimer impurities via a ternary resolving Protein A chromatographic separation on commercially available resins amenable to large scale Good Manufacturing Practice (GMP) production. This case study highlights the efficiency of a mechanistic modeling approach for the optimization and characterization of ternary resolving Protein A unit operations. A mechanistic model, comprised of a general rate transport model and colloidal particle adsorption (CPA) affinity isotherm, was developed to describe this ternary separation for a model bispecific. The model was calibrated and validated with 10 laboratory experiments and demonstrated an ability to predict bispecific yield within 3% and bispecific purity within 1% on average. The model was then used to optimize the process and characterize the design space, while providing mechanistic insight into the process.",
+      "authors": [
+        "Samantha Wadsworth",
+        "James Reilly",
+        "John Mattila",
+        "Christopher Cowan",
+        "Hanne Bak"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-10-05",
+      "entrez_date": "2026-10-06",
+      "doi": "10.1002/btpr.88560",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "bioprocess engineering",
+        "bispecific monoclonal antibody",
+        "chromatography",
+        "modeling",
+        "process optimization",
+        "protein A",
+        "ternary operation"
+      ],
+      "affiliation": "Preclinical Manufacturing and Process Development, Regeneron Pharmaceuticals, Tarrytown, New York, USA.",
+      "language": "eng",
+      "title_zh": "开发和应用双特异性抗体的 A 蛋白解析机制模型，用于过程表征和优化。",
+      "abstract_zh": "Regeneron 的双特异性技术基于全人 IgG 抗体构建体，由在单个细胞中共表达的两条不同的重链和一条共同的轻链组成。两条不同重链的共表达（其中一条含有消除蛋白 A 结合的二肽取代）导致形成对蛋白 A 具有不同程度亲和力的三种物质：异二聚体双特异性和两个亲本同二聚体杂质。可以利用这三个物种之间的亲和力差异，通过在适合大规模良好生产规范 (GMP) 生产的市售树脂上进行三元解析 Protein A 色谱分离，大量捕获双特异性物质，并从同源二聚体杂质中分离出双特异性物质。本案例研究强调了用于优化和表征三元解析 Protein A 单元操作的机械建模方法的效率。开发了一个由一般速率传输模型和胶体颗粒吸附 (CPA) 亲和等温线组成的机械模型来描述双特异性模型的这种三元分离。\n该模型经过 10 次实验室实验的校准和验证，并展示了预测双特异性产量平均在 3% 以内、双特异性纯度在 1% 以内的能力。然后，该模型用于优化流程并表征设计空间，同时提供对流程的机械洞察。",
+      "translate_provider": "google",
+      "score": 7,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42834531/",
+      "doi_url": "https://doi.org/10.1002/btpr.88560"
+    },
     "42570623": {
       "pmid": "42570623",
       "title": "A modeling framework for uncertainty quantification in filter-plate-based high-throughput screening of the chromatography partition coefficient.",
@@ -1254,47 +1294,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42043509/",
       "doi_url": "https://doi.org/10.1007/s00216-026-06519-w"
-    },
-    "42041385": {
-      "pmid": "42041385",
-      "title": "The Multi-Attribute Method (MAM), An Advanced LC-MS Approach for Protein A Resin Performance and Lifecycle Evaluation.",
-      "abstract": "BACKGROUND: Protein A resins are indispensable for monoclonal antibody (mAb) production, yet their condition and performance are traditionally assessed using indirect or qualitative methods. In this study, the multi-attribute method (MAM), previously applied to therapeutic protein characterization, is systematically adapted for the first time as a unified liquid chromatography-mass spectrometry (LC-MS) platform for Protein A resin analysis.\nMETHOD: Four Cytiva Protein A resins, MabSelect™, MabSelect SuRe™, MabSelect SuRe™ LX, and MabSelect™ PrismA, were evaluated by MAM for resin identity, Protein A ligand integrity, fouling by impurities, and cleaning performance.\nRESULTS: MAM enables resin-specific peptide fingerprinting and quantitative monitoring of Protein A ligand post-translational modifications (PTMs), including deamidation, isomerization, and fragmentation induced by repeated clean-in-place (CIP) cycles. Comparative analysis of virgin and used resins revealed ligand degradation and fouling despite engineered alkaline stability, with MabSelect™ showing the greatest susceptibility. Importantly, residual monoclonal antibodies (mAbs) and host cell proteins (HCPs) were directly detected and quantified from the resin matrix, providing a molecular-level assessment of resin cleaning effectiveness not achievable with conventional approaches.\nCONCLUSIONS: This work establishes MAM as a novel, sensitive, and comprehensive strategy for Protein A resin lifecycle management, delivering actionable insight for resin selection, cleaning optimization, and downstream process development.",
-      "authors": [
-        "Jingming Zhang",
-        "Matthew Larsen",
-        "Timothy Blanc",
-        "Babita S Parekh",
-        "Ming-Ching Hsieh"
-      ],
-      "journal": "Antibodies (Basel, Switzerland)",
-      "journal_abbr": "Antibodies (Basel)",
-      "pub_date": "2026-03-23",
-      "entrez_date": "2026-04-27",
-      "doi": "10.3390/antib15020026",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Protein A resins",
-        "clean-in-place (CIP)",
-        "host cell proteins (HCPs)",
-        "liquid chromatography–mass spectrometry (LC-MS)",
-        "multi-attribute method (MAM)",
-        "peptide mapping",
-        "post-translational modifications (PTMs)",
-        "resin fouling"
-      ],
-      "affiliation": "Analytical Sciences, Eli Lilly and Company, Branchburg, NJ 08876, USA.",
-      "language": "eng",
-      "title_zh": "多属性方法 (MAM)，一种用于 Protein A 树脂性能和生命周期评估的先进 LC-MS 方法。",
-      "abstract_zh": "背景：Protein A 树脂对于单克隆抗体 (mAb) 的生产是不可或缺的，但传统上使用间接或定性方法评估其状况和性能。在这项研究中，之前应用于治疗性蛋白质表征的多属性方法 (MAM) 首次被系统地改编为统一的液相色谱-质谱 (LC-MS) 平台，用于蛋白质 A 树脂分析。\n方法：MAM 对四种 Cytiva Protein A 树脂（MabSelect™、MabSelect SuRe™、MabSelect SuRe™ LX 和 MabSelect™ PrismA）评估树脂特性、Protein A 配体完整性、杂质污染和清洁性能。\n结果：MAM 能够实现树脂特异性肽指纹分析和蛋白 A 配体翻译后修饰 (PTM) 的定量监测，包括重复原位清洗 (CIP) 循环引起的脱酰胺、异构化和片段化。对原始树脂和用过的树脂的比较分析显示，尽管设计了碱性稳定性，但配体降解和结垢，其中 MabSelect™ 显示出最大的敏感性。重要的是，可以直接从树脂基质中检测和定量残留的单克隆抗体（mAb）和宿主细胞蛋白（HCP），从而提供传统方法无法实现的树脂清洁效果的分子水平评估。\n结论：这项工作将 MAM 确立为一种新颖、敏感且全面的 Protein A 树脂生命周期管理策略，为树脂选择、清洁优化和下游工艺开发提供可操作的见解。",
-      "translate_provider": "",
-      "score": 7,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42041385/",
-      "doi_url": "https://doi.org/10.3390/antib15020026"
     },
     "42773271": {
       "pmid": "42773271",
