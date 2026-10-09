@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-08 01:33:29",
+  "generated_at": "2026-10-09 01:44:48",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -1888,7 +1888,7 @@
       ],
       "journal": "Analytical methods : advancing methods and applications",
       "journal_abbr": "Anal Methods",
-      "pub_date": "2026-09-11",
+      "pub_date": "2026-10-08",
       "entrez_date": "2026-09-11",
       "doi": "10.1039/d6ay00944a",
       "publication_types": [
