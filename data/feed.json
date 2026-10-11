@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-10 01:31:14",
+  "generated_at": "2026-10-11 00:40:28",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 69,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -84,135 +84,132 @@
       "42155371"
     ],
     "2026-09-09": [
-      "42043509"
-    ],
-    "2026-09-10": [
       "42773271"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "42768232"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42745724"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42655115"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42645420"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42489360"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42450443"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42376876"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42332429"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42292894"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42231136"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42202083"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42112447"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "42069986"
     ],
-    "2026-09-30": [
+    "2026-09-29": [
       "42754776"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42725489"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42652006"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42546983"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42429162"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42414861"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42345899"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42273649"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42166563"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42125798"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42119499"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42068121"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42049075"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "42825421"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "42799870"
     ],
-    "2026-10-21": [
+    "2026-10-20": [
       "42794422"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "42667144"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42568918"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42554770"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42487284"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42458707"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42449784"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42285912"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42276533"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42272446"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42217505"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42145184"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42129093"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42093402"
     ]
   },
@@ -1259,41 +1256,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42155371/",
       "doi_url": "https://doi.org/10.1016/j.jpba.2026.117558"
-    },
-    "42043509": {
-      "pmid": "42043509",
-      "title": "Resolving charge and glycosylation variants of cetuximab combining offline ion-exchange and hydrophilic interaction chromatography-HRMS.",
-      "abstract": "Biopharmaceuticals, such as monoclonal antibodies (mAb), are complex molecules that require thorough analysis due to post-translational modifications, including charge variants and glycoform patterns. When analyzing intact mAbs, single liquid chromatography (LC) mass spectrometry (MS) methods often lack the resolution to distinguish this heterogeneity because they offer limited separation in both chromatographic and mass dimensions. Consequently, these methods struggle to detect low-abundance species, highlighting the importance of 2DLC-MS workflows. Here, we demonstrate the potential of the offline ion exchange chromatography (IEC)-hydrophilic interaction chromatography (HILIC)-MS method to effectively separate charge and glycoform variants of complex mAbs. Cetuximab served as the model antibody due to its multiple charge variants (arising from sialylation and C-terminal lysine clipping) and four glycosylation sites (in both Fab and Fc regions). Charge variants were first separated using non-volatile IEC and collected as individual fractions. These fractions were then analyzed using a low-flow HILIC-MS setup to increase sensitivity for low-abundance species. A RPLC trap column was used to desalt and reduce the volume transferred to the HILIC separation. The IEC-HILIC results showed that both Fc- and Fab-associated glycoforms of cetuximab were resolved to a level not achievable with HILIC-MS alone, allowing deeper insights into charge heterogeneity and glycosylation. In addition to resolving combined Fab/Fc glycoforms, the method also distinguished Fc-only glycoforms from the main isoform. This orthogonal IEC-HILIC method provides additional insights into charge and glycosylation heterogeneity, enabling a more comprehensive analysis of cetuximab. It provides an effective approach for detailed characterization of charge variations and glycoform diversity in next-generation protein therapeutics.",
-      "authors": [
-        "Annika A M van der Zon",
-        "Andrea F G Gargano"
-      ],
-      "journal": "Analytical and bioanalytical chemistry",
-      "journal_abbr": "Anal Bioanal Chem",
-      "pub_date": "2026-04-27",
-      "entrez_date": "2026-04-27",
-      "doi": "10.1007/s00216-026-06519-w",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "2D-LC",
-        "Charge heterogeneity",
-        "Glycosylation",
-        "HRMS",
-        "Monoclonal antibodies"
-      ],
-      "affiliation": "Analytical Chemistry Group, Van 't Hoff Institute for Molecular Sciences, University of Amsterdam, Science Park 904, 1098 XH, Amsterdam, The Netherlands.",
-      "language": "eng",
-      "title_zh": "结合离线离子交换和亲水相互作用色谱-HRMS 解决西妥昔单抗的电荷和糖基化变体。",
-      "abstract_zh": "单克隆抗体 (mAb) 等生物制药是复杂的分子，由于翻译后修饰（包括电荷变体和糖型模式），需要进行彻底分析。在分析完整的 mAb 时，单一液相色谱 (LC) 质谱 (MS) 方法通常缺乏区分这种异质性的分辨率，因为它们在色谱和质量维度上提供的分离有限。因此，这些方法很难检测低丰度物种，这凸显了 2DLC-MS 工作流程的重要性。在这里，我们展示了离线离子交换色谱 (IEC)-亲水相互作用色谱 (HILIC)-MS 方法有效分离复杂 mAb 的电荷和糖型变体的潜力。西妥昔单抗因其多个电荷变体（由唾液酸化和 C 末端赖氨酸剪切产生）和四个糖基化位点（位于 Fab 和 Fc 区）而充当模型抗体。首先使用非挥发性 IEC 分离电荷变体并作为单独的分数收集。然后使用低流量 HILIC-MS 设置对这些组分进行分析，以提高对低丰度物种的灵敏度。\nRPLC 捕获柱用于脱盐并减少转移至 HILIC 分离的体积。 IEC-HILIC 结果表明，西妥昔单抗的 Fc 和 Fab 相关糖型均被解析到单独使用 HILIC-MS 无法达到的水平，从而可以更深入地了解电荷异质性和糖基化。除了解析组合的 Fab/Fc 糖型外，该方法还将仅 Fc 糖型与主要亚型区分开来。这种正交 IEC-HILIC 方法提供了对电荷和糖基化异质性的额外见解，从而能够对西妥昔单抗进行更全面的分析。它为下一代蛋白质疗法中电荷变化和糖型多样性的详细表征提供了一种有效的方法。",
-      "translate_provider": "",
-      "score": 7,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42043509/",
-      "doi_url": "https://doi.org/10.1007/s00216-026-06519-w"
     },
     "42773271": {
       "pmid": "42773271",
