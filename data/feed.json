@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-12 00:58:49",
+  "generated_at": "2026-10-13 02:50:15",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 69,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "42679766"
@@ -165,51 +165,54 @@
       "42049075"
     ],
     "2026-10-16": [
-      "42825421"
+      "42862297"
     ],
     "2026-10-19": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-20": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-21": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-22": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-23": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-26": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-27": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-28": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-29": [
-      "42285912"
+      "42449784"
     ],
     "2026-10-30": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-02": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-03": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-04": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-05": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-06": [
+      "42129093"
+    ],
+    "2026-11-09": [
       "42093402"
     ]
   },
@@ -2291,6 +2294,50 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42049075/",
       "doi_url": "https://doi.org/10.1016/j.ijpharm.2026.126907"
+    },
+    "42862297": {
+      "pmid": "42862297",
+      "title": "Impact of basal media and feeds on CHO cell cultures: a full factorial experiment implicating tryptophan in medium-feed antagonism.",
+      "abstract": "Chinese Hamster Ovary (CHO) cells are the top choice for recombinant protein production in modern biomanufacturing. Selecting the optimal basal media and feeds during the upstream process development is vital for the target product yield and quality, an irrational screening strategy might often result in inefficiencies and development delays. Here we report a full factorial screening of basal media and feeds combinations on four monoclonal antibody expressing CHO cell lines. A statistically significant interaction of the \"medium × feed\" factors, observed in 48% of the analyzed responses (p < 0.05), confirms their non-additivity and the impracticality of single-factor approaches. We identified a critical combination demonstrating consistently low efficacy in all the analyzed antibodies. The liquid chromatography-mass spectrometry (LC-MS/MS) analysis of its composition revealed, that this combination creates a complex metabolic imbalance: a critical deficiency of tryptophan, a pronounced gradient of taurine (absence in the medium with a high content in the feed) and a similar imbalance of alanine. The findings confirm the need for full-factorial screening when choosing basal media and feeds, and also lay the foundation for a systematic design of culture media within the identified limitations.",
+      "authors": [
+        "Daria Kalkova",
+        "Polina Maximova",
+        "Anna Kolokhina",
+        "Layaly Shkair",
+        "Manar Ammar",
+        "Mikhail Samsonov",
+        "Daniel Bayzigitov"
+      ],
+      "journal": "Bioprocess and biosystems engineering",
+      "journal_abbr": "Bioprocess Biosyst Eng",
+      "pub_date": "2026-10-12",
+      "entrez_date": "2026-10-12",
+      "doi": "10.1007/s00449-026-03442-3",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Amino acid composition",
+        "Antagonism",
+        "Basal media",
+        "CHO cells",
+        "Feed",
+        "Full-factorial experiment",
+        "Monoclonal antibodies",
+        "Tryptophan",
+        "Upstream"
+      ],
+      "affiliation": "R&D, Laboratory for Development Biotechnological Processes, R-Pharm JSC, Moscow, Russia.",
+      "language": "eng",
+      "title_zh": "基础培养基和饲料对CHO细胞培养的影响：一项完整的因子实验，表明色氨酸与培养基饲料拮抗作用有关。",
+      "abstract_zh": "中国仓鼠卵巢（ CHO ）细胞是现代生物制造中重组蛋白生产的首选。在上游工艺开发过程中选择最佳的基础培养基和饲料对于目标产品的产量和质量至关重要，不合理的筛选策略往往会导致效率低下和开发延迟。\n在这里，我们报告了对表达CHO细胞系的四种单克隆抗体的基础培养基和饲料组合的全因子筛选。在48%的分析反应（ p < 0.05 ）中观察到的“培养基×饲料”因子的统计学显着相互作用证实了它们的非相加性和单因子方法的不实用性。\n我们确定了一个关键组合，在所有分析的抗体中均显示出持续的低疗效。其组成的液相色谱-质谱（ LC-MS/MS ）分析显示，这种组合造成了复杂的代谢失衡：色氨酸的严重缺乏，牛磺酸的明显梯度（在饲料中含量高的培养基中不存在）和丙氨酸的类似失衡。\n研究结果证实了在选择基础培养基和饲料时需要进行全因子筛选，并为在确定的限制范围内系统设计培养基奠定了基础。",
+      "translate_provider": "mymemory",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42862297/",
+      "doi_url": "https://doi.org/10.1007/s00449-026-03442-3"
     },
     "42825421": {
       "pmid": "42825421",
