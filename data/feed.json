@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-13 02:50:15",
+  "generated_at": "2026-10-14 00:51:37",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -126,43 +126,43 @@
       "42069986"
     ],
     "2026-09-29": [
-      "42754776"
+      "42864475"
     ],
     "2026-09-30": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-01": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-02": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-05": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-06": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-07": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-08": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-09": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-12": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-13": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-14": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-15": [
-      "42049075"
+      "42068121"
     ],
     "2026-10-16": [
       "42862297"
@@ -1798,6 +1798,43 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42069986/",
       "doi_url": "https://doi.org/10.1007/s12033-026-01577-y"
     },
+    "42864475": {
+      "pmid": "42864475",
+      "title": "Screening of Unexplored FDA-approved Inactive Ingredients as Stabilizers for Monoclonal Antibody Products.",
+      "abstract": "PURPOSE: Monoclonal antibodies (mAbs) are susceptible to physical and chemical degradation, which can compromise product quality, efficacy, safety, and shelf life. Although excipients play a critical role in stabilizing mAb formulations, only a limited number are routinely used in marketed products. Therefore, this study aimed to identify underexplored FDA-approved inactive ingredients with the potential to stabilize mAb formulations.\nMETHODS: Fourteen FDA-approved inactive ingredients were screened using a size-exclusion chromatography (SEC)-based comparative forced-degradation approach. Trastuzumab was used as the model IgG1 antibody and subjected to thermal stress at 70°C and 65°C. Candidate excipients were evaluated through concentration optimization, SEC-HPLC, fluorescence spectroscopy, UV-vis spectroscopy, differential scanning calorimetry, surface plasmon resonance, haemolysis assays, and molecular docking.\nRESULTS: Initial screening identified isomalt and myo-inositol as the most effective excipients, reducing high-molecular-weight species by up to 60%, whereas choline chloride produced a smaller but measurable reduction. Optimized concentrations of 400 mM isomalt, 150 mM myo-inositol, and 1.9 mM choline chloride reduced aggregation, preserved monomer content, and improved higher-order structural stability. These formulations retained HER2 and FcRn binding and exhibited haemolysis below 3% compared to PS80 containing mAb sample. Isomalt also improved the thermal stability of adalimumab and rituximab, while molecular docking suggested preferential association with aggregation-prone regions of the trastuzumab Fab domain.\nCONCLUSIONS: Underexplored FDA-approved excipients, particularly isomalt and myo-inositol, improved mAb stability under thermal stress and represent promising candidates for further evaluation during therapeutic antibody formulation development.",
+      "authors": [
+        "Divya Agrawal",
+        "Charu Mittal",
+        "Avinash Mishra",
+        "Anurag S Rathore"
+      ],
+      "journal": "Pharmaceutical research",
+      "journal_abbr": "Pharm Res",
+      "pub_date": "2026-10-12",
+      "entrez_date": "2026-10-12",
+      "doi": "10.1007/s11095-026-04221-1",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "FDA",
+        "analytical characterization",
+        "excipients",
+        "molecular docking",
+        "monoclonal antibody"
+      ],
+      "affiliation": "Department of Chemical Engineering, Indian Institute of Technology Delhi, Hauz Khas, New Delhi, 110016, India.",
+      "language": "eng",
+      "title_zh": "筛选 FDA 批准的未经探索的非活性成分作为单克隆抗体产品的稳定剂。",
+      "abstract_zh": "目的：单克隆抗体 (mAb) 容易发生物理和化学降解，从而影响产品质量、功效、安全性和保质期。尽管赋形剂在稳定单克隆抗体制剂中发挥着关键作用，但在市售产品中常规使用的赋形剂数量有限。因此，本研究旨在确定 FDA 批准的尚未充分开发的、具有稳定 mAb 配方潜力的非活性成分。\n方法：使用基于尺寸排阻色谱 (SEC) 的比较强制降解方法筛选 14 种 FDA 批准的非活性成分。使用曲妥珠单抗作为模型 IgG1 抗体并在 70°C 和 65°C 下进行热应激。通过浓度优化、SEC-HPLC、荧光光谱、紫外可见光谱、差示扫描量热法、表面等离子体共振、溶血测定和分子对接对候选赋形剂进行评估。\n结果：初步筛选确定异麦芽酮糖醇和肌醇是最有效的赋形剂，可减少高达 60% 的高分子量物质，而氯化胆碱的减少幅度较小，但可测量。 400 mM 异麦芽酮糖醇、150 mM 肌醇和 1.9 mM 氯化胆碱的优化浓度减少了聚集，保留了单体含量，并提高了高阶结构稳定性。与含有 PS80 的 mAb 样品相比，这些制剂保留了 HER2 和 FcRn 结合，并表现出低于 3% 的溶血。异麦芽酮糖醇还改善了阿达木单抗和利妥昔单抗的热稳定性，而分子对接表明优先与曲妥珠单抗 Fab 结构域的易聚集区域相关。\n结论： FDA 批准的未经充分开发的赋形剂，特别是异麦芽酮糖醇和肌醇，改善了热应激下 mAb 的稳定性，并且是治疗性抗体制剂开发过程中进一步评估的有希望的候选物。",
+      "translate_provider": "google",
+      "score": 5,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42864475/",
+      "doi_url": "https://doi.org/10.1007/s11095-026-04221-1"
+    },
     "42754776": {
       "pmid": "42754776",
       "title": "Effects of Siliconization Techniques, Headspace, Mechanical and Thermal Stress on Particle Generation in an Antibody Formulation.",
@@ -2255,46 +2292,6 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42068121/",
       "doi_url": "https://doi.org/10.1002/jssc.70428"
     },
-    "42049075": {
-      "pmid": "42049075",
-      "title": "Feasibility and stability evaluation of parabens as an alternative preservative for liquid monoclonal antibody formulations.",
-      "abstract": "Preservatives are critical for preventing microbial contamination in multi-dose biologics, yet their compatibility with proteins poses a major challenge. Traditional preservatives such as benzyl alcohol are limited by instability, adsorption, and negative effects on protein stability. This study demonstrates that parabens, including methylparaben and propylparaben, are feasible alternatives in trastuzumab liquid formulations. Differential scanning fluorimetry revealed minimal impact on monoclonal antibody conformational and colloidal stability compared with conventional preservatives. Trastuzumab with parabens under stress and photostability testing was systematically characterized using micro-flow imaging, dynamic light scattering, size exclusion chromatography, ion exchange chromatography, capillary electrophoresis, microfluidic modulation spectroscopy, and ultra-high resolution mass spectrometry. Parabens did not significantly affect main peak purity, charge heterogeneity, fragmentation, or secondary structure, and only slightly increased sub-visible particles, while also being suitable for a variety of monoclonal antibodies and fusion proteins. These findings establish parabens as reliable, practical preservatives, offering a new approach to developing safer and more stable multi-dose biologics.",
-      "authors": [
-        "Zi-Ting Xu",
-        "Yan-Rong Gao",
-        "Jia-Yi Lv",
-        "Huan-Fang Xie",
-        "Yusheng Pan",
-        "Wei-Jie Fang"
-      ],
-      "journal": "International journal of pharmaceutics",
-      "journal_abbr": "Int J Pharm",
-      "pub_date": "2026-04-26",
-      "entrez_date": "2026-04-28",
-      "doi": "10.1016/j.ijpharm.2026.126907",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Formulation compatibility",
-        "Monoclonal antibody",
-        "Multi-dose formulation",
-        "Parabens",
-        "Preservative",
-        "Protein stability"
-      ],
-      "affiliation": "Institute of Drug Metabolism and Pharmaceutical Analysis, College of Pharmaceutical Sciences, Zhejiang University, Hangzhou 310058, China; Taizhou Institute of Zhejiang University, Taizhou 318000, China.",
-      "language": "eng",
-      "title_zh": "对羟基苯甲酸酯作为液体单克隆抗体制剂替代防腐剂的可行性和稳定性评估。",
-      "abstract_zh": "防腐剂对于防止多剂量生物制剂中的微生物污染至关重要，但它们与蛋白质的相容性构成了重大挑战。苯甲醇等传统防腐剂因不稳定、吸附以及对蛋白质稳定性的负面影响而受到限制。这项研究表明，对羟基苯甲酸酯类，包括对羟基苯甲酸甲酯和对羟基苯甲酸丙酯，是曲妥珠单抗液体制剂中可行的替代品。差示扫描荧光测定法显示，与传统防腐剂相比，对单克隆抗体构象和胶体稳定性的影响最小。使用微流成像、动态光散射、尺寸排阻色谱、离子交换色谱、毛细管电泳、微流体调制光谱和超高分辨率质谱法系统地表征了在压力和光稳定性测试下含有对羟基苯甲酸酯的曲妥珠单抗。对羟基苯甲酸酯不会显着影响主峰纯度、电荷异质性、碎片或二级结构，仅轻微增加亚可见颗粒，同时也适用于多种单克隆抗体和融合蛋白。\n这些发现证实对羟基苯甲酸酯是可靠、实用的防腐剂，为开发更安全、更稳定的多剂量生物制剂提供了一种新方法。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42049075/",
-      "doi_url": "https://doi.org/10.1016/j.ijpharm.2026.126907"
-    },
     "42862297": {
       "pmid": "42862297",
       "title": "Impact of basal media and feeds on CHO cell cultures: a full factorial experiment implicating tryptophan in medium-feed antagonism.",
@@ -2331,7 +2328,7 @@
       "language": "eng",
       "title_zh": "基础培养基和饲料对CHO细胞培养的影响：一项完整的因子实验，表明色氨酸与培养基饲料拮抗作用有关。",
       "abstract_zh": "中国仓鼠卵巢（ CHO ）细胞是现代生物制造中重组蛋白生产的首选。在上游工艺开发过程中选择最佳的基础培养基和饲料对于目标产品的产量和质量至关重要，不合理的筛选策略往往会导致效率低下和开发延迟。\n在这里，我们报告了对表达CHO细胞系的四种单克隆抗体的基础培养基和饲料组合的全因子筛选。在48%的分析反应（ p < 0.05 ）中观察到的“培养基×饲料”因子的统计学显着相互作用证实了它们的非相加性和单因子方法的不实用性。\n我们确定了一个关键组合，在所有分析的抗体中均显示出持续的低疗效。其组成的液相色谱-质谱（ LC-MS/MS ）分析显示，这种组合造成了复杂的代谢失衡：色氨酸的严重缺乏，牛磺酸的明显梯度（在饲料中含量高的培养基中不存在）和丙氨酸的类似失衡。\n研究结果证实了在选择基础培养基和饲料时需要进行全因子筛选，并为在确定的限制范围内系统设计培养基奠定了基础。",
-      "translate_provider": "mymemory",
+      "translate_provider": "",
       "score": 4,
       "source": "PubMed",
       "source_url": "",
