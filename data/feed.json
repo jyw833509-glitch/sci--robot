@@ -1,168 +1,168 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-18 23:54:58",
+  "generated_at": "2026-10-20 00:54:29",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
   "calendar": {
     "2026-08-04": [
-      "42679766"
+      "42894435"
     ],
     "2026-08-05": [
-      "42188602"
+      "42679766"
     ],
     "2026-08-06": [
-      "42822555"
+      "42188602"
     ],
     "2026-08-07": [
-      "42737515"
+      "42822555"
     ],
     "2026-08-10": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-11": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-12": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-13": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-14": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-17": [
-      "42687332"
+      "42235435"
     ],
     "2026-08-18": [
-      "42563142"
+      "42687332"
     ],
     "2026-08-19": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-20": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-21": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-24": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-25": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-26": [
-      "42084290"
+      "42192004"
     ],
     "2026-08-27": [
-      "42834531"
+      "42084290"
     ],
     "2026-08-28": [
-      "42570623"
+      "42834531"
     ],
     "2026-08-31": [
-      "42470740"
+      "42570623"
     ],
     "2026-09-01": [
-      "42368154"
+      "42470740"
     ],
     "2026-09-02": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-03": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-04": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-07": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-08": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-09": [
-      "42773271"
+      "42155371"
     ],
     "2026-09-10": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-11": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-14": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-15": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-16": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-17": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-18": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-21": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-22": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-23": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-24": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-25": [
-      "42112447"
+      "42202083"
     ],
     "2026-09-28": [
-      "42069986"
+      "42112447"
     ],
     "2026-09-29": [
-      "42864475"
+      "42069986"
     ],
     "2026-09-30": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-01": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-02": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-05": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-06": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-07": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-08": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-09": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-12": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-13": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-14": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-15": [
-      "42068121"
+      "42119499"
     ],
     "2026-10-16": [
       "42862297"
@@ -217,6 +217,47 @@
     ]
   },
   "articles": {
+    "42894435": {
+      "pmid": "42894435",
+      "title": "Feasibility Assessment of a Single-pH Connected Polishing Train for Monoclonal Antibody Purification Using Mildly Acidic Protein A Elution and an Acidic-Window Anion Exchange Membrane.",
+      "abstract": "Monoclonal antibody downstream processing often requires multiple pH adjustments between Protein A capture and polishing steps. These adjustments increase process complexity and make direct unit-operation connection more difficult. We evaluated a connected post-capture polishing block operated at approximately pH 5.0 using mild-pH Protein A elution, an acidic-window anion exchange (AEX) membrane, and cation exchange (CEX) chromatography. Praesto Jetted A50 HipH generated IgG1 eluates near pH 5.0 with conductivity suitable for direct AEX loading. Under standard condition (pH 5.0, 5.0 mS/cm), the AEX membrane reduced xenotropic murine leukemia virus to the assay limit (≥ 3 log10) and minute virus of mice by approximately 2-3 log10. In a connected proof-of-concept run without intermediate pH adjustment, the AEX-CEX polishing block reduced host cell proteins from > 25 to < 10 ng/mg-IgG and high-molecular-weight species from 1.3% to < 1% in the final product pool, maintained low-molecular-weight species below 1%, and achieved 97.6% product recovery. For two additional IgGs, archived strong-AEX flow-through records at pH 7.5 and sequence-derived charge descriptors supported the plausibility of product flow-through at pH 5.0. In a same-IgG1 retrospective comparison, the connected configuration used fewer vessels and conditioning operations and had shorter recipe-derived programmed chromatography time. These findings support process-representative evaluation of single-pH connected polishing.",
+      "authors": [
+        "Takaki Aiso",
+        "Hiroshi Muto",
+        "Kyota Suzuki",
+        "Yumiko Masuda",
+        "Hirofumi Kakihara",
+        "Masashi Sonoyama"
+      ],
+      "journal": "Biotechnology and bioengineering",
+      "journal_abbr": "Biotechnol Bioeng",
+      "pub_date": "2026-10-18",
+      "entrez_date": "2026-10-19",
+      "doi": "10.1002/bit.70415",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Protein A chromatography",
+        "anion exchange membrane",
+        "cation exchange chromatography",
+        "connected downstream processing",
+        "monoclonal antibody purification",
+        "single‐pH polishing",
+        "viral clearance"
+      ],
+      "affiliation": "BioProcess Technology Research Laboratories I, Daiichi Sankyo Co. Ltd., 2716-1 Kurakake, Akaiwa, Gunma, Japan.",
+      "language": "eng",
+      "title_zh": "使用弱酸性蛋白 A 洗脱和酸性窗口阴离子交换膜纯化单克隆抗体的单 pH 连接抛光序列的可行性评估。",
+      "abstract_zh": "单克隆抗体下游处理通常需要在 Protein A 捕获和精制步骤之间进行多次 pH 调整。这些调整增加了工艺复杂性，并使直接单元操作连接更加困难。我们使用温和 pH 蛋白 A 洗脱、酸性窗口阴离子交换 (AEX) 膜和阳离子交换 (CEX) 色谱法评估了在大约 pH 5.0 下运行的连接的捕获后抛光模块。 Praesto Jetted A50 HipH 生成的 IgG1 在 pH 值接近 5.0 时洗脱，电导率适合直接 AEX 上样。在标准条件下（pH 5.0，5.0 mS/cm），AEX 膜将异种鼠白血病病毒降低至测定极限（≥ 3 log10），并将小鼠微小病毒降低约 2-3 log10。在没有中间 pH 调整的连接概念验证运行中，AEX-CEX 抛光模块将最终产品池中的宿主细胞蛋白从 > 25 ng/mg-IgG 减少到 < 10 ng/mg-IgG，将高分子量物质从 1.3% 减少到 < 1%，将低分子量物质维持在 1% 以下，并实现了 97.6% 的产品回收率。\n对于另外两种 IgG，存档的 pH 7.5 下的强 AEX 流通记录和序列衍生的电荷描述符支持了产品在 pH 5.0 下流通的合理性。在相同的 IgG1 回顾性比较中，连接的配置使用更少的容器和调节操作，并且具有更短的配方衍生的编程色谱时间。这些发现支持单 pH 连接抛光的工艺代表性评估。",
+      "translate_provider": "google",
+      "score": 11,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42894435/",
+      "doi_url": "https://doi.org/10.1002/bit.70415"
+    },
     "42679766": {
       "pmid": "42679766",
       "title": "Development and optimization of a mobile affinity selection chromatography method for analysis of therapeutic monoclonal antibody aggregates in the presence of human serum albumin.",
@@ -2252,45 +2293,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42119499/",
       "doi_url": "https://doi.org/10.1016/j.jpba.2026.117545"
-    },
-    "42068121": {
-      "pmid": "42068121",
-      "title": "A Monoclonal Antibody-based Lateral Flow Immunochromatographic Assay for Rapid Detection of Derrisisoflavone A in Derris scandens (Roxb.) Benth.",
-      "abstract": "Derrisisoflavone A is a prenylated isoflavonoid and a chemical marker in the stem of Derris scandens (Roxb.) Benth., it is a suitable chemical marker for this plant. Conventional analytical techniques, such as high-performance liquid chromatography, liquid chromatography-mass spectrometry, and immunoassays, offer high sensitivity but rely on complex analytical equipment and specialized expertise, thereby limiting their applicability for rapid on-site analysis. In this study, a lateral flow immunochromatographic assay (LFIA) employing gold nanoparticle (AuNP)-labeled monoclonal antibodies (mAbs) was developed for qualitative detection of derrisisoflavone A in D. scandens plant materials and herbal products. The LFIA was designed in a competitive format using AuNPs-mAbs conjugates as the detection probe, derrisisoflavone A-cationized ovalbumin conjugates applied on the test zone, and anti-mouse immunoglobulin G antibody on the control zone. Under optimized conditions, the assay was evaluated for sensitivity and specificity and validated by comparison with a well-established indirect competitive enzyme-linked immunosorbent assay (icELISA) using various D. scandens plant parts, commercial products, and representative Fabaceae species. The LFIA exhibited a visual limit of detection of 100 µg/mL, defined by complete inhibition of the test zone signal, and demonstrated high analytical specificity with undetectable cross-reactivity toward structurally related isoflavonoids or prenylated flavonoids. The analytical results showed good agreement with those obtained by icELISA. Although less sensitive than quantitative methods, the developed LFIA provides a rapid, simple, and reliable screening tool for on-site quality control and preliminary assessment of derrisisoflavone A in D. scandens and related products.",
-      "authors": [
-        "Pitragorn Srimongkon",
-        "Worapol Sae-Foo",
-        "Gorawit Yusakul",
-        "Waraporn Putalun"
-      ],
-      "journal": "Journal of separation science",
-      "journal_abbr": "J Sep Sci",
-      "pub_date": "2026-05",
-      "entrez_date": "2026-05-02",
-      "doi": "10.1002/jssc.70428",
-      "publication_types": [
-        "Journal Article",
-        "Evaluation Study"
-      ],
-      "keywords": [
-        "Derris scandens",
-        "LFIA",
-        "derrisisoflavone A",
-        "gold nanoparticles",
-        "monoclonal antibody",
-        "screening tool"
-      ],
-      "affiliation": "Faculty of Pharmaceutical Sciences, Khon Kaen University, Khon Kaen, Thailand.",
-      "language": "eng",
-      "title_zh": "基于单克隆抗体的侧流免疫色谱法快速检测鱼藤 (Roxb.) Benth 中的鱼藤黄酮 A。",
-      "abstract_zh": "Derrisisoflavone A 是一种异戊烯化异黄酮类化合物，是鱼藤 (Derris scandens (Roxb.) Benth.) 茎中的化学标记物，是适合该植物的化学标记物。传统的分析技术，如高效液相色谱、液相色谱-质谱联用和免疫分析，具有较高的灵敏度，但依赖于复杂的分析设备和专业知识，从而限制了其快速现场分析的适用性。在本研究中，开发了一种采用金纳米颗粒 (AuNP) 标记的单克隆抗体 (mAb) 的侧流免疫色谱法 (LFIA)，用于定性检测 D. scandens 植物材料和草药产品中的树皮黄酮 A。 LFIA 采用竞争形式设计，使用 AuNPs-mAbs 缀合物作为检测探针，在测试区应用鱼尾黄酮 A 阳离子化卵清蛋白缀合物，在对照区使用抗小鼠免疫球蛋白 G 抗体。在优化条件下，评估了该测定的灵敏度和特异性，并通过与使用各种 D.\nScandens 植物部分、商业产品和代表性豆科物种。 LFIA 的视觉检测限为 100 µg/mL（由测试区信号的完全抑制定义），并表现出高分析特异性，对结构相关的异黄酮类化合物或异戊二烯化黄酮类化合物具有不可检测的交叉反应性。分析结果与 icELISA 获得的结果吻合良好。尽管不如定量方法灵敏，但开发的 LFIA 为 D. scandens 及相关产品中的鱼尾黄酮 A 的现场质量控制和初步评估提供了快速、简单且可靠的筛选工具。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42068121/",
-      "doi_url": "https://doi.org/10.1002/jssc.70428"
     },
     "42862297": {
       "pmid": "42862297",
