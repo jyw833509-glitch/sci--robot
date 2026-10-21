@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20 00:54:29",
+  "generated_at": "2026-10-21 00:22:53",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -126,43 +126,43 @@
       "42112447"
     ],
     "2026-09-29": [
-      "42069986"
-    ],
-    "2026-09-30": [
       "42864475"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42754776"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42725489"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42652006"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42546983"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42429162"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42414861"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42345899"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42273649"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42166563"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42125798"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42119499"
+    ],
+    "2026-10-15": [
+      "42896357"
     ],
     "2026-10-16": [
       "42862297"
@@ -250,7 +250,7 @@
       "language": "eng",
       "title_zh": "使用弱酸性蛋白 A 洗脱和酸性窗口阴离子交换膜纯化单克隆抗体的单 pH 连接抛光序列的可行性评估。",
       "abstract_zh": "单克隆抗体下游处理通常需要在 Protein A 捕获和精制步骤之间进行多次 pH 调整。这些调整增加了工艺复杂性，并使直接单元操作连接更加困难。我们使用温和 pH 蛋白 A 洗脱、酸性窗口阴离子交换 (AEX) 膜和阳离子交换 (CEX) 色谱法评估了在大约 pH 5.0 下运行的连接的捕获后抛光模块。 Praesto Jetted A50 HipH 生成的 IgG1 在 pH 值接近 5.0 时洗脱，电导率适合直接 AEX 上样。在标准条件下（pH 5.0，5.0 mS/cm），AEX 膜将异种鼠白血病病毒降低至测定极限（≥ 3 log10），并将小鼠微小病毒降低约 2-3 log10。在没有中间 pH 调整的连接概念验证运行中，AEX-CEX 抛光模块将最终产品池中的宿主细胞蛋白从 > 25 ng/mg-IgG 减少到 < 10 ng/mg-IgG，将高分子量物质从 1.3% 减少到 < 1%，将低分子量物质维持在 1% 以下，并实现了 97.6% 的产品回收率。\n对于另外两种 IgG，存档的 pH 7.5 下的强 AEX 流通记录和序列衍生的电荷描述符支持了产品在 pH 5.0 下流通的合理性。在相同的 IgG1 回顾性比较中，连接的配置使用更少的容器和调节操作，并且具有更短的配方衍生的编程色谱时间。这些发现支持单 pH 连接抛光的工艺代表性评估。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 11,
       "source": "PubMed",
       "source_url": "",
@@ -1802,43 +1802,6 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42112447/",
       "doi_url": "https://doi.org/10.3389/fmicb.2026.1808407"
     },
-    "42069986": {
-      "pmid": "42069986",
-      "title": "A CHO-Derived Matrix Attachment Region Enhances Transgene Dosage, SATB1 Recruitment, and Monoclonal Antibody Expression in a Dual-Promoter Vector System.",
-      "abstract": "The production of monoclonal antibodies (mAbs) in Chinese hamster ovary (CHO) cells is often affected by position-effect variegation and the gradual loss of transgene expression over time. Hence, we have designed a dual-promoter IgG expression vector and compared versions that either contained or lacked a CHO-derived matrix-attachment region (MAR). Stable CHO-S pools, cultured in serum-free conditions, revealed that the MAR-containing construct produced higher and more consistent antibody levels across ten passages, as confirmed by Western blot and Protein A Octet analysis. Product-quality analysis by size-exclusion chromatography and reducing SDS-PAGE confirmed formation of properly assembled, mainly monomeric antibodies in both cases. Quantitative PCR indicated greater transgene copy numbers in MAR pools (+ 48% for the light chain and + 71% for the heavy chain), and RT-qPCR showed roughly fourfold higher transcript levels for both chains relative to controls. Bioinformatic analysis revealed several SATB1 binding motifs within the MAR sequence, and ChIP-qPCR demonstrated SATB1 association with the MAR-linked transgene locus. Overall, the data suggested that a CHO-native MAR could enhance transgene dosage and transcriptional activity, while preserving product integrity, possibly through SATB1-mediated chromatin organization. Ongoing work includes chromatin-mark profiling and process-level productivity measurements to better define the impact of MAR-based vector design on biomanufacturing performance.",
-      "authors": [
-        "Sarmishta Majumdar",
-        "Rupashree Salvi",
-        "Prajakta Dandekar",
-        "Ratnesh Jain"
-      ],
-      "journal": "Molecular biotechnology",
-      "journal_abbr": "Mol Biotechnol",
-      "pub_date": "2026-05-02",
-      "entrez_date": "2026-05-02",
-      "doi": "10.1007/s12033-026-01577-y",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "CHO cells",
-        "Mammalian expression system",
-        "Matrix attachment region (MAR)",
-        "Monoclonal antibody expression",
-        "Recombinant protein production"
-      ],
-      "affiliation": "Department of Biological Sciences and Biotechnology, Institute of Chemical Technology, NP Marg, Matunga, Mumbai, Maharashtra, 400019, India.",
-      "language": "eng",
-      "title_zh": "CHO 衍生的基质附着区域可增强双启动子载体系统中的转基因剂量、SATB1 募集和单克隆抗体表达。",
-      "abstract_zh": "中国仓鼠卵巢 (CHO) 细胞中单克隆抗体 (mAb) 的产生经常受到位置效应变异和转基因表达随时间逐渐丧失的影响。因此，我们设计了双启动子 IgG 表达载体，并比较了包含或缺乏 CHO 衍生的基质附着区域 (MAR) 的版本。在无血清条件下培养的稳定 CHO-S 池显示，含有 MAR 的构建体在十代中产生了更高且更一致的抗体水平，这一点经蛋白质印迹和 Protein A Octet 分析证实。通过尺寸排阻层析和还原 SDS-PAGE 进行的产品质量分析证实，在两种情况下均形成了正确组装的主要是单体抗体。定量 PCR 表明 MAR 池中转基因拷贝数更高（轻链 + 48%，重链 + 71%），RT-qPCR 显示两条链的转录水平相对于对照高出大约四倍。生物信息分析揭示了 MAR 序列内的几个 SATB1 结合基序，ChIP-qPCR 证明了 SATB1 与 MAR 连锁的转基因位点的关联。\n总体而言，数据表明 CHO 天然 MAR 可能通过 SATB1 介导的染色质组织来增强转基因剂量和转录活性，同时保持产品完整性。正在进行的工作包括染色质标记分析和过程级生产力测量，以更好地定义基于 MAR 的载体设计对生物制造性能的影响。",
-      "translate_provider": "",
-      "score": 6,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42069986/",
-      "doi_url": "https://doi.org/10.1007/s12033-026-01577-y"
-    },
     "42864475": {
       "pmid": "42864475",
       "title": "Screening of Unexplored FDA-approved Inactive Ingredients as Stabilizers for Monoclonal Antibody Products.",
@@ -2293,6 +2256,42 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42119499/",
       "doi_url": "https://doi.org/10.1016/j.jpba.2026.117545"
+    },
+    "42896357": {
+      "pmid": "42896357",
+      "title": "Targeted mass spectrometry for absolute quantification of total human β‑nerve growth factor in the development of a bispecific therapeutic antibody.",
+      "abstract": "Nerve growth factor (NGF) functions not only as a neurotrophic factor that supports neural survival and differentiation but also as a mediator and modulator of pain. Therapeutic agents that target circulating NGF have been developed for the treatment of pain. MEDI7352 is a bispecific antibody that simultaneously targets NGF and tumor necrosis factor. To support its clinical development and characterize target engagement, quantification of total NGF in human serum after administration of MEDI7352 is essential. Here we describe an ultrasensitive, consistent, and reliable high-throughput assay for the quantitation of total NGF in human serum, with a linear assay range of 10-1000 pg/mL. We used a non-competing polyclonal antibody for immuno-affinity (IA) capture to enrich NGF, followed by trypsin digestion and solid-phase extraction cleanup. The resulting tryptic peptide was quantified by microflow liquid chromatography-mass spectrometry (LC-MS). The assay was analytically validated and subsequently applied across multiple MEDI7352 clinical studies. Measurement of baseline serum NGF concentrations in patients with painful diabetic neuropathy (PDN) and osteoarthritis (OA) revealed statistically significant differences between the two cohorts. After MEDI7352 administration, the total NGF concentrations increased in a dose-dependent manner, concordant with pharmacokinetic (PK) exposure. Notably, the increase in total NGF and PK exposure was more pronounced in antidrug antibody (ADA) negative patients compared to ADA positive patients, indicating that total NGF biomarker measurements not only inform on target engagement of the therapeutic drug but also provide insights into the impact of immunogenicity. Overall, this novel IA-LC-MS hybrid approach enabled a sensitive bioanalytical assay for the characterization of soluble protein target and is readily generalizable to support other therapeutic programs in drug development or applications in other research areas.",
+      "authors": [
+        "Zhiling Zhang",
+        "Anish Bhandari",
+        "Enowmpey Enowtambong",
+        "Weiping Shao"
+      ],
+      "journal": "Journal of pharmaceutical and biomedical analysis",
+      "journal_abbr": "J Pharm Biomed Anal",
+      "pub_date": "2026-10-10",
+      "entrez_date": "2026-10-19",
+      "doi": "10.1016/j.jpba.2026.117760",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Biomarker assay",
+        "IA-LC/MS hybrid assay",
+        "Nerve growth factor",
+        "Target engagement"
+      ],
+      "affiliation": "Integrated Bioanalysis, BioPharmaceuticals R&D, AstraZeneca, Gaithersburg, MD, USA. Electronic address: zhiling.zhang2@jazzpharma.com.",
+      "language": "eng",
+      "title_zh": "在双特异性治疗抗体的开发过程中，采用靶向质谱法对人总 β 神经生长因子进行绝对定量。",
+      "abstract_zh": "神经生长因子（NGF）不仅作为支持神经存活和分化的神经营养因子，而且作为疼痛的介质和调节剂。已经开发出针对循环 NGF 的治疗药物用于治疗疼痛。 MEDI7352是一种双特异性抗体，同时靶向NGF和肿瘤坏死因子。为了支持其临床开发并表征靶点参与，在施用 MEDI7352 后对人血清中总 NGF 进行定量至关重要。在这里，我们描述了一种超灵敏、一致且可靠的高通量测定法，用于定量人血清中的总 NGF，线性测定范围为 10-1000 pg/mL。我们使用非竞争性多克隆抗体进行免疫亲和 (IA) 捕获来富集 NGF，然后进行胰蛋白酶消化和固相提取净化。通过微流液相色谱-质谱法 (LC-MS) 对所得胰蛋白酶肽进行定量。该测定经过分析验证，随后应用于多项 MEDI7352 临床研究。\n对疼痛性糖尿病神经病变 (PDN) 和骨关节炎 (OA) 患者的基线血清 NGF 浓度进行测量，结果显示这两个队列之间存在统计学上的显着差异。给予 MEDI7352 后，总 NGF 浓度以剂量依赖性方式增加，与药代动力学 (PK) 暴露一致。值得注意的是，与 ADA 阳性患者相比，抗药物抗体 (ADA) 阴性患者的总 NGF 和 PK 暴露增加更为明显，这表明总 NGF 生物标志物测量不仅可以了解治疗药物的靶点参与情况，还可以深入了解免疫原性的影响。总体而言，这种新颖的 IA-LC-MS 混合方法能够对可溶性蛋白质靶标进行灵敏的生物分析测定，并且易于推广以支持药物开发中的其他治疗计划或其他研究领域的应用。",
+      "translate_provider": "google",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42896357/",
+      "doi_url": "https://doi.org/10.1016/j.jpba.2026.117760"
     },
     "42862297": {
       "pmid": "42862297",
