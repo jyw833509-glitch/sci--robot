@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24 00:15:36",
+  "generated_at": "2026-10-24 23:59:37",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -123,7 +123,7 @@
       "42202083"
     ],
     "2026-09-28": [
-      "42112447"
+      "42915931"
     ],
     "2026-09-29": [
       "42864475"
@@ -370,7 +370,7 @@
       "language": "eng",
       "title_zh": "通过基于 LC-MS 的方法鉴定治疗性单克隆抗体中可见颗粒形成的根本原因。",
       "abstract_zh": "在 pH 5.5 时观察到治疗性单克隆抗体的可见颗粒。在临床前开发过程中，该 pH 值被认为是该抗体的最佳pH值。为了最大限度地减少颗粒形成，最终药物的 pH 值增加至 6.5。 pH 6.5 时最初没有可见颗粒，但 2 个月后开始形成可见颗粒。为了尽量减少对临床计划的影响，选择了冻干制剂。随后，由于患者希望通过皮下注射该抗体来给药，因此需要稳定的高浓度溶液制剂。因此，pH 值进一步增加至 7.2，以减轻可见颗粒的形成。开发了基于 LC-MS 的方法，包括简化的 LC-MS 分析和组织蛋白酶 D 靶向 LC-MS Lys-C 肽图分析，以确定该抗体在 pH 5.5 下形成可见颗粒的根本原因，以确保成功开发 pH 7.2 下的稳定溶液制剂。\n基于 LC-MS 的分析支持的研究结果表明，在 pH 5.0 的抗体蛋白 A 捕获主池样品中观察到的可见颗粒与组织蛋白酶 D 对抗体的剪切有关。相比之下，在 pH 5.5 和 pH 6.5 的纯化抗体药物样品以及抗体加工中样品（来自低 pH 病毒灭活、阴离子交换层析、疏水相互作用层析和切向流过滤单元操作）中观察到的可见颗粒与轻链互补决定区之一中具有天冬氨酸-丝氨酸序列基序的天冬氨酸残基处的琥珀酰亚胺中间体形成相关。了解该抗体在 pH 5.5 下形成颗粒的根本原因使我们能够进行有针对性的实验，以快速开发该抗体的稳定高浓度溶液制剂并满足项目时间表。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 9,
       "source": "PubMed",
       "source_url": "",
@@ -1762,47 +1762,39 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42202083/",
       "doi_url": "https://doi.org/10.2478/acph-2026-0013"
     },
-    "42112447": {
-      "pmid": "42112447",
-      "title": "Generation, characterization and epitope mapping of monoclonal antibody 4H3 specific to the HN protein of pigeon paramyxovirus type 1 (PPMV-1).",
-      "abstract": "Pigeon Newcastle disease (PND), caused by pigeon paramyxovirus type 1 (PPMV-1), is an acute, highly contagious disease that induces neurological symptoms and gastrointestinal disorders in pigeons, posing substantial economic risks to the global pigeon industry. The hemagglutinin-neuraminidase (HN) protein of PPMV-1 is a key surface glycoprotein mediating viral adsorption, invasion, and egress, and serves as a critical target for vaccine development and diagnostic reagent design. In this study, we aimed to generate a specific monoclonal antibody (mAb) against the HN protein of PPMV-1 and identify its recognized epitope. We codon-optimized the conserved 198-390 amino acid (aa) region of the HN protein from PPMV-1 strain, followed by prokaryotic expression and purification to serve as the immunogen. Through cell fusion monoclonal antibody screening, we successfully established a hybridoma cell line that secretes mAb 4H3. Western blot and immunofluorescence assay (IFA) confirmed that mAb 4H3 specifically reacts with PPMV-1 strains but exhibits no cross-reactivity with the commonly used NDV vaccine strain Lasota. Epitope mapping with a panel of truncated HN protein fragments identified the minimal B-cell epitope recognized by mAb 4H3 as 310DRVWF314. Sequence homology analysis showed this epitope is highly conserved across PPMV-1 strains. Collectively, our results offer a valuable tool for developing PPMV-1-specific diagnostic assays, as well as for investigations into HN protein function and the development of epitope-based vaccines against PND.",
+    "42915931": {
+      "pmid": "42915931",
+      "title": "Tildipirosin-Based Broad-Spectrum Antibody Preparation to Overcome Steric Hindrance and Application in a Macrolide Immunochromatographic Assay.",
+      "abstract": "In the livestock industry, the concurrent use of tylosin (TYL), tildipirosin (TIP), and tilmicosin (TIL) necessitates broad-spectrum detection. We propose a design strategy for immunogens and coated antigens to overcome issues of steric hindrance and affinity imbalance. Using TIP, which possesses a nitrogen-containing piperidine side chain, as a template for computer-aided hapten design, we successfully engineered a monoclonal antibody (mAb-2F12) with a spacious binding pocket. Molecular docking results show that the macrolide skeleton shared by the three analytes is stabilized by hydrogen bonds with H ASP:116 and H TYR:48, while TIP recognition additionally relies on extensive hydrophobic interactions with the binding pocket, allowing the pocket to accommodate the large side chain of TIP. To eliminate antibody recognition bias, the heterologous coating of the antigen was used to modulate the competitive equilibrium, thereby achieving broad-spectrum recognition of TIP, TYL, and TIL (IC50: 0.06-0.09 ng/mL). A gold nanoparticle immunochromatographic assay (GICA) was developed for water, soil, milk, and honey (visual detection limit: 0.1-5 ng/mL), with results validated by liquid chromatography-tandem mass spectrometry (LC-MS/MS). This work demonstrates that by combining rational design of haptens and coat antigens, it is possible to achieve high-affinity, broad-spectrum recognition of contaminants within a single antibody-based immunoassay system, providing a new strategy for multiplex residue sensing.",
       "authors": [
-        "Xu Wang",
-        "Hongfeng Ren",
-        "Pei Li",
-        "Zhonglin Huang",
-        "Xing Li",
-        "Yang Wang",
-        "Yang Li",
-        "Libin Liang",
-        "Junping Li"
+        "Jiarui Wang",
+        "Aihong Wu",
+        "Chuanlai Xu",
+        "Xinxin Xu",
+        "Aihua Qu",
+        "Hua Kuang",
+        "Maozhong Sun"
       ],
-      "journal": "Frontiers in microbiology",
-      "journal_abbr": "Front Microbiol",
-      "pub_date": "2026-04-24",
-      "entrez_date": "2026-05-11",
-      "doi": "10.3389/fmicb.2026.1808407",
+      "journal": "Analytical chemistry",
+      "journal_abbr": "Anal Chem",
+      "pub_date": "2026-09-22",
+      "entrez_date": "2026-10-23",
+      "doi": "10.1021/acs.analchem.6c03764",
       "publication_types": [
         "Journal Article"
       ],
-      "keywords": [
-        "HN protein",
-        "antigenic epitope",
-        "application",
-        "monoclonal antibody",
-        "pigeon paramyxovirus type 1 (PPMV-1)"
-      ],
-      "affiliation": "Shanxi Key Laboratory of Animal Disease Research, Prevention and Control, College of Veterinary Medicine, Shanxi Agricultural University, Jinzhong, China.",
+      "keywords": [],
+      "affiliation": "International Joint Research Laboratory for Biointerface and Biodetection, Jiangnan University, Wuxi, Jiangsu214122, China.",
       "language": "eng",
-      "title_zh": "针对鸽子副粘病毒 1 型 (PPMV-1) HN 蛋白的单克隆抗体 4H3 的生成、表征和表位作图。",
-      "abstract_zh": "鸽子新城疫（PND）是由鸽子副粘病毒1型（PPMV-1）引起的一种急性、高度传染性疾病，可诱发鸽子神经系统症状和胃肠道疾病，给全球鸽子业带来巨大的经济风险。 PPMV-1 的血凝素神经氨酸酶 (HN) 蛋白是介导病毒吸附、入侵和排出的关键表面糖蛋白，是疫苗开发和诊断试剂设计的关键靶点。在本研究中，我们的目的是产生针对 PPMV-1 的 HN 蛋白的特异性单克隆抗体 (mAb)，并鉴定其识别的表位。我们对 PPMV-1 株 HN 蛋白的保守 198-390 个氨基酸 (aa) 区域进行了密码子优化，然后进行原核表达和纯化，作为免疫原。通过细胞融合单克隆抗体筛选，我们成功建立了分泌mAb 4H3的杂交瘤细胞系。蛋白质印迹和免疫荧光测定 (IFA) 证实 mAb 4H3 与 PPMV-1 株发生特异性反应，但与常用的 NDV 疫苗株 Lasota 没有交叉反应。\n使用一组截短的 HN 蛋白片段进行表位作图，鉴定出 mAb 4H3 识别的最小 B 细胞表位为 310DRVWF314。序列同源性分析表明该表位在 PPMV-1 毒株中高度保守。总的来说，我们的结果为开发 PPMV-1 特异性诊断测定、研究 HN 蛋白功能和开发基于表位的 PND 疫苗提供了宝贵的工具。",
-      "translate_provider": "",
-      "score": 6,
+      "title_zh": "基于替地匹罗辛的克服空间位阻的广谱抗体制备及其在大环内酯免疫层析测定中的应用。",
+      "abstract_zh": "在畜牧业中，同时使用泰乐菌素 (TYL)、替地罗星 (TIP) 和替米考星 (TIL) 需要进行广谱检测。我们提出了免疫原和包被抗原的设计策略，以克服空间位阻和亲和力不平衡的问题。使用具有含氮哌啶侧链的TIP作为计算机辅助半抗原设计的模板，我们成功地设计了具有宽敞结合袋的单克隆抗体（mAb-2F12）。分子对接结果表明，三种分析物共享的大环内酯骨架通过与 H ASP:116 和 H TYR:48 的氢键稳定，而 TIP 识别还依赖于与结合口袋的广泛疏水相互作用，使口袋能够容纳 TIP 的大侧链。为了消除抗体识别偏差，利用抗原的异源涂层来调节竞争平衡，从而实现 TIP、TYL 和 TIL 的广谱识别（IC50：0.06-0.09 ng/mL）。\n针对水、土壤、牛奶和蜂蜜开发了金纳米粒子免疫色谱分析 (GICA)（视觉检测限：0.1-5 ng/mL），并通过液相色谱-串联质谱 (LC-MS/MS) 验证结果。这项工作表明，通过结合半抗原和外壳抗原的合理设计，可以在基于单一抗体的免疫分析系统中实现对污染物的高亲和力、广谱识别，为多重残留物传感提供了一种新策略。",
+      "translate_provider": "google",
+      "score": 5,
       "source": "PubMed",
       "source_url": "",
       "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42112447/",
-      "doi_url": "https://doi.org/10.3389/fmicb.2026.1808407"
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42915931/",
+      "doi_url": "https://doi.org/10.1021/acs.analchem.6c03764"
     },
     "42864475": {
       "pmid": "42864475",
@@ -2290,7 +2282,7 @@
       "language": "eng",
       "title_zh": "89Zr 标记的抗 Nectin-4 抗体对膀胱尿路上皮癌增强 PET 成像的临床前评估。",
       "abstract_zh": "本研究评估了新型 89Zr 标记的抗 Nectin-4 单克隆抗体 [89Zr]Zr-DFO-MW282 用于膀胱尿路上皮癌 (BUC) PET 成像的临床前性能。通过对异硫氰酸苄基去铁胺（p-NCS-Bn-DFO）缀合制备[89Zr]Zr-DFO-MW282，放射性标记收率超过70%，纯化后放射化学纯度≥95%，比活度为36.10-63.72 GBq/μmol。 [89Zr]Zr-DFO-MW282 选择性积累在 Nectin-4 阳性细胞和肿瘤中，未标记的 MW282 抗体会阻断摄取。小动物 PET/CT 成像显示 SW780 异种移植物中肿瘤持续摄取，注射后 120 小时的 SUV 平均值高达 4.46 ± 0.02。由于肝胆清除，肾脏和膀胱的摄取很少，从而产生了出色的成像对比度。该探针表现出高特异性、延长的肿瘤保留时间和可忽略不计的膀胱背景，使其成为一种有前途的免疫 PET 探针，可用于 BUC 的精确成像并保证进一步的临床转化。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 4,
       "source": "PubMed",
       "source_url": "",
