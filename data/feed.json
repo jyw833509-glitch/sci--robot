@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-23 00:23:44",
+  "generated_at": "2026-10-24 00:15:36",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -15,49 +15,49 @@
       "42188602"
     ],
     "2026-08-07": [
-      "42822555"
+      "42906176"
     ],
     "2026-08-10": [
-      "42737515"
+      "42822555"
     ],
     "2026-08-11": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-12": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-13": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-14": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-17": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-18": [
-      "42687332"
+      "42235435"
     ],
     "2026-08-19": [
-      "42563142"
+      "42687332"
     ],
     "2026-08-20": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-21": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-24": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-25": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-26": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-27": [
-      "42084290"
+      "42192004"
     ],
     "2026-08-28": [
       "42834531"
@@ -162,58 +162,58 @@
       "42119499"
     ],
     "2026-10-15": [
-      "42896357"
+      "42911708"
     ],
     "2026-10-16": [
-      "42862297"
+      "42896357"
     ],
     "2026-10-19": [
-      "42825421"
+      "42862297"
     ],
     "2026-10-20": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-21": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-22": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-23": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-26": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-27": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-28": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-29": [
-      "42449784"
+      "42458707"
     ],
     "2026-10-30": [
-      "42285912"
+      "42449784"
     ],
     "2026-11-02": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-03": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-04": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-05": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-06": [
-      "42129093"
+      "42145184"
     ],
     "2026-11-09": [
-      "42093402"
+      "42129093"
     ]
   },
   "articles": {
@@ -335,6 +335,48 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42188602/",
       "doi_url": "https://doi.org/10.3390/toxins18050199"
+    },
+    "42906176": {
+      "pmid": "42906176",
+      "title": "Identification of the Root Cause of Visible Particle Formation in a Therapeutic Monoclonal Antibody by LC-MS-Based Approaches.",
+      "abstract": "Visible particles were observed for a therapeutic monoclonal antibody at pH 5.5. This pH was considered optimal for this antibody during preclinical development. To minimize the particle formation, the pH of the final drug substance was increased to 6.5. There were no visible particles at pH 6.5 initially, but visible particles started to form after 2 months. To minimize impact to the clinical program, a lyophilized formulation presentation was chosen. Subsequently, due to the desire for patient administration through subcutaneous injection for this antibody, a stable, high concentration solution formulation was needed. Thus, the pH was further increased to 7.2 to mitigate the visible particle formation. LC-MS-based approaches, including reduced LC-MS analysis and cathepsin D-targeted LC-MS Lys-C peptide map analysis, were developed to identify the root cause of the visible particle formation of this antibody at pH 5.5 to ensure the successful development of a stable solution formulation at pH 7.2. Results from studies supported by LC-MS-based analyses indicated that visible particles observed in the antibody protein A capture main pool sample at pH 5.0 were associated with cathepsin D clipping of the antibody. In contrast, visible particles observed in the purified antibody drug substance samples at pH 5.5 and pH 6.5 and in the antibody in-process samples (from the low pH viral inactivation, anion exchange chromatography, hydrophobic interaction chromatography, and tangential flow filtration unit operations) were associated with succinimide intermediate formation at an Asp residue with an Asp-Ser sequence motif in one of the complementarity-determining regions of the light chain. Understanding the root cause of the particle formation of this antibody at pH 5.5 enabled us to perform targeted experiments to rapidly develop a stable high concentration solution formulation for this antibody and meet project timelines.",
+      "authors": [
+        "Amareth Lim",
+        "Andrew G Werner",
+        "Brandon L Doyle",
+        "William D Holmes",
+        "Andrew W Carr",
+        "Chi A Nguyen",
+        "Suzanne E Stone",
+        "Elisabeth Krug"
+      ],
+      "journal": "Molecular pharmaceutics",
+      "journal_abbr": "Mol Pharm",
+      "pub_date": "2026-10-05",
+      "entrez_date": "2026-10-22",
+      "doi": "10.1021/acs.molpharmaceut.6c00548",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "cathepsin D",
+        "mass spectrometry",
+        "monoclonal antibodies",
+        "particle formation",
+        "succinimide intermediate",
+        "therapeutic proteins"
+      ],
+      "affiliation": "Bioproduct Research and Development, Lilly Research Laboratories, Eli Lilly and Company, Indianapolis, Indiana,46285, United States.",
+      "language": "eng",
+      "title_zh": "通过基于 LC-MS 的方法鉴定治疗性单克隆抗体中可见颗粒形成的根本原因。",
+      "abstract_zh": "在 pH 5.5 时观察到治疗性单克隆抗体的可见颗粒。在临床前开发过程中，该 pH 值被认为是该抗体的最佳pH值。为了最大限度地减少颗粒形成，最终药物的 pH 值增加至 6.5。 pH 6.5 时最初没有可见颗粒，但 2 个月后开始形成可见颗粒。为了尽量减少对临床计划的影响，选择了冻干制剂。随后，由于患者希望通过皮下注射该抗体来给药，因此需要稳定的高浓度溶液制剂。因此，pH 值进一步增加至 7.2，以减轻可见颗粒的形成。开发了基于 LC-MS 的方法，包括简化的 LC-MS 分析和组织蛋白酶 D 靶向 LC-MS Lys-C 肽图分析，以确定该抗体在 pH 5.5 下形成可见颗粒的根本原因，以确保成功开发 pH 7.2 下的稳定溶液制剂。\n基于 LC-MS 的分析支持的研究结果表明，在 pH 5.0 的抗体蛋白 A 捕获主池样品中观察到的可见颗粒与组织蛋白酶 D 对抗体的剪切有关。相比之下，在 pH 5.5 和 pH 6.5 的纯化抗体药物样品以及抗体加工中样品（来自低 pH 病毒灭活、阴离子交换层析、疏水相互作用层析和切向流过滤单元操作）中观察到的可见颗粒与轻链互补决定区之一中具有天冬氨酸-丝氨酸序列基序的天冬氨酸残基处的琥珀酰亚胺中间体形成相关。了解该抗体在 pH 5.5 下形成颗粒的根本原因使我们能够进行有针对性的实验，以快速开发该抗体的稳定高浓度溶液制剂并满足项目时间表。",
+      "translate_provider": "google",
+      "score": 9,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42906176/",
+      "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.6c00548"
     },
     "42822555": {
       "pmid": "42822555",
@@ -905,46 +947,6 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42192004/",
       "doi_url": "https://doi.org/10.1007/s00449-026-03358-y"
     },
-    "42084290": {
-      "pmid": "42084290",
-      "title": "On-deck pH measurement with integrated feedback control on a micro-scale platform for monoclonal antibody low pH viral inactivation.",
-      "abstract": "The increasing demand for efficient monoclonal antibody manufacturing has accelerated the adoption of high throughput process development (HTPD) platforms, which enable rapid, automated screening of downstream operations. However, the integration of non-chromatographic steps such as low pH viral inactivation (VI) within automated workflows remains limited, largely due to the absence of a micro-scale method for accurate, on-deck pH measurement and control. This study presents the development and implementation of an automated pH measurement and feedback control system using optical pH sensors immobilized within 96-well microplates. The approach enables non-invasive, real-time monitoring of pH across the acidic range required for VI and is fully compatible with standard liquid-handling platforms. Integration of a feedback control algorithm allowed autonomous acid and base addition to achieve precise target pH values during both acidification and neutralization phases. The method achieved strong agreement between measured and expected pH values following optimization of measurement conditions, including ionic strength adjustment. The system was further integrated with Sartobind® Q and cation exchange chromatography steps to demonstrate an end-to-end automated workflow. Systematic assessment of cation exchange chromatography performance under controlled loading conditions enabled direct visualization of separation behavior and early identification of sub-optimal operating regions, demonstrating the platform's capability to expand experimental space and accelerate mechanistic process understanding. This work establishes a micro-scale, fully automated downstream platform with pH control, bridging a critical technological gap and advancing the vision of an end-to-end HTPD system for biopharmaceutical purification.",
-      "authors": [
-        "Paras Sharma",
-        "Nikolas von den Eichen",
-        "Sabine Schweisgut",
-        "Lars Robbel",
-        "Michael Schmitt",
-        "Daniel G Bracewell"
-      ],
-      "journal": "Biotechnology progress",
-      "journal_abbr": "Biotechnol Prog",
-      "pub_date": "2026-05-05",
-      "entrez_date": "2026-05-05",
-      "doi": "10.1002/btpr.88516",
-      "publication_types": [
-        "Journal Article",
-        "Research Support, Non-U.S. Gov't"
-      ],
-      "keywords": [
-        "downstream processing",
-        "high throughput process development",
-        "micro‐scale",
-        "monoclonal antibodies",
-        "scale‐down"
-      ],
-      "affiliation": "Department of Biochemical Engineering, University College London, London, UK.",
-      "language": "eng",
-      "title_zh": "在微型平台上进行带集成反馈控制的甲板 pH 测量，用于单克隆抗体低 pH 病毒灭活。",
-      "abstract_zh": "对高效单克隆抗体制造的需求不断增长，加速了高通量工艺开发 (HTPD) 平台的采用，该平台能够快速、自动筛选下游操作。然而，非色谱步骤（例如低 pH 病毒灭活 (VI)）在自动化工作流程中的集成仍然有限，这主要是由于缺乏精确的现场 pH 测量和控制的微尺度方法。本研究介绍了使用固定在 96 孔微孔板内的光学 pH 传感器开发和实施自动 pH 测量和反馈控制系统。该方法能够在 VI 所需的酸性范围内对 pH 值进行非侵入式实时监测，并且与标准液体处理平台完全兼容。反馈控制算法的集成允许自主添加酸和碱，以在酸化和中和阶段实现精确的目标 pH 值。在优化测量条件（包括离子强度调整）后，该方法在测量值和预期 pH 值之间实现了高度一致。\n该系统进一步与 Sartobind® Q 和阳离子交换色谱步骤集成，以演示端到端自动化工作流程。在受控加载条件下对阳离子交换色谱性能进行系统评估，实现分离行为的直接可视化和次优操作区域的早期识别，证明该平台具有扩展实验空间和加速机械过程理解的能力。这项工作建立了一个具有 pH 控制功能的微型全自动下游平台，弥合了关键的技术差距，并推进了用于生物制药纯化的端到端 HTPD 系统的愿景。",
-      "translate_provider": "",
-      "score": 8,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42084290/",
-      "doi_url": "https://doi.org/10.1002/btpr.88516"
-    },
     "42834531": {
       "pmid": "42834531",
       "title": "Development and application of a mechanistic model for protein A resolution of a bispecific antibody for process characterization and optimization.",
@@ -1404,7 +1406,7 @@
       ],
       "journal": "Analytical methods : advancing methods and applications",
       "journal_abbr": "Anal Methods",
-      "pub_date": "2026-09-16",
+      "pub_date": "2026-10-22",
       "entrez_date": "2026-09-16",
       "doi": "10.1039/d6ay01374k",
       "publication_types": [
@@ -2257,6 +2259,45 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42119499/",
       "doi_url": "https://doi.org/10.1016/j.jpba.2026.117545"
     },
+    "42911708": {
+      "pmid": "42911708",
+      "title": "Preclinical Evaluation of 89Zr-Labeled Anti-Nectin-4 Antibody for Enhanced PET Imaging in Bladder Urothelial Carcinoma.",
+      "abstract": "This study evaluated the preclinical performance of a novel 89Zr-labeled anti-Nectin-4 monoclonal antibody, [89Zr]Zr-DFO-MW282, for PET imaging of bladder urothelial carcinoma (BUC). [89Zr]Zr-DFO-MW282 was prepared via p-isothiocyanatobenzyl-desferrioxamine (p-NCS-Bn-DFO) conjugation, achieving a radiolabeling yield exceeding 70%, radiochemical purity ≥95% post-purification, and specific activity of 36.10-63.72 GBq/μmol. [89Zr]Zr-DFO-MW282 selectively accumulated in Nectin-4-positive cells and tumors, with uptake blocked by the unlabeled MW282 antibody. Small-animal PET/CT imaging revealed sustained tumor uptake in SW780 xenografts, with a high SUVmean value of 4.46 ± 0.02 at 120 h p.i. Owing to hepatobiliary clearance, the kidney and bladder uptake was minimal, yielding excellent imaging contrast. The probe demonstrated high specificity, prolonged tumor retention, and negligible bladder background, making it a promising immuno-PET probe for precise imaging of BUC and warranting further clinical translation.",
+      "authors": [
+        "Ya'nan Ren",
+        "Teli Liu",
+        "Xingguo Hou",
+        "Yuan Yao",
+        "Pei Wang",
+        "Lei Xia",
+        "Song Liu",
+        "Pan Wang",
+        "Jiong Cai",
+        "Dongfeng Pan",
+        "Hua Zhu",
+        "Zhi Yang"
+      ],
+      "journal": "Journal of medicinal chemistry",
+      "journal_abbr": "J Med Chem",
+      "pub_date": "2026-10-22",
+      "entrez_date": "2026-10-23",
+      "doi": "10.1021/acs.jmedchem.6c01979",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [],
+      "affiliation": "Department of Nuclear Medicine, Affiliated Hospital of Zunyi Medical University, Zunyi, Guizhou563000, China.",
+      "language": "eng",
+      "title_zh": "89Zr 标记的抗 Nectin-4 抗体对膀胱尿路上皮癌增强 PET 成像的临床前评估。",
+      "abstract_zh": "本研究评估了新型 89Zr 标记的抗 Nectin-4 单克隆抗体 [89Zr]Zr-DFO-MW282 用于膀胱尿路上皮癌 (BUC) PET 成像的临床前性能。通过对异硫氰酸苄基去铁胺（p-NCS-Bn-DFO）缀合制备[89Zr]Zr-DFO-MW282，放射性标记收率超过70%，纯化后放射化学纯度≥95%，比活度为36.10-63.72 GBq/μmol。 [89Zr]Zr-DFO-MW282 选择性积累在 Nectin-4 阳性细胞和肿瘤中，未标记的 MW282 抗体会阻断摄取。小动物 PET/CT 成像显示 SW780 异种移植物中肿瘤持续摄取，注射后 120 小时的 SUV 平均值高达 4.46 ± 0.02。由于肝胆清除，肾脏和膀胱的摄取很少，从而产生了出色的成像对比度。该探针表现出高特异性、延长的肿瘤保留时间和可忽略不计的膀胱背景，使其成为一种有前途的免疫 PET 探针，可用于 BUC 的精确成像并保证进一步的临床转化。",
+      "translate_provider": "google",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42911708/",
+      "doi_url": "https://doi.org/10.1021/acs.jmedchem.6c01979"
+    },
     "42896357": {
       "pmid": "42896357",
       "title": "Targeted mass spectrometry for absolute quantification of total human β‑nerve growth factor in the development of a bispecific therapeutic antibody.",
@@ -2935,40 +2976,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42129093/",
       "doi_url": "https://doi.org/10.1007/978-1-0716-5041-7_11"
-    },
-    "42093402": {
-      "pmid": "42093402",
-      "title": "Unveiling the geographical signature of black tea through UHPLC-quadrupole-Orbitrap Exploris HRMS analysis.",
-      "abstract": "Understanding the geographical differentiation of black tea is essential for exploring the influence of territory on its chemical composition. In this study, black tea (powder) samples from key tea-producing regions, including Siliguri, Assam, and Idukki (Kerala) in India, Sylhet in Bangladesh, and Kandy in Sri Lanka, were analyzed using ultra-high-performance liquid chromatography coupled with high-resolution mass spectrometry. The tea extracts were analysed in full MS/ddMS2 mode with heated electrospray ionization, using a non-targeted metabolomics approach. A broad range of compounds (209) including polyphenols, amino acids, organic acids and their derivatives were identified based on accurate mass measurements with mass error (±5 ppm) and retention time matching (±0.2 min). Various metabolite profiles were observed across different regional samples, with certain marker compounds identified as potential indicators of geographical origin. Principal component analysis (PCA) further confirmed clear clustering and differentiation of tea samples based on the origin, highlighting the role of regional environmental factors such as climate, soil composition, and altitude. Molecular docking and dynamics were carried out to examine the interaction of theanine and the neonatal Fc receptor (FcRn), a key regulator of IgG recycling and immune homeostasis, encoded by the FCGRT gene. Results showed that theanine forms a stable complex with the neonatal Fc receptor (FcRn) and maintained consistent hydrogen bonding, particularly with key residue Ile685, and preserved FcRn's secondary structure. Binding energy analysis (MM-PBSA) showed favourable interactions dominated by van der Waals forces, with theanine exhibiting a slightly higher binding affinity (-18.72 kcal mol-1) than RVT-1401 (-17.82 kcal mol-1), a therapeutic monoclonal antibody known to inhibit FcRn function. The findings have significant implications for the tea industry in quality control, authentication, traceability, and health benefits, which offer new insights into how territory shapes the chemical and potentially sensory attributes of black tea.",
-      "authors": [
-        "Subodh Kumar Budakoti",
-        "Khalid Anwar",
-        "Nagendla Narendra Kumar",
-        "M L Anirudh Bhat",
-        "Dasharath Oulkar",
-        "Pratibha Sharma"
-      ],
-      "journal": "Analytical methods : advancing methods and applications",
-      "journal_abbr": "Anal Methods",
-      "pub_date": "2026-05-21",
-      "entrez_date": "2026-05-07",
-      "doi": "10.1039/d6ay00096g",
-      "publication_types": [
-        "Journal Article",
-        "Research Support, Non-U.S. Gov't"
-      ],
-      "keywords": [],
-      "affiliation": "India Engineering Center, Thermo Fisher Scientific India Private Limited, My Home Twitza, Hitech City, Hyderabad-500081, Telangana, India. subodh_budakoti@rediffmail.com.",
-      "language": "eng",
-      "title_zh": "通过 UHPLC-四极杆-Orbitrap Exploris HRMS 分析揭示红茶的地理特征。",
-      "abstract_zh": "了解红茶的地理差异对于探索地域对其化学成分的影响至关重要。在这项研究中，使用超高效液相色谱结合高分辨率质谱分析了来自印度西里古里、阿萨姆邦和伊杜基（喀拉拉邦）、孟加拉国锡尔赫特和斯里兰卡康提等主要茶叶产区的红茶（粉）样品。使用非靶向代谢组学方法，通过加热电喷雾电离的全 MS/ddMS2 模式对茶提取物进行分析。基于具有质量误差 (±5 ppm) 和保留时间匹配 (±0.2 分钟) 的精确质量测量，鉴定了多种化合物 (209)，包括多酚、氨基酸、有机酸及其衍生物。在不同区域样本中观察到了各种代谢物谱，某些标记化合物被确定为地理起源的潜在指标。主成分分析（PCA）进一步证实了茶叶样品基于产地的清晰聚类和分化，突出了气候、土壤成分和海拔等区域环境因素的作用。\n通过分子对接和动力学研究茶氨酸与新生儿 Fc 受体 (FcRn) 的相互作用，FcRn 是由 FCGRT 基因编码的 IgG 回收和免疫稳态的关键调节因子。结果表明，茶氨酸与新生儿 Fc 受体 (FcRn) 形成稳定的复合物，并保持一致的氢键，特别是与关键残基 Ile685，并保留了 FcRn 的二级结构。结合能分析 (MM-PBSA) 显示以范德华力为主的有利相互作用，茶氨酸的结合亲和力 (-18.72 kcal mol-1) 略高于 RVT-1401 (-17.82 kcal mol-1)，RVT-1401 是一种已知抑制 FcRn 功能的治疗性单克隆抗体。这些发现对茶行业的质量控制、认证、可追溯性和健康益处具有重大影响，这为了解地域如何塑造红茶的化学和潜在感官属性提供了新的见解。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42093402/",
-      "doi_url": "https://doi.org/10.1039/d6ay00096g"
     }
   }
 }
