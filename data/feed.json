@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-28 00:57:57",
+  "generated_at": "2026-10-29 01:33:06",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -2383,7 +2383,7 @@
       ],
       "journal": "Journal of materials chemistry. B",
       "journal_abbr": "J Mater Chem B",
-      "pub_date": "2026-10-02",
+      "pub_date": "2026-10-28",
       "entrez_date": "2026-10-02",
       "doi": "10.1039/d6tb01493c",
       "publication_types": [
