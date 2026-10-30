@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29 01:33:06",
+  "generated_at": "2026-10-30 01:32:52",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -87,79 +87,79 @@
       "42155371"
     ],
     "2026-09-10": [
-      "42773271"
+      "42951158"
     ],
     "2026-09-11": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-14": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-15": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-16": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-17": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-18": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-21": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-22": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-23": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-24": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-25": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-28": [
-      "42915931"
+      "42202083"
     ],
     "2026-09-29": [
-      "42864475"
+      "42915931"
     ],
     "2026-09-30": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-01": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-02": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-05": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-06": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-07": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-08": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-09": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-12": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-13": [
-      "42125798"
+      "42166563"
     ],
     "2026-10-14": [
-      "42119499"
+      "42125798"
     ],
     "2026-10-15": [
       "42911708"
@@ -1303,6 +1303,42 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42155371/",
       "doi_url": "https://doi.org/10.1016/j.jpba.2026.117558"
     },
+    "42951158": {
+      "pmid": "42951158",
+      "title": "Fabrication of a monoclonal antibody-based electro-immunosensor to detect SARS-CoV-2 nucleocapsid antigen.",
+      "abstract": "The nucleocapsid protein is one of the major structural proteins of the SARS-CoV-2 virus, which has caused the COVID-19 pandemic. Due to their high abundance in the host circulation system, post-early infection, and their participation in other cyclic events that support viral survival, they exert control over the viral life cycle within the host. Thus, assessing these protein levels in serum can serve as an early diagnostic tool for COVID-19 infections. In the current study, monoclonal antibodies (mAbs) targeting recombinantly produced NCoV2 (rNCoV2) antigen have been developed, characterized, and assessed for their immunodiagnostic potential by indirect ELISA, sandwich ELISA, and further integrated into electro-immunosensor platforms. Hybridomas secreting anti-rNCoV2 mAbs were obtained by fusion of mouse myeloma Sp2/0 cells with rNCoV2 antigen-immunized murine splenocytes using a chemical fusion agent. Hybridoma clones PAb8E8c3-G8 of isotype IgG2A and PBa1-A2 of isotype IgG1, both bearing ĸ light chains, were further developed and assessed for their diagnostic potential, as they have shown a stable growth pattern and the desired antibody response against the rNCoV2 antigen. The lowest concentration of antigen detected by both mAbs with confidence was 7.81 ng/well. Of the two, mAb PAb8E8c3-G8 was selected for mAb-based electro-immunosensor fabrication. A simple label-free GCE-carbon black-based electro-immunosensor was fabricated and enhanced with L-Cys/AuNP, onto which the mAb was immobilized. The integrated mAb electro-immunosensor could efficiently detect the rNCoV2 antigen, with LOD and LOQ values of 4.618 pg/mL and 15.24 pg/mL, respectively. Thus, in this study, we have generated mAbs against the rNCoV2 antigen, which have shown better diagnostic potential in terms of specificity and sensitivity.",
+      "authors": [
+        "Prashanthi K Thangaraj",
+        "N S Jayaprakash"
+      ],
+      "journal": "Protein expression and purification",
+      "journal_abbr": "Protein Expr Purif",
+      "pub_date": "2026-10-28",
+      "entrez_date": "2026-10-28",
+      "doi": "10.1016/j.pep.2026.107030",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Nucleocapsid protein",
+        "SARS-CoV-2 virus",
+        "affinity purification",
+        "carbon black",
+        "electro-immunosensor",
+        "monoclonal antibody"
+      ],
+      "affiliation": "Centre for Bioseparation Technology (CBST), Vellore Institute of Technology (VIT), Vellore, Tamil Nadu-632014, India. Electronic address: prashanthi.kt2020@vitstudent.ac.in.",
+      "language": "eng",
+      "title_zh": "用于检测SARS-CoV-2核衣壳抗原的基于单克隆抗体的电免疫传感器的制备。",
+      "abstract_zh": "核衣壳蛋白是导致COVID-19大流行的SARS-CoV-2病毒的主要结构蛋白之一。由于它们在宿主循环系统中的高丰度、早期感染后以及它们参与支持病毒存活的其他循环事件，它们对宿主内的病毒生命周期施加控制。\n因此，评估血清中的这些蛋白质水平可以作为COVID-19感染的早期诊断工具。在目前的研究中，已经通过间接ELISA、夹心ELISA开发、表征和评估了靶向重组产生的NCoV2 (rNCoV2)抗原的单克隆抗体(mAb)的免疫诊断潜力，并进一步将其整合到电免疫传感器平台中。\n通过使用化学融合剂将小鼠骨髓瘤Sp2/0细胞与rNCoV2抗原免疫的小鼠脾细胞融合来获得分泌抗-rNCoV2 mAb的杂交瘤。进一步开发并评估了同种型IgG1的同种型IgG2A和PBa1-A2的杂交瘤克隆PAb8E8c3-G8的诊断潜力，因为它们已显示稳定的生长模式和针对rNCoV2抗原的所需抗体应答。\n两种单克隆抗体检测到的最低抗原浓度为7.81 ng/孔。在两者中，选择mAb PAb8E8c3-G8用于基于mAb的电免疫传感器的制造。制备了一种简单的无标记的GCE-碳黑基电免疫传感器，并用L-Cys/AuNP增强，将mAb固定在其上。\n整合的mAb电免疫传感器能有效检测rNCoV2抗原， LOD和LOQ值分别为4.618 pg/mL和15.24 pg/mL。因此，在这项研究中，我们产生了针对rNCoV2抗原的mAb ，这些mAb在特异性和敏感性方面显示出更好的诊断潜力。",
+      "translate_provider": "mymemory",
+      "score": 6,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42951158/",
+      "doi_url": "https://doi.org/10.1016/j.pep.2026.107030"
+    },
     "42773271": {
       "pmid": "42773271",
       "title": "Challenges in the Quantification of Free TFPI in Human Plasma Following Marstacimab Treatment.",
@@ -2212,44 +2248,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42125798/",
       "doi_url": "https://doi.org/10.1080/19420862.2026.2670845"
-    },
-    "42119499": {
-      "pmid": "42119499",
-      "title": "Investigation of excipient-related artifacts observed in the leachables study of tiragolumab by LC-HRMS and GC-MS.",
-      "abstract": "Leachables studies of protein formulations are faced with many analytical challenges arising from relatively high levels of complex formulation components. In the stressed sample of the monoclonal antibody drug tiragolumab with the main excipients methionine, histidine, sucrose, and polysorbate, two unknown compounds were detected in the screening for non-volatile leachables by reversed phase (RP) liquid chromatography high-resolution mass spectrometry (LC-HRMS). Unknown 1 was proven to be a gas-phase mass spectral adduct between methionine and the sucrose-derived hexose. Separation of methionine and hexose by hydrophilic interaction chromatography (HILIC) resulted in the disappearance of the unknown peak. It was also observed that non-covalent amino acid-sugar adducts in the gas phase were prevalent in both electrospray ionization (ESI) and atmospheric pressure chemical ionization (APCI) modes. Unknown 2 was identified as a Maillard reaction product 1-(3H-imidazo[4,5-c]pyridin-4-yl)ethan-1-one by LC-HRMS and gas chromatography mass spectrometry (GC-MS). The formation mechanism was confirmed by the reaction between histidine and the sucrose-derived methylglyoxal (MGO) under hydrothermal conditions. This study exemplifies false positive leachable results and delves into the chemical reactions and interactions that generated such artifacts.",
-      "authors": [
-        "Jie Du",
-        "Richard Pearson",
-        "Yuyin Zhou",
-        "Kenneth Skidmore"
-      ],
-      "journal": "Journal of pharmaceutical and biomedical analysis",
-      "journal_abbr": "J Pharm Biomed Anal",
-      "pub_date": "2026-05-04",
-      "entrez_date": "2026-05-12",
-      "doi": "10.1016/j.jpba.2026.117545",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Excipient reaction products",
-        "GC-MS",
-        "LC-HRMS",
-        "Leachables",
-        "Mass spectral artifacts",
-        "Unknown identification"
-      ],
-      "affiliation": "Analytical Development, Genentech, A Member of the Roche Group, 1 DNA Way, South San Francisco, CA, United States. Electronic address: jie.du@cardinalhealth.com.",
-      "language": "eng",
-      "title_zh": "通过 LC-HRMS 和 GC-MS 研究 tiragolumab 浸出物研究中观察到的赋形剂相关伪影。",
-      "abstract_zh": "蛋白质制剂的可浸出物研究面临着由于相对较高水平的复杂制剂成分而产生的许多分析挑战。在主要辅料蛋氨酸、组氨酸、蔗糖和聚山梨酯的单克隆抗体药物替拉古鲁单抗的应激样品中，通过反相（RP）液相色谱高分辨质谱（LC-HRMS）筛选非挥发性浸出物，检测到两种未知化合物。未知 1 被证明是蛋氨酸和蔗糖衍生的己糖之间的气相质谱加合物。通过亲水相互作用色谱 (HILIC) 分离甲硫氨酸和己糖导致未知峰消失。还观察到，气相中的非共价氨基酸-糖加合物在电喷雾电离（ESI）和大气压化学电离（APCI）模式中都很普遍。通过LC-HRMS和气相色谱质谱(GC-MS)鉴定未知2为美拉德反应产物1-(3H-咪唑并[4,5-c]吡啶-4-基)乙烷-1-酮。\n组氨酸与蔗糖衍生的甲基乙二醛（MGO）在水热条件下的反应证实了其形成机制。这项研究举例说明了假阳性可浸出结果，并深入研究了产生此类伪影的化学反应和相互作用。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42119499/",
-      "doi_url": "https://doi.org/10.1016/j.jpba.2026.117545"
     },
     "42911708": {
       "pmid": "42911708",
