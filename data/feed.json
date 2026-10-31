@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-30 01:32:52",
+  "generated_at": "2026-10-31 01:25:18",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -60,160 +60,160 @@
       "42192004"
     ],
     "2026-08-28": [
-      "42834531"
+      "42962190"
     ],
     "2026-08-31": [
-      "42570623"
+      "42834531"
     ],
     "2026-09-01": [
-      "42470740"
+      "42570623"
     ],
     "2026-09-02": [
-      "42368154"
+      "42470740"
     ],
     "2026-09-03": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-04": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-07": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-08": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-09": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-10": [
-      "42951158"
+      "42155371"
     ],
     "2026-09-11": [
-      "42773271"
+      "42951158"
     ],
     "2026-09-14": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-15": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-16": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-17": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-18": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-21": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-22": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-23": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-24": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-25": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-28": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-29": [
-      "42915931"
+      "42202083"
     ],
     "2026-09-30": [
-      "42864475"
+      "42958438"
     ],
     "2026-10-01": [
-      "42754776"
+      "42915931"
     ],
     "2026-10-02": [
-      "42725489"
+      "42864475"
     ],
     "2026-10-05": [
-      "42652006"
+      "42754776"
     ],
     "2026-10-06": [
-      "42546983"
+      "42725489"
     ],
     "2026-10-07": [
-      "42429162"
+      "42652006"
     ],
     "2026-10-08": [
-      "42414861"
+      "42546983"
     ],
     "2026-10-09": [
-      "42345899"
+      "42429162"
     ],
     "2026-10-12": [
-      "42273649"
+      "42414861"
     ],
     "2026-10-13": [
-      "42166563"
+      "42345899"
     ],
     "2026-10-14": [
-      "42125798"
+      "42273649"
     ],
     "2026-10-15": [
-      "42911708"
+      "42166563"
     ],
     "2026-10-16": [
-      "42896357"
+      "42911708"
     ],
     "2026-10-19": [
-      "42862297"
+      "42896357"
     ],
     "2026-10-20": [
-      "42825421"
+      "42862297"
     ],
     "2026-10-21": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-22": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-23": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-26": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-27": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-28": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-29": [
-      "42458707"
+      "42487284"
     ],
     "2026-10-30": [
-      "42449784"
+      "42458707"
     ],
     "2026-11-02": [
-      "42285912"
+      "42449784"
     ],
     "2026-11-03": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-04": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-05": [
-      "42217505"
+      "42272446"
     ],
     "2026-11-06": [
-      "42145184"
+      "42217505"
     ],
     "2026-11-09": [
-      "42129093"
+      "42145184"
     ]
   },
   "articles": {
@@ -947,6 +947,36 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42192004/",
       "doi_url": "https://doi.org/10.1007/s00449-026-03358-y"
     },
+    "42962190": {
+      "pmid": "42962190",
+      "title": "Review Article: A Scientific Journey with Zelig Eshhar at the Dawn of Monoclonal Antibody Research.",
+      "abstract": "Professor Zelig Eshhar, a colleague, collaborator, and dear friend, is known worldwide as the visionary who laid the foundations for chimeric antigen receptor (CAR)-T cell therapy, a breakthrough that transformed cancer immunotherapy. Long before this revolutionary achievement, however, Zelig profoundly influenced research at the Weizmann Institute of Science by introducing the then state-of-the-art hybridoma technology for the generation of monoclonal antibodies (mAbs), which he brought directly from the oven of Nobel laureates Georges KÃ¶hler and CÃ©sar Milstein. Through his expertise and the dedication of his legendary team, Tova Waks, his indispensable partner for 55 years, Orith Gigi-Leitner, and Sara Barak, this technology rapidly became an invaluable resource for investigators throughout the Institute. My collaboration with Zelig during the 1980s led to the generation of monoclonal antibodies against a series of biologically important proteins, including interferons, other cytokines, their soluble receptors, the unique IL-18 Binding Protein (IL-18BP), and, years later, glutamate oxaloacetate transaminase 1 (GOT1). These antibodies proved to be remarkably versatile research tools, suitable for neutralization, affinity chromatography, immunoassays, flow cytometry, immunoblotting, and numerous other applications. Most importantly, they enabled the affinity purification of in-house corresponding recombinant cytokines. The antibodies proved far more than analytical reagents. They became indispensable tools for both basic research and translational medicine. Together, these unique reagents formed the foundation of a ligand-affinity strategy that led to the discovery of previously unknown cytokine receptors and binding proteins. Those include the type I interferon receptor, the second TNF receptor (TBPII), and the unexpected IL-18 Binding Protein. These discoveries not only advanced our understanding of cytokine biology but also paved the way for therapeutics such as RebifŴ, EnbrelŴ, RemicadeŴ and Tadekinig alfaTM, used in the treatment of autoimmune, inflammatory, and genetic diseases, such as multiple sclerosis, rheumatoid arthritis and Crohn's disease. While our scientific paths diverged in 1989, Zelig's toward the revolutionary concept of chimeric antigen receptors and mine toward cytokine receptors and binding proteins, they ultimately converged again as TNF and IL-18BP antagonists found applications in enhancement of CAR-T therapy and in management of potential inflammatory complications associated with this therapy. This chapter stands as a testament to Zelig's vision in introducing and advancing monoclonal antibody technology at the Weizmann Institute.",
+      "authors": [
+        "Daniela Novick"
+      ],
+      "journal": "Critical reviews in oncogenesis",
+      "journal_abbr": "Crit Rev Oncog",
+      "pub_date": "2026",
+      "entrez_date": "2026-10-30",
+      "doi": "10.1615/CritRevOncog.2026066174",
+      "publication_types": [
+        "Journal Article",
+        "Review",
+        "Historical Article"
+      ],
+      "keywords": [],
+      "affiliation": "The Weizmann Institute of Science Rehovot Israel.",
+      "language": "eng",
+      "title_zh": "评论文章：单克隆抗体研究黎明时与 Zelig Eshhar 的科学之旅。",
+      "abstract_zh": "Zelig Eshhar 教授是我的同事、合作者和亲爱的朋友，他被誉为全球知名的远见卓识者，为嵌合抗原受体 (CAR)-T 细胞疗法奠定了基础，这一突破性改变了癌症免疫疗法。然而，早在这一革命性成就之前，泽利格就通过引入当时最先进的杂交瘤技术来产生单克隆抗体 (mAb)，对魏茨曼科学研究所的研究产生了深远的影响，该技术是他直接从诺贝尔奖获得者乔治·科勒 (Georges Köhler) 和凯撒·米尔斯坦 (César Milstein) 的烤箱中带来的。通过他的专业知识和传奇团队 Tova Waks、他 55 年不可或缺的合作伙伴 Orith Gigi-Leitner 和 Sara Barak 的奉献，这项技术迅速成为整个研究所研究人员的宝贵资源。我在 20 世纪 80 年代与 Zelig 的合作产生了针对一系列具有重要生物学意义的蛋白质的单克隆抗体，包括干扰素、其他细胞因子、其可溶性受体、独特的 IL-18 结合蛋白 (IL-18BP)，以及多年后的谷氨酸草酰乙酸转氨酶 1 (GOT1)。\n这些抗体被证明是非常通用的研究工具，适用于中和、亲和层析、免疫测定、流式细胞术、免疫印迹和许多其他应用。最重要的是，他们能够亲和纯化内部相应的重组细胞因子。事实证明，抗体的作用远远超过分析试剂。它们成为基础研究和转化医学不可或缺的工具。这些独特的试剂共同构成了配体亲和策略的基础，从而导致了以前未知的细胞因子受体和结合蛋白的发现。其中包括 I 型干扰素受体、第二种 TNF 受体 (TBPII) 和意想不到的 IL-18 结合蛋白。这些发现不仅增进了我们对细胞因子生物学的理解，还为 RebifŴ、EnbrelŴ、RemicadeŴ 和 Tadekinig alfaTM 等用于治疗自身免疫性疾病、炎症和遗传性疾病（如多发性硬化症、类风湿性关节炎和克罗恩病）的疗法铺平了道路。\n虽然我们的科学道路在 1989 年出现了分歧，Zelig 的方向是嵌合抗原受体的革命性概念，而我的方向是细胞因子受体和结合蛋白，但随着 TNF 和 IL-18BP 拮抗剂在增强 CAR-T 疗法以及管理与该疗法相关的潜在炎症并发症方面发现应用，它们最终再次融合。本章证明了 Zelig 在魏茨曼研究所引入和推进单克隆抗体技术的愿景。",
+      "translate_provider": "google",
+      "score": 7,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42962190/",
+      "doi_url": "https://doi.org/10.1615/CritRevOncog.2026066174"
+    },
     "42834531": {
       "pmid": "42834531",
       "title": "Development and application of a mechanistic model for protein A resolution of a bispecific antibody for process characterization and optimization.",
@@ -1331,7 +1361,7 @@
       "language": "eng",
       "title_zh": "用于检测SARS-CoV-2核衣壳抗原的基于单克隆抗体的电免疫传感器的制备。",
       "abstract_zh": "核衣壳蛋白是导致COVID-19大流行的SARS-CoV-2病毒的主要结构蛋白之一。由于它们在宿主循环系统中的高丰度、早期感染后以及它们参与支持病毒存活的其他循环事件，它们对宿主内的病毒生命周期施加控制。\n因此，评估血清中的这些蛋白质水平可以作为COVID-19感染的早期诊断工具。在目前的研究中，已经通过间接ELISA、夹心ELISA开发、表征和评估了靶向重组产生的NCoV2 (rNCoV2)抗原的单克隆抗体(mAb)的免疫诊断潜力，并进一步将其整合到电免疫传感器平台中。\n通过使用化学融合剂将小鼠骨髓瘤Sp2/0细胞与rNCoV2抗原免疫的小鼠脾细胞融合来获得分泌抗-rNCoV2 mAb的杂交瘤。进一步开发并评估了同种型IgG1的同种型IgG2A和PBa1-A2的杂交瘤克隆PAb8E8c3-G8的诊断潜力，因为它们已显示稳定的生长模式和针对rNCoV2抗原的所需抗体应答。\n两种单克隆抗体检测到的最低抗原浓度为7.81 ng/孔。在两者中，选择mAb PAb8E8c3-G8用于基于mAb的电免疫传感器的制造。制备了一种简单的无标记的GCE-碳黑基电免疫传感器，并用L-Cys/AuNP增强，将mAb固定在其上。\n整合的mAb电免疫传感器能有效检测rNCoV2抗原， LOD和LOQ值分别为4.618 pg/mL和15.24 pg/mL。因此，在这项研究中，我们产生了针对rNCoV2抗原的mAb ，这些mAb在特异性和敏感性方面显示出更好的诊断潜力。",
-      "translate_provider": "mymemory",
+      "translate_provider": "",
       "score": 6,
       "source": "PubMed",
       "source_url": "",
@@ -1798,6 +1828,50 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42202083/",
       "doi_url": "https://doi.org/10.2478/acph-2026-0013"
     },
+    "42958438": {
+      "pmid": "42958438",
+      "title": "A glycoengineered yeast-derived HA1-ferritin nanoparticle vaccine confers protective immunity against H7 avian influenza in chickens.",
+      "abstract": "H7 subtype avian influenza virus is an important zoonotic pathogen threatening the poultry industry and public health. Recombinant subunit vaccines provide a safer alternative to conventional inactivated vaccines, while yeast expression systems offer advantages of low cost, scalability, and engineering flexibility. However, their application in avian influenza vaccine development remains underexplored. In this study, we use the methylotrophic yeast Komagataella phaffii as a low-cost, industrial-scale platform to produce hemagglutinin-1 (HA1) subunits with programmable N-/O-linked glycosylation. The methanol-utilization-slow (MutS) phenotype strain secreted 1.21 g/L HA1, and compared with the standard methanol-utilization-plus (Mut+) phenotype strain, the N-linked and O-linked glycans were significantly reduced [liquid chromatography-mass spectrometry (LC-MS)/MS glycopeptide profile]. Despite hypoglycosylation, the antigen retained native conformation, binding H7-specific mAb Q74 with a KD of 1.34 × 10-7 M. SpyTag/SpyCatcher-directed conjugation to ferritin drove quantitative self-assembly into 30 nm virus-like nanoparticles. Formulated with CpG-ODN 1826, the HA1-MutS-ferritin candidate elicited Hemagglutination inhibition (HI) titers of 6.7 log2 in specific pathogen-free (SPF) leghorns at 28 days post-immunization (dpi), significantly enhancing HA1-specific IgY responses (p < 0.0001) while sustaining high-level circulating CD4+ T cells. At 28 dpi, chickens were challenged with 106 embryo infectious dose (EID)50 of H7N9 avian influenza virus; the formulation conferred 100% clinical protection and accelerated viral clearance, matching the performance of conventional inactivated vaccines. Yeast-based processes significantly reduce downstream purification costs and eliminate reliance on chicken embryos, providing a scalable and biosafe platform for rapid avian influenza control.",
+      "authors": [
+        "Yutong Liu",
+        "Yunlin Shao",
+        "Bo Su",
+        "Peiqi Liu",
+        "Yifeng Huang",
+        "Han Zheng",
+        "Siqi Xu",
+        "Yishan Zhao",
+        "Qianyu Li",
+        "Ming Liao",
+        "Saixiang Feng"
+      ],
+      "journal": "Veterinary research",
+      "journal_abbr": "Vet Res",
+      "pub_date": "2026-10-29",
+      "entrez_date": "2026-10-30",
+      "doi": "10.1186/s13567-026-01867-y",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Komagataella phaffii expression",
+        "Avian influenza virus",
+        "glycosylation",
+        "subunit vaccines",
+        "virus-like particles"
+      ],
+      "affiliation": "College of Veterinary Medicine, South China Agricultural University, Guangzhou, 510642, China.",
+      "language": "eng",
+      "title_zh": "糖工程酵母衍生的 HA1-铁蛋白纳米颗粒疫苗赋予鸡针对 H7 禽流感的保护性免疫力。",
+      "abstract_zh": "H7亚型禽流感病毒是威胁养禽业和公众健康的重要人畜共患病原体。重组亚单位疫苗为传统灭活疫苗提供了更安全的替代品，而酵母表达系统则具有低成本、可扩展性和工程灵活性的优势。然而，它们在禽流感疫苗开发中的应用仍未得到充分探索。在这项研究中，我们使用甲基营养酵母 Komagataella phaffii 作为低成本、工业规模的平台来生产具有可编程 N-/O-连接糖基化的血凝素-1 (HA1) 亚基。甲醇利用慢（MutS）表型菌株分泌1.21 g/L HA1，与标准甲醇利用加（Mut+）表型菌株相比，N-连接和O-连接聚糖显着减少[液相色谱-质谱（LC-MS）/MS糖肽谱]。尽管糖基化程度较低，抗原仍保留天然构象，结合 H7 特异性 mAb Q74，KD 为 1.34 × 10-7 M。SpyTag/SpyCatcher 定向与铁蛋白缀合，驱动定量自组装成 30 nm 病毒样纳米颗粒。\nHA1-MutS-铁蛋白候选物采用 CpG-ODN 1826 配制而成，在免疫后 28 天 (dpi) 时，在特定的无病原体 (SPF) 来航牛中引发了 6.7 log2 的血凝抑制 (HI) 滴度，显着增强了 HA1 特异性 IgY 反应 (p < 0.0001)，同时维持高水平的循环 CD4+ T 细胞。 28 dpi时，用106胚胎感染剂量（EID）50的H7N9禽流感病毒攻击鸡；该配方可提供 100% 的临床保护并加速病毒清除，与传统灭活疫苗的性能相当。基于酵母的工艺显着降低了下游纯化成本并消除了对鸡胚的依赖，为快速控制禽流感提供了可扩展且生物安全的平台。",
+      "translate_provider": "google",
+      "score": 5,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42958438/",
+      "doi_url": "https://doi.org/10.1186/s13567-026-01867-y"
+    },
     "42915931": {
       "pmid": "42915931",
       "title": "Tildipirosin-Based Broad-Spectrum Antibody Preparation to Overcome Steric Hindrance and Application in a Macrolide Immunochromatographic Assay.",
@@ -2207,47 +2281,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42166563/",
       "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.6c00433"
-    },
-    "42125798": {
-      "pmid": "42125798",
-      "title": "Impact of process impurities on developability assessments of complex antibody formats: the striking role of leachable copper.",
-      "abstract": "The assessment of developability and physical stability of antibody therapeutics is a cornerstone of modern biopharmaceutical discovery, increasingly relying on high-throughput automation to screen candidates to identify the most suitable lead candidate. In this study, we report a severe, anomalous fragmentation event observed in therapeutic antibodies during routine automated buffer exchange into phosphate-buffered saline (PBS) at physiological pH. Through a systematic investigation, we demonstrate that this instability is not intrinsic to the proteins, but is driven by the specific physicochemical environment of the purification process. We identify that at pH 7.4, the dominant phosphate species may act as a ligand capable of mobilizing trace catalytic copper from disposable chromatography columns. Our data suggests the leached copper coordinates to the antibody hinge region, driving a highly localized, Fenton-like oxidative cleavage. Comparative analysis reveals that this vulnerability is influenced by molecular architecture. Complex formats, such as 2 + 1 CrossMabs, exhibited significantly higher susceptibility than standard IgGs, suggesting that steric crowding may enhance the accessibility of the metal-binding site. Finally, we present a robust mitigation strategy using an ethylenediaminetetraacetic acid-based column conditioning protocol that effectively eliminates the leachable catalyst. These findings highlight a critical, often-overlooked source of chemical instability in automated workflows and underscore the necessity of controlling process-related impurities, particularly when developing complex antibody modalities.",
-      "authors": [
-        "Vincent Wieser",
-        "Christian Spick",
-        "Matthias Forster",
-        "Urs Hanke",
-        "Katja Montan",
-        "Michael Grote",
-        "Benjamin Weiche"
-      ],
-      "journal": "mAbs",
-      "journal_abbr": "MAbs",
-      "pub_date": "2026-05-13",
-      "entrez_date": "2026-05-13",
-      "doi": "10.1080/19420862.2026.2670845",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Chemical stability",
-        "copper-catalyzed oxidation",
-        "developability",
-        "fragmentation",
-        "high-throughput screening",
-        "monoclonal antibody"
-      ],
-      "affiliation": "Large Molecule Research, Pharma Research and Early Development (pRED), Roche Diagnostics GmbH, Penzberg, Germany.",
-      "language": "eng",
-      "title_zh": "工艺杂质对复杂抗体形式的可开发性评估的影响：可浸出铜的显着作用。",
-      "abstract_zh": "抗体疗法的可开发性和物理稳定性评估是现代生物制药发现的基石，越来越依赖高通量自动化来筛选候选药物，以确定最合适的先导候选药物。在这项研究中，我们报告了在生理 pH 值下，在常规自动缓冲液更换为磷酸盐缓冲盐水 (PBS) 的过程中，在治疗性抗体中观察到的严重的异常碎片事件。通过系统研究，我们证明这种不稳定性不是蛋白质固有的，而是由纯化过程的特定物理化学环境驱动的。我们发现，在 pH 7.4 时，主要的磷酸盐物质可能充当配体，能够从一次性色谱柱中调动痕量催化铜。我们的数据表明，浸出的铜与抗体铰链区坐标，驱动高度局部化的、类似芬顿的氧化裂解。比较分析表明，这种脆弱性受到分子结构的影响。\n复杂形式，例如 2 + 1 CrossMab，表现出比标准 IgG 显着更高的敏感性，表明空间拥挤可能增强金属结合位点的可及性。最后，我们提出了一种强有力的缓解策略，使用基于乙二胺四乙酸的柱调节方案，有效消除了可浸出的催化剂。这些发现强调了自动化工作流程中化学不稳定性的一个关键且经常被忽视的来源，并强调了控制与过程相关的杂质的必要性，特别是在开发复杂的抗体模式时。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42125798/",
-      "doi_url": "https://doi.org/10.1080/19420862.2026.2670845"
     },
     "42911708": {
       "pmid": "42911708",
@@ -2924,48 +2957,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42145184/",
       "doi_url": "https://doi.org/10.1021/acs.jafc.6c04402"
-    },
-    "42129093": {
-      "pmid": "42129093",
-      "title": "Updates to Guidance on Using Biacore for Protein-Protein Interactions Analysis.",
-      "abstract": "The use of optical biosensors for studying macromolecular interactions is now considered essential technology for understanding the biophysical properties of potential therapeutic and diagnostic reagents. Indeed, according to Cytiva (2025, Key-SPR-applications. https://www.cytivalifesciences.com/en/us/solutions/protein-research/Interaction-analysis-with-Biacore-surface-plasmon-resonance-SPR/Key-SPR-applications ), over 50 000 Biacore papers have been published to date, the sheer volume and variety of which present a daunting task for the burgeoning Biacore user to accumulate and decipher. This chapter is designed to provide the reader with the tools necessary to prepare, design, and efficiently execute a kinetic experiment on Biacore. This document is written to guide the Biacore user through basic theory, system maintenance, and assay setup, while also offering some practical tips that we find useful for Biacore-based studies. Many kinetic-based screening assays require rigorous sample preparation and purification prior to analysis. To highlight these procedures, this protocol describes the kinetic characterization of single-chain Fv (scFv) antibody fragments from crude bacterial lysates using an antibody affinity capture approach. Although we specifically describe the capture of HA-tagged scFv antibody fragments to an anti-HA tag monoclonal antibody-immobilized surface prior to kinetic analysis, these methodologies are universally applicable and can be used for practically any affinity pair and most Biacore systems.",
-      "authors": [
-        "Hui Ma",
-        "Stephen Hearty",
-        "Paul Leonard",
-        "Richard O'Kennedy"
-      ],
-      "journal": "Methods in molecular biology (Clifton, N.J.)",
-      "journal_abbr": "Methods Mol Biol",
-      "pub_date": "2026",
-      "entrez_date": "2026-05-13",
-      "doi": "10.1007/978-1-0716-5041-7_11",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Analysis",
-        "Antibody",
-        "Biacore",
-        "Biosensor",
-        "Interactions",
-        "Kinetics",
-        "Plasmon",
-        "Protein–protein",
-        "Resonance",
-        "Surface"
-      ],
-      "affiliation": "School of Biochemistry & Immunology, Trinity Biomedical Sciences Institute, Trinity College Dublin, Dublin, Ireland.",
-      "language": "eng",
-      "title_zh": "使用 Biacore 进行蛋白质-蛋白质相互作用分析指南的更新。",
-      "abstract_zh": "使用光学生物传感器研究大分子相互作用现在被认为是了解潜在治疗和诊断试剂的生物物理特性的基本技术。事实上，根据 Cytiva（2025 年，Key-SPR-applications。https://www.cytivalifesciences.com/en/us/solutions/ Protein-research/Interaction-analysis-with-Biacore-surface-plasmon-resonance-SPR/Key-SPR-applications）的说法，迄今为止已发表了 50 000 多篇 Biacore 论文，其中的数量和种类对研究人员来说是一项艰巨的任务。不断增长的 Biacore 用户进行积累和解密。本章旨在为读者提供在 Biacore 上准备、设计和高效执行动力学实验所需的工具。本文档旨在指导 Biacore 用户了解基本理论、系统维护和测定设置，同时还提供一些我们认为对基于 Biacore 的研究有用的实用技巧。许多基于动力学的筛选测定在分析前需要严格的样品制备和纯化。\n为了强调这些程序，该协议描述了使用抗体亲和捕获方法从粗细菌裂解物中获得的单链 Fv (scFv) 抗体片段的动力学表征。尽管我们具体描述了在动力学分析之前将 HA 标记的 scFv 抗体片段捕获到抗 HA 标记单克隆抗体固定的表面，但这些方法是普遍适用的，并且可用于几乎任何亲和对和大多数 Biacore 系统。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42129093/",
-      "doi_url": "https://doi.org/10.1007/978-1-0716-5041-7_11"
     }
   }
 }
