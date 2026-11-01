@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-31 01:25:18",
+  "generated_at": "2026-11-01 00:41:05",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 69,
   "calendar": {
     "2026-08-04": [
       "42894435"
@@ -211,9 +211,6 @@
     ],
     "2026-11-06": [
       "42217505"
-    ],
-    "2026-11-09": [
-      "42145184"
     ]
   },
   "articles": {
@@ -969,7 +966,7 @@
       "language": "eng",
       "title_zh": "评论文章：单克隆抗体研究黎明时与 Zelig Eshhar 的科学之旅。",
       "abstract_zh": "Zelig Eshhar 教授是我的同事、合作者和亲爱的朋友，他被誉为全球知名的远见卓识者，为嵌合抗原受体 (CAR)-T 细胞疗法奠定了基础，这一突破性改变了癌症免疫疗法。然而，早在这一革命性成就之前，泽利格就通过引入当时最先进的杂交瘤技术来产生单克隆抗体 (mAb)，对魏茨曼科学研究所的研究产生了深远的影响，该技术是他直接从诺贝尔奖获得者乔治·科勒 (Georges Köhler) 和凯撒·米尔斯坦 (César Milstein) 的烤箱中带来的。通过他的专业知识和传奇团队 Tova Waks、他 55 年不可或缺的合作伙伴 Orith Gigi-Leitner 和 Sara Barak 的奉献，这项技术迅速成为整个研究所研究人员的宝贵资源。我在 20 世纪 80 年代与 Zelig 的合作产生了针对一系列具有重要生物学意义的蛋白质的单克隆抗体，包括干扰素、其他细胞因子、其可溶性受体、独特的 IL-18 结合蛋白 (IL-18BP)，以及多年后的谷氨酸草酰乙酸转氨酶 1 (GOT1)。\n这些抗体被证明是非常通用的研究工具，适用于中和、亲和层析、免疫测定、流式细胞术、免疫印迹和许多其他应用。最重要的是，他们能够亲和纯化内部相应的重组细胞因子。事实证明，抗体的作用远远超过分析试剂。它们成为基础研究和转化医学不可或缺的工具。这些独特的试剂共同构成了配体亲和策略的基础，从而导致了以前未知的细胞因子受体和结合蛋白的发现。其中包括 I 型干扰素受体、第二种 TNF 受体 (TBPII) 和意想不到的 IL-18 结合蛋白。这些发现不仅增进了我们对细胞因子生物学的理解，还为 RebifŴ、EnbrelŴ、RemicadeŴ 和 Tadekinig alfaTM 等用于治疗自身免疫性疾病、炎症和遗传性疾病（如多发性硬化症、类风湿性关节炎和克罗恩病）的疗法铺平了道路。\n虽然我们的科学道路在 1989 年出现了分歧，Zelig 的方向是嵌合抗原受体的革命性概念，而我的方向是细胞因子受体和结合蛋白，但随着 TNF 和 IL-18BP 拮抗剂在增强 CAR-T 疗法以及管理与该疗法相关的潜在炎症并发症方面发现应用，它们最终再次融合。本章证明了 Zelig 在魏茨曼研究所引入和推进单克隆抗体技术的愿景。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 7,
       "source": "PubMed",
       "source_url": "",
@@ -1864,7 +1861,7 @@
       "language": "eng",
       "title_zh": "糖工程酵母衍生的 HA1-铁蛋白纳米颗粒疫苗赋予鸡针对 H7 禽流感的保护性免疫力。",
       "abstract_zh": "H7亚型禽流感病毒是威胁养禽业和公众健康的重要人畜共患病原体。重组亚单位疫苗为传统灭活疫苗提供了更安全的替代品，而酵母表达系统则具有低成本、可扩展性和工程灵活性的优势。然而，它们在禽流感疫苗开发中的应用仍未得到充分探索。在这项研究中，我们使用甲基营养酵母 Komagataella phaffii 作为低成本、工业规模的平台来生产具有可编程 N-/O-连接糖基化的血凝素-1 (HA1) 亚基。甲醇利用慢（MutS）表型菌株分泌1.21 g/L HA1，与标准甲醇利用加（Mut+）表型菌株相比，N-连接和O-连接聚糖显着减少[液相色谱-质谱（LC-MS）/MS糖肽谱]。尽管糖基化程度较低，抗原仍保留天然构象，结合 H7 特异性 mAb Q74，KD 为 1.34 × 10-7 M。SpyTag/SpyCatcher 定向与铁蛋白缀合，驱动定量自组装成 30 nm 病毒样纳米颗粒。\nHA1-MutS-铁蛋白候选物采用 CpG-ODN 1826 配制而成，在免疫后 28 天 (dpi) 时，在特定的无病原体 (SPF) 来航牛中引发了 6.7 log2 的血凝抑制 (HI) 滴度，显着增强了 HA1 特异性 IgY 反应 (p < 0.0001)，同时维持高水平的循环 CD4+ T 细胞。 28 dpi时，用106胚胎感染剂量（EID）50的H7N9禽流感病毒攻击鸡；该配方可提供 100% 的临床保护并加速病毒清除，与传统灭活疫苗的性能相当。基于酵母的工艺显着降低了下游纯化成本并消除了对鸡胚的依赖，为快速控制禽流感提供了可扩展且生物安全的平台。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 5,
       "source": "PubMed",
       "source_url": "",
@@ -2917,46 +2914,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42217505/",
       "doi_url": "https://doi.org/10.1016/j.jchromb.2026.125150"
-    },
-    "42145184": {
-      "pmid": "42145184",
-      "title": "Computer-Aided Rational Hapten Design of Mepiquat Chloride: High-Affinity Antibody and Sensitive Immunoassay for Food and Environmental Samples.",
-      "abstract": "Mepiquat chloride (MQ) residues threaten human health and ecological safety, requiring rapid and sensitive monitoring. In this study, five haptens were designed for poorly immunogenic MQ, and MQ-H4/MQ-H5 was identified as the optimal pair via computer-aided analysis and serum validation, generating MQ mAb-5H2 with high affinity and specificity. Based on this mAb, a gold nanoparticle-based lateral-flow immunochromatographic assay was developed for MQ on-site screening, with the calculated limits of detection of 0.034, 0.049, and 0.016 mg/kg in potato, wheat, and soil, respectively. The reliability and accuracy of the method were verified through spiked recovery experiments, showing recoveries from 95.2 to 105.7% and a coefficient of variation of 1.6-7.1%, consistent with the results of high-performance liquid chromatography-mass spectrometry, providing a practical and reliable tool for MQ monitoring and a hapten-driven strategy for high-performance antibody generation and sensitive immunoassays targeting other quaternary ammonium pesticides.",
-      "authors": [
-        "Jiaxun Li",
-        "Xinxin Xu",
-        "Xiaoling Wu",
-        "Liguang Xu",
-        "Hua Kuang",
-        "Chuanlai Xu",
-        "Lingling Guo"
-      ],
-      "journal": "Journal of agricultural and food chemistry",
-      "journal_abbr": "J Agric Food Chem",
-      "pub_date": "2026-05-18",
-      "entrez_date": "2026-05-18",
-      "doi": "10.1021/acs.jafc.6c04402",
-      "publication_types": [
-        "Journal Article",
-        "Evaluation Study"
-      ],
-      "keywords": [
-        "gold nanoparticles−based lateral-flow immunochromatographic",
-        "mepiquat chloride",
-        "on-site detection",
-        "rational hapten design"
-      ],
-      "affiliation": "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi, Jiangsu 214122, China.",
-      "language": "eng",
-      "title_zh": "缩节胺的计算机辅助合理半抗原设计：食品和环境样品的高亲和力抗体和灵敏免疫分析。",
-      "abstract_zh": "缩节胺 (MQ) 残留威胁人类健康和生态安全，需要快速、灵敏的监测。本研究针对免疫原性较差的 MQ 设计了 ​​5 种半抗原，通过计算机辅助分析和血清验证确定 MQ-H4/MQ-H5 为最佳配对，生成具有高亲和力和特异性的 MQ mAb-5H2。基于该单克隆抗体，开发了一种基于金纳米颗粒的侧流免疫层析法，用于 MQ 现场筛查，计算出马铃薯、小麦和土壤中的检出限分别为 0.034、0.049 和 0.016 mg/kg。通过加标回收实验验证了该方法的可靠性和准确度，回收率在95.2%~105.7%之间，变异系数在1.6%~7.1%之间，与高效液相色谱-质谱联用结果一致，为MQ监测提供了实用可靠的工具，为针对其他季铵农药的高性能抗体生成和灵敏免疫分析提供了半抗原驱动的策略。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42145184/",
-      "doi_url": "https://doi.org/10.1021/acs.jafc.6c04402"
     }
   }
 }
