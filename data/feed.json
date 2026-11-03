@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02 01:15:56",
+  "generated_at": "2026-11-03 03:17:59",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 69,
@@ -15,79 +15,79 @@
       "42188602"
     ],
     "2026-08-07": [
-      "42906176"
+      "42969221"
     ],
     "2026-08-10": [
-      "42822555"
+      "42906176"
     ],
     "2026-08-11": [
-      "42737515"
+      "42822555"
     ],
     "2026-08-12": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-13": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-14": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-17": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-18": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-19": [
-      "42687332"
+      "42235435"
     ],
     "2026-08-20": [
-      "42563142"
+      "42687332"
     ],
     "2026-08-21": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-24": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-25": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-26": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-27": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-28": [
-      "42962190"
+      "42192004"
     ],
     "2026-08-31": [
-      "42834531"
+      "42962190"
     ],
     "2026-09-01": [
-      "42570623"
+      "42834531"
     ],
     "2026-09-02": [
-      "42470740"
+      "42570623"
     ],
     "2026-09-03": [
-      "42368154"
+      "42470740"
     ],
     "2026-09-04": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-07": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-08": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-09": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-10": [
-      "42155371"
+      "42214142"
     ],
     "2026-09-11": [
       "42951158"
@@ -129,40 +129,40 @@
       "42202083"
     ],
     "2026-09-30": [
-      "42958438"
+      "42969552"
     ],
     "2026-10-01": [
-      "42915931"
+      "42958438"
     ],
     "2026-10-02": [
-      "42864475"
+      "42915931"
     ],
     "2026-10-05": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-06": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-07": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-08": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-09": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-12": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-13": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-14": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-15": [
-      "42166563"
+      "42273649"
     ],
     "2026-10-16": [
       "42911708"
@@ -332,6 +332,48 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42188602/",
       "doi_url": "https://doi.org/10.3390/toxins18050199"
+    },
+    "42969221": {
+      "pmid": "42969221",
+      "title": "Flocculation using selected cationic polymers reduces high-risk host cell proteins in monoclonal antibody processes already during primary recovery.",
+      "abstract": "Highly intensified monoclonal antibody (mAb) production needs next-generation purification technologies for process streamlining. Cationic flocculants aid in clarification and can reduce DNA and host cell proteins (HCPs) decreasing the burden on purification. Using two different mAbs, we screened five different cationic flocculants for their potential to clarify cell culture fluid, while simultaneously removing host cell DNA and HCPs without affecting antibody yield and integrity. We identified Polymer X as the best performer, excelling in HCP reduction with 30%-50% reduction compared to an un-treated reference. Comparison to a commercially available polymer (Polymer D), showed a significantly higher and more robust reduction of HCPs for four different mAbs. Additionally, we investigated the reduction of high-risk HCPs, that are known to negatively impact final product quality or patient safety. We demonstrated that Polymer X excels in reduction of those compared to flocculation with Polymer D. Polymer X could be used to successfully (1) aid cell culture clarification, with achieved turbidities of less than 25 NTU, (2) maintain high mAb titers, with over 95% yield (in three out of four mAbs), (3) reduce host cell DNA by over 99% and (4) reduce total HCPs by up to 40%, including selected high-risk HCPs to be removed by over 90%. In a typical mAb purification scheme, an anion exchange chromatography is used to get rid of DNA and residual HCPs. The robust removal of HCPs and DNA shown by Polymer X might support streamlining of the purification.",
+      "authors": [
+        "Anna-Carina Frank",
+        "Daniel Komuczki",
+        "Gregor Stitz",
+        "Timon Kalchmayr",
+        "Clemens Grünwald-Gruber",
+        "Clara Hofmann",
+        "Natalie Deiringer",
+        "Christine Rösch",
+        "Peter Satzer",
+        "Rainer Hahn"
+      ],
+      "journal": "Biotechnology progress",
+      "journal_abbr": "Biotechnol Prog",
+      "pub_date": "2026-11-02",
+      "entrez_date": "2026-11-02",
+      "doi": "10.1002/btpr.88565",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "cationic polymer",
+        "flocculation",
+        "host cell proteins",
+        "monoclonal antibody"
+      ],
+      "affiliation": "Institute of Bioprocess Science and Engineering, Department of Biotechnology and Food Science, BOKU University, Vienna, Austria.",
+      "language": "eng",
+      "title_zh": "使用选定的阳离子聚合物进行絮凝可减少初级回收过程中单克隆抗体过程中的高风险宿主细胞蛋白。",
+      "abstract_zh": "高强度单克隆抗体 (mAb) 生产需要新一代纯化技术来简化流程。阳离子絮凝剂有助于澄清，并可以减少 DNA 和宿主细胞蛋白 (HCP)，从而减轻纯化负担。使用两种不同的 mAb，我们筛选了五种不同的阳离子絮凝剂，了解它们澄清细胞培养液的潜力，同时去除宿主细胞 DNA 和 HCP，而不影响抗体产量和完整性。我们认为 Polymer X 是表现最好的，在 HCP 减少方面表现出色，与未经处理的参考相比，减少了 30%-50%。与市售聚合物（聚合物 D）相比，四种不同 mAb 的 HCP 减少量显着更高且更强劲。此外，我们还调查了高风险 HCP 的减少，这些 HCP 已知会对最终产品质量或患者安全产生负面影响。我们证明，与聚合物 D 絮凝相比，聚合物 X 在减少絮凝方面表现出色。\n聚合物 X 可成功用于 (1) 帮助细胞培养物澄清，实现浊度低于 25 NTU；(2) 保持高 mAb 滴度，产率超过 95%（四分之三的 mAb）；(3) 减少宿主细胞 DNA 超过 99%；(4) 减少总 HCP 高达 40%，包括去除超过 90% 的选定高风险 HCP。在典型的 mAb 纯化方案中，使用阴离子交换层析去除 DNA 和残留的 HCP。 Polymer X 能够有效去除 HCP 和 DNA，这可能有助于简化纯化过程。",
+      "translate_provider": "google",
+      "score": 9,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42969221/",
+      "doi_url": "https://doi.org/10.1002/btpr.88565"
     },
     "42906176": {
       "pmid": "42906176",
@@ -1293,43 +1335,6 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42214142/",
       "doi_url": "https://doi.org/10.1016/j.chroma.2026.467126"
     },
-    "42155371": {
-      "pmid": "42155371",
-      "title": "Monitoring disulfide scrambling of monoclonal antibody biologics using liquid chromatography-mass spectrometry coupled to online electrochemical reduction.",
-      "abstract": "Electrochemical flow-cell (EC) devices have been used to perform online reduction of disulfide bonds found in both peptides and full-length proteins. This study demonstrates the use of a liquid chromatography-EC-mass spectrometry (LC-EC-MS) platform to monitor disulfide scrambling in the therapeutic monoclonal antibody (mAb), casirivimab. As a first step, disulfide scrambling was artificially induced during enzymatic digestion at pH 8.5. EC-assisted online partial reduction was performed via a post-column reduction scheme. Retention time (RT) alignment was used to validate the composition of the parental disulfide linkage. Fingerprints of all potential disulfide-linked pairs were generated based on the results of partial reduction with no need for additional information on any of the specific parental species. The performance of partial reduction was evaluated by varying critical parameters, including EC-cell voltage and the sample loading amount. The improved performance allows us to capture low-level disulfide scrambling such as linkages involving the hinge region. Additionally, the LC-EC-MS platform is used to monitor site-specific disulfide scrambling progress under high pH stress condition. Samples with varying levels of disulfide scrambling were prepared by alkylating free cysteines at different time points during digestion to perform a time-course study. As a result, we successfully monitored scrambling level of 13 sites through MS1-level relative quantification as well as their free thiol species. Low level of disulfide scrambling across the casirivimab was captured at 0.5 hr time point. Overall, we demonstrated that the online LC-EC-MS platform provided us with significant insights into patterns of disulfide scrambling.",
-      "authors": [
-        "Lushuang Huang",
-        "Yunlong Zhao",
-        "Yuan Mao",
-        "Ning Li"
-      ],
-      "journal": "Journal of pharmaceutical and biomedical analysis",
-      "journal_abbr": "J Pharm Biomed Anal",
-      "pub_date": "2026-05-14",
-      "entrez_date": "2026-05-19",
-      "doi": "10.1016/j.jpba.2026.117558",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Antibody therapeutics",
-        "Disulfide scrambling",
-        "Electrochemistry flow-cell (EC)",
-        "Liquid chromatography-Mass Spectrometry (LC-MS)",
-        "Post-column reduction"
-      ],
-      "affiliation": "Analytical Chemistry Group, Regeneron Pharmaceuticals, Inc., 777 Old Saw Mill River Road, Tarrytown, NY 10591, United States.",
-      "language": "eng",
-      "title_zh": "使用液相色谱-质谱联用在线电化学还原监测单克隆抗体生物制剂的二硫键扰乱。",
-      "abstract_zh": "电化学流动池 (EC) 装置已用于在线还原肽和全长蛋白质中的二硫键。本研究展示了使用液相色谱-EC-质谱 (LC-EC-MS) 平台来监测治疗性单克隆抗体 (mAb) 卡西瑞单抗中的二硫键乱序。第一步，在 pH 8.5 的酶消化过程中人为诱导二硫键扰乱。通过柱后还原方案进行 EC 辅助在线部分还原。保留时间 (RT) 比对用于验证亲本二硫键的组成。所有潜在二硫键连接对的指纹都是根据部分还原的结果生成的，不需要任何特定亲本物种的额外信息。通过改变关键参数（包括 EC 电池电压和样品加载量）来评估部分还原的性能。改进的性能使我们能够捕获低水平的二硫键扰乱，例如涉及铰链区域的连接。\n此外，LC-EC-MS 平台还可用于监测高 pH 胁迫条件下特定位点二硫键的扰乱进度。通过在消化过程中的不同时间点烷基化游离半胱氨酸来制备具有不同水平二硫键扰乱的样品，以进行时程研究。结果，我们通过 MS1 水平相对定量成功监测了 13 个位点的扰乱水平及其游离硫醇种类。在 0.5 小时时间点捕获到低水平的二硫键扰乱整个卡西里单抗。总的来说，我们证明了在线 LC-EC-MS 平台为我们提供了对二硫键扰乱模式的重要见解。",
-      "translate_provider": "",
-      "score": 7,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42155371/",
-      "doi_url": "https://doi.org/10.1016/j.jpba.2026.117558"
-    },
     "42951158": {
       "pmid": "42951158",
       "title": "Fabrication of a monoclonal antibody-based electro-immunosensor to detect SARS-CoV-2 nucleocapsid antigen.",
@@ -1825,6 +1830,47 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42202083/",
       "doi_url": "https://doi.org/10.2478/acph-2026-0013"
     },
+    "42969552": {
+      "pmid": "42969552",
+      "title": "Preparation and comprehensive physicochemical characterization of trastuzumab-loaded PEGylated liposomal nanoparticles for systemic delivery.",
+      "abstract": "ObjectiveThe primary objective of this experimental formulation-development study was to prepare and physicochemically characterize a trastuzumab-loaded liposomal formulation containing post-inserted DSPE-PEG2000 for systemic-delivery research. The secondary objective was to determine whether the preparation and recovery process preserved trastuzumab monomeric integrity and HER2-binding activity.MethodsLiposomes were prepared by thin-film hydration, pulsed probe sonication, sequential membrane extrusion, post-insertion of DSPE-PEG2000, and dialysis purification. The 65:30:5 phosphatidylcholine:cholesterol:DSPE-PEG2000 molar composition was selected using literature-guided operational criteria; no formal Design of Experiments model was used. Particle size, PDI, zeta potential, dialysis-based apparent encapsulation efficiency, morphology, physicochemical properties, antibody integrity, HER2-binding activity, and 28-day storage stability were evaluated using DLS, microscopy, FTIR, DSC, TGA, XRD, SEC-HPLC, and HER2-binding ELISA.ResultsThe selected formulation had a mean particle size of 149.3 ± 5.8 nm, PDI of 0.22 ± 0.02, apparent zeta potential of +39.1 ± 2.1 mV under low-conductivity measurement conditions, and dialysis-based apparent encapsulation efficiency of 73.6 ± 3.7%. Recovered trastuzumab remained predominantly monomeric (94.9 ± 1.4%) and largely retained HER2-binding activity (92 ± 6%). Refrigerated samples showed the smallest 28-day changes, whereas 37 °C storage increased particle size and PDI and reduced apparent encapsulation efficiency.ConclusionsThe selected formulation met the predefined physicochemical and protein-quality endpoints and largely preserved trastuzumab integrity and HER2-binding activity. Refrigeration provided the greatest short-term stability. The findings establish an integrated characterization benchmark under the tested conditions but do not demonstrate quantified surface PEG density, physiological zeta-potential behavior, hemocompatibility, prolonged circulation, biodistribution, or therapeutic efficacy.",
+      "authors": [
+        "Saif Salah Abbas",
+        "Bassam Abdul Rasool Hassan",
+        "Hazrina Ab Hadi",
+        "Ali Haider Mohammed",
+        "Ahmed Zuhair Abdulhameed Alsammarraie",
+        "Mohanad A Al-Bayati"
+      ],
+      "journal": "Science progress",
+      "journal_abbr": "Sci Prog",
+      "pub_date": "2026-11-02",
+      "entrez_date": "2026-11-02",
+      "doi": "10.1177/00368504261504506",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "HER2",
+        "PEGylated liposomes",
+        "monoclonal antibody delivery",
+        "physicochemical characterization",
+        "protein integrity",
+        "systemic nanomedicine",
+        "trastuzumab"
+      ],
+      "affiliation": "Dermatopharmaceutics Research Group, Faculty of Pharmacy, International Islamic University of Malaysia, Kuantan, Pahang, Malaysia.",
+      "language": "eng",
+      "title_zh": "用于全身递送的曲妥珠单抗负载的聚乙二醇化脂质体纳米颗粒的制备和综合理化表征。",
+      "abstract_zh": "目的本实验制剂开发研究的主要目的是制备含有后插入 DSPE-PEG2000 的曲妥珠单抗脂质体制剂并进行物理化学表征，用于全身递送研究。第二个目标是确定制备和回收过程是否保留曲妥珠单抗单体完整性和 HER2 结合活性。方法通过薄膜水合、脉冲探针超声处理、顺序膜挤出、后插入 DSPE-PEG2000 和透析纯化制备脂质体。使用文献指导的操作标准选择 65:30:5 磷脂酰胆碱：胆固醇：DSPE-PEG2000 摩尔组成；没有使用正式的实验设计模型。\n使用 DLS、显微镜、FTIR、DSC、TGA、XRD、SEC-HPLC 和 HER2 结合 ELISA 评估粒径、PDI、zeta 电位、基于透析的表观包封率、形态、理化性质、抗体完整性、HER2 结合活性和 28 天储存稳定性。结果所选制剂的平均粒径为 149.3 ± 5.8 nm，PDI 为 0.22 ± 0.02，低电导率测量条件下的表观 zeta 电位为 +39.1 ± 2.1 mV，基于透析的表观封装效率为 73.6 ± 3.7%。回收的曲妥珠单抗主要仍为单体 (94.9 ± 1.4%)，并在很大程度上保留了 HER2 结合活性 (92 ± 6%)。冷藏样品显示出最小的 28 天变化，而 37 °C 储存增加了颗粒尺寸和 PDI，并降低了表观包封效率。 结论 所选制剂符合预定义的理化和蛋白质质量终点，并在很大程度上保留了曲妥珠单抗的完整性和 HER2 结合活性。冷藏提供了最大的短期稳定性。\n研究结果在测试条件下建立了综合表征基准，但没有证明量化的表面 PEG 密度、生理 zeta 电位行为、血液相容性、延长循环、生物分布或治疗功效。",
+      "translate_provider": "google",
+      "score": 5,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42969552/",
+      "doi_url": "https://doi.org/10.1177/00368504261504506"
+    },
     "42958438": {
       "pmid": "42958438",
       "title": "A glycoengineered yeast-derived HA1-ferritin nanoparticle vaccine confers protective immunity against H7 avian influenza in chickens.",
@@ -2238,46 +2284,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42273649/",
       "doi_url": "https://doi.org/10.1007/s13139-025-00974-6"
-    },
-    "42166563": {
-      "pmid": "42166563",
-      "title": "Properties of Drug Linkers Affecting Hydrophobic Interaction Chromatography for Determining the Drug-to-Antibody Ratio of Antibody-Drug Conjugates.",
-      "abstract": "Antibody-drug conjugates (ADCs) are a fascinating modality in cancer therapy that combine the specificity of monoclonal antibodies (mAbs) with the cytotoxicity of potent drugs. To ensure the product quality of ADCs, the drug-to-antibody ratio (DAR), a critical quality attribute (CQA), must be evaluated at quality control (QC) testing. Hydrophobic interaction chromatography (HIC) is considered the gold standard for DAR determination due to advantages such as the ability to evaluate drug load distribution under native conditions. For some ADCs, however, DAR cannot be determined by HIC analysis due to poor peak separation of DAR variants, but the cause of this poor peak separation is unclear. In this study, we investigated which ADC properties impact the peak separation of DAR variants in HIC. HIC analyses of ADCs with different mAb and drug linker (DL) combinations indicated that peak separation was impacted by DL properties rather than mAb properties. A systematic comparison using model ADCs prepared with trastuzumab and various drug linkers revealed that the linker length is a critical structural determinant of peak separation. We hypothesized that a linker that was too short restricted the steric accessibility of drug moieties on ADCs, resulting in weak retention on the stationary phase of the HIC column. Accordingly, we investigated the correlation between linker length and steric accessibility using an enzyme-linked immunosorbent assay (ELISA) to evaluate the binding affinity of biotin, which is conjugated to ADCs as a model drug, for streptavidin. The results supported the notion that short linkers are less preferable for the steric accessibility of the drug moieties. Our findings will aid in understanding the mechanism of HIC peak separation and contribute to the selection of appropriate analytical methods based on ADC structures, even within the accelerated development timelines required to supply new drugs to patients in need.",
-      "authors": [
-        "Taishi Kusama",
-        "Masahiro Mimura",
-        "Ryuto Nakae",
-        "Sin Ying Ng",
-        "Ryosuke Shigemoto",
-        "Yutaka Hirakura",
-        "Nana Kawasaki"
-      ],
-      "journal": "Molecular pharmaceutics",
-      "journal_abbr": "Mol Pharm",
-      "pub_date": "2026-05-21",
-      "entrez_date": "2026-05-21",
-      "doi": "10.1021/acs.molpharmaceut.6c00433",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "antibody-drug conjugates",
-        "drug-to-antibody ratio",
-        "hydrophobic interaction chromatography",
-        "linker length",
-        "steric accessibility"
-      ],
-      "affiliation": "Analytical Research Labs., Astellas Pharma Inc., Ibaraki, Tsukuba 300-2698, Japan.",
-      "language": "eng",
-      "title_zh": "影响疏水相互作用色谱测定抗体-药物缀合物的药物与抗体比率的药物连接体的性质。",
-      "abstract_zh": "抗体药物偶联物 (ADC) 是癌症治疗中一种令人着迷的方式，它将单克隆抗体 (mAb) 的特异性与强效药物的细胞毒性结合在一起。为了确保 ADC 的产品质量，必须在质量控制 (QC) 测试中评估关键质量属性 (CQA) 药物抗体比 (DAR)。疏水相互作用色谱 (HIC) 因其能够在自然条件下评估药物负载分布等优点而被认为是 DAR 测定的金标准。然而，对于某些 ADC，由于 DAR 变体的峰分离度较差，因此无法通过 HIC 分析确定 DAR，但峰分离度差的原因尚不清楚。在本研究中，我们研究了哪些 ADC 特性会影响 HIC 中 DAR 变体的峰分离。对具有不同 mAb 和药物接头 (DL) 组合的 ADC 进行 HIC 分析表明，峰分离受到 DL 特性而非 mAb 特性的影响。使用曲妥珠单抗和各种药物接头制备的模型 ADC 进行的系统比较表明，接头长度是峰分离的关键结构决定因素。\n我们假设太短的接头限制了 ADC 上药物部分的空间可及性，导致 HIC 柱固定相的保留较弱。因此，我们使用酶联免疫吸附测定 (ELISA) 研究了接头长度和空间可及性之间的相关性，以评估生物素（作为模型药物与 ADC 缀合）对链霉亲和素的结合亲和力。结果支持这样的观点，即对于药物部分的空间可及性而言，短接头不太优选。我们的研究结果将有助于理解 HIC 峰分离的机制，并有助于根据 ADC 结构选择适当的分析方法，甚至在向有需要的患者提供新药所需的加速开发时间内也是如此。",
-      "translate_provider": "",
-      "score": 5,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42166563/",
-      "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.6c00433"
     },
     "42911708": {
       "pmid": "42911708",
