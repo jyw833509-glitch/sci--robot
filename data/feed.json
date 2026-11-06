@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-05 01:59:13",
+  "generated_at": "2026-11-06 01:59:15",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 69,
@@ -12,82 +12,82 @@
       "42679766"
     ],
     "2026-08-06": [
-      "42188602"
-    ],
-    "2026-08-07": [
       "42969221"
     ],
-    "2026-08-10": [
+    "2026-08-07": [
       "42906176"
     ],
-    "2026-08-11": [
+    "2026-08-10": [
       "42822555"
     ],
-    "2026-08-12": [
+    "2026-08-11": [
       "42737515"
     ],
-    "2026-08-13": [
+    "2026-08-12": [
       "42586433"
     ],
-    "2026-08-14": [
+    "2026-08-13": [
       "42496057"
     ],
-    "2026-08-17": [
+    "2026-08-14": [
       "42415423"
     ],
-    "2026-08-18": [
+    "2026-08-17": [
       "42415185"
     ],
-    "2026-08-19": [
+    "2026-08-18": [
       "42235435"
     ],
-    "2026-08-20": [
+    "2026-08-19": [
       "42687332"
     ],
-    "2026-08-21": [
+    "2026-08-20": [
       "42563142"
     ],
-    "2026-08-24": [
+    "2026-08-21": [
       "42402251"
     ],
-    "2026-08-25": [
+    "2026-08-24": [
       "42323147"
     ],
-    "2026-08-26": [
+    "2026-08-25": [
       "42216916"
     ],
-    "2026-08-27": [
+    "2026-08-26": [
       "42204975"
     ],
-    "2026-08-28": [
+    "2026-08-27": [
       "42192004"
     ],
-    "2026-08-31": [
+    "2026-08-28": [
       "42962190"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42834531"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42570623"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42470740"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42368154"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42346963"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "42307050"
     ],
-    "2026-09-09": [
+    "2026-09-08": [
       "42276211"
     ],
-    "2026-09-10": [
+    "2026-09-09": [
       "42214142"
+    ],
+    "2026-09-10": [
+      "42982626"
     ],
     "2026-09-11": [
       "42951158"
@@ -291,47 +291,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42679766/",
       "doi_url": "https://doi.org/10.1016/j.jchromb.2026.125273"
-    },
-    "42188602": {
-      "pmid": "42188602",
-      "title": "Co-Expression and Co-Purification Enable Manufacturing of a Six-Monoclonal Antibody Botulinum Antitoxin Cocktail.",
-      "abstract": "A highly potent antitoxin for botulinum neurotoxin (BoNT) serotypes A and B has been developed that comprises three monoclonal antibodies (mAbs) targeting BoNT/A and three targeting BoNT/B. These oligoclonal antibody combinations neutralize toxin by simultaneously binding non-overlapping epitopes, thereby promoting rapid toxin clearance. All six mAbs use the same human Fc and framework and have been individually manufactured using the same expression platform and purification process. To minimize the time and labor required to produce the divalent antitoxin, we tested a co-expression and co-purification strategy for the three mAbs per serotype. The mAbs were expressed in CHO-K1 cells, and the media were optimized for co-expression in 10 L bioreactors. Chromatographic co-purification consisted of Protein A capture, followed by strong anion exchange chromatography in flow-through mode and cation-exchange chromatography in bind-elute mode. Co-expression experiments demonstrated that expression of the three anti-BoNT/A antibodies remained within approximately ±30% of the optimal equimolar ratio, whereas the anti-BoNT/B antibodies showed greater variability. Downstream purification steps achieved recoveries greater than 95% per chromatographic step, resulting in overall process yields of approximately 63-75%. This strategy provided sufficient purity of all six mAbs while largely preserving their relative ratios. These results demonstrate the feasibility of producing oligoclonal antitoxin antibodies using co-expression and shared purification strategies. Such approaches may simplify the manufacturing of antibody cocktails while maintaining product quality and biological activity.",
-      "authors": [
-        "Andrew Davis",
-        "Kamaljit Bajwa",
-        "Zachary Martinez",
-        "Ryan R Davis",
-        "April Green",
-        "Fletcher Suber",
-        "Shauna Farr-Jones",
-        "Milan T Tomic"
-      ],
-      "journal": "Toxins",
-      "journal_abbr": "Toxins (Basel)",
-      "pub_date": "2026-04-23",
-      "entrez_date": "2026-05-26",
-      "doi": "10.3390/toxins18050199",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "botulinum antitoxin",
-        "co-expression",
-        "co-purification",
-        "oligoclonal antibodies",
-        "recombinant antibody manufacturing"
-      ],
-      "affiliation": "Resilience Government Services, 2061 Challenger Drive, Alameda, CA 94501, USA.",
-      "language": "eng",
-      "title_zh": "共表达和共纯化能够制造六种单克隆抗体肉毒杆菌抗毒素混合物。",
-      "abstract_zh": "现已开发出针对肉毒杆菌神经毒素 (BoNT) 血清型 A 和 B 的高效抗毒素，其中包含三种靶向 BoNT/A 的单克隆抗体 (mAb) 和三种靶向 BoNT/B 的单克隆抗体 (mAb)。这些寡克隆抗体组合通过同时结合非重叠表位来中和毒素，从而促进毒素快速清除。所有六种单克隆抗体均使用相同的人源 Fc 和框架，并使用相同的表达平台和纯化工艺单独生产。为了最大限度地减少生产二价抗毒素所需的时间和劳动力，我们测试了每种血清型三种单克隆抗体的共表达和共纯化策略。 mAb 在 CHO-K1 细胞中表达，并优化培养基以在 10 L 生物反应器中共表达。色谱共纯化包括蛋白质 A 捕获，然后是流通模式的强阴离子交换色谱和结合洗脱模式的阳离子交换色谱。共表达实验表明，三种抗 BoNT/A 抗体的表达保持在最佳等摩尔比的约 ±30% 范围内，而抗 BoNT/B 抗体则表现出更大的变异性。\n下游纯化步骤的每个色谱步骤的回收率超过 95%，总体工艺收率约为 63-75%。该策略提供了所有六种单克隆抗体的足够纯度，同时很大程度上保留了它们的相对比例。这些结果证明了使用共表达和共享纯化策略生产寡克隆抗毒素抗体的可行性。这些方法可以简化抗体混合物的制造，同时保持产品质量和生物活性。",
-      "translate_provider": "",
-      "score": 11,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42188602/",
-      "doi_url": "https://doi.org/10.3390/toxins18050199"
     },
     "42969221": {
       "pmid": "42969221",
@@ -1334,6 +1293,44 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42214142/",
       "doi_url": "https://doi.org/10.1016/j.chroma.2026.467126"
+    },
+    "42982626": {
+      "pmid": "42982626",
+      "title": "Recent developments in downstream processing of novel biotherapeutic modalities.",
+      "abstract": "There is rising interest in the biopharma industry in exploring next-generation complex therapeutic modalities that offer unique advantages over their traditional counterparts. These include antibody-drug conjugates, nucleic acid-based therapeutics (plasmid DNA and messenger RNA), virus-like particles, adeno-associated virus (AAV)-based gene therapies, and monoclonal antibody (mAb) derivatives such as bispecific antibodies, nanobodies, and antibody fragments. Each of these moieties displays distinct structural, physicochemical, and functional attributes that translate to unique manufacturing challenges. This review showcases major developments over the last 5 years in downstream processing of these next-generation therapeutics, such as chromatographic and nonchromatographic separation strategies, process intensification, and automation and process control. Overall, these advancements indicate that the purification of such biotherapeutics requires an appropriate separation process tailored to modality-specific physicochemical characteristics and cannot be derived from mAb manufacturing expertise; this will be crucial for their scalability and cost-effectiveness.",
+      "authors": [
+        "Anurag S Rathore",
+        "Subhankar Metya",
+        "Priya Yadav"
+      ],
+      "journal": "Trends in biotechnology",
+      "journal_abbr": "Trends Biotechnol",
+      "pub_date": "2026-11-04",
+      "entrez_date": "2026-11-04",
+      "doi": "10.1016/j.tibtech.2026.10.004",
+      "publication_types": [
+        "Journal Article",
+        "Review"
+      ],
+      "keywords": [
+        "antibody–drug conjugates",
+        "biotherapeutics",
+        "downstream processing",
+        "gene therapy",
+        "mRNA vaccines",
+        "process intensification"
+      ],
+      "affiliation": "School of Interdisciplinary Research, Indian Institute of Technology Delhi, New Delhi 110016, India; Department of Chemical Engineering, Indian Institute of Technology Delhi, New Delhi 110016, India. Electronic address: asrathore@biotechcmz.com.",
+      "language": "eng",
+      "title_zh": "新型生物治疗方式下游加工的最新进展。",
+      "abstract_zh": "生物制药行业对探索下一代复杂治疗方式越来越感兴趣，这些方式比传统治疗方式具有独特的优势。这些包括抗体-药物偶联物、基于核酸的治疗方法（质粒 DNA 和信使 RNA）、病毒样颗粒、基于腺相关病毒 (AAV) 的基因治疗以及单克隆抗体 (mAb) 衍生物，例如双特异性抗体、纳米抗体和抗体片段。这些部分中的每一个都显示出独特的结构、物理化学和功能属性，这些属性转化为独特的制造挑战。本综述展示了过去 5 年这些下一代疗法下游加工的主要发展，例如色谱和非色谱分离策略、过程强化以及自动化和过程控制。总体而言，这些进展表明，此类生物治疗药物的纯化需要针对特定​​模式的理化特征定制适当的分离过程，并且不能从单克隆抗体制造专业知识中获得；这对于它们的可扩展性和成本效益至关重要。",
+      "translate_provider": "google",
+      "score": 6,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42982626/",
+      "doi_url": "https://doi.org/10.1016/j.tibtech.2026.10.004"
     },
     "42951158": {
       "pmid": "42951158",
