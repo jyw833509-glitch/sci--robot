@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-06 01:59:15",
+  "generated_at": "2026-11-07 01:36:18",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 69,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "42894435"
@@ -12,204 +12,207 @@
       "42679766"
     ],
     "2026-08-06": [
-      "42969221"
+      "42992892"
     ],
     "2026-08-07": [
-      "42906176"
+      "42969221"
     ],
     "2026-08-10": [
-      "42822555"
+      "42906176"
     ],
     "2026-08-11": [
-      "42737515"
+      "42822555"
     ],
     "2026-08-12": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-13": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-14": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-17": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-18": [
-      "42235435"
+      "42415185"
     ],
     "2026-08-19": [
-      "42687332"
+      "42235435"
     ],
     "2026-08-20": [
-      "42563142"
+      "42687332"
     ],
     "2026-08-21": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-24": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-25": [
-      "42216916"
+      "42323147"
     ],
     "2026-08-26": [
-      "42204975"
+      "42216916"
     ],
     "2026-08-27": [
-      "42192004"
+      "42204975"
     ],
     "2026-08-28": [
-      "42962190"
+      "42192004"
     ],
     "2026-08-31": [
-      "42834531"
+      "42962190"
     ],
     "2026-09-01": [
-      "42570623"
+      "42834531"
     ],
     "2026-09-02": [
-      "42470740"
+      "42570623"
     ],
     "2026-09-03": [
-      "42368154"
+      "42470740"
     ],
     "2026-09-04": [
-      "42346963"
+      "42368154"
     ],
     "2026-09-07": [
-      "42307050"
+      "42346963"
     ],
     "2026-09-08": [
-      "42276211"
+      "42307050"
     ],
     "2026-09-09": [
-      "42214142"
+      "42276211"
     ],
     "2026-09-10": [
-      "42982626"
+      "42214142"
     ],
     "2026-09-11": [
-      "42951158"
+      "42982626"
     ],
     "2026-09-14": [
-      "42773271"
+      "42951158"
     ],
     "2026-09-15": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-16": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-17": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-18": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-21": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-22": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-23": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-24": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-25": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-28": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-29": [
-      "42202083"
+      "42231136"
     ],
     "2026-09-30": [
-      "42969552"
+      "42202083"
     ],
     "2026-10-01": [
-      "42958438"
+      "42969552"
     ],
     "2026-10-02": [
-      "42915931"
+      "42958438"
     ],
     "2026-10-05": [
-      "42864475"
+      "42915931"
     ],
     "2026-10-06": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-07": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-08": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-09": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-12": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-13": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-14": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-15": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-16": [
-      "42911708"
+      "42273649"
     ],
     "2026-10-19": [
-      "42896357"
+      "42911708"
     ],
     "2026-10-20": [
-      "42862297"
+      "42896357"
     ],
     "2026-10-21": [
-      "42825421"
+      "42862297"
     ],
     "2026-10-22": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-23": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-26": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-27": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-28": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-29": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-30": [
-      "42458707"
+      "42487284"
     ],
     "2026-11-02": [
-      "42449784"
+      "42458707"
     ],
     "2026-11-03": [
-      "42285912"
+      "42449784"
     ],
     "2026-11-04": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-05": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-06": [
+      "42272446"
+    ],
+    "2026-11-09": [
       "42217505"
     ]
   },
@@ -291,6 +294,52 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42679766/",
       "doi_url": "https://doi.org/10.1016/j.jchromb.2026.125273"
+    },
+    "42992892": {
+      "pmid": "42992892",
+      "title": "Advancing Host Cell Protein Characterization in Monoclonal Antibody Therapeutics: A Nanoparticle-Enriched and High-Sensitivity Mass Spectrometry Approach.",
+      "abstract": "Host cell protein (HCP) characterization in monoclonal antibody (mAb) products is challenged by a large concentration gap between low-abundance HCPs and high-abundance mAb proteins. Advances in sample preparation, chromatography, and mass spectrometry techniques have aimed at either reducing this concentration imbalance or the peptide coelution effects during chromatography. Despite this, comprehensive characterization of HCPs remains difficult, particularly at below-ppm levels, often requiring complex and low-throughput methodologies. This study presents a rapid, sensitive, and high-throughput HCP characterization workflow integrating the Seer Proteograph XT nanoparticle-enrichment platform, the Evosep ONE LC system, and timsUltra AIP mass spectrometer. This workflow enables efficient sample preparation (accommodating 40-sample digestions: 20 mAb samples within 6 h) and a 40-sample-per-day LC-MS method. Using a dynamic protein standard, the method achieved a lowest reproducible protein spike-in of 0.2 ppm, outperforming the native digestion approach (∼1 ppm). Application to NISTmAb 8671, identified over 350 HCPs, including those at sub-ppm levels, confidently and reproducibly. Furthermore, analysis of three commercial products identified 80-200 additional HCPs undetected by native digestion. Overall, our results highlight the potential of automated nanoparticle enrichment and advanced mass spectrometry for high-throughput, sensitive, and reproducible detection of low-level HCPs, enabling rapid risk assessment and improved biopharmaceutical purification strategies.",
+      "authors": [
+        "Abdulafeez Akinloye",
+        "Sri Ramarathinam",
+        "Parul Mittal",
+        "Daniel Pincher",
+        "Leigh Donnellan",
+        "Clifford Young",
+        "Lee Xin Chong",
+        "Rhys Wyber",
+        "Mark R Condina",
+        "Alok K Shah",
+        "Peter Hoffmann"
+      ],
+      "journal": "Journal of proteome research",
+      "journal_abbr": "J Proteome Res",
+      "pub_date": "2026-11-06",
+      "entrez_date": "2026-11-06",
+      "doi": "10.1021/acs.jproteome.6c00666",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Biomanufacturing",
+        "Host cell proteins",
+        "LC–MS",
+        "Mass spectrometry",
+        "Nanoparticles-based Proteomics",
+        "Protein Enrichment",
+        "Therapeutic Proteins"
+      ],
+      "affiliation": "School of Pharmacy and Biomedical Science, Centre for Pharmaceutical Innovation, College of Health, Adelaide University, Adelaide, SA5000, Australia.",
+      "language": "eng",
+      "title_zh": "推进单克隆抗体治疗中的宿主细胞蛋白质表征：一种纳米粒子富集和高灵敏度质谱方法。",
+      "abstract_zh": "单克隆抗体 (mAb) 产品中的宿主细胞蛋白 (HCP) 表征受到低丰度 HCP 和高丰度 mAb 蛋白之间较大浓度差距的挑战。样品制备、色谱和质谱技术的进步旨在减少这种浓度不平衡或色谱过程中的肽共洗脱效应。尽管如此，对 HCP 进行全面表征仍然很困难，特别是在低于 ppm 的水平下，通常需要复杂且低通量的方法。本研究提出了一种快速、灵敏、高通量的 HCP 表征工作流程，集成了 Seer Proteograph XT 纳米颗粒富集平台、Evosep ONE LC 系统和 timsUltra AIP 质谱仪。该工作流程可实现高效的样品制备（可消化 40 个样品：6 小时内消化 20 个 mAb 样品）和每天 40 个样品的 LC-MS 方法。使用动态蛋白质标准品，该方法实现了 0.2 ppm 的最低可重复蛋白质掺入量，优于天然消化方法 (∼1 ppm)。应用 NISTmAb 8671，自信且可重复地识别出 350 多种 HCP，包括亚 ppm 水平的 HCP。\n此外，对三种商业产品的分析还发现了 80-200 个未通过天然消化检测到的额外 HCP。总体而言，我们的结果凸显了自动化纳米颗粒富集和先进质谱技术在低水平 HCP 的高通量、灵敏和可重复检测方面的潜力，从而实现快速风险评估和改进的生物制药纯化策略。",
+      "translate_provider": "google",
+      "score": 9,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42992892/",
+      "doi_url": "https://doi.org/10.1021/acs.jproteome.6c00666"
     },
     "42969221": {
       "pmid": "42969221",
@@ -1324,7 +1373,7 @@
       "language": "eng",
       "title_zh": "新型生物治疗方式下游加工的最新进展。",
       "abstract_zh": "生物制药行业对探索下一代复杂治疗方式越来越感兴趣，这些方式比传统治疗方式具有独特的优势。这些包括抗体-药物偶联物、基于核酸的治疗方法（质粒 DNA 和信使 RNA）、病毒样颗粒、基于腺相关病毒 (AAV) 的基因治疗以及单克隆抗体 (mAb) 衍生物，例如双特异性抗体、纳米抗体和抗体片段。这些部分中的每一个都显示出独特的结构、物理化学和功能属性，这些属性转化为独特的制造挑战。本综述展示了过去 5 年这些下一代疗法下游加工的主要发展，例如色谱和非色谱分离策略、过程强化以及自动化和过程控制。总体而言，这些进展表明，此类生物治疗药物的纯化需要针对特定​​模式的理化特征定制适当的分离过程，并且不能从单克隆抗体制造专业知识中获得；这对于它们的可扩展性和成本效益至关重要。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 6,
       "source": "PubMed",
       "source_url": "",
