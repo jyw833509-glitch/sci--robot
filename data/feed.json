@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-07 01:36:18",
+  "generated_at": "2026-11-08 01:05:19",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -333,7 +333,7 @@
       "language": "eng",
       "title_zh": "推进单克隆抗体治疗中的宿主细胞蛋白质表征：一种纳米粒子富集和高灵敏度质谱方法。",
       "abstract_zh": "单克隆抗体 (mAb) 产品中的宿主细胞蛋白 (HCP) 表征受到低丰度 HCP 和高丰度 mAb 蛋白之间较大浓度差距的挑战。样品制备、色谱和质谱技术的进步旨在减少这种浓度不平衡或色谱过程中的肽共洗脱效应。尽管如此，对 HCP 进行全面表征仍然很困难，特别是在低于 ppm 的水平下，通常需要复杂且低通量的方法。本研究提出了一种快速、灵敏、高通量的 HCP 表征工作流程，集成了 Seer Proteograph XT 纳米颗粒富集平台、Evosep ONE LC 系统和 timsUltra AIP 质谱仪。该工作流程可实现高效的样品制备（可消化 40 个样品：6 小时内消化 20 个 mAb 样品）和每天 40 个样品的 LC-MS 方法。使用动态蛋白质标准品，该方法实现了 0.2 ppm 的最低可重复蛋白质掺入量，优于天然消化方法 (∼1 ppm)。应用 NISTmAb 8671，自信且可重复地识别出 350 多种 HCP，包括亚 ppm 水平的 HCP。\n此外，对三种商业产品的分析还发现了 80-200 个未通过天然消化检测到的额外 HCP。总体而言，我们的结果凸显了自动化纳米颗粒富集和先进质谱技术在低水平 HCP 的高通量、灵敏和可重复检测方面的潜力，从而实现快速风险评估和改进的生物制药纯化策略。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 9,
       "source": "PubMed",
       "source_url": "",
