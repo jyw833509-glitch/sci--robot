@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11 01:42:31",
+  "generated_at": "2026-11-12 02:41:03",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 69,
   "calendar": {
     "2026-08-04": [
       "42894435"
@@ -60,159 +60,156 @@
       "42204975"
     ],
     "2026-08-28": [
-      "42192004"
-    ],
-    "2026-08-31": [
       "42962190"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42834531"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42570623"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42470740"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42368154"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42346963"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "42307050"
     ],
-    "2026-09-09": [
+    "2026-09-08": [
       "42276211"
     ],
-    "2026-09-10": [
+    "2026-09-09": [
       "42214142"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "42982626"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42951158"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42773271"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42768232"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42745724"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42655115"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42645420"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42489360"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42450443"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42376876"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42332429"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42292894"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "42231136"
     ],
-    "2026-09-30": [
+    "2026-09-29": [
       "42202083"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42969552"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42958438"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42915931"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42864475"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42754776"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42725489"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42652006"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42546983"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42429162"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42414861"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42345899"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42273649"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "42911708"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "42896357"
     ],
-    "2026-10-21": [
+    "2026-10-20": [
       "42862297"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "42825421"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42799870"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42794422"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42667144"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42568918"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42554770"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42487284"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42458707"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42449784"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42285912"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42276533"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42272446"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42217505"
     ]
   },
@@ -955,44 +952,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42204975/",
       "doi_url": "https://doi.org/10.1002/biot.70245"
-    },
-    "42192004": {
-      "pmid": "42192004",
-      "title": "Development and preliminary physicochemical characterization of a Ramucirumab biosimilar candidate in CHO cells using shake-flask fed-batch culture.",
-      "abstract": "The development of biosimilar monoclonal antibodies requires strict control of critical quality attributes and a detailed understanding of cell culture performance. This study describes the development and preliminary physicochemical characterization of a candidate biosimilar monoclonal antibody targeting VEGFR-2 produced in CHO cells. Seventy-five clones generated through gene transfection were screened based on productivity and cell viability. Culture parameters including pH, glucose concentration, cell growth, and cell specific productivity (Qp) were monitored to evaluate their influence on production performance. Eight high producing clones were selected for shake-flask scale fed-batch production. The lead clone achieved a final titer of 2.79 g/L. The biosimilar candidates were characterized using intact mass spectrometry, size exclusion chromatography, cation exchange chromatography, hydrophobic interaction chromatography, glycan analysis, and peptide mapping. Binding affinities were evaluated using SPR, demonstrating comparable interaction with VEGFR-2. The analytical results demonstrated structural similarity to the reference product with no critical differences in purity, charge variants, glycosylation patterns, or binding affinity. These findings demonstrate the importance of systematic clone screening and upstream process monitoring for achieving consistent product quality in biosimilar antibody production and provide practical insights for mammalian cell-based bioprocess development.",
-      "authors": [
-        "Elcin Cagatay",
-        "Yonca Gungor",
-        "Sadettin S Ozturk",
-        "Hulya Ayar Kayali"
-      ],
-      "journal": "Bioprocess and biosystems engineering",
-      "journal_abbr": "Bioprocess Biosyst Eng",
-      "pub_date": "2026-05-27",
-      "entrez_date": "2026-05-26",
-      "doi": "10.1007/s00449-026-03358-y",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Biosimilar",
-        "CHO cells",
-        "Monoclonal antibody (mAb) production",
-        "Physicochemical characterization",
-        "Ramucirumab",
-        "VEGFR2"
-      ],
-      "affiliation": "Izmir International Biomedicine and Genome Institute, Dokuz Eylul University, Izmir, Turkey.",
-      "language": "eng",
-      "title_zh": "使用摇瓶补料分批培养在 CHO 细胞中开发雷莫芦单抗候选生物类似药并进行初步理化表征。",
-      "abstract_zh": "生物仿制药单克隆抗体的开发需要严格控制关键质量属性并详细了解细胞培养性能。本研究描述了 CHO 细胞中产生的针对 VEGFR-2 的候选生物仿制药单克隆抗体的开发和初步理化特性。根据生产力和细胞活力筛选了通过基因转染产生的 75 个克隆。监测包括 pH、葡萄糖浓度、细胞生长和细胞比生产率 (Qp) 在内的培养参数，以评估它们对生产性能的影响。选择八个高产克隆用于摇瓶规模补料分批生产。主要克隆的最终滴度为 2.79 g/L。使用完整质谱、尺寸排阻色谱、阳离子交换色谱、疏水相互作用色谱、聚糖分析和肽图谱对候选生物仿制药进行了表征。使用 SPR 评估结合亲和力，证明与 VEGFR-2 具有可比的相互作用。\n分析结果表明与参考产品结构相似，在纯度、电荷变体、糖基化模式或结合亲和力方面没有重大差异。这些发现证明了系统克隆筛选和上游工艺监控对于在生物仿制药生产中实现一致的产品质量的重要性，并为基于哺乳动物细胞的生物工艺开发提供了实用的见解。",
-      "translate_provider": "",
-      "score": 8,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42192004/",
-      "doi_url": "https://doi.org/10.1007/s00449-026-03358-y"
     },
     "42962190": {
       "pmid": "42962190",
