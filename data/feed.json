@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-18 03:18:53",
+  "generated_at": "2026-11-19 02:56:02",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 69,
   "calendar": {
     "2026-08-04": [
       "42894435"
@@ -60,159 +60,156 @@
       "42216916"
     ],
     "2026-08-28": [
-      "42204975"
-    ],
-    "2026-08-31": [
       "42962190"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42834531"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42570623"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42470740"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42368154"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42346963"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "42307050"
     ],
-    "2026-09-09": [
+    "2026-09-08": [
       "42276211"
     ],
-    "2026-09-10": [
+    "2026-09-09": [
       "42214142"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "42982626"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42951158"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42773271"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42768232"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42745724"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42655115"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42645420"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42489360"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42450443"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42376876"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42332429"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42292894"
     ],
-    "2026-09-29": [
+    "2026-09-28": [
       "42231136"
     ],
-    "2026-09-30": [
-      "42202083"
+    "2026-09-29": [
+      "43049398"
     ],
-    "2026-10-01": [
+    "2026-09-30": [
       "42969552"
     ],
-    "2026-10-02": [
+    "2026-10-01": [
       "42958438"
     ],
-    "2026-10-05": [
+    "2026-10-02": [
       "42915931"
     ],
-    "2026-10-06": [
+    "2026-10-05": [
       "42864475"
     ],
-    "2026-10-07": [
+    "2026-10-06": [
       "42754776"
     ],
-    "2026-10-08": [
+    "2026-10-07": [
       "42725489"
     ],
-    "2026-10-09": [
+    "2026-10-08": [
       "42652006"
     ],
-    "2026-10-12": [
+    "2026-10-09": [
       "42546983"
     ],
-    "2026-10-13": [
+    "2026-10-12": [
       "42429162"
     ],
-    "2026-10-14": [
+    "2026-10-13": [
       "42414861"
     ],
-    "2026-10-15": [
+    "2026-10-14": [
       "42345899"
     ],
-    "2026-10-16": [
+    "2026-10-15": [
       "42273649"
     ],
-    "2026-10-19": [
+    "2026-10-16": [
       "42911708"
     ],
-    "2026-10-20": [
+    "2026-10-19": [
       "42896357"
     ],
-    "2026-10-21": [
+    "2026-10-20": [
       "42862297"
     ],
-    "2026-10-22": [
+    "2026-10-21": [
       "42825421"
     ],
-    "2026-10-23": [
+    "2026-10-22": [
       "42799870"
     ],
-    "2026-10-26": [
+    "2026-10-23": [
       "42794422"
     ],
-    "2026-10-27": [
+    "2026-10-26": [
       "42667144"
     ],
-    "2026-10-28": [
+    "2026-10-27": [
       "42568918"
     ],
-    "2026-10-29": [
+    "2026-10-28": [
       "42554770"
     ],
-    "2026-10-30": [
+    "2026-10-29": [
       "42487284"
     ],
-    "2026-11-02": [
+    "2026-10-30": [
       "42458707"
     ],
-    "2026-11-03": [
+    "2026-11-02": [
       "42449784"
     ],
-    "2026-11-04": [
+    "2026-11-03": [
       "42285912"
     ],
-    "2026-11-05": [
+    "2026-11-04": [
       "42276533"
     ],
-    "2026-11-06": [
+    "2026-11-05": [
       "42272446"
     ],
-    "2026-11-09": [
+    "2026-11-06": [
       "42217505"
     ]
   },
@@ -961,39 +958,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42216916/",
       "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.5c01948"
-    },
-    "42204975": {
-      "pmid": "42204975",
-      "title": "Engineering Secretory (S)IgA to Facilitate Affinity Purification for Large Scale Downstream Processing.",
-      "abstract": "Secretory (S)IgA class antibodies play a vital role in first line immunological defence at mucosal surfaces. Passive immunisation with monoclonal SIgA antibodies could offer a completely novel application for a biologics market currently dominated by systemic IgG class monoclonal antibodies. Recent advances have made large scale manufacture of SIgA mAbs feasible, but downstream affinity purification remains a hurdle because IgA antibodies usually have poor affinity for Protein A, the most widely used affinity ligand for antibodies. This research addresses this problem by engineering chimaeric secretory component (SC), containing IgG Fc domains (CH2─CH3) which confer Protein A binding. SC is a component of SIgA and consists of five immunoglobulin-like domains. We demonstrate that expressing recombinant monoclonal SIgA with SC domains D2-D3 or D3-D4 replaced by IgG Fc domains (CH2─CH3) enables Protein A affinity purification of SIgA, without affecting antibody assembly or antigen binding functionality. Inserting the Protein A binding site into SC, results in purification of SIgA and free SC, which could then be separated according to size, but importantly not SIgA assembly intermediates such as dimeric IgA, that has a similar molecular size to SIgA. The use of SC-Fc fusions could streamline SIgA mAb purification and unlock their clinical potential.",
-      "authors": [
-        "Tim H Szeto",
-        "Julian K-C Ma"
-      ],
-      "journal": "Biotechnology journal",
-      "journal_abbr": "Biotechnol J",
-      "pub_date": "2026-05",
-      "entrez_date": "2026-05-28",
-      "doi": "10.1002/biot.70245",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Protein A",
-        "antibody engineering",
-        "secretory component"
-      ],
-      "affiliation": "Hotung Molecular Immunology Laboratory, Institute for Infection and Immunity, School of Health and Medical Sciences, City St. George's University of London, London, UK.",
-      "language": "eng",
-      "title_zh": "工程化分泌 (S)IgA 以促进大规模下游处理的亲和纯化。",
-      "abstract_zh": "分泌型 (S)IgA 类抗体在粘膜表面的一线免疫防御中发挥着至关重要的作用。单克隆 SIgA 抗体的被动免疫可以为目前由全身 IgG 类单克隆抗体主导的生物制剂市场提供全新的应用。最近的进展使得大规模生产 SIgA mAb 成为可能，但下游亲和纯化仍然是一个障碍，因为 IgA 抗体通常对蛋白 A（抗体最广泛使用的亲和配体）的亲和力较差。本研究通过设计嵌合分泌成分 (SC) 来解决这个问题，其中含有 IgG Fc 结构域 (CH2─CH3)，可赋予 Protein A 结合能力。 SC 是 SIgA 的组成部分，由五个免疫球蛋白样结构域组成。我们证明，用 IgG Fc 结构域 (CH2─CH3) 替换 SC 结构域 D2-D3 或 D3-D4 表达重组单克隆 SIgA 可以实现 SIgA 的 Protein A 亲和纯化，而不影响抗体组装或抗原结合功能。\n将 Protein A 结合位点插入 SC，可纯化 SIgA 和游离 SC，然后可以根据大小进行分离，但重要的是不能分离 SIgA 组装中间体，例如二聚体 IgA，其分子大小与 SIgA 相似。 SC-Fc 融合的使用可以简化 SIgA mAb 的纯化并释放其临床潜力。",
-      "translate_provider": "",
-      "score": 8,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42204975/",
-      "doi_url": "https://doi.org/10.1002/biot.70245"
     },
     "42962190": {
       "pmid": "42962190",
@@ -1832,50 +1796,46 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42231136/",
       "doi_url": "https://doi.org/10.1002/btpr.88501"
     },
-    "42202083": {
-      "pmid": "42202083",
-      "title": "Freeze-dried kit formulation and physicochemical assessment of a daratumumab-based radiopharmaceutical.",
-      "abstract": "Daratumumab is a fully human anti-CD38 monoclonal antibody with strong potential as a targeting vector for therapeutic radionuclides. This study aimed to develop a freeze-dried daratumumab immunoconjugate kit by selecting a suitable chelator (DOTA-NHS, p-SCN-Bn-DOTA, or p-SCN-Bn-1B4M-DTPA) for the 177Lu-labelling, optimising the freeze-drying formulation, and evaluating the physicochemical properties and purity profiles. Conjugation performed in carbonate buffer at elevated temperature enhanced chelator incorporation and supported the selection of daratumumab-p-SCN-Bn-DOTA as the most suitable candidate, achieving radiolabelling yield up to 99.8 % without additional purification. Among the evaluated freeze-dried formulations, a saline-based, buffer-free sucrose-mannitol formulation containing polysorbate 20 (S.F5) provided the most favourable characteristics, including minimal residual moisture and the highest monomer purity with non-detectable HMWS species under the applied SE-HPLC conditions. ATR-FTIR and Raman spectroscopy confirmed preservation of the antibody structural integrity after conjugation and freeze-drying. In an in vitro study using human serum, [177Lu]Lu-daratumumab-p-SCNBn-DOTA maintained higher radiochemical purity for 168 h than [177Lu]Lu-daratumumab-p-SCN-Bn-1B4MDTPA, indicating greater stability. These results support the feasibility of a ready-to-use freeze-dried daratumumab-p-SCN-Bn-DOTA kit for the 177Lu-labelling.",
+    "43049398": {
+      "pmid": "43049398",
+      "title": "Hapten Design, Antibody Engineering, and Immunochromatographic Application: A Rapid Fluorescent Strip for Acephate Residue Detection.",
+      "abstract": "Acephate (AP) is one of the most extensively used organophosphorus insecticides worldwide. Its high water solubility and environmental mobility result in frequent residue detection in agricultural products, posing health risks to consumers. In this study, a specific monoclonal antibody (mAb) against AP was generated through computer technology-assisted hapten design. A recombinant monoclonal antibody (R-mAb) was further obtained by gene sequencing and recombinant expression, exhibiting a higher affinity constant (7.29 × 109 L/mol) than the parental mAb (5.60 × 109 L/mol). Using R-mAb as the recognition reagent, a fluorescent immunochromatographic assay (FICA) strip was established. Matrix matched calibration curves for lettuce, orange, Flammulina filiformis, and soybean yielded IC50 values of 2.5, 2.3, 2.0, and 24.0 μg/kg, respectively. Recoveries at 5 and 50 μg/kg were 84.9%-102.5%, agreeing well with liquid chromatography tandem mass spectrometry. The strip provides a convenient, efficient, and reliable tool for rapid screening of AP residues in agricultural products.",
       "authors": [
-        "Paulina Apostolova",
-        "Marija Atanasova Lazareva",
-        "Katarina Davalieva",
-        "Marija Arev",
-        "Dino Karpicarov",
-        "Petre Makreski",
-        "Irena Slaveska Spirevska",
-        "Ivana Mitrevska",
-        "Aleksandar Dimovski",
-        "Sanja Vranješ-Đurić",
-        "Emilija Janevik-Ivanovska"
+        "Shiqi Lin",
+        "Lingling Guo",
+        "Liqiang Liu",
+        "Xinxin Xu",
+        "Liguang Xu",
+        "Chuanlai Xu",
+        "Hua Kuang",
+        "Maozhong Sun"
       ],
-      "journal": "Acta pharmaceutica (Zagreb, Croatia)",
-      "journal_abbr": "Acta Pharm",
-      "pub_date": "2026-06-30",
-      "entrez_date": "2026-05-27",
-      "doi": "10.2478/acph-2026-0013",
+      "journal": "Journal of agricultural and food chemistry",
+      "journal_abbr": "J Agric Food Chem",
+      "pub_date": "2026-11-18",
+      "entrez_date": "2026-11-18",
+      "doi": "10.1021/acs.jafc.6c11876",
       "publication_types": [
-        "Journal Article"
+        "Journal Article",
+        "Evaluation Study"
       ],
       "keywords": [
-        "177Lu-radio-pharmaceutical",
-        "daratumumab",
-        "freeze--drying",
-        "immunoconjugate",
-        "physicochemical characterization",
-        "ready-to-use kit formulation"
+        "computer technology-assisted hapten design",
+        "fluorescent immunochromatographic assay strip",
+        "organophosphorus insecticides",
+        "recombinant monoclonal antibody"
       ],
-      "affiliation": "1Faculty of Medical Sciences, Goce Delcev University, 2000Stip, North Macedonia.",
+      "affiliation": "International Joint Research Laboratory for Biointerface and Biodetection, and School of Food Science and Technology, Jiangnan University, Wuxi, Jiangsu214122, China.",
       "language": "eng",
-      "title_zh": "基于达雷妥尤单抗的放射性药物的冻干试剂盒配方和理化评估。",
-      "abstract_zh": "Daratumumab 是一种全人源抗 CD38 单克隆抗体，具有作为治疗性放射性核素靶向载体的强大潜力。本研究旨在通过选择合适的 177Lu 标记螯合剂（DOTA-NHS、p-SCN-Bn-DOTA 或 p-SCN-Bn-1B4M-DTPA）、优化冻干配方并评估理化性质和纯度曲线，开发冻干达雷妥尤单抗免疫偶联物试剂盒。在碳酸盐缓冲液中高温下进行的缀合增强了螯合剂的掺入，并支持选择 daratumumab-p-SCN-Bn-DOTA 作为最合适的候选物，无需额外纯化即可实现高达 99.8% 的放射性标记产率。在评估的冻干制剂中，含有聚山梨醇酯 20 (S.F5) 的基于盐水、无缓冲液的蔗糖-甘露醇制剂提供了最有利的特性，包括最小的残留水分和最高的单体纯度，在所应用的 SE-HPLC 条件下具有不可检测的 HMWS 种类。 ATR-FTIR 和拉曼光谱证实了缀合和冷冻干燥后抗体结构完整性的保存。\n在一项使用人血清的体外研究中，[177Lu]Lu-daratumumab-p-SCNBn-DOTA 在 168 小时内比 [177Lu]Lu-daratumumab-p-SCN-Bn-1B4MDTPA 保持更高的放射化学纯度，表明稳定性更高。这些结果支持用于 177Lu 标记的即用型冻干 daratumumab-p-SCN-Bn-DOTA 试剂盒的可行性。",
-      "translate_provider": "",
-      "score": 6,
+      "title_zh": "单宁设计、抗体工程和免疫层析应用：用于检测乐果残留的快速荧光试纸。",
+      "abstract_zh": "乙酰甲胺磷（AP）是全球使用最广泛的有机磷杀虫剂之一。其高水溶性和环境迁移性导致农产品中经常检出残留，对消费者健康构成风险。本研究通过计算机技术辅助的半抗原设计，制备了一种针对AP的特异性单克隆抗体（mAb）。\n通过基因测序和重组表达进一步获得了重组单克隆抗体（R-mAb），其亲和力常数（7.29 × 109 L/mol）高于亲本mAb（5.60 × 109 L/mol）。以R-mAb为识别试剂，建立了荧光免疫层析法（FICA）试纸。\n生菜、橙子、金针菇和大豆的基体匹配校准曲线的 IC50 值分别为 2.5、2.3、2.0 和 24.0 μg/kg。5 μg/kg 和 50 μg/kg 时的回收率为 84.9%-102.5%，与液相色谱-串联质谱法的结果吻合良好。该试纸提供了一种方便、高效和可靠的工具，可用于快速筛查农产品中的 AP 残留。",
+      "translate_provider": "mymemory",
+      "score": 5,
       "source": "PubMed",
       "source_url": "",
       "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42202083/",
-      "doi_url": "https://doi.org/10.2478/acph-2026-0013"
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43049398/",
+      "doi_url": "https://doi.org/10.1021/acs.jafc.6c11876"
     },
     "42969552": {
       "pmid": "42969552",
