@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-19 02:56:02",
+  "generated_at": "2026-11-20 02:49:41",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 69,
@@ -84,7 +84,7 @@
       "42276211"
     ],
     "2026-09-09": [
-      "42214142"
+      "43051413"
     ],
     "2026-09-10": [
       "42982626"
@@ -1270,43 +1270,56 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42276211/",
       "doi_url": "https://doi.org/10.1016/j.xphs.2026.104360"
     },
-    "42214142": {
-      "pmid": "42214142",
-      "title": "Exploiting ligand-driven salt selectivity for aggregate retention: enhancing monomer resolution on a high elution pH Protein A membrane.",
-      "abstract": "Protein A chromatography often requires product-compromising low-pH conditions to remove monoclonal antibody aggregates. While recent high-pH ligands and membrane architectures have shown to improve aggregate clearance, the underlying mechanism of how the ligand and the matrix each contribute to this separation remains unclear. Here, we evaluated a recombinant high-pH Protein A prototype ligand immobilized on a Natrix membrane and a bead-based resin. We found that the addition of NaCl across a wide concentration range substantially enhanced monomer-aggregate resolution in a dose-dependent manner. Elevated ionic strength caused a slight shift in monomer elution toward milder conditions while simultaneously driving the tight retention of the aggregate subpopulation. At concentrations ≥ 0.5 M NaCl, aggregates were retained so strongly that they required complete salt removal under low-pH conditions to elute. Comparative evaluation proved this divergent selectivity is intrinsically driven by the recombinant ligand's specific binding response to salt, rather than being a mass-transport artifact of the membrane format. Leveraging this mechanism, we developed a stepwise elution strategy achieving > 70 % aggregate reduction and > 90 % monomer yield at pH 5.0, independent of initial aggregate burden. Additionally, a HIC-like flow-through mode confirmed the preferential retention of higher-order multimers. Ultimately, this work demonstrates that modulating ionic strength on engineered ligands establishes a highly tunable, mild-pH strategy for the robust purification of aggregation-prone therapeutics.",
+    "43051413": {
+      "pmid": "43051413",
+      "title": "Structural characterization, functional assessment, and process origin analysis of glucuronidation in a therapeutic monoclonal antibody.",
+      "abstract": "Glucuronidation is a previously reported (though typically at low levels) acidic post-translational modification (PTM) of therapeutic monoclonal antibodies, arising from the proposed non-enzymatic covalent conjugation of glucuronic acid to both N-terminal and surface lysine residues, resulting in a molecular mass increase of approximately 176 Da per modification. Despite its prevalence, glucuronidation remains poorly characterized, with limited information on structural features, functional impact, and process origin. In this study, we used a therapeutic IgG4 monoclonal antibody (mAb1) as a model to systematically investigate these aspects. Using two-dimensional liquid chromatography-mass spectrometry (2D-LC/MS), ion exchange chromatography (IEX) -enriched fraction, and peptide mapping, nine glucuronidation sites were identified across both light and heavy chains, and the glucuronidated species were found to be one of the contributors to the acidic charge variant profile, markedly enriched in the acidic region. Stressed glucuronidation samples at modification levels exceeding the normal process range showed no consistent decrease in antigen binding or bioactivity (evaluated up to 79.53% glucuronidation); FcRn binding affinity and non-specific binding were similar to the control in the tested mixtures (evaluated at approximately 19% glucuronidation). Quantification of free glucuronic acid across culture media and process intermediates revealed glucuronidation is generated or released during CHO cell culture, with its occurrence associated with the presence of free glucuronic acid in the culture environment. Glucuronidation was observed in the two IgG4 antibodies but in neither of the two IgG1 antibodies examined, a preliminary observation suggesting potential IgG subclass-related structural susceptibility, which requires validation with a larger sample set. These findings inform the molecule-specific assessment of glucuronidation and offer a generalizable framework for the risk assessment and control strategy development of other reported PTMs in similar molecules from a CMC control perspective. The functional conclusions are restricted to the in vitro attributes evaluated in this study.",
       "authors": [
-        "Oussama Menouar-Menari",
-        "Jonas Guth",
-        "Peter Menstell",
-        "Supriyadi Hafiz",
-        "Christian Frech"
+        "Wenying Zan",
+        "Xueying Zhang",
+        "Zhenhao Yin",
+        "Yue Yu",
+        "Ran Zhang",
+        "Haopeng An",
+        "Chuanlei Liu",
+        "Yan Qin",
+        "Dandan Liu",
+        "Feng Zhang",
+        "Hongyan Ye",
+        "Qingmin Wang",
+        "Daoyuan Li"
       ],
-      "journal": "Journal of chromatography. A",
-      "journal_abbr": "J Chromatogr A",
-      "pub_date": "2026-05-24",
-      "entrez_date": "2026-05-29",
-      "doi": "10.1016/j.chroma.2026.467126",
+      "journal": "Journal of pharmaceutical sciences",
+      "journal_abbr": "J Pharm Sci",
+      "pub_date": "2026-11-18",
+      "entrez_date": "2026-11-18",
+      "doi": "10.1016/j.xphs.2026.104617",
       "publication_types": [
         "Journal Article"
       ],
       "keywords": [
-        "Aggregates separation",
-        "Elution pH",
-        "Protein A membrane chromatography",
-        "Sodium chloride",
-        "mAb monomers, Resolution"
+        "CMC",
+        "Monoclonal antibody",
+        "biopharmaceutical characterization",
+        "charge variant",
+        "functional assessment",
+        "glucuronidation",
+        "peptide mapping",
+        "post-translational modification",
+        "process origin",
+        "structural characterization"
       ],
-      "affiliation": "Institute for Biochemistry, Technical University of Applied Sciences Mannheim, 68163 Mannheim, Germany.",
+      "affiliation": "Institute of Biopharmaceutical Research, Qilu Pharmaceutical Co, Ltd, Jinan Shandong, China.",
       "language": "eng",
-      "title_zh": "利用配体驱动的盐选择性实现聚集体保留：提高高洗脱 pH Protein A 膜上的单体分辨率。",
-      "abstract_zh": "Protein A 层析通常需要损害产物的低 pH 条件来去除单克隆抗体聚集体。虽然最近的高 pH 配体和膜结构已证明可以提高聚集体清除率，但配体和基质如何促进这种分离的潜在机制仍不清楚。在这里，我们评估了固定在 Natrix 膜和珠基树脂上的重组高 pH 蛋白 A 原型配体。我们发现，在较宽的浓度范围内添加 NaCl，以剂量依赖性方式显着增强了单体-聚集体分辨率。离子强度的升高导致单体洗脱向更温和的条件轻微转变，同时推动聚集体亚群的紧密保留。当浓度 ≥ 0.5 M NaCl 时，聚集体被强烈保留，以至于需要在低 pH 条件下完全去除盐才能洗脱。比较评估证明，这种不同的选择性本质上是由重组配体对盐的特异性结合反应驱动的，而不是膜格式的质量传输伪影。\n利用这一机制，我们开发了一种逐步洗脱策略，在 pH 5.0 时实现了 > 70 % 聚集体减少和 > 90 % 单体产率，与初始聚集体负荷无关。此外，类似 HIC 的流通模式证实了高阶多聚体的优先保留。最终，这项工作证明，调节工程配体的离子强度可以建立一种高度可调的温和 pH 策略，用于稳定纯化易聚集的治疗药物。",
-      "translate_provider": "",
-      "score": 7,
+      "title_zh": "治疗性单克隆抗体中葡萄糖醛酸化的结构表征、功能评估和过程起源分析。",
+      "abstract_zh": "葡萄糖醛酸化是先前报道的（尽管通常水平较低）治疗性单克隆抗体的酸性翻译后修饰（PTM），由葡萄糖醛酸与 N 末端和表面赖氨酸残基的非酶促共价缀合产生，导致每次修饰分子量增加约 176 Da。尽管葡萄糖醛酸化很普遍，但其特征仍然很少，关于结构特征、功能影响和过程起源的信息有限。在本研究中，我们使用治疗性 IgG4 单克隆抗体 (mAb1) 作为模型来系统地研究这些方面。使用二维液相色谱-质谱 (2D-LC/MS)、离子交换色谱 (IEX) 富集级分和肽图谱，在轻链和重链上鉴定了 9 个葡萄糖醛酸化位点，并且发现葡萄糖醛酸化物质是酸性电荷变体谱的贡献者之一，在酸性区域显着富集。\n修饰水平超出正常处理范围的应激葡萄糖醛酸化样品未显示出抗原结合或生物活性持续下降（评估葡萄糖醛酸化高达 79.53%）； FcRn 结合亲和力和非特异性结合与测试混合物中的对照相似（在约 19% 葡萄糖醛酸化时评估）。对培养基和过程中间体中游离葡萄糖醛酸的定量表明，葡萄糖醛酸化是在 CHO 细胞培养过程中产生或释放的，其发生与培养环境中游离葡萄糖醛酸的存在有关。在两种 IgG4 抗体中观察到葡萄糖醛酸化，但在所检查的两种 IgG1 抗体中均未观察到葡萄糖醛酸化，初步观察表明潜在的 IgG 亚类相关结构易感性，这需要用更大的样本集进行验证。这些发现为葡萄糖醛酸化的分子特异性评估提供了信息，并从 CMC 控制角度为类似分子中其他报道的 PTM 的风险评估和控制策略开发提供了通用框架。功能性结论仅限于本研究中评估的体外属性。",
+      "translate_provider": "google",
+      "score": 6,
       "source": "PubMed",
       "source_url": "",
       "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42214142/",
-      "doi_url": "https://doi.org/10.1016/j.chroma.2026.467126"
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43051413/",
+      "doi_url": "https://doi.org/10.1016/j.xphs.2026.104617"
     },
     "42982626": {
       "pmid": "42982626",
@@ -1829,7 +1842,7 @@
       "language": "eng",
       "title_zh": "单宁设计、抗体工程和免疫层析应用：用于检测乐果残留的快速荧光试纸。",
       "abstract_zh": "乙酰甲胺磷（AP）是全球使用最广泛的有机磷杀虫剂之一。其高水溶性和环境迁移性导致农产品中经常检出残留，对消费者健康构成风险。本研究通过计算机技术辅助的半抗原设计，制备了一种针对AP的特异性单克隆抗体（mAb）。\n通过基因测序和重组表达进一步获得了重组单克隆抗体（R-mAb），其亲和力常数（7.29 × 109 L/mol）高于亲本mAb（5.60 × 109 L/mol）。以R-mAb为识别试剂，建立了荧光免疫层析法（FICA）试纸。\n生菜、橙子、金针菇和大豆的基体匹配校准曲线的 IC50 值分别为 2.5、2.3、2.0 和 24.0 μg/kg。5 μg/kg 和 50 μg/kg 时的回收率为 84.9%-102.5%，与液相色谱-串联质谱法的结果吻合良好。该试纸提供了一种方便、高效和可靠的工具，可用于快速筛查农产品中的 AP 残留。",
-      "translate_provider": "mymemory",
+      "translate_provider": "",
       "score": 5,
       "source": "PubMed",
       "source_url": "",
