@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20 02:49:41",
+  "generated_at": "2026-11-21 02:58:31",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 69,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "42894435"
@@ -57,159 +57,162 @@
       "42323147"
     ],
     "2026-08-27": [
-      "42216916"
-    ],
-    "2026-08-28": [
       "42962190"
     ],
-    "2026-08-31": [
+    "2026-08-28": [
       "42834531"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42570623"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42470740"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42368154"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42346963"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42307050"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "42276211"
     ],
+    "2026-09-08": [
+      "43062593"
+    ],
     "2026-09-09": [
-      "43051413"
+      "43061969"
     ],
     "2026-09-10": [
-      "42982626"
+      "43051413"
     ],
     "2026-09-11": [
-      "42951158"
+      "42982626"
     ],
     "2026-09-14": [
-      "42773271"
+      "42951158"
     ],
     "2026-09-15": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-16": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-17": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-18": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-21": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-22": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-23": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-24": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-25": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-28": [
-      "42231136"
+      "42292894"
     ],
     "2026-09-29": [
-      "43049398"
+      "42231136"
     ],
     "2026-09-30": [
-      "42969552"
+      "43049398"
     ],
     "2026-10-01": [
-      "42958438"
+      "42969552"
     ],
     "2026-10-02": [
-      "42915931"
+      "42958438"
     ],
     "2026-10-05": [
-      "42864475"
+      "42915931"
     ],
     "2026-10-06": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-07": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-08": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-09": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-12": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-13": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-14": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-15": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-16": [
-      "42911708"
+      "42273649"
     ],
     "2026-10-19": [
-      "42896357"
+      "42911708"
     ],
     "2026-10-20": [
-      "42862297"
+      "42896357"
     ],
     "2026-10-21": [
-      "42825421"
+      "42862297"
     ],
     "2026-10-22": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-23": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-26": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-27": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-28": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-29": [
-      "42487284"
+      "42554770"
     ],
     "2026-10-30": [
-      "42458707"
+      "42487284"
     ],
     "2026-11-02": [
-      "42449784"
+      "42458707"
     ],
     "2026-11-03": [
-      "42285912"
+      "42449784"
     ],
     "2026-11-04": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-05": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-06": [
+      "42272446"
+    ],
+    "2026-11-09": [
       "42217505"
     ]
   },
@@ -920,45 +923,6 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42323147/",
       "doi_url": "https://doi.org/10.1016/j.ejpb.2026.115160"
     },
-    "42216916": {
-      "pmid": "42216916",
-      "title": "A Multitechnique Spectroscopy Platform for Monitoring Heterogeneities in the Higher-Order Structure of mAb Therapeutics.",
-      "abstract": "Comprehensive characterization of higher-order structure (HOS) is a regulatory prerequisite for monoclonal antibody (mAb) therapeutics, particularly in establishing biosimilarity. A significant analytical challenge lies in detecting the early onset of structural heterogeneity within bulk drug substances, where signal dilution often masks precursor states of degradation. This study proposes a novel, multitechnique spectroscopy platform consisting of UV-vis, Far-UV circular dichroism, intrinsic and extrinsic fluorescence, and Fourier transform infrared (FTIR) spectroscopy coupled with chemometrics for monitoring heterogeneities in HOS during the thermal degradation of trastuzumab, an IgG1mAb therapeutic. While size exclusion chromatography (SEC) confirmed a progressive, monotonic accumulation of soluble aggregates, the proposed multitechnique spectroscopic platform yielded richer information. Intrinsic and extrinsic fluorescence identified an early conformational drift characterized by tertiary core destabilization and hydrophobic exposure immediately upon thermal stress (<1 h), well before the onset of global backbone unfolding detected by circular dichroism. Data fusion via principal component analysis (PCA), biplot, and dendrogram allowed for a more nuanced understanding of the HOS evolution through the thermal stress timeline. The data-fusion approach explained in this study offers a robust, high-resolution framework for monitoring structural consistency through direct HOS mapping, offering a powerful solution for monitoring the quality of biotherapeutic products during stability studies as well as for biosimilarity assessments.",
-      "authors": [
-        "Divya Agrawal",
-        "Srishti Joshi",
-        "Saxena Nikita",
-        "Sonam Sriwastaw",
-        "Anurag S Rathore"
-      ],
-      "journal": "Molecular pharmaceutics",
-      "journal_abbr": "Mol Pharm",
-      "pub_date": "2026-08-03",
-      "entrez_date": "2026-05-30",
-      "doi": "10.1021/acs.molpharmaceut.5c01948",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "dendrogram",
-        "higher order structure (HOS)",
-        "monoclonal antibody",
-        "principal component analysis (PCA)",
-        "spectroscopy",
-        "thermal stress"
-      ],
-      "affiliation": "Department of Chemical Engineering, Indian Institute of Technology Delhi, New Delhi110016, India.",
-      "language": "eng",
-      "title_zh": "用于监测 mAb 疗法高阶结构异质性的多技术光谱平台。",
-      "abstract_zh": "高阶结构 (HOS) 的综合表征是单克隆抗体 (mAb) 治疗的监管先决条件，特别是在建立生物相似性方面。一个重大的分析挑战在于检测原料药内结构异质性的早期发生，其中信号稀释通常掩盖了降解的前体状态。本研究提出了一种新颖的多技术光谱平台，包括紫外-可见光、远紫外圆二色性、内在和外在荧光、傅里叶变换红外 (FTIR) 光谱以及化学计量学，用于监测 IgG1mAb 治疗剂曲妥珠单抗热降解过程中 HOS 的异质性。虽然尺寸排阻色谱 (SEC) 证实了可溶性聚集体的渐进、单调积累，但所提出的多技术光谱平台产生了更丰富的信息。内在和外在荧光识别出早期构象漂移，其特征是热应力后（<1小时）立即发生三级核心不稳定和疏水暴露，远早于圆二色性检测到的整体主链展开开始。\n通过主成分分析 (PCA)、双图和树状图进行数据融合，可以更细致地了解 HOS 通过热应力时间线的演变。本研究中解释的数据融合方法提供了一个强大的高分辨率框架，用于通过直接 HOS 映射来监测结构一致性，为在稳定性研究期间监测生物治疗产品的质量以及生物相似性评估提供了强大的解决方案。",
-      "translate_provider": "",
-      "score": 8,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42216916/",
-      "doi_url": "https://doi.org/10.1021/acs.molpharmaceut.5c01948"
-    },
     "42962190": {
       "pmid": "42962190",
       "title": "Review Article: A Scientific Journey with Zelig Eshhar at the Dawn of Monoclonal Antibody Research.",
@@ -1270,6 +1234,85 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42276211/",
       "doi_url": "https://doi.org/10.1016/j.xphs.2026.104360"
     },
+    "43062593": {
+      "pmid": "43062593",
+      "title": "Antibody-Drug Conjugate (ADC) Characterization by Size Exclusion Chromatography Coupled with Mass Spectrometry.",
+      "abstract": "Antibody-drug conjugates (ADCs) are targeted cancer therapies that combine the specificity of monoclonal antibodies with the potency of cytotoxic payloads. Their design has evolved across several generations to improve homogeneity, selectivity and safety. Structurally, ADCs consist of a cytotoxic agent attached to a monoclonal antibody through site-specific or non-site-specific conjugation strategies, contributing to product heterogeneity and analytical complexity. Among the critical quality attributes, the drug-to-antibody ratio (DAR) is essential for defining therapeutic efficacy, toxicity and batch consistency. Conventional denaturing LC-MS methods used for monoclonal antibody analysis often fail to preserve ADC integrity, particularly for cysteine-linked formats, or provide limited universality, like ion exchange chromatography or capillary electrophoresis. Hydrophobic interaction chromatography can resolve species with different drug loads but is less compatible with MS due to the high salt content of the mobile phases. Native size exclusion chromatography (nSEC) coupled to MS has emerged as a robust approach capable of simultaneously assessing molecular integrity and DAR distribution. This chapter describes a complete workflow for performing nSEC-MS using Orbitrap-based mass spectrometry, including instrument setup, data acquisition and deconvolution. A lysine-linked ADC, trastuzumab emtansine, was used to illustrate DAR determination and to evaluate how sample deglycosylation influences spectrum quality and data interpretation.",
+      "authors": [
+        "Corentin Beaumal",
+        "Sara Carillo",
+        "Jonathan Bones"
+      ],
+      "journal": "Methods in molecular biology (Clifton, N.J.)",
+      "journal_abbr": "Methods Mol Biol",
+      "pub_date": "2027",
+      "entrez_date": "2026-11-20",
+      "doi": "10.1007/978-1-0716-5719-5_17",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Antibody-drug conjugate",
+        "DAR",
+        "Liquid chromatography",
+        "Mass spectrometry",
+        "Native MS",
+        "Size exclusion chromatography"
+      ],
+      "affiliation": "National Institute for Bioprocessing Research and Training, Dublin, Ireland.",
+      "language": "eng",
+      "title_zh": "通过尺寸排阻色谱法与质谱联用进行抗体药物偶联物 (ADC) 表征。",
+      "abstract_zh": "抗体药物偶联物 (ADC) 是一种靶向癌症疗法，它将单克隆抗体的特异性与细胞毒性有效负载的效力相结合。他们的设计已经经历了几代的发展，以提高均匀性、选择性和安全性。在结构上，ADC 由通过位点特异性或非位点特异性缀合策略连接到单克隆抗体的细胞毒性剂组成，从而导致产品异质性和分析复杂性。在关键的质量属性中，药物与抗体的比率（DAR）对于确定治疗效果、毒性和批次一致性至关重要。用于单克隆抗体分析的传统变性 LC-MS 方法通常无法保持 ADC 的完整性，特别是对于半胱氨酸连接的形式，或者提供有限的通用性，如离子交换色谱或毛细管电泳。疏水相互作用色谱可以解析具有不同载药量的物质，但由于流动相的高盐含量，与 MS 的兼容性较差。\n与 MS 联用的天然尺寸排阻色谱 (nSEC) 已成为一种能够同时评估分子完整性和 DAR 分布的可靠方法。本章介绍了使用基于 Orbitrap 的质谱法执行 nSEC-MS 的完整工作流程，包括仪器设置、数据采集和解卷积。赖氨酸连接的 ADC（曲妥珠单抗 emtansine）用于说明 DAR 测定并评估样品去糖基化如何影响谱图质量和数据解释。",
+      "translate_provider": "google",
+      "score": 6,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43062593/",
+      "doi_url": "https://doi.org/10.1007/978-1-0716-5719-5_17"
+    },
+    "43061969": {
+      "pmid": "43061969",
+      "title": "Production of Polyclonal Mixes of Full-Size IgG Antibodies in Plants Using a Two-Viral-Vector System.",
+      "abstract": "Plants are cost-effective bioreactors to produce recombinant proteins for many different biotechnological applications, and plant virus-derived vectors are frequently used to improve yield and shorten production times. Antibodies, the products of vertebrate immune systems, display unsurpassed features in terms of affinity, selectivity, and avidity for their cognate antigens. However, antibody size and heteromultimeric structures make their expression in plants difficult, particularly when employing viral vectors, which typically exhibit cargo restrictions. Here, we have worked on a dual vector system based on potato virus X (PVX) and tobacco mosaic virus (TMV) to produce polyclonal mixes of recombinant antibodies in Nicotiana benthamiana plants. In this system, the heavy and light chains of the different antibodies that compose the polyclonal mix are expressed, respectively, through defective PVX and TMV vectors. Importantly, to avoid antibody chain shuffling in the polyclonal mix, each pair of PVX-TMV vectors that express the cognate heavy and light chains of each monoclonal antibody is inoculated into the plant tissue using a single Agrobacterium tumefaciens clone co-transformed with two mini-binary plasmids with compatible replication origins, in which the viral vectors are cloned. Both viral vectors lack their coat proteins, which contributes to better coupling of the cell-to-cell movement of the two vectors. In addition, the recombinant antibodies are exported to the apoplast of infiltrated tissues from where the polyclonal mix can be easily extracted and directly used for many applications with no further purification. Using this dual vector system, we have successfully produced inN. benthamiana a polyclonal mix of recombinant antibodies that efficiently bind the nucleocapsid protein and two independent epitopes of the spike protein from SARS-CoV-2.",
+      "authors": [
+        "Fernando Merwaiss",
+        "Verónica Aragonés",
+        "María Nicolau-Sanus",
+        "Claudia Cortés-de-Felipe",
+        "Fabio Pasin",
+        "Marta Vazquez-Vilar",
+        "Diego Orzáez",
+        "José-Antonio Daròs"
+      ],
+      "journal": "ACS synthetic biology",
+      "journal_abbr": "ACS Synth Biol",
+      "pub_date": "2026-11-20",
+      "entrez_date": "2026-11-20",
+      "doi": "10.1021/acssynbio.6c00628",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "SARS-CoV-2",
+        "full-length antibodies",
+        "molecular farming",
+        "plant bioreactor",
+        "recombinant antibodies",
+        "viral vectors"
+      ],
+      "affiliation": "Instituto de Biología Molecular y Celular de Plantas (Consejo Superior de Investigaciones Científicas-Universitat Politècnica de València), Avenida de los Naranjos s/n, Valencia46022, Spain.",
+      "language": "eng",
+      "title_zh": "使用两种病毒载体系统在植物中生产全尺寸 IgG 抗体的多克隆混合物。",
+      "abstract_zh": "植物是具有成本效益的生物反应器，可生产用于许多不同生物技术应用的重组蛋白，并且植物病毒衍生的载体经常用于提高产量和缩短生产时间。抗体是脊椎动物免疫系统的产物，在对其同源抗原的亲和力、选择性和亲合力方面表现出无与伦比的特征。然而，抗体大小和异多聚体结构使得它们在植物中表达变得困难，特别是在使用通常表现出货物限制的病毒载体时。在这里，我们研究了基于马铃薯病毒 X (PVX) 和烟草花叶病毒 (TMV) 的双载体系统，以在本塞姆氏烟草植物中产生重组抗体的多克隆混合物。在该系统中，组成多克隆混合物的不同抗体的重链和轻链分别通过有缺陷的PVX和TMV载体表达。\n重要的是，为了避免多克隆混合物中的抗体链改组，使用单个根癌农杆菌克隆将表达每个单克隆抗体的同源重链和轻链的每对 PVX-TMV 载体接种到植物组织中，该克隆与两个具有兼容复制起点的微型二元质粒共转化，其中克隆了病毒载体。两种病毒载体都缺乏外壳蛋白，这有助于更好地耦合两种载体的细胞间运动。此外，重组抗体被输出到浸润组织的质外体，从中可以轻松提取多克隆混合物并直接用于许多应用，无需进一步纯化。利用这个双载体系统，我们成功地生产了inN。 Benthamiana 是一种重组抗体的多克隆混合物，可有效结合 SARS-CoV-2 的核衣壳蛋白和刺突蛋白的两个独立表位。",
+      "translate_provider": "google",
+      "score": 6,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43061969/",
+      "doi_url": "https://doi.org/10.1021/acssynbio.6c00628"
+    },
     "43051413": {
       "pmid": "43051413",
       "title": "Structural characterization, functional assessment, and process origin analysis of glucuronidation in a therapeutic monoclonal antibody.",
@@ -1313,7 +1356,7 @@
       "language": "eng",
       "title_zh": "治疗性单克隆抗体中葡萄糖醛酸化的结构表征、功能评估和过程起源分析。",
       "abstract_zh": "葡萄糖醛酸化是先前报道的（尽管通常水平较低）治疗性单克隆抗体的酸性翻译后修饰（PTM），由葡萄糖醛酸与 N 末端和表面赖氨酸残基的非酶促共价缀合产生，导致每次修饰分子量增加约 176 Da。尽管葡萄糖醛酸化很普遍，但其特征仍然很少，关于结构特征、功能影响和过程起源的信息有限。在本研究中，我们使用治疗性 IgG4 单克隆抗体 (mAb1) 作为模型来系统地研究这些方面。使用二维液相色谱-质谱 (2D-LC/MS)、离子交换色谱 (IEX) 富集级分和肽图谱，在轻链和重链上鉴定了 9 个葡萄糖醛酸化位点，并且发现葡萄糖醛酸化物质是酸性电荷变体谱的贡献者之一，在酸性区域显着富集。\n修饰水平超出正常处理范围的应激葡萄糖醛酸化样品未显示出抗原结合或生物活性持续下降（评估葡萄糖醛酸化高达 79.53%）； FcRn 结合亲和力和非特异性结合与测试混合物中的对照相似（在约 19% 葡萄糖醛酸化时评估）。对培养基和过程中间体中游离葡萄糖醛酸的定量表明，葡萄糖醛酸化是在 CHO 细胞培养过程中产生或释放的，其发生与培养环境中游离葡萄糖醛酸的存在有关。在两种 IgG4 抗体中观察到葡萄糖醛酸化，但在所检查的两种 IgG1 抗体中均未观察到葡萄糖醛酸化，初步观察表明潜在的 IgG 亚类相关结构易感性，这需要用更大的样本集进行验证。这些发现为葡萄糖醛酸化的分子特异性评估提供了信息，并从 CMC 控制角度为类似分子中其他报道的 PTM 的风险评估和控制策略开发提供了通用框架。功能性结论仅限于本研究中评估的体外属性。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 6,
       "source": "PubMed",
       "source_url": "",
