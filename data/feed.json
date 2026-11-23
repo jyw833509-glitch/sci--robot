@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-22 01:54:14",
+  "generated_at": "2026-11-23 02:14:16",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 70,
@@ -129,91 +129,91 @@
       "42231136"
     ],
     "2026-09-30": [
-      "43049398"
+      "43067544"
     ],
     "2026-10-01": [
-      "42969552"
+      "43049398"
     ],
     "2026-10-02": [
-      "42958438"
+      "42969552"
     ],
     "2026-10-05": [
-      "42915931"
+      "42958438"
     ],
     "2026-10-06": [
-      "42864475"
+      "42915931"
     ],
     "2026-10-07": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-08": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-09": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-12": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-13": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-14": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-15": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-16": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-19": [
-      "42911708"
+      "42273649"
     ],
     "2026-10-20": [
-      "42896357"
+      "42911708"
     ],
     "2026-10-21": [
-      "42862297"
+      "42896357"
     ],
     "2026-10-22": [
-      "42825421"
+      "42862297"
     ],
     "2026-10-23": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-26": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-27": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-28": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-29": [
-      "42554770"
+      "42568918"
     ],
     "2026-10-30": [
-      "42487284"
+      "42554770"
     ],
     "2026-11-02": [
-      "42458707"
+      "42487284"
     ],
     "2026-11-03": [
-      "42449784"
+      "42458707"
     ],
     "2026-11-04": [
-      "42285912"
+      "42449784"
     ],
     "2026-11-05": [
-      "42276533"
+      "42285912"
     ],
     "2026-11-06": [
-      "42272446"
+      "42276533"
     ],
     "2026-11-09": [
-      "42217505"
+      "42272446"
     ]
   },
   "articles": {
@@ -1852,6 +1852,45 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42231136/",
       "doi_url": "https://doi.org/10.1002/btpr.88501"
     },
+    "43067544": {
+      "pmid": "43067544",
+      "title": "Mitigating artificial oxidation during liquid chromatography fractionation of therapeutic proteins.",
+      "abstract": "Therapeutic proteins are inherently heterogeneous, necessitating chromatographic separation of individual variants for in-depth characterization. However, conventional liquid chromatography (LC) fractionation can introduce artificial oxidation via UV exposure in the detector, confounding the analysis of critical quality attributes (CQAs). Here we describe a new cation-exchange HPLC (CEX-HPLC) fractionation method that incorporates methionine as an in-line oxidation scavenger throughout the process. This approach significantly reduces UV-induced oxidation artifacts, enabling accurate characterization of oxidation-sensitive residues and preserving the biological activity of collected fractions. Using an IgG1 monoclonal antibody as a model, the methionine-supplemented fractionation dramatically suppressed complementarity-determining region (CDR) oxidation in the isolated fractions and preserved their binding potency relative to the conventional fractionation method.",
+      "authors": [
+        "Lidong He",
+        "Jessica Shin",
+        "Kelli Matthies",
+        "Jiu-Li Song",
+        "Jun Zhang"
+      ],
+      "journal": "Journal of pharmaceutical sciences",
+      "journal_abbr": "J Pharm Sci",
+      "pub_date": "2026-11-21",
+      "entrez_date": "2026-11-21",
+      "doi": "10.1016/j.xphs.2026.104619",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "HPLC fractionation",
+        "Mass spectrometry",
+        "Methionine",
+        "Monoclonal Antibody",
+        "Oxidation scavenger",
+        "Peptide mapping"
+      ],
+      "affiliation": "Process Development, Amgen Inc., Thousand Oaks, CA, USA. Electronic address: lidong.he@amgen.com.",
+      "language": "eng",
+      "title_zh": "减轻治疗性蛋白质的液相色谱分离过程中的人工氧化。",
+      "abstract_zh": "治疗性蛋白质本质上是异质的，需要对各个变体进行色谱分离以进行深入表征。然而，传统的液相色谱 (LC) 分级可能会通过检测器中的紫外线照射引入人工氧化，从而混淆关键质量属性 (CQA) 的分析。在这里，我们描述了一种新的阳离子交换 HPLC (CEX-HPLC) 分馏方法，该方法在整个过程中将蛋氨酸作为在线氧化清除剂。这种方法显着减少了紫外线引起的氧化伪影，从而能够准确表征氧化敏感残留物并保留所收集组分的生物活性。使用 IgG1 单克隆抗体作为模型，添加蛋氨酸的分级分离显着抑制了分离级分中的互补决定区 (CDR) 氧化，并相对于传统分级分离方法保留了其结合效力。",
+      "translate_provider": "google",
+      "score": 5,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43067544/",
+      "doi_url": "https://doi.org/10.1016/j.xphs.2026.104619"
+    },
     "43049398": {
       "pmid": "43049398",
       "title": "Hapten Design, Antibody Engineering, and Immunochromatographic Application: A Rapid Fluorescent Strip for Acephate Residue Detection.",
@@ -2942,47 +2981,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42272446/",
       "doi_url": "https://doi.org/10.1080/17576180.2026.2687593"
-    },
-    "42217505": {
-      "pmid": "42217505",
-      "title": "Development of trypsin peptide mapping for hydroxylysine modification quantification in an IgG4 bispecific antibody and investigation of influencing factors.",
-      "abstract": "We report the first identification of a rare hydroxylysine modification in the heavy chain 2 (HC2) region of an IgG4 bispecific antibody using peptide mapping coupled with liquid chromatography-mass spectrometry (LC-MS). The modified peptide matches the XKG consensus sequence recognized by lysyl hydroxylases. This modification severely impaired trypsin digestion efficiency: approximately 81% of missed cleavage peptides at this site contained hydroxylysine, indicating a strong association between the modification and missed cleavage. To reduce missed cleavage and enable accurate quantification of hydroxylysine, we systematically optimized the digestion conditions (buffer composition, pH, incubation temperature, digestion time, enzyme to antibody ratio) to enhance trypsin efficiency. This optimized method was subsequently applied to investigate the factors contributing to hydroxylation variability during antibody manufacturing. Our results showed that the downstream purification processes and storage stability conditions did not influence the hydroxylation levels. In contrast, key upstream cell culture parameters distinctly modulated hydroxylation: both a lower post-shift temperature and an earlier shift time resulted in a greater reduction in the modification level, whereas prolonged culture duration caused only a mild decrease. This work presents an optimized trypsin peptide mapping method that overcomes hydroxylysine-induced missed cleavage, enabling reliable quantification of this rare modification. Furthermore, it provides critical insights into the process dependence of hydroxylysine formation, facilitating the development of improved quality control strategies for therapeutic antibody production.",
-      "authors": [
-        "Ying Duan",
-        "Zhilin Zhang",
-        "Yue Chen",
-        "Guohong Qin",
-        "Pan Wang",
-        "Dan Xu"
-      ],
-      "journal": "Journal of chromatography. B, Analytical technologies in the biomedical and life sciences",
-      "journal_abbr": "J Chromatogr B Analyt Technol Biomed Life Sci",
-      "pub_date": "2026-05-27",
-      "entrez_date": "2026-05-30",
-      "doi": "10.1016/j.jchromb.2026.125150",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Antibody manufacturing",
-        "Hydroxylysine",
-        "IgG4 bispecific antibody",
-        "Missed cleavage",
-        "Post-translational modifications (PTMs)",
-        "Quantification",
-        "Trypsin peptide mapping"
-      ],
-      "affiliation": "Nanjing Chia-Tai Tianqing Pharmaceutical Co. Ltd, Fanghua Pharmaceutical Research Institute, Department of Biology, Nanjing 210046, China.",
-      "language": "eng",
-      "title_zh": "开发用于 IgG4 双特异性抗体中羟赖氨酸修饰定量的胰蛋白酶肽图谱并研究影响因素。",
-      "abstract_zh": "我们报告了使用肽图谱结合液相色谱-质谱法 (LC-MS) 首次鉴定了 IgG4 双特异性抗体重链 2 (HC2) 区域中的罕见羟赖氨酸修饰。修饰后的肽与赖氨酰羟化酶识别的 XKG 共有序列相匹配。这种修饰严重损害了胰蛋白酶的消化效率：该位点大约 81% 的漏切肽含有羟赖氨酸，表明该修饰与漏切之间存在很强的关联。为了减少漏切并实现羟赖氨酸的准确定量，我们系统地优化了消化条件（缓冲液组成、pH、孵育温度、消化时间、酶与抗体的比例）以提高胰蛋白酶效率。随后应用这种优化方法来研究抗体制造过程中羟基化变异性的影响因素。我们的结果表明，下游纯化过程和储存稳定性条件不影响羟基化水平。\n相比之下，关键的上游细胞培养参数明显调节羟基化：较低的转移后温度和较早的转移时间都会导致修饰水平的更大降低，而延长培养时间仅导致轻微的降低。这项工作提出了一种优化的胰蛋白酶肽图分析方法，该方法克服了羟赖氨酸诱导的漏切，从而能够对这种罕见的修饰进行可靠的定量。此外，它还提供了对羟赖氨酸形成过程依赖性的重要见解，有助于开发改进的治疗性抗体生产质量控制策略。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42217505/",
-      "doi_url": "https://doi.org/10.1016/j.jchromb.2026.125150"
     }
   }
 }
