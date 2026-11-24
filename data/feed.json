@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-23 02:14:16",
+  "generated_at": "2026-11-24 05:44:04",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 70,
+  "total_articles": 68,
   "calendar": {
     "2026-08-04": [
       "42894435"
@@ -42,177 +42,171 @@
       "42415185"
     ],
     "2026-08-20": [
-      "42235435"
-    ],
-    "2026-08-21": [
       "42687332"
     ],
-    "2026-08-24": [
+    "2026-08-21": [
       "42563142"
     ],
-    "2026-08-25": [
+    "2026-08-24": [
       "42402251"
     ],
-    "2026-08-26": [
+    "2026-08-25": [
       "42323147"
     ],
-    "2026-08-27": [
+    "2026-08-26": [
       "42962190"
     ],
-    "2026-08-28": [
+    "2026-08-27": [
       "42834531"
     ],
-    "2026-08-31": [
+    "2026-08-28": [
       "42570623"
     ],
-    "2026-09-01": [
+    "2026-08-31": [
       "42470740"
     ],
-    "2026-09-02": [
+    "2026-09-01": [
       "42368154"
     ],
-    "2026-09-03": [
+    "2026-09-02": [
       "42346963"
     ],
-    "2026-09-04": [
+    "2026-09-03": [
       "42307050"
     ],
-    "2026-09-07": [
+    "2026-09-04": [
       "42276211"
     ],
-    "2026-09-08": [
+    "2026-09-07": [
       "43062593"
     ],
-    "2026-09-09": [
+    "2026-09-08": [
       "43061969"
     ],
-    "2026-09-10": [
+    "2026-09-09": [
       "43051413"
     ],
-    "2026-09-11": [
+    "2026-09-10": [
       "42982626"
     ],
-    "2026-09-14": [
+    "2026-09-11": [
       "42951158"
     ],
-    "2026-09-15": [
+    "2026-09-14": [
       "42773271"
     ],
-    "2026-09-16": [
+    "2026-09-15": [
       "42768232"
     ],
-    "2026-09-17": [
+    "2026-09-16": [
       "42745724"
     ],
-    "2026-09-18": [
+    "2026-09-17": [
       "42655115"
     ],
-    "2026-09-21": [
+    "2026-09-18": [
       "42645420"
     ],
-    "2026-09-22": [
+    "2026-09-21": [
       "42489360"
     ],
-    "2026-09-23": [
+    "2026-09-22": [
       "42450443"
     ],
-    "2026-09-24": [
+    "2026-09-23": [
       "42376876"
     ],
-    "2026-09-25": [
+    "2026-09-24": [
       "42332429"
     ],
-    "2026-09-28": [
+    "2026-09-25": [
       "42292894"
     ],
-    "2026-09-29": [
-      "42231136"
-    ],
-    "2026-09-30": [
+    "2026-09-28": [
       "43067544"
     ],
-    "2026-10-01": [
+    "2026-09-29": [
       "43049398"
     ],
-    "2026-10-02": [
+    "2026-09-30": [
       "42969552"
     ],
-    "2026-10-05": [
+    "2026-10-01": [
       "42958438"
     ],
-    "2026-10-06": [
+    "2026-10-02": [
       "42915931"
     ],
-    "2026-10-07": [
+    "2026-10-05": [
       "42864475"
     ],
-    "2026-10-08": [
+    "2026-10-06": [
       "42754776"
     ],
-    "2026-10-09": [
+    "2026-10-07": [
       "42725489"
     ],
-    "2026-10-12": [
+    "2026-10-08": [
       "42652006"
     ],
-    "2026-10-13": [
+    "2026-10-09": [
       "42546983"
     ],
-    "2026-10-14": [
+    "2026-10-12": [
       "42429162"
     ],
-    "2026-10-15": [
+    "2026-10-13": [
       "42414861"
     ],
-    "2026-10-16": [
+    "2026-10-14": [
       "42345899"
     ],
-    "2026-10-19": [
+    "2026-10-15": [
       "42273649"
     ],
-    "2026-10-20": [
+    "2026-10-16": [
       "42911708"
     ],
-    "2026-10-21": [
+    "2026-10-19": [
       "42896357"
     ],
-    "2026-10-22": [
+    "2026-10-20": [
       "42862297"
     ],
-    "2026-10-23": [
+    "2026-10-21": [
       "42825421"
     ],
-    "2026-10-26": [
+    "2026-10-22": [
       "42799870"
     ],
-    "2026-10-27": [
+    "2026-10-23": [
       "42794422"
     ],
-    "2026-10-28": [
+    "2026-10-26": [
       "42667144"
     ],
-    "2026-10-29": [
+    "2026-10-27": [
       "42568918"
     ],
-    "2026-10-30": [
+    "2026-10-28": [
       "42554770"
     ],
-    "2026-11-02": [
+    "2026-10-29": [
       "42487284"
     ],
-    "2026-11-03": [
+    "2026-10-30": [
       "42458707"
     ],
-    "2026-11-04": [
+    "2026-11-02": [
       "42449784"
     ],
-    "2026-11-05": [
+    "2026-11-03": [
       "42285912"
     ],
-    "2026-11-06": [
+    "2026-11-04": [
       "42276533"
     ],
-    "2026-11-09": [
+    "2026-11-05": [
       "42272446"
     ]
   },
@@ -711,46 +705,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42415185/",
       "doi_url": "https://doi.org/10.1002/btpr.88537"
-    },
-    "42235435": {
-      "pmid": "42235435",
-      "title": "Advanced modeling techniques in hydrophobic interaction chromatography (HIC).",
-      "abstract": "Hydrophobic Interaction Chromatography (HIC) is widely used in biopharmaceutical downstream processing for protein separation under mild and aqueous conditions. Accurate modeling of HIC for optimizing monoclonal antibody (mAb) monomer and aggregate separation remains challenging, primarily due to complex resin-protein interactions across diverse operating ranges. This study compares five advanced modeling approaches, mechanistic models, residual-based and differential parallel hybrid models, a serial hybrid model, and a physics informed neural network (PINN), to predict HIC behavior under varied conditions. Model performance was evaluated using qualitative trend analysis and quantitative metrics (R², RMSE, MBE). Among the tested approaches, the differential parallel hybrid model consistently demonstrated superior performance, accurately capturing the complex dynamics of HIC, including breakthrough, plateau, wash, and tailing phases for both monomer and aggregate species. It achieved remarkable accuracy for aggregate predictions (R² = 0.99, RMSE = 0.02, MBE = 0.01) and similarly strong performance for monomer (R² = 0.99). These findings underscore that sophisticated hybrid modeling strategies, especially the differential parallel approach, offer robust and highly accurate predictive capabilities essential for optimizing complex downstream bioprocesses like HIC.",
-      "authors": [
-        "Samira Beryamysoltan",
-        "Juan Guzman-Tinoco",
-        "Krishna Gudena",
-        "Chris Gerbrich",
-        "Alejandro Cano",
-        "Thomas O'Connor",
-        "Sayantan Chattoraj"
-      ],
-      "journal": "Journal of chromatography. A",
-      "journal_abbr": "J Chromatogr A",
-      "pub_date": "2026-05-22",
-      "entrez_date": "2026-06-03",
-      "doi": "10.1016/j.chroma.2026.467108",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Hybrid model",
-        "Hydrophobic interaction chromatography",
-        "Machine learning models",
-        "Mechanistic model",
-        "Physics-informed neural network"
-      ],
-      "affiliation": "Process Engineering and Analytics, GSK R&D, Upper Providence, PA, USA. Electronic address: samira.x.beyramysoltan@gsk.com.",
-      "language": "eng",
-      "title_zh": "疏水相互作用色谱 (HIC) 的先进建模技术。",
-      "abstract_zh": "疏水相互作用色谱 (HIC) 广泛应用于生物制药下游加工，用于在温和的水性条件下分离蛋白质。用于优化单克隆抗体 (mAb) 单体和聚集体分离的 HIC 精确建模仍然具有挑战性，这主要是由于不同操作范围内复杂的树脂-蛋白质相互作用。本研究比较了五种先进的建模方法、机械模型、基于残差和差分的并行混合模型、串行混合模型和物理信息神经网络 (PINN)，以预测不同条件下的 HIC 行为。使用定性趋势分析和定量指标（R²、RMSE、MBE）评估模型性能。在测试的方法中，微分并行混合模型始终表现出卓越的性能，准确捕捉 HIC 的复杂动态，包括单体和聚集体的突破、稳定、洗涤和拖尾阶段。它在总体预测方面取得了显着的准确性（R² = 0.99，RMSE = 0.02，MBE = 0.01），并且在单体预测方面也取得了同样出色的性能（R² = 0.99）。\n这些发现强调，复杂的混合建模策略，尤其是微分并行方法，提供了强大且高度准确的预测能力，对于优化 HIC 等复杂的下游生物过程至关重要。",
-      "translate_provider": "",
-      "score": 9,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42235435/",
-      "doi_url": "https://doi.org/10.1016/j.chroma.2026.467108"
     },
     "42687332": {
       "pmid": "42687332",
@@ -1811,47 +1765,6 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42292894/",
       "doi_url": "https://doi.org/10.3389/fpara.2026.1746419"
     },
-    "42231136": {
-      "pmid": "42231136",
-      "title": "Continuous concentration and diafiltration tangential flow filtration with scalable dual membrane technology.",
-      "abstract": "Intensified, integrated, and continuous bioprocessing are key trends in current biologics biomanufacturing. They model more efficient and economical production in upstream and downstream processes. Continuous or single-pass (SP) tangential flow filtration (TFF) and particularly diafiltration (buffer exchange) are key applications needed in downstream processing. This work presents a novel flat sheet membrane cassette for TFF diafiltration with optional simultaneous ultrafiltration (concentration). It enables effective buffer exchange of feed streams in a single-pass, without dilution and with reduced shear stress to the valuable product. Contaminants such as salts, media components, or any small molecules smaller than the respective membrane cut-off are continuously removed while the needed buffer volume is comparable to conventional diafiltration processes with recirculation. The flat-sheet membrane cassette design resembles classic TFF cassettes and can therefore be scaled up and down and handled analogously. In addition, the design allows for a closed configuration, suitable for aseptic or bioburden-controlled conditions. To introduce the buffer, only one additional external connection port is required. This allows continuous diafiltration without significant increase in operator or process control complexity. This work presents ultrafiltration and diafiltration application data using bovine serum albumin (BSA) as a model protein and real antibodies processed with an automated lab-scale process system for reproducible data collection. The process performance was evaluated based on buffer exchange efficiency, transmembrane pressure (TMP) and permeate flux rates under varying process parameters, namely feed protein concentration, feed flow rate and diafiltration volumes. Buffer consumptions similar to conventional recirculation diafiltration have been observed with even reduced buffer consumptions at diafiltration volumes below 3. Buffer exchange values ranged over a broad range depending on the process parameters while relevant settings achieved a ~97 to >99% buffer exchange at, for example, 3, 5 or 7 diafiltration volumes at relatively low TMP between 50 and 350 mbar using both BSA and mAb. Typical permeability values and feed flow rates ranged from 10 to 60 L/(m2h) and 1 to 7 L/(m2h), respectively, using BSA and mAb protein concentrations from ~3 to 80 g/L and were significantly depending on the set process parameters. The data demonstrates how this new SPTFF concept can contribute to intensified and continuous biomanufacturing.",
-      "authors": [
-        "Alexander Helling",
-        "Ehsan Espah Borujeni",
-        "Martin Leuthold",
-        "Stuart Tindal",
-        "Lara Fernandez-Cerezo",
-        "Mark Brower"
-      ],
-      "journal": "Biotechnology progress",
-      "journal_abbr": "Biotechnol Prog",
-      "pub_date": "2026-06-02",
-      "entrez_date": "2026-06-03",
-      "doi": "10.1002/btpr.88501",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "ILC (in‐line concentration)",
-        "ILCDF (in‐line concentration diafiltration)",
-        "SPDF (single‐pass diafiltration)",
-        "SPTFF (single‐pass tangential flow filtration)",
-        "continuous downstream processing",
-        "diafiltration",
-        "process intensification"
-      ],
-      "affiliation": "Sartorius Stedim Biotech GmbH, Goettingen, Germany.",
-      "language": "eng",
-      "title_zh": "采用可扩展的双膜技术进行连续浓缩和渗滤切向流过滤。",
-      "abstract_zh": "强化、集成和连续的生物加工是当前生物制品生物制造的主要趋势。他们对上游和下游流程中更高效、更经济的生产进行建模。连续或单程 (SP) 切向流过滤 (TFF)，特别是渗滤（缓冲液交换）是下游加工所需的关键应用。这项工作提出了一种用于 TFF 渗滤的新型平板膜盒，具有可选的同步超滤（浓缩）功能。它能够在单程中有效地缓冲进料流交换，无需稀释，并且减少了对有价值产品的剪切应力。诸如盐、介质成分或任何小于相应膜截留值的小分子等污染物被连续去除，而所需的缓冲液体积与传统的再循环渗滤工艺相当。平板膜盒设计类似于经典的 TFF 盒，因此可以按比例放大和缩小并进行类似处理。此外，该设计允许采用封闭配置，适用于无菌或生物负载控制的条件。\n为了引入缓冲器，只需要一个额外的外部连接端口。这允许连续渗滤，而不会显着增加操作员或过程控制的复杂性。这项工作提供了超滤和渗滤应用数据，使用牛血清白蛋白（BSA）作为模型蛋白质和使用自动化实验室规模处理系统处理的真实抗体，以进行可重复的数据收集。根据不同工艺参数（即进料蛋白浓度、进料流速和渗滤体积）下的缓冲液交换效率、跨膜压力（TMP）和渗透通量速率来评估工艺性能。观察到与传统再循环渗滤相似的缓冲液消耗，在渗滤体积低于 3 时甚至减少了缓冲液消耗。缓冲液交换值的范围很宽，具体取决于工艺参数，而相关设置在使用 BSA 和 mAb 时，在 50 至 350 mbar 之间相对较低的 TMP 下，在例如 3、5 或 7 个渗滤体积下实现了约 97 至 >99% 的缓冲液交换。\n使用大约 3 至 80 g/L 的 BSA 和 mAb 蛋白浓度时，典型的渗透率值和进料流速分别为 10 至 60 L/(m2h) 和 1 至 7 L/(m2h)，并且很大程度上取决于设定的工艺参数。数据展示了这一新的 SPTFF 概念如何有助于集约化和连续的生物制造。",
-      "translate_provider": "",
-      "score": 6,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42231136/",
-      "doi_url": "https://doi.org/10.1002/btpr.88501"
-    },
     "43067544": {
       "pmid": "43067544",
       "title": "Mitigating artificial oxidation during liquid chromatography fractionation of therapeutic proteins.",
@@ -1883,7 +1796,7 @@
       "language": "eng",
       "title_zh": "减轻治疗性蛋白质的液相色谱分离过程中的人工氧化。",
       "abstract_zh": "治疗性蛋白质本质上是异质的，需要对各个变体进行色谱分离以进行深入表征。然而，传统的液相色谱 (LC) 分级可能会通过检测器中的紫外线照射引入人工氧化，从而混淆关键质量属性 (CQA) 的分析。在这里，我们描述了一种新的阳离子交换 HPLC (CEX-HPLC) 分馏方法，该方法在整个过程中将蛋氨酸作为在线氧化清除剂。这种方法显着减少了紫外线引起的氧化伪影，从而能够准确表征氧化敏感残留物并保留所收集组分的生物活性。使用 IgG1 单克隆抗体作为模型，添加蛋氨酸的分级分离显着抑制了分离级分中的互补决定区 (CDR) 氧化，并相对于传统分级分离方法保留了其结合效力。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 5,
       "source": "PubMed",
       "source_url": "",
