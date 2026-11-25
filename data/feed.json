@@ -1,216 +1,255 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-24 05:44:04",
+  "generated_at": "2026-11-25 04:46:30",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 68,
+  "total_articles": 69,
   "calendar": {
     "2026-08-04": [
-      "42894435"
+      "43077114"
     ],
     "2026-08-05": [
-      "42679766"
+      "42894435"
     ],
     "2026-08-06": [
-      "43031466"
+      "42679766"
     ],
     "2026-08-07": [
-      "42992892"
+      "43031466"
     ],
     "2026-08-10": [
-      "42969221"
+      "42992892"
     ],
     "2026-08-11": [
-      "42906176"
+      "42969221"
     ],
     "2026-08-12": [
-      "42822555"
+      "42906176"
     ],
     "2026-08-13": [
-      "42737515"
+      "42822555"
     ],
     "2026-08-14": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-17": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-18": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-19": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-20": [
-      "42687332"
+      "42415185"
     ],
     "2026-08-21": [
-      "42563142"
+      "42687332"
     ],
     "2026-08-24": [
-      "42402251"
+      "42563142"
     ],
     "2026-08-25": [
-      "42323147"
+      "42402251"
     ],
     "2026-08-26": [
-      "42962190"
+      "42323147"
     ],
     "2026-08-27": [
-      "42834531"
+      "43074657"
     ],
     "2026-08-28": [
-      "42570623"
+      "42962190"
     ],
     "2026-08-31": [
-      "42470740"
+      "42834531"
     ],
     "2026-09-01": [
-      "42368154"
+      "42570623"
     ],
     "2026-09-02": [
-      "42346963"
+      "42470740"
     ],
     "2026-09-03": [
-      "42307050"
+      "42368154"
     ],
     "2026-09-04": [
-      "42276211"
+      "42346963"
     ],
     "2026-09-07": [
-      "43062593"
+      "42307050"
     ],
     "2026-09-08": [
-      "43061969"
+      "42276211"
     ],
     "2026-09-09": [
-      "43051413"
+      "43062593"
     ],
     "2026-09-10": [
-      "42982626"
+      "43061969"
     ],
     "2026-09-11": [
-      "42951158"
+      "43051413"
     ],
     "2026-09-14": [
-      "42773271"
+      "42982626"
     ],
     "2026-09-15": [
-      "42768232"
+      "42951158"
     ],
     "2026-09-16": [
-      "42745724"
+      "42773271"
     ],
     "2026-09-17": [
-      "42655115"
+      "42768232"
     ],
     "2026-09-18": [
-      "42645420"
+      "42745724"
     ],
     "2026-09-21": [
-      "42489360"
+      "42655115"
     ],
     "2026-09-22": [
-      "42450443"
+      "42645420"
     ],
     "2026-09-23": [
-      "42376876"
+      "42489360"
     ],
     "2026-09-24": [
-      "42332429"
+      "42450443"
     ],
     "2026-09-25": [
-      "42292894"
+      "42376876"
     ],
     "2026-09-28": [
-      "43067544"
+      "42332429"
     ],
     "2026-09-29": [
-      "43049398"
+      "42292894"
     ],
     "2026-09-30": [
-      "42969552"
+      "43067544"
     ],
     "2026-10-01": [
-      "42958438"
+      "43049398"
     ],
     "2026-10-02": [
-      "42915931"
+      "42969552"
     ],
     "2026-10-05": [
-      "42864475"
+      "42958438"
     ],
     "2026-10-06": [
-      "42754776"
+      "42915931"
     ],
     "2026-10-07": [
-      "42725489"
+      "42864475"
     ],
     "2026-10-08": [
-      "42652006"
+      "42754776"
     ],
     "2026-10-09": [
-      "42546983"
+      "42725489"
     ],
     "2026-10-12": [
-      "42429162"
+      "42652006"
     ],
     "2026-10-13": [
-      "42414861"
+      "42546983"
     ],
     "2026-10-14": [
-      "42345899"
+      "42429162"
     ],
     "2026-10-15": [
-      "42273649"
+      "42414861"
     ],
     "2026-10-16": [
-      "42911708"
+      "42345899"
     ],
     "2026-10-19": [
-      "42896357"
+      "42273649"
     ],
     "2026-10-20": [
-      "42862297"
+      "42911708"
     ],
     "2026-10-21": [
-      "42825421"
+      "42896357"
     ],
     "2026-10-22": [
-      "42799870"
+      "42862297"
     ],
     "2026-10-23": [
-      "42794422"
+      "42825421"
     ],
     "2026-10-26": [
-      "42667144"
+      "42799870"
     ],
     "2026-10-27": [
-      "42568918"
+      "42794422"
     ],
     "2026-10-28": [
-      "42554770"
+      "42667144"
     ],
     "2026-10-29": [
-      "42487284"
+      "42568918"
     ],
     "2026-10-30": [
-      "42458707"
+      "42554770"
     ],
     "2026-11-02": [
-      "42449784"
+      "42487284"
     ],
     "2026-11-03": [
-      "42285912"
+      "42458707"
     ],
     "2026-11-04": [
-      "42276533"
+      "42449784"
     ],
     "2026-11-05": [
-      "42272446"
+      "42285912"
+    ],
+    "2026-11-06": [
+      "42276533"
     ]
   },
   "articles": {
+    "43077114": {
+      "pmid": "43077114",
+      "title": "Grafting monoclonal antibody expressing transgenic tobacco onto tomato rootstocks reduces alkaloid load and benefits downstream protein A affinity chromatography.",
+      "abstract": "Endogenous secondary metabolite levels in tobacco plants can be significantly reduced by grafting onto non-tobacco rootstock. This is a convenient way to simplify downstream processing for plant molecular farming applications. Plants of the Nicotiana genus are commonly used for the production of recombinant products, including proteins and small molecules. The presence of potentially toxic natural alkaloids, the most important being nicotine, presents a challenge however, for downstream processing and manufacturability. Here, we combine current \"molecular farming\" technology for monoclonal antibody expression with the traditional practice of grafting and demonstrate that transgenic N. tabacum plants can be grown on Solanum lycopersicum root stocks, to significantly reduce alkaloid levels in leaf tissues. Nicotine levels in extracts from leaves from grafted plants were 3-43 mg/kg compared to 396-483 mg/kg in non-grafted plants. Similar results were observed for nornicotine, anatabine, anabasine, and pseudoxynicotine. The grafting process did not affect the quality or quantity of the expressed recombinant monoclonal antibody. In a model system for Protein A affinity purification of the monoclonal antibody, the binding capacity of Protein A was shown to decline to 70% under repeated cycles of use and regeneration using extracts from plants with normal alkaloid content, but the binding capacity was unchanged using extracts from grafted plants with reduced nicotinoids, under the same conditions.",
+      "authors": [
+        "Mathew Paul",
+        "Tuulikki Seppänen-Laakso",
+        "Anneli Ritala",
+        "Julian K-C Ma"
+      ],
+      "journal": "Planta",
+      "journal_abbr": "Planta",
+      "pub_date": "2026-11-24",
+      "entrez_date": "2026-11-24",
+      "doi": "10.1007/s00425-026-05226-1",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Nicotiana tabacum",
+        "Fouling",
+        "Nicotine",
+        "Purification"
+      ],
+      "affiliation": "Hotung Molecular Immunology Laboratory, Institute for Infection and Immunity, School of Health and Medical Sciences, City St. George's University of London, London, UK.",
+      "language": "eng",
+      "title_zh": "将表达转基因烟草的单克隆抗体嫁接到番茄砧木上可减少生物碱含量，有利于下游的 Protein A 亲和层析。",
+      "abstract_zh": "通过嫁接到非烟草砧木上可以显着降低烟草植物中的内源次生代谢物水平。这是简化植物分子农业应用下游加工的便捷方法。烟草属植物通常用于生产重组产品，包括蛋白质和小分子。然而，潜在有毒的天然生物碱（最重要的是尼古丁）的存在给下游加工和制造带来了挑战。在这里，我们将当前用于单克隆抗体表达的“分子农业”技术与传统的嫁接实践相结合，并证明转基因烟草植物可以在番茄根茎上生长，以显着降低叶组织中的生物碱水平。嫁接植物叶子提取物中的尼古丁含量为 3-43 毫克/千克，而非嫁接植物的尼古丁含量为 396-483 毫克/千克。对于降烟碱、新烟碱、新烟碱和假烟碱也观察到类似的结果。嫁接过程不影响表达的重组单克隆抗体的质量或数量。\n在单克隆抗体的 Protein A 亲和纯化模型系统中，使用生物碱含量正常的植物提取物重复使用和再生循环后，Protein A 的结合能力下降至 70%，但在相同条件下，使用烟碱类减少的嫁接植物提取物时，结合能力没有变化。",
+      "translate_provider": "google",
+      "score": 11,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43077114/",
+      "doi_url": "https://doi.org/10.1007/s00425-026-05226-1"
+    },
     "42894435": {
       "pmid": "42894435",
       "title": "Feasibility Assessment of a Single-pH Connected Polishing Train for Monoclonal Antibody Purification Using Mildly Acidic Protein A Elution and an Acidic-Window Anion Exchange Membrane.",
@@ -876,6 +915,52 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42323147/",
       "doi_url": "https://doi.org/10.1016/j.ejpb.2026.115160"
+    },
+    "43074657": {
+      "pmid": "43074657",
+      "title": "High-Performance Antigen Affinity Chromatography of Monoclonal Antibodies in One- and Multidimensional Configurations.",
+      "abstract": "The development of monoclonal antibody (mAb) therapeutics requires a thorough understanding of their structure and function. Current target binding assays do not enable direct analysis of the structural composition of the analytes, therefore requiring additional analytics to study the root-cause of impaired drug potency. Here, high-performance analytical affinity chromatography (HPAC) is established as an effective functional separation tool for resolving mAb proteoforms based on interaction strength with their antigen. When coupled to mass spectrometry (MS), HPAC enables simultaneous measurement of target binding affinity and structural attributes, facilitating identification of critical quality attributes (CQAs). Integration of HPAC into multidimensional liquid chromatography (mD-LC) workflows further expands its utility, providing automated multi-attribute analysis within a unified workflow. Trastuzumab was selected as a representative system due to its well-characterized, high-affinity binding to the human epidermal growth factor receptor 2 (HER2). Narrow-bore HPAC columns (2.1 × 20 mm; 3.5 μm) with immobilized HER2 were developed and evaluated under various chromatographic conditions. The analytical performance of the method was assessed using temperature-stressed trastuzumab, exhibiting reduced potency due to aspartate isomerization in heavy chain complementarity determining region 3 (CDR3). The feasibility of one-dimensional (1D) HER2-HPAC-MS for intact- and Fab-level functional profiling of mAb proteoforms is first demonstrated. Building on this capability, a two-dimensional (2D) workflow coupling cation exchange chromatography (CEX) to HPAC enables automated functional characterization of charge variants. Finally, incorporation of HPAC into an online mD-LC-MS workflow supports fully automated middle-up and bottom-up analyses, linking affinity differences directly to unambiguous identification of post-translational modifications (PTMs).",
+      "authors": [
+        "Jelle De Vos",
+        "Evert Van Hoestenberghe",
+        "Liesa Verscheure",
+        "Katharina Kopp",
+        "Beatrice Muriithi",
+        "Fabrice Gritti",
+        "Kevin Wyndham",
+        "Pat Sandra",
+        "Frederic Lynen",
+        "Urs Lohrig",
+        "Christian Graf",
+        "Koen Sandra"
+      ],
+      "journal": "Analytical chemistry",
+      "journal_abbr": "Anal Chem",
+      "pub_date": "2026-11-24",
+      "entrez_date": "2026-11-24",
+      "doi": "10.1021/acs.analchem.6c04217",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "HER2",
+        "affinity chromatography",
+        "mass spectrometry",
+        "monoclonal antibodies",
+        "multidimensional liquid chromatography",
+        "structure−function"
+      ],
+      "affiliation": "RIC group, President Kennedypark 6Kortrijk8500, Belgium.",
+      "language": "eng",
+      "title_zh": "一维和多维配置单克隆抗体的高效抗原亲和色谱。",
+      "abstract_zh": "单克隆抗体 (mAb) 疗法的开发需要对其结构和功能有透彻的了解。目前的靶标结合测定无法直接分析分析物的结构组成，因此需要额外的分析来研究药物效力受损的根本原因。在这里，高性能分析亲和层析 (HPAC) 被确立为一种有效的功能分离工具，用于根据与抗原的相互作用强度来解析 mAb 蛋白质形式。当与质谱 (MS) 结合时，HPAC 能够同时测量目标结合亲和力和结构属性，从而促进关键质量属性 (CQA) 的识别。将 HPAC 集成到多维液相色谱 (mD-LC) 工作流程中进一步扩展了其实用性，在统一的工作流程中提供自动化的多属性分析。曲妥珠单抗因其与人表皮生长因子受体 2 (HER2) 的良好特性、高亲和力结合而被选为代表性系统。窄孔 HPAC 色谱柱（2.1 × 20 mm；\n固定化 HER2 的 3.5 μm）在各种色谱条件下进行开发和评估。使用温度应激的曲妥珠单抗评估该方法的分析性能，由于重链互补决定区 3 (CDR3) 中的天冬氨酸异构化而表现出效力降低。首次证明了一维 (1D) HER2-HPAC-MS 对 mAb 蛋白质形式进行完整和 Fab 水平功能分析的可行性。在此功能的基础上，将阳离子交换色谱 (CEX) 与 HPAC 耦合的二维 (2D) 工作流程可实现电荷变体的自动功能表征。最后，将 HPAC 纳入在线 mD-LC-MS 工作流程支持全自动的中上和自下而上分析，将亲和力差异直接与翻译后修饰 (PTM) 的明确识别联系起来。",
+      "translate_provider": "google",
+      "score": 7,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43074657/",
+      "doi_url": "https://doi.org/10.1021/acs.analchem.6c04217"
     },
     "42962190": {
       "pmid": "42962190",
@@ -2857,43 +2942,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42276533/",
       "doi_url": "https://doi.org/10.1016/j.pep.2026.106958"
-    },
-    "42272446": {
-      "pmid": "42272446",
-      "title": "Advances in the use of DNA aptamers for bioanalysis of antibody-based therapeutics.",
-      "abstract": "Nucleic acid aptamers are single-stranded oligonucleotides that fold into defined three-dimensional structures and bind molecular targets with high affinity and specificity. Because aptamers are sequence-defined, chemically synthesized reagents, they offer high purity, minimal lot-to-lot variability, and flexible functionalization, positioning them as practical alternatives or complements to antibody-based critical reagents in regulated bioanalysis. This review summarizes the current landscape of DNA aptamer-enabled bioanalysis for therapeutic monoclonal antibodies (mAbs) and antibody-drug conjugates (ADCs), with emphasis on three application areas: (i) ELISA-compatible ligand-binding assays, (ii) immunocapture workflows coupled to liquid chromatography-tandem mass spectrometry or LC-based measurements, and (iii) aptamer-based biosensors for bioanalysis and process analytics. This review highlights key considerations in aptamer acquisition (SELEX design, partitioning, and counter-selection to improve anti-idiotype selectivity) and illustrates representative assay configurations, including drug-to-antibody ratio-responsive formats for ADCs and ratiometric/electrochemical and fluorescence resonance energy transfer-based aptasensors for on-site monitoring. Finally, this review discusses future directions, notably coupling aptamer binding to nucleic acid amplification for ultra-sensitive quantification, and practical challenges, such as nuclease susceptibility, nonspecific interactions with serum proteins, and structure-dependent robustness that must be addressed under fit-for-purpose validation frameworks.",
-      "authors": [
-        "Kenichiro Todoroki"
-      ],
-      "journal": "Bioanalysis",
-      "journal_abbr": "Bioanalysis",
-      "pub_date": "2026-06-11",
-      "entrez_date": "2026-06-11",
-      "doi": "10.1080/17576180.2026.2687593",
-      "publication_types": [
-        "Journal Article",
-        "Review"
-      ],
-      "keywords": [
-        "LC–MS/MS",
-        "Nucleic acid aptamers",
-        "antibody–drug conjugate",
-        "aptasensor",
-        "bioanalysis",
-        "ligand-binding assay",
-        "therapeutic monoclonal antibody"
-      ],
-      "affiliation": "Laboratory of Analytical and Bio-Analytical Chemistry, School of Pharmaceutical Sciences, University of Shizuoka, Shizuoka, Japan.",
-      "language": "eng",
-      "title_zh": "使用 DNA 适体进行抗体疗法生物分析的进展。",
-      "abstract_zh": "核酸适体是单链寡核苷酸，可折叠成确定的三维结构并以高亲和力和特异性结合分子靶标。由于适体是序列定义的化学合成试剂，因此它们具有高纯度、最小批次变异性和灵活的功能化，使其成为受监管生物分析中基于抗体的关键试剂的实用替代品或补充。本综述总结了目前用于治疗性单克隆抗体 (mAb) 和抗体药物偶联物 (ADC) 的 DNA 适体生物分析的前景，重点关注三个应用领域：(i) ELISA 兼容的配体结合测定，(ii) 与液相色谱-串联质谱或基于 LC 的测量相结合的免疫捕获工作流程，以及 (iii) 用于生物分析和过程分析的基于适体的生物传感器。\n本综述重点介绍了适体采集中的关键考虑因素（SELEX 设计、分区和反选择以提高抗独特型选择性），并说明了代表性的测定配置，包括 ADC 的药物与抗体比率响应格式以及用于现场监测的基于比率/电化学和荧光共振能量转移的适体传感器。最后，这篇综述讨论了未来的方向，特别是将适配体结合到核酸扩增上以实现超灵敏定量，以及实际挑战，例如核酸酶敏感性、与血清蛋白的非特异性相互作用以及必须在适合目的的验证框架下解决的结构依赖性稳健性。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42272446/",
-      "doi_url": "https://doi.org/10.1080/17576180.2026.2687593"
     }
   }
 }
