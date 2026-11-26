@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25 04:46:30",
+  "generated_at": "2026-11-26 03:56:53",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
   "total_articles": 69,
@@ -15,202 +15,202 @@
       "42679766"
     ],
     "2026-08-07": [
-      "43031466"
+      "43083207"
     ],
     "2026-08-10": [
-      "42992892"
+      "43031466"
     ],
     "2026-08-11": [
-      "42969221"
+      "42992892"
     ],
     "2026-08-12": [
-      "42906176"
+      "42969221"
     ],
     "2026-08-13": [
-      "42822555"
+      "42906176"
     ],
     "2026-08-14": [
-      "42737515"
+      "42822555"
     ],
     "2026-08-17": [
-      "42586433"
+      "42737515"
     ],
     "2026-08-18": [
-      "42496057"
+      "42586433"
     ],
     "2026-08-19": [
-      "42415423"
+      "42496057"
     ],
     "2026-08-20": [
-      "42415185"
+      "42415423"
     ],
     "2026-08-21": [
-      "42687332"
+      "42415185"
     ],
     "2026-08-24": [
-      "42563142"
+      "43081712"
     ],
     "2026-08-25": [
-      "42402251"
+      "42687332"
     ],
     "2026-08-26": [
-      "42323147"
+      "42563142"
     ],
     "2026-08-27": [
-      "43074657"
+      "42402251"
     ],
     "2026-08-28": [
-      "42962190"
+      "42323147"
     ],
     "2026-08-31": [
-      "42834531"
+      "43074657"
     ],
     "2026-09-01": [
-      "42570623"
+      "42962190"
     ],
     "2026-09-02": [
-      "42470740"
+      "42834531"
     ],
     "2026-09-03": [
-      "42368154"
+      "42570623"
     ],
     "2026-09-04": [
-      "42346963"
+      "42470740"
     ],
     "2026-09-07": [
-      "42307050"
+      "42368154"
     ],
     "2026-09-08": [
-      "42276211"
+      "42346963"
     ],
     "2026-09-09": [
-      "43062593"
+      "42307050"
     ],
     "2026-09-10": [
-      "43061969"
+      "43062593"
     ],
     "2026-09-11": [
-      "43051413"
+      "43061969"
     ],
     "2026-09-14": [
-      "42982626"
+      "43051413"
     ],
     "2026-09-15": [
-      "42951158"
+      "42982626"
     ],
     "2026-09-16": [
-      "42773271"
+      "42951158"
     ],
     "2026-09-17": [
-      "42768232"
+      "42773271"
     ],
     "2026-09-18": [
-      "42745724"
+      "42768232"
     ],
     "2026-09-21": [
-      "42655115"
+      "42745724"
     ],
     "2026-09-22": [
-      "42645420"
+      "42655115"
     ],
     "2026-09-23": [
-      "42489360"
+      "42645420"
     ],
     "2026-09-24": [
-      "42450443"
+      "42489360"
     ],
     "2026-09-25": [
-      "42376876"
+      "42450443"
     ],
     "2026-09-28": [
-      "42332429"
+      "42376876"
     ],
     "2026-09-29": [
-      "42292894"
+      "42332429"
     ],
     "2026-09-30": [
-      "43067544"
+      "42292894"
     ],
     "2026-10-01": [
-      "43049398"
+      "43067544"
     ],
     "2026-10-02": [
-      "42969552"
+      "43049398"
     ],
     "2026-10-05": [
-      "42958438"
+      "42969552"
     ],
     "2026-10-06": [
-      "42915931"
+      "42958438"
     ],
     "2026-10-07": [
-      "42864475"
+      "42915931"
     ],
     "2026-10-08": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-09": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-12": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-13": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-14": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-15": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-16": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-19": [
-      "42273649"
+      "42345899"
     ],
     "2026-10-20": [
-      "42911708"
+      "43083725"
     ],
     "2026-10-21": [
-      "42896357"
+      "42911708"
     ],
     "2026-10-22": [
-      "42862297"
+      "42896357"
     ],
     "2026-10-23": [
-      "42825421"
+      "42862297"
     ],
     "2026-10-26": [
-      "42799870"
+      "42825421"
     ],
     "2026-10-27": [
-      "42794422"
+      "42799870"
     ],
     "2026-10-28": [
-      "42667144"
+      "42794422"
     ],
     "2026-10-29": [
-      "42568918"
+      "42667144"
     ],
     "2026-10-30": [
-      "42554770"
+      "42568918"
     ],
     "2026-11-02": [
-      "42487284"
+      "42554770"
     ],
     "2026-11-03": [
-      "42458707"
+      "42487284"
     ],
     "2026-11-04": [
-      "42449784"
+      "42458707"
     ],
     "2026-11-05": [
-      "42285912"
+      "42449784"
     ],
     "2026-11-06": [
-      "42276533"
+      "42285912"
     ]
   },
   "articles": {
@@ -242,7 +242,7 @@
       "language": "eng",
       "title_zh": "将表达转基因烟草的单克隆抗体嫁接到番茄砧木上可减少生物碱含量，有利于下游的 Protein A 亲和层析。",
       "abstract_zh": "通过嫁接到非烟草砧木上可以显着降低烟草植物中的内源次生代谢物水平。这是简化植物分子农业应用下游加工的便捷方法。烟草属植物通常用于生产重组产品，包括蛋白质和小分子。然而，潜在有毒的天然生物碱（最重要的是尼古丁）的存在给下游加工和制造带来了挑战。在这里，我们将当前用于单克隆抗体表达的“分子农业”技术与传统的嫁接实践相结合，并证明转基因烟草植物可以在番茄根茎上生长，以显着降低叶组织中的生物碱水平。嫁接植物叶子提取物中的尼古丁含量为 3-43 毫克/千克，而非嫁接植物的尼古丁含量为 396-483 毫克/千克。对于降烟碱、新烟碱、新烟碱和假烟碱也观察到类似的结果。嫁接过程不影响表达的重组单克隆抗体的质量或数量。\n在单克隆抗体的 Protein A 亲和纯化模型系统中，使用生物碱含量正常的植物提取物重复使用和再生循环后，Protein A 的结合能力下降至 70%，但在相同条件下，使用烟碱类减少的嫁接植物提取物时，结合能力没有变化。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 11,
       "source": "PubMed",
       "source_url": "",
@@ -327,6 +327,47 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42679766/",
       "doi_url": "https://doi.org/10.1016/j.jchromb.2026.125273"
+    },
+    "43083207": {
+      "pmid": "43083207",
+      "title": "Mechanistic Insights into Aggregation Form Elimination of Cation Exchange Membrane Chromatography.",
+      "abstract": "In the field of monoclonal antibody (mAb) therapeutics, protein aggregates can significantly impact drug safety and efficacy. In standard industrial production, downstream purification processes often rely on cation-exchange chromatography (CEX) as a robust method for removing aggregates with a binding-elution mode using resin. However, this conventional approach can paradoxically trigger aggregate formation, which creates a critical bottleneck in production for certain molecules. In this study, experimental comparison revealed that switching to cation-exchange membrane chromatography effectively avoided the net HMW increase observed with the resin-based process. We hypothesize that mass transfer in conventional resins relies on diffusion, which leads to a non-uniform distribution of the sample within the column. This heterogeneity can cause localized regions of extremely high concentrations, thereby inducing aggregation for concentration-sensitive molecules. Most importantly, it suggests membrane chromatography as a promising solution for purifying concentration-sensitive proteins, avoiding the net HMW increase even under high-concentration processing conditions. It should be noted that this study was performed with a single concentration-sensitive IgG1 molecule, and the proposed mechanism remains a working hypothesis; applicability to molecules with different pI values or binding behaviors requires further evaluation.",
+      "authors": [
+        "Lan Wei",
+        "Xiaoyang Wang",
+        "Yubin Ding",
+        "Shan Ren",
+        "Shujing Wang",
+        "Tiejun Li",
+        "Kai Gao",
+        "Puya Zhao"
+      ],
+      "journal": "Membranes",
+      "journal_abbr": "Membranes (Basel)",
+      "pub_date": "2026-11-10",
+      "entrez_date": "2026-11-25",
+      "doi": "10.3390/membranes16110384",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "aggregates",
+        "binding–elution mode",
+        "cation-exchange chromatography",
+        "host cell protein",
+        "membrane chromatography"
+      ],
+      "affiliation": "Shanghai Asymchem Biotechnology Co., Ltd., Building 7, No. 12 and Building 8, No. 15, Lane 855, Jinzheng Road, Jinshan Industrial Park, Shanghai 201507, China.",
+      "language": "eng",
+      "title_zh": "阳离子交换膜色谱聚集形式消除的机理见解。",
+      "abstract_zh": "在单克隆抗体 (mAb) 治疗领域，蛋白质聚集体可以显着影响药物的安全性和疗效。在标准工业生产中，下游纯化过程通常依赖于阳离子交换色谱 (CEX) 作为使用树脂通过结合洗脱模式去除聚集体的可靠方法。然而，这种传统方法可能会矛盾地引发聚集体形成，从而在某些分子的生产中造成关键瓶颈。在这项研究中，实验比较表明，改用阳离子交换膜色谱法可以有效避免基于树脂的工艺中观察到的净 HMW 增加。我们假设传统树脂中的传质依赖于扩散，这导致样品在柱内分布不均匀。这种异质性会导致局部区域浓度极高，从而诱导浓度敏感分子聚集。最重要的是，它表明膜色谱法是一种有前途的纯化浓度敏感蛋白质的解决方案，即使在高浓度处理条件下也能避免净 HMW 增加。\n值得注意的是，这项研究是用单一浓度敏感的 IgG1 分子进行的，所提出的机制仍然是一个工作假设；对于具有不同 pI 值或结合行为的分子的适用性需要进一步评估。",
+      "translate_provider": "google",
+      "score": 9,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43083207/",
+      "doi_url": "https://doi.org/10.3390/membranes16110384"
     },
     "43031466": {
       "pmid": "43031466",
@@ -745,6 +786,45 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42415185/",
       "doi_url": "https://doi.org/10.1002/btpr.88537"
     },
+    "43081712": {
+      "pmid": "43081712",
+      "title": "A Three-Level Hierarchical Calibration Framework Enables Robust Mechanistic Modeling of Multi-Component Protein Ion-Exchange Chromatography.",
+      "abstract": "Mechanistic modeling is increasingly important for enabling predictive understanding and optimization of biopharmaceutical purification processes. However, the practical application of advanced mechanistic models remains challenging because of complex model structures, high-dimensional parameter spaces, and limited parameter identifiability, particularly for multi-component protein systems. In this study a three-level hierarchical calibration framework was developed for the colloidal particle adsorption (CPA) model used in ion-exchange chromatography (IEC), integrating parameter-, model-, and component-level hierarchies to systematically manage calibration complexity. Rather than simultaneously estimating all model parameters, the proposed framework progressively incorporates parameter-, model-, and component-level complexity, thereby transforming the high-dimensional inverse calibration problem into a sequence of more tractable calibration tasks. The framework was first established using a bispecific antibody monomer-dimer system over a broad range of loading densities (10-60 g/L). The hierarchically calibrated non-lateral CPA (nlCPA) and full CPA models accurately reproduced the experimental elution profiles, with the full CPA model providing improved prediction under high loading conditions where lateral protein-protein interactions became relevant. The transferability of the framework was further evaluated using an independent literature-reported monoclonal antibody monomer-dimer dataset involving a different antibody-resin system, achieving an average normalized root mean square error of 0.192 for the multi-component system. This work establishes a systematic strategy for calibrating complex mechanistic models in protein chromatography and demonstrates how hierarchical model calibration can facilitate the application of predictive modeling approaches to complex bioprocess development and optimization.",
+      "authors": [
+        "Yu-Xin Liao",
+        "Yu-Bing Ma",
+        "Bai-Sheng Jin",
+        "Jian-Qiu Mi",
+        "Shan-Jing Yao",
+        "Dong-Qiang Lin"
+      ],
+      "journal": "Biotechnology and bioengineering",
+      "journal_abbr": "Biotechnol Bioeng",
+      "pub_date": "2026-11-25",
+      "entrez_date": "2026-11-25",
+      "doi": "10.1002/bit.70454",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "colloidal particle adsorption model",
+        "hierarchical calibration",
+        "ion‐exchange chromatography",
+        "parameter identifiability",
+        "protein chromatography"
+      ],
+      "affiliation": "Key Laboratory of Biomass Chemical Engineering of Ministry of Education, Zhejiang Key Laboratory of Smart Biomaterials, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou, Zhejiang, China.",
+      "language": "eng",
+      "title_zh": "三级分层校准框架可实现多组分蛋白质离子交换色谱的稳健机械建模。",
+      "abstract_zh": "机理建模对于实现生物制药纯化过程的预测性理解和优化变得越来越重要。然而，由于复杂的模型结构、高维参数空间和有限的参数可识别性，先进机械模型的实际应用仍然具有挑战性，特别是对于多组分蛋白质系统。在本研究中，为离子交换色谱 (IEC) 中使用的胶体颗粒吸附 (CPA) 模型开发了三级分层校准框架，集成了参数级、模型级和组分级层次结构，以系统地管理校准复杂性。所提出的框架不是同时估计所有模型参数，而是逐步合并参数、模型和组件级别的复杂性，从而将高维逆校准问题转化为一系列更容易处理的校准任务。该框架首先使用双特异性抗体单体-二聚体系统在广泛的负载密度（10-60 g/L）范围内建立。\n分层校准的非横向 CPA (nlCPA) 和完整 CPA 模型准确地再现了实验洗脱曲线，完整 CPA 模型在横向蛋白质-蛋白质相互作用变得相关的高负载条件下提供了改进的预测。使用涉及不同抗体-树脂系统的独立文献报道的单克隆抗体单体-二聚体数据集进一步评估了框架的可转移性，多组分系统的平均归一化均方根误差为0.192。这项工作建立了一种用于校准蛋白质色谱中复杂机械模型的系统策略，并演示了分层模型校准如何促进预测建模方法在复杂生物过程开发和优化中的应用。",
+      "translate_provider": "google",
+      "score": 8,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43081712/",
+      "doi_url": "https://doi.org/10.1002/bit.70454"
+    },
     "42687332": {
       "pmid": "42687332",
       "title": "DNA concentration in harvest affects retrovirus clearance capabilities of protein A chromatography.",
@@ -954,7 +1034,7 @@
       "language": "eng",
       "title_zh": "一维和多维配置单克隆抗体的高效抗原亲和色谱。",
       "abstract_zh": "单克隆抗体 (mAb) 疗法的开发需要对其结构和功能有透彻的了解。目前的靶标结合测定无法直接分析分析物的结构组成，因此需要额外的分析来研究药物效力受损的根本原因。在这里，高性能分析亲和层析 (HPAC) 被确立为一种有效的功能分离工具，用于根据与抗原的相互作用强度来解析 mAb 蛋白质形式。当与质谱 (MS) 结合时，HPAC 能够同时测量目标结合亲和力和结构属性，从而促进关键质量属性 (CQA) 的识别。将 HPAC 集成到多维液相色谱 (mD-LC) 工作流程中进一步扩展了其实用性，在统一的工作流程中提供自动化的多属性分析。曲妥珠单抗因其与人表皮生长因子受体 2 (HER2) 的良好特性、高亲和力结合而被选为代表性系统。窄孔 HPAC 色谱柱（2.1 × 20 mm；\n固定化 HER2 的 3.5 μm）在各种色谱条件下进行开发和评估。使用温度应激的曲妥珠单抗评估该方法的分析性能，由于重链互补决定区 3 (CDR3) 中的天冬氨酸异构化而表现出效力降低。首次证明了一维 (1D) HER2-HPAC-MS 对 mAb 蛋白质形式进行完整和 Fab 水平功能分析的可行性。在此功能的基础上，将阳离子交换色谱 (CEX) 与 HPAC 耦合的二维 (2D) 工作流程可实现电荷变体的自动功能表征。最后，将 HPAC 纳入在线 mD-LC-MS 工作流程支持全自动的中上和自下而上分析，将亲和力差异直接与翻译后修饰 (PTM) 的明确识别联系起来。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 7,
       "source": "PubMed",
       "source_url": "",
@@ -1228,50 +1308,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42307050/",
       "doi_url": "https://doi.org/10.1002/biot.70265"
-    },
-    "42276211": {
-      "pmid": "42276211",
-      "title": "Stabilization of spray-dried monoclonal antibody formulations with polymeric excipients.",
-      "abstract": "Spray drying is an emerging continuous manufacturing approach with significant potential for producing stable solid formulations of biologic drug products such as peptides, proteins and oligonucleotides. However, these sensitive molecules on exposure to thermal, shear, and interfacial stresses during spray drying may experience structural perturbations that compromise long-term stability. This study evaluated several polymeric excipients as stabilizers in spray-dried monoclonal antibody formulations and compared their performance with conventional sugar excipients, trehalose and mannitol. Formulations were prepared at a 1:1 (w/w) protein-to-excipient ratio and spray dried, and the resulting powders were subjected to accelerated storage at 40 °C. Particle size distribution, morphology, and residual moisture content were characterized. Protein physical stability and secondary structure were evaluated using size exclusion chromatography and solid-state Fourier transform infrared spectroscopy, respectively. Solid-state nuclear magnetic resonance spectroscopy and X-ray photoelectron spectroscopy were used to study protein-excipient phase miscibility and particle surface composition, respectively, in the spray-dried solids. Hydrolyzed gelatin provided the most robust stabilization of the mAb, resulting in a fivefold reduction in monomer loss compared to trehalose after 90 days storage at 40 °C. (2-Hydroxypropyl)-β-cyclodextrin showed stabilization comparable to trehalose while reducing the mAb surface exposure. High molecular weight polyvinylpyrrolidone (PVP K90) showed better mAb stabilization compared to its low molecular weight grade (PVP K30). Whereas dextran, sodium carboxymethyl cellulose, and hydroxypropyl methylcellulose were less effective in their ability to stabilize the mAb. These findings highlight the critical role of excipient selection in improving the stability of spray-dried monoclonal antibody formulations.",
-      "authors": [
-        "Chanakya D Patil",
-        "Kinnari Santosh Arte",
-        "Rachana Sapkota",
-        "Yijing Huang",
-        "Navin Kafle",
-        "Jiaying Liu",
-        "Eric J Munson",
-        "Harshil K Renawala",
-        "Qi Tony Zhou",
-        "Li Lily Qu"
-      ],
-      "journal": "Journal of pharmaceutical sciences",
-      "journal_abbr": "J Pharm Sci",
-      "pub_date": "2026-06-11",
-      "entrez_date": "2026-06-11",
-      "doi": "10.1016/j.xphs.2026.104360",
-      "publication_types": [
-        "Journal Article"
-      ],
-      "keywords": [
-        "Cyclodextrin(s)",
-        "Monoclonal antibody",
-        "Polymer(s)",
-        "Protein aggregation",
-        "Protein formulation",
-        "Spray drying"
-      ],
-      "affiliation": "Department of Industrial and Molecular Pharmaceutics, College of Pharmacy, Purdue University, West Lafayette, IN, USA.",
-      "language": "eng",
-      "title_zh": "使用聚合物赋形剂稳定喷雾干燥的单克隆抗体制剂。",
-      "abstract_zh": "喷雾干燥是一种新兴的连续生产方法，在生产肽、蛋白质和寡核苷酸等生物药品的稳定固体制剂方面具有巨大潜力。然而，这些敏感分子在喷雾干燥过程中暴露于热、剪切和界面应力时可能会经历结构扰动，从而损害长期稳定性。本研究评估了几种聚合物赋形剂作为喷雾干燥单克隆抗体制剂中的稳定剂，并将其与传统糖赋形剂、海藻糖和甘露醇的性能进行了比较。以 1:1 (w/w) 的蛋白质与赋形剂比例制备制剂并喷雾干燥，所得粉末在 40 °C 下加速储存。对粒度分布、形态和残余水分含量进行了表征。分别使用尺寸排阻色谱法和固态傅里叶变换红外光谱法评估蛋白质物理稳定性和二级结构。\n固态核磁共振波谱和 X 射线光电子能谱分别用于研究喷雾干燥固体中的蛋白质-赋形剂相混溶性和颗粒表面组成。水解明胶为 mAb 提供了最强大的稳定性，与海藻糖相比，在 40 °C 储存 90 天后，单体损失减少了五倍。 (2-羟丙基)-β-环糊精表现出与海藻糖相当的稳定性，同时减少了 mAb 表面暴露。与其低分子量等级 (PVP K30) 相比，高分子量聚乙烯吡咯烷酮 (PVP K90) 显示出更好的 mAb 稳定性。而葡聚糖、羧甲基纤维素钠和羟丙基甲基纤维素稳定 mAb 的能力较差。这些发现强调了赋形剂选择在提高喷雾干燥单克隆抗体制剂稳定性方面的关键作用。",
-      "translate_provider": "",
-      "score": 7,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42276211/",
-      "doi_url": "https://doi.org/10.1016/j.xphs.2026.104360"
     },
     "43062593": {
       "pmid": "43062593",
@@ -2347,43 +2383,45 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42345899/",
       "doi_url": "https://doi.org/10.3390/bios16060343"
     },
-    "42273649": {
-      "pmid": "42273649",
-      "title": "Aggregation Issues in Radioactive Copper-Labeled Antibodies.",
-      "abstract": "Radioimmunoconjugates, formed by attaching radionuclides to monoclonal antibodies (mAbs) either directly or through bifunctional chelators, have advanced precision oncology by enabling targeted molecular imaging and therapy. Copper radioisotopes have gained increasing attention due to their diverse decay properties and potential for both diagnostic and therapeutic applications. Among these, Cu-64 is an attractive radionuclide for immuno-positron emission tomography (immunoPET) and theranostic applications owing to its favorable production route. It is particularly suitable for labeling mAb and antibody-derived fragments for immunoPET imaging. However, radiolabeling antibodies presents unique challenges in product quality control (QC), with aggregation being a critical yet under-addressed parameter. This review introduces the importance of Cu-radioisotopes and discusses purification strategies of immunoconjugates for clinically acceptable products. The focus then shifts to aggregation: its physicochemical drivers, reported cases in the literature, and its impact on pharmacokinetics and immunogenicity. We evaluate aggregation detection methods, highlighting dynamic light scattering (DLS) as a sensitive, orthogonal QC tool complementing conventional size-exclusion high-performance liquid chromatography. The effectiveness of DLS is demonstrated by recent data showing its superior sensitivity in identifying hidden aggregates that inversely correlate with tumor uptake. Finally, we present approaches to minimize aggregation and discuss the importance of regulatory concern of aggregate limits.",
+    "43083725": {
+      "pmid": "43083725",
+      "title": "Recombinant Oligoclonal Antibody Botulinum Antitoxins Are a Low-Cost Alternative to Equine Antitoxin.",
+      "abstract": "We have developed highly potent botulinum neurotoxin (BoNT) antitoxins consisting of three mAbs that bind non-overlapping epitopes and act synergistically to neutralize and rapidly clear circulating toxin. The resulting potency permits a low total antibody dose for treatment (34 mg for a seven-serotype product under the assumptions used here). Based on this high potency, the cost of producing the drug substance per dose is relatively low relative to chronic, high-dose antibody therapeutics. Recombinant human IgG also provides a longer serum half-life than equine F(ab')2 antitoxin and therefore has potential for both treatment and prevention of botulism lasting for months. Here, we analyze the manufacturing costs of the recombinant antitoxin and the development costs of multivalent products and compare them to those of the currently approved equine-derived antitoxin. Approaches to reducing manufacturing complexity, including co-expression and co-purification, formulation, stockpiling, clinical use, analytical control, and multivalent antibody formats, are discussed. Our analysis indicates that recombinant oligoclonal BoNT antitoxins are not intrinsically cost-prohibitive and that development and overall manufacturing costs of Drug Product do not increase linearly with the number of serotypes covered.",
       "authors": [
-        "Muhammad Zeeshan",
-        "Huu Bao Nguyen",
-        "Jeongsoo Yoo"
+        "Shauna Farr-Jones",
+        "James D Marks",
+        "Milan T Tomic"
       ],
-      "journal": "Nuclear medicine and molecular imaging",
-      "journal_abbr": "Nucl Med Mol Imaging",
-      "pub_date": "2025-12-18",
-      "entrez_date": "2026-06-11",
-      "doi": "10.1007/s13139-025-00974-6",
+      "journal": "Toxins",
+      "journal_abbr": "Toxins (Basel)",
+      "pub_date": "2026-11-06",
+      "entrez_date": "2026-11-25",
+      "doi": "10.3390/toxins18110484",
       "publication_types": [
-        "Journal Article",
-        "Review"
+        "Journal Article"
       ],
       "keywords": [
-        "Aggregation",
-        "Copper-64",
-        "Dynamic light scattering",
-        "Monoclonal antibodies",
-        "Quality control",
-        "Radioimmunoconjugates"
+        "antitoxin",
+        "biodefense",
+        "biomanufacturing",
+        "botulinum neurotoxin",
+        "botulism",
+        "cost of goods",
+        "monoclonal antibody",
+        "oligoclonal antibody",
+        "polyclonal"
       ],
-      "affiliation": "Department of Molecular Medicine, BK21 FOUR KNU Convergence Educational Program, School of Medicine, Kyungpook National University, Daegu, 41944 Republic of Korea.",
+      "affiliation": "Department of Anesthesia and Perioperative Care, University of California, San Francisco, CA 94143, USA.",
       "language": "eng",
-      "title_zh": "放射性铜标记抗体的聚集问题。",
-      "abstract_zh": "放射免疫结合物是通过直接或通过双功能螯合剂将放射性核素附着到单克隆抗体 (mAb) 上而形成的，通过实现靶向分子成像和治疗，具有先进的精准肿瘤学。铜放射性同位素由于其不同的衰变特性以及诊断和治疗应用的潜力而受到越来越多的关注。其中，Cu-64 因其有利的生产路线而成为免疫正电子发射断层扫描 (immunoPET) 和治疗诊断应用中极具吸引力的放射性核素。它特别适合标记 mAb 和抗体衍生片段以进行免疫 PET 成像。然而，放射性标记抗体在产品质量控制 (QC) 方面提出了独特的挑战，其中聚集是一个关键但尚未得到充分解决的参数。本综述介绍了铜放射性同位素的重要性，并讨论了临床可接受产品的免疫偶联物的纯化策略。然后焦点转向聚集：其理化驱动因素、文献中报道的病例及其对药代动力学和免疫原性的影响。\n我们评估聚集检测方法，强调动态光散射 (DLS) 作为一种灵敏的正交 QC 工具，可补充传统尺寸排阻高性能液相色谱。最近的数据证明了 DLS 的有效性，显示其在识别与肿瘤摄取呈负相关的隐藏聚集体方面具有卓越的灵敏度。最后，我们提出了最小化聚合的方法，并讨论了聚合限制的监管关注的重要性。",
-      "translate_provider": "",
-      "score": 5,
+      "title_zh": "重组寡克隆抗体肉毒杆菌抗毒素是马抗毒素的低成本替代品。",
+      "abstract_zh": "我们开发了高效肉毒杆菌神经毒素 (BoNT) 抗毒素，由三种单克隆抗体组成，可结合非重叠表位并协同作用，中和并快速清除循环毒素。由此产生的效力允许较低的总抗体剂量进行治疗（根据此处使用的假设，七血清型产品为 34 mg）。基于这种高效力，相对于长期、高剂量的抗体疗法，每剂药物的生产成本相对较低。重组人 IgG 还提供比马 F(ab')2 抗毒素更长的血清半衰期，因此具有治疗和预防肉毒中毒持续数月的潜力。在这里，我们分析了重组抗毒素的制造成本和多价产品的开发成本，并将其与目前批准的马源抗毒素进行比较。讨论了降低制造复杂性的方法，包括共表达和共纯化、配方、储存、临床使用、分析控制和多价抗体形式。\n我们的分析表明，重组寡克隆 BoNT 抗毒素本质上成本并不高昂，并且药品的开发和总体制造成本并不随着所涵盖的血清型数量线性增加。",
+      "translate_provider": "google",
+      "score": 4,
       "source": "PubMed",
       "source_url": "",
       "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42273649/",
-      "doi_url": "https://doi.org/10.1007/s13139-025-00974-6"
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43083725/",
+      "doi_url": "https://doi.org/10.3390/toxins18110484"
     },
     "42911708": {
       "pmid": "42911708",
@@ -2901,47 +2939,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42285912/",
       "doi_url": "https://doi.org/10.1080/19420862.2026.2684393"
-    },
-    "42276533": {
-      "pmid": "42276533",
-      "title": "Comparative analysis of charge heterogeneity in anti-sclerostin monoclonal antibodies produced via continuous perfusion and fed-batch processes.",
-      "abstract": "As critical quality attributes, post-translational modifications (PTMs) of therapeutic monoclonal antibodies in production impact their structural stability, charge heterogeneity, and clinical efficacy. This study elucidated PTM-driven charge isomer disparities in anti-sclerostin monoclonal antibodies from continuous perfusion versus fed-batch bioreactor processes. By developing an integrated analytical platform combining strong cation-exchange chromatography, size-exclusion chromatography, and non-reducing capillary electrophoresis with high-resolution mass spectrometry, we precisely characterized molecular weight variations and signature PTM profiles across distinct charge isomers. The study revealed that basic isomer 1 predominantly originated from C-terminal glycine loss and methionine oxidation, while basic isomer 2 arose from incomplete N-terminal glutamine cyclization and N-terminal truncation. The fed-batch process uniquely induced degradation at the heavy chain Met250-Ile251 site and significantly elevated low-molecular-weight species content. Crucially, antibodies from both processes exhibited minimal differences in purity and PTM profiles, robustly validating the feasibility of process transition. Biological activity assessment results showed that the relative binding activities of charge isomers from both processes ranged between 90 and 121%. The equilibrium dissociation constant values for binding to the neonatal fragment crystallizable receptor were all within (5∼9) × 10-1 μM, indicating that FcRn function was unaffected by charge heterogeneity or the process. In summary, this study systematically compares the impact of two production processes-fed-batch and continuous perfusion-on the charge heterogeneity and biological activity of an anti-sclerostin monoclonal antibody. This work not only identifies key quality benchmarks for antibody process optimization but also establishes a PTM fingerprint-based standard for evaluating process comparability, providing critical guidance for advancing continuous biomanufacturing technologies.",
-      "authors": [
-        "Yu Yi",
-        "Dawei Xie",
-        "Xichen Zhang",
-        "Jianfeng Mei",
-        "Yanlu Zhang",
-        "Jianshu Chen",
-        "Guoqing Ying"
-      ],
-      "journal": "Protein expression and purification",
-      "journal_abbr": "Protein Expr Purif",
-      "pub_date": "2026-06-11",
-      "entrez_date": "2026-06-11",
-      "doi": "10.1016/j.pep.2026.106958",
-      "publication_types": [
-        "Journal Article",
-        "Comparative Study"
-      ],
-      "keywords": [
-        "Anti-sclerostin monoclonal antibody",
-        "Charge isomers",
-        "Continuous perfusion",
-        "Fed-batch",
-        "Process changes"
-      ],
-      "affiliation": "College of Pharmaceutical Science, Zhejiang University of Technology, Hangzhou, 310014, China. Electronic address: yiyu1106@zjut.edu.cn.",
-      "language": "eng",
-      "title_zh": "通过连续灌注和补料分批工艺产生的抗硬化素单克隆抗体中电荷异质性的比较分析。",
-      "abstract_zh": "作为关键的质量属性，治疗性单克隆抗体在生产过程中的翻译后修饰 (PTM) 会影响其结构稳定性、电荷异质性和临床疗效。这项研究阐明了连续灌注与分批补料生物反应器过程中抗硬化素单克隆抗体中 PTM 驱动的电荷异构体差异。通过开发一个将强阳离子交换色谱、尺寸排阻色谱、非还原毛细管电泳与高分辨率质谱相结合的集成分析平台，我们精确地表征了不同电荷异构体的分子量变化和特征性 PTM 谱。研究表明，碱性异构体1主要源于C端甘氨酸丢失和蛋氨酸氧化，而碱性异构体2则源于N端谷氨酰胺环化不完全和N端截断。补料分批工艺独特地诱导了重链 Met250-Ile251 位点的降解，并显着提高了低分子量物质的含量。\n至关重要的是，两种工艺的抗体在纯度和 PTM 图谱上表现出最小的差异，有力地验证了工艺转换的可行性。生物活性评估结果表明，两个过程中电荷异构体的相对结合活性在 90% 至 121% 之间。与新生儿片段可结晶受体结合的平衡解离常数值均在(5∼9)×10-1μM范围内，表明FcRn功能不受电荷异质性或过程的影响。总之，本研究系统地比较了两种生产工艺（分批补料和连续灌注）对抗硬化素单克隆抗体的电荷异质性和生物活性的影响。这项工作不仅确定了抗体工艺优化的关键质量基准，还建立了基于 PTM 指纹的标准来评估工艺可比性，为推进连续生物制造技术提供了关键指导。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42276533/",
-      "doi_url": "https://doi.org/10.1016/j.pep.2026.106958"
     }
   }
 }
