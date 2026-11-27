@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26 03:56:53",
+  "generated_at": "2026-11-27 03:56:06",
   "timezone": "Asia/Shanghai",
   "query": "(见 keyword_groups)",
-  "total_articles": 69,
+  "total_articles": 70,
   "calendar": {
     "2026-08-04": [
       "43077114"
@@ -132,85 +132,88 @@
       "42292894"
     ],
     "2026-10-01": [
-      "43067544"
+      "43085032"
     ],
     "2026-10-02": [
-      "43049398"
+      "43067544"
     ],
     "2026-10-05": [
-      "42969552"
+      "43049398"
     ],
     "2026-10-06": [
-      "42958438"
+      "42969552"
     ],
     "2026-10-07": [
-      "42915931"
+      "42958438"
     ],
     "2026-10-08": [
-      "42864475"
+      "42915931"
     ],
     "2026-10-09": [
-      "42754776"
+      "42864475"
     ],
     "2026-10-12": [
-      "42725489"
+      "42754776"
     ],
     "2026-10-13": [
-      "42652006"
+      "42725489"
     ],
     "2026-10-14": [
-      "42546983"
+      "42652006"
     ],
     "2026-10-15": [
-      "42429162"
+      "42546983"
     ],
     "2026-10-16": [
-      "42414861"
+      "42429162"
     ],
     "2026-10-19": [
-      "42345899"
+      "42414861"
     ],
     "2026-10-20": [
-      "43083725"
+      "42345899"
     ],
     "2026-10-21": [
-      "42911708"
+      "43093259"
     ],
     "2026-10-22": [
-      "42896357"
+      "43083725"
     ],
     "2026-10-23": [
-      "42862297"
+      "42911708"
     ],
     "2026-10-26": [
-      "42825421"
+      "42896357"
     ],
     "2026-10-27": [
-      "42799870"
+      "42862297"
     ],
     "2026-10-28": [
-      "42794422"
+      "42825421"
     ],
     "2026-10-29": [
-      "42667144"
+      "42799870"
     ],
     "2026-10-30": [
-      "42568918"
+      "42794422"
     ],
     "2026-11-02": [
-      "42554770"
+      "42667144"
     ],
     "2026-11-03": [
-      "42487284"
+      "42568918"
     ],
     "2026-11-04": [
-      "42458707"
+      "42554770"
     ],
     "2026-11-05": [
-      "42449784"
+      "42487284"
     ],
     "2026-11-06": [
-      "42285912"
+      "42458707"
+    ],
+    "2026-11-09": [
+      "42449784"
     ]
   },
   "articles": {
@@ -361,7 +364,7 @@
       "language": "eng",
       "title_zh": "阳离子交换膜色谱聚集形式消除的机理见解。",
       "abstract_zh": "在单克隆抗体 (mAb) 治疗领域，蛋白质聚集体可以显着影响药物的安全性和疗效。在标准工业生产中，下游纯化过程通常依赖于阳离子交换色谱 (CEX) 作为使用树脂通过结合洗脱模式去除聚集体的可靠方法。然而，这种传统方法可能会矛盾地引发聚集体形成，从而在某些分子的生产中造成关键瓶颈。在这项研究中，实验比较表明，改用阳离子交换膜色谱法可以有效避免基于树脂的工艺中观察到的净 HMW 增加。我们假设传统树脂中的传质依赖于扩散，这导致样品在柱内分布不均匀。这种异质性会导致局部区域浓度极高，从而诱导浓度敏感分子聚集。最重要的是，它表明膜色谱法是一种有前途的纯化浓度敏感蛋白质的解决方案，即使在高浓度处理条件下也能避免净 HMW 增加。\n值得注意的是，这项研究是用单一浓度敏感的 IgG1 分子进行的，所提出的机制仍然是一个工作假设；对于具有不同 pI 值或结合行为的分子的适用性需要进一步评估。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 9,
       "source": "PubMed",
       "source_url": "",
@@ -817,7 +820,7 @@
       "language": "eng",
       "title_zh": "三级分层校准框架可实现多组分蛋白质离子交换色谱的稳健机械建模。",
       "abstract_zh": "机理建模对于实现生物制药纯化过程的预测性理解和优化变得越来越重要。然而，由于复杂的模型结构、高维参数空间和有限的参数可识别性，先进机械模型的实际应用仍然具有挑战性，特别是对于多组分蛋白质系统。在本研究中，为离子交换色谱 (IEC) 中使用的胶体颗粒吸附 (CPA) 模型开发了三级分层校准框架，集成了参数级、模型级和组分级层次结构，以系统地管理校准复杂性。所提出的框架不是同时估计所有模型参数，而是逐步合并参数、模型和组件级别的复杂性，从而将高维逆校准问题转化为一系列更容易处理的校准任务。该框架首先使用双特异性抗体单体-二聚体系统在广泛的负载密度（10-60 g/L）范围内建立。\n分层校准的非横向 CPA (nlCPA) 和完整 CPA 模型准确地再现了实验洗脱曲线，完整 CPA 模型在横向蛋白质-蛋白质相互作用变得相关的高负载条件下提供了改进的预测。使用涉及不同抗体-树脂系统的独立文献报道的单克隆抗体单体-二聚体数据集进一步评估了框架的可转移性，多组分系统的平均归一化均方根误差为0.192。这项工作建立了一种用于校准蛋白质色谱中复杂机械模型的系统策略，并演示了分层模型校准如何促进预测建模方法在复杂生物过程开发和优化中的应用。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 8,
       "source": "PubMed",
       "source_url": "",
@@ -1886,6 +1889,42 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42292894/",
       "doi_url": "https://doi.org/10.3389/fpara.2026.1746419"
     },
+    "43085032": {
+      "pmid": "43085032",
+      "title": "An LC-HRMS workflow with deconvolution data processing for screening and classification of potential leachables in monoclonal antibody formulations.",
+      "abstract": "A proof-of-concept liquid chromatography-high-resolution mass spectrometry (LC-HRMS) workflow combining minimal sample preparation and deconvolution-based data processing was evaluated for screening and prioritizing potential leachable-related features in selected monoclonal antibody formulations. Detection is challenging because the molecular masses of unknown leachables are not known in advance and their signals may overlap with formulation-derived components and analytical background. The workflow combined automated feature detection, deconvolution, spectral-library searching, and diagnostic-fragment evaluation to differentiate potential leachable-related features from formulation-derived signals. Seven model compounds with different physicochemical properties were evaluated at 0.5 μg/mL in five monoclonal antibody formulation samples. Compound Discoverer provided recoveries of 88.3-115.5%, with relative standard deviations of ≤ 8.7%. These results demonstrate recovery and repeatability at the tested concentration but do not establish quantitative performance across a broader range. The LC-HRMS response of Irganox 1010 at 0.5 μg/mL was used solely as an empirical threshold for feature prioritization, and because LC-HRMS responses vary among compounds, this threshold does not represent the detectability of all potential leachables. Deconvolution recovered the expected model-compound signals, while diagnostic MS/MS fragments supported compound-class annotation of structurally related formulation-derived features. Among the prioritized features, none was confirmed as a genuine unknown leachable; however, lower-responding compounds cannot be excluded. The workflow demonstrates feasibility for screening and prioritization but requires product-specific thresholds and broader response-factor coverage before application to comprehensive leachables assessment.",
+      "authors": [
+        "Hisato Okawa",
+        "Takuro Sasayama",
+        "Satoru Arimoto"
+      ],
+      "journal": "Journal of pharmaceutical and biomedical analysis",
+      "journal_abbr": "J Pharm Biomed Anal",
+      "pub_date": "2026-11-04",
+      "entrez_date": "2026-11-25",
+      "doi": "10.1016/j.jpba.2026.117795",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "Deconvolution data processing",
+        "LC-HRMS",
+        "Leachables",
+        "Monoclonal antibody formulations",
+        "Screening workflow"
+      ],
+      "affiliation": "Quality Development Department, Chugai Pharma Manufacturing Co., Ltd, Japan. Electronic address: Okawa.hisato34@chugai-pharm.co.jp.",
+      "language": "eng",
+      "title_zh": "具有反卷积数据处理功能的 LC-HRMS 工作流程，用于筛选和分类单克隆抗体制剂中的潜在浸出物。",
+      "abstract_zh": "对概念验证液相色谱-高分辨率质谱 (LC-HRMS) 工作流程进行了评估，该工作流程结合了最少的样品制备和基于解卷积的数据处理，以筛选和优先考虑选定单克隆抗体制剂中潜在的可浸出相关特征。检测具有挑战性，因为未知浸出物的分子质量无法提前得知，并且它们的信号可能与制剂衍生成分和分析背景重叠。该工作流程结合了自动特征检测、反卷积、光谱库搜索和诊断片段评估，以区分潜在的可浸出相关特征和配方衍生信号。在五种单克隆抗体制剂样品中以 0.5 μg/mL 的浓度对七种具有不同理化性质的模型化合物进行了评估。 Compound Discoverer 的回收率为 88.3-115.5%，相对标准偏差 ≤ 8.7%。这些结果证明了测试浓度下的回收率和重复性，但并未在更广泛的范围内建立定量性能。\nIrganox 1010 在 0.5 μg/mL 时的 LC-HRMS 响应仅用作特征优先级排序的经验阈值，并且由于 LC-HRMS 响应因化合物而异，因此该阈值并不代表所有潜在浸出物的可检测性。反卷积恢复了预期的模型化合物信号，而诊断 MS/MS 片段支持结构相关的配方衍生特征的化合物类注释。在优先考虑的特征中，没有一个被确认为真正的未知可浸出物；然而，不能排除响应较低的化合物。该工作流程展示了筛选和优先级排序的可行性，但在应用于全面的可浸出物评估之前，需要特定于产品的阈值和更广泛的响应因子覆盖范围。",
+      "translate_provider": "google",
+      "score": 5,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43085032/",
+      "doi_url": "https://doi.org/10.1016/j.jpba.2026.117795"
+    },
     "43067544": {
       "pmid": "43067544",
       "title": "Mitigating artificial oxidation during liquid chromatography fractionation of therapeutic proteins.",
@@ -2383,6 +2422,49 @@
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42345899/",
       "doi_url": "https://doi.org/10.3390/bios16060343"
     },
+    "43093259": {
+      "pmid": "43093259",
+      "title": "Molecular Attribution and Assay Replacement Readiness of Multi-Attribute Methods in Biosimilar Development.",
+      "abstract": "Background/Objectives: Multi-attribute method (MAM) provides early molecular attribution in biosimilar development, but assay replacement requires separate evidence. We evaluated MAM integration and replacement readiness in two IgG1 biosimilar programs. Methods: Conventional charge and released-glycan profiles of US-licensed and EU-approved reference product (RP) lots were compared with site-specific MAM measurements. Carboxypeptidase B (CpB) treatment, orthogonal species characterization, intact-mass analysis, and evaluation across alternative analytical configurations were used to assess attribution, coverage, and replacement readiness. Results: MAM assigned specific contributors within conventional charge and glycan profiles, whereas intact methods retained information beyond monitored attributes. For mAb-Cys, 5-7 percentage points of the acidic cation exchange chromatography (CEX) region remained unassigned, and candidate hinge-clipped and non-native disulfide species could not be quantified as contributors to RP residuals. In both molecules, MAM C-terminal lysine values were approximately twice the per-chain occupancy implied by CpB-responsive CEX measurements, demonstrating that peptide- and intact-level measurements are not numerically interchangeable. Across analytical configurations, C-terminal lysine was consistently quantifiable, but reported levels differed; glycan-class reporting depended on processing software whereas deamidation depended on both software detection and chromatographic separation. Common-software reprocessing enabled full-panel quantitation in the evaluated datasets. Conclusions: MAM should be integrated early to provide molecular attribution, but attribution alone does not establish assay replacement readiness. Replacement requires three evidence pillars: (1) reconciliation with conventional measurements and coverage of relevant process-related species, (2) MAM-specific RP distributions, and (3) complete attribute coverage with fit-for-purpose performance on the intended integrated analytical configuration.",
+      "authors": [
+        "Shruthi Sunderrajan",
+        "Suranjana Haldar",
+        "Santosh Kumar Palanirajan",
+        "Srikanth Jandhyam",
+        "Anita Krishnan"
+      ],
+      "journal": "Pharmaceuticals (Basel, Switzerland)",
+      "journal_abbr": "Pharmaceuticals (Basel)",
+      "pub_date": "2026-10-23",
+      "entrez_date": "2026-11-26",
+      "doi": "10.3390/ph19111674",
+      "publication_types": [
+        "Journal Article"
+      ],
+      "keywords": [
+        "RP target range",
+        "analytical control strategy",
+        "biosimilars",
+        "charge heterogeneity",
+        "free cysteine",
+        "glycosylation",
+        "multi-attribute method",
+        "non-reduced peptide mapping",
+        "peptide-to-intact reconciliation",
+        "platform portability"
+      ],
+      "affiliation": "Research and Development, Biocon Biologics Limited, Bengaluru 560099, India.",
+      "language": "eng",
+      "title_zh": "生物仿制药开发中多属性方法的分子归因和检测替代准备情况。",
+      "abstract_zh": "背景/目标：多属性方法 (MAM) 为生物仿制药开发提供早期分子归因，但检测替代需要单独的证据。我们评估了两个 IgG1 生物仿制药项目中的 MAM 整合和替代准备情况。方法：将美国许可和欧盟批准的参考产品 (RP) 批次的常规电荷和释放聚糖谱与特定位点的 MAM 测量值进行比较。使用羧肽酶 B (CpB) 处理、正交物种表征、完整质量分析和跨替代分析配置的评估来评估归因、覆盖范围和替代准备情况。结果：MAM 在常规电荷和聚糖谱中分配了特定的贡献者，而完整的方法保留了监测属性之外的信息。对于 mAb-Cys，酸性阳离子交换色谱 (CEX) 区域的 5-7 个百分点仍未分配，并且候选铰链夹和非天然二硫键物种无法量化为 RP 残留的贡献者。\n在这两种分子中，MAM C 末端赖氨酸值大约是 CpB 响应 CEX 测量所暗示的每链占用率的两倍，表明肽水平和完整水平测量在数值上不可互换。在各种分析配置中，C 端赖氨酸始终是可定量的，但报告的水平有所不同；聚糖类报告取决于处理软件，而脱酰胺取决于软件检测和色谱分离。通用软件再处理可在评估的数据集中实现全面板定量。结论：MAM 应尽早整合以提供分子归因，但仅归因并不能确定检测替代的准备情况。替换需要三个证据支柱：(1) 与传统测量和相关过程相关物种的覆盖范围相一致，(2) MAM 特定的 RP 分布，以及 (3) 完整的属性覆盖范围，并在预期的综合分析配置上具有适合目的的性能。",
+      "translate_provider": "google",
+      "score": 4,
+      "source": "PubMed",
+      "source_url": "",
+      "pushed_at": "",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/43093259/",
+      "doi_url": "https://doi.org/10.3390/ph19111674"
+    },
     "43083725": {
       "pmid": "43083725",
       "title": "Recombinant Oligoclonal Antibody Botulinum Antitoxins Are a Low-Cost Alternative to Equine Antitoxin.",
@@ -2415,7 +2497,7 @@
       "language": "eng",
       "title_zh": "重组寡克隆抗体肉毒杆菌抗毒素是马抗毒素的低成本替代品。",
       "abstract_zh": "我们开发了高效肉毒杆菌神经毒素 (BoNT) 抗毒素，由三种单克隆抗体组成，可结合非重叠表位并协同作用，中和并快速清除循环毒素。由此产生的效力允许较低的总抗体剂量进行治疗（根据此处使用的假设，七血清型产品为 34 mg）。基于这种高效力，相对于长期、高剂量的抗体疗法，每剂药物的生产成本相对较低。重组人 IgG 还提供比马 F(ab')2 抗毒素更长的血清半衰期，因此具有治疗和预防肉毒中毒持续数月的潜力。在这里，我们分析了重组抗毒素的制造成本和多价产品的开发成本，并将其与目前批准的马源抗毒素进行比较。讨论了降低制造复杂性的方法，包括共表达和共纯化、配方、储存、临床使用、分析控制和多价抗体形式。\n我们的分析表明，重组寡克隆 BoNT 抗毒素本质上成本并不高昂，并且药品的开发和总体制造成本并不随着所涵盖的血清型数量线性增加。",
-      "translate_provider": "google",
+      "translate_provider": "",
       "score": 4,
       "source": "PubMed",
       "source_url": "",
@@ -2895,50 +2977,6 @@
       "pushed_at": "",
       "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42449784/",
       "doi_url": "https://doi.org/10.3390/diagnostics16132002"
-    },
-    "42285912": {
-      "pmid": "42285912",
-      "title": "Comparison of knockdown approaches for the generation of stable cell populations expressing afucosylated antibodies.",
-      "abstract": "Targeted silencing of cellular genes in cell lines stably expressing a secreted recombinant protein offers a flexible and convenient strategy for modulating product quality attributes. However, unlike genetic knockout of a cellular gene or the use of potent inhibitors to eliminate cellular enzyme activity, gene knockdown approaches using microRNAs (miRNA) or short hairpin RNAs (shRNA) may result in only partial reduction of enzyme activity and only partial change of the desired product quality attribute. Moreover, through saturation of the Dicer pathway, shRNA may introduce cytotoxic effects that affect product yield. In this study, we demonstrate that miRNAs are a more suitable tool than shRNAs for α1,6-fucosyltransferase (FUT8) knockdown in Chinese hamster ovary (CHO) cells, when expressed under the control of an RNA-Polymerase II promoter. In the presence of miRNAs targeted to the FUT8 mRNA, the fucosylation levels of the N-glycan linked to Asn297 (EU numbering) of a recombinant monoclonal antibody (mAb) were considerably reduced (>90% afucosylation by hydrophilic interaction liquid chromatography - high‑performance liquid chromatography; no detectable fucosylated product by intact mass spectrometry), without a relevant impact on mAb expression. By comparison, overexpression of shRNAs targeted to the FUT8 mRNA resulted in higher levels of residual fucosylation of the mAb and a larger reduction in mAb titers. miRNAs overcame a limitation of the knockdown approach with shRNAs, making this approach a valuable tool for biopharmaceutical manufacturing.",
-      "authors": [
-        "Maria Tsachaki",
-        "Andrew Samy",
-        "Mégane Peltret",
-        "Timothee Brunstein Laplace",
-        "Emilie Vaxelaire-Hily",
-        "Farid Mosbaoui",
-        "Anna Galea",
-        "Francesca Contarin",
-        "Lionel Duarte",
-        "Roberto Giovannini",
-        "Martin Bertschinger"
-      ],
-      "journal": "mAbs",
-      "journal_abbr": "MAbs",
-      "pub_date": "2026-06-12",
-      "entrez_date": "2026-06-12",
-      "doi": "10.1080/19420862.2026.2684393",
-      "publication_types": [
-        "Journal Article",
-        "Comparative Study"
-      ],
-      "keywords": [
-        "CHO cells",
-        "Knockdown",
-        "afucosylation",
-        "antibody expression"
-      ],
-      "affiliation": "Drug Substance Development, IGI Therapeutics SA, La Chaux-de-Fonds, Switzerland.",
-      "language": "eng",
-      "title_zh": "比较用于产生表达无岩藻糖基化抗体的稳定细胞群的敲低方法。",
-      "abstract_zh": "稳定表达分泌重组蛋白的细胞系中细胞基因的靶向沉默为调节产品质量属性提供了灵活且方便的策略。然而，与细胞基因的基因敲除或使用强效抑制剂消除细胞酶活性不同，使用 microRNA (miRNA) 或短发夹 RNA (shRNA) 的基因敲除方法可能会导致酶活性仅部分降低，并且所需产品质量属性仅部分改变。此外，通过 Dicer 途径的饱和，shRNA 可能会引入影响产物产量的细胞毒性作用。在这项研究中，我们证明，当在 RNA 聚合酶 II 启动子的控制下表达时，miRNA 是比 shRNA 更适合敲低中国仓鼠卵巢 (CHO) 细胞中 α1,6-岩藻糖基转移酶 (FUT8) 的工具。在存在针对 FUT8 mRNA 的 miRNA 的情况下，与重组单克隆抗体 (mAb) 的 Asn297（EU 编号）相连的 N-聚糖的岩藻糖基化水平显着降低（通过亲水相互作用液相色谱 - 高效液相色谱检测，无岩藻糖基化>90%；\n通过完整质谱法未检测到岩藻糖基化产物），对 mAb 表达没有相关影响。相比之下，针对 FUT8 mRNA 的 shRNA 的过度表达导致 mAb 的残余岩藻糖基化水平更高，并且 mAb 滴度大幅降低。 miRNA 克服了 shRNA 击倒方法的局限性，使该方法成为生物制药制造的宝贵工具。",
-      "translate_provider": "",
-      "score": 4,
-      "source": "PubMed",
-      "source_url": "",
-      "pushed_at": "",
-      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/42285912/",
-      "doi_url": "https://doi.org/10.1080/19420862.2026.2684393"
     }
   }
 }
